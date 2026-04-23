@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sangha Calendar</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f8f6f2; color: #1a1a1a; }
+    header { background: #2d4a3e; color: white; padding: 1.5rem 2rem; }
+    header h1 { font-size: 1.5rem; font-weight: 600; }
+    header p { font-size: 0.9rem; opacity: 0.8; margin-top: 0.25rem; }
+    .filters { padding: 1rem 2rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .filters select {
+      padding: 0.4rem 0.75rem; border: 1px solid #ccc; border-radius: 4px;
+      background: white; font-size: 0.9rem; cursor: pointer;
+    }
+    #events { padding: 0 2rem 2rem; display: grid; gap: 0.75rem; }
+    .event {
+      background: white; border-radius: 6px; padding: 1rem 1.25rem;
+      border-left: 4px solid #2d4a3e; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .event-title { font-weight: 600; font-size: 1rem; }
+    .event-org { color: #555; font-size: 0.85rem; margin-top: 0.2rem; }
+    .event-meta { display: flex; gap: 1rem; margin-top: 0.5rem; font-size: 0.8rem; color: #666; flex-wrap: wrap; }
+    .event-meta span::before { margin-right: 0.25rem; }
+    .tradition-tag {
+      display: inline-block; background: #e8f0eb; color: #2d4a3e;
+      border-radius: 3px; padding: 0.1rem 0.4rem; font-size: 0.75rem; margin-top: 0.4rem;
+    }
+    .loading { text-align: center; padding: 3rem; color: #888; }
+    a { color: #2d4a3e; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sangha Calendar</h1>
+    <p>Every in-person meditation sit in the Bay Area, in one place.</p>
+  </header>
+
+  <div class="filters">
+    <select id="filter-city" onchange="loadEvents()">
+      <option value="">All cities</option>
+      <option value="Oakland">Oakland</option>
+      <option value="Berkeley">Berkeley</option>
+    </select>
+    <select id="filter-tradition" onchange="loadEvents()">
+      <option value="">All traditions</option>
+      <option value="theravada">Theravada</option>
+      <option value="zen">Zen</option>
+      <option value="tibetan">Tibetan</option>
+      <option value="secular">Secular</option>
+      <option value="pluralist">Pluralist</option>
+    </select>
+  </div>
+
+  <div id="events"><div class="loading">Loading events…</div></div>
+
+  <script>
+    function fmt(iso) {
+      const d = new Date(iso);
+      return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" })
+        + " · " + d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+    }
+
+    async function loadEvents() {
+      const city = document.getElementById("filter-city").value;
+      const tradition = document.getElementById("filter-tradition").value;
+      const params = new URLSearchParams();
+      if (city) params.set("city", city);
+      if (tradition) params.set("tradition", tradition);
+
+      const res = await fetch("/api/events?" + params);
+      const events = await res.json();
+      const container = document.getElementById("events");
+
+      if (!events.length) {
+        container.innerHTML = '<div class="loading">No upcoming events found.</div>';
+        return;
+      }
+
+      container.innerHTML = events.map(e => `
+        <div class="event">
+          <div class="event-title">${e.event_url ? `<a href="${e.event_url}" target="_blank">${e.title}</a>` : e.title}</div>
+          <div class="event-org">${e.org_name}</div>
+          <div class="event-meta">
+            <span>📅 ${fmt(e.start_time)}</span>
+            ${e.neighborhood ? `<span>📍 ${e.neighborhood}</span>` : ''}
+            ${e.address ? `<span>${e.address}, ${e.city}</span>` : ''}
+          </div>
+          ${e.tradition ? `<span class="tradition-tag">${e.tradition}</span>` : ''}
+          ${e.identity_focus ? `<span class="tradition-tag">${e.identity_focus}</span>` : ''}
+        </div>
+      `).join("");
+    }
+
+    loadEvents();
+  </script>
+</body>
+</html>

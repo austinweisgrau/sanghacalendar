@@ -12,19 +12,17 @@ Can be run on a schedule (monthly) with Abraxis in the loop for
 LLM-assisted classification of ambiguous events.
 """
 
-import json
 import logging
-from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional
 
 from data.schemas.event import Event
+from data.store import export_json, init_db, upsert_events
 from ingestion.feeds.ical_feed import fetch_feed
 from ingestion.sources.east_bay import CENTERS, ICAL_FEEDS
 
 log = logging.getLogger(__name__)
 
-DATA_DIR = Path(__file__).parent.parent / "data" / "events"
+EXPORT_PATH = Path(__file__).parent.parent / "data" / "events.json"
 
 
 def run_east_bay_phase1() -> list[Event]:
@@ -34,7 +32,6 @@ def run_east_bay_phase1() -> list[Event]:
     for org_id, feed_cfg in ICAL_FEEDS.items():
         center = CENTERS[org_id]
         log.info(f"Fetching {center.name}...")
-
         try:
             events = fetch_feed(
                 url=feed_cfg["url"],
@@ -57,21 +54,16 @@ def run_east_bay_phase1() -> list[Event]:
     return all_events
 
 
-def save_events(events: list[Event], label: str = "east_bay") -> Path:
-    """Save events to JSON."""
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    out_path = DATA_DIR / f"{label}.json"
-    data = [vars(e) for e in events]
-    out_path.write_text(json.dumps(data, indent=2, default=str))
-    log.info(f"Saved {len(events)} events to {out_path}")
-    return out_path
-
-
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+
+    init_db()
     events = run_east_bay_phase1()
-    out = save_events(events, "east_bay_phase1")
-    print(f"\n✓ {len(events)} events written to {out}")
+    upserted = upsert_events(events)
+    log.info(f"Upserted {upserted} events to DB")
+
+    count = export_json(EXPORT_PATH)
+    print(f"\n✓ {count} events exported to {EXPORT_PATH}")
 
 
 if __name__ == "__main__":
