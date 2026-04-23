@@ -1,12 +1,12 @@
-# Fly.io config — Phase 2 (when serving layer goes live)
+# Fly.io config
 #
-# Setup:
-#   fly launch --no-deploy   (imports this file)
+# First-time setup:
+#   fly launch --no-deploy
 #   fly volumes create sangha_data --size 1 --region sjc
 #   fly secrets set DB_PATH=/data/sangha.db
 #   fly deploy
 #
-# Daily ingestion (run from GitHub Actions or manually):
+# Manual ingestion run:
 #   flyctl ssh console -a sangha-calendar -C "python -m ingestion.coordinator"
 
 app            = "sangha-calendar"
@@ -15,14 +15,15 @@ primary_region = "sjc"  # San Jose — closest to Bay Area
 [build]
 
 [env]
-  PORT = "8080"
+  PORT    = "8080"
+  DB_PATH = "/data/sangha.db"
 
 [http_service]
   internal_port        = 8080
   force_https          = true
   auto_stop_machines   = "stop"
   auto_start_machines  = true
-  min_machines_running = 0    # scales to zero when idle = ~$0 for low-traffic
+  min_machines_running = 1    # keep one warm — ~$2/mo, required for SSH ingestion trigger
 
 [[mounts]]
   source      = "sangha_data"

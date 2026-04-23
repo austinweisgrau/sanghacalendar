@@ -13,16 +13,13 @@ LLM-assisted classification of ambiguous events.
 """
 
 import logging
-from pathlib import Path
 
 from data.schemas.event import Event
-from data.store import export_json, init_db, upsert_events
+from data.store import init_db, upsert_events
 from ingestion.feeds.ical_feed import fetch_feed
 from ingestion.sources.east_bay import CENTERS, ICAL_FEEDS
 
 log = logging.getLogger(__name__)
-
-EXPORT_PATH = Path(__file__).parent.parent / "data" / "events.json"
 
 
 def run_east_bay_phase1() -> list[Event]:
@@ -59,11 +56,8 @@ def main():
 
     init_db()
     events = run_east_bay_phase1()
-    upserted = upsert_events(events)
-    log.info(f"Upserted {upserted} events to DB")
-
-    count = export_json(EXPORT_PATH)
-    print(f"\n✓ {count} events exported to {EXPORT_PATH}")
+    n = upsert_events(events)
+    print(f"\n✓ {n} events upserted")
 
 
 if __name__ == "__main__":

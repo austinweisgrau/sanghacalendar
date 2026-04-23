@@ -2,15 +2,11 @@
 SQLite event store.
 
 DB_PATH env var controls location (defaults to data/sangha.db for local dev).
-
-Phase 1 (GitHub Actions): DB is ephemeral per-run, JSON export committed to repo.
-Phase 2 (Fly.io): mount a persistent volume at /data, set DB_PATH=/data/sangha.db.
+On Fly.io: persistent volume mounted at /data, DB_PATH=/data/sangha.db.
 """
 
-import json
 import os
 import sqlite3
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -118,15 +114,3 @@ def get_upcoming_events(
         return [dict(r) for r in c.execute(q, params).fetchall()]
 
 
-def export_json(path: Path) -> int:
-    """Export all future events to JSON for static serving. Returns count."""
-    events = get_upcoming_events(days_ahead=365, limit=10_000)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(
-            {"generated_at": datetime.now(timezone.utc).isoformat(), "events": events},
-            indent=2,
-            default=str,
-        )
-    )
-    return len(events)

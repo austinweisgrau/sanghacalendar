@@ -8,32 +8,11 @@ on:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: superfly/flyctl-actions/setup-flyctl@master
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-          cache: pip
-
-      - name: Install dependencies
-        run: pip install -e .
-
-      - name: Run ingestion
-        run: python -m ingestion.coordinator
-        # DB is ephemeral (rebuilt from live feeds each run).
-        # Output is data/events.json which gets committed below.
-        # Phase 2: when switching to Fly.io, replace this step with:
-        #   flyctl ssh console -a sangha-calendar -C "python -m ingestion.coordinator"
-
-      - name: Commit updated events
-        run: |
-          git config user.name "sangha-bot"
-          git config user.email "bot@sanghacalendar.org"
-          git add data/events.json
-          git diff --staged --quiet || \
-            git commit -m "chore: event sync $(date -u +%Y-%m-%d)" && \
-            git push
+      - name: Run ingestion on Fly
+        run: flyctl ssh console -a sangha-calendar -C "python -m ingestion.coordinator"
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
