@@ -10,4 +10,4 @@ RUN pip install --no-cache-dir httpx icalendar flask openai python-dateutil
 COPY . .
 
 EXPOSE 8080
-CMD ["python", "serving/app.py"]
+CMD ["python", "-m", "serving.app"]
