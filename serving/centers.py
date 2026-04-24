@@ -134,6 +134,63 @@ CENTERS = {
             "A pilgrimage-worthy destination for serious practitioners."
         ),
     },
+    "berkeley_buddhist_monastery": {
+        "id": "berkeley_buddhist_monastery",
+        "name": "Berkeley Buddhist Monastery",
+        "tradition": "zen",
+        "url": "https://www.berkeleymonastery.org",
+        "address": "2304 McKinley Ave",
+        "city": "Berkeley",
+        "state": "CA",
+        "zip": "94703",
+        "neighborhood": "North Berkeley",
+        "lat": 37.8758,
+        "lng": -122.2637,
+        "description": (
+            "Berkeley Buddhist Monastery is a Chan (Chinese Zen) monastery offering "
+            "daily sitting meditation open to the public — early morning sits Thu/Fri "
+            "and evening sits every day of the week. The practice is traditional and "
+            "austere, rooted in the City of Ten Thousand Buddhas lineage. Free of charge."
+        ),
+    },
+    "insight_berkeley": {
+        "id": "insight_berkeley",
+        "name": "Insight Meditation Community of Berkeley",
+        "tradition": "theravada",
+        "url": "https://www.insightberkeley.org",
+        "address": "2304 McKinley Ave",
+        "city": "Berkeley",
+        "state": "CA",
+        "zip": "94703",
+        "neighborhood": "North Berkeley",
+        "lat": 37.8758,
+        "lng": -122.2637,
+        "description": (
+            "Insight Meditation Community of Berkeley meets Thursday evenings at "
+            "Berkeley Buddhist Monastery. Led by James Baraz and Eve Decker, the "
+            "community is grounded in Vipassana practice with an emphasis on joy, "
+            "lovingkindness, and awakening. Dana-based, drop-in welcome."
+        ),
+    },
+    "berkeley_priory": {
+        "id": "berkeley_priory",
+        "name": "Berkeley Buddhist Priory",
+        "tradition": "zen",
+        "url": "https://berkeleybuddhistpriory.org",
+        "address": "1358 Marin Ave",
+        "city": "Albany",
+        "state": "CA",
+        "zip": "94706",
+        "neighborhood": "Albany",
+        "lat": 37.8934,
+        "lng": -122.2987,
+        "description": (
+            "Berkeley Buddhist Priory is a small residential monastery in the Order "
+            "of Buddhist Contemplatives lineage — a British Soto Zen tradition founded "
+            "by Jiyu-Kennett Roshi. Sunday morning meditation is open to all. The "
+            "practice emphasizes stillness, ceremony, and lay-monastic integration."
+        ),
+    },
     "metta_dharma": {
         "id": "metta_dharma",
         "name": "Metta Dharma Foundation",
