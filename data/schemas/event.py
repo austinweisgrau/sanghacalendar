@@ -18,6 +18,12 @@ class Tradition(str, Enum):
     UNKNOWN = "unknown"
 
 
+class LocationType(str, Enum):
+    IN_PERSON = "in-person"
+    ONLINE = "online"
+    HYBRID = "hybrid"
+
+
 class SourceType(str, Enum):
     ICAL_FEED = "ical_feed"
     EVENTBRITE = "eventbrite"
@@ -66,6 +72,7 @@ class Event:
 
     # Classification
     tradition: Tradition = Tradition.UNKNOWN
+    location_type: LocationType = LocationType.IN_PERSON
     is_sit: bool = True              # confirmed as a meditation sit (not a talk/workshop)
     accessibility_notes: Optional[str] = None
     identity_focus: Optional[str] = None   # e.g. "BIPOC", "LGBTQ+", "women"

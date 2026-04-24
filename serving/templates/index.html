@@ -39,6 +39,12 @@
   </header>
 
   <div class="filters">
+    <select id="filter-location" onchange="loadEvents()">
+      <option value="">In-person &amp; online</option>
+      <option value="in-person">In-person only</option>
+      <option value="online">Online only</option>
+      <option value="hybrid">Hybrid only</option>
+    </select>
     <select id="filter-city" onchange="loadEvents()">
       <option value="">All cities</option>
       <option value="Oakland">Oakland</option>
@@ -66,9 +72,11 @@
     async function loadEvents() {
       const city = document.getElementById("filter-city").value;
       const tradition = document.getElementById("filter-tradition").value;
+      const location_type = document.getElementById("filter-location").value;
       const params = new URLSearchParams();
       if (city) params.set("city", city);
       if (tradition) params.set("tradition", tradition);
+      if (location_type) params.set("location_type", location_type);
 
       const res = await fetch("/api/events?" + params);
       const events = await res.json();
@@ -89,6 +97,7 @@
             ${e.address ? `<span>${e.address}, ${e.city}</span>` : ''}
           </div>
           ${e.tradition ? `<span class="tradition-tag">${e.tradition}</span>` : ''}
+          ${e.location_type && e.location_type !== 'in-person' ? `<span class="tradition-tag">${e.location_type}</span>` : ''}
           ${e.identity_focus ? `<span class="tradition-tag">${e.identity_focus}</span>` : ''}
         </div>
       `).join("");

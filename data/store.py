@@ -29,6 +29,7 @@ CREATE TABLE IF NOT EXISTS events (
     lat               REAL,
     lng               REAL,
     tradition         TEXT,
+    location_type     TEXT DEFAULT 'in-person',
     is_sit            INTEGER DEFAULT 1,
     accessibility_notes TEXT,
     identity_focus    TEXT,
@@ -39,9 +40,10 @@ CREATE TABLE IF NOT EXISTS events (
     recurrence        TEXT,
     notes             TEXT
 );
-CREATE INDEX IF NOT EXISTS idx_events_start     ON events(start_time);
-CREATE INDEX IF NOT EXISTS idx_events_city      ON events(city);
-CREATE INDEX IF NOT EXISTS idx_events_tradition ON events(tradition);
+CREATE INDEX IF NOT EXISTS idx_events_start         ON events(start_time);
+CREATE INDEX IF NOT EXISTS idx_events_city          ON events(city);
+CREATE INDEX IF NOT EXISTS idx_events_tradition     ON events(tradition);
+CREATE INDEX IF NOT EXISTS idx_events_location_type ON events(location_type);
 """
 
 
@@ -55,6 +57,11 @@ def init_db() -> None:
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     with _conn() as c:
         c.executescript(_CREATE_SQL)
+        # Migration: add location_type if upgrading an existing DB
+        try:
+            c.execute("ALTER TABLE events ADD COLUMN location_type TEXT DEFAULT 'in-person'")
+        except sqlite3.OperationalError:
+            pass  # column already exists
 
 
 def upsert_events(events: list[Event]) -> int:
@@ -64,6 +71,7 @@ def upsert_events(events: list[Event]) -> int:
             e.id, e.org_id, e.org_name, e.title, e.start_time, e.end_time,
             e.address, e.city, e.state, e.neighborhood, e.lat, e.lng,
             e.tradition.value if hasattr(e.tradition, "value") else e.tradition,
+            e.location_type.value if hasattr(e.location_type, "value") else e.location_type,
             int(e.is_sit), e.accessibility_notes, e.identity_focus,
             e.source.value if hasattr(e.source, "value") else e.source,
             e.source_url, e.event_url, e.last_verified, e.recurrence, e.notes,
@@ -76,12 +84,13 @@ def upsert_events(events: list[Event]) -> int:
             INSERT INTO events (
                 id, org_id, org_name, title, start_time, end_time,
                 address, city, state, neighborhood, lat, lng,
-                tradition, is_sit, accessibility_notes, identity_focus,
+                tradition, location_type, is_sit, accessibility_notes, identity_focus,
                 source, source_url, event_url, last_verified, recurrence, notes
-            ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             ON CONFLICT(id) DO UPDATE SET
                 last_verified = excluded.last_verified,
                 end_time      = excluded.end_time,
+                location_type = excluded.location_type,
                 notes         = excluded.notes
             """,
             rows,
@@ -92,6 +101,7 @@ def upsert_events(events: list[Event]) -> int:
 def get_upcoming_events(
     city: Optional[str] = None,
     tradition: Optional[str] = None,
+    location_type: Optional[str] = None,
     days_ahead: int = 60,
     limit: int = 500,
 ) -> list[dict]:
@@ -108,9 +118,10 @@ def get_upcoming_events(
     if tradition:
         q += " AND tradition = ?"
         params.append(tradition)
+    if location_type:
+        q += " AND location_type = ?"
+        params.append(location_type)
     q += " ORDER BY start_time LIMIT ?"
     params.append(limit)
     with _conn() as c:
         return [dict(r) for r in c.execute(q, params).fetchall()]
-
-

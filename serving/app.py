@@ -28,6 +28,7 @@ def events():
     rows = get_upcoming_events(
         city=request.args.get("city"),
         tradition=request.args.get("tradition"),
+        location_type=request.args.get("location_type"),
     )
     return jsonify(rows)
 
