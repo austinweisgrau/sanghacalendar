@@ -10,7 +10,7 @@ from typing import Optional
 import httpx
 from icalendar import Calendar
 
-from data.schemas.event import Event, SourceType, Tradition
+from data.schemas.event import Event, LocationType, SourceType, Tradition
 
 
 # Keywords that strongly suggest a meditation sit
@@ -26,6 +26,26 @@ EXCLUDE_KEYWORDS = [
     "course", "class", "training", "daylong", "ceremony", "social",
     "book club", "study group", "teacher training", "orientation",
 ]
+
+
+ONLINE_KEYWORDS = [
+    "online", "virtual", "zoom", "webinar", "livestream", "live stream",
+    "google meet", "teams", "remote", "via zoom", "via google",
+]
+
+HYBRID_KEYWORDS = ["hybrid", "in-person and online", "online and in-person"]
+
+
+def detect_location_type(title: str, description: str = "", location: str = "") -> LocationType:
+    text = (title + " " + description + " " + location).lower()
+    if any(kw in text for kw in HYBRID_KEYWORDS):
+        return LocationType.HYBRID
+    # A Zoom/Meet URL in the location field is a strong online signal
+    if any(kw in location.lower() for kw in ("zoom.us", "meet.google", "teams.microsoft")):
+        return LocationType.ONLINE
+    if any(kw in text for kw in ONLINE_KEYWORDS):
+        return LocationType.ONLINE
+    return LocationType.IN_PERSON
 
 
 def is_likely_sit(title: str, description: str = "") -> bool:
@@ -70,6 +90,7 @@ def fetch_feed(
 
         title = str(component.get("SUMMARY", "")).strip()
         description = str(component.get("DESCRIPTION", "")).strip()
+        location = str(component.get("LOCATION", "")).strip()
         dtstart = component.get("DTSTART")
         dtend = component.get("DTEND")
         event_url = str(component.get("URL", "")) or None
@@ -97,6 +118,7 @@ def fetch_feed(
             lat=lat,
             lng=lng,
             tradition=tradition,
+            location_type=detect_location_type(title, description, location),
             source=SourceType.ICAL_FEED,
             source_url=url,
             event_url=event_url,
