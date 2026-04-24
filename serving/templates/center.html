@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ center.name }} — Sangha Calendar</title>
+  <style>
+    :root {
+      --bg:           #f6f3ee;
+      --surface:      #ffffff;
+      --border:       #e4dfd6;
+      --text:         #2a2724;
+      --muted:        #6b6560;
+      --accent:       #4d7060;
+      --accent-light: #e8f0ec;
+
+      --c-theravada:  #3d7a56;
+      --c-zen:        #4a5f82;
+      --c-tibetan:    #7a6e28;
+      --c-secular:    #3a7070;
+      --c-pluralist:  #5a6a5a;
+      --c-other:      #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .header {
+      background: var(--accent);
+      color: white;
+      padding: 1.5rem 2rem;
+    }
+    .header a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+    .header a:hover { color: white; }
+    .header h1 { font-size: 1.5rem; font-weight: 600; margin-top: 0.5rem; letter-spacing: -0.02em; }
+    .header-sub { font-size: 0.85rem; opacity: 0.8; margin-top: 0.25rem; }
+
+    .main { max-width: 720px; margin: 0 auto; padding: 2rem 1rem 3rem; }
+
+    .center-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--trad-color, var(--accent));
+      border-radius: 0 0 8px 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .center-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .trad-badge {
+      display: inline-block;
+      color: white;
+      padding: 0.15rem 0.6rem;
+      border-radius: 2rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .center-description {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: var(--text);
+    }
+
+    .center-link {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.83rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .center-link:hover { text-decoration: underline; }
+
+    /* Events section */
+    .section-heading {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1rem;
+    }
+
+    .event-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--trad-color, #999);
+      border-radius: 0 7px 7px 0;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.45rem;
+    }
+    .event-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .event-title-text { font-weight: 600; font-size: 0.92rem; }
+    .event-time  { font-size: 0.83rem; color: var(--muted); white-space: nowrap; }
+    .event-date  { font-size: 0.78rem; color: var(--muted); margin-top: 0.15rem; }
+
+    .event-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.35rem; }
+    .tag {
+      font-size: 0.7rem;
+      padding: 0.12rem 0.5rem;
+      border-radius: 2rem;
+      font-weight: 500;
+    }
+    .tag-meta   { background: var(--bg); color: var(--muted); border: 1px solid var(--border); }
+    .tag-online { background: #e8f0fa; color: #2a4a7a; border: 1px solid #b8cce8; }
+
+    .event-link {
+      display: inline-block;
+      margin-top: 0.3rem;
+      font-size: 0.78rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .event-link:hover { text-decoration: underline; }
+
+    .loading { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.9rem; }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.77rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 480px) {
+      .event-top { flex-direction: column; gap: 0.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <a href="/">← Sangha Calendar</a>
+  <h1>{{ center.name }}</h1>
+  <div class="header-sub">{{ center.neighborhood }} · {{ center.city }}, {{ center.state }}</div>
+</div>
+
+<div class="main">
+
+  {% set trad_colors = {
+    "theravada": "#3d7a56",
+    "zen": "#4a5f82",
+    "tibetan": "#7a6e28",
+    "secular": "#3a7070",
+    "pluralist": "#5a6a5a",
+    "other": "#888",
+    "unknown": "#888"
+  } %}
+  {% set trad_labels = {
+    "theravada": "Theravada / Insight",
+    "zen": "Zen",
+    "tibetan": "Tibetan / Shambhala",
+    "secular": "Secular",
+    "pluralist": "Non-sectarian / Pluralist",
+    "other": "Other",
+    "unknown": "Unknown"
+  } %}
+  {% set color = trad_colors.get(center.tradition, "#888") %}
+
+  <div class="center-card" style="--trad-color: {{ color }}">
+    <span class="trad-badge" style="background: {{ color }}">
+      {{ trad_labels.get(center.tradition, center.tradition) }}
+    </span>
+    <div class="center-meta">
+      <span>📍 {{ center.address }}, {{ center.city }}</span>
+      {% if center.neighborhood %}<span>{{ center.neighborhood }}</span>{% endif %}
+    </div>
+    <div class="center-description">{{ center.description }}</div>
+    {% if center.url %}
+    <a class="center-link" href="{{ center.url }}" target="_blank" rel="noopener">
+      Visit website ↗
+    </a>
+    {% endif %}
+  </div>
+
+  <div class="section-heading">Upcoming sits</div>
+  <div id="events"><div class="loading">Loading…</div></div>
+
+</div>
+
+<div class="footer">
+  <a href="/" style="color:inherit">← All centers</a>
+</div>
+
+<script>
+const TRAD_COLOR = "{{ color }}";
+
+function fmt(iso) {
+  const d = new Date(iso);
+  return {
+    date: d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" }),
+    time: d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }),
+  };
+}
+
+async function loadEvents() {
+  const res = await fetch("/api/events/{{ center.id }}");
+  const events = await res.json();
+  const container = document.getElementById("events");
+
+  if (!events.length) {
+    container.innerHTML = '<div class="loading">No upcoming sits found.</div>';
+    return;
+  }
+
+  container.innerHTML = events.map(e => {
+    const { date, time } = fmt(e.start_time);
+    const endTime = e.end_time ? " – " + fmt(e.end_time).time : "";
+    const locationTag = e.location_type && e.location_type !== "in-person"
+      ? `<span class="tag tag-online">${e.location_type}</span>` : "";
+    const identityTag = e.identity_focus
+      ? `<span class="tag tag-meta">${e.identity_focus}</span>` : "";
+    const linkHtml = e.event_url
+      ? `<a class="event-link" href="${e.event_url}" target="_blank" rel="noopener">Details ↗</a>` : "";
+
+    return `
+      <div class="event-card" style="--trad-color: ${TRAD_COLOR}">
+        <div class="event-top">
+          <span class="event-title-text">${e.title}</span>
+          <span class="event-time">${time}${endTime}</span>
+        </div>
+        <div class="event-date">${date}</div>
+        ${locationTag || identityTag ? `<div class="event-tags">${locationTag}${identityTag}</div>` : ""}
+        ${linkHtml}
+      </div>`;
+  }).join("");
+}
+
+loadEvents();
+</script>
+</body>
+</html>

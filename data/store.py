@@ -131,6 +131,7 @@ def get_upcoming_events(
     city: Optional[str] = None,
     tradition: Optional[str] = None,
     location_type: Optional[str] = None,
+    org_id: Optional[str] = None,
     days_ahead: int = 60,
     limit: int = 500,
 ) -> list[dict]:
@@ -147,6 +148,9 @@ def get_upcoming_events(
     if tradition:
         q += " AND tradition = ?"
         params.append(tradition)
+    if org_id:
+        q += " AND org_id = ?"
+        params.append(org_id)
     if location_type == "in-person":
         q += " AND location_type IN ('in-person', 'hybrid')"
     elif location_type == "online":
