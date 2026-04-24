@@ -40,10 +40,9 @@ CREATE TABLE IF NOT EXISTS events (
     recurrence        TEXT,
     notes             TEXT
 );
-CREATE INDEX IF NOT EXISTS idx_events_start         ON events(start_time);
-CREATE INDEX IF NOT EXISTS idx_events_city          ON events(city);
-CREATE INDEX IF NOT EXISTS idx_events_tradition     ON events(tradition);
-CREATE INDEX IF NOT EXISTS idx_events_location_type ON events(location_type);
+CREATE INDEX IF NOT EXISTS idx_events_start     ON events(start_time);
+CREATE INDEX IF NOT EXISTS idx_events_city      ON events(city);
+CREATE INDEX IF NOT EXISTS idx_events_tradition ON events(tradition);
 """
 
 
@@ -60,6 +59,7 @@ def init_db() -> None:
         # Migration: add location_type if upgrading an existing DB
         try:
             c.execute("ALTER TABLE events ADD COLUMN location_type TEXT DEFAULT 'in-person'")
+            c.execute("CREATE INDEX IF NOT EXISTS idx_events_location_type ON events(location_type)")
         except sqlite3.OperationalError:
             pass  # column already exists
 
