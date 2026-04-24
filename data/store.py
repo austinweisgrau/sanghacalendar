@@ -118,9 +118,10 @@ def get_upcoming_events(
     if tradition:
         q += " AND tradition = ?"
         params.append(tradition)
-    if location_type:
-        q += " AND location_type = ?"
-        params.append(location_type)
+    if location_type == "in-person":
+        q += " AND location_type IN ('in-person', 'hybrid')"
+    elif location_type == "online":
+        q += " AND location_type IN ('online', 'hybrid')"
     q += " ORDER BY start_time LIMIT ?"
     params.append(limit)
     with _conn() as c:
