@@ -5,38 +5,203 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sangha Calendar</title>
   <style>
+    :root {
+      --bg:           #f6f3ee;
+      --surface:      #ffffff;
+      --border:       #e4dfd6;
+      --text:         #2a2724;
+      --muted:        #6b6560;
+      --accent:       #4d7060;
+      --accent-light: #e8f0ec;
+
+      --c-theravada:  #3d7a56;
+      --c-zen:        #4a5f82;
+      --c-tibetan:    #7a6e28;
+      --c-secular:    #3a7070;
+      --c-pluralist:  #5a6a5a;
+      --c-other:      #888;
+    }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: system-ui, sans-serif; background: #f8f6f2; color: #1a1a1a; }
-    header { background: #2d4a3e; color: white; padding: 1.5rem 2rem; }
-    header h1 { font-size: 1.5rem; font-weight: 600; }
-    header p { font-size: 0.9rem; opacity: 0.8; margin-top: 0.25rem; }
-    .filters { padding: 1rem 2rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: var(--accent);
+      color: white;
+      padding: 2.25rem 1.5rem 1.75rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.7rem; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+    .header p  { font-size: 0.9rem; opacity: 0.82; max-width: 500px; margin: 0 auto 1.25rem; }
+
+    .gcal-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(255,255,255,0.15);
+      border: 1.5px solid rgba(255,255,255,0.55);
+      color: white;
+      padding: 0.45rem 1.1rem;
+      border-radius: 2rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .gcal-btn:hover { background: rgba(255,255,255,0.25); }
+    .gcal-btn.disabled { opacity: 0.55; cursor: default; }
+
+    /* ── Layout ── */
+    .main { max-width: 720px; margin: 0 auto; padding: 1.75rem 1rem 3rem; }
+
+    /* ── Filters ── */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
     .filters select {
-      padding: 0.4rem 0.75rem; border: 1px solid #ccc; border-radius: 4px;
-      background: white; font-size: 0.9rem; cursor: pointer;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 2rem;
+      background: var(--surface);
+      font-size: 0.82rem;
+      color: var(--text);
+      cursor: pointer;
+      appearance: none;
+      padding-right: 1.75rem;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b6560'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.6rem center;
     }
-    #events { padding: 0 2rem 2rem; display: grid; gap: 0.75rem; }
-    .event {
-      background: white; border-radius: 6px; padding: 1rem 1.25rem;
-      border-left: 4px solid #2d4a3e; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      margin-bottom: 1.75rem;
     }
-    .event-title { font-weight: 600; font-size: 1rem; }
-    .event-org { color: #555; font-size: 0.85rem; margin-top: 0.2rem; }
-    .event-meta { display: flex; gap: 1rem; margin-top: 0.5rem; font-size: 0.8rem; color: #666; flex-wrap: wrap; }
-    .event-meta span::before { margin-right: 0.25rem; }
-    .tradition-tag {
-      display: inline-block; background: #e8f0eb; color: #2d4a3e;
-      border-radius: 3px; padding: 0.1rem 0.4rem; font-size: 0.75rem; margin-top: 0.4rem;
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      color: var(--muted);
     }
-    .loading { text-align: center; padding: 3rem; color: #888; }
-    a { color: #2d4a3e; }
+    .ldot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ── Note box ── */
+    .note-box {
+      background: var(--accent-light);
+      border: 1px solid #c4ddd0;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      font-size: 0.82rem;
+      color: #2a4a3a;
+      margin-bottom: 1.75rem;
+    }
+    .note-box strong { display: block; margin-bottom: 0.2rem; }
+
+    /* ── Day sections ── */
+    .day-section { margin-bottom: 1.75rem; }
+    .day-heading {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0.6rem;
+    }
+
+    /* ── Event cards ── */
+    .event-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--trad-color, #999);
+      border-radius: 0 7px 7px 0;
+      padding: 0.8rem 1rem;
+      margin-bottom: 0.45rem;
+    }
+    .event-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .event-org   { font-weight: 600; font-size: 0.92rem; }
+    .event-time  { font-size: 0.83rem; color: var(--muted); white-space: nowrap; }
+    .event-title { font-size: 0.83rem; color: var(--muted); font-style: italic; margin-top: 0.1rem; }
+    .event-address { font-size: 0.78rem; color: var(--muted); margin-top: 0.25rem; }
+
+    .event-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
+    .tag {
+      font-size: 0.7rem;
+      padding: 0.12rem 0.5rem;
+      border-radius: 2rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .tag-trad { color: white; }
+    .tag-meta  { background: var(--bg); color: var(--muted); border: 1px solid var(--border); }
+    .tag-online { background: #e8f0fa; color: #2a4a7a; border: 1px solid #b8cce8; }
+
+    .event-link {
+      display: inline-block;
+      margin-top: 0.35rem;
+      font-size: 0.78rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .event-link:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.77rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    .loading { text-align: center; padding: 3rem; color: var(--muted); }
+
+    @media (max-width: 480px) {
+      .event-top { flex-direction: column; gap: 0.1rem; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Sangha Calendar</h1>
-    <p>Every in-person meditation sit in the Bay Area, in one place.</p>
-  </header>
+
+<div class="header">
+  <h1>Sangha Calendar</h1>
+  <p>Every in-person meditation sit in the Bay Area, in one place.</p>
+  <a class="gcal-btn disabled" href="#" title="Coming soon">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+    </svg>
+    Subscribe to Google Calendar (coming soon)
+  </a>
+</div>
+
+<div class="main">
+
+  <div class="note-box">
+    <strong>How this works</strong>
+    Updated daily from live calendar feeds. Only events where sitting meditation is the primary activity are included — dharma talks, workshops, and retreats are filtered out.
+  </div>
 
   <div class="filters">
     <select id="filter-location" onchange="loadEvents()">
@@ -52,58 +217,143 @@
     </select>
     <select id="filter-tradition" onchange="loadEvents()">
       <option value="">All traditions</option>
-      <option value="theravada">Theravada</option>
+      <option value="theravada">Theravada / Insight</option>
       <option value="zen">Zen</option>
-      <option value="tibetan">Tibetan</option>
+      <option value="tibetan">Tibetan / Shambhala</option>
       <option value="secular">Secular</option>
-      <option value="pluralist">Pluralist</option>
+      <option value="pluralist">Pluralist / Non-sectarian</option>
     </select>
   </div>
 
-  <div id="events"><div class="loading">Loading events…</div></div>
+  <div class="legend" id="legend"></div>
+  <div id="calendar"><div class="loading">Loading events…</div></div>
 
-  <script>
-    function fmt(iso) {
-      const d = new Date(iso);
-      return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" })
-        + " · " + d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
-    }
+</div>
 
-    async function loadEvents() {
-      const city = document.getElementById("filter-city").value;
-      const tradition = document.getElementById("filter-tradition").value;
-      const location_type = document.getElementById("filter-location").value;
-      const params = new URLSearchParams();
-      if (city) params.set("city", city);
-      if (tradition) params.set("tradition", tradition);
-      if (location_type) params.set("location_type", location_type);
+<div class="footer">
+  Updated daily &nbsp;·&nbsp; <a href="https://github.com/austinweisgrau/sanghacalendar" style="color:inherit">GitHub</a>
+</div>
 
-      const res = await fetch("/api/events?" + params);
-      const events = await res.json();
-      const container = document.getElementById("events");
+<script>
+const TRADITIONS = {
+  "theravada": { label: "Theravada / Insight", color: "#3d7a56" },
+  "zen":       { label: "Zen",                 color: "#4a5f82" },
+  "tibetan":   { label: "Tibetan / Shambhala", color: "#7a6e28" },
+  "secular":   { label: "Secular",             color: "#3a7070" },
+  "pluralist": { label: "Non-sectarian",        color: "#5a6a5a" },
+  "other":     { label: "Other",               color: "#888" },
+  "unknown":   { label: "Other",               color: "#888" },
+};
 
-      if (!events.length) {
-        container.innerHTML = '<div class="loading">No upcoming events found.</div>';
-        return;
-      }
+// Build legend from traditions that appear in results
+function renderLegend(traditions) {
+  const legendEl = document.getElementById("legend");
+  legendEl.innerHTML = "";
+  const seen = new Set();
+  traditions.forEach(t => {
+    const key = t || "unknown";
+    if (seen.has(key)) return;
+    seen.add(key);
+    const info = TRADITIONS[key] || TRADITIONS["unknown"];
+    const item = document.createElement("div");
+    item.className = "legend-item";
+    item.innerHTML = `<div class="ldot" style="background:${info.color}"></div>${info.label}`;
+    legendEl.appendChild(item);
+  });
+}
 
-      container.innerHTML = events.map(e => `
-        <div class="event">
-          <div class="event-title">${e.event_url ? `<a href="${e.event_url}" target="_blank">${e.title}</a>` : e.title}</div>
-          <div class="event-org">${e.org_name}</div>
-          <div class="event-meta">
-            <span>📅 ${fmt(e.start_time)}</span>
-            ${e.neighborhood ? `<span>📍 ${e.neighborhood}</span>` : ''}
-            ${e.address ? `<span>${e.address}, ${e.city}</span>` : ''}
-          </div>
-          ${e.tradition ? `<span class="tradition-tag">${e.tradition}</span>` : ''}
-          ${e.location_type && e.location_type !== 'in-person' ? `<span class="tradition-tag">${e.location_type}</span>` : ''}
-          ${e.identity_focus ? `<span class="tradition-tag">${e.identity_focus}</span>` : ''}
+function fmtDate(iso) {
+  const d = new Date(iso);
+  return d.toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+}
+
+function fmtTime(iso) {
+  const d = new Date(iso);
+  return d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+}
+
+function dateKey(iso) {
+  return new Date(iso).toDateString();
+}
+
+async function loadEvents() {
+  const city          = document.getElementById("filter-city").value;
+  const tradition     = document.getElementById("filter-tradition").value;
+  const location_type = document.getElementById("filter-location").value;
+
+  const params = new URLSearchParams();
+  if (city)          params.set("city", city);
+  if (tradition)     params.set("tradition", tradition);
+  if (location_type) params.set("location_type", location_type);
+
+  const calEl = document.getElementById("calendar");
+  calEl.innerHTML = '<div class="loading">Loading…</div>';
+
+  const events = await fetch("/api/events?" + params).then(r => r.json());
+
+  if (!events.length) {
+    calEl.innerHTML = '<div class="loading">No upcoming events found.</div>';
+    renderLegend([]);
+    return;
+  }
+
+  renderLegend(events.map(e => e.tradition));
+
+  // Group by date
+  const byDate = new Map();
+  events.forEach(e => {
+    const k = dateKey(e.start_time);
+    if (!byDate.has(k)) byDate.set(k, []);
+    byDate.get(k).push(e);
+  });
+
+  calEl.innerHTML = "";
+  byDate.forEach((dayEvents, _key) => {
+    const section = document.createElement("div");
+    section.className = "day-section";
+    section.innerHTML = `<div class="day-heading">${fmtDate(dayEvents[0].start_time)}</div>`;
+
+    dayEvents.forEach(e => {
+      const trad = TRADITIONS[e.tradition] || TRADITIONS["unknown"];
+      const card = document.createElement("div");
+      card.className = "event-card";
+      card.style.setProperty("--trad-color", trad.color);
+
+      const titleHtml   = e.title ? `<div class="event-title">${e.title}</div>` : "";
+      const addrParts   = [e.address, e.neighborhood ? `· ${e.neighborhood}` : ""].filter(Boolean);
+      const addressHtml = addrParts.length
+        ? `<div class="event-address">📍 ${addrParts.join(" ")}</div>` : "";
+
+      const locationTag = e.location_type && e.location_type !== "in-person"
+        ? `<span class="tag tag-online">${e.location_type}</span>` : "";
+
+      const tagsHtml = `
+        <div class="event-tags">
+          <span class="tag tag-trad" style="background:${trad.color}">${trad.label}</span>
+          ${locationTag}
+        </div>`;
+
+      const linkHtml = e.event_url
+        ? `<a class="event-link" href="${e.event_url}" target="_blank" rel="noopener">Details ↗</a>` : "";
+
+      card.innerHTML = `
+        <div class="event-top">
+          <span class="event-org">${e.org_name}</span>
+          <span class="event-time">${fmtTime(e.start_time)}${e.end_time ? " – " + fmtTime(e.end_time) : ""}</span>
         </div>
-      `).join("");
-    }
+        ${titleHtml}
+        ${addressHtml}
+        ${tagsHtml}
+        ${linkHtml}
+      `;
+      section.appendChild(card);
+    });
 
-    loadEvents();
-  </script>
+    calEl.appendChild(section);
+  });
+}
+
+loadEvents();
+</script>
 </body>
 </html>
