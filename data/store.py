@@ -98,6 +98,35 @@ def upsert_events(events: list[Event]) -> int:
         return cur.rowcount
 
 
+_COLUMNS = [
+    "id", "org_id", "org_name", "title", "start_time", "end_time",
+    "address", "city", "state", "neighborhood", "lat", "lng",
+    "tradition", "location_type", "is_sit", "accessibility_notes", "identity_focus",
+    "source", "source_url", "event_url", "last_verified", "recurrence", "notes",
+]
+
+
+def upsert_dicts(events: list[dict]) -> int:
+    """Upsert raw event dicts (e.g. from Abraxis POST). Returns rowcount."""
+    rows = [tuple(e.get(col) for col in _COLUMNS) for e in events]
+    with _conn() as c:
+        cur = c.executemany(
+            f"""
+            INSERT INTO events ({', '.join(_COLUMNS)})
+            VALUES ({', '.join(['?'] * len(_COLUMNS))})
+            ON CONFLICT(id) DO UPDATE SET
+                last_verified = excluded.last_verified,
+                end_time      = excluded.end_time,
+                location_type = excluded.location_type,
+                is_sit        = excluded.is_sit,
+                identity_focus = excluded.identity_focus,
+                notes         = excluded.notes
+            """,
+            rows,
+        )
+        return cur.rowcount
+
+
 def get_upcoming_events(
     city: Optional[str] = None,
     tradition: Optional[str] = None,
