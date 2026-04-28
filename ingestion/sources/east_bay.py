@@ -147,8 +147,6 @@ ICAL_FEEDS = {
         "url": "https://eastbaymeditation.org/?ical=1&eventDisplay=list",
         "filter_to_sits": True,
     },
-    "shambhala_berkeley": {
-        "url": "http://shambhala-koeln.de/ical.php?center=178",
-        "filter_to_sits": True,
-    },
+    # shambhala_berkeley: removed — shambhala-koeln.de feed consistently times out.
+    # Berkeley Shambhala events are covered by manual recurring sits already in the DB.
 }
