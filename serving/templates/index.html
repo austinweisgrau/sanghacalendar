@@ -337,22 +337,16 @@ function renderLegend(traditions) {
   });
 }
 
-// Bare datetime strings (no Z or ±offset) are stored as UTC without a marker.
-// Append Z so the browser converts them to local time correctly.
-function parseTime(iso) {
-  return new Date(/[Z+\-]\d{2}:\d{2}$|Z$/.test(iso) ? iso : iso + "Z");
-}
-
 function fmtDate(iso) {
-  return parseTime(iso).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  return new Date(iso).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
 }
 
 function fmtTime(iso) {
-  return parseTime(iso).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  return new Date(iso).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
 }
 
 function dateKey(iso) {
-  return parseTime(iso).toDateString();
+  return new Date(iso).toDateString();
 }
 
 function toggleCityDropdown(e) {
