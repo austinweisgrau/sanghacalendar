@@ -209,4 +209,99 @@ CENTERS = {
             "Sit followed by brief dharma sharing. Dana-based."
         ),
     },
+    "berkeley_alembic": {
+        "id": "berkeley_alembic",
+        "name": "Berkeley Alembic",
+        "tradition": "secular",
+        "url": "https://www.berkeleyalembic.com",
+        "address": "2820 7th St",
+        "city": "Berkeley",
+        "state": "CA",
+        "zip": "94710",
+        "neighborhood": "West Berkeley",
+        "lat": 37.8604,
+        "lng": -122.2988,
+        "description": (
+            "Berkeley Alembic is a secular meditation and contemplative arts center "
+            "in West Berkeley, associated with teacher Michael Taft (Deconstructing "
+            "Yourself). Offers meditation sits, workshops, and events drawing from "
+            "secular mindfulness, neuroscience, and non-dual inquiry. No religious "
+            "affiliation required."
+        ),
+    },
+    "sfzc_city_center": {
+        "id": "sfzc_city_center",
+        "name": "SF Zen Center — City Center",
+        "tradition": "zen",
+        "url": "https://www.sfzc.org/city-center",
+        "address": "300 Page St",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94102",
+        "neighborhood": "Hayes Valley",
+        "lat": 37.7726,
+        "lng": -122.4243,
+        "description": (
+            "SF Zen Center's City Center (also called Beginner's Mind Temple) is the "
+            "urban home of one of the largest Soto Zen communities outside Japan. "
+            "Founded by Shunryu Suzuki Roshi in 1969, it offers daily zazen open to "
+            "all, as well as dharma talks, classes, and residential practice. "
+            "Drop-in welcome."
+        ),
+    },
+    "hartford_zen": {
+        "id": "hartford_zen",
+        "name": "Hartford Street Zen Center",
+        "tradition": "zen",
+        "url": "https://www.hszc.org",
+        "address": "57 Hartford St",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94114",
+        "neighborhood": "Castro",
+        "lat": 37.7588,
+        "lng": -122.4353,
+        "description": (
+            "Hartford Street Zen Center (Issan-ji) is a Soto Zen temple in the Castro, "
+            "founded by Issan Dorsey in 1984. It has deep roots in the LGBTQ+ community "
+            "and became known during the AIDS crisis for its compassionate care work. "
+            "Daily zazen and weekly dharma talks, open to all."
+        ),
+    },
+    "mission_dharma": {
+        "id": "mission_dharma",
+        "name": "Mission Dharma",
+        "tradition": "theravada",
+        "url": "https://www.missiondharma.org",
+        "address": "Mission District",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94110",
+        "neighborhood": "Mission District",
+        "lat": 37.7599,
+        "lng": -122.4148,
+        "description": (
+            "Mission Dharma is a Theravada-based meditation community in San Francisco's "
+            "Mission District. Offers weekly sits and dharma talks in the Insight "
+            "Meditation tradition. Accessible, community-focused, dana-based."
+        ),
+    },
+    "marin_sangha": {
+        "id": "marin_sangha",
+        "name": "Marin Sangha",
+        "tradition": "theravada",
+        "url": "https://www.marinsangha.org",
+        "address": "10 Bayview Dr",
+        "city": "San Rafael",
+        "state": "CA",
+        "zip": "94901",
+        "neighborhood": "San Rafael",
+        "lat": 37.9735,
+        "lng": -122.5311,
+        "description": (
+            "Marin Sangha is an Insight Meditation community in San Rafael offering "
+            "weekly sitting meditation and dharma study in the Theravada/Vipassana "
+            "tradition. Dana-based, drop-in welcome."
+        ),
+    },
 }
