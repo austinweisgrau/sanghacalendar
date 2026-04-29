@@ -41,8 +41,9 @@ def events():
             days_ahead = int(request.args.get("days"))
         except ValueError:
             pass
+    cities = request.args.getlist("city")
     rows = get_upcoming_events(
-        city=request.args.get("city"),
+        city=cities if cities else None,
         tradition=request.args.get("tradition"),
         location_type=request.args.get("location_type"),
         days_ahead=days_ahead,

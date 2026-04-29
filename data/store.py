@@ -128,7 +128,7 @@ def upsert_dicts(events: list[dict]) -> int:
 
 
 def get_upcoming_events(
-    city: Optional[str] = None,
+    city: Optional[str | list[str]] = None,
     tradition: Optional[str] = None,
     location_type: Optional[str] = None,
     org_id: Optional[str] = None,
@@ -161,8 +161,13 @@ def get_upcoming_events(
         """
         params = [str(days_ahead)]
     if city:
-        q += " AND city = ?"
-        params.append(city)
+        cities = [city] if isinstance(city, str) else city
+        if len(cities) == 1:
+            q += " AND city = ?"
+            params.append(cities[0])
+        else:
+            q += f" AND city IN ({','.join('?' * len(cities))})"
+            params.extend(cities)
     if tradition:
         q += " AND tradition = ?"
         params.append(tradition)

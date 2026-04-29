@@ -96,6 +96,52 @@
     .date-range.visible { display: flex; }
     .date-range span { font-size: 0.8rem; color: var(--muted); }
 
+    /* ── Multi-select city picker ── */
+    .multi-select { position: relative; }
+    .multi-select-trigger {
+      padding: 0.35rem 1.75rem 0.35rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 2rem;
+      background: var(--surface);
+      font-size: 0.82rem;
+      color: var(--text);
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b6560'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.6rem center;
+    }
+    .multi-select-trigger.active {
+      border-color: var(--accent);
+      background-color: var(--accent-light);
+    }
+    .multi-select-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.35rem 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 100;
+      min-width: 140px;
+    }
+    .multi-select-dropdown.open { display: block; }
+    .multi-select-option {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.85rem;
+      font-size: 0.82rem;
+      cursor: pointer;
+      color: var(--text);
+    }
+    .multi-select-option:hover { background: var(--bg); }
+    .multi-select-option input[type="checkbox"] { accent-color: var(--accent); cursor: pointer; }
+
     /* ── Legend ── */
     .legend {
       display: flex;
@@ -217,15 +263,17 @@
 
   <div class="filters">
     <select id="filter-location" onchange="loadEvents()">
-      <option value="">All</option>
-      <option value="in-person">In-person</option>
-      <option value="online">Online</option>
+      <option value="">In-person &amp; online</option>
+      <option value="in-person">In-person only</option>
+      <option value="online">Online only</option>
     </select>
-    <select id="filter-city" onchange="loadEvents()">
-      <option value="">All cities</option>
-      <option value="Oakland">Oakland</option>
-      <option value="Berkeley">Berkeley</option>
-    </select>
+    <div class="multi-select" id="city-picker">
+      <div class="multi-select-trigger" id="city-trigger" onclick="toggleCityDropdown(event)">All cities</div>
+      <div class="multi-select-dropdown" id="city-dropdown">
+        <label class="multi-select-option"><input type="checkbox" value="Oakland" onchange="onCityChange()"> Oakland</label>
+        <label class="multi-select-option"><input type="checkbox" value="Berkeley" onchange="onCityChange()"> Berkeley</label>
+      </div>
+    </div>
     <select id="filter-tradition" onchange="loadEvents()">
       <option value="">All traditions</option>
       <option value="theravada">Theravada / Insight</option>
@@ -299,6 +347,27 @@ function dateKey(iso) {
   return new Date(iso).toDateString();
 }
 
+function toggleCityDropdown(e) {
+  e.stopPropagation();
+  document.getElementById("city-dropdown").classList.toggle("open");
+}
+document.addEventListener("click", () => {
+  document.getElementById("city-dropdown").classList.remove("open");
+});
+
+function onCityChange() {
+  const checked = Array.from(document.querySelectorAll("#city-dropdown input:checked")).map(el => el.value);
+  const trigger = document.getElementById("city-trigger");
+  if (checked.length === 0) {
+    trigger.textContent = "All cities";
+    trigger.classList.remove("active");
+  } else {
+    trigger.textContent = checked.join(", ");
+    trigger.classList.add("active");
+  }
+  loadEvents();
+}
+
 function onDateWindowChange() {
   const window_val = document.getElementById("filter-date-window").value;
   const rangeRow   = document.getElementById("date-range-row");
@@ -311,7 +380,7 @@ function onDateWindowChange() {
 }
 
 async function loadEvents() {
-  const city          = document.getElementById("filter-city").value;
+  const cities        = Array.from(document.querySelectorAll("#city-dropdown input:checked")).map(el => el.value);
   const tradition     = document.getElementById("filter-tradition").value;
   const location_type = document.getElementById("filter-location").value;
   const window_val    = document.getElementById("filter-date-window").value;
@@ -319,7 +388,7 @@ async function loadEvents() {
   const end_date      = document.getElementById("filter-end-date").value;
 
   const params = new URLSearchParams();
-  if (city)          params.set("city", city);
+  cities.forEach(c => params.append("city", c));
   if (tradition)     params.set("tradition", tradition);
   if (location_type) params.set("location_type", location_type);
   if (window_val === "custom") {
