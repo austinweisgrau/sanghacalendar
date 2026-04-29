@@ -134,6 +134,20 @@ CENTERS = {
         tradition=Tradition.THERAVADA,
         notes="Weekly drop-in meditation groups. Slightly outside East Bay.",
     ),
+    "everyday_zen": Center(
+        id="everyday_zen",
+        name="Everyday Zen Foundation",
+        url="https://everydayzen.org",
+        address="145 Rock Hill Rd",
+        city="Tiburon",
+        state="CA",
+        zip_code="94920",
+        lat=37.8816,
+        lng=-122.4577,
+        neighborhood="Tiburon / Marin",
+        tradition=Tradition.ZEN,
+        notes="Soto Zen lineage (Norman Fischer). Weekly Metta Sittings, sutra recitation, all-day sittings. Meets at Community Congregational Church in Tiburon; many events hybrid or online.",
+    ),
 }
 
 
@@ -149,4 +163,8 @@ ICAL_FEEDS = {
     },
     # shambhala_berkeley: removed — shambhala-koeln.de feed consistently times out.
     # Berkeley Shambhala events are covered by manual recurring sits already in the DB.
+    "everyday_zen": {
+        "url": "https://everydayzen.org/?ical=1",
+        "filter_to_sits": True,
+    },
 }

@@ -8,7 +8,7 @@ _Last updated: 2026-04-29_
 
 - 384 events across 15+ organizations
 - 218 upcoming events in next 30 days (as of April 2026)
-- Ingestion sources: 24 iCal feeds + 303 manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic)
+- Ingestion sources: 25 iCal feeds + 303 manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic)
 - Coverage: East Bay + SF + Marin
 
 ---
@@ -61,9 +61,9 @@ Priority order for East Bay centers not yet on live ingestion:
 |--------|----------|------------|--------|
 | Nyingma Institute | Eventbrite API | Low | 📋 Queued |
 | Insight Berkeley | Eventbrite API or scrape | Low-Med | 📋 Queued |
-| Empty Gate Zen | WordPress `?ical=1` test | Low | 📋 Queued |
-| Everyday Zen | WordPress `?ical=1` test | Low | 📋 Queued |
-| Metta Dharma | WordPress `?ical=1` test | Low | 📋 Queued |
+| Empty Gate Zen | WordPress `?ical=1` test | Low | ⚠️ Connection failed — site may be down or blocking crawlers (Apr 29) |
+| Everyday Zen | WordPress `?ical=1` | Low | ✅ **Live** — added Apr 29. 21 events ingested (Weekly Metta Sitting, Group Recitation, All-Day Sittings, Everyday Caring). Hybrid/online focus; meets at Community Congregational Church in Tiburon. Note: EXCL_KW filter updated to title-only to avoid WordPress description noise. |
+| Metta Dharma | WordPress `?ical=1` test | Low | ❌ No iCal — `?ical=1` returns homepage HTML (different events plugin or no plugin) |
 | Bay Zen | LLM-assisted HTML scrape | Med | 📋 Queued |
 | Berkeley Priory | LLM-assisted HTML scrape | Med | 📋 Queued |
 | Berkeley Buddhist Monastery | LLM-assisted HTML scrape | Med | 📋 Queued |
