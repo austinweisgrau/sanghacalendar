@@ -35,10 +35,19 @@ def center_page(org_id):
 
 @app.route("/api/events")
 def events():
+    days_ahead = 60
+    if request.args.get("days"):
+        try:
+            days_ahead = int(request.args.get("days"))
+        except ValueError:
+            pass
     rows = get_upcoming_events(
         city=request.args.get("city"),
         tradition=request.args.get("tradition"),
         location_type=request.args.get("location_type"),
+        days_ahead=days_ahead,
+        start_date=request.args.get("start_date"),
+        end_date=request.args.get("end_date"),
     )
     return jsonify(rows)
 

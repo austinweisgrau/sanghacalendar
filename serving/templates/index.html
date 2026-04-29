@@ -83,6 +83,18 @@
       background-repeat: no-repeat;
       background-position: right 0.6rem center;
     }
+    .filters input[type="date"] {
+      padding: 0.35rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 2rem;
+      background: var(--surface);
+      font-size: 0.82rem;
+      color: var(--text);
+      cursor: pointer;
+    }
+    .date-range { display: none; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+    .date-range.visible { display: flex; }
+    .date-range span { font-size: 0.8rem; color: var(--muted); }
 
     /* ── Legend ── */
     .legend {
@@ -222,6 +234,18 @@
       <option value="secular">Secular</option>
       <option value="pluralist">Pluralist / Non-sectarian</option>
     </select>
+    <select id="filter-date-window" onchange="onDateWindowChange()">
+      <option value="7">Next 7 days</option>
+      <option value="14">Next 14 days</option>
+      <option value="30" selected>Next 30 days</option>
+      <option value="60">Next 60 days</option>
+      <option value="custom">Custom range…</option>
+    </select>
+  </div>
+  <div class="date-range" id="date-range-row">
+    <input type="date" id="filter-start-date" onchange="loadEvents()">
+    <span>to</span>
+    <input type="date" id="filter-end-date" onchange="loadEvents()">
   </div>
 
   <div class="legend" id="legend"></div>
@@ -275,15 +299,35 @@ function dateKey(iso) {
   return new Date(iso).toDateString();
 }
 
+function onDateWindowChange() {
+  const window_val = document.getElementById("filter-date-window").value;
+  const rangeRow   = document.getElementById("date-range-row");
+  if (window_val === "custom") {
+    rangeRow.classList.add("visible");
+  } else {
+    rangeRow.classList.remove("visible");
+    loadEvents();
+  }
+}
+
 async function loadEvents() {
   const city          = document.getElementById("filter-city").value;
   const tradition     = document.getElementById("filter-tradition").value;
   const location_type = document.getElementById("filter-location").value;
+  const window_val    = document.getElementById("filter-date-window").value;
+  const start_date    = document.getElementById("filter-start-date").value;
+  const end_date      = document.getElementById("filter-end-date").value;
 
   const params = new URLSearchParams();
   if (city)          params.set("city", city);
   if (tradition)     params.set("tradition", tradition);
   if (location_type) params.set("location_type", location_type);
+  if (window_val === "custom") {
+    if (start_date) params.set("start_date", start_date + "T00:00:00");
+    if (end_date)   params.set("end_date",   end_date   + "T23:59:59");
+  } else {
+    params.set("days", window_val);
+  }
 
   const calEl = document.getElementById("calendar");
   calEl.innerHTML = '<div class="loading">Loading…</div>';

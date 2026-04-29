@@ -132,16 +132,34 @@ def get_upcoming_events(
     tradition: Optional[str] = None,
     location_type: Optional[str] = None,
     org_id: Optional[str] = None,
-    days_ahead: int = 60,
+    days_ahead: int = 30,
+    start_date: Optional[str] = None,
+    end_date: Optional[str] = None,
     limit: int = 500,
 ) -> list[dict]:
-    q = """
-        SELECT * FROM events
-        WHERE start_time >= datetime('now')
-          AND start_time <= datetime('now', ? || ' days')
-          AND is_sit = 1
-    """
-    params: list = [str(days_ahead)]
+    if start_date and end_date:
+        q = """
+            SELECT * FROM events
+            WHERE start_time >= ?
+              AND start_time <= ?
+              AND is_sit = 1
+        """
+        params: list = [start_date, end_date]
+    elif start_date:
+        q = """
+            SELECT * FROM events
+            WHERE start_time >= ?
+              AND is_sit = 1
+        """
+        params = [start_date]
+    else:
+        q = """
+            SELECT * FROM events
+            WHERE start_time >= datetime('now')
+              AND start_time <= datetime('now', ? || ' days')
+              AND is_sit = 1
+        """
+        params = [str(days_ahead)]
     if city:
         q += " AND city = ?"
         params.append(city)
