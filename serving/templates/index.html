@@ -272,6 +272,10 @@
       <div class="multi-select-dropdown" id="city-dropdown">
         <label class="multi-select-option"><input type="checkbox" value="Oakland" onchange="onCityChange()"> Oakland</label>
         <label class="multi-select-option"><input type="checkbox" value="Berkeley" onchange="onCityChange()"> Berkeley</label>
+        <label class="multi-select-option"><input type="checkbox" value="San Francisco" onchange="onCityChange()"> San Francisco</label>
+        <label class="multi-select-option"><input type="checkbox" value="Albany" onchange="onCityChange()"> Albany</label>
+        <label class="multi-select-option"><input type="checkbox" value="San Rafael" onchange="onCityChange()"> San Rafael</label>
+        <label class="multi-select-option"><input type="checkbox" value="Woodacre" onchange="onCityChange()"> Woodacre</label>
       </div>
     </div>
     <select id="filter-tradition" onchange="loadEvents()">
@@ -333,18 +337,22 @@ function renderLegend(traditions) {
   });
 }
 
+// Bare datetime strings (no Z or ±offset) are stored as UTC without a marker.
+// Append Z so the browser converts them to local time correctly.
+function parseTime(iso) {
+  return new Date(/[Z+\-]\d{2}:\d{2}$|Z$/.test(iso) ? iso : iso + "Z");
+}
+
 function fmtDate(iso) {
-  const d = new Date(iso);
-  return d.toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+  return parseTime(iso).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
 }
 
 function fmtTime(iso) {
-  const d = new Date(iso);
-  return d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  return parseTime(iso).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
 }
 
 function dateKey(iso) {
-  return new Date(iso).toDateString();
+  return parseTime(iso).toDateString();
 }
 
 function toggleCityDropdown(e) {
