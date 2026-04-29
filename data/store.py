@@ -7,6 +7,7 @@ On Fly.io: persistent volume mounted at /data, DB_PATH=/data/sangha.db.
 
 import os
 import sqlite3
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -125,6 +126,70 @@ def upsert_dicts(events: list[dict]) -> int:
             rows,
         )
         return cur.rowcount
+
+
+def dedup_events() -> int:
+    """
+    Remove duplicate events that represent the same real occurrence.
+    Duplicates arise when the same iCal feed mixes UTC (Z) and TZID-local timestamps
+    across ingestion runs — the IDs differ but the events are the same.
+
+    Strategy: group by (org_id, title), parse all start_times to UTC, and delete
+    any event within 2 minutes of another in the same group, preferring the one
+    whose start_time contains a timezone offset.
+    """
+    def _parse_utc(s: str) -> datetime | None:
+        if not s:
+            return None
+        for fmt in ("%Y-%m-%dT%H:%M:%S.%f%z", "%Y-%m-%dT%H:%M:%S%z",
+                    "%Y-%m-%dT%H:%M:%S.%f", "%Y-%m-%dT%H:%M:%S"):
+            try:
+                dt = datetime.strptime(s, fmt)
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+                return dt.astimezone(timezone.utc)
+            except ValueError:
+                continue
+        return None
+
+    with _conn() as c:
+        rows = c.execute("SELECT id, org_id, title, start_time FROM events").fetchall()
+
+    by_key: dict[tuple, list] = {}
+    for row in rows:
+        key = (row["org_id"], row["title"])
+        by_key.setdefault(key, []).append(dict(row))
+
+    to_delete: set[str] = set()
+    for group in by_key.values():
+        if len(group) < 2:
+            continue
+        # Annotate with parsed UTC time
+        parsed = [(e, _parse_utc(e["start_time"])) for e in group]
+        parsed = [(e, t) for e, t in parsed if t is not None]
+        # Find pairs within 2 minutes of each other
+        for i, (e1, t1) in enumerate(parsed):
+            for e2, t2 in parsed[i + 1:]:
+                if abs((t1 - t2).total_seconds()) <= 120:
+                    # Prefer the one with explicit timezone offset in the string
+                    has_tz1 = "+" in e1["start_time"] or e1["start_time"].endswith("Z")
+                    has_tz2 = "+" in e2["start_time"] or e2["start_time"].endswith("Z")
+                    if has_tz1 and not has_tz2:
+                        to_delete.add(e2["id"])
+                    elif has_tz2 and not has_tz1:
+                        to_delete.add(e1["id"])
+                    else:
+                        # Both or neither have tz — delete the one with .000
+                        if ".000" in e1["start_time"]:
+                            to_delete.add(e1["id"])
+                        else:
+                            to_delete.add(e2["id"])
+
+    if not to_delete:
+        return 0
+    with _conn() as c:
+        c.executemany("DELETE FROM events WHERE id = ?", [(id_,) for id_ in to_delete])
+    return len(to_delete)
 
 
 def get_upcoming_events(

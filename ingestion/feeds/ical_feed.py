@@ -120,8 +120,16 @@ def fetch_feed(
         if not title or not dtstart:
             continue
 
-        start_str = dtstart.dt.isoformat() if hasattr(dtstart.dt, "isoformat") else str(dtstart.dt)
-        end_str   = dtend.dt.isoformat() if dtend and hasattr(dtend.dt, "isoformat") else None
+        # Normalize to UTC ISO string (ends in +00:00) so the same event always
+        # hashes to the same ID regardless of whether the feed uses TZID or Z.
+        def _to_utc_iso(dt_val) -> str:
+            if hasattr(dt_val, "tzinfo") and dt_val.tzinfo is not None:
+                return dt_val.astimezone(timezone.utc).isoformat()
+            # date-only or naive — return as-is
+            return dt_val.isoformat() if hasattr(dt_val, "isoformat") else str(dt_val)
+
+        start_str = _to_utc_iso(dtstart.dt)
+        end_str   = _to_utc_iso(dtend.dt) if dtend else None
 
         # --- Sit classification ---
         sit_result, sit_certain = is_likely_sit(title, description)

@@ -6,7 +6,7 @@ Reads from SQLite on Fly.io persistent volume (DB_PATH env var → /data/sangha.
 import os
 from flask import Flask, abort, jsonify, render_template, request
 
-from data.store import get_upcoming_events, init_db, upsert_dicts
+from data.store import dedup_events, get_upcoming_events, init_db, upsert_dicts
 from serving.centers import CENTERS
 
 app = Flask(__name__)
@@ -85,6 +85,15 @@ def admin_ingest():
         return jsonify({"error": "expected {events: [...]}"}), 400
     n = upsert_dicts(body["events"])
     return jsonify({"upserted": n})
+
+
+@app.route("/api/admin/dedup", methods=["POST"])
+def admin_dedup():
+    auth = request.headers.get("Authorization", "")
+    if not INGEST_TOKEN or auth != f"Bearer {INGEST_TOKEN}":
+        return jsonify({"error": "unauthorized"}), 401
+    n = dedup_events()
+    return jsonify({"deleted": n})
 
 
 @app.route("/api/health")
