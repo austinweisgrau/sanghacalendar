@@ -1,14 +1,13 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-04-29_
+_Last updated: 2026-04-30_
 
 ## Current Status
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 384 events across 15+ organizations
-- 218 upcoming events in next 30 days (as of April 2026)
-- Ingestion sources: 25 iCal feeds + 303 manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic)
+- 409 events across 18 organizations (updated Apr 30)
+- Ingestion sources: 25+ iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic)
 - Coverage: East Bay + SF + Marin
 
 ---
@@ -59,7 +58,7 @@ Priority order for East Bay centers not yet on live ingestion:
 
 | Center | Approach | Difficulty | Status |
 |--------|----------|------------|--------|
-| Nyingma Institute | Eventbrite API | Low | 📋 Queued |
+| Nyingma Institute | Eventbrite API | Low | 📋 Queued — **organizer_id: 336367203** (confirmed Apr 30). 11 upcoming events incl. Daily Kum Nye (recurring monthly), Women's Meditation Group (weekly Sun), Sunday Dharma Talks (weekly Sun). Website has no iCal. Eventbrite page scrape or API via organizer ID. |
 | Insight Berkeley | Eventbrite API or scrape | Low-Med | 📋 Queued |
 | Empty Gate Zen | WordPress `?ical=1` test | Low | ⚠️ Connection failed — site may be down or blocking crawlers (Apr 29) |
 | Everyday Zen | WordPress `?ical=1` | Low | ✅ **Live** — added Apr 29. 21 events ingested (Weekly Metta Sitting, Group Recitation, All-Day Sittings, Everyday Caring). Hybrid/online focus; meets at Community Congregational Church in Tiburon. Note: EXCL_KW filter updated to title-only to avoid WordPress description noise. |
