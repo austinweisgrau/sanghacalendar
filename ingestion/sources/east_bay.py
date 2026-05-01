@@ -92,6 +92,7 @@ CENTERS = {
         lng=-122.2637,
         neighborhood="North Berkeley",
         tradition=Tradition.THERAVADA,
+        notes="Theravada/Vipassana community. Events on Eventbrite (organizer_id: 32673197525). Primarily day-long retreats and special programs.",
     ),
     "metta_dharma": Center(
         id="metta_dharma",
@@ -170,6 +171,10 @@ EVENTBRITE_FEEDS = {
     "nyingma_institute": {
         "organizer_id": "336367203",
         "filter_to_sits": False,  # Include all events (Dharma talks, classes, sittings)
+    },
+    "insight_berkeley": {
+        "organizer_id": "32673197525",
+        "filter_to_sits": True,  # Primarily day-long retreats — filter to actual sits
     },
 }
 

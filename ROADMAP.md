@@ -41,7 +41,7 @@ Priority order for East Bay centers not yet on live ingestion:
 | Center | Approach | Difficulty | Status |
 |--------|----------|------------|--------|
 | Nyingma Institute | Eventbrite API | Low | ✅ **Live May 1** — `ingestion/scrapers/eventbrite.py` built and tested. Returns 6 upcoming events. Wired into coordinator.py (daily ingest) + abraxis_ingest.py. Uses `__NEXT_DATA__` JSON scraping, no API key needed. |
-| Insight Berkeley | Eventbrite API or scrape | Low-Med | 📋 Queued — research Eventbrite presence next |
+| Insight Berkeley | Eventbrite API | Low-Med | ✅ **Added May 1** — organizer_id: 32673197525. Wired into ingest. Currently 0 upcoming events listed; will auto-populate when they post events. Primarily day-long retreats (filter_to_sits: True). |
 | Empty Gate Zen | WordPress `?ical=1` test | Low | ⚠️ Connection failed — site may be down or blocking crawlers (Apr 29) |
 | Everyday Zen | WordPress `?ical=1` | Low | ✅ **Live** — added Apr 29. 21 events ingested (Weekly Metta Sitting, Group Recitation, All-Day Sittings, Everyday Caring). Hybrid/online focus; meets at Community Congregational Church in Tiburon. Note: EXCL_KW filter updated to title-only to avoid WordPress description noise. |
 | Metta Dharma | WordPress `?ical=1` test | Low | ❌ No iCal — `?ical=1` returns homepage HTML (different events plugin or no plugin) |
