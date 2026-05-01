@@ -92,7 +92,7 @@ CENTERS = {
         lng=-122.2637,
         neighborhood="North Berkeley",
         tradition=Tradition.THERAVADA,
-        notes="Theravada/Vipassana community. Events on Eventbrite (organizer_id: 32673197525). Primarily day-long retreats and special programs.",
+        notes="Theravada/Vipassana community. Weekly Thursday sits at Berkeley Buddhist Monastery (hybrid). Events on insightberkeley.org/events (static HTML) + Eventbrite (organizer_id: 32673197525) for day-long retreats.",
     ),
     "metta_dharma": Center(
         id="metta_dharma",
@@ -203,6 +203,10 @@ STATIC_HTML_FEEDS = {
     "berkeley_priory": {
         "url": "https://berkeleybuddhistpriory.org/calendar/",
         "filter_to_sits": False,  # Include meditation retreats and ceremonies
+    },
+    "insight_berkeley": {
+        "url": "https://www.insightberkeley.org/events",
+        "filter_to_sits": False,  # Include weekly sits + special class series
     },
 }
 

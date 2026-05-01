@@ -1,13 +1,13 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-01_
+_Last updated: 2026-05-01 (evening heartbeat)_
 
 ## Current Status
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 409+ events across 20 organizations (updated May 1)
-- Ingestion sources: 25+ iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory)
+- 105+ dynamic events across 21+ organizations (updated May 1 evening)
+- Ingestion sources: 25+ iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley)
 - Coverage: East Bay + SF + Marin
 
 ---
@@ -32,6 +32,10 @@ _Last updated: 2026-05-01_
 
 ✅ **Fixed May 1** — `ingestion/feeds/ical_feed.py` updated to fall back to first line of DESCRIPTION, then `"{org_name} Sit"` when SUMMARY is empty. Both sangha-ingest.js workaround and ical_feed.py now handle this. IMC Berkeley events will appear in next daily GH Actions ingest.
 
+### Bug: abraxis_ingest enrichment silently failing (JSON markdown fences)
+
+✅ **Fixed May 1** — `enrich_event()` in `abraxis_ingest.py` was failing to parse LLM responses because Haiku wraps JSON in markdown fences (```json...```). Added fence-stripping before `json.loads()`. Enrichment now works — location_type, identity_focus, and tradition overrides will apply correctly on next ingest.
+
 ---
 
 ### Phase 2: Non-iCal Center Scrapers
@@ -41,7 +45,7 @@ Priority order for East Bay centers not yet on live ingestion:
 | Center | Approach | Difficulty | Status |
 |--------|----------|------------|--------|
 | Nyingma Institute | Eventbrite API | Low | ✅ **Live May 1** — `ingestion/scrapers/eventbrite.py` built and tested. Returns 6 upcoming events. Wired into coordinator.py (daily ingest) + abraxis_ingest.py. Uses `__NEXT_DATA__` JSON scraping, no API key needed. |
-| Insight Berkeley | Eventbrite API | Low-Med | ✅ **Added May 1** — organizer_id: 32673197525. Wired into ingest. Currently 0 upcoming events listed; will auto-populate when they post events. Primarily day-long retreats (filter_to_sits: True). |
+| Insight Berkeley | Eventbrite API + static HTML | Low-Med | ✅ **Live May 1** — Eventbrite (organizer_id: 32673197525) for retreats + static HTML scrape of insightberkeley.org/events for weekly Thursday sits at Berkeley Buddhist Monastery (23 events through Aug 2026, hybrid). |
 | Empty Gate Zen | WordPress `?ical=1` test | Low | ⚠️ Connection failed — site may be down or blocking crawlers (Apr 29) |
 | Everyday Zen | WordPress `?ical=1` | Low | ✅ **Live** — added Apr 29. 21 events ingested (Weekly Metta Sitting, Group Recitation, All-Day Sittings, Everyday Caring). Hybrid/online focus; meets at Community Congregational Church in Tiburon. Note: EXCL_KW filter updated to title-only to avoid WordPress description noise. |
 | Metta Dharma | WordPress `?ical=1` test | Low | ❌ No iCal — `?ical=1` returns homepage HTML (different events plugin or no plugin) |
@@ -51,7 +55,7 @@ Priority order for East Bay centers not yet on live ingestion:
 
 **Scraper targets in codebase:**
 - `ingestion/scrapers/eventbrite.py` ✅ — live, Nyingma + Insight Berkeley wired in
-- `ingestion/scrapers/static_html.py` ✅ — live, Bay Zen + Berkeley Priory wired in. LLM (Claude Haiku) extracts events from arbitrary HTML calendar pages.
+- `ingestion/scrapers/static_html.py` ✅ — live, Bay Zen + Berkeley Priory + Insight Berkeley wired in. LLM (Claude Haiku) extracts events from arbitrary HTML calendar pages. Text cap: 16k chars / 4k tokens output.
 - `ingestion/utils.py` ✅ — shared classification helpers (detect_location_type, is_likely_sit)
 - `ingestion/scrapers/wordpress_events.py` — not yet created (may not be needed; static_html handles WP text calendars)
 - `ingestion/scrapers/squarespace.py` — not yet created (static_html handles Squarespace too)

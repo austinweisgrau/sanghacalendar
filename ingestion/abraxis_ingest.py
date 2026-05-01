@@ -19,6 +19,7 @@ import hashlib
 import json
 import logging
 import os
+import re
 from datetime import datetime, timezone
 
 import anthropic
@@ -72,7 +73,10 @@ Rules:
             max_tokens=150,
             messages=[{"role": "user", "content": prompt}],
         )
-        result = json.loads(msg.content[0].text.strip())
+        raw = msg.content[0].text.strip()
+        raw = re.sub(r'^```(?:json)?\s*', '', raw, flags=re.MULTILINE)
+        raw = re.sub(r'\s*```$', '', raw, flags=re.MULTILINE)
+        result = json.loads(raw)
         event.update({
             "location_type":  result.get("location_type", event.get("location_type")),
             "is_sit":         result.get("is_sit", event.get("is_sit", True)),

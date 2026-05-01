@@ -121,13 +121,13 @@ def _call_llm(page_text: str, today: str, year: int, next_year: int) -> list[dic
         today=today,
         year=year,
         next_year=next_year,
-        page_text=page_text[:8000],  # cap at 8k chars to stay within context
+        page_text=page_text[:16000],  # cap at 16k chars; Haiku handles this fine
     )
 
     try:
         msg = client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=2000,
+            max_tokens=4000,
             messages=[{"role": "user", "content": prompt}],
         )
         raw = msg.content[0].text.strip()
