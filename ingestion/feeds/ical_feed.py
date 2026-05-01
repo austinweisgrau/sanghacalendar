@@ -38,7 +38,14 @@ def fetch_feed(
     Fetch an iCal feed and return normalized Event objects.
     Uses keyword heuristics first; falls back to Claude Haiku for uncertain cases.
     """
-    resp = httpx.get(url, follow_redirects=True, timeout=15)
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/124.0.0.0 Safari/537.36"
+        )
+    }
+    resp = httpx.get(url, headers=headers, follow_redirects=True, timeout=15)
     resp.raise_for_status()
 
     cal = Calendar.from_ical(resp.content)

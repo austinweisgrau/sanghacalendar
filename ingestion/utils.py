@@ -58,10 +58,16 @@ def is_likely_sit(title: str, description: str = "") -> tuple[bool, bool]:
     """
     Heuristic sit detection. Returns (is_sit, certain).
     certain=False when no keywords matched at all (LLM should confirm).
+
+    Note: EXCLUDE_KEYWORDS are checked against title only, not description.
+    Descriptions often contain HTML/WordPress shortcodes with words like "class"
+    that would cause false negatives if we searched the full text.
+    SIT_KEYWORDS are checked against title + description to maximize recall.
     """
-    text = (title + " " + description).lower()
-    has_sit = any(kw in text for kw in SIT_KEYWORDS)
-    has_exclude = any(kw in text for kw in EXCLUDE_KEYWORDS)
+    full_text = (title + " " + description).lower()
+    title_lower = title.lower()
+    has_sit = any(kw in full_text for kw in SIT_KEYWORDS)
+    has_exclude = any(kw in title_lower for kw in EXCLUDE_KEYWORDS)
     if has_exclude:
         return False, True
     if has_sit:
