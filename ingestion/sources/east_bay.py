@@ -134,6 +134,21 @@ CENTERS = {
         lng=-122.2286,
         neighborhood="Grand Lake",
         tradition=Tradition.ZEN,
+        notes="Ordinary Mind Zen School lineage. Weekly zazen: Mon 7am Zoom, Wed 6:30pm hybrid, Sat 8:30am hybrid. Special events on Squarespace calendar.",
+    ),
+    "berkeley_priory": Center(
+        id="berkeley_priory",
+        name="Berkeley Buddhist Priory",
+        url="https://berkeleybuddhistpriory.org",
+        address="1358 Marin Ave",
+        city="Berkeley",
+        state="CA",
+        zip_code="94707",
+        lat=37.8896,
+        lng=-122.2714,
+        neighborhood="North Berkeley",
+        tradition=Tradition.ZEN,
+        notes="Order of Buddhist Contemplatives (Soto Zen). Daily schedule of sits + services Tue–Sun. Monthly meditation retreats and special ceremonies. Events on WordPress calendar.",
     ),
     "spirit_rock": Center(
         id="spirit_rock",
@@ -175,6 +190,19 @@ EVENTBRITE_FEEDS = {
     "insight_berkeley": {
         "organizer_id": "32673197525",
         "filter_to_sits": True,  # Primarily day-long retreats — filter to actual sits
+    },
+}
+
+
+# Static HTML calendar configs for Phase 2 LLM-assisted scrapers
+STATIC_HTML_FEEDS = {
+    "bay_zen": {
+        "url": "https://bayzen.org/calendar",
+        "filter_to_sits": False,  # Include sesshin and zazenkai (extended sitting retreats)
+    },
+    "berkeley_priory": {
+        "url": "https://berkeleybuddhistpriory.org/calendar/",
+        "filter_to_sits": False,  # Include meditation retreats and ceremonies
     },
 }
 
