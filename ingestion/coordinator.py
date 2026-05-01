@@ -17,7 +17,8 @@ import logging
 from data.schemas.event import Event
 from data.store import init_db, upsert_events
 from ingestion.feeds.ical_feed import fetch_feed
-from ingestion.sources.east_bay import CENTERS, ICAL_FEEDS
+from ingestion.scrapers.eventbrite import fetch_eventbrite_organizer
+from ingestion.sources.east_bay import CENTERS, EVENTBRITE_FEEDS, ICAL_FEEDS
 
 log = logging.getLogger(__name__)
 
@@ -51,11 +52,40 @@ def run_east_bay_phase1() -> list[Event]:
     return all_events
 
 
+def run_east_bay_phase2() -> list[Event]:
+    """Phase 2: Eventbrite scrapers for non-iCal centers."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in EVENTBRITE_FEEDS.items():
+        center = CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Eventbrite)...")
+        try:
+            events = fetch_eventbrite_organizer(
+                organizer_id=feed_cfg["organizer_id"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
     init_db()
-    events = run_east_bay_phase1()
+    events = run_east_bay_phase1() + run_east_bay_phase2()
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
 

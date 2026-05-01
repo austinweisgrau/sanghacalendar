@@ -52,6 +52,20 @@ CENTERS = {
     ),
 
     # Phase 2 — Eventbrite / light scrape
+    "nyingma_institute": Center(
+        id="nyingma_institute",
+        name="Nyingma Institute",
+        url="https://www.nyingmainstitute.com",
+        address="1815 Highland Pl",
+        city="Berkeley",
+        state="CA",
+        zip_code="94709",
+        lat=37.8781,
+        lng=-122.2607,
+        neighborhood="North Berkeley",
+        tradition=Tradition.TIBETAN,
+        notes="Tibetan Buddhist institute. Daily Kum Nye, Women's Meditation Group, Sunday Dharma Talks. Events on Eventbrite (organizer_id: 336367203).",
+    ),
     "empty_gate_zen": Center(
         id="empty_gate_zen",
         name="Empty Gate Zen Center",
@@ -148,6 +162,15 @@ CENTERS = {
         tradition=Tradition.ZEN,
         notes="Soto Zen lineage (Norman Fischer). Weekly Metta Sittings, sutra recitation, all-day sittings. Meets at Community Congregational Church in Tiburon; many events hybrid or online.",
     ),
+}
+
+
+# Eventbrite organizer configs for Phase 2 scrapers
+EVENTBRITE_FEEDS = {
+    "nyingma_institute": {
+        "organizer_id": "336367203",
+        "filter_to_sits": False,  # Include all events (Dharma talks, classes, sittings)
+    },
 }
 
 

@@ -4,78 +4,16 @@ Handles filtering to actual meditation sits via keyword matching + LLM fallback.
 """
 
 import hashlib
+import re
 from datetime import datetime, timezone
 from typing import Optional
-from urllib.parse import urlparse
 
 import httpx
 from icalendar import Calendar
 
 from data.schemas.event import Event, LocationType, SourceType, Tradition
 from ingestion.llm_classifier import classify_event
-
-
-# Keywords that strongly suggest a meditation sit
-SIT_KEYWORDS = [
-    "sit", "zazen", "sitting", "meditation", "vipassana", "samadhi",
-    "open practice", "drop-in", "morning sit", "evening sit", "daily sit",
-    "meditation group", "sangha sit",
-]
-
-# Keywords that disqualify (talks, workshops, multi-day retreats, etc.)
-EXCLUDE_KEYWORDS = [
-    "retreat", "sesshin", "workshop", "dharma talk", "lecture", "seminar",
-    "course", "class", "training", "daylong", "ceremony", "social",
-    "book club", "study group", "teacher training", "orientation",
-]
-
-ONLINE_KEYWORDS = [
-    "online", "virtual", "zoom", "webinar", "livestream", "live stream",
-    "google meet", "teams", "remote", "via zoom", "via google",
-]
-
-HYBRID_KEYWORDS = ["hybrid", "in-person and online", "online and in-person"]
-
-
-def detect_location_type(
-    title: str,
-    description: str = "",
-    location: str = "",
-    event_url: str = "",
-) -> tuple[LocationType, bool]:
-    """
-    Heuristic location detection. Returns (LocationType, certain).
-    certain=False means no positive signal was found — LLM should be consulted.
-    """
-    # Also scan the URL slug — catches "online-midday-sangha" style naming
-    url_slug = urlparse(event_url).path.lower() if event_url else ""
-    text = (title + " " + description + " " + location + " " + url_slug).lower()
-
-    if any(kw in text for kw in HYBRID_KEYWORDS):
-        return LocationType.HYBRID, True
-    # Zoom/Meet/Teams URL in LOCATION field is a definitive online signal
-    if any(kw in location.lower() for kw in ("zoom.us", "meet.google", "teams.microsoft")):
-        return LocationType.ONLINE, True
-    if any(kw in text for kw in ONLINE_KEYWORDS):
-        return LocationType.ONLINE, True
-
-    # No positive signal — default in-person but flag as uncertain
-    return LocationType.IN_PERSON, False
-
-
-def is_likely_sit(title: str, description: str = "") -> tuple[bool, bool]:
-    """
-    Heuristic sit detection. Returns (is_sit, certain).
-    certain=False when no keywords matched at all (LLM should confirm).
-    """
-    text = (title + " " + description).lower()
-    has_sit = any(kw in text for kw in SIT_KEYWORDS)
-    has_exclude = any(kw in text for kw in EXCLUDE_KEYWORDS)
-    if has_exclude:
-        return False, True
-    if has_sit:
-        return True, True
-    return True, False  # no signal — optimistically include, but uncertain
+from ingestion.utils import detect_location_type, is_likely_sit
 
 
 def event_id(org_id: str, title: str, start: str) -> str:
@@ -117,8 +55,15 @@ def fetch_feed(
         dtend       = component.get("DTEND")
         event_url   = str(component.get("URL", "")) or None
 
-        if not title or not dtstart:
+        if not dtstart:
             continue
+
+        # Fallback for feeds that omit SUMMARY (e.g. IMC Berkeley Google Calendar exports)
+        if not title:
+            raw_desc = str(component.get("DESCRIPTION", ""))
+            clean = re.sub(r'<[^>]+>', ' ', raw_desc).strip()
+            first_line = clean.split('\n')[0][:80].strip() if clean else ""
+            title = first_line or f"{org_name} Sit"
 
         # Normalize to UTC ISO string (ends in +00:00) so the same event always
         # hashes to the same ID regardless of whether the feed uses TZID or Z.

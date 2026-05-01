@@ -25,7 +25,8 @@ import anthropic
 import httpx
 
 from ingestion.feeds.ical_feed import fetch_feed
-from ingestion.sources.east_bay import CENTERS, ICAL_FEEDS
+from ingestion.scrapers.eventbrite import fetch_eventbrite_organizer
+from ingestion.sources.east_bay import CENTERS, EVENTBRITE_FEEDS, ICAL_FEEDS
 
 log = logging.getLogger(__name__)
 
@@ -122,6 +123,28 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Feed failed: {e}")
+
+    for org_id, feed_cfg in EVENTBRITE_FEEDS.items():
+        center = CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Eventbrite)...")
+        try:
+            events = fetch_eventbrite_organizer(
+                organizer_id=feed_cfg["organizer_id"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Eventbrite feed failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []
