@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-04-30_
+_Last updated: 2026-05-01_
 
 ## Current Status
 
@@ -30,25 +30,7 @@ _Last updated: 2026-04-30_
 
 ### Bug: IMC Berkeley — missing events (iCal SUMMARY field empty)
 
-**File:** `ingestion/feeds/ical_feed.py` line ~120
-**Issue:** IMC Berkeley's Google Calendar exports events without `SUMMARY` fields. Current code silently drops any event with an empty title. Result: all IMC Berkeley events absent from calendar despite a valid, active iCal feed.
-**Affected events:**
-- Introductory Meditation Series (five Mondays Apr 20–May 18, 2026, 7–8:30pm)
-- Monday Evening Sangha (recurring weekly from May 25 onward)
-
-**Fix:** When `SUMMARY` is empty, fall back to first line of `DESCRIPTION`, then fall back to `"{org_name} Sit"`:
-
-```python
-title = str(component.get("SUMMARY", "")).strip()
-if not title:
-    import re
-    raw_desc = str(component.get("DESCRIPTION", ""))
-    clean = re.sub(r'<[^>]+>', ' ', raw_desc).strip()
-    first_line = clean.split('\n')[0][:80].strip() if clean else ""
-    title = first_line or f"{org_name} Sit"
-```
-
-**Status:** Workaround applied in `scripts/sangha-ingest.js` (Apr 29). Fix still needed in `ingestion/feeds/ical_feed.py` (used by GitHub Actions daily ingest).
+✅ **Fixed May 1** — `ingestion/feeds/ical_feed.py` updated to fall back to first line of DESCRIPTION, then `"{org_name} Sit"` when SUMMARY is empty. Both sangha-ingest.js workaround and ical_feed.py now handle this. IMC Berkeley events will appear in next daily GH Actions ingest.
 
 ---
 
@@ -58,8 +40,8 @@ Priority order for East Bay centers not yet on live ingestion:
 
 | Center | Approach | Difficulty | Status |
 |--------|----------|------------|--------|
-| Nyingma Institute | Eventbrite API | Low | 📋 Queued — **organizer_id: 336367203** (confirmed Apr 30). 11 upcoming events incl. Daily Kum Nye (recurring monthly), Women's Meditation Group (weekly Sun), Sunday Dharma Talks (weekly Sun). Website has no iCal. Eventbrite page scrape or API via organizer ID. |
-| Insight Berkeley | Eventbrite API or scrape | Low-Med | 📋 Queued |
+| Nyingma Institute | Eventbrite API | Low | ✅ **Live May 1** — `ingestion/scrapers/eventbrite.py` built and tested. Returns 6 upcoming events. Wired into coordinator.py (daily ingest) + abraxis_ingest.py. Uses `__NEXT_DATA__` JSON scraping, no API key needed. |
+| Insight Berkeley | Eventbrite API or scrape | Low-Med | 📋 Queued — research Eventbrite presence next |
 | Empty Gate Zen | WordPress `?ical=1` test | Low | ⚠️ Connection failed — site may be down or blocking crawlers (Apr 29) |
 | Everyday Zen | WordPress `?ical=1` | Low | ✅ **Live** — added Apr 29. 21 events ingested (Weekly Metta Sitting, Group Recitation, All-Day Sittings, Everyday Caring). Hybrid/online focus; meets at Community Congregational Church in Tiburon. Note: EXCL_KW filter updated to title-only to avoid WordPress description noise. |
 | Metta Dharma | WordPress `?ical=1` test | Low | ❌ No iCal — `?ical=1` returns homepage HTML (different events plugin or no plugin) |
@@ -67,11 +49,12 @@ Priority order for East Bay centers not yet on live ingestion:
 | Berkeley Priory | LLM-assisted HTML scrape | Med | 📋 Queued |
 | Berkeley Buddhist Monastery | LLM-assisted HTML scrape | Med | 📋 Queued |
 
-**Scraper targets already in codebase (stubs):**
-- `ingestion/scrapers/eventbrite.py`
-- `ingestion/scrapers/wordpress_events.py`
-- `ingestion/scrapers/squarespace.py`
-- `ingestion/scrapers/static_html.py`
+**Scraper targets in codebase:**
+- `ingestion/scrapers/eventbrite.py` ✅ — live, Nyingma Institute wired in
+- `ingestion/utils.py` ✅ — shared classification helpers (detect_location_type, is_likely_sit)
+- `ingestion/scrapers/wordpress_events.py` — not yet created
+- `ingestion/scrapers/squarespace.py` — not yet created
+- `ingestion/scrapers/static_html.py` — not yet created
 
 ---
 
