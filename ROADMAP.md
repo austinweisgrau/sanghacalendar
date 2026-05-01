@@ -6,8 +6,8 @@ _Last updated: 2026-05-01_
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 409 events across 18 organizations (updated Apr 30)
-- Ingestion sources: 25+ iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic)
+- 409+ events across 20 organizations (updated May 1)
+- Ingestion sources: 25+ iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory)
 - Coverage: East Bay + SF + Marin
 
 ---
@@ -45,16 +45,16 @@ Priority order for East Bay centers not yet on live ingestion:
 | Empty Gate Zen | WordPress `?ical=1` test | Low | ⚠️ Connection failed — site may be down or blocking crawlers (Apr 29) |
 | Everyday Zen | WordPress `?ical=1` | Low | ✅ **Live** — added Apr 29. 21 events ingested (Weekly Metta Sitting, Group Recitation, All-Day Sittings, Everyday Caring). Hybrid/online focus; meets at Community Congregational Church in Tiburon. Note: EXCL_KW filter updated to title-only to avoid WordPress description noise. |
 | Metta Dharma | WordPress `?ical=1` test | Low | ❌ No iCal — `?ical=1` returns homepage HTML (different events plugin or no plugin) |
-| Bay Zen | LLM-assisted HTML scrape | Med | 📋 Queued |
-| Berkeley Priory | LLM-assisted HTML scrape | Med | 📋 Queued |
-| Berkeley Buddhist Monastery | LLM-assisted HTML scrape | Med | 📋 Queued |
+| Bay Zen | LLM-assisted HTML scrape | Med | ✅ **Live May 1** — Squarespace calendar. 4 upcoming events (2 sesshin, 2 zazenkai). Wired into coordinator.py + abraxis_ingest.py. |
+| Berkeley Priory | LLM-assisted HTML scrape | Med | ✅ **Live May 1** — WordPress text calendar. 19 upcoming events (meditations, retreats, ceremonies through Jul 2026). OBC Soto Zen. |
+| Berkeley Buddhist Monastery | LLM-assisted HTML scrape | Med | ⏸ Lower priority — primarily online (Zoom/YouTube). James Baraz Thursday Insight Meditation and Steven Tainer Wednesday sits are real in-person events but may be at BBM. Research needed. |
 
 **Scraper targets in codebase:**
-- `ingestion/scrapers/eventbrite.py` ✅ — live, Nyingma Institute wired in
+- `ingestion/scrapers/eventbrite.py` ✅ — live, Nyingma + Insight Berkeley wired in
+- `ingestion/scrapers/static_html.py` ✅ — live, Bay Zen + Berkeley Priory wired in. LLM (Claude Haiku) extracts events from arbitrary HTML calendar pages.
 - `ingestion/utils.py` ✅ — shared classification helpers (detect_location_type, is_likely_sit)
-- `ingestion/scrapers/wordpress_events.py` — not yet created
-- `ingestion/scrapers/squarespace.py` — not yet created
-- `ingestion/scrapers/static_html.py` — not yet created
+- `ingestion/scrapers/wordpress_events.py` — not yet created (may not be needed; static_html handles WP text calendars)
+- `ingestion/scrapers/squarespace.py` — not yet created (static_html handles Squarespace too)
 
 ---
 
