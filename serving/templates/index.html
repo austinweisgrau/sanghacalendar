@@ -40,6 +40,7 @@
     }
     .header h1 { font-size: 1.7rem; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
     .header p  { font-size: 0.9rem; opacity: 0.82; max-width: 500px; margin: 0 auto 1.25rem; }
+    .header-btns { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
 
     .gcal-btn {
       display: inline-flex;
@@ -246,12 +247,20 @@
 <div class="header">
   <h1>Sangha Calendar</h1>
   <p>Every in-person meditation sit in the Bay Area, in one place.</p>
-  <a class="gcal-btn disabled" href="#" title="Coming soon">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-    </svg>
-    Subscribe to Google Calendar (coming soon)
-  </a>
+  <div class="header-btns">
+    <a class="gcal-btn" id="gcal-btn" href="#" target="_blank" rel="noopener" title="Subscribe in Google Calendar">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+      Subscribe (Google Calendar)
+    </a>
+    <a class="gcal-btn" id="webcal-btn" href="#" title="Subscribe in Apple Calendar / iCal">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+      </svg>
+      Subscribe (Apple Calendar)
+    </a>
+  </div>
 </div>
 
 <div class="main">
@@ -381,14 +390,13 @@ function onDateWindowChange() {
   }
 }
 
-async function loadEvents() {
+function buildFeedParams() {
   const cities        = Array.from(document.querySelectorAll("#city-dropdown input:checked")).map(el => el.value);
   const tradition     = document.getElementById("filter-tradition").value;
   const location_type = document.getElementById("filter-location").value;
   const window_val    = document.getElementById("filter-date-window").value;
   const start_date    = document.getElementById("filter-start-date").value;
   const end_date      = document.getElementById("filter-end-date").value;
-
   const params = new URLSearchParams();
   cities.forEach(c => params.append("city", c));
   if (tradition)     params.set("tradition", tradition);
@@ -399,6 +407,20 @@ async function loadEvents() {
   } else {
     params.set("days", window_val);
   }
+  return params;
+}
+
+function updateSubscribeButtons(params) {
+  const icsUrl    = `https://sangha-calendar.fly.dev/feed.ics?${params}`;
+  const webcalUrl = icsUrl.replace(/^https:\/\//, "webcal://");
+  const gcalUrl   = `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(icsUrl)}`;
+  document.getElementById("gcal-btn").href   = gcalUrl;
+  document.getElementById("webcal-btn").href = webcalUrl;
+}
+
+async function loadEvents() {
+  const params = buildFeedParams();
+  updateSubscribeButtons(params);
 
   const calEl = document.getElementById("calendar");
   calEl.innerHTML = '<div class="loading">Loading…</div>';
