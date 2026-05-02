@@ -220,6 +220,20 @@ CENTERS = {
         tradition=Tradition.ZEN,
         notes="Soto Zen lineage (Norman Fischer). Weekly Metta Sittings, sutra recitation, all-day sittings. Meets at Community Congregational Church in Tiburon; many events hybrid or online.",
     ),
+    "dharmata_foundation": Center(
+        id="dharmata_foundation",
+        name="Dharmata Foundation",
+        url="https://dharmata.org",
+        address="235 Washington Ave",
+        city="Richmond",
+        state="CA",
+        zip_code="94801",
+        lat=37.9045,
+        lng=-122.3795,
+        neighborhood="Point Richmond",
+        tradition=Tradition.TIBETAN,
+        notes="Nyingma Tibetan Buddhist center founded by Anam Thubten Rinpoche. Bi-weekly Sunday morning meditation + teaching (1 hr meditation, 1 hr DVD teaching). Public Google Calendar with Bay Area events.",
+    ),
 }
 
 
@@ -284,5 +298,12 @@ ICAL_FEEDS = {
     "everyday_zen": {
         "url": "https://everydayzen.org/?ical=1",
         "filter_to_sits": True,
+    },
+    "dharmata_foundation": {
+        # Public Google Calendar — Bay Area events feed
+        # Bi-weekly Sunday meditation + DVD teachings with Anam Thubten at Dhyana Hall
+        # filter_to_sits=False to include all events; enrichment will classify
+        "url": "https://calendar.google.com/calendar/ical/dharmata.org_ehe43bjd6alcu4chnp204m6it8%40group.calendar.google.com/public/basic.ics",
+        "filter_to_sits": False,
     },
 }
