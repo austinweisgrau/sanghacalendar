@@ -1,13 +1,13 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-01 (late heartbeat)_
+_Last updated: 2026-05-02 (dev heartbeat)_
 
 ## Current Status
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 105+ dynamic events across 21+ organizations (updated May 1 evening)
-- Ingestion sources: 25+ iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley)
+- 624+ recurring sit instances + dynamic events across 25+ organizations (updated May 2)
+- Ingestion sources: 27 iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley)
 - Coverage: East Bay + SF + Marin
 
 ---
@@ -51,7 +51,20 @@ Priority order for East Bay centers not yet on live ingestion:
 | Metta Dharma | WordPress `?ical=1` test | Low | ❌ No iCal — `?ical=1` returns homepage HTML (different events plugin or no plugin) |
 | Bay Zen | LLM-assisted HTML scrape | Med | ✅ **Live May 1** — Squarespace calendar. 4 upcoming events (2 sesshin, 2 zazenkai). Wired into coordinator.py + abraxis_ingest.py. |
 | Berkeley Priory | LLM-assisted HTML scrape | Med | ✅ **Live May 1** — WordPress text calendar. 19 upcoming events (meditations, retreats, ceremonies through Jul 2026). OBC Soto Zen. |
-| Berkeley Buddhist Monastery | LLM-assisted HTML scrape | Med | ⏸ Lower priority — primarily online (Zoom/YouTube). James Baraz Thursday Insight Meditation and Steven Tainer Wednesday sits are real in-person events but may be at BBM. Research needed. |
+| Berkeley Buddhist Monastery | Research complete | — | ✅ **No action needed** — James Baraz Thursday sits are covered via Insight Berkeley (insightberkeley.org). Steven Tainer Wednesday sits are Zoom-only (series ends May 13). BBM's own site is Weebly with broken/JS-rendered calendar. Daily sits (Thu/Fri 6:15am, daily 5:15pm) already seeded as recurring. |
+| Berkeley Zen Center | iCal feed + recurring sits | — | ✅ **Live May 2** — `/my-calendar-ics/` feed (18 special events: sesshins, half-day sittings, dharma talks). Daily zazen seeded as recurring (Mon–Sat 6am, Mon–Fri 5:40pm, Wed 7:10pm drop-in). One of most historically significant Soto Zen centers in North America. |
+| Orgyen Dorje Den | iCal feed | Low | ✅ **Live May 2** — `?ical=1&eventDisplay=list` (30 events, 3-month window). In-person: monthly Dakini Day Tsog + Guru Rinpoche Day Tsog at 2244 Santa Clara Ave, Alameda. Most events are Zoom livestreams. Nyingma Tibetan. |
+| Ewam Choden | Recurring sit | Low | ✅ **Live May 2** — Weekly Sunday 10am sit seeded. Oldest Tibetan Buddhist center in Western hemisphere (1971, Sakya). No structured calendar online. |
+| IMC New Berkeley Monday Group | Recurring sit | Low | ✅ **Live May 2** — Weekly Monday 7pm sit seeded at Berkeley Finnish Hall (1970 Chestnut St). New satellite group of IMC; intro class through May 18, open sitting from May 25. |
+
+**Remaining research targets (lower priority):**
+
+| Center | Notes |
+|--------|-------|
+| Dharmata Foundation (Richmond) | Anam Thubten, bi-weekly Sunday meditation. Humanitix ticketing — similar scrape to Eventbrite. Events page: dharmata.org/events-calendar/ |
+| Karuna Buddhist Vihara (Berkeley) | Monthly 2nd Saturday 3pm at 1438 Neilson St. Static site, low volume — could seed as monthly recurring. |
+| Berkeley Buddhist Vihara | Sri Lankan Theravada. Events page at berkeleyvihara.org/events/ — unclear if meditation-sit focus. |
+| Mount Diablo Zen Group (Pleasant Hill) | Weekly Wed 7pm zazen. Outer East Bay geography. |
 
 **Scraper targets in codebase:**
 - `ingestion/scrapers/eventbrite.py` ✅ — live, Nyingma + Insight Berkeley wired in

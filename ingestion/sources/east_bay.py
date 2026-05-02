@@ -164,6 +164,48 @@ CENTERS = {
         tradition=Tradition.THERAVADA,
         notes="Weekly drop-in meditation groups. Slightly outside East Bay.",
     ),
+    "orgyen_dorje_den": Center(
+        id="orgyen_dorje_den",
+        name="Orgyen Dorje Den",
+        url="https://www.orgyendorjeden.org",
+        address="2244 Santa Clara Ave",
+        city="Alameda",
+        state="CA",
+        zip_code="94501",
+        lat=37.7648,
+        lng=-122.2476,
+        neighborhood="Alameda",
+        tradition=Tradition.TIBETAN,
+        notes="Nyingma Tibetan Buddhist center founded by Gyatrul Rinpoche. In-person practices: monthly Dakini Day Tsog and Guru Rinpoche Day Tsog. Most other practices are livestreamed via Zoom.",
+    ),
+    "berkeley_zen_center": Center(
+        id="berkeley_zen_center",
+        name="Berkeley Zen Center",
+        url="https://berkeleyzencenter.org",
+        address="1931 Russell St",
+        city="Berkeley",
+        state="CA",
+        zip_code="94703",
+        lat=37.8582,
+        lng=-122.2705,
+        neighborhood="South Berkeley",
+        tradition=Tradition.ZEN,
+        notes="Soto Zen center founded 1967 by Sojun Mel Weitsman Roshi and Shunryu Suzuki Roshi. Current teachers Linda Roshi and Greg Fain. Daily zazen Mon–Sat. Special events (dharma talks, sesshins, half-day sittings) in My Calendar plugin at /my-calendar-ics/.",
+    ),
+    "ewam_choden": Center(
+        id="ewam_choden",
+        name="Ewam Choden Tibetan Buddhist Center",
+        url="https://www.ewamchoden.org",
+        address="254 Cambridge Ave",
+        city="Kensington",
+        state="CA",
+        zip_code="94708",
+        lat=37.9024,
+        lng=-122.2694,
+        neighborhood="Kensington",
+        tradition=Tradition.TIBETAN,
+        notes="Sakya Tibetan Buddhist center, oldest Tibetan Buddhist center in the Western hemisphere, founded 1971 by Lama Kunga Rinpoche. Weekly Sunday public meditation 10–11:30am. Also hosts empowerments and teachings.",
+    ),
     "everyday_zen": Center(
         id="everyday_zen",
         name="Everyday Zen Foundation",
@@ -213,6 +255,22 @@ STATIC_HTML_FEEDS = {
 
 # Feed configurations for Phase 1 direct-subscribe centers
 ICAL_FEEDS = {
+    "orgyen_dorje_den": {
+        # The Events Calendar plugin — ?ical=1&eventDisplay=list gives 90-day window
+        # Note: most events are "Live Streamed" (Zoom-only). In-person events are
+        # monthly Dakini Day Tsog and Guru Rinpoche Day Tsog at 2244 Santa Clara Ave.
+        # filter_to_sits=False to include all community practices; enrichment will
+        # classify location_type correctly (LOCATION field distinguishes in-person vs Zoom).
+        "url": "https://www.orgyendorjeden.org/?ical=1&eventDisplay=list",
+        "filter_to_sits": False,
+    },
+    "berkeley_zen_center": {
+        # My Calendar plugin — /my-calendar-ics/ returns special events (sesshins,
+        # half-day sittings, dharma talks). Daily zazen is seeded separately as recurring.
+        # Site has intermittent 500 errors on HTML pages but iCal endpoint stays up.
+        "url": "https://berkeleyzencenter.org/my-calendar-ics/",
+        "filter_to_sits": False,
+    },
     "imc_berkeley": {
         "url": "https://calendar.google.com/calendar/ical/f2671ba813e15027485f84235a37074c4d3a113cc0135f83f46212744f55dc09%40group.calendar.google.com/public/basic.ics",
         "filter_to_sits": True,
