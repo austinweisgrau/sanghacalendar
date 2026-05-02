@@ -1,16 +1,17 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-02 (heartbeat)_
+_Last updated: 2026-05-03 (heartbeat)_
 
 ## Current Status
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 500+ events in 60-day window, 21+ organizations (verified May 2 — 500 is API default limit)
-- Dharmata Foundation added May 2 — will appear in May 4 weekly ingest
+- 500+ events in 60-day window, 27+ organizations (verified May 3 — 500 is API default limit)
+- 640 manual recurring sit instances seeded May 3 (27 sit definitions)
+- Mount Diablo Zen Group + Karuna Berkeley added May 3; Dharmata Foundation added May 2 — will appear in May 4 weekly iCal ingest
 - Orgyen Dorje Den wired but 0 visible sits (tsog rituals classified as non-sits — see Active Work note)
-- Ingestion sources: 27 iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley)
-- Coverage: East Bay + SF + Marin
+- Ingestion sources: 27 iCal feeds + manually-seeded recurring sits (27 definitions) + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley)
+- Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin
 
 ---
 
@@ -64,9 +65,9 @@ Priority order for East Bay centers not yet on live ingestion:
 | Center | Notes |
 |--------|-------|
 | Dharmata Foundation (Richmond) | ✅ **Added May 2** — Public Google Calendar iCal feed. 10 upcoming events: monthly Anam Thubten teachings (hybrid in-person + Zoom), occasional retreats. Will appear in next weekly ingest (Mon May 4). |
-| Karuna Buddhist Vihara (Berkeley) | Monthly 2nd Saturday 3pm at 1438 Neilson St. Static site, low volume — could seed as monthly recurring. |
-| Berkeley Buddhist Vihara | Sri Lankan Theravada. Events page at berkeleyvihara.org/events/ — unclear if meditation-sit focus. |
-| Mount Diablo Zen Group (Pleasant Hill) | Weekly Wed 7pm zazen. Outer East Bay geography. |
+| Karuna Buddhist Vihara — East Bay (Berkeley) | ✅ **Added May 3** — Monthly Saturday sits (mostly 2nd Saturday) at 1438 Neilson St, Berkeley (Westbrae). 3–5pm, guided meditation + Dhammapada reading/discussion. Hybrid in-person + Zoom. Specific 2026 dates seeded (karunabv.org/eastbay-dhamma.html). Needs annual date refresh (dates published on their site each year). |
+| Mount Diablo Zen Group (Pleasant Hill) | ✅ **Added May 3** — Weekly Wednesday 7pm hybrid zazen. 404 Gregory Lane, Room 9, Pleasant Hill. Soto Zen (SZBA member). In-person 1st/3rd/5th Wednesdays, Zoom 2nd/4th Wednesdays. Drop-in, free. |
+| Berkeley Buddhist Vihara | ❌ **Skip** — Sri Lankan Theravada temple at 6200 Columbia Ave, Richmond. Functions primarily as a community temple (puja services, children's Sinhala school, ceremonies). No public meditation sits offered to general public. |
 
 **Scraper targets in codebase:**
 - `ingestion/scrapers/eventbrite.py` ✅ — live, Nyingma + Insight Berkeley wired in
