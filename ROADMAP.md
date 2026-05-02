@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-03 (heartbeat)_
+_Last updated: 2026-05-04 (heartbeat)_
 
 ## Current Status
 
@@ -120,10 +120,8 @@ Goal: submit a URL (or just a city name) and get back a list of verified, normal
 
 ## Phase 5 — Public Launch Features
 
-- [ ] **ICS subscription URLs** — personalized by filter (tradition, city, location type, day)
-  - e.g., `sangha-calendar.fly.dev/subscribe?tradition=zen&city=Oakland`
-  - Requires stable feed endpoint serving valid iCal
-- [ ] **GCal / Apple Calendar deep links** — one-click add-to-calendar
+- [x] **ICS subscription URLs** — `/feed.ics` with same filter params as `/api/events` (city, tradition, location_type, days). Calendar name adapts to active filters. ✅ **Live May 4**
+- [x] **GCal / Apple Calendar deep links** — Subscribe buttons in header, update dynamically as filters change. GCal uses `?cid=` deep link; Apple Calendar uses `webcal://`. ✅ **Live May 4**
 - [ ] **Map view** — pin all centers, click for upcoming sits
 - [ ] **Email digest** — weekly "sits near you" for subscribers
 - [ ] **Donate button** — ko-fi or similar; this is free forever but costs ~$2/mo
