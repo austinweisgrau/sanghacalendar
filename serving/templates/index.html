@@ -229,11 +229,55 @@
     /* ── Footer ── */
     .footer {
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 1.5rem 1rem 2rem;
       font-size: 0.77rem;
       color: var(--muted);
       border-top: 1px solid var(--border);
     }
+
+    /* ── Subscribe digest form ── */
+    .digest-signup {
+      max-width: 380px;
+      margin: 1.25rem auto 0;
+      padding: 1rem 1.25rem;
+      background: var(--accent-light);
+      border: 1px solid #c4ddd0;
+      border-radius: 8px;
+      text-align: left;
+    }
+    .digest-signup p {
+      font-size: 0.8rem;
+      color: #2a4a3a;
+      margin-bottom: 0.6rem;
+    }
+    .digest-row {
+      display: flex;
+      gap: 0.4rem;
+    }
+    .digest-row input[type="email"] {
+      flex: 1;
+      padding: 0.4rem 0.7rem;
+      border: 1px solid var(--border);
+      border-radius: 2rem;
+      font-size: 0.82rem;
+      background: white;
+      color: var(--text);
+      outline: none;
+    }
+    .digest-row input[type="email"]:focus { border-color: var(--accent); }
+    .digest-row button {
+      padding: 0.4rem 1rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 2rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .digest-row button:hover { background: #3a5a4e; }
+    .digest-msg { font-size: 0.78rem; margin-top: 0.4rem; }
 
     .loading { text-align: center; padding: 3rem; color: var(--muted); }
 
@@ -327,6 +371,14 @@
 
 <div class="footer">
   Updated daily &nbsp;·&nbsp; <a href="/submit" style="color:inherit">Submit a center</a> &nbsp;·&nbsp; <a href="https://github.com/austinweisgrau/sanghacalendar" style="color:inherit">GitHub</a> &nbsp;·&nbsp; <a href="https://ko-fi.com/sanghacalendar" target="_blank" rel="noopener" style="color:inherit">Support this project ☕</a>
+  <div class="digest-signup">
+    <p><strong>Weekly digest</strong> — get this week's sits in your inbox every Monday morning.</p>
+    <div class="digest-row">
+      <input type="email" id="digest-email" placeholder="your@email.com" autocomplete="email">
+      <button onclick="digestSignup()">Subscribe</button>
+    </div>
+    <div class="digest-msg" id="digest-msg"></div>
+  </div>
 </div>
 
 <script>
@@ -501,6 +553,38 @@ async function loadEvents() {
 }
 
 loadEvents();
+
+async function digestSignup() {
+  const email = document.getElementById("digest-email").value.trim();
+  const msg   = document.getElementById("digest-msg");
+  if (!email) { msg.textContent = "Please enter your email."; msg.style.color = "#c04040"; return; }
+
+  // Pass the currently-active city/tradition filters as preferences
+  const cities    = Array.from(document.querySelectorAll("#city-dropdown input:checked")).map(el => el.value);
+  const tradition = document.getElementById("filter-tradition").value || null;
+
+  try {
+    const res = await fetch("/api/subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, cities: cities.length ? cities : null, tradition }),
+    });
+    const data = await res.json();
+    if (res.ok) {
+      msg.textContent = data.message === "already subscribed"
+        ? "You're already subscribed!"
+        : "Subscribed! You'll get your first digest next Monday.";
+      msg.style.color = "#2a6a4a";
+      document.getElementById("digest-email").value = "";
+    } else {
+      msg.textContent = data.error || "Something went wrong.";
+      msg.style.color = "#c04040";
+    }
+  } catch {
+    msg.textContent = "Network error — please try again.";
+    msg.style.color = "#c04040";
+  }
+}
 </script>
 </body>
 </html>

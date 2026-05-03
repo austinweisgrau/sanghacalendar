@@ -11,7 +11,16 @@ from flask import Flask, Response, abort, jsonify, render_template, request
 from icalendar import Calendar as ICalCalendar
 from icalendar import Event as ICalEvent
 
-from data.store import add_submission, get_submissions, get_upcoming_events, init_db, upsert_dicts
+from data.store import (
+    add_submission,
+    add_subscriber,
+    get_active_subscribers,
+    get_submissions,
+    get_upcoming_events,
+    init_db,
+    unsubscribe_by_token,
+    upsert_dicts,
+)
 from serving.centers import CENTERS
 
 BASE_URL = os.environ.get("BASE_URL", "https://sangha-calendar.fly.dev")
@@ -216,6 +225,56 @@ def admin_submissions():
     if not INGEST_TOKEN or auth != f"Bearer {INGEST_TOKEN}":
         return jsonify({"error": "unauthorized"}), 401
     return jsonify(get_submissions())
+
+
+@app.route("/api/subscribe", methods=["POST"])
+def subscribe():
+    body = request.get_json(silent=True)
+    if not body or not body.get("email"):
+        return jsonify({"error": "email is required"}), 400
+    cities = body.get("cities")
+    if cities and not isinstance(cities, list):
+        return jsonify({"error": "cities must be an array"}), 400
+    tradition = body.get("tradition") or None
+    try:
+        result = add_subscriber(
+            email=body["email"],
+            cities=cities or None,
+            tradition=tradition,
+        )
+    except ValueError as e:
+        return jsonify({"error": str(e)}), 400
+    if result.get("exists"):
+        return jsonify({"ok": True, "message": "already subscribed"}), 200
+    return jsonify({"ok": True}), 201
+
+
+@app.route("/unsubscribe")
+def unsubscribe():
+    token = request.args.get("token", "")
+    if not token:
+        return "Missing unsubscribe token.", 400
+    ok = unsubscribe_by_token(token)
+    if ok:
+        return (
+            '<html><body style="font-family:sans-serif;max-width:480px;margin:4rem auto;text-align:center">'
+            "<h2>Unsubscribed</h2><p>You've been removed from the Sangha Calendar digest.</p>"
+            '<p><a href="/">Return to calendar</a></p></body></html>'
+        )
+    return (
+        '<html><body style="font-family:sans-serif;max-width:480px;margin:4rem auto;text-align:center">'
+        "<h2>Link expired or invalid</h2>"
+        "<p>This unsubscribe link may have already been used.</p>"
+        '<p><a href="/">Return to calendar</a></p></body></html>'
+    )
+
+
+@app.route("/api/admin/subscribers")
+def admin_subscribers():
+    auth = request.headers.get("Authorization", "")
+    if not INGEST_TOKEN or auth != f"Bearer {INGEST_TOKEN}":
+        return jsonify({"error": "unauthorized"}), 401
+    return jsonify(get_active_subscribers())
 
 
 @app.route("/api/admin/events", methods=["POST"])

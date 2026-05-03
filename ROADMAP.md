@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-04 (heartbeat)_
+_Last updated: 2026-05-04 (heartbeat 2)_
 
 ## Current Status
 
@@ -125,8 +125,8 @@ Goal: submit a URL (or just a city name) and get back a list of verified, normal
 - [x] **GCal / Apple Calendar deep links** — Subscribe buttons in header, update dynamically as filters change. GCal uses `?cid=` deep link; Apple Calendar uses `webcal://`. ✅ **Live May 4**
 - [x] **Map view** — `/map` route with Leaflet.js, all 25 centers as color-coded tradition pins. Popup shows upcoming sits + center info link. Supports tradition/location/days filters. ✅ **Live May 4**
 - [x] **Donate button** — ko-fi link in footer. ✅ **Live May 4**
-- [ ] **Email digest** — weekly "sits near you" for subscribers
-- [ ] **Custom domain** — ~$12/year, worth it for public launch
+- [x] **Email digest** — subscriber infrastructure built May 4: `subscribers` table + `/api/subscribe` + `/unsubscribe` endpoints + inline form in footer + `scripts/send_digest.py` (Resend API). **Needs:** `RESEND_API_KEY` env var + `EMAIL_SECRET` env var + domain for sender address. Set `RESEND_FROM=digest@yourdomain.com` once custom domain is live.
+- [ ] **Custom domain** — ~$12/year, worth it for public launch. Needed for: email deliverability (RESEND_FROM sender domain), branded URL. Steps: buy domain → add to Fly.io (`fly certs add yourdomain.com`) → point DNS CNAME to `sanghacalendar.fly.dev`.
 - [x] **Submission form** — `/submit` page with name/city/website/tradition/notes fields. POST to `/api/submit`, stored in `center_submissions` SQLite table. Admin view at `/api/admin/submissions` (requires INGEST_TOKEN). "Submit a center" link in footer. ✅ **Live May 4**
 
 ---

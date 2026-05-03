@@ -5,6 +5,8 @@ DB_PATH env var controls location (defaults to data/sangha.db for local dev).
 On Fly.io: persistent volume mounted at /data, DB_PATH=/data/sangha.db.
 """
 
+import hashlib
+import json
 import os
 import sqlite3
 from datetime import datetime, timezone
@@ -16,6 +18,17 @@ from data.schemas.event import Event
 DB_PATH = Path(os.environ.get("DB_PATH", Path(__file__).parent / "sangha.db"))
 
 _CREATE_SQL = """
+CREATE TABLE IF NOT EXISTS subscribers (
+    id               INTEGER PRIMARY KEY AUTOINCREMENT,
+    email            TEXT NOT NULL UNIQUE,
+    cities           TEXT,          -- JSON array, NULL means all cities
+    tradition        TEXT,          -- NULL means all traditions
+    unsubscribe_token TEXT NOT NULL UNIQUE,
+    subscribed_at    TEXT NOT NULL,
+    is_active        INTEGER NOT NULL DEFAULT 1
+);
+CREATE INDEX IF NOT EXISTS idx_subscribers_token ON subscribers(unsubscribe_token);
+
 CREATE TABLE IF NOT EXISTS events (
     id                TEXT PRIMARY KEY,
     org_id            TEXT NOT NULL,
@@ -62,6 +75,12 @@ def _conn() -> sqlite3.Connection:
     c = sqlite3.connect(DB_PATH)
     c.row_factory = sqlite3.Row
     return c
+
+
+def _make_unsubscribe_token(email: str) -> str:
+    """Deterministic unsubscribe token derived from the email address."""
+    secret = os.environ.get("EMAIL_SECRET", os.environ.get("INGEST_TOKEN", "sangha-dev"))
+    return hashlib.sha256(f"{secret}:{email}".encode()).hexdigest()[:40]
 
 
 def init_db() -> None:
@@ -222,6 +241,61 @@ def get_submissions() -> list[dict]:
         return [dict(r) for r in c.execute(
             "SELECT * FROM center_submissions ORDER BY submitted_at DESC"
         ).fetchall()]
+
+
+def add_subscriber(email: str, cities: list[str] | None = None, tradition: str | None = None) -> dict:
+    """
+    Subscribe an email address. Returns {"ok": True} or {"exists": True} if already active.
+    Raises ValueError on invalid input.
+    """
+    email = email.strip().lower()
+    if not email or "@" not in email or len(email) > 320:
+        raise ValueError("invalid email")
+    token = _make_unsubscribe_token(email)
+    cities_json = json.dumps(cities) if cities else None
+    subscribed_at = datetime.now(timezone.utc).isoformat()
+    with _conn() as c:
+        existing = c.execute(
+            "SELECT id, is_active FROM subscribers WHERE email = ?", (email,)
+        ).fetchone()
+        if existing:
+            if existing["is_active"]:
+                return {"exists": True}
+            # Reactivate
+            c.execute(
+                "UPDATE subscribers SET is_active=1, cities=?, tradition=?, subscribed_at=? WHERE email=?",
+                (cities_json, tradition, subscribed_at, email),
+            )
+            return {"ok": True, "reactivated": True}
+        c.execute(
+            "INSERT INTO subscribers (email, cities, tradition, unsubscribe_token, subscribed_at) VALUES (?,?,?,?,?)",
+            (email, cities_json, tradition, token, subscribed_at),
+        )
+        return {"ok": True}
+
+
+def unsubscribe_by_token(token: str) -> bool:
+    """Deactivate subscription by unsubscribe token. Returns True if found."""
+    with _conn() as c:
+        cur = c.execute(
+            "UPDATE subscribers SET is_active=0 WHERE unsubscribe_token=? AND is_active=1",
+            (token,),
+        )
+        return cur.rowcount > 0
+
+
+def get_active_subscribers() -> list[dict]:
+    """Return all active subscribers."""
+    with _conn() as c:
+        rows = c.execute(
+            "SELECT id, email, cities, tradition, unsubscribe_token FROM subscribers WHERE is_active=1"
+        ).fetchall()
+        result = []
+        for r in rows:
+            d = dict(r)
+            d["cities"] = json.loads(d["cities"]) if d["cities"] else None
+            result.append(d)
+        return result
 
 
 def get_upcoming_events(
