@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-04 (heartbeat × 2)_
+_Last updated: 2026-05-04 (heartbeat)_
 
 ## Current Status
 
@@ -57,7 +57,7 @@ Priority order for East Bay centers not yet on live ingestion:
 | Berkeley Priory | LLM-assisted HTML scrape | Med | ✅ **Live May 1** — WordPress text calendar. 19 upcoming events (meditations, retreats, ceremonies through Jul 2026). OBC Soto Zen. |
 | Berkeley Buddhist Monastery | Research complete | — | ✅ **No action needed** — James Baraz Thursday sits are covered via Insight Berkeley (insightberkeley.org). Steven Tainer Wednesday sits are Zoom-only (series ends May 13). BBM's own site is Weebly with broken/JS-rendered calendar. Daily sits (Thu/Fri 6:15am, daily 5:15pm) already seeded as recurring. |
 | Berkeley Zen Center | iCal feed + recurring sits | — | ✅ **Live May 2** — `/my-calendar-ics/` feed (18 special events: sesshins, half-day sittings, dharma talks). Daily zazen seeded as recurring (Mon–Sat 6am, Mon–Fri 5:40pm, Wed 7:10pm drop-in). One of most historically significant Soto Zen centers in North America. |
-| Orgyen Dorje Den | iCal feed | Low | ✅ **Wired May 2**, ⚠️ **0 events visible** — iCal feed works but all events classified as `is_sit=0`. Zoom events are online-only; in-person events (Dakini Day Tsog, Guru Rinpoche Day Tsog) are ritual practices, not sits. LLM enrichment correctly flags `is_sit=false`. Org is in DB but contributes nothing to the calendar currently. Options: (1) accept as-is (tsog ≠ sit), (2) lower the bar for Tibetan ritual practices, (3) find if they have any regular meditation sits. |
+| Orgyen Dorje Den | iCal feed | Low | ✅ **Wired May 2**, ✅ **Resolved May 3** — 0 events visible (all `is_sit=0`) and that's correct. Verified: no regular sitting meditation open to general public. Programs are Vajrayana sadhanas, tsog pujas, and lineage practices (Ngondro-based). Only in-person events are monthly tsog days (already in DB). Accept as-is — tsog ≠ sit. Address: 2244 Santa Clara Ave, Alameda. |
 | Ewam Choden | Recurring sit | Low | ✅ **Live May 2** — Weekly Sunday 10am sit seeded. Oldest Tibetan Buddhist center in Western hemisphere (1971, Sakya). No structured calendar online. |
 | IMC New Berkeley Monday Group | Recurring sit | Low | ✅ **Live May 2** — Weekly Monday 7pm sit seeded at Berkeley Finnish Hall (1970 Chestnut St). New satellite group of IMC; intro class through May 18, open sitting from May 25. |
 
@@ -127,7 +127,7 @@ Goal: submit a URL (or just a city name) and get back a list of verified, normal
 - [x] **Donate button** — ko-fi link in footer. ✅ **Live May 4**
 - [ ] **Email digest** — weekly "sits near you" for subscribers
 - [ ] **Custom domain** — ~$12/year, worth it for public launch
-- [ ] **Submission form** — "Know a center we're missing? Submit it."
+- [x] **Submission form** — `/submit` page with name/city/website/tradition/notes fields. POST to `/api/submit`, stored in `center_submissions` SQLite table. Admin view at `/api/admin/submissions` (requires INGEST_TOKEN). "Submit a center" link in footer. ✅ **Live May 4**
 
 ---
 

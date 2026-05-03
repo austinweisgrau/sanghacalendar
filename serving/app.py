@@ -11,7 +11,7 @@ from flask import Flask, Response, abort, jsonify, render_template, request
 from icalendar import Calendar as ICalCalendar
 from icalendar import Event as ICalEvent
 
-from data.store import get_upcoming_events, init_db, upsert_dicts
+from data.store import add_submission, get_submissions, get_upcoming_events, init_db, upsert_dicts
 from serving.centers import CENTERS
 
 BASE_URL = os.environ.get("BASE_URL", "https://sangha-calendar.fly.dev")
@@ -95,6 +95,11 @@ def index():
 @app.route("/map")
 def map_view():
     return render_template("map.html")
+
+
+@app.route("/submit")
+def submit_page():
+    return render_template("submit.html")
 
 
 @app.route("/centers/<org_id>")
@@ -182,6 +187,35 @@ def center_detail(org_id):
     if not center:
         return jsonify({"error": "not found"}), 404
     return jsonify(center)
+
+
+@app.route("/api/submit", methods=["POST"])
+def submit_center():
+    body = request.get_json(silent=True)
+    if not body or not body.get("name") or not body.get("city"):
+        return jsonify({"error": "name and city are required"}), 400
+    # Basic length guards
+    for field in ("name", "city", "website", "tradition", "notes", "submitter"):
+        val = body.get(field)
+        if val and len(val) > 1000:
+            return jsonify({"error": f"{field} too long"}), 400
+    row_id = add_submission(
+        name=body["name"].strip(),
+        city=body["city"].strip(),
+        website=body.get("website"),
+        tradition=body.get("tradition"),
+        notes=body.get("notes"),
+        submitter=body.get("submitter"),
+    )
+    return jsonify({"ok": True, "id": row_id}), 201
+
+
+@app.route("/api/admin/submissions", methods=["GET"])
+def admin_submissions():
+    auth = request.headers.get("Authorization", "")
+    if not INGEST_TOKEN or auth != f"Bearer {INGEST_TOKEN}":
+        return jsonify({"error": "unauthorized"}), 401
+    return jsonify(get_submissions())
 
 
 @app.route("/api/admin/events", methods=["POST"])

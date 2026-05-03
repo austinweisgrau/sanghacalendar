@@ -44,6 +44,17 @@ CREATE TABLE IF NOT EXISTS events (
 CREATE INDEX IF NOT EXISTS idx_events_start     ON events(start_time);
 CREATE INDEX IF NOT EXISTS idx_events_city      ON events(city);
 CREATE INDEX IF NOT EXISTS idx_events_tradition ON events(tradition);
+
+CREATE TABLE IF NOT EXISTS center_submissions (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    name        TEXT NOT NULL,
+    city        TEXT,
+    website     TEXT,
+    tradition   TEXT,
+    notes       TEXT,
+    submitter   TEXT,
+    submitted_at TEXT NOT NULL
+);
 """
 
 
@@ -190,6 +201,27 @@ def dedup_events() -> int:
     with _conn() as c:
         c.executemany("DELETE FROM events WHERE id = ?", [(id_,) for id_ in to_delete])
     return len(to_delete)
+
+
+def add_submission(name: str, city: str = None, website: str = None,
+                   tradition: str = None, notes: str = None, submitter: str = None) -> int:
+    """Insert a center submission. Returns the new row id."""
+    submitted_at = datetime.now(timezone.utc).isoformat()
+    with _conn() as c:
+        cur = c.execute(
+            """INSERT INTO center_submissions (name, city, website, tradition, notes, submitter, submitted_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?)""",
+            (name, city, website, tradition, notes, submitter, submitted_at),
+        )
+        return cur.lastrowid
+
+
+def get_submissions() -> list[dict]:
+    """Return all center submissions, newest first."""
+    with _conn() as c:
+        return [dict(r) for r in c.execute(
+            "SELECT * FROM center_submissions ORDER BY submitted_at DESC"
+        ).fetchall()]
 
 
 def get_upcoming_events(

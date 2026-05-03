@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit a Center — Sangha Calendar</title>
+  <style>
+    :root {
+      --bg:           #f6f3ee;
+      --surface:      #ffffff;
+      --border:       #e4dfd6;
+      --text:         #2a2724;
+      --muted:        #6b6560;
+      --accent:       #4d7060;
+      --accent-light: #e8f0ec;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .header {
+      background: var(--accent);
+      color: white;
+      padding: 2.25rem 1.5rem 1.75rem;
+      text-align: center;
+    }
+    .header h1 { font-size: 1.7rem; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+    .header p  { font-size: 0.9rem; opacity: 0.82; max-width: 500px; margin: 0 auto; }
+    .header a  { color: rgba(255,255,255,0.85); text-decoration: none; }
+    .header a:hover { text-decoration: underline; }
+
+    .main {
+      max-width: 600px;
+      margin: 2.5rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 2rem;
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+    .card .subtitle {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1.75rem;
+    }
+
+    .field {
+      margin-bottom: 1.25rem;
+    }
+    .field label {
+      display: block;
+      font-size: 0.83rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: var(--text);
+    }
+    .field label .opt {
+      font-weight: 400;
+      color: var(--muted);
+    }
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 0.55rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--bg);
+      transition: border-color 0.15s;
+    }
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: white;
+    }
+    .field textarea { resize: vertical; min-height: 90px; }
+
+    .submit-btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.65rem 1.75rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .submit-btn:hover { opacity: 0.88; }
+    .submit-btn:disabled { opacity: 0.5; cursor: default; }
+
+    .msg {
+      display: none;
+      padding: 0.85rem 1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      margin-top: 1rem;
+    }
+    .msg.success {
+      display: block;
+      background: var(--accent-light);
+      border: 1px solid #c4ddd0;
+      color: #2a4a3a;
+    }
+    .msg.error {
+      display: block;
+      background: #fdecea;
+      border: 1px solid #f5c6c0;
+      color: #6a2020;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.77rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Submit a Center</h1>
+  <p>Know a meditation center we're missing? <a href="/">← Back to calendar</a></p>
+</div>
+
+<div class="main">
+  <div class="card">
+    <h2>Suggest a center</h2>
+    <p class="subtitle">We'll review your submission and add it if it's a good fit. We focus on centers that offer regular sitting meditation open to the public.</p>
+
+    <form id="submit-form">
+      <div class="field">
+        <label for="name">Center name <span class="opt">(required)</span></label>
+        <input type="text" id="name" name="name" placeholder="e.g. Oakland Zen Center" required>
+      </div>
+
+      <div class="field">
+        <label for="city">City <span class="opt">(required)</span></label>
+        <input type="text" id="city" name="city" placeholder="e.g. Oakland" required>
+      </div>
+
+      <div class="field">
+        <label for="website">Website <span class="opt">(optional)</span></label>
+        <input type="url" id="website" name="website" placeholder="https://...">
+      </div>
+
+      <div class="field">
+        <label for="tradition">Tradition <span class="opt">(optional)</span></label>
+        <select id="tradition" name="tradition">
+          <option value="">Not sure / other</option>
+          <option value="theravada">Theravada / Insight</option>
+          <option value="zen">Zen</option>
+          <option value="tibetan">Tibetan / Shambhala</option>
+          <option value="secular">Secular</option>
+          <option value="pluralist">Pluralist / Non-sectarian</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="notes">Notes <span class="opt">(optional)</span></label>
+        <textarea id="notes" name="notes" placeholder="Sit schedule, anything else helpful…"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="submitter">Your name or email <span class="opt">(optional — for follow-up questions only)</span></label>
+        <input type="text" id="submitter" name="submitter" placeholder="Optional">
+      </div>
+
+      <button type="submit" class="submit-btn" id="submit-btn">Submit center</button>
+      <div id="msg" class="msg"></div>
+    </form>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="/" style="color:inherit">← Back to Sangha Calendar</a>
+</div>
+
+<script>
+document.getElementById("submit-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById("submit-btn");
+  const msg = document.getElementById("msg");
+  btn.disabled = true;
+  btn.textContent = "Submitting…";
+  msg.className = "msg";
+  msg.style.display = "none";
+
+  const data = {
+    name:      document.getElementById("name").value.trim(),
+    city:      document.getElementById("city").value.trim(),
+    website:   document.getElementById("website").value.trim() || null,
+    tradition: document.getElementById("tradition").value || null,
+    notes:     document.getElementById("notes").value.trim() || null,
+    submitter: document.getElementById("submitter").value.trim() || null,
+  };
+
+  try {
+    const res = await fetch("/api/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    if (res.ok) {
+      msg.textContent = "Thank you! We'll review your submission and add the center if it's a good fit.";
+      msg.className = "msg success";
+      document.getElementById("submit-form").reset();
+      btn.textContent = "Submitted ✓";
+    } else {
+      const err = await res.json().catch(() => ({}));
+      msg.textContent = err.error || "Something went wrong. Please try again.";
+      msg.className = "msg error";
+      btn.disabled = false;
+      btn.textContent = "Submit center";
+    }
+  } catch (err) {
+    msg.textContent = "Network error. Please try again.";
+    msg.className = "msg error";
+    btn.disabled = false;
+    btn.textContent = "Submit center";
+  }
+});
+</script>
+</body>
+</html>
