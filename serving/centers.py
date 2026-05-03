@@ -304,4 +304,176 @@ CENTERS = {
             "tradition. Dana-based, drop-in welcome."
         ),
     },
+    "berkeley_zen_center": {
+        "id": "berkeley_zen_center",
+        "name": "Berkeley Zen Center",
+        "tradition": "zen",
+        "url": "https://berkeleyzencenter.org",
+        "address": "1931 Russell St",
+        "city": "Berkeley",
+        "state": "CA",
+        "zip": "94703",
+        "neighborhood": "South Berkeley",
+        "lat": 37.8582,
+        "lng": -122.2705,
+        "description": (
+            "Berkeley Zen Center is a Soto Zen community founded in 1967, one of the "
+            "oldest and most historically significant American Zen centers. Resident "
+            "practice includes daily zazen (Mon–Sat 6am, Mon–Fri 5:40pm, Wed 7:10pm "
+            "drop-in). Sesshins and dharma talks offered throughout the year."
+        ),
+    },
+    "dharmata_foundation": {
+        "id": "dharmata_foundation",
+        "name": "Dharmata Foundation",
+        "tradition": "tibetan",
+        "url": "https://dharmata.org",
+        "address": "235 Washington Ave",
+        "city": "Richmond",
+        "state": "CA",
+        "zip": "94801",
+        "neighborhood": "Richmond",
+        "lat": 37.9045,
+        "lng": -122.3795,
+        "description": (
+            "Dharmata Foundation is a Tibetan Buddhist center led by Anam Thubten "
+            "Rinpoche, a recognized teacher in the Nyingma tradition. Offers monthly "
+            "in-person teachings (also available via Zoom) and occasional retreats. "
+            "Practice emphasizes direct experience and non-conceptual awareness."
+        ),
+    },
+    "everyday_zen": {
+        "id": "everyday_zen",
+        "name": "Everyday Zen Foundation",
+        "tradition": "zen",
+        "url": "https://everydayzen.org",
+        "address": "145 Rock Hill Rd",
+        "city": "Tiburon",
+        "state": "CA",
+        "zip": "94920",
+        "neighborhood": "Tiburon",
+        "lat": 37.8816,
+        "lng": -122.4577,
+        "description": (
+            "Everyday Zen Foundation was founded by Norman Fischer, a poet and Soto Zen "
+            "priest trained at San Francisco Zen Center. The community emphasizes an "
+            "open, pluralistic approach to Zen practice and meets at Community "
+            "Congregational Church in Tiburon. Hybrid in-person and online."
+        ),
+    },
+    "ewam_choden": {
+        "id": "ewam_choden",
+        "name": "Ewam Choden Tibetan Buddhist Center",
+        "tradition": "tibetan",
+        "url": "https://www.ewamchoden.org",
+        "address": "254 Cambridge Ave",
+        "city": "Kensington",
+        "state": "CA",
+        "zip": "94708",
+        "neighborhood": "Kensington",
+        "lat": 37.9024,
+        "lng": -122.2694,
+        "description": (
+            "Ewam Choden, founded in 1971, is the oldest Tibetan Buddhist center in "
+            "the Western hemisphere. A Sakya tradition center in the hills above "
+            "Berkeley, it offers weekly Sunday 10am sitting meditation, teachings, "
+            "and periodic retreats. Drop-in welcome."
+        ),
+    },
+    "karuna_berkeley": {
+        "id": "karuna_berkeley",
+        "name": "Karuna Buddhist Vihara — East Bay",
+        "tradition": "theravada",
+        "url": "https://karunabv.org",
+        "address": "1438 Neilson St",
+        "city": "Berkeley",
+        "state": "CA",
+        "zip": "94702",
+        "neighborhood": "Westbrae",
+        "lat": 37.8821,
+        "lng": -122.2945,
+        "description": (
+            "Karuna Buddhist Vihara East Bay offers monthly Saturday afternoon sits "
+            "(mostly 2nd Saturday, 3–5pm) in the Theravada tradition, including guided "
+            "meditation and Dhammapada reading and discussion. Hybrid in-person and "
+            "Zoom. Located in the Westbrae neighborhood of Berkeley."
+        ),
+    },
+    "mount_diablo_zen": {
+        "id": "mount_diablo_zen",
+        "name": "Mount Diablo Zen Group",
+        "tradition": "zen",
+        "url": "https://mountdiablozencenter.org",
+        "address": "404 Gregory Lane, Room 9",
+        "city": "Pleasant Hill",
+        "state": "CA",
+        "zip": "94523",
+        "neighborhood": "Pleasant Hill",
+        "lat": 37.9499,
+        "lng": -122.0935,
+        "description": (
+            "Mount Diablo Zen Group is a Soto Zen community (SZBA member) in Pleasant "
+            "Hill offering weekly Wednesday 7pm zazen. In-person 1st, 3rd, and 5th "
+            "Wednesdays; Zoom 2nd and 4th Wednesdays. Drop-in, free, no experience "
+            "required. Serving the Contra Costa County area."
+        ),
+    },
+    "nyingma_institute": {
+        "id": "nyingma_institute",
+        "name": "Nyingma Institute",
+        "tradition": "tibetan",
+        "url": "https://www.nyingmainstitute.com",
+        "address": "1815 Highland Pl",
+        "city": "Berkeley",
+        "state": "CA",
+        "zip": "94709",
+        "neighborhood": "North Berkeley",
+        "lat": 37.8781,
+        "lng": -122.2607,
+        "description": (
+            "Nyingma Institute, founded by Tarthang Tulku Rinpoche in 1972, is a "
+            "Tibetan Buddhist study and practice center in North Berkeley. Offers "
+            "courses in Tibetan language, philosophy, and meditation, alongside "
+            "public sits, Kum Nye yoga, and periodic retreats."
+        ),
+    },
+    "orgyen_dorje_den": {
+        "id": "orgyen_dorje_den",
+        "name": "Orgyen Dorje Den",
+        "tradition": "tibetan",
+        "url": "https://www.orgyen.org",
+        "address": "2244 Santa Clara Ave",
+        "city": "Alameda",
+        "state": "CA",
+        "zip": "94501",
+        "neighborhood": "Alameda",
+        "lat": 37.7648,
+        "lng": -122.2476,
+        "description": (
+            "Orgyen Dorje Den is a Tibetan Vajrayana Buddhist center in Alameda "
+            "affiliated with the Dudjom Tersar lineage. Offers tsog practice days, "
+            "dharma teachings, and Zoom-accessible programs. Practice emphasizes "
+            "Dzogchen and Vajrayana ritual within the Nyingma tradition."
+        ),
+    },
+    "sf_buddhist_center": {
+        "id": "sf_buddhist_center",
+        "name": "San Francisco Buddhist Center",
+        "tradition": "pluralist",
+        "url": "https://www.sfbuddhistcenter.org",
+        "address": "37 Belcher St",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94114",
+        "neighborhood": "Castro / Duboce Triangle",
+        "lat": 37.7649,
+        "lng": -122.4327,
+        "description": (
+            "San Francisco Buddhist Center is part of the Triratna Buddhist Community "
+            "(formerly FWBO), an international network emphasizing meditation, "
+            "friendship, and ethical engagement. Located in the Castro / Duboce "
+            "Triangle neighborhood. Offers weekly sits, courses, and community events "
+            "open to all regardless of experience."
+        ),
+    },
 }

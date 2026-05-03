@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sangha Calendar — Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <style>
+    :root {
+      --bg:           #f6f3ee;
+      --surface:      #ffffff;
+      --border:       #e4dfd6;
+      --text:         #2a2724;
+      --muted:        #6b6560;
+      --accent:       #4d7060;
+      --accent-light: #e8f0ec;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .header {
+      background: var(--accent);
+      color: white;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-shrink: 0;
+    }
+    .header h1 { font-size: 1.1rem; font-weight: 600; }
+    .header a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.82rem;
+    }
+    .header a:hover { color: white; }
+    .header-left { flex: 1; }
+    .header-right { display: flex; gap: 0.75rem; align-items: center; }
+
+    /* Filter bar */
+    .filters {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.65rem 1rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .filters select {
+      padding: 0.3rem 1.5rem 0.3rem 0.65rem;
+      border: 1px solid var(--border);
+      border-radius: 2rem;
+      background: var(--bg);
+      font-size: 0.8rem;
+      color: var(--text);
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b6560'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.5rem center;
+    }
+    .filter-label { font-size: 0.78rem; color: var(--muted); }
+
+    /* Map */
+    #map { flex: 1; }
+
+    /* Popup styles (injected via JS into Leaflet popup) */
+    .popup-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.2rem; }
+    .popup-trad {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: white;
+      padding: 0.1rem 0.45rem;
+      border-radius: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .popup-sits { font-size: 0.8rem; }
+    .popup-sit  { padding: 0.2rem 0; border-bottom: 1px solid #eee; color: #333; }
+    .popup-sit:last-child { border-bottom: none; }
+    .popup-sit .sit-time { color: #666; font-size: 0.75rem; }
+    .popup-more { font-size: 0.75rem; color: #888; margin-top: 0.3rem; }
+    .popup-link { display: block; margin-top: 0.5rem; font-size: 0.78rem; color: var(--accent); text-decoration: none; }
+    .popup-link:hover { text-decoration: underline; }
+    .popup-no-sits { font-size: 0.8rem; color: #888; font-style: italic; }
+
+    .legend {
+      position: absolute;
+      bottom: 24px;
+      right: 10px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 0.6rem 0.8rem;
+      font-size: 0.75rem;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .legend-title { font-weight: 600; margin-bottom: 0.4rem; color: #333; }
+    .legend-item { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.25rem; color: #555; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <h1>Sangha Calendar — Map</h1>
+  </div>
+  <div class="header-right">
+    <a href="/">← Calendar view</a>
+  </div>
+</div>
+
+<div class="filters">
+  <span class="filter-label">Filter:</span>
+  <select id="filter-tradition" onchange="reloadMarkers()">
+    <option value="">All traditions</option>
+    <option value="theravada">Theravada / Insight</option>
+    <option value="zen">Zen</option>
+    <option value="tibetan">Tibetan / Shambhala</option>
+    <option value="secular">Secular</option>
+    <option value="pluralist">Pluralist / Non-sectarian</option>
+  </select>
+  <select id="filter-location" onchange="reloadMarkers()">
+    <option value="">In-person &amp; online</option>
+    <option value="in-person">In-person only</option>
+    <option value="online">Online only</option>
+  </select>
+  <select id="filter-days" onchange="reloadMarkers()">
+    <option value="7">Next 7 days</option>
+    <option value="14">Next 14 days</option>
+    <option value="30" selected>Next 30 days</option>
+    <option value="60">Next 60 days</option>
+  </select>
+</div>
+
+<div id="map"></div>
+
+<div class="legend">
+  <div class="legend-title">Tradition</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#3d7a56"></div> Theravada / Insight</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#4a5f82"></div> Zen</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#7a6e28"></div> Tibetan / Shambhala</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#3a7070"></div> Secular</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#5a6a5a"></div> Pluralist</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#888"></div> Other</div>
+</div>
+
+<script>
+const TRADITIONS = {
+  "theravada": { label: "Theravada / Insight", color: "#3d7a56" },
+  "zen":       { label: "Zen",                 color: "#4a5f82" },
+  "tibetan":   { label: "Tibetan / Shambhala", color: "#7a6e28" },
+  "secular":   { label: "Secular",             color: "#3a7070" },
+  "pluralist": { label: "Non-sectarian",        color: "#5a6a5a" },
+  "other":     { label: "Other",               color: "#888" },
+  "unknown":   { label: "Other",               color: "#888" },
+};
+
+function tradColor(trad) {
+  return (TRADITIONS[trad] || TRADITIONS["unknown"]).color;
+}
+function tradLabel(trad) {
+  return (TRADITIONS[trad] || TRADITIONS["unknown"]).label;
+}
+
+function makeIcon(color) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="30" viewBox="0 0 22 30">
+    <path d="M11 0C4.925 0 0 4.925 0 11c0 7.333 11 19 11 19S22 18.333 22 11C22 4.925 17.075 0 11 0z" fill="${color}" stroke="white" stroke-width="1.5"/>
+    <circle cx="11" cy="11" r="4" fill="white" opacity="0.85"/>
+  </svg>`;
+  return L.divIcon({
+    html: svg,
+    className: "",
+    iconSize: [22, 30],
+    iconAnchor: [11, 30],
+    popupAnchor: [0, -28],
+  });
+}
+
+function fmtDateTime(iso) {
+  const d = new Date(iso);
+  return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" })
+    + " " + d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+}
+
+// Initialize map centered on East Bay
+const map = L.map("map").setView([37.855, -122.265], 11);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  maxZoom: 19,
+}).addTo(map);
+
+let markerLayer = L.layerGroup().addTo(map);
+
+async function reloadMarkers() {
+  markerLayer.clearLayers();
+
+  const tradition     = document.getElementById("filter-tradition").value;
+  const location_type = document.getElementById("filter-location").value;
+  const days          = document.getElementById("filter-days").value;
+
+  const params = new URLSearchParams({ days, limit: 500 });
+  if (tradition)     params.set("tradition", tradition);
+  if (location_type) params.set("location_type", location_type);
+
+  const events = await fetch("/api/events?" + params).then(r => r.json());
+
+  // Group events by org, collecting lat/lng and sits
+  const centers = new Map();
+  events.forEach(e => {
+    if (!e.lat || !e.lng) return;
+    if (!centers.has(e.org_id)) {
+      centers.set(e.org_id, {
+        org_id: e.org_id,
+        org_name: e.org_name,
+        tradition: e.tradition,
+        lat: e.lat,
+        lng: e.lng,
+        city: e.city,
+        sits: [],
+      });
+    }
+    centers.get(e.org_id).sits.push(e);
+  });
+
+  centers.forEach(center => {
+    const color  = tradColor(center.tradition);
+    const icon   = makeIcon(color);
+    const marker = L.marker([center.lat, center.lng], { icon });
+
+    // Build popup content
+    const sits = center.sits.slice(0, 5);
+    const sitsHtml = sits.map(s => {
+      const titlePart = s.title && s.title !== s.org_name ? ` — <em>${s.title}</em>` : "";
+      return `<div class="popup-sit"><span class="sit-time">${fmtDateTime(s.start_time)}</span>${titlePart}</div>`;
+    }).join("");
+    const moreHtml = center.sits.length > 5
+      ? `<div class="popup-more">+${center.sits.length - 5} more in window</div>` : "";
+
+    const popup = `
+      <div style="min-width:200px;max-width:260px">
+        <div class="popup-name">${center.org_name}</div>
+        <span class="popup-trad" style="background:${color}">${tradLabel(center.tradition)}</span>
+        <div class="popup-sits">${sitsHtml}</div>
+        ${moreHtml}
+        <a class="popup-link" href="/centers/${center.org_id}">Center info ↗</a>
+      </div>`;
+
+    marker.bindPopup(popup, { maxWidth: 280 });
+    markerLayer.addLayer(marker);
+  });
+}
+
+reloadMarkers();
+</script>
+</body>
+</html>
