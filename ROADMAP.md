@@ -1,15 +1,16 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-04 (heartbeat)_
+_Last updated: 2026-05-04 (heartbeat × 2)_
 
 ## Current Status
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 500+ events in 60-day window, 27+ organizations (verified May 3 — 500 is API default limit)
+- 370+ events in 30-day window, 25 organizations with sits
 - 640 manual recurring sit instances seeded May 3 (27 sit definitions)
-- Mount Diablo Zen Group + Karuna Berkeley added May 3; Dharmata Foundation added May 2 — will appear in May 4 weekly iCal ingest
-- Orgyen Dorje Den wired but 0 visible sits (tsog rituals classified as non-sits — see Active Work note)
+- Map view live at `/map` — all 25 centers pinned with tradition colors
+- 25 center bio pages (centers.py now complete)
+- City filter now includes all 11 cities (added Alameda, Kensington, Pleasant Hill, Richmond, Tiburon)
 - Ingestion sources: 27 iCal feeds + manually-seeded recurring sits (27 definitions) + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley)
 - Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin
 
@@ -122,9 +123,9 @@ Goal: submit a URL (or just a city name) and get back a list of verified, normal
 
 - [x] **ICS subscription URLs** — `/feed.ics` with same filter params as `/api/events` (city, tradition, location_type, days). Calendar name adapts to active filters. ✅ **Live May 4**
 - [x] **GCal / Apple Calendar deep links** — Subscribe buttons in header, update dynamically as filters change. GCal uses `?cid=` deep link; Apple Calendar uses `webcal://`. ✅ **Live May 4**
-- [ ] **Map view** — pin all centers, click for upcoming sits
+- [x] **Map view** — `/map` route with Leaflet.js, all 25 centers as color-coded tradition pins. Popup shows upcoming sits + center info link. Supports tradition/location/days filters. ✅ **Live May 4**
+- [x] **Donate button** — ko-fi link in footer. ✅ **Live May 4**
 - [ ] **Email digest** — weekly "sits near you" for subscribers
-- [ ] **Donate button** — ko-fi or similar; this is free forever but costs ~$2/mo
 - [ ] **Custom domain** — ~$12/year, worth it for public launch
 - [ ] **Submission form** — "Know a center we're missing? Submit it."
 
