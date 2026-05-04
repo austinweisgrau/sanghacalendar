@@ -290,6 +290,20 @@ CENTERS = {
         tradition=Tradition.ZEN,
         notes="SFZC's Marin farm and residential training center. Soto Zen. Public welcome for daily zazen (6am, 7:50pm most days) and Sunday Morning Program (9:30am zazen + 10am Dharma talk, hybrid in-person + Online Zendo). No registration required. No iCal feed — manually seeded recurring sits.",
     ),
+    "sf_buddhist_center": Center(
+        id="sf_buddhist_center",
+        name="San Francisco Buddhist Center",
+        url="https://sfbuddhistcenter.org",
+        address="37 Belcher St",
+        city="San Francisco",
+        state="CA",
+        zip_code="94114",
+        lat=37.7649,
+        lng=-122.4327,
+        neighborhood="Castro",
+        tradition=Tradition.PLURALIST,
+        notes="Triratna Buddhist Community. Identity-affirming — LGBTQ+ and BIPOC programs. Weekly drop-in, dharma nights, online morning sits.",
+    ),
 }
 
 
@@ -361,5 +375,11 @@ ICAL_FEEDS = {
         # filter_to_sits=False to include all events; enrichment will classify
         "url": "https://calendar.google.com/calendar/ical/dharmata.org_ehe43bjd6alcu4chnp204m6it8%40group.calendar.google.com/public/basic.ics",
         "filter_to_sits": False,
+    },
+    "sf_buddhist_center": {
+        # WordPress Events Calendar plugin — Castro SF
+        # Weekly drop-in sits, sangha nights, morning meditation, LGBTQ+ and BIPOC programs
+        "url": "https://sfbuddhistcenter.org/events/?ical=1",
+        "filter_to_sits": True,
     },
 }

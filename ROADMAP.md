@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-04 (heartbeat 4)_
+_Last updated: 2026-05-04 (heartbeat 5)_
 
 ## Current Status
 
@@ -71,6 +71,20 @@ Priority order for East Bay centers not yet on live ingestion:
 | Berkeley Buddhist Vihara | ❌ **Skip** — Sri Lankan Theravada temple at 6200 Columbia Ave, Richmond. Functions primarily as a community temple (puja services, children's Sinhala school, ceremonies). No public meditation sits offered to general public. |
 | Green Gulch Farm / SFZC Marin (Muir Beach) | ✅ **Added May 4** — No iCal (SFZC Drupal 10, no ical endpoint). Seeded as recurring sits: morning zazen 6am Mon/Wed–Sun, evening zazen 7:50pm Wed–Sat, Sunday Morning Program 9:30am (hybrid). 56 events in 90-day window. |
 | San Francisco Shambhala Center (SF — Glen Park) | ✅ **Added May 4 (heartbeat 4)** — iCal server (shambhala-koeln.de center=177) still dead. Manually seeded from website: 2nd/4th Wed 7pm Beginners Night (in-person), 3rd Sat 9am (in-person), 1st/2nd Sun 10am (online). 12 events in 90-day window. Added to centers.py bio + east_bay.py CENTERS. |
+
+### Bug: SF Buddhist Center missing from daily GH Actions ingest
+
+✅ **Fixed May 4 (heartbeat 5)** — `sf_buddhist_center` was in `sangha-ingest.js` (weekly only) but not in `ingestion/sources/east_bay.py`. Added to both `CENTERS` and `ICAL_FEEDS` in east_bay.py. Now picked up by daily `coordinator.py` via GH Actions. Feed verified: `sfbuddhistcenter.org/events/?ical=1` returns valid iCal (WP Events Calendar 7.2.3.1), 17 upcoming events including drop-in sits, morning meditations, Sangha nights, and identity-specific sits.
+
+### Research: Mangalam Research Center (Berkeley)
+
+❌ **Skip** — Calendar shows "No event found." Academic courses/lectures only, no public meditation sits. Not a fit for sangha calendar.
+
+### Research: Empty Gate Zen Google Calendar
+
+❌ **Blocked** — Website mentions "Check the Google Calendar above for live updates" but the embed is dynamically loaded (JavaScript-rendered). No static iCal URL or calendar ID accessible via HTTP. Would need headless browser. Defer to Phase 4. Recurring sits (Mon 7pm + Sat 8am) are already seeded.
+
+---
 
 **Scraper targets in codebase:**
 - `ingestion/scrapers/eventbrite.py` ✅ — live, Nyingma + Insight Berkeley wired in
