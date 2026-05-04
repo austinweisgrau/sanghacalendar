@@ -1,12 +1,12 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-04 (heartbeat 3)_
+_Last updated: 2026-05-04 (heartbeat 4)_
 
 ## Current Status
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 370+ events in 30-day window, 25 organizations with sits
+- 370+ events in 30-day window, 26 organizations with sits
 - 640 manual recurring sit instances seeded May 3 (27 sit definitions)
 - Map view live at `/map` — all 25 centers pinned with tradition colors
 - 25 center bio pages (centers.py now complete)
@@ -70,6 +70,7 @@ Priority order for East Bay centers not yet on live ingestion:
 | Mount Diablo Zen Group (Pleasant Hill) | ✅ **Added May 3** — Weekly Wednesday 7pm hybrid zazen. 404 Gregory Lane, Room 9, Pleasant Hill. Soto Zen (SZBA member). In-person 1st/3rd/5th Wednesdays, Zoom 2nd/4th Wednesdays. Drop-in, free. |
 | Berkeley Buddhist Vihara | ❌ **Skip** — Sri Lankan Theravada temple at 6200 Columbia Ave, Richmond. Functions primarily as a community temple (puja services, children's Sinhala school, ceremonies). No public meditation sits offered to general public. |
 | Green Gulch Farm / SFZC Marin (Muir Beach) | ✅ **Added May 4** — No iCal (SFZC Drupal 10, no ical endpoint). Seeded as recurring sits: morning zazen 6am Mon/Wed–Sun, evening zazen 7:50pm Wed–Sat, Sunday Morning Program 9:30am (hybrid). 56 events in 90-day window. |
+| San Francisco Shambhala Center (SF — Glen Park) | ✅ **Added May 4 (heartbeat 4)** — iCal server (shambhala-koeln.de center=177) still dead. Manually seeded from website: 2nd/4th Wed 7pm Beginners Night (in-person), 3rd Sat 9am (in-person), 1st/2nd Sun 10am (online). 12 events in 90-day window. Added to centers.py bio + east_bay.py CENTERS. |
 
 **Scraper targets in codebase:**
 - `ingestion/scrapers/eventbrite.py` ✅ — live, Nyingma + Insight Berkeley wired in

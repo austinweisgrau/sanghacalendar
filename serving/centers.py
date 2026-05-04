@@ -479,6 +479,27 @@ CENTERS = {
             "in the Bay Area."
         ),
     },
+    "shambhala_sf": {
+        "id": "shambhala_sf",
+        "name": "San Francisco Shambhala Center",
+        "tradition": "tibetan",
+        "url": "https://sf.shambhala.org",
+        "address": "280 Claremont St",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94127",
+        "neighborhood": "Glen Park",
+        "lat": 37.7315,
+        "lng": -122.4296,
+        "description": (
+            "San Francisco Shambhala Center offers meditation programs rooted in "
+            "the Shambhala Buddhist tradition (Tibetan Vajrayana lineage of Chögyam "
+            "Trungpa Rinpoche). Located in the Glen Park neighborhood. Open to all "
+            "— no experience necessary. Regular programs include biweekly Beginners "
+            "Night (2nd & 4th Wednesdays), monthly Saturday Morning Meditation "
+            "(3rd Saturday), and online Sunday Morning Meditation (1st & 2nd Sundays)."
+        ),
+    },
     "sf_buddhist_center": {
         "id": "sf_buddhist_center",
         "name": "San Francisco Buddhist Center",
