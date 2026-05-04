@@ -141,6 +141,9 @@
     <option value="online">Online only</option>
   </select>
   <select id="filter-days" onchange="reloadMarkers()">
+    <option value="today">Today</option>
+    <option value="tomorrow">Tomorrow</option>
+    <option value="3">Next 3 days</option>
     <option value="7">Next 7 days</option>
     <option value="14">Next 14 days</option>
     <option value="30" selected>Next 30 days</option>
@@ -207,6 +210,12 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 let markerLayer = L.layerGroup().addTo(map);
 
+function localDateStr(offset) {
+  const d = new Date();
+  d.setDate(d.getDate() + offset);
+  return d.toLocaleDateString("en-CA"); // "YYYY-MM-DD" in local time
+}
+
 async function reloadMarkers() {
   markerLayer.clearLayers();
 
@@ -214,7 +223,18 @@ async function reloadMarkers() {
   const location_type = document.getElementById("filter-location").value;
   const days          = document.getElementById("filter-days").value;
 
-  const params = new URLSearchParams({ days, limit: 500 });
+  const params = new URLSearchParams({ limit: 500 });
+  if (days === "today") {
+    const today = localDateStr(0);
+    params.set("start_date", today + "T00:00:00");
+    params.set("end_date",   today + "T23:59:59");
+  } else if (days === "tomorrow") {
+    const tmrw = localDateStr(1);
+    params.set("start_date", tmrw + "T00:00:00");
+    params.set("end_date",   tmrw + "T23:59:59");
+  } else {
+    params.set("days", days);
+  }
   if (tradition)     params.set("tradition", tradition);
   if (location_type) params.set("location_type", location_type);
 

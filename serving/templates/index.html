@@ -351,6 +351,9 @@
       <option value="pluralist">Pluralist / Non-sectarian</option>
     </select>
     <select id="filter-date-window" onchange="onDateWindowChange()">
+      <option value="today">Today</option>
+      <option value="tomorrow">Tomorrow</option>
+      <option value="3">Next 3 days</option>
       <option value="7">Next 7 days</option>
       <option value="14">Next 14 days</option>
       <option value="30" selected>Next 30 days</option>
@@ -453,6 +456,12 @@ function onDateWindowChange() {
   }
 }
 
+function localDateStr(offset) {
+  const d = new Date();
+  d.setDate(d.getDate() + offset);
+  return d.toLocaleDateString("en-CA"); // "YYYY-MM-DD" in local time
+}
+
 function buildFeedParams() {
   const cities        = Array.from(document.querySelectorAll("#city-dropdown input:checked")).map(el => el.value);
   const tradition     = document.getElementById("filter-tradition").value;
@@ -464,7 +473,15 @@ function buildFeedParams() {
   cities.forEach(c => params.append("city", c));
   if (tradition)     params.set("tradition", tradition);
   if (location_type) params.set("location_type", location_type);
-  if (window_val === "custom") {
+  if (window_val === "today") {
+    const today = localDateStr(0);
+    params.set("start_date", today + "T00:00:00");
+    params.set("end_date",   today + "T23:59:59");
+  } else if (window_val === "tomorrow") {
+    const tmrw = localDateStr(1);
+    params.set("start_date", tmrw + "T00:00:00");
+    params.set("end_date",   tmrw + "T23:59:59");
+  } else if (window_val === "custom") {
     if (start_date) params.set("start_date", start_date + "T00:00:00");
     if (end_date)   params.set("end_date",   end_date   + "T23:59:59");
   } else {
