@@ -569,6 +569,31 @@ async function loadEvents() {
   });
 }
 
+function initFromUrl() {
+  const p = new URLSearchParams(window.location.search);
+  if (p.get("location_type")) document.getElementById("filter-location").value = p.get("location_type");
+  if (p.get("tradition"))     document.getElementById("filter-tradition").value = p.get("tradition");
+  const cities = p.getAll("city");
+  if (cities.length) {
+    cities.forEach(city => {
+      const cb = document.querySelector(`#city-dropdown input[value="${CSS.escape(city)}"]`);
+      if (cb) cb.checked = true;
+    });
+    const trigger = document.getElementById("city-trigger");
+    trigger.textContent = cities.join(", ");
+    trigger.classList.add("active");
+  }
+  const windowVal = p.get("window") || p.get("days");
+  if (windowVal) {
+    document.getElementById("filter-date-window").value = windowVal;
+    if (windowVal === "custom") {
+      if (p.get("start_date")) document.getElementById("filter-start-date").value = p.get("start_date").slice(0, 10);
+      if (p.get("end_date"))   document.getElementById("filter-end-date").value   = p.get("end_date").slice(0, 10);
+      document.getElementById("date-range-row").classList.add("visible");
+    }
+  }
+}
+initFromUrl();
 loadEvents();
 
 async function digestSignup() {

@@ -286,6 +286,14 @@ async function reloadMarkers() {
   });
 }
 
+function initFromUrl() {
+  const p = new URLSearchParams(window.location.search);
+  if (p.get("location_type")) document.getElementById("filter-location").value = p.get("location_type");
+  if (p.get("tradition"))     document.getElementById("filter-tradition").value = p.get("tradition");
+  const days = p.get("days") || p.get("window");
+  if (days) document.getElementById("filter-days").value = days;
+}
+initFromUrl();
 reloadMarkers();
 </script>
 </body>
