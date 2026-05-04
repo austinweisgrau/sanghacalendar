@@ -456,6 +456,29 @@ CENTERS = {
             "Dzogchen and Vajrayana ritual within the Nyingma tradition."
         ),
     },
+    "green_gulch_farm": {
+        "id": "green_gulch_farm",
+        "name": "Green Gulch Farm Zen Center",
+        "tradition": "zen",
+        "url": "https://sfzc.org/green-gulch-farm",
+        "address": "1601 Shoreline Hwy",
+        "city": "Muir Beach",
+        "state": "CA",
+        "zip": "94965",
+        "neighborhood": "Muir Beach / West Marin",
+        "lat": 37.8694,
+        "lng": -122.5630,
+        "description": (
+            "Green Gulch Farm Zen Center is the Marin satellite of San Francisco Zen Center, "
+            "set in a coastal valley near Muir Beach. A working farm and residential practice "
+            "community in the Soto Zen tradition. The landmark Sunday Morning Program — "
+            "open to all, no registration required — includes zazen instruction at 8:15am, "
+            "sitting meditation at 9:30am, and a public Dharma talk at 10am (in-person and "
+            "livestreamed via Online Zendo). Daily zazen at 6am and 7:50pm most days "
+            "(no Tuesday schedule). One of the most beautiful and accessible Zen centers "
+            "in the Bay Area."
+        ),
+    },
     "sf_buddhist_center": {
         "id": "sf_buddhist_center",
         "name": "San Francisco Buddhist Center",

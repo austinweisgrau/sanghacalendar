@@ -262,6 +262,20 @@ CENTERS = {
         tradition=Tradition.THERAVADA,
         notes="Monthly Saturday sits (mostly 2nd Saturday, 3–5pm). Berkeley satellite of Karuna Buddhist Vihara (Sunnyvale). Guided meditation + Dhammapada reading/discussion. Hybrid in-person + Zoom. Schedule published at karunabv.org/eastbay-dhamma.html.",
     ),
+    "green_gulch_farm": Center(
+        id="green_gulch_farm",
+        name="Green Gulch Farm Zen Center",
+        url="https://sfzc.org/green-gulch-farm",
+        address="1601 Shoreline Hwy",
+        city="Muir Beach",
+        state="CA",
+        zip_code="94965",
+        lat=37.8694,
+        lng=-122.5630,
+        neighborhood="Muir Beach / West Marin",
+        tradition=Tradition.ZEN,
+        notes="SFZC's Marin farm and residential training center. Soto Zen. Public welcome for daily zazen (6am, 7:50pm most days) and Sunday Morning Program (9:30am zazen + 10am Dharma talk, hybrid in-person + Online Zendo). No registration required. No iCal feed — manually seeded recurring sits.",
+    ),
 }
 
 
