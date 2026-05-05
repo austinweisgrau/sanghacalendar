@@ -52,13 +52,18 @@ def _parse_eventbrite_datetime(dt_str: Optional[str]) -> Optional[str]:
     """
     Parse Eventbrite datetime strings like "2026-05-10T14:00:00" or
     "2026-05-10T14:00:00Z" into ISO format.
+
+    Eventbrite sometimes returns UTC times (with Z suffix) and sometimes
+    local times (no suffix). Preserve the Z as +00:00 so the frontend
+    knows to treat it as UTC rather than local time.
     """
     if not dt_str:
         return None
     try:
-        # Eventbrite returns local times in their API/JSON blobs
-        # Try to parse as-is
-        dt_str = dt_str.rstrip("Z")
+        if dt_str.endswith("Z"):
+            # UTC time — convert Z to +00:00 so timezone is explicit
+            dt = datetime.fromisoformat(dt_str[:-1]).replace(tzinfo=timezone.utc)
+            return dt.isoformat()
         if "T" in dt_str:
             return dt_str
         return dt_str

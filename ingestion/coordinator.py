@@ -15,7 +15,7 @@ LLM-assisted classification of ambiguous events.
 import logging
 
 from data.schemas.event import Event
-from data.store import init_db, upsert_events
+from data.store import dedup_events, init_db, upsert_events
 from ingestion.feeds.ical_feed import fetch_feed
 from ingestion.scrapers.eventbrite import fetch_eventbrite_organizer
 from ingestion.scrapers.static_html import fetch_static_html_calendar
@@ -118,6 +118,9 @@ def main():
     events = run_east_bay_phase1() + run_east_bay_phase2() + run_east_bay_phase2b()
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
+    d = dedup_events()
+    if d:
+        print(f"✓ {d} duplicate events removed")
 
 
 if __name__ == "__main__":

@@ -14,6 +14,7 @@ from icalendar import Event as ICalEvent
 from data.store import (
     add_submission,
     add_subscriber,
+    dedup_events,
     get_active_subscribers,
     get_submissions,
     get_upcoming_events,
@@ -286,6 +287,7 @@ def admin_ingest():
     if not body or "events" not in body:
         return jsonify({"error": "expected {events: [...]}"}), 400
     n = upsert_dicts(body["events"])
+    dedup_events()
     return jsonify({"upserted": n})
 
 
