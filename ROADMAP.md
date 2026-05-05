@@ -1,18 +1,18 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-04 (heartbeat 5)_
+_Last updated: 2026-05-05 (heartbeat dev)_
 
 ## Current Status
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 370+ events in 30-day window, 26 organizations with sits
+- 420+ events in 30-day window, 28 organizations with sits
 - 640 manual recurring sit instances seeded May 3 (27 sit definitions)
-- Map view live at `/map` — all 25 centers pinned with tradition colors
-- 25 center bio pages (centers.py now complete)
-- City filter now includes all 11 cities (added Alameda, Kensington, Pleasant Hill, Richmond, Tiburon)
-- Ingestion sources: 27 iCal feeds + manually-seeded recurring sits (27 definitions) + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley)
-- Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin
+- Map view live at `/map` — all centers pinned with tradition colors
+- 28 center bio pages (centers.py complete)
+- City filter includes 11 cities (Alameda, Kensington, Pleasant Hill, Richmond, Tiburon + more)
+- Ingestion sources: 28 iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley)
+- Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin + NorCal Plum Village network
 
 ---
 
@@ -76,6 +76,12 @@ Priority order for East Bay centers not yet on live ingestion:
 
 ✅ **Fixed May 4 (heartbeat 5)** — `sf_buddhist_center` was in `sangha-ingest.js` (weekly only) but not in `ingestion/sources/east_bay.py`. Added to both `CENTERS` and `ICAL_FEEDS` in east_bay.py. Now picked up by daily `coordinator.py` via GH Actions. Feed verified: `sfbuddhistcenter.org/events/?ical=1` returns valid iCal (WP Events Calendar 7.2.3.1), 17 upcoming events including drop-in sits, morning meditations, Sangha nights, and identity-specific sits.
 
+### NorCal Sangha Community (Plum Village Bay Area network)
+
+✅ **Added May 5** — `https://norcalsangha.org/events/?ical=1` added to east_bay.py ICAL_FEEDS. WordPress Events Calendar plugin. Monthly Days of Mindfulness (frequently at EBMC Oakland and Shantideva Monastery, Castro Valley) + special retreats. Added center bio to centers.py. 28 orgs total.
+
+Note: NorCal Sangha events span multiple Bay Area and NorCal locations. Events outside the Bay Area (Deer Park Monastery in Escondido, etc.) will be filtered by EXCLUDE_KEYWORDS ("retreat") or LLM classification.
+
 ### Research: Mangalam Research Center (Berkeley)
 
 ❌ **Skip** — Calendar shows "No event found." Academic courses/lectures only, no public meditation sits. Not a fit for sangha calendar.
@@ -108,8 +114,8 @@ Placeholder is live in the UI. Feature pending:
 Target: top 10 US metro areas by Buddhist population + center density.
 
 Candidate metros (rough priority):
-1. Bay Area ✅ (in progress)
-2. NYC
+1. Bay Area ✅ (complete — 28 centers)
+2. NYC 🔄 **Research complete May 5** — see `memory/research-nyc-meditation-calendar.md`
 3. LA
 4. Boston/Cambridge
 5. DC
@@ -120,6 +126,20 @@ Candidate metros (rough priority):
 10. Portland
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
+
+### NYC Phase 3a — Easy Wins (implement next)
+
+Three centers with confirmed working iCal feeds, no new scraper code needed:
+
+| Center | iCal URL | Tradition |
+|--------|----------|-----------|
+| NY Insight Meditation Center (NYIMC) | `nyimc.org/events/?ical=1` | Theravada |
+| Brooklyn Zen Center | `brooklynzen.org/?ical=1` | Soto Zen |
+| Kadampa NYC (meditationinnewyork.org) | `meditationinnewyork.org/events/?ical=1` | Tibetan (NKT) |
+
+Implementation requires: new `ingestion/sources/nyc.py`, update coordinator/abraxis to run NYC phase, add city filter values (Manhattan, Brooklyn).
+
+See `memory/research-nyc-meditation-calendar.md` for full details on all researched centers.
 
 ---
 

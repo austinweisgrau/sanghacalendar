@@ -520,4 +520,27 @@ CENTERS = {
             "open to all regardless of experience."
         ),
     },
+    "norcal_sangha": {
+        "id": "norcal_sangha",
+        "name": "NorCal Sangha Community",
+        "tradition": "pluralist",
+        "url": "https://norcalsangha.org",
+        "address": "Bay Area (multiple venues)",
+        "city": "Oakland",
+        "state": "CA",
+        "zip": "94612",
+        "neighborhood": "Bay Area",
+        "lat": 37.8076,
+        "lng": -122.2697,
+        "description": (
+            "NorCal Sangha Community is the Northern California regional hub for "
+            "Plum Village sanghas in the tradition of Thich Nhat Hanh and the Order "
+            "of Interbeing. They organize monthly Days of Mindfulness — full-day "
+            "retreats in mindfulness practice — and special events at venues across "
+            "the Bay Area, frequently co-hosted with East Bay Meditation Center "
+            "(EBMC) and Shantideva Monastery in Castro Valley. They also maintain "
+            "a directory of local weekly Plum Village sitting groups throughout "
+            "Northern California."
+        ),
+    },
 }

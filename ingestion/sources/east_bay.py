@@ -304,6 +304,20 @@ CENTERS = {
         tradition=Tradition.PLURALIST,
         notes="Triratna Buddhist Community. Identity-affirming — LGBTQ+ and BIPOC programs. Weekly drop-in, dharma nights, online morning sits.",
     ),
+    "norcal_sangha": Center(
+        id="norcal_sangha",
+        name="NorCal Sangha Community",
+        url="https://norcalsangha.org",
+        address="285 17th St",  # Days of Mindfulness frequently co-hosted at EBMC
+        city="Oakland",
+        state="CA",
+        zip_code="94612",
+        lat=37.8076,
+        lng=-122.2697,
+        neighborhood="Bay Area",
+        tradition=Tradition.PLURALIST,
+        notes="Northern California regional hub for Plum Village sanghas (Thich Nhat Hanh / Order of Interbeing). Hosts monthly Days of Mindfulness and special retreats, frequently at EBMC Oakland and Shantideva Monastery (Castro Valley). Events listed via WordPress iCal feed.",
+    ),
 }
 
 
@@ -381,5 +395,12 @@ ICAL_FEEDS = {
         # Weekly drop-in sits, sangha nights, morning meditation, LGBTQ+ and BIPOC programs
         "url": "https://sfbuddhistcenter.org/events/?ical=1",
         "filter_to_sits": True,
+    },
+    "norcal_sangha": {
+        # NorCal Sangha Community — regional Plum Village hub (norcalsangha.org)
+        # Monthly Days of Mindfulness + special retreats. Not weekly recurring sits.
+        # Location varies (frequently EBMC Oakland, Shantideva Monastery Castro Valley)
+        "url": "https://norcalsangha.org/events/?ical=1",
+        "filter_to_sits": False,  # Include Day of Mindfulness retreats — not just weekly sits
     },
 }
