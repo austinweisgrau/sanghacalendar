@@ -326,6 +326,11 @@
       <option value="in-person">In-person only</option>
       <option value="online">Online only</option>
     </select>
+    <select id="filter-state" onchange="onStateChange()">
+      <option value="">All states</option>
+      <option value="CA">California</option>
+      <option value="NY">New York</option>
+    </select>
     <div class="multi-select" id="city-picker">
       <div class="multi-select-trigger" id="city-trigger" onclick="toggleCityDropdown(event)">All cities</div>
       <div class="multi-select-dropdown" id="city-dropdown">
@@ -450,6 +455,15 @@ function onCityChange() {
   loadEvents();
 }
 
+function onStateChange() {
+  // Clear city selection when state changes to avoid conflicting filters
+  document.querySelectorAll("#city-dropdown input:checked").forEach(el => { el.checked = false; });
+  const trigger = document.getElementById("city-trigger");
+  trigger.textContent = "All cities";
+  trigger.classList.remove("active");
+  loadEvents();
+}
+
 function onDateWindowChange() {
   const window_val = document.getElementById("filter-date-window").value;
   const rangeRow   = document.getElementById("date-range-row");
@@ -469,6 +483,7 @@ function localDateStr(offset) {
 
 function buildFeedParams() {
   const cities        = Array.from(document.querySelectorAll("#city-dropdown input:checked")).map(el => el.value);
+  const state         = document.getElementById("filter-state").value;
   const tradition     = document.getElementById("filter-tradition").value;
   const location_type = document.getElementById("filter-location").value;
   const window_val    = document.getElementById("filter-date-window").value;
@@ -476,6 +491,7 @@ function buildFeedParams() {
   const end_date      = document.getElementById("filter-end-date").value;
   const params = new URLSearchParams();
   cities.forEach(c => params.append("city", c));
+  if (state) params.set("state", state);
   if (tradition)     params.set("tradition", tradition);
   if (location_type) params.set("location_type", location_type);
   if (window_val === "today") {

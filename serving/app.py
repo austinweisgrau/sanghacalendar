@@ -129,8 +129,10 @@ def ical_feed():
         except ValueError:
             pass
     cities = request.args.getlist("city")
+    states = request.args.getlist("state")
     rows = get_upcoming_events(
         city=cities if cities else None,
+        state=states if states else None,
         tradition=request.args.get("tradition"),
         location_type=request.args.get("location_type"),
         days_ahead=days_ahead,
@@ -143,6 +145,8 @@ def ical_feed():
     parts = ["Sangha Calendar"]
     if request.args.get("tradition"):
         parts.append(request.args["tradition"].title())
+    if states:
+        parts.append(", ".join(states))
     if cities:
         parts.append(", ".join(cities))
     if request.args.get("location_type"):
@@ -166,8 +170,10 @@ def events():
         except ValueError:
             pass
     cities = request.args.getlist("city")
+    states = request.args.getlist("state")
     rows = get_upcoming_events(
         city=cities if cities else None,
+        state=states if states else None,
         tradition=request.args.get("tradition"),
         location_type=request.args.get("location_type"),
         days_ahead=days_ahead,

@@ -300,6 +300,7 @@ def get_active_subscribers() -> list[dict]:
 
 def get_upcoming_events(
     city: Optional[str | list[str]] = None,
+    state: Optional[str | list[str]] = None,
     tradition: Optional[str] = None,
     location_type: Optional[str] = None,
     org_id: Optional[str] = None,
@@ -339,6 +340,14 @@ def get_upcoming_events(
         else:
             q += f" AND city IN ({','.join('?' * len(cities))})"
             params.extend(cities)
+    if state:
+        states = [state] if isinstance(state, str) else state
+        if len(states) == 1:
+            q += " AND state = ?"
+            params.append(states[0])
+        else:
+            q += f" AND state IN ({','.join('?' * len(states))})"
+            params.extend(states)
     if tradition:
         q += " AND tradition = ?"
         params.append(tradition)
