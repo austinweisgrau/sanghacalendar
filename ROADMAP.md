@@ -115,7 +115,7 @@ Target: top 10 US metro areas by Buddhist population + center density.
 
 Candidate metros (rough priority):
 1. Bay Area ✅ (complete — 28 centers)
-2. NYC 🔄 **Research complete May 5** — see `memory/research-nyc-meditation-calendar.md`
+2. NYC 🔄 **Phase 3a live May 5** (3 centers) — see `memory/research-nyc-meditation-calendar.md`
 3. LA
 4. Boston/Cambridge
 5. DC
@@ -127,19 +127,27 @@ Candidate metros (rough priority):
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
-### NYC Phase 3a — Easy Wins (implement next)
+### NYC Phase 3a — ✅ Live May 5 (3 centers)
 
-Three centers with confirmed working iCal feeds, no new scraper code needed:
+| Center | iCal URL | Tradition | Status |
+|--------|----------|-----------|--------|
+| NY Insight Meditation Center (NYIMC) | `nyimc.org/events/?ical=1` | Theravada | ✅ Live |
+| Brooklyn Zen Center | `brooklynzen.org/?ical=1` | Soto Zen | ✅ Live |
+| Kadampa NYC (meditationinnewyork.org) | `meditationinnewyork.org/events/?ical=1` | Tibetan (NKT) | ✅ Live |
 
-| Center | iCal URL | Tradition |
-|--------|----------|-----------|
-| NY Insight Meditation Center (NYIMC) | `nyimc.org/events/?ical=1` | Theravada |
-| Brooklyn Zen Center | `brooklynzen.org/?ical=1` | Soto Zen |
-| Kadampa NYC (meditationinnewyork.org) | `meditationinnewyork.org/events/?ical=1` | Tibetan (NKT) |
+`ingestion/sources/nyc.py` + `run_nyc_phase3a()` in coordinator + abraxis. City filter updated (Manhattan, Brooklyn, Muir Beach). Events appear after next daily GH Actions ingest.
 
-Implementation requires: new `ingestion/sources/nyc.py`, update coordinator/abraxis to run NYC phase, add city filter values (Manhattan, Brooklyn).
+### NYC Phase 3b — Next steps (medium difficulty)
 
-See `memory/research-nyc-meditation-calendar.md` for full details on all researched centers.
+See `memory/research-nyc-meditation-calendar.md` for full research.
+
+| Center | Approach |
+|--------|----------|
+| Shambhala NYC | Parse `const eventsDatas` JSON from `ny.shambhala.org/calendar/` |
+| NYZCCC (zencare.org) | Seed from stable static schedule |
+| Tibet House US | Eventbrite (organizer_id=3903735193) + seed lunchtime meditation |
+| Village Zendo | HTML scrape FullCalendar page |
+| ZCNYC / Fire Lotus | HTML scrape (Google Cal-backed, server-rendered) |
 
 ---
 
