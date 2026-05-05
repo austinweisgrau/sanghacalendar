@@ -1,0 +1,56 @@
+<div class="filters">
+  <select id="filter-location" onchange="onFilterChange()">
+    <option value="">In-person &amp; online</option>
+    <option value="in-person">In-person only</option>
+    <option value="online">Online only</option>
+  </select>
+  <select id="filter-state" onchange="onStateChange()">
+    <option value="">All states</option>
+    <option value="CA">California</option>
+    <option value="NY">New York</option>
+  </select>
+  <div class="multi-select" id="city-picker">
+    <div class="multi-select-trigger" id="city-trigger" onclick="toggleCityDropdown(event)">All cities</div>
+    <div class="multi-select-dropdown" id="city-dropdown">
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Oakland" onchange="onCityChange()"> Oakland</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Berkeley" onchange="onCityChange()"> Berkeley</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="San Francisco" onchange="onCityChange()"> San Francisco</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Albany" onchange="onCityChange()"> Albany</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Alameda" onchange="onCityChange()"> Alameda</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Kensington" onchange="onCityChange()"> Kensington</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Pleasant Hill" onchange="onCityChange()"> Pleasant Hill</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Richmond" onchange="onCityChange()"> Richmond</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Tiburon" onchange="onCityChange()"> Tiburon</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="San Rafael" onchange="onCityChange()"> San Rafael</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Woodacre" onchange="onCityChange()"> Woodacre</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Muir Beach" onchange="onCityChange()"> Muir Beach</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Santa Monica" onchange="onCityChange()"> Santa Monica</label>
+      <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Los Angeles" onchange="onCityChange()"> Los Angeles</label>
+      <label class="multi-select-option" data-state="NY"><input type="checkbox" value="Manhattan" onchange="onCityChange()"> Manhattan</label>
+      <label class="multi-select-option" data-state="NY"><input type="checkbox" value="Brooklyn" onchange="onCityChange()"> Brooklyn</label>
+    </div>
+  </div>
+  <select id="filter-tradition" onchange="onFilterChange()">
+    <option value="">All traditions</option>
+    <option value="theravada">Theravada / Insight</option>
+    <option value="zen">Zen</option>
+    <option value="tibetan">Tibetan / Shambhala</option>
+    <option value="secular">Secular</option>
+    <option value="pluralist">Pluralist / Non-sectarian</option>
+  </select>
+  <select id="filter-date-window" onchange="onDateWindowChange()">
+    <option value="today">Today</option>
+    <option value="tomorrow">Tomorrow</option>
+    <option value="3">Next 3 days</option>
+    <option value="7">Next 7 days</option>
+    <option value="14">Next 14 days</option>
+    <option value="30" selected>Next 30 days</option>
+    <option value="60">Next 60 days</option>
+    <option value="custom">Custom range…</option>
+  </select>
+</div>
+<div class="date-range" id="date-range-row">
+  <input type="date" id="filter-start-date" onchange="onFilterChange()">
+  <span>to</span>
+  <input type="date" id="filter-end-date" onchange="onFilterChange()">
+</div>
