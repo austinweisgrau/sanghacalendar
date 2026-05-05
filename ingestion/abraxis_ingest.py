@@ -29,6 +29,7 @@ from ingestion.feeds.ical_feed import fetch_feed
 from ingestion.scrapers.eventbrite import fetch_eventbrite_organizer
 from ingestion.scrapers.static_html import fetch_static_html_calendar
 from ingestion.sources.east_bay import CENTERS, EVENTBRITE_FEEDS, ICAL_FEEDS, STATIC_HTML_FEEDS
+from ingestion.sources import nyc as nyc_sources
 
 log = logging.getLogger(__name__)
 
@@ -172,6 +173,29 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Static HTML feed failed: {e}")
+
+    # NYC Phase 3a — direct iCal feeds
+    for org_id, feed_cfg in nyc_sources.ICAL_FEEDS.items():
+        center = nyc_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (NYC)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ NYC feed failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

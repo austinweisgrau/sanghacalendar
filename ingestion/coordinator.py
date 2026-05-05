@@ -20,6 +20,7 @@ from ingestion.feeds.ical_feed import fetch_feed
 from ingestion.scrapers.eventbrite import fetch_eventbrite_organizer
 from ingestion.scrapers.static_html import fetch_static_html_calendar
 from ingestion.sources.east_bay import CENTERS, EVENTBRITE_FEEDS, ICAL_FEEDS, STATIC_HTML_FEEDS
+from ingestion.sources import nyc as nyc_sources
 
 log = logging.getLogger(__name__)
 
@@ -111,11 +112,45 @@ def run_east_bay_phase2b() -> list[Event]:
     return all_events
 
 
+def run_nyc_phase3a() -> list[Event]:
+    """Phase 3a: NYC — direct iCal subscribe for three confirmed easy feeds."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in nyc_sources.ICAL_FEEDS.items():
+        center = nyc_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (NYC)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
     init_db()
-    events = run_east_bay_phase1() + run_east_bay_phase2() + run_east_bay_phase2b()
+    events = (
+        run_east_bay_phase1()
+        + run_east_bay_phase2()
+        + run_east_bay_phase2b()
+        + run_nyc_phase3a()
+    )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
     d = dedup_events()

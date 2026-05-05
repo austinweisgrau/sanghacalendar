@@ -520,6 +520,68 @@ CENTERS = {
             "open to all regardless of experience."
         ),
     },
+    # ---- NYC Phase 3a centers ----
+    "nyimc": {
+        "id": "nyimc",
+        "name": "New York Insight Meditation Center",
+        "tradition": "theravada",
+        "url": "https://www.nyimc.org",
+        "address": "115 West 29th Street, 12th Floor",
+        "city": "Manhattan",
+        "state": "NY",
+        "zip": "10001",
+        "neighborhood": "Midtown South",
+        "lat": 40.7473,
+        "lng": -73.9932,
+        "description": (
+            "New York Insight Meditation Center (NYIMC) offers meditation in the Theravada "
+            "and secular mindfulness traditions. Founded in 1997, NYIMC provides a space "
+            "for regular sitting groups, teacher-led retreats, and MBSR courses in Midtown "
+            "Manhattan. Weekly programs include the Thursday Community Sit (co-presented "
+            "with Tibet House US) and the Wednesday Community Meditation Gathering. "
+            "Open to practitioners of all levels."
+        ),
+    },
+    "brooklyn_zen_center": {
+        "id": "brooklyn_zen_center",
+        "name": "Brooklyn Zen Center",
+        "tradition": "zen",
+        "url": "https://brooklynzen.org",
+        "address": "326 Clinton St",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zip": "11231",
+        "neighborhood": "Carroll Gardens",
+        "lat": 40.6820,
+        "lng": -73.9984,
+        "description": (
+            "Brooklyn Zen Center practices Soto Zen with a commitment to social engagement "
+            "and accessibility. Their Boundless Mind Temple in Carroll Gardens hosts weekly "
+            "Wednesday Dharma Shares and Saturday Morning Programs. Daily online morning "
+            "meditation (Mon–Fri 7:30am ET) is open to all. The center emphasizes "
+            "progressive values and welcomes practitioners from all backgrounds."
+        ),
+    },
+    "kadampa_nyc": {
+        "id": "kadampa_nyc",
+        "name": "Kadampa Meditation Center New York",
+        "tradition": "tibetan",
+        "url": "https://meditationinnewyork.org",
+        "address": "127 W 24th St",
+        "city": "Manhattan",
+        "state": "NY",
+        "zip": "10011",
+        "neighborhood": "Chelsea",
+        "lat": 40.7455,
+        "lng": -73.9960,
+        "description": (
+            "Kadampa Meditation Center New York (Chelsea location) offers over 30 drop-in "
+            "meditation classes per week in the New Kadampa Tradition (NKT-IKBU), a "
+            "contemporary Tibetan Buddhist tradition emphasizing practical application of "
+            "Buddha's teachings in daily life. Classes include guided meditation, "
+            "breathing meditation, and Dharma teachings. All levels welcome."
+        ),
+    },
     "norcal_sangha": {
         "id": "norcal_sangha",
         "name": "NorCal Sangha Community",
