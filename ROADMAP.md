@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-05 (heartbeat 3)_
+_Last updated: 2026-05-05 (heartbeat 6)_
 
 ## Current Status
 
@@ -116,7 +116,7 @@ Target: top 10 US metro areas by Buddhist population + center density.
 Candidate metros (rough priority):
 1. Bay Area ✅ (complete — 28 centers)
 2. NYC 🔄 **Phase 3a live May 5** (3 centers) — see `memory/research-nyc-meditation-calendar.md`
-3. LA
+3. LA 🔄 **Phase 3 LA live May 5** — see below
 4. Boston/Cambridge
 5. DC
 6. Chicago
@@ -151,6 +151,21 @@ Candidate metros (rough priority):
 |--------|----------|--------|
 | New York Zendo Shobo-Ji (Zen Studies Society) | iCal feed (`zenstudies.org/events/new-york-zendo-calendar/?ical=1`) with "NYZ:"/"DBZ:"/"Online:" prefix stripping | ✅ Live — `fetch_zenstudies_nyc()` in nyc.py. Daily zazen + Sunday service seeded. |
 | ZCNYC / Fire Lotus Temple | LLM-assisted static HTML scrape of `zcnyc.org/calendar/` | ✅ Live — in `STATIC_HTML_FEEDS`. Sunday Morning Program + LGBTQIA+ sits seeded. |
+
+### LA Phase 3 — ✅ Live May 5 (2 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| InsightLA (Santa Monica) | Schema.org Event HTML parser — `/fullcalendar/` page is server-side rendered with structured markup | ✅ Live — `fetch_insightla()` in la.py. ~18 events/page (online morning sits, Santa Monica Dharma Nights, Recovery Dharma, Qigong, MBSR classes). 2 pages fetched. |
+| Zen Center of Los Angeles (Koreatown) | LLM-assisted static HTML scrape of `zcla.org/calendars/` | ✅ Wired into STATIC_HTML_FEEDS in la.py. Will pick up on next Abraxis weekly run. |
+
+City filter updated: "Santa Monica (LA)" and "Los Angeles (LA)" added to index.html.
+Center bios added to centers.py for insightla + zcla.
+
+**Skipped for now:**
+- Shambhala LA (`shambhala-koeln.de/ical.php?center=208`) — Cologne server unreachable (same issue as Berkeley center=178)
+- Kadampa LA (`meditationinlosangeles.org`) — site down/offline
+- Against the Stream (`againstthestream.com`) — Squarespace, no iCal, retreat-focused
 
 ### NYC Phase 3d — Deferred
 
