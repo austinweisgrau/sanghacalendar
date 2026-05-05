@@ -582,6 +582,72 @@ CENTERS = {
             "breathing meditation, and Dharma teachings. All levels welcome."
         ),
     },
+    # ---- NYC Phase 3b centers ----
+    "shambhala_nyc": {
+        "id": "shambhala_nyc",
+        "name": "Shambhala Meditation Center of New York",
+        "tradition": "tibetan",
+        "url": "https://ny.shambhala.org",
+        "address": "151 W 30th St, 3rd Floor",
+        "city": "Manhattan",
+        "state": "NY",
+        "zip": "10001",
+        "neighborhood": "Midtown South",
+        "lat": 40.7476,
+        "lng": -73.9935,
+        "description": (
+            "Shambhala Meditation Center of New York is one of the primary centers of the "
+            "Shambhala Buddhist tradition, founded by Chögyam Trungpa Rinpoche. Located in "
+            "Midtown South, the center offers in-person Tuesday evening meditation (1st and 3rd "
+            "Tuesdays 7:15pm), Sunday Dharma Gatherings (2nd Sunday monthly), a Virtual Healing "
+            "Circle (last Saturday monthly), and online Learn to Meditate classes. The Shambhala "
+            "tradition emphasizes basic goodness, the path of the bodhisattva warrior, and the "
+            "integration of meditation into everyday life."
+        ),
+    },
+    "nyzccc": {
+        "id": "nyzccc",
+        "name": "NY Zen Center for Contemplative Care",
+        "tradition": "zen",
+        "url": "https://zencare.org",
+        "address": "119 W 23rd St, 4th Floor",
+        "city": "Manhattan",
+        "state": "NY",
+        "zip": "10011",
+        "neighborhood": "Chelsea",
+        "lat": 40.7435,
+        "lng": -73.9949,
+        "description": (
+            "The NY Zen Center for Contemplative Care (NYZCCC) is a Soto Zen center "
+            "dedicated to integrating Buddhist practice with compassionate care in healthcare "
+            "settings. NYZCCC trains chaplains, hospice workers, and caregivers in "
+            "contemplative approaches. Their practice schedule includes Mid-Day Zazen "
+            "Mon–Sat 12:30pm (online), Sunday services with zazen at 10am and dharma talk "
+            "at 11:30am (in-person + online), and Monday and Wednesday evening sits at 6pm. "
+            "Open to practitioners of all levels."
+        ),
+    },
+    "tibet_house_us": {
+        "id": "tibet_house_us",
+        "name": "Tibet House US",
+        "tradition": "tibetan",
+        "url": "https://thus.org",
+        "address": "22 W 15th St",
+        "city": "Manhattan",
+        "state": "NY",
+        "zip": "10011",
+        "neighborhood": "Chelsea / Flatiron",
+        "lat": 40.7382,
+        "lng": -73.9972,
+        "description": (
+            "Tibet House US is the cultural center of His Holiness the Dalai Lama in America, "
+            "dedicated to preserving Tibetan civilization and making its wisdom accessible to "
+            "the world. In addition to cultural exhibitions and lectures, Tibet House offers "
+            "a free Lunchtime Meditation series Mon–Fri 1:00–1:45pm ET (online), led by "
+            "rotating teachers from Buddhist and contemplative traditions. Ticketed special "
+            "events include teachings, film screenings, and public programs."
+        ),
+    },
     "norcal_sangha": {
         "id": "norcal_sangha",
         "name": "NorCal Sangha Community",

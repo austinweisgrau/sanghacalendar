@@ -21,6 +21,7 @@ from ingestion.scrapers.eventbrite import fetch_eventbrite_organizer
 from ingestion.scrapers.static_html import fetch_static_html_calendar
 from ingestion.sources.east_bay import CENTERS, EVENTBRITE_FEEDS, ICAL_FEEDS, STATIC_HTML_FEEDS
 from ingestion.sources import nyc as nyc_sources
+from ingestion.sources.nyc import fetch_shambhala_nyc
 
 log = logging.getLogger(__name__)
 
@@ -141,6 +142,44 @@ def run_nyc_phase3a() -> list[Event]:
     return all_events
 
 
+def run_nyc_phase3b() -> list[Event]:
+    """Phase 3b: NYC — Shambhala NYC scraper + Tibet House Eventbrite."""
+    all_events: list[Event] = []
+
+    # Shambhala NYC — parse eventsDatas JSON from calendar page
+    try:
+        events = fetch_shambhala_nyc()
+        log.info(f"  Shambhala NYC → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ Shambhala NYC failed: {e}")
+
+    # Tibet House US — Eventbrite
+    for org_id, feed_cfg in nyc_sources.EVENTBRITE_FEEDS.items():
+        center = nyc_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Eventbrite NYC)...")
+        try:
+            events = fetch_eventbrite_organizer(
+                organizer_id=feed_cfg["organizer_id"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -150,6 +189,7 @@ def main():
         + run_east_bay_phase2()
         + run_east_bay_phase2b()
         + run_nyc_phase3a()
+        + run_nyc_phase3b()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
