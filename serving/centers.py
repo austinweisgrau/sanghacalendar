@@ -648,6 +648,51 @@ CENTERS = {
             "events include teachings, film screenings, and public programs."
         ),
     },
+    # ---- NYC Phase 3c centers ----
+    "zenstudies_nyc": {
+        "id": "zenstudies_nyc",
+        "name": "New York Zendo Shobo-Ji",
+        "tradition": "zen",
+        "url": "https://zenstudies.org/new-york-zendo/",
+        "address": "223 E 67th St",
+        "city": "Manhattan",
+        "state": "NY",
+        "zip": "10065",
+        "neighborhood": "Upper East Side",
+        "lat": 40.7657,
+        "lng": -73.9600,
+        "description": (
+            "New York Zendo Shobo-Ji is one of the oldest Rinzai Zen centers in the Western "
+            "hemisphere, founded by Eido Roshi in 1968 and part of the Zen Studies Society. "
+            "The zendo on the Upper East Side offers daily Morning Zazen (Mon–Thu 6:45–7:45am), "
+            "Evening Zazen (Mon/Tue/Wed 7:00–9:00pm), and Sunday Morning Service with zazen at 10am. "
+            "Monthly sesshins (intensive retreat periods), Introduction to Zen Meditation classes "
+            "on Thursdays, and online programs are also available. The Zen Studies Society also "
+            "operates Dai Bosatsu Zendo Kongo-ji, a mountain monastery in the Catskills."
+        ),
+    },
+    "zcnyc": {
+        "id": "zcnyc",
+        "name": "Zen Center of New York City (Fire Lotus Temple)",
+        "tradition": "zen",
+        "url": "https://zcnyc.org",
+        "address": "500 State St",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zip": "11217",
+        "neighborhood": "Boerum Hill",
+        "lat": 40.6824,
+        "lng": -73.9887,
+        "description": (
+            "The Zen Center of New York City, also known as Fire Lotus Temple, is a Soto Zen "
+            "training center in Boerum Hill, Brooklyn, part of the Mountains and Rivers Order "
+            "founded by John Daido Loori Roshi. Practice includes a Sunday Morning Program "
+            "(9:30am–12:30pm with zazen, dharma talk, and beginning instruction), daily zazen, "
+            "and monthly half-day sits. ZCNYC is committed to inclusive practice and offers "
+            "dedicated programs including an LGBTQIA+ Sitting Group (1st and 3rd Tuesdays 6pm, "
+            "Zoom) and a TGNC Practice Night (2nd Thursdays 6:30pm, in-person)."
+        ),
+    },
     "norcal_sangha": {
         "id": "norcal_sangha",
         "name": "NorCal Sangha Community",

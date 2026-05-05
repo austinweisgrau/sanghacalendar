@@ -19,9 +19,10 @@ from data.store import dedup_events, init_db, upsert_events
 from ingestion.feeds.ical_feed import fetch_feed
 from ingestion.scrapers.eventbrite import fetch_eventbrite_organizer
 from ingestion.scrapers.static_html import fetch_static_html_calendar
+
 from ingestion.sources.east_bay import CENTERS, EVENTBRITE_FEEDS, ICAL_FEEDS, STATIC_HTML_FEEDS
 from ingestion.sources import nyc as nyc_sources
-from ingestion.sources.nyc import fetch_shambhala_nyc
+from ingestion.sources.nyc import fetch_shambhala_nyc, fetch_zenstudies_nyc
 
 log = logging.getLogger(__name__)
 
@@ -180,6 +181,44 @@ def run_nyc_phase3b() -> list[Event]:
     return all_events
 
 
+def run_nyc_phase3c() -> list[Event]:
+    """Phase 3c: NYC — Zen Studies Society iCal + ZCNYC static HTML."""
+    all_events: list[Event] = []
+
+    # Zen Studies Society / NY Zendo Shobo-Ji — iCal with prefix stripping
+    try:
+        events = fetch_zenstudies_nyc()
+        log.info(f"  NY Zendo Shobo-Ji → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ NY Zendo Shobo-Ji failed: {e}")
+
+    # ZCNYC / Fire Lotus Temple — LLM-assisted static HTML
+    for org_id, feed_cfg in nyc_sources.STATIC_HTML_FEEDS.items():
+        center = nyc_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (NYC static HTML)...")
+        try:
+            events = fetch_static_html_calendar(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -190,6 +229,7 @@ def main():
         + run_east_bay_phase2b()
         + run_nyc_phase3a()
         + run_nyc_phase3b()
+        + run_nyc_phase3c()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

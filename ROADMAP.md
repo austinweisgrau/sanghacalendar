@@ -1,17 +1,17 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-05 (heartbeat dev)_
+_Last updated: 2026-05-05 (heartbeat 3)_
 
 ## Current Status
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 420+ events in 30-day window, 28 organizations with sits
+- 500+ events in 30-day window (500 cap), 36 organizations
 - 640 manual recurring sit instances seeded May 3 (27 sit definitions)
 - Map view live at `/map` — all centers pinned with tradition colors
 - 28 center bio pages (centers.py complete)
 - City filter includes 11 cities (Alameda, Kensington, Pleasant Hill, Richmond, Tiburon + more)
-- Ingestion sources: 28 iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley)
+- Ingestion sources: 30 iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley, Tibet House US) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley, ZCNYC)
 - Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin + NorCal Plum Village network
 
 ---
@@ -137,17 +137,26 @@ Candidate metros (rough priority):
 
 `ingestion/sources/nyc.py` + `run_nyc_phase3a()` in coordinator + abraxis. City filter updated (Manhattan, Brooklyn, Muir Beach). Events appear after next daily GH Actions ingest.
 
-### NYC Phase 3b — Next steps (medium difficulty)
+### NYC Phase 3b — ✅ Live May 5 (3 centers)
 
-See `memory/research-nyc-meditation-calendar.md` for full research.
+| Center | Approach | Status |
+|--------|----------|--------|
+| Shambhala NYC | Parse `const eventsDatas` JSON from `ny.shambhala.org/calendar/` | ✅ Live (119 events) |
+| NYZCCC (zencare.org) | Seeded stable schedule | ✅ Live (182 events: Mid-Day Zazen + Sun/Mon/Wed sits) |
+| Tibet House US | Eventbrite + seeded Lunchtime Meditation | ✅ Live (Mon-Fri 1pm online seeded; Eventbrite wired for ticketed events) |
+
+### NYC Phase 3c — ✅ Live May 5 (2 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| New York Zendo Shobo-Ji (Zen Studies Society) | iCal feed (`zenstudies.org/events/new-york-zendo-calendar/?ical=1`) with "NYZ:"/"DBZ:"/"Online:" prefix stripping | ✅ Live — `fetch_zenstudies_nyc()` in nyc.py. Daily zazen + Sunday service seeded. |
+| ZCNYC / Fire Lotus Temple | LLM-assisted static HTML scrape of `zcnyc.org/calendar/` | ✅ Live — in `STATIC_HTML_FEEDS`. Sunday Morning Program + LGBTQIA+ sits seeded. |
+
+### NYC Phase 3d — Deferred
 
 | Center | Approach |
 |--------|----------|
-| Shambhala NYC | Parse `const eventsDatas` JSON from `ny.shambhala.org/calendar/` |
-| NYZCCC (zencare.org) | Seed from stable static schedule |
-| Tibet House US | Eventbrite (organizer_id=3903735193) + seed lunchtime meditation |
-| Village Zendo | HTML scrape FullCalendar page |
-| ZCNYC / Fire Lotus | HTML scrape (Google Cal-backed, server-rendered) |
+| Village Zendo | HARD: JS-rendered (Divi + EventOrganiser plugin), no iCal found, no `__NEXT_DATA__`. Needs headless browser. |
 
 ---
 

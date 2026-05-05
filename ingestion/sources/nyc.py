@@ -1,5 +1,5 @@
 """
-NYC meditation center sources — Phase 3a + 3b.
+NYC meditation center sources — Phase 3a + 3b + 3c.
 Defines all known NYC centers and their ingestion strategies.
 """
 
@@ -13,6 +13,7 @@ from typing import Optional
 import httpx
 
 from data.schemas.event import Center, Event, LocationType, SourceType, Tradition
+from ingestion.feeds.ical_feed import fetch_feed
 from ingestion.utils import detect_location_type, is_likely_sit
 
 log = logging.getLogger(__name__)
@@ -116,6 +117,35 @@ CENTERS = {
         tradition=Tradition.TIBETAN,
         notes="Cultural center of HH the Dalai Lama in America. Lunchtime Meditation Mon–Fri 1:00–1:45pm ET (online, various teachers). Occasional in-person lectures, exhibitions, and special programs.",
     ),
+    # ---- NYC Phase 3c ----
+    "zenstudies_nyc": Center(
+        id="zenstudies_nyc",
+        name="New York Zendo Shobo-Ji",
+        url="https://zenstudies.org/new-york-zendo/",
+        address="223 E 67th St",
+        city="Manhattan",
+        state="NY",
+        zip_code="10065",
+        lat=40.7657,
+        lng=-73.9600,
+        neighborhood="Upper East Side",
+        tradition=Tradition.ZEN,
+        notes="Rinzai Zen zendo. Daily Morning Zazen Mon–Thu 6:45am; Evening Zazen Mon/Tue/Wed 7pm; Sunday Morning Service 10am. Monthly sesshins and intro meditation classes. Part of the Zen Studies Society (also operates Dai Bosatsu Zendo in the Catskills).",
+    ),
+    "zcnyc": Center(
+        id="zcnyc",
+        name="Zen Center of New York City (Fire Lotus Temple)",
+        url="https://zcnyc.org",
+        address="500 State St",
+        city="Brooklyn",
+        state="NY",
+        zip_code="11217",
+        lat=40.6824,
+        lng=-73.9887,
+        neighborhood="Boerum Hill",
+        tradition=Tradition.ZEN,
+        notes="Soto Zen center in the Mountains and Rivers Order (Zen Mountain Monastery). Sunday Morning Program 9:30am–12:30pm; daily zazen; LGBTQIA+ Sitting Group 1st/3rd Tuesdays 6pm (Zoom); TGNC Practice Night 2nd Thursdays 6:30pm (in-person); monthly half-day sits.",
+    ),
 }
 
 
@@ -149,6 +179,74 @@ EVENTBRITE_FEEDS = {
         "filter_to_sits": False,  # include lectures, exhibitions, special programs
     },
 }
+
+# Phase 3c — Static HTML feeds (LLM-assisted)
+STATIC_HTML_FEEDS = {
+    "zcnyc": {
+        # Zen Center of NYC — WordPress Simple Calendar backed by private Google Calendar.
+        # Events are server-side rendered in the HTML. Scrape monthly calendar view.
+        "url": "https://zcnyc.org/calendar/",
+        "filter_to_sits": True,
+    },
+}
+
+
+# ---------------------------------------------------------------------------
+# Phase 3c — Zen Studies Society / New York Zendo Shobo-Ji iCal with prefix handling
+# ---------------------------------------------------------------------------
+
+def fetch_zenstudies_nyc() -> list[Event]:
+    """
+    Fetch the NY Zendo Shobo-Ji iCal feed and strip location prefixes from titles.
+
+    The Zen Studies Society iCal feed prefixes every event title with a location code:
+      "NYZ: Morning Zazen"  → in-person at 223 E 67th St, Manhattan
+      "Online: ..."         → online-only event
+      "DBZ: ..."            → Dai Bosatsu Zendo (Catskills retreat center, not NYC)
+
+    We strip the "NYZ: " and "Online: " prefixes for clean display, and skip
+    all "DBZ:" events since they're not in NYC.
+    """
+    center = CENTERS["zenstudies_nyc"]
+    url = "https://zenstudies.org/events/new-york-zendo-calendar/?ical=1"
+    log.info(f"Fetching Zen Studies Society / NY Zendo iCal feed")
+
+    try:
+        raw_events = fetch_feed(
+            url=url,
+            org_id="zenstudies_nyc",
+            org_name=center.name,
+            tradition=center.tradition,
+            filter_to_sits=True,
+            address=center.address,
+            city=center.city,
+            state=center.state,
+            neighborhood=center.neighborhood,
+            lat=center.lat,
+            lng=center.lng,
+        )
+    except Exception as e:
+        log.error(f"Failed to fetch Zen Studies NYC iCal: {e}")
+        return []
+
+    # Post-process: strip location prefixes, skip Catskills (DBZ) events
+    nyc_events = []
+    for event in raw_events:
+        title = event.title
+        if title.startswith("DBZ:"):
+            # Dai Bosatsu Zendo — Catskills retreat center, not NYC
+            continue
+        elif title.startswith("NYZ: "):
+            event.title = title[5:]
+        elif title.startswith("Online: "):
+            event.title = title[8:]
+            # Ensure location_type is set correctly for online events
+            if event.location_type == LocationType.IN_PERSON:
+                event.location_type = LocationType.ONLINE
+        nyc_events.append(event)
+
+    log.info(f"  → {len(nyc_events)} NY Zendo events (filtered from {len(raw_events)} raw)")
+    return nyc_events
 
 
 # ---------------------------------------------------------------------------

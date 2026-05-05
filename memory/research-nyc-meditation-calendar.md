@@ -118,12 +118,14 @@
 
 ---
 
-## Additional Targets Not Yet Researched
+## Additional Targets
 
-- **Zen Studies Society / New York Zendo Shobo-Ji** — 223 E 67th St, Upper East Side; traditional Rinzai Zen; zenstudies.org — check for iCal
-- **InsightLA NYC satellite** — if any NYC presence
-- **Common Ground Meditation (NYC)** — if any NYC center exists under this name (not to be confused with Minneapolis center)
-- **Brooklyn Tibetan Buddhist Center** — research needed
+- **Zen Studies Society / New York Zendo Shobo-Ji** — ✅ **Live May 5 (Phase 3c)**. iCal feed confirmed at `zenstudies.org/events/new-york-zendo-calendar/?ical=1`. Events prefixed NYZ:/Online:/DBZ: — strip prefix, filter DBZ (Catskills). 30 events/window.
+- **ZCNYC / Fire Lotus Temple** — ✅ **Live May 5 (Phase 3c)**. LLM-assisted static HTML scraper on `zcnyc.org/calendar/`. Server-side rendered Simple Calendar plugin. Sunday Morning Program + LGBTQIA+ sits seeded.
+- **Village Zendo** — ❌ HARD (JS-rendered, no iCal found). Defer to Phase 4.
+- **InsightLA NYC satellite** — not researched; likely no NYC physical location
+- **Common Ground Meditation (NYC)** — not researched
+- **Brooklyn Tibetan Buddhist Center** — not researched
 
 ---
 
