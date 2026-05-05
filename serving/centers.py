@@ -716,4 +716,48 @@ CENTERS = {
             "Northern California."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Los Angeles — Phase 3
+    # -----------------------------------------------------------------------
+    "insightla": {
+        "id": "insightla",
+        "name": "InsightLA",
+        "tradition": "theravada",
+        "url": "https://insightla.org",
+        "address": "1430 Olympic Blvd",
+        "city": "Santa Monica",
+        "state": "CA",
+        "zip": "90404",
+        "neighborhood": "Mid-City Santa Monica",
+        "lat": 34.0230,
+        "lng": -118.4807,
+        "description": (
+            "InsightLA is a leading Insight Meditation center in Los Angeles, "
+            "founded by Trudy Goodman. Rooted in the Theravada Vipassana tradition "
+            "and affiliated with IMS and Spirit Rock, InsightLA offers weekly community "
+            "sits, dharma nights, MBSR and Mindful Self-Compassion programs, and "
+            "residential retreats. Classes welcome beginners and experienced practitioners "
+            "alike, in person at the Santa Monica center and online via Zoom."
+        ),
+    },
+    "zcla": {
+        "id": "zcla",
+        "name": "Zen Center of Los Angeles",
+        "tradition": "zen",
+        "url": "https://zcla.org",
+        "address": "923 S. Mariposa Ave",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90006",
+        "neighborhood": "Koreatown",
+        "lat": 34.0546,
+        "lng": -118.3012,
+        "description": (
+            "ZCLA is one of the oldest and most established Zen centers in North America, "
+            "founded by Taizan Maezumi Roshi in 1967. Part of the White Plum Asanga lineage "
+            "(Soto/Rinzai fusion), ZCLA offers daily zazen, sesshins, dharma study groups, "
+            "and Intro to Zen classes in its Koreatown residential zendo. A landmark in "
+            "American Zen — many of today's prominent Zen teachers trained here."
+        ),
+    },
 }

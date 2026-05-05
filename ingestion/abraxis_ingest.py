@@ -31,6 +31,8 @@ from ingestion.scrapers.static_html import fetch_static_html_calendar
 from ingestion.sources.east_bay import CENTERS, EVENTBRITE_FEEDS, ICAL_FEEDS, STATIC_HTML_FEEDS
 from ingestion.sources import nyc as nyc_sources
 from ingestion.sources.nyc import fetch_shambhala_nyc, fetch_zenstudies_nyc
+from ingestion.sources import la as la_sources
+from ingestion.sources.la import fetch_insightla
 
 log = logging.getLogger(__name__)
 
@@ -257,6 +259,38 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ NYC static HTML feed failed: {e}")
+
+    # LA Phase 3 — InsightLA schema.org scraper
+    log.info("--- LA Phase 3: InsightLA ---")
+    try:
+        insightla_events = fetch_insightla()
+        log.info(f"  InsightLA → {len(insightla_events)} events")
+        all_events.extend(insightla_events)
+    except Exception as e:
+        log.error(f"  ✗ InsightLA failed: {e}")
+
+    # ZCLA and other LA static HTML targets
+    for org_id, feed_cfg in la_sources.STATIC_HTML_FEEDS.items():
+        center = la_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (LA static HTML)...")
+        try:
+            events = fetch_static_html_calendar(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ LA static HTML feed failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

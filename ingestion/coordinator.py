@@ -23,6 +23,8 @@ from ingestion.scrapers.static_html import fetch_static_html_calendar
 from ingestion.sources.east_bay import CENTERS, EVENTBRITE_FEEDS, ICAL_FEEDS, STATIC_HTML_FEEDS
 from ingestion.sources import nyc as nyc_sources
 from ingestion.sources.nyc import fetch_shambhala_nyc, fetch_zenstudies_nyc
+from ingestion.sources import la as la_sources
+from ingestion.sources.la import fetch_insightla
 
 log = logging.getLogger(__name__)
 
@@ -219,6 +221,44 @@ def run_nyc_phase3c() -> list[Event]:
     return all_events
 
 
+def run_la_phase3() -> list[Event]:
+    """Phase 3 LA: InsightLA schema.org scraper + ZCLA static HTML."""
+    all_events: list[Event] = []
+
+    # InsightLA — schema.org Event HTML parser
+    try:
+        events = fetch_insightla()
+        log.info(f"  InsightLA → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ InsightLA failed: {e}")
+
+    # ZCLA and other static HTML targets
+    for org_id, feed_cfg in la_sources.STATIC_HTML_FEEDS.items():
+        center = la_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (LA static HTML)...")
+        try:
+            events = fetch_static_html_calendar(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ LA static HTML feed failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -230,6 +270,7 @@ def main():
         + run_nyc_phase3a()
         + run_nyc_phase3b()
         + run_nyc_phase3c()
+        + run_la_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
