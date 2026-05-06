@@ -567,6 +567,18 @@ const SITS = [
     notes: "New Kadampa Tradition (NKT). Guided meditation class. Drop-in, beginners welcome.",
     source_url: "https://meditationinboston.org", event_url: "https://meditationinboston.org/sundays-in-cambridge",
   },
+
+  // ── Washington DC Metro ────────────────────────────────────────────────────
+  // DC Shambhala Center — first Sunday monthly, 1:30pm at Seekers Church
+  {
+    org_id: "shambhala_dc", org_name: "Shambhala Meditation Center of Washington DC",
+    title: "Open Public Sitting",
+    days: ["Sunday"], week_of_month: 1, time: { h: 13, m: 30 }, duration_min: 60,
+    address: "276 Carroll St NW", city: "Washington", state: "DC", neighborhood: "Takoma",
+    lat: 38.9776, lng: -77.0128, tradition: "tibetan", location_type: "in-person",
+    notes: "First Sunday monthly. Free meditation instruction available 1:15–1:30pm. Tea and dharma video/talk follows sitting.",
+    source_url: "https://dc.shambhala.org", event_url: "https://dc.shambhala.org/monthly-calendar/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

@@ -26,6 +26,8 @@ from ingestion.sources.nyc import fetch_shambhala_nyc, fetch_zenstudies_nyc
 from ingestion.sources import la as la_sources
 from ingestion.sources.la import fetch_insightla
 from ingestion.sources import boston as boston_sources
+from ingestion.sources import dc as dc_sources
+from ingestion.sources.dc import fetch_imcw
 
 log = logging.getLogger(__name__)
 
@@ -289,6 +291,20 @@ def run_boston_phase3() -> list[Event]:
     return all_events
 
 
+def run_dc_phase3() -> list[Event]:
+    """Phase 3 DC: IMCW EventAgent scraper."""
+    all_events: list[Event] = []
+
+    try:
+        events = fetch_imcw()
+        log.info(f"  IMCW → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ IMCW fetch failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -302,6 +318,7 @@ def main():
         + run_nyc_phase3c()
         + run_la_phase3()
         + run_boston_phase3()
+        + run_dc_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

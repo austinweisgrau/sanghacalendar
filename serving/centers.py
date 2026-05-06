@@ -865,4 +865,46 @@ CENTERS = {
             "beginners especially encouraged."
         ),
     },
+    # ── Washington DC Metro ────────────────────────────────────────────────────
+    "imcw": {
+        "id": "imcw",
+        "name": "Insight Meditation Community of Washington",
+        "tradition": "theravada",
+        "url": "https://imcw.org",
+        "address": "276 Carroll St NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20012",
+        "neighborhood": "Takoma",
+        "lat": 38.9776,
+        "lng": -77.0128,
+        "description": (
+            "IMCW is the largest Insight/Vipassana meditation community in the Washington DC metro area, "
+            "co-founded by Tara Brach and Jonathan Foust. Offers drop-in meditation classes at 10+ venues "
+            "across DC, Maryland, and Northern Virginia — including Seekers Church (Takoma DC), Iona "
+            "(Tenleytown DC), Unity of Washington DC (Logan Circle), River Road UU Church (Bethesda MD), "
+            "and Body Grace (Vienna VA). Each class includes 30 minutes of guided meditation, a dharma "
+            "talk, and community discussion. Hybrid in-person and Zoom. All welcome, free of charge."
+        ),
+    },
+    "shambhala_dc": {
+        "id": "shambhala_dc",
+        "name": "Shambhala Meditation Center of Washington DC",
+        "tradition": "tibetan",
+        "url": "https://dc.shambhala.org",
+        "address": "278 Carroll St NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20012",
+        "neighborhood": "Takoma",
+        "lat": 38.9779,
+        "lng": -77.0127,
+        "description": (
+            "DC Shambhala Center offers Shambhala Buddhist meditation practice "
+            "(Chögyam Trungpa lineage), one block from Takoma Metro. Monthly Open Public Sitting "
+            "is held the first Sunday of each month, 1:30–2:30pm at Seekers Church (276 Carroll St NW). "
+            "Free meditation instruction available before the sit. The center also hosts Shambhala "
+            "Training weekends, study groups, and community programs throughout the year."
+        ),
+    },
 }

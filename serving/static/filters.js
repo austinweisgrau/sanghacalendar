@@ -49,8 +49,18 @@ function onStateChange() {
     if (!match) label.querySelector("input").checked = false;
   });
   const trigger = document.getElementById("city-trigger");
-  trigger.textContent = "All cities";
-  trigger.classList.remove("active");
+  // DC metro spans DC/MD/VA — auto-select all DC-labeled cities so API uses city filter
+  if (state === "DC") {
+    document.querySelectorAll("#city-dropdown .multi-select-option[data-state='DC'] input").forEach(cb => {
+      cb.checked = true;
+    });
+    const dcCities = Array.from(document.querySelectorAll("#city-dropdown .multi-select-option[data-state='DC'] input")).map(el => el.value);
+    trigger.textContent = dcCities.join(", ");
+    trigger.classList.add("active");
+  } else {
+    trigger.textContent = "All cities";
+    trigger.classList.remove("active");
+  }
   onFilterChange();
 }
 
@@ -82,7 +92,8 @@ function buildFeedParams() {
   const end_date      = endEl   ? endEl.value   : "";
   const params = new URLSearchParams();
   cities.forEach(c => params.append("city", c));
-  if (state)         params.set("state", state);
+  // DC metro spans DC/MD/VA — use city filter instead of state filter
+  if (state && state !== "DC") params.set("state", state);
   if (tradition)     params.set("tradition", tradition);
   if (location_type) params.set("location_type", location_type);
   if (window_val === "today") {

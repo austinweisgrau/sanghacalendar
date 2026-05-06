@@ -34,6 +34,7 @@ from ingestion.sources.nyc import fetch_shambhala_nyc, fetch_zenstudies_nyc
 from ingestion.sources import la as la_sources
 from ingestion.sources.la import fetch_insightla
 from ingestion.sources import boston as boston_sources
+from ingestion.sources.dc import fetch_imcw
 
 log = logging.getLogger(__name__)
 
@@ -316,6 +317,15 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Boston iCal feed {org_id} failed: {e}")
+
+    # DC Phase 3 — IMCW EventAgent scraper
+    log.info("--- DC Phase 3: IMCW EventAgent ---")
+    try:
+        events = fetch_imcw()
+        log.info(f"  IMCW → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ IMCW fetch failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []
