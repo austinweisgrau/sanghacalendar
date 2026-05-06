@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-05 (heartbeat 6)_
+_Last updated: 2026-05-06 (heartbeat 7)_
 
 ## Current Status
 
@@ -115,9 +115,9 @@ Target: top 10 US metro areas by Buddhist population + center density.
 
 Candidate metros (rough priority):
 1. Bay Area ✅ (complete — 28 centers)
-2. NYC 🔄 **Phase 3a live May 5** (3 centers) — see `memory/research-nyc-meditation-calendar.md`
-3. LA 🔄 **Phase 3 LA live May 5** — see below
-4. Boston/Cambridge
+2. NYC ✅ **Phase 3 complete May 5** (8 centers)
+3. LA 🔄 **Phase 3 LA live May 5** (2 centers) — see below
+4. Boston/Cambridge 🔄 **Phase 3 Boston live May 6** (5 centers) — see below
 5. DC
 6. Chicago
 7. Seattle
@@ -166,6 +166,24 @@ Center bios added to centers.py for insightla + zcla.
 - Shambhala LA (`shambhala-koeln.de/ical.php?center=208`) — Cologne server unreachable (same issue as Berkeley center=178)
 - Kadampa LA (`meditationinlosangeles.org`) — site down/offline
 - Against the Stream (`againstthestream.com`) — Squarespace, no iCal, retreat-focused
+
+### Boston Phase 3 — ✅ Live May 6 (5 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Boston Shambhala Meditation Center (Brookline) | iCal feed — `shambhala-koeln.de/ical.php?center=204` (confirmed working unlike center=178/208) | ✅ Live — wired in coordinator + abraxis. Weekly events: Nyinthün, Dharma Gathering, Heart of Recovery, LGBTQ+ sit, Shambhala Training weekends. |
+| Greater Boston Zen Center (Central Square, Cambridge) | Recurring sits seeded — Google Calendar feed is stale/historical | ✅ Live — Tue 7pm hybrid, Sat 9am online. ~130 events in 90-day window. |
+| Cambridge Insight Meditation Center / CIMC (Cambridge) | Recurring sits seeded — FullCalendar JS-rendered, no iCal endpoint | ✅ Live — Mon 6pm Sitting & Sangha + Tue/Thu/Fri 6pm Evening Sit. ~250 events in 90-day window. |
+| Cambridge Zen Center (Cambridge) | Recurring sits seeded — site is Squarespace with no iCal | ✅ Live — Tue 7:30pm hybrid + Sun 9am hybrid. ~180 events in 90-day window. |
+| Kadampa Meditation Center Boston (Cambridge) | Recurring sits seeded — Squarespace, no iCal | ✅ Live — Wed 7pm + Sun 11am in-person. ~180 events in 90-day window. |
+
+City filter updated: Cambridge, Brookline, Boston added (MA state).
+Center bios added to centers.py for all 5 centers.
+1233 total recurring sit instances seeded (was ~900 before Boston).
+
+**Skipped/deferred:**
+- CIMC iCal: uses FullCalendar JS, no API endpoint — monitor for future fix
+- Barre Center for Buddhist Studies: rural retreat center (Barre, MA), not urban metro
 
 ### NYC Phase 3d — Deferred
 
