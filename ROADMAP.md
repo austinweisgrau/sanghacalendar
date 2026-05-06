@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-06 (heartbeat 8)_
+_Last updated: 2026-05-06 (heartbeat 9)_
 
 ## Current Status
 
@@ -119,7 +119,7 @@ Candidate metros (rough priority):
 3. LA 🔄 **Phase 3 LA live May 5** (2 centers) — see below
 4. Boston/Cambridge 🔄 **Phase 3 Boston live May 6** (5 centers) — see below
 5. DC 🔄 **Phase 3 DC live May 6** (2 centers) — see below
-6. Chicago
+6. Chicago 🔄 **Phase 3 Chicago live May 6** (15+ centers via Tockify aggregator)
 7. Seattle
 8. Denver/Boulder
 9. Austin
@@ -200,6 +200,41 @@ Center bios added for IMCW + DC Shambhala.
 - Washington Buddhist Vihara (16th St NW): broken website, dead SSL cert, no calendar — skip
 - Meditation Center DC (Dhammakaya, Alexandria VA): AJAX-only calendar, Dhammakaya tradition — low priority
 - Kadampa DC: no accessible web presence found
+
+### Chicago Phase 3 — ✅ Live May 6 (15+ centers)
+
+Primary source: **Sit Around Chicago** Tockify aggregator iCal at
+`https://tockify.com/api/feeds/ics/sitaroundchicagocalendar` — a community-maintained
+calendar covering 15+ Chicago-area Buddhist centers in a single feed. 1466 events
+upserted (90-day window across all centers).
+
+| Center | Tradition | Notes |
+|--------|-----------|-------|
+| Ancient Dragon Zen Gate (Ravenswood) | Soto Zen | SFZC lineage, daily online zazen |
+| Daiyuzenji Rinzai Zen Temple (Ravenswood) | Rinzai Zen | Tue/Thu 7pm, Fri 5:30am, Sun 8:30am |
+| Zen Buddhist Temple of Chicago (Evanston) | Soto Zen | Oldest Chicago Zen center, founded 1949 |
+| Shambhala Meditation Center of Chicago (West Loop) | Tibetan/Shambhala | Sun/Tue sits, Queer Dharma |
+| Chicago Buddhist Meditation Group (Ravenswood) | Pluralist | Sun 3:30pm hybrid |
+| Chicago Zen Meditation Community (West Town) | Soto Zen | 8 sessions/week hybrid |
+| Insight Chicago Meditation Community | Theravada | Multiple sanghas citywide |
+| Dharma Drum Mountain | Chan/Zen | Tai chi, Chan workshops |
+| Diamond Way Buddhist Center Chicago | Tibetan | Diamond Way lineage |
+| Great Plains Zen Center (Palatine) | Zen | NW suburb, online sessions |
+| Bultasa Buddhist Temple | Korean Zen | Wednesday evenings |
+| Won Buddhism of Chicago | Won Buddhism | Korean won-Buddhist tradition |
+| Ten Directions Zen Community | Zen | — |
+| Zen Life & Meditation Center | Zen | — |
+| + others from Tockify aggregator | various | — |
+
+**Implementation:** `ingestion/sources/chicago.py` — `fetch_tockify_chicago()` parses
+Tockify multi-center iCal with "CenterName: Title" SUMMARY format. Fixes Tockify's
+malformed `P15M` duration header. City parsed from LOCATION field.
+
+City filter: Illinois state + Chicago/Evanston/Oak Park/Palatine cities.
+Center bios added for 7 key Chicago centers.
+
+**Skipped/deferred:**
+- Kadampa Chicago (meditateinchicago.org): Wix-based, no iCal. Eventbrite possible future add.
 
 ### NYC Phase 3d — Deferred
 
