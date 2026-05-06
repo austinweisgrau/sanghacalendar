@@ -1,0 +1,662 @@
+#!/usr/bin/env bun
+/**
+ * Seeds the sangha calendar DB with recurring weekly sits from meditations.html.
+ * Generates dated instances for the next 90 days and POSTs to the app.
+ */
+
+import crypto from "crypto";
+
+const APP_URL      = "https://sangha-calendar.fly.dev";
+const INGEST_TOKEN = (await Bun.file("/workspace/group/memory/sangha-ingest-token.txt").text()).trim();
+
+// ── Recurring sits (sourced from meditations.html) ────────────────────────────
+
+const SITS = [
+  // Berkeley Shambhala
+  {
+    org_id: "shambhala_berkeley", org_name: "Berkeley Shambhala Center",
+    title: "Drop-in Sitting Meditation",
+    days: ["Tuesday"], time: { h: 9, m: 30 }, duration_min: 90,
+    address: "2288 Fulton St", city: "Berkeley", state: "CA", neighborhood: "South Campus Berkeley",
+    lat: 37.8696, lng: -122.2677, tradition: "tibetan", location_type: "in-person",
+    source_url: "https://berkeley.shambhala.org", event_url: "https://berkeley.shambhala.org/",
+  },
+  {
+    org_id: "shambhala_berkeley", org_name: "Berkeley Shambhala Center",
+    title: "Drop-in Sitting Meditation",
+    days: ["Tuesday"], time: { h: 12, m: 15 }, duration_min: 90,
+    address: "2288 Fulton St", city: "Berkeley", state: "CA", neighborhood: "South Campus Berkeley",
+    lat: 37.8696, lng: -122.2677, tradition: "tibetan", location_type: "in-person",
+    source_url: "https://berkeley.shambhala.org", event_url: "https://berkeley.shambhala.org/",
+  },
+  // Metta Dharma
+  {
+    org_id: "metta_dharma", org_name: "Metta Dharma Foundation",
+    title: "Wednesday Evening Sit",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "2837 Claremont Blvd", city: "Berkeley", state: "CA", neighborhood: "Claremont",
+    lat: 37.8579, lng: -122.2432, tradition: "theravada", location_type: "in-person",
+    notes: "Teacher: Richard Shankman. Sit followed by brief dharma.",
+    source_url: "https://www.mettadharma.org", event_url: "https://www.mettadharma.org/",
+  },
+  // Bay Zen
+  {
+    org_id: "bay_zen", org_name: "Bay Zen Center",
+    title: "Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "3824 Grand Ave", city: "Oakland", state: "CA", neighborhood: "Grand Lake",
+    lat: 37.8145, lng: -122.2286, tradition: "zen", location_type: "in-person",
+    source_url: "https://bayzen.org", event_url: "https://www.bayzen.org/calendar",
+  },
+  // Berkeley Buddhist Monastery (Chan)
+  {
+    org_id: "berkeley_buddhist_monastery", org_name: "Berkeley Buddhist Monastery",
+    title: "Open Morning Meditation",
+    days: ["Thursday", "Friday"], time: { h: 6, m: 15 }, duration_min: 60,
+    address: "2304 McKinley Ave", city: "Berkeley", state: "CA", neighborhood: "North Berkeley",
+    lat: 37.8758, lng: -122.2637, tradition: "zen", location_type: "in-person",
+    source_url: "https://www.berkeleymonastery.org", event_url: "https://www.berkeleymonastery.org/",
+  },
+  {
+    org_id: "berkeley_buddhist_monastery", org_name: "Berkeley Buddhist Monastery",
+    title: "Evening Meditation",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    time: { h: 17, m: 15 }, duration_min: 60,
+    address: "2304 McKinley Ave", city: "Berkeley", state: "CA", neighborhood: "North Berkeley",
+    lat: 37.8758, lng: -122.2637, tradition: "zen", location_type: "in-person",
+    source_url: "https://www.berkeleymonastery.org", event_url: "https://www.berkeleymonastery.org/",
+  },
+  // Insight Berkeley (Thursday)
+  {
+    org_id: "insight_berkeley", org_name: "Insight Meditation Community of Berkeley",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "2304 McKinley Ave", city: "Berkeley", state: "CA", neighborhood: "North Berkeley",
+    lat: 37.8758, lng: -122.2637, tradition: "theravada", location_type: "in-person",
+    notes: "James Baraz + Eve Decker. Sit-centered with brief dharma sharing.",
+    source_url: "https://www.insightberkeley.org", event_url: "https://www.insightberkeley.org/events",
+  },
+  // Oakland Zen (Kojin-an)
+  {
+    org_id: "oakland_zen", org_name: "Oakland Zen Center / Kojin-an",
+    title: "Morning Zazen",
+    days: ["Friday"], time: { h: 6, m: 0 }, duration_min: 60,
+    address: "6140 Chabot Rd", city: "Oakland", state: "CA", neighborhood: "Rockridge",
+    lat: 37.8397, lng: -122.2278, tradition: "zen", location_type: "in-person",
+    notes: "Small family zendo. Email or call before first visit.",
+    source_url: "https://oaklandzencenter.org", event_url: "http://oaklandzencenter.org/schedule",
+  },
+  {
+    org_id: "oakland_zen", org_name: "Oakland Zen Center / Kojin-an",
+    title: "Zazenkai",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 120,
+    address: "6140 Chabot Rd", city: "Oakland", state: "CA", neighborhood: "Rockridge",
+    lat: 37.8397, lng: -122.2278, tradition: "zen", location_type: "in-person",
+    notes: "Intro instruction 8am. Full zazen 9am, chanting, cleaning, tea.",
+    source_url: "https://oaklandzencenter.org", event_url: "http://oaklandzencenter.org/kojinan-events/",
+  },
+  // Berkeley Buddhist Priory
+  {
+    org_id: "berkeley_priory", org_name: "Berkeley Buddhist Priory",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 60,
+    address: "1358 Marin Ave", city: "Albany", state: "CA", neighborhood: "Albany",
+    lat: 37.8934, lng: -122.2987, tradition: "zen", location_type: "in-person",
+    notes: "Order of Buddhist Contemplatives lineage (British Soto Zen).",
+    source_url: "https://berkeleybuddhistpriory.org", event_url: "https://berkeleybuddhistpriory.org/",
+  },
+  // Empty Gate Zen
+  {
+    org_id: "empty_gate_zen", org_name: "Empty Gate Zen Center",
+    title: "Saturday Sitting",
+    days: ["Saturday"], time: { h: 8, m: 0 }, duration_min: 60,
+    address: "2200 Parker St", city: "Berkeley", state: "CA", neighborhood: "South Berkeley",
+    lat: 37.8634, lng: -122.2597, tradition: "zen", location_type: "in-person",
+    notes: "Korean Zen (Kwan Um). Confirm schedule on website.",
+    source_url: "https://emptygatezen.com", event_url: "https://www.emptygatezen.com/schedule",
+  },
+  {
+    org_id: "empty_gate_zen", org_name: "Empty Gate Zen Center",
+    title: "Monday Evening Meditation",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "2200 Parker St", city: "Berkeley", state: "CA", neighborhood: "South Berkeley",
+    lat: 37.8634, lng: -122.2597, tradition: "zen", location_type: "in-person",
+    source_url: "https://emptygatezen.com", event_url: "https://www.emptygatezen.com/schedule",
+  },
+
+  // ── SF / Marin ───────────────────────────────────────────────────────────────
+
+  // SF Zen Center — City Center (daily zazen)
+  {
+    org_id: "sfzc_city_center", org_name: "SF Zen Center — City Center",
+    title: "Evening Zazen",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday"], time: { h: 17, m: 40 }, duration_min: 40,
+    address: "300 Page St", city: "San Francisco", state: "CA", neighborhood: "Hayes Valley",
+    lat: 37.7730, lng: -122.4248, tradition: "zen", location_type: "in-person",
+    notes: "Soto Zen. Public welcome. Please arrive on time.",
+    source_url: "https://sfzc.org", event_url: "https://sfzc.org/calendar",
+  },
+  {
+    org_id: "sfzc_city_center", org_name: "SF Zen Center — City Center",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 6, m: 30 }, duration_min: 90,
+    address: "300 Page St", city: "San Francisco", state: "CA", neighborhood: "Hayes Valley",
+    lat: 37.7730, lng: -122.4248, tradition: "zen", location_type: "in-person",
+    notes: "Zazen followed by dharma talk at 10am. All welcome.",
+    source_url: "https://sfzc.org", event_url: "https://sfzc.org/calendar",
+  },
+  {
+    org_id: "sfzc_city_center", org_name: "SF Zen Center — City Center",
+    title: "Thursday Online Drop-in Practice",
+    days: ["Thursday"], time: { h: 17, m: 30 }, duration_min: 60,
+    address: "300 Page St", city: "San Francisco", state: "CA", neighborhood: "Hayes Valley",
+    lat: 37.7730, lng: -122.4248, tradition: "zen", location_type: "online",
+    notes: "Online only via Zoom. Check sfzc.org for link.",
+    source_url: "https://sfzc.org", event_url: "https://sfzc.org/calendar",
+  },
+
+  // Hartford Street Zen Center / Issan-ji (Castro — LGBTQ+ community)
+  {
+    org_id: "hartford_zen", org_name: "Hartford Street Zen Center",
+    title: "Morning Zazen",
+    days: ["Tuesday","Thursday","Saturday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "57 Hartford St", city: "San Francisco", state: "CA", neighborhood: "Castro",
+    lat: 37.7609, lng: -122.4353, tradition: "zen", location_type: "in-person",
+    identity_focus: "LGBTQ+",
+    notes: "Soto Zen temple for LGBTQ+ community and allies. Morning service follows zazen.",
+    source_url: "https://hszc.org", event_url: "https://hszc.org/schedule",
+  },
+  {
+    org_id: "hartford_zen", org_name: "Hartford Street Zen Center",
+    title: "Evening Zazen",
+    days: ["Wednesday","Friday"], time: { h: 18, m: 0 }, duration_min: 40,
+    address: "57 Hartford St", city: "San Francisco", state: "CA", neighborhood: "Castro",
+    lat: 37.7609, lng: -122.4353, tradition: "zen", location_type: "in-person",
+    identity_focus: "LGBTQ+",
+    notes: "Soto Zen. Evening service follows zazen.",
+    source_url: "https://hszc.org", event_url: "https://hszc.org/schedule",
+  },
+  {
+    org_id: "hartford_zen", org_name: "Hartford Street Zen Center",
+    title: "Saturday Sangha",
+    days: ["Saturday"], time: { h: 9, m: 30 }, duration_min: 120,
+    address: "57 Hartford St", city: "San Francisco", state: "CA", neighborhood: "Castro",
+    lat: 37.7609, lng: -122.4353, tradition: "zen", location_type: "hybrid",
+    identity_focus: "LGBTQ+",
+    notes: "Zazen 6:30am, then 9:30am zazen + 10:30am dharma talk. Zoom starts 9am.",
+    source_url: "https://hszc.org", event_url: "https://hszc.org/schedule",
+  },
+
+  // Mission Dharma (Tuesday evening)
+  {
+    org_id: "mission_dharma", org_name: "Mission Dharma",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "Mission District", city: "San Francisco", state: "CA", neighborhood: "Mission District",
+    lat: 37.7599, lng: -122.4148, tradition: "theravada", location_type: "online",
+    notes: "Howard Cohn + rotating teachers. 40-min sit + Q&A + dharma talk. Zoom + YouTube livestream.",
+    source_url: "https://missiondharma.org", event_url: "https://missiondharma.org/tuesday-night-schedule.html",
+  },
+
+  // Marin Sangha (Sunday evening)
+  {
+    org_id: "marin_sangha", org_name: "Marin Sangha",
+    title: "Sunday Evening Meditation",
+    days: ["Sunday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "10 Bayview Dr", city: "San Rafael", state: "CA", neighborhood: "San Rafael",
+    lat: 37.9735, lng: -122.5311, tradition: "theravada", location_type: "hybrid",
+    notes: "Donald Rothberg + rotating Spirit Rock teachers. Zoom + occasional in-person at St. Luke Church.",
+    source_url: "https://marinsangha.org", event_url: "https://www.marinsangha.org",
+  },
+
+  // Berkeley Zen Center — daily zazen (not in their iCal feed, which only tracks special events)
+  {
+    org_id: "berkeley_zen_center", org_name: "Berkeley Zen Center",
+    title: "Morning Zazen",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    time: { h: 6, m: 0 }, duration_min: 90,
+    address: "1931 Russell St", city: "Berkeley", state: "CA", neighborhood: "South Berkeley",
+    lat: 37.8582, lng: -122.2705, tradition: "zen", location_type: "hybrid",
+    notes: "Daily morning zazen + service. In-person and online. Founded 1967 by Sojun Mel Weitsman and Shunryu Suzuki Roshi.",
+    source_url: "https://berkeleyzencenter.org", event_url: "https://berkeleyzencenter.org/weekly-schedule/",
+  },
+  {
+    org_id: "berkeley_zen_center", org_name: "Berkeley Zen Center",
+    title: "Evening Zazen",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    time: { h: 17, m: 40 }, duration_min: 50,
+    address: "1931 Russell St", city: "Berkeley", state: "CA", neighborhood: "South Berkeley",
+    lat: 37.8582, lng: -122.2705, tradition: "zen", location_type: "hybrid",
+    notes: "Evening zazen + service. In-person and online.",
+    source_url: "https://berkeleyzencenter.org", event_url: "https://berkeleyzencenter.org/weekly-schedule/",
+  },
+  {
+    org_id: "berkeley_zen_center", org_name: "Berkeley Zen Center",
+    title: "Evening Drop-In Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 10 }, duration_min: 110,
+    address: "1931 Russell St", city: "Berkeley", state: "CA", neighborhood: "South Berkeley",
+    lat: 37.8582, lng: -122.2705, tradition: "zen", location_type: "in-person",
+    notes: "In-person only. Zazen + dharma reading and discussion. Open to all.",
+    source_url: "https://berkeleyzencenter.org", event_url: "https://berkeleyzencenter.org/weekly-schedule/",
+  },
+
+  // Ewam Choden — weekly Sunday public meditation (Sakya Tibetan, Kensington)
+  {
+    org_id: "ewam_choden", org_name: "Ewam Choden Tibetan Buddhist Center",
+    title: "Sunday Public Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "254 Cambridge Ave", city: "Kensington", state: "CA", neighborhood: "Kensington",
+    lat: 37.9024, lng: -122.2694, tradition: "tibetan", location_type: "in-person",
+    notes: "Open to all. Compassion meditation practice. Session begins promptly at 10am.",
+    source_url: "https://www.ewamchoden.org", event_url: "https://www.ewamchoden.org/",
+  },
+
+  // IMC Berkeley — New Monday Evening Sitting Group at Berkeley Finnish Hall (starts May 25, 2026)
+  {
+    org_id: "imc_berkeley", org_name: "Insight Meditation Center",
+    title: "Monday Evening Sitting Group",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1970 Chestnut St", city: "Berkeley", state: "CA", neighborhood: "West Berkeley",
+    lat: 37.8778, lng: -122.2890, tradition: "theravada", location_type: "in-person",
+    notes: "New Berkeley satellite group of IMC. Lightly guided sit + short Dharma talk + discussion. At Berkeley Finnish Hall. Meets at 7pm; intro talks through May 18, open sitting group from May 25.",
+    source_url: "https://www.insightmeditationcenter.org", event_url: "https://www.insightmeditationcenter.org/2026/04/new-berkeley-imc-sitting-group-starting-monday-april-20th/",
+  },
+
+  // Mount Diablo Zen Group — weekly Wednesday 7pm, hybrid (in-person odd weeks, Zoom even weeks)
+  {
+    org_id: "mount_diablo_zen", org_name: "Mount Diablo Zen Group",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "404 Gregory Lane, Room 9", city: "Pleasant Hill", state: "CA", neighborhood: "Pleasant Hill",
+    lat: 37.9499, lng: -122.0935, tradition: "zen", location_type: "hybrid",
+    notes: "Soto Zen (SZBA). In-person 1st/3rd/5th Wednesdays; Zoom 2nd/4th Wednesdays. Drop-in welcome, meditation instruction available. Free.",
+    source_url: "https://mtdiablozen.com", event_url: "https://mtdiablozen.com/",
+  },
+
+  // Green Gulch Farm Zen Center (SFZC Marin) — daily zazen + Sunday morning program
+  // No iCal feed (SFZC uses Drupal 10 with no ical endpoint). Seeded from daily schedule page.
+  // "No Zendo schedule on Monday afternoons and Tuesdays."
+  {
+    org_id: "green_gulch_farm", org_name: "Green Gulch Farm Zen Center",
+    title: "Morning Zazen",
+    days: ["Monday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    time: { h: 6, m: 0 }, duration_min: 60,
+    address: "1601 Shoreline Hwy", city: "Muir Beach", state: "CA", neighborhood: "Muir Beach / West Marin",
+    lat: 37.8694, lng: -122.5630, tradition: "zen", location_type: "in-person",
+    notes: "Daily morning zazen open to public. Schedule varies — call office at 415.383.3134 to confirm. No Tuesday zazen.",
+    source_url: "https://sfzc.org/green-gulch-farm", event_url: "https://sfzc.org/locations/green-gulch-farm/zen-meditation-practice-green-gulch/daily-schedule-green-gulch",
+  },
+  {
+    org_id: "green_gulch_farm", org_name: "Green Gulch Farm Zen Center",
+    title: "Evening Zazen",
+    days: ["Wednesday","Thursday","Friday","Saturday"],
+    time: { h: 19, m: 50 }, duration_min: 60,
+    address: "1601 Shoreline Hwy", city: "Muir Beach", state: "CA", neighborhood: "Muir Beach / West Marin",
+    lat: 37.8694, lng: -122.5630, tradition: "zen", location_type: "in-person",
+    notes: "Evening zazen open to public. Schedule varies — call office at 415.383.3134 to confirm.",
+    source_url: "https://sfzc.org/green-gulch-farm", event_url: "https://sfzc.org/locations/green-gulch-farm/zen-meditation-practice-green-gulch/daily-schedule-green-gulch",
+  },
+  {
+    org_id: "green_gulch_farm", org_name: "Green Gulch Farm Zen Center",
+    title: "Sunday Morning Program",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 110,
+    address: "1601 Shoreline Hwy", city: "Muir Beach", state: "CA", neighborhood: "Muir Beach / West Marin",
+    lat: 37.8694, lng: -122.5630, tradition: "zen", location_type: "hybrid",
+    notes: "Open to all, no registration required. 8:15am zazen instruction, 9:30am sitting meditation, 10am public Dharma talk (in-person + Online Zendo livestream), 11am discussion, 11:20am tea.",
+    source_url: "https://sfzc.org/green-gulch-farm", event_url: "https://sfzc.org/calendar",
+  },
+
+  // San Francisco Shambhala Center (Glen Park)
+  // iCal server (shambhala-koeln.de center=177) is dead — seeding from website schedule
+  {
+    org_id: "shambhala_sf", org_name: "San Francisco Shambhala Center",
+    title: "Beginners Night",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    week_of_month: 2,
+    address: "280 Claremont St", city: "San Francisco", state: "CA", neighborhood: "Glen Park",
+    lat: 37.7315, lng: -122.4296, tradition: "tibetan", location_type: "in-person",
+    notes: "2nd Wednesday each month. Open to all — no experience needed. Shambhala Buddhist tradition.",
+    source_url: "https://sf.shambhala.org", event_url: "https://sf.shambhala.org",
+  },
+  {
+    org_id: "shambhala_sf", org_name: "San Francisco Shambhala Center",
+    title: "Beginners Night",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    week_of_month: 4,
+    address: "280 Claremont St", city: "San Francisco", state: "CA", neighborhood: "Glen Park",
+    lat: 37.7315, lng: -122.4296, tradition: "tibetan", location_type: "in-person",
+    notes: "4th Wednesday each month. Open to all — no experience needed. Shambhala Buddhist tradition.",
+    source_url: "https://sf.shambhala.org", event_url: "https://sf.shambhala.org",
+  },
+  {
+    org_id: "shambhala_sf", org_name: "San Francisco Shambhala Center",
+    title: "Saturday Morning Meditation",
+    days: ["Saturday"], time: { h: 9, m: 0 }, duration_min: 90,
+    week_of_month: 3,
+    address: "280 Claremont St", city: "San Francisco", state: "CA", neighborhood: "Glen Park",
+    lat: 37.7315, lng: -122.4296, tradition: "tibetan", location_type: "in-person",
+    notes: "3rd Saturday each month. Open to all — newcomers and experienced practitioners welcome.",
+    source_url: "https://sf.shambhala.org", event_url: "https://sf.shambhala.org",
+  },
+  {
+    org_id: "shambhala_sf", org_name: "San Francisco Shambhala Center",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 135,
+    week_of_month: 1,
+    address: "280 Claremont St", city: "San Francisco", state: "CA", neighborhood: "Glen Park",
+    lat: 37.7315, lng: -122.4296, tradition: "tibetan", location_type: "online",
+    notes: "1st Sunday each month. Online only via Zoom. 10am–12:15pm.",
+    source_url: "https://sf.shambhala.org", event_url: "https://sf.shambhala.org",
+  },
+  {
+    org_id: "shambhala_sf", org_name: "San Francisco Shambhala Center",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 135,
+    week_of_month: 2,
+    address: "280 Claremont St", city: "San Francisco", state: "CA", neighborhood: "Glen Park",
+    lat: 37.7315, lng: -122.4296, tradition: "tibetan", location_type: "online",
+    notes: "2nd Sunday each month. Online only via Zoom. 10am–12:15pm.",
+    source_url: "https://sf.shambhala.org", event_url: "https://sf.shambhala.org",
+  },
+
+  // Karuna Buddhist Vihara — East Bay (Berkeley satellite, monthly Saturday sits)
+  // Mostly 2nd Saturday but schedule varies — using specific 2026 dates from karunabv.org
+  {
+    org_id: "karuna_berkeley", org_name: "Karuna Buddhist Vihara — East Bay",
+    title: "East Bay Dhamma Sit",
+    days: ["Saturday"], time: { h: 15, m: 0 }, duration_min: 120,
+    address: "1438 Neilson St", city: "Berkeley", state: "CA", neighborhood: "Westbrae",
+    lat: 37.8821, lng: -122.2945, tradition: "theravada", location_type: "hybrid",
+    dates: ["2026-05-09", "2026-06-20", "2026-07-11", "2026-08-08", "2026-09-12", "2026-10-10", "2026-11-14", "2026-12-12"],
+    notes: "Monthly Saturday sit. Guided meditation + Dhammapada reading/discussion. Berkeley satellite of Karuna BV (Sunnyvale). Zoom available. Check karunabv.org for exact dates.",
+    source_url: "https://www.karunabv.org/eastbay-dhamma.html", event_url: "https://www.karunabv.org/eastbay-dhamma.html",
+  },
+
+  // ── NYC Phase 3b — NY Zen Center for Contemplative Care (NYZCCC) ─────────────
+  // No iCal feed (Webflow site). Stable schedule seeded here for quarterly refresh.
+  {
+    org_id: "nyzccc", org_name: "NY Zen Center for Contemplative Care",
+    title: "Mid-Day Zazen",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    time: { h: 12, m: 30 }, duration_min: 30,
+    address: "119 W 23rd St, 4th Floor", city: "Manhattan", state: "NY", neighborhood: "Chelsea",
+    lat: 40.7435, lng: -73.9949, tradition: "zen", location_type: "online",
+    notes: "Daily online zazen, Monday–Saturday 12:30pm ET via Zoom. Open to all. No registration required.",
+    source_url: "https://zencare.org/online-zendo", event_url: "https://zencare.org/online-zendo",
+  },
+  {
+    org_id: "nyzccc", org_name: "NY Zen Center for Contemplative Care",
+    title: "Sunday Morning Service",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "119 W 23rd St, 4th Floor", city: "Manhattan", state: "NY", neighborhood: "Chelsea",
+    lat: 40.7435, lng: -73.9949, tradition: "zen", location_type: "hybrid",
+    notes: "10am zazen (in-person + online), 11:30am dharma talk. Soto Zen service. All welcome.",
+    source_url: "https://zencare.org/online-zendo", event_url: "https://zencare.org/online-zendo",
+  },
+  {
+    org_id: "nyzccc", org_name: "NY Zen Center for Contemplative Care",
+    title: "Monday Evening Sitting",
+    days: ["Monday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "119 W 23rd St, 4th Floor", city: "Manhattan", state: "NY", neighborhood: "Chelsea",
+    lat: 40.7435, lng: -73.9949, tradition: "zen", location_type: "hybrid",
+    notes: "In-person + online. Open sitting. Soto Zen.",
+    source_url: "https://zencare.org/online-zendo", event_url: "https://zencare.org/online-zendo",
+  },
+  {
+    org_id: "nyzccc", org_name: "NY Zen Center for Contemplative Care",
+    title: "Wednesday Evening Sitting",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "119 W 23rd St, 4th Floor", city: "Manhattan", state: "NY", neighborhood: "Chelsea",
+    lat: 40.7435, lng: -73.9949, tradition: "zen", location_type: "hybrid",
+    notes: "In-person + online. Open sitting. Soto Zen.",
+    source_url: "https://zencare.org/online-zendo", event_url: "https://zencare.org/online-zendo",
+  },
+
+  // Tibet House US — Lunchtime Meditation Mon-Fri 1pm ET (online)
+  // No iCal feed (WordPress + Elementor). Seeded for quarterly refresh.
+  {
+    org_id: "tibet_house_us", org_name: "Tibet House US",
+    title: "Lunchtime Meditation",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    time: { h: 13, m: 0 }, duration_min: 45,
+    address: "22 W 15th St", city: "Manhattan", state: "NY", neighborhood: "Chelsea / Flatiron",
+    lat: 40.7382, lng: -73.9972, tradition: "tibetan", location_type: "online",
+    notes: "Free daily online meditation 1:00–1:45pm ET. Rotating teachers from Buddhist and contemplative traditions. Zoom. Register at thus.org/lunchtime-meditation.",
+    source_url: "https://thus.org", event_url: "https://thus.org/lunchtime-meditation",
+  },
+
+  // ── NYC Phase 3c — New York Zendo Shobo-Ji (Zen Studies Society) ─────────────
+  // iCal feed available (see abraxis_ingest.py) but daily sits seeded here as safety net.
+  {
+    org_id: "zenstudies_nyc", org_name: "New York Zendo Shobo-Ji",
+    title: "Morning Zazen",
+    days: ["Monday","Tuesday","Wednesday","Thursday"],
+    time: { h: 6, m: 45 }, duration_min: 60,
+    address: "223 E 67th St", city: "Manhattan", state: "NY", neighborhood: "Upper East Side",
+    lat: 40.7657, lng: -73.9600, tradition: "zen", location_type: "in-person",
+    notes: "Rinzai Zen. 6:45–7:45am. Open to the public. Arrive before 6:45am — late arrivals may not be admitted during zazen. No registration required.",
+    source_url: "https://zenstudies.org/new-york-zendo/", event_url: "https://zenstudies.org/new-york-zendo/regular-schedule/",
+  },
+  {
+    org_id: "zenstudies_nyc", org_name: "New York Zendo Shobo-Ji",
+    title: "Evening Zazen",
+    days: ["Monday","Tuesday","Wednesday"],
+    time: { h: 19, m: 0 }, duration_min: 120,
+    address: "223 E 67th St", city: "Manhattan", state: "NY", neighborhood: "Upper East Side",
+    lat: 40.7657, lng: -73.9600, tradition: "zen", location_type: "in-person",
+    notes: "Rinzai Zen. 7:00–9:00pm. Evening sitting, chanting, and instruction. Open to the public. Arrive before 7pm — late arrivals may not be admitted during zazen.",
+    source_url: "https://zenstudies.org/new-york-zendo/", event_url: "https://zenstudies.org/new-york-zendo/regular-schedule/",
+  },
+  {
+    org_id: "zenstudies_nyc", org_name: "New York Zendo Shobo-Ji",
+    title: "Sunday Morning Service and Zazen",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 180,
+    address: "223 E 67th St", city: "Manhattan", state: "NY", neighborhood: "Upper East Side",
+    lat: 40.7657, lng: -73.9600, tradition: "zen", location_type: "hybrid",
+    notes: "10am–1pm. Full Sunday service: zazen, chanting, dharma talk. In-person at the zendo and livestreamed online. All are welcome.",
+    source_url: "https://zenstudies.org/new-york-zendo/", event_url: "https://zenstudies.org/new-york-zendo/regular-schedule/",
+  },
+
+  // ── NYC Phase 3c — Zen Center of New York City / Fire Lotus Temple (ZCNYC) ────
+  // HTML-scraped via abraxis_ingest.py (zcnyc.org/calendar/) but Sunday program seeded here.
+  {
+    org_id: "zcnyc", org_name: "Zen Center of New York City (Fire Lotus Temple)",
+    title: "Sunday Morning Program",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 180,
+    address: "500 State St", city: "Brooklyn", state: "NY", neighborhood: "Boerum Hill",
+    lat: 40.6824, lng: -73.9887, tradition: "zen", location_type: "in-person",
+    notes: "9:30am–12:30pm. Zazen, beginning instruction, dharma talk, liturgy. Soto Zen (Mountains and Rivers Order). All welcome, no prior experience needed.",
+    source_url: "https://zcnyc.org", event_url: "https://zcnyc.org/practice/",
+  },
+  {
+    org_id: "zcnyc", org_name: "Zen Center of New York City (Fire Lotus Temple)",
+    title: "LGBTQIA+ Sitting Group",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 90,
+    week_of_month: 1,
+    address: "500 State St", city: "Brooklyn", state: "NY", neighborhood: "Boerum Hill",
+    lat: 40.6824, lng: -73.9887, tradition: "zen", location_type: "online",
+    identity_focus: "LGBTQ+",
+    notes: "1st and 3rd Tuesdays 6pm ET, online via Zoom. Open to LGBTQIA+ practitioners. Soto Zen practice.",
+    source_url: "https://zcnyc.org", event_url: "https://zcnyc.org/practice/",
+  },
+  {
+    org_id: "zcnyc", org_name: "Zen Center of New York City (Fire Lotus Temple)",
+    title: "LGBTQIA+ Sitting Group",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 90,
+    week_of_month: 3,
+    address: "500 State St", city: "Brooklyn", state: "NY", neighborhood: "Boerum Hill",
+    lat: 40.6824, lng: -73.9887, tradition: "zen", location_type: "online",
+    identity_focus: "LGBTQ+",
+    notes: "1st and 3rd Tuesdays 6pm ET, online via Zoom. Open to LGBTQIA+ practitioners. Soto Zen practice.",
+    source_url: "https://zcnyc.org", event_url: "https://zcnyc.org/practice/",
+  },
+  // ── Boston / Cambridge ────────────────────────────────────────────────────
+  // Greater Boston Zen Center (GBZC) — Central Square, Cambridge
+  {
+    org_id: "gbzc", org_name: "Greater Boston Zen Center",
+    title: "Tuesday Evening Program",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "552 Massachusetts Ave, Suite 208", city: "Cambridge", state: "MA", neighborhood: "Central Square",
+    lat: 42.3638, lng: -71.1059, tradition: "zen", location_type: "hybrid",
+    notes: "Hybrid in-person + Zoom. Zazen, dharma talk, and discussion. Drop-in welcome, dana-based.",
+    source_url: "https://bostonzen.org", event_url: "https://bostonzen.org/schedule/",
+  },
+  {
+    org_id: "gbzc", org_name: "Greater Boston Zen Center",
+    title: "Saturday Morning Practice",
+    days: ["Saturday"], time: { h: 9, m: 0 }, duration_min: 50,
+    address: "552 Massachusetts Ave, Suite 208", city: "Cambridge", state: "MA", neighborhood: "Central Square",
+    lat: 42.3638, lng: -71.1059, tradition: "zen", location_type: "online",
+    notes: "Online only via Zoom. Zazen and optional dharma discussion.",
+    source_url: "https://bostonzen.org", event_url: "https://bostonzen.org/schedule/",
+  },
+  // Cambridge Insight Meditation Center (CIMC) — Cambridgeport
+  {
+    org_id: "cimc", org_name: "Cambridge Insight Meditation Center",
+    title: "Monday Sitting & Sangha",
+    days: ["Monday"], time: { h: 18, m: 0 }, duration_min: 75,
+    address: "331 Broadway", city: "Cambridge", state: "MA", neighborhood: "MIT/Cambridgeport",
+    lat: 42.3652, lng: -71.1107, tradition: "theravada", location_type: "in-person",
+    notes: "Weekly sit with dharma sharing. Drop-in, free (donations welcome). Part of CIMC's regular schedule.",
+    source_url: "https://cambridgeinsight.org", event_url: "https://cambridgeinsight.org/practice-groups/",
+  },
+  {
+    org_id: "cimc", org_name: "Cambridge Insight Meditation Center",
+    title: "Evening Sit",
+    days: ["Tuesday", "Thursday", "Friday"], time: { h: 18, m: 0 }, duration_min: 45,
+    address: "331 Broadway", city: "Cambridge", state: "MA", neighborhood: "MIT/Cambridgeport",
+    lat: 42.3652, lng: -71.1107, tradition: "theravada", location_type: "in-person",
+    notes: "Drop-in 45-minute sit. No instruction — for practitioners with some meditation experience.",
+    source_url: "https://cambridgeinsight.org", event_url: "https://cambridgeinsight.org/practice-groups/",
+  },
+  // Cambridge Zen Center — Cambridgeport
+  {
+    org_id: "cambridge_zen", org_name: "Cambridge Zen Center",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 30 }, duration_min: 70,
+    address: "199 Auburn St", city: "Cambridge", state: "MA", neighborhood: "Cambridgeport",
+    lat: 42.3620, lng: -71.1176, tradition: "zen", location_type: "hybrid",
+    notes: "Hybrid in-person + Zoom. Kwan Um School of Zen. Drop-in welcome.",
+    source_url: "https://cambridgezen.org", event_url: "https://cambridgezen.org/schedule/",
+  },
+  {
+    org_id: "cambridge_zen", org_name: "Cambridge Zen Center",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 120,
+    address: "199 Auburn St", city: "Cambridge", state: "MA", neighborhood: "Cambridgeport",
+    lat: 42.3620, lng: -71.1176, tradition: "zen", location_type: "hybrid",
+    notes: "Four 30-minute sitting periods with kinhin (walking meditation). Hybrid in-person + Zoom. Drop-in welcome.",
+    source_url: "https://cambridgezen.org", event_url: "https://cambridgezen.org/schedule/",
+  },
+  // Kadampa Meditation Center Boston — North Cambridge
+  {
+    org_id: "kadampa_boston", org_name: "Kadampa Meditation Center Boston",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "2298 Massachusetts Ave", city: "Cambridge", state: "MA", neighborhood: "North Cambridge",
+    lat: 42.3852, lng: -71.1248, tradition: "tibetan", location_type: "in-person",
+    notes: "New Kadampa Tradition (NKT). Guided meditation class. Drop-in, beginners welcome.",
+    source_url: "https://meditationinboston.org", event_url: "https://meditationinboston.org/wednesdays-in-cambridge",
+  },
+  {
+    org_id: "kadampa_boston", org_name: "Kadampa Meditation Center Boston",
+    title: "Sunday Meditation",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 90,
+    address: "2298 Massachusetts Ave", city: "Cambridge", state: "MA", neighborhood: "North Cambridge",
+    lat: 42.3852, lng: -71.1248, tradition: "tibetan", location_type: "in-person",
+    notes: "New Kadampa Tradition (NKT). Guided meditation class. Drop-in, beginners welcome.",
+    source_url: "https://meditationinboston.org", event_url: "https://meditationinboston.org/sundays-in-cambridge",
+  },
+];
+
+const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
+
+function eventId(orgId, title, start) {
+  return crypto.createHash("sha256").update(`${orgId}:${title}:${start}`).digest("hex").slice(0, 16);
+}
+
+function pad(n) { return String(n).padStart(2, "0"); }
+
+function generateInstances(sit, days_ahead = 90) {
+  const events = [];
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  for (let d = 0; d <= days_ahead; d++) {
+    const date = new Date(today);
+    date.setDate(today.getDate() + d);
+    const dow = date.getDay();
+
+    if (!sit.days.some(day => DAY_MAP[day] === dow)) continue;
+
+    // If specific dates provided, only generate on those dates
+    if (sit.dates) {
+      const dateStr = `${date.getFullYear()}-${pad(date.getMonth()+1)}-${pad(date.getDate())}`;
+      if (!sit.dates.includes(dateStr)) continue;
+    }
+
+    // If week_of_month provided, only generate on nth occurrence of weekday in month
+    if (sit.week_of_month) {
+      const occurrenceInMonth = Math.ceil(date.getDate() / 7);
+      if (occurrenceInMonth !== sit.week_of_month) continue;
+    }
+
+    const start = new Date(date);
+    start.setHours(sit.time.h, sit.time.m, 0, 0);
+
+    const end = new Date(start);
+    end.setMinutes(end.getMinutes() + (sit.duration_min || 60));
+
+    const startStr = `${start.getFullYear()}-${pad(start.getMonth()+1)}-${pad(start.getDate())}T${pad(start.getHours())}:${pad(start.getMinutes())}:00`;
+    const endStr   = `${end.getFullYear()}-${pad(end.getMonth()+1)}-${pad(end.getDate())}T${pad(end.getHours())}:${pad(end.getMinutes())}:00`;
+
+    events.push({
+      id:                 eventId(sit.org_id, sit.title, startStr),
+      org_id:             sit.org_id,
+      org_name:           sit.org_name,
+      title:              sit.title,
+      start_time:         startStr,
+      end_time:           endStr,
+      address:            sit.address,
+      city:               sit.city,
+      state:              sit.state,
+      neighborhood:       sit.neighborhood,
+      lat:                sit.lat,
+      lng:                sit.lng,
+      tradition:          sit.tradition,
+      location_type:      sit.location_type,
+      is_sit:             1,
+      accessibility_notes: null,
+      identity_focus:     sit.identity_focus || null,
+      source:             "manual",
+      source_url:         sit.source_url,
+      event_url:          sit.event_url,
+      last_verified:      new Date().toISOString().slice(0, 10),
+      recurrence:         (sit.dates || sit.week_of_month) ? "monthly" : "weekly",
+      notes:              sit.notes || null,
+    });
+  }
+  return events;
+}
+
+// Generate all instances
+const allEvents = SITS.flatMap(s => generateInstances(s, 90));
+console.log(`Generated ${allEvents.length} event instances from ${SITS.length} recurring sits`);
+
+// POST to app
+const resp = await fetch(`${APP_URL}/api/admin/events`, {
+  method: "POST",
+  headers: {
+    "Authorization": `Bearer ${INGEST_TOKEN}`,
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ events: allEvents }),
+});
+
+if (!resp.ok) {
+  console.error(`POST failed: ${resp.status} ${await resp.text()}`);
+  process.exit(1);
+}
+
+const result = await resp.json();
+console.log(`✓ ${result.upserted} events upserted`);

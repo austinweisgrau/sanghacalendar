@@ -33,6 +33,7 @@ from ingestion.sources import nyc as nyc_sources
 from ingestion.sources.nyc import fetch_shambhala_nyc, fetch_zenstudies_nyc
 from ingestion.sources import la as la_sources
 from ingestion.sources.la import fetch_insightla
+from ingestion.sources import boston as boston_sources
 
 log = logging.getLogger(__name__)
 
@@ -291,6 +292,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ LA static HTML feed failed: {e}")
+
+    # Boston Phase 3 — Shambhala Boston iCal
+    log.info("--- Boston Phase 3: Shambhala Boston iCal ---")
+    for org_id, feed_cfg in boston_sources.ICAL_FEEDS.items():
+        center = boston_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Boston iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Boston iCal feed {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

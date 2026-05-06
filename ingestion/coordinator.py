@@ -25,6 +25,7 @@ from ingestion.sources import nyc as nyc_sources
 from ingestion.sources.nyc import fetch_shambhala_nyc, fetch_zenstudies_nyc
 from ingestion.sources import la as la_sources
 from ingestion.sources.la import fetch_insightla
+from ingestion.sources import boston as boston_sources
 
 log = logging.getLogger(__name__)
 
@@ -259,6 +260,35 @@ def run_la_phase3() -> list[Event]:
     return all_events
 
 
+def run_boston_phase3() -> list[Event]:
+    """Phase 3 Boston: Boston Shambhala iCal feed."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in boston_sources.ICAL_FEEDS.items():
+        center = boston_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Boston iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Boston iCal feed {org_id} failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -271,6 +301,7 @@ def main():
         + run_nyc_phase3b()
         + run_nyc_phase3c()
         + run_la_phase3()
+        + run_boston_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

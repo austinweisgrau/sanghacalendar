@@ -8,6 +8,7 @@
     <option value="">All states</option>
     <option value="CA">California</option>
     <option value="NY">New York</option>
+    <option value="MA">Massachusetts</option>
   </select>
   <div class="multi-select" id="city-picker">
     <div class="multi-select-trigger" id="city-trigger" onclick="toggleCityDropdown(event)">All cities</div>
@@ -28,6 +29,9 @@
       <label class="multi-select-option" data-state="CA"><input type="checkbox" value="Los Angeles" onchange="onCityChange()"> Los Angeles</label>
       <label class="multi-select-option" data-state="NY"><input type="checkbox" value="Manhattan" onchange="onCityChange()"> Manhattan</label>
       <label class="multi-select-option" data-state="NY"><input type="checkbox" value="Brooklyn" onchange="onCityChange()"> Brooklyn</label>
+      <label class="multi-select-option" data-state="MA"><input type="checkbox" value="Cambridge" onchange="onCityChange()"> Cambridge</label>
+      <label class="multi-select-option" data-state="MA"><input type="checkbox" value="Brookline" onchange="onCityChange()"> Brookline</label>
+      <label class="multi-select-option" data-state="MA"><input type="checkbox" value="Boston" onchange="onCityChange()"> Boston</label>
     </div>
   </div>
   <select id="filter-tradition" onchange="onFilterChange()">

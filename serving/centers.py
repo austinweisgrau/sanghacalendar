@@ -760,4 +760,109 @@ CENTERS = {
             "American Zen — many of today's prominent Zen teachers trained here."
         ),
     },
+    # ── Boston / Cambridge ────────────────────────────────────────────────────
+    "shambhala_boston": {
+        "id": "shambhala_boston",
+        "name": "Boston Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://boston.shambhala.org",
+        "address": "646 Brookline Ave",
+        "city": "Brookline",
+        "state": "MA",
+        "zip": "02445",
+        "neighborhood": "Brookline Village",
+        "lat": 42.3435,
+        "lng": -71.1286,
+        "description": (
+            "Boston Shambhala Meditation Center offers a welcoming home for Shambhala Buddhist "
+            "practice (Chögyam Trungpa lineage) in the Greater Boston area. Regular offerings include "
+            "Nyinthün Sunday morning meditation 9am–12pm, Wednesday Open Dharma Gathering 7–8:30pm, "
+            "Heart of Recovery (Mondays), and LGBTQ+ Meditation Group 1st/3rd Tuesdays. "
+            "The center also hosts Shambhala Training weekends, family practice days, and "
+            "monthly Sangha Sundays. Beginners always welcome, first visit free."
+        ),
+    },
+    "gbzc": {
+        "id": "gbzc",
+        "name": "Greater Boston Zen Center",
+        "tradition": "zen",
+        "url": "https://bostonzen.org",
+        "address": "552 Massachusetts Ave, Suite 208",
+        "city": "Cambridge",
+        "state": "MA",
+        "zip": "02139",
+        "neighborhood": "Central Square",
+        "lat": 42.3638,
+        "lng": -71.1059,
+        "description": (
+            "Greater Boston Zen Center (GBZC) is a non-residential urban Zen community in Cambridge's "
+            "Central Square, serving the Boston metro area since the 1990s. Teachers include Josh Bartok, "
+            "Kate Hartland, and others trained in multiple Zen lineages. Weekly offerings include "
+            "Tuesday Evening Program 7–9pm (hybrid in-person + Zoom) and Saturday Morning Program "
+            "9–9:50am (online). Monthly all-day zazenkai sits for deepening practice. Dana-based."
+        ),
+    },
+    "cimc": {
+        "id": "cimc",
+        "name": "Cambridge Insight Meditation Center",
+        "tradition": "theravada",
+        "url": "https://cambridgeinsight.org",
+        "address": "331 Broadway",
+        "city": "Cambridge",
+        "state": "MA",
+        "zip": "02139",
+        "neighborhood": "MIT/Cambridgeport",
+        "lat": 42.3652,
+        "lng": -71.1107,
+        "description": (
+            "Cambridge Insight Meditation Center (CIMC) is one of the most respected urban Vipassana "
+            "centers in North America. Founded by Larry Rosenberg, CIMC is rooted in the Theravada "
+            "tradition and closely affiliated with the Insight Meditation Society (IMS) in Barre and "
+            "Spirit Rock in Marin. Regular drop-in sits run Mon/Tue/Thu/Fri evenings at 6pm, with "
+            "Monday Sitting & Sangha 6–7:15pm, Wednesday Evening Dharma 6:30–8:45pm, and Thursday "
+            "Morning Retreat 9am–1pm. All events by donation. Deep practice in the heart of Cambridge."
+        ),
+    },
+    "cambridge_zen": {
+        "id": "cambridge_zen",
+        "name": "Cambridge Zen Center",
+        "tradition": "zen",
+        "url": "https://cambridgezen.org",
+        "address": "199 Auburn St",
+        "city": "Cambridge",
+        "state": "MA",
+        "zip": "02139",
+        "neighborhood": "Cambridgeport",
+        "lat": 42.3620,
+        "lng": -71.1176,
+        "description": (
+            "Cambridge Zen Center is a residential Zen community practicing in the Kwan Um School "
+            "of Zen lineage, founded by Korean Zen Master Seungsahn. One of the oldest Zen centers "
+            "in New England, CZC offers a full residential practice schedule and welcomes drop-in "
+            "visitors. Regular public sits include Tuesday Evening Zazen 7:30–8:40pm (hybrid), "
+            "Thursday Evening 6:45pm instruction + 7:30pm Zoom, and Sunday Morning Zazen 9am "
+            "(four 30-min periods, hybrid). Monthly weekend retreats."
+        ),
+    },
+    "kadampa_boston": {
+        "id": "kadampa_boston",
+        "name": "Kadampa Meditation Center Boston",
+        "tradition": "tibetan",
+        "url": "https://meditationinboston.org",
+        "address": "2298 Massachusetts Ave",
+        "city": "Cambridge",
+        "state": "MA",
+        "zip": "02140",
+        "neighborhood": "North Cambridge",
+        "lat": 42.3852,
+        "lng": -71.1248,
+        "description": (
+            "Kadampa Meditation Center Boston (KMCB) is part of the New Kadampa Tradition (NKT-IKBU), "
+            "an international network of over 1,200 Tibetan Buddhist centers. Located in North "
+            "Cambridge, KMCB offers weekly meditation classes (Wednesdays and Sundays), study "
+            "programs in the Lamrim and Lojong traditions, and occasional outdoor meditation sessions "
+            "at Boston Public Garden. Resident Teacher: Gen Kelsang Khedrub. Drop-in welcome, "
+            "beginners especially encouraged."
+        ),
+    },
 }
