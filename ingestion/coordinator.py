@@ -28,6 +28,8 @@ from ingestion.sources.la import fetch_insightla
 from ingestion.sources import boston as boston_sources
 from ingestion.sources import dc as dc_sources
 from ingestion.sources.dc import fetch_imcw
+from ingestion.sources import chicago as chicago_sources
+from ingestion.sources.chicago import fetch_tockify_chicago
 
 log = logging.getLogger(__name__)
 
@@ -305,6 +307,20 @@ def run_dc_phase3() -> list[Event]:
     return all_events
 
 
+def run_chicago_phase3() -> list[Event]:
+    """Phase 3 Chicago: Sit Around Chicago Tockify aggregator iCal feed."""
+    all_events: list[Event] = []
+
+    try:
+        events = fetch_tockify_chicago()
+        log.info(f"  Sit Around Chicago (Tockify) → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ Tockify Chicago fetch failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -319,6 +335,7 @@ def main():
         + run_la_phase3()
         + run_boston_phase3()
         + run_dc_phase3()
+        + run_chicago_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

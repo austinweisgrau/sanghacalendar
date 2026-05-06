@@ -907,4 +907,148 @@ CENTERS = {
             "Training weekends, study groups, and community programs throughout the year."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Chicago / Illinois — Phase 3
+    # -----------------------------------------------------------------------
+    "ancient_dragon_chicago": {
+        "id": "ancient_dragon_chicago",
+        "name": "Ancient Dragon Zen Gate",
+        "tradition": "zen",
+        "url": "https://www.ancientdragon.org",
+        "address": "2255 W Giddings St",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60625",
+        "neighborhood": "Ravenswood",
+        "lat": 41.9680,
+        "lng": -87.6840,
+        "description": (
+            "Soto Zen center in Chicago's Ravenswood neighborhood, affiliated with "
+            "San Francisco Zen Center in the lineage of Shunryu Suzuki Roshi. "
+            "Sunday morning zazen at 9:30am, Monday evening zazen at The Cenacle "
+            "Retreat Center in Lincoln Park. Daily online zazen sessions via Zoom "
+            "most weekday mornings. Dharma talks, study groups, and sesshin retreats. "
+            "Drop-in welcome. Free of charge."
+        ),
+    },
+    "daiyuzenji_chicago": {
+        "id": "daiyuzenji_chicago",
+        "name": "Daiyuzenji Rinzai Zen Temple",
+        "tradition": "zen",
+        "url": "https://daiyuzenji.org",
+        "address": "3717 N Ravenswood Ave #112",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60613",
+        "neighborhood": "Ravenswood",
+        "lat": 41.9457,
+        "lng": -87.6776,
+        "description": (
+            "Rinzai Zen temple in Chicago's Ravenswood neighborhood offering traditional "
+            "Rinzai practice including zazen, kinhin, and koan work. Hybrid public sittings: "
+            "Tuesday and Thursday evenings 7–9pm (two zazen periods), Friday mornings "
+            "5:30–6:15am (in-person), Sunday mornings 8:30–10:30am (hybrid, RSVP for Zoom). "
+            "Daylong sittings (zazenkai) and week-long sesshins throughout the year."
+        ),
+    },
+    "zbtc_evanston": {
+        "id": "zbtc_evanston",
+        "name": "Zen Buddhist Temple of Chicago",
+        "tradition": "zen",
+        "url": "https://www.zbtc.org",
+        "address": "608 Dempster St",
+        "city": "Evanston",
+        "state": "IL",
+        "zip": "60202",
+        "neighborhood": "Evanston",
+        "lat": 42.0451,
+        "lng": -87.6905,
+        "description": (
+            "The oldest continuously operating Zen center in the greater Chicago area, "
+            "founded in 1949 by Soyu Matsuoka Roshi — one of the first Japanese Soto Zen "
+            "teachers to settle permanently in the United States. Weekly services on Sundays "
+            "10am–12pm and 2–4pm, and Wednesdays 7–9pm. In-person at 608 Dempster St in "
+            "Evanston, with online attendance available via Zoom."
+        ),
+    },
+    "shambhala_chicago": {
+        "id": "shambhala_chicago",
+        "name": "Shambhala Meditation Center of Chicago",
+        "tradition": "tibetan",
+        "url": "https://chicago.shambhala.org",
+        "address": "37 N Carpenter St",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60607",
+        "neighborhood": "West Loop",
+        "lat": 41.8826,
+        "lng": -87.6524,
+        "description": (
+            "Shambhala Buddhist meditation center (Chögyam Trungpa lineage) in Chicago's "
+            "West Loop. Regular public sittings: Sunday mornings 9:30–11am (sitting, walking, "
+            "and dharma discussion), Tuesday evenings 7–8:30pm, and Sunday evenings 5:30–7:30pm "
+            "Queer Dharma group. Also online noon meditation on weekdays. Free introductory "
+            "meditation instruction available. Shambhala Training weekends and community programs."
+        ),
+    },
+    "cbmg_chicago": {
+        "id": "cbmg_chicago",
+        "name": "Chicago Buddhist Meditation Group",
+        "tradition": "pluralist",
+        "url": "https://chicagomeditation.org",
+        "address": "4512 N Lincoln Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60625",
+        "neighborhood": "Ravenswood",
+        "lat": 41.9629,
+        "lng": -87.6822,
+        "description": (
+            "Non-sectarian Buddhist meditation community meeting every Sunday at 3:30pm CT "
+            "in a hybrid format at 4512 N Lincoln Ave in Ravenswood. Sessions include guided "
+            "meditation, dharma talks, and group sharing in an open, ecumenical spirit. "
+            "Beginners welcome. Free of charge. Zoom link provided weekly via newsletter."
+        ),
+    },
+    "zen_chicago": {
+        "id": "zen_chicago",
+        "name": "Chicago Zen Meditation Community",
+        "tradition": "zen",
+        "url": "https://zenchicago.org",
+        "address": "1460 W Chicago Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60642",
+        "neighborhood": "West Town",
+        "lat": 41.8962,
+        "lng": -87.6686,
+        "description": (
+            "Soto Zen meditation center in West Town with one of Chicago's most active "
+            "hybrid schedules — approximately 8 sessions per week. Weekday morning zazen "
+            "Mon–Sat 8:30am (30 min), Monday afternoon study group 1:15pm, Monday evening "
+            "7pm and Wednesday evening zazen, Saturday morning zazen and last-Saturday "
+            "zazenkai. Most sessions available via Zoom. Teacher: Myoshi Thomson. Drop-in."
+        ),
+    },
+    "insight_chicago": {
+        "id": "insight_chicago",
+        "name": "Insight Chicago Meditation Community",
+        "tradition": "theravada",
+        "url": "https://www.insightchicago.org",
+        "address": "",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "",
+        "neighborhood": "Various locations",
+        "lat": 41.8781,
+        "lng": -87.6298,
+        "description": (
+            "Insight / Vipassana meditation community with multiple sanghas across the "
+            "Chicago metro area, in the IMS / Spirit Rock tradition. Groups include the "
+            "Sunday Night Meditation Sangha (in-person/hybrid), Northside Meditation Sangha "
+            "(Wednesdays, first week hybrid), Evanston Sangha (Monday and Thursday online), "
+            "and the Circle of Stillness (Lake Forest, in-person + Zoom). Regular daylong "
+            "retreats with visiting teachers."
+        ),
+    },
 }

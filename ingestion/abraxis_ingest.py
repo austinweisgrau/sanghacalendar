@@ -35,6 +35,7 @@ from ingestion.sources import la as la_sources
 from ingestion.sources.la import fetch_insightla
 from ingestion.sources import boston as boston_sources
 from ingestion.sources.dc import fetch_imcw
+from ingestion.sources.chicago import fetch_tockify_chicago
 
 log = logging.getLogger(__name__)
 
@@ -326,6 +327,15 @@ def main():
         all_events.extend(events)
     except Exception as e:
         log.error(f"  ✗ IMCW fetch failed: {e}")
+
+    # Chicago Phase 3 — Sit Around Chicago Tockify aggregator
+    log.info("--- Chicago Phase 3: Tockify aggregator ---")
+    try:
+        events = fetch_tockify_chicago()
+        log.info(f"  Sit Around Chicago → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ Tockify Chicago fetch failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []
