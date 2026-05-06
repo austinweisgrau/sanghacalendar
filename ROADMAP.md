@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-06 (heartbeat 7)_
+_Last updated: 2026-05-06 (heartbeat 8)_
 
 ## Current Status
 
@@ -118,7 +118,7 @@ Candidate metros (rough priority):
 2. NYC ✅ **Phase 3 complete May 5** (8 centers)
 3. LA 🔄 **Phase 3 LA live May 5** (2 centers) — see below
 4. Boston/Cambridge 🔄 **Phase 3 Boston live May 6** (5 centers) — see below
-5. DC
+5. DC 🔄 **Phase 3 DC live May 6** (2 centers) — see below
 6. Chicago
 7. Seattle
 8. Denver/Boulder
@@ -184,6 +184,22 @@ Center bios added to centers.py for all 5 centers.
 **Skipped/deferred:**
 - CIMC iCal: uses FullCalendar JS, no API endpoint — monitor for future fix
 - Barre Center for Buddhist Studies: rural retreat center (Barre, MA), not urban metro
+
+### DC Phase 3 — ✅ Live May 6 (2 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Insight Meditation Community of Washington (IMCW) | Custom EventAgent API scraper — fetch ea-key from HTML, call `api.eventagent.ai/api/ListView`, expand RRULE for recurring events | ✅ Live — `fetch_imcw()` in dc.py. River Road Drop-in (Wed 7pm, Bethesda hybrid), Vienna Drop-in (Sun 9am, Vienna VA hybrid), Midday Meditation (Tue/Thu/Fri 1pm online), Heartfelt Wisdom (Thu 9am online), plus special events at DC venues. 81 events live. |
+| Shambhala Meditation Center of Washington DC | Recurring sit seeded — iCal (shambhala-koeln.de center=205) is down (522) | ✅ Live — 1st Sunday monthly 1:30pm at Seekers Church (276 Carroll St NW, Takoma DC). |
+
+City filter updated: Washington, Bethesda, Arlington, Vienna added with DC state option (auto-selects all since metro spans DC/MD/VA).
+Center bios added for IMCW + DC Shambhala.
+
+**Skipped/deferred:**
+- DC Shambhala iCal: shambhala-koeln.de server down (522) for all centers — monitor for recovery
+- Washington Buddhist Vihara (16th St NW): broken website, dead SSL cert, no calendar — skip
+- Meditation Center DC (Dhammakaya, Alexandria VA): AJAX-only calendar, Dhammakaya tradition — low priority
+- Kadampa DC: no accessible web presence found
 
 ### NYC Phase 3d — Deferred
 
