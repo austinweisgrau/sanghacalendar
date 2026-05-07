@@ -12,6 +12,7 @@
     <option value="DC">Washington DC</option>
     <option value="IL">Illinois</option>
     <option value="WA">Washington</option>
+    <option value="CO">Colorado</option>
   </select>
   <div class="multi-select" id="city-picker">
     <div class="multi-select-trigger" id="city-trigger" onclick="toggleCityDropdown(event)">All cities</div>
@@ -44,6 +45,8 @@
       <label class="multi-select-option" data-state="IL"><input type="checkbox" value="Oak Park" onchange="onCityChange()"> Oak Park</label>
       <label class="multi-select-option" data-state="IL"><input type="checkbox" value="Palatine" onchange="onCityChange()"> Palatine</label>
       <label class="multi-select-option" data-state="WA"><input type="checkbox" value="Seattle" onchange="onCityChange()"> Seattle</label>
+      <label class="multi-select-option" data-state="CO"><input type="checkbox" value="Denver" onchange="onCityChange()"> Denver</label>
+      <label class="multi-select-option" data-state="CO"><input type="checkbox" value="Boulder" onchange="onCityChange()"> Boulder</label>
     </div>
   </div>
   <select id="filter-tradition" onchange="onFilterChange()">

@@ -1157,4 +1157,108 @@ CENTERS = {
             "Welcoming to all, including beginners and those with no prior Buddhist background."
         ),
     },
+    # ── Denver / Boulder — Phase 3 ──────────────────────────────────────────────
+    "zen_center_denver": {
+        "id": "zen_center_denver",
+        "name": "Zen Center of Denver",
+        "tradition": "zen",
+        "url": "https://zencenterofdenver.org",
+        "address": "1856 S Columbine St",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80210",
+        "neighborhood": "Washington Park East",
+        "lat": 39.6956,
+        "lng": -104.9614,
+        "description": (
+            "Zen Center of Denver is one of the most active Zen communities in the Rocky Mountain "
+            "region, led by resident teacher Peggy Metta Roshi (White Plum Asanga / Soto lineage). "
+            "Weekly public sittings: Tuesday morning zazen 6:30am & Tuesday evening 7pm, Thursday "
+            "morning zazen 6:30am & Thursday evening 7pm, and Zoom Zen (online zazen daily 6am). "
+            "Queer Dharma Meditation monthly, Zen of Recovery, Cha Dao (tea ceremony), Kannon "
+            "Ceremony, and Mindfulness Drop-in. Sessions livestreamed on Zoom. Dana-based."
+        ),
+    },
+    "boulder_zen": {
+        "id": "boulder_zen",
+        "name": "Boulder Zen Center",
+        "tradition": "zen",
+        "url": "https://www.boulderzen.org",
+        "address": "2151 Arapahoe Ave",
+        "city": "Boulder",
+        "state": "CO",
+        "zip": "80302",
+        "neighborhood": "Central Boulder",
+        "lat": 40.0106,
+        "lng": -105.2541,
+        "description": (
+            "Boulder Zen Center is a Soto Zen practice community in central Boulder near the Pearl "
+            "Street Mall, led by Zenki Roshi (White Plum Asanga lineage). Regular public sittings "
+            "include weekly zazen, dharma talks, half-day sits, and sesshin intensives. Individual "
+            "dokusan (interviews) with the teacher available. Located at 2151 Arapahoe Ave, "
+            "walkable from downtown Boulder."
+        ),
+    },
+    "orgyen_khandroling": {
+        "id": "orgyen_khandroling",
+        "name": "Orgyen Khandroling",
+        "tradition": "tibetan",
+        "url": "https://orgyenkhandroling.org",
+        "address": "3300 Josephine St",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80205",
+        "neighborhood": "Cole / Northeast Denver",
+        "lat": 39.7629,
+        "lng": -104.9600,
+        "description": (
+            "Orgyen Khandroling is a Longchen Nyingthig / Dzogchen center in Northeast Denver and "
+            "the North American seat of Anyen Rinpoche's international Dharma organization. "
+            "The lineage transmits Nyingma Dzogchen teachings from Khenchen Tsewang Rigdzin and "
+            "Dilgo Khyentse Rinpoche. Open programs include Wednesday evening and Sunday morning "
+            "Open Meditation, Tara Recitation, and Tsok practice on auspicious lunar days. "
+            "No prior Buddhist knowledge required. Located in the Cole neighborhood."
+        ),
+    },
+    "shambhala_boulder": {
+        "id": "shambhala_boulder",
+        "name": "Boulder Shambhala Center",
+        "tradition": "tibetan",
+        "url": "https://boulder.shambhala.org",
+        "address": "1345 Spruce St",
+        "city": "Boulder",
+        "state": "CO",
+        "zip": "80302",
+        "neighborhood": "Central Boulder",
+        "lat": 40.0150,
+        "lng": -105.2705,
+        "description": (
+            "Boulder Shambhala Center teaches meditation in the Shambhala Buddhist tradition "
+            "(Chögyam Trungpa lineage) from their central Boulder location near Pearl Street. "
+            "Regular public program: Thursday Night Open Class 7–8:45pm (in-person, all welcome). "
+            "Free introductory meditation instruction available at any Open Class. Generosity "
+            "policy applies — no one turned away for lack of funds."
+        ),
+    },
+    "shambhala_denver": {
+        "id": "shambhala_denver",
+        "name": "Shambhala Meditation Center of Denver",
+        "tradition": "tibetan",
+        "url": "https://denver.shambhala.org",
+        "address": "2305 S Syracuse Way, Suite 214",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80231",
+        "neighborhood": "Hampden South / Tamarac Square",
+        "lat": 39.6519,
+        "lng": -104.8822,
+        "description": (
+            "Shambhala Meditation Center of Denver teaches in the Shambhala Buddhist tradition "
+            "(Chögyam Trungpa lineage) from their southeast Denver location. Weekly drop-in: "
+            "Sunday morning group meditation at 10:00 AM (in-person). Open House and Meditation "
+            "Instruction monthly — typically the 4th Sunday at 10am, free of charge, followed "
+            "by CommuniTea at noon. Additional programs: Heart of Recovery sangha, "
+            "Death and Dying study group."
+        ),
+    },
 }
