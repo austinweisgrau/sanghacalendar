@@ -1051,4 +1051,110 @@ CENTERS = {
             "retreats with visiting teachers."
         ),
     },
+    # ── Seattle / Washington — Phase 3 ────────────────────────────────────────
+    "seattle_insight": {
+        "id": "seattle_insight",
+        "name": "Seattle Insight Meditation Society",
+        "tradition": "theravada",
+        "url": "https://seattleinsight.org",
+        "address": "4001 9th Ave NE",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98105",
+        "neighborhood": "University District",
+        "lat": 47.6568,
+        "lng": -122.3142,
+        "description": (
+            "Seattle Insight Meditation Society (SIMS) is the primary Vipassana / Insight "
+            "center in Seattle, offering meditation in the Theravada tradition (IMS / Spirit "
+            "Rock lineage). Weekly drop-in programs include Monday Evening Meditation & Dharma, "
+            "Stillpoint Sit, Thursday Guided Meditation and Thursday Night Sangha (in-person), "
+            "and Sunday Morning Sit & Dharma Talk (hybrid). Identity-centered affinity sanghas "
+            "including LGBTQIA+ Sangha. Located in the University District. By donation."
+        ),
+    },
+    "kmc_washington": {
+        "id": "kmc_washington",
+        "name": "Kadampa Meditation Center Washington",
+        "tradition": "tibetan",
+        "url": "https://meditateinseattle.org",
+        "address": "6556 24th Ave NW",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98117",
+        "neighborhood": "Crown Hill",
+        "lat": 47.6830,
+        "lng": -122.3871,
+        "description": (
+            "Kadampa Meditation Center Washington (KMC Washington) teaches Tibetan Buddhist "
+            "meditation in the New Kadampa Tradition (NKT-IKBU) founded by Geshe Kelsang Gyatso. "
+            "Located in the Crown Hill neighborhood. Drop-in public classes: Thursday Evening "
+            "Meditation 7–8pm, Sunday Morning classes 10–11:15am, Monday Evening classes 7–8:30pm, "
+            "and daily morning prostrations. Spanish-language Sunday class also offered. "
+            "Beginners especially welcome."
+        ),
+    },
+    "nalandabodhi_seattle": {
+        "id": "nalandabodhi_seattle",
+        "name": "Nalandabodhi Seattle (Nalanda West)",
+        "tradition": "tibetan",
+        "url": "https://nalandabodhi.org",
+        "address": "3902 Woodland Park Ave N",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98103",
+        "neighborhood": "Fremont",
+        "lat": 47.6574,
+        "lng": -122.3363,
+        "description": (
+            "Nalandabodhi Seattle is based at Nalanda West in Seattle's Fremont neighborhood, "
+            "the North American headquarters of Dzogchen Ponlop Rinpoche's international "
+            "Nalandabodhi organization. Kagyu/Nyingma Dzogchen lineage. Open public programs "
+            "include Thursday Evening Open Meditation 6–7:30pm and Sunday Open Meditation "
+            "10–11:30am (both in-person at Nalanda West). Kum Nye (Tibetan Yoga) offered "
+            "Tuesdays 5pm. All programs free and open to newcomers."
+        ),
+    },
+    "shambhala_seattle": {
+        "id": "shambhala_seattle",
+        "name": "Shambhala Meditation Center of Seattle",
+        "tradition": "tibetan",
+        "url": "https://seattle.shambhala.org",
+        "address": "3107 E Harrison St",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98112",
+        "neighborhood": "Capitol Hill",
+        "lat": 47.6197,
+        "lng": -122.3023,
+        "description": (
+            "Shambhala Meditation Center of Seattle offers practice in the Shambhala Buddhist "
+            "tradition (Chögyam Trungpa lineage) from their Capitol Hill location. Regular "
+            "public programs: Thursday Evening Open House 7–8:30pm (in-person), Sunday Morning "
+            "Open House 10–11:30am (in-person), Monday Shambhala Practice Night 6:30pm (online), "
+            "and Wednesday Heart of Recovery 7pm (hybrid). Monthly Queer Dharma group. "
+            "Free introductory meditation instruction available. All are welcome."
+        ),
+    },
+    "seattle_buddhist_center": {
+        "id": "seattle_buddhist_center",
+        "name": "Seattle Buddhist Center",
+        "tradition": "pluralist",
+        "url": "https://seattlebuddhistcenter.org",
+        "address": "12056 15th Ave NE, Suite C-2",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98125",
+        "neighborhood": "Northgate / Pinehurst",
+        "lat": 47.7203,
+        "lng": -122.3145,
+        "description": (
+            "Seattle Buddhist Center is part of the Triratna Buddhist Community (formerly FWBO), "
+            "an international network that emphasizes meditation, spiritual friendship (kalyana "
+            "mitrata), and ethical engagement. Located in the Northgate / Pinehurst area. "
+            "Weekly drop-in programs: Thursday Night Meditation 7–8pm (in-person) and Sunday "
+            "Sangha Night 6–8pm (in-person). A Buddhist Approach to Recovery meets Fridays 7pm. "
+            "Welcoming to all, including beginners and those with no prior Buddhist background."
+        ),
+    },
 }

@@ -36,6 +36,7 @@ from ingestion.sources.la import fetch_insightla
 from ingestion.sources import boston as boston_sources
 from ingestion.sources.dc import fetch_imcw
 from ingestion.sources.chicago import fetch_tockify_chicago
+from ingestion.sources.seattle import fetch_nalandabodhi_seattle, run_seattle_ical
 
 log = logging.getLogger(__name__)
 
@@ -336,6 +337,22 @@ def main():
         all_events.extend(events)
     except Exception as e:
         log.error(f"  ✗ Tockify Chicago fetch failed: {e}")
+
+    # Seattle Phase 3 — iCal feeds + Nalandabodhi custom scraper
+    log.info("--- Seattle Phase 3: iCal feeds + Nalandabodhi ---")
+    try:
+        seattle_events = run_seattle_ical()
+        log.info(f"  Seattle iCal feeds → {len(seattle_events)} events")
+        all_events.extend(seattle_events)
+    except Exception as e:
+        log.error(f"  ✗ Seattle iCal feeds failed: {e}")
+
+    try:
+        events = fetch_nalandabodhi_seattle()
+        log.info(f"  Nalandabodhi Seattle → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ Nalandabodhi Seattle failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

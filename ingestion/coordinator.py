@@ -30,6 +30,8 @@ from ingestion.sources import dc as dc_sources
 from ingestion.sources.dc import fetch_imcw
 from ingestion.sources import chicago as chicago_sources
 from ingestion.sources.chicago import fetch_tockify_chicago
+from ingestion.sources import seattle as seattle_sources
+from ingestion.sources.seattle import fetch_nalandabodhi_seattle, run_seattle_ical
 
 log = logging.getLogger(__name__)
 
@@ -321,6 +323,24 @@ def run_chicago_phase3() -> list[Event]:
     return all_events
 
 
+def run_seattle_phase3() -> list[Event]:
+    """Phase 3 Seattle: iCal feeds + Nalandabodhi custom scraper."""
+    all_events: list[Event] = []
+
+    # Direct iCal feeds (Seattle Insight + KMC Washington)
+    all_events.extend(run_seattle_ical())
+
+    # Nalandabodhi — global iCal filtered to Seattle
+    try:
+        events = fetch_nalandabodhi_seattle()
+        log.info(f"  Nalandabodhi Seattle → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ Nalandabodhi Seattle failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -336,6 +356,7 @@ def main():
         + run_boston_phase3()
         + run_dc_phase3()
         + run_chicago_phase3()
+        + run_seattle_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
