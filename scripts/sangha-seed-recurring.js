@@ -579,6 +579,144 @@ const SITS = [
     notes: "First Sunday monthly. Free meditation instruction available 1:15–1:30pm. Tea and dharma video/talk follows sitting.",
     source_url: "https://dc.shambhala.org", event_url: "https://dc.shambhala.org/monthly-calendar/",
   },
+
+  // ── Seattle, WA ───────────────────────────────────────────────────────────
+  // Shambhala Seattle — iCal blocked by Cloudflare; seeded from website schedule
+  {
+    org_id: "shambhala_seattle", org_name: "Shambhala Meditation Center of Seattle",
+    title: "Thursday Evening Open House",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3107 E Harrison St", city: "Seattle", state: "WA", neighborhood: "Capitol Hill",
+    lat: 47.6197, lng: -122.3023, tradition: "tibetan", location_type: "in-person",
+    notes: "Open house meditation 7–8:30pm. All welcome, free meditation instruction available.",
+    source_url: "https://seattle.shambhala.org", event_url: "https://seattle.shambhala.org/calendar/",
+  },
+  {
+    org_id: "shambhala_seattle", org_name: "Shambhala Meditation Center of Seattle",
+    title: "Sunday Morning Open House",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "3107 E Harrison St", city: "Seattle", state: "WA", neighborhood: "Capitol Hill",
+    lat: 47.6197, lng: -122.3023, tradition: "tibetan", location_type: "in-person",
+    notes: "Open house meditation 10–11:30am. All welcome.",
+    source_url: "https://seattle.shambhala.org", event_url: "https://seattle.shambhala.org/calendar/",
+  },
+  {
+    org_id: "shambhala_seattle", org_name: "Shambhala Meditation Center of Seattle",
+    title: "Shambhala Practice Night",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "3107 E Harrison St", city: "Seattle", state: "WA", neighborhood: "Capitol Hill",
+    lat: 47.6197, lng: -122.3023, tradition: "tibetan", location_type: "online",
+    notes: "Online meditation practice night 6:30pm. Zoom link via seattle.shambhala.org.",
+    source_url: "https://seattle.shambhala.org", event_url: "https://seattle.shambhala.org/calendar/",
+  },
+  {
+    org_id: "shambhala_seattle", org_name: "Shambhala Meditation Center of Seattle",
+    title: "Heart of Recovery",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "3107 E Harrison St", city: "Seattle", state: "WA", neighborhood: "Capitol Hill",
+    lat: 47.6197, lng: -122.3023, tradition: "tibetan", location_type: "hybrid",
+    notes: "Hybrid meditation group for people in recovery. 7pm Wednesdays.",
+    source_url: "https://seattle.shambhala.org", event_url: "https://seattle.shambhala.org/calendar/",
+  },
+  // Seattle Buddhist Center (Triratna) — no iCal
+  {
+    org_id: "seattle_buddhist_center", org_name: "Seattle Buddhist Center",
+    title: "Thursday Night Meditation",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "12056 15th Ave NE, Suite C-2", city: "Seattle", state: "WA", neighborhood: "Northgate / Pinehurst",
+    lat: 47.7203, lng: -122.3145, tradition: "pluralist", location_type: "in-person",
+    notes: "Triratna Buddhist Community. 7–8pm in-person. Drop-in welcome.",
+    source_url: "https://seattlebuddhistcenter.org", event_url: "https://seattlebuddhistcenter.org/events/",
+  },
+  {
+    org_id: "seattle_buddhist_center", org_name: "Seattle Buddhist Center",
+    title: "Sunday Sangha Night",
+    days: ["Sunday"], time: { h: 18, m: 0 }, duration_min: 120,
+    address: "12056 15th Ave NE, Suite C-2", city: "Seattle", state: "WA", neighborhood: "Northgate / Pinehurst",
+    lat: 47.7203, lng: -122.3145, tradition: "pluralist", location_type: "in-person",
+    notes: "Triratna Buddhist Community. 6–8pm in-person, dharma discussion and meditation. Drop-in welcome.",
+    source_url: "https://seattlebuddhistcenter.org", event_url: "https://seattlebuddhistcenter.org/events/",
+  },
+
+  // ── Denver / Boulder, CO ──────────────────────────────────────────────────
+  // Boulder Shambhala Center — Cologne iCal server down
+  {
+    org_id: "shambhala_boulder", org_name: "Boulder Shambhala Center",
+    title: "Thursday Night Open Class",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 105,
+    address: "1345 Spruce St", city: "Boulder", state: "CO", neighborhood: "Central Boulder",
+    lat: 40.0150, lng: -105.2705, tradition: "tibetan", location_type: "in-person",
+    notes: "7–8:45pm in-person. Shambhala Buddhist tradition. All welcome, free meditation instruction available.",
+    source_url: "https://boulder.shambhala.org", event_url: "https://boulder.shambhala.org/calendar/",
+  },
+  // Denver Shambhala Center — Cologne iCal server down
+  {
+    org_id: "shambhala_denver", org_name: "Shambhala Meditation Center of Denver",
+    title: "Sunday Group Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "2305 S Syracuse Way, Suite 214", city: "Denver", state: "CO", neighborhood: "Hampden South / Tamarac Square",
+    lat: 39.6519, lng: -104.8822, tradition: "tibetan", location_type: "in-person",
+    notes: "10am Sunday in-person. Shambhala Buddhist tradition. Free meditation instruction available before session.",
+    source_url: "https://denver.shambhala.org", event_url: "https://denver.shambhala.org/calendar/",
+  },
+
+  // ── Portland, OR ──────────────────────────────────────────────────────────
+  // Portland Insight Meditation Community (PIMC) — Wix site, no iCal
+  {
+    org_id: "portland_insight", org_name: "Portland Insight Meditation Community",
+    title: "Sunday Morning Sit & Dharma Talk",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 90,
+    address: "6536 SE Duke St", city: "Portland", state: "OR", neighborhood: "Brentwood-Darlington",
+    lat: 45.4738, lng: -122.6186, tradition: "theravada", location_type: "hybrid",
+    notes: "Theravada Vipassana (Ruth Denison lineage). In-person + Zoom. Drop-in welcome.",
+    source_url: "https://www.portlandinsight.org", event_url: "https://www.portlandinsight.org/weeklygroups",
+  },
+  {
+    org_id: "portland_insight", org_name: "Portland Insight Meditation Community",
+    title: "Monday Morning Sit",
+    days: ["Monday"], time: { h: 7, m: 30 }, duration_min: 45,
+    address: "6536 SE Duke St", city: "Portland", state: "OR", neighborhood: "Brentwood-Darlington",
+    lat: 45.4738, lng: -122.6186, tradition: "theravada", location_type: "hybrid",
+    notes: "Morning sit with poem, 45-min meditation, group discussion. Online + some in-person.",
+    source_url: "https://www.portlandinsight.org", event_url: "https://www.portlandinsight.org/weeklygroups",
+  },
+  {
+    org_id: "portland_insight", org_name: "Portland Insight Meditation Community",
+    title: "Tuesday Evening Sangha",
+    days: ["Tuesday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "6536 SE Duke St", city: "Portland", state: "OR", neighborhood: "Brentwood-Darlington",
+    lat: 45.4738, lng: -122.6186, tradition: "theravada", location_type: "in-person",
+    notes: "In-person weekly group. 6:30–8pm. Drop-in welcome.",
+    source_url: "https://www.portlandinsight.org", event_url: "https://www.portlandinsight.org/weeklygroups",
+  },
+  {
+    org_id: "portland_insight", org_name: "Portland Insight Meditation Community",
+    title: "Heart of Freedom Meditation Class",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "6536 SE Duke St", city: "Portland", state: "OR", neighborhood: "Brentwood-Darlington",
+    lat: 45.4738, lng: -122.6186, tradition: "theravada", location_type: "hybrid",
+    notes: "Guided meditation, compassion and wisdom teachings, Q&A. Hybrid in-person + online.",
+    source_url: "https://www.portlandinsight.org", event_url: "https://www.portlandinsight.org/weeklygroups",
+  },
+  // Portland Shambhala — dynamic FullCalendar, no static iCal feed
+  {
+    org_id: "shambhala_portland", org_name: "Portland Shambhala Meditation Center",
+    title: "Decompress + Connect Evening Meditation",
+    days: ["Monday", "Friday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "1404 SE 25th Ave", city: "Portland", state: "OR", neighborhood: "Buckman / Richmond",
+    lat: 45.5168, lng: -122.6434, tradition: "tibetan", location_type: "in-person",
+    notes: "In-person meditation group at 1404 SE 25th Ave. Shambhala Buddhist tradition. All welcome.",
+    source_url: "https://portland.shambhala.org", event_url: "https://portland.shambhala.org/calendar/",
+  },
+  {
+    org_id: "shambhala_portland", org_name: "Portland Shambhala Meditation Center",
+    title: "Sunday Community Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "1404 SE 25th Ave", city: "Portland", state: "OR", neighborhood: "Buckman / Richmond",
+    lat: 45.5168, lng: -122.6434, tradition: "tibetan", location_type: "online",
+    notes: "Online Sunday morning meditation. Zoom link via portland.shambhala.org.",
+    source_url: "https://portland.shambhala.org", event_url: "https://portland.shambhala.org/calendar/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

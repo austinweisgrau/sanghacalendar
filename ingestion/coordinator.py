@@ -33,6 +33,7 @@ from ingestion.sources.chicago import fetch_tockify_chicago
 from ingestion.sources import seattle as seattle_sources
 from ingestion.sources.seattle import fetch_nalandabodhi_seattle, run_seattle_ical
 from ingestion.sources import denver as denver_sources
+from ingestion.sources import portland as portland_sources
 
 log = logging.getLogger(__name__)
 
@@ -371,6 +372,35 @@ def run_denver_phase3() -> list[Event]:
     return all_events
 
 
+def run_portland_phase3() -> list[Event]:
+    """Phase 3 Portland: iCal feeds for Dharma Rain Zen + Kagyu Changchub Chuling."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in portland_sources.ICAL_FEEDS.items():
+        center = portland_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Portland iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Portland iCal {org_id} failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -388,6 +418,7 @@ def main():
         + run_chicago_phase3()
         + run_seattle_phase3()
         + run_denver_phase3()
+        + run_portland_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

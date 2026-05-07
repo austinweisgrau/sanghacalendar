@@ -38,6 +38,7 @@ from ingestion.sources.dc import fetch_imcw
 from ingestion.sources.chicago import fetch_tockify_chicago
 from ingestion.sources.seattle import fetch_nalandabodhi_seattle, run_seattle_ical
 from ingestion.sources import denver as denver_sources
+from ingestion.sources import portland as portland_sources
 
 log = logging.getLogger(__name__)
 
@@ -378,6 +379,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Denver/Boulder iCal {org_id} failed: {e}")
+
+    # Portland Phase 3 — iCal feeds (Dharma Rain Zen + KCC)
+    log.info("--- Portland Phase 3: iCal feeds ---")
+    for org_id, feed_cfg in portland_sources.ICAL_FEEDS.items():
+        center = portland_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Portland iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Portland iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

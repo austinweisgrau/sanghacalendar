@@ -1261,4 +1261,93 @@ CENTERS = {
             "Death and Dying study group."
         ),
     },
+    "dharma_rain": {
+        "id": "dharma_rain",
+        "name": "Dharma Rain Zen Center",
+        "tradition": "zen",
+        "url": "https://dharma-rain.org",
+        "address": "8500 NE Siskiyou St",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97220",
+        "neighborhood": "Roseway / Northeast Portland",
+        "lat": 45.5508,
+        "lng": -122.5946,
+        "description": (
+            "Dharma Rain Zen Center is the oldest and largest Soto Zen temple in Oregon, founded "
+            "in 1975. Located in the Roseway neighborhood of Northeast Portland, the center has "
+            "two buildings (Sodo and Uji) and offers a full monastic and lay practice schedule. "
+            "Regular public programs include Wednesday Evening Meditation 7–9pm (zazen, chanting, "
+            "open Buddhism class; free, donations welcome) and Sunday Morning Program 8:30–11:30am "
+            "(two zazen periods, chanting service, Dharma talk). Early morning zazen Wed–Sat "
+            "6:30am. Sesshin, zazenkai, dokusan, and MBSR also offered. Drop-in welcome."
+        ),
+    },
+    "kagyu_changchub_chuling": {
+        "id": "kagyu_changchub_chuling",
+        "name": "Kagyu Changchub Chuling",
+        "tradition": "tibetan",
+        "url": "https://kcc.org",
+        "address": "4936 NE Skidmore St",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97218",
+        "neighborhood": "Beaumont-Wilshire / Northeast Portland",
+        "lat": 45.5579,
+        "lng": -122.6134,
+        "description": (
+            "Kagyu Changchub Chuling (KCC) is one of the oldest Tibetan Buddhist centers in the "
+            "Pacific Northwest, a Karma Kagyu center in Northeast Portland led by Lama Eric "
+            "Yankovitch. Regular public programs: Sunday Shamatha Meditation 9–11am (in-person) "
+            "and 6:30–8pm (hybrid), Wednesday Chenrezi Practice 7–8pm (hybrid), Thursday Silent "
+            "Sit 11am–12pm (in-person), and Daily Morning Meditation 7–7:45am (online). "
+            "Tibetan language classes, Dharma study, and retreat programs also offered. "
+            "Located in the Beaumont-Wilshire neighborhood of Northeast Portland."
+        ),
+    },
+    "portland_insight": {
+        "id": "portland_insight",
+        "name": "Portland Insight Meditation Community",
+        "tradition": "theravada",
+        "url": "https://www.portlandinsight.org",
+        "address": "6536 SE Duke St",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97206",
+        "neighborhood": "Brentwood-Darlington / Southeast Portland",
+        "lat": 45.4738,
+        "lng": -122.6186,
+        "description": (
+            "Portland Insight Meditation Community (PIMC) teaches Vipassana meditation in the "
+            "Theravada tradition, in the lineage of Ruth Denison. Weekly programs include Sunday "
+            "morning meditation and Dharma talk (in-person + Zoom), Monday morning sit with poem "
+            "and group discussion, Tuesday Evening Sangha 6:30–8pm (in-person), and Wednesday "
+            "evening Heart of Freedom class (guided meditation, compassion and wisdom teachings, "
+            "Q&A). Open to all levels; drop-in welcome. Located in Brentwood-Darlington, "
+            "Southeast Portland."
+        ),
+    },
+    "shambhala_portland": {
+        "id": "shambhala_portland",
+        "name": "Portland Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://portland.shambhala.org",
+        "address": "1404 SE 25th Ave",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97214",
+        "neighborhood": "Buckman / Richmond, Southeast Portland",
+        "lat": 45.5168,
+        "lng": -122.6434,
+        "description": (
+            "Portland Shambhala Meditation Center offers meditation in the Shambhala Buddhist "
+            "tradition (Chögyam Trungpa lineage) from their Southeast Portland location near "
+            "the Hawthorne district. Regular in-person programs: Monday and Friday evening "
+            "'Decompress + Connect' meditation group at 1404 SE 25th Ave (shared space with "
+            "Portland Friends of the Dhamma). Online programs: Monday morning meditation, "
+            "Tuesday evening open house, Friday morning meditation, Sunday community meditation. "
+            "Monthly Laurelhurst Park sit — 3rd Sunday 10–11:30am (outdoor, weather permitting). "
+            "Free introductory meditation instruction available."
+        ),
+    },
 }
