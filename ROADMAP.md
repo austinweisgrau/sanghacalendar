@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-07 (heartbeat 10)_
+_Last updated: 2026-05-07 (heartbeat 11)_
 
 ## Current Status
 
@@ -121,7 +121,7 @@ Candidate metros (rough priority):
 5. DC 🔄 **Phase 3 DC live May 6** (2 centers) — see below
 6. Chicago 🔄 **Phase 3 Chicago live May 6** (15+ centers via Tockify aggregator)
 7. Seattle 🔄 **Phase 3 Seattle live May 7** (5 centers) — see below
-8. Denver/Boulder
+8. Denver/Boulder 🔄 **Phase 3 Denver/Boulder live May 7** (5 centers) — see below
 9. Austin
 10. Portland
 
@@ -254,6 +254,25 @@ Center bios: 5 new entries in `centers.py`.
 - Cloud Mountain Retreat Center: retreat-only, no regular drop-in sits
 - Eastside Dharma Collective: no web presence found (possibly Meetup-only)
 - Shambhala Seattle iCal: Cloudflare blocks `?ical=1`. Monthly HTML calendar at `/monthly-calendar/` is scrapable if needed.
+
+### Denver/Boulder Phase 3 — ✅ Live May 7 (5 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Zen Center of Denver | iCal feed (`zencenterofdenver.org/events/?ical=1`) | ✅ Live — 29 events. Weekly zazen Tue/Thu morning + evening, Zoom Zen daily, Queer Dharma, Zen of Recovery, Kannon Ceremony. |
+| Boulder Zen Center | Google Calendar ICS | ✅ Live — 197 events. Weekly zazen, dharma talks, sesshins, half-day sits. |
+| Orgyen Khandroling (Denver) | Google Calendar ICS | ✅ Live — 1218 events (full calendar history). Open Meditation Wed/Sun, Tara, Tsok. |
+| Boulder Shambhala Center | Recurring sits seeded — Cologne server (center=191) down | ✅ Live — Thu 7pm Open Class seeded (13 instances, 90-day window). |
+| Shambhala Meditation Center of Denver | Recurring sits seeded — Cologne server (center=218) down | ✅ Live — Sun 10am Group Meditation seeded (13 instances, 90-day window). |
+
+City filter: Colorado state + Denver/Boulder cities added to `_filters.html`.
+Center bios: 5 new entries in `centers.py`.
+`ingestion/sources/denver.py` created with `CENTERS`, `ICAL_FEEDS`, wired into coordinator + abraxis.
+
+**Skipped/deferred:**
+- Nalandabodhi Colorado (Boulder): FullCalendar JS-rendered, no iCal. Regular schedule could be seeded.
+- Kadampa Meditation Center Colorado (Denver): `?ical=1` returns 403. Possible Eventbrite.
+- Eyes of Compassion Sangha (Denver, Plum Village): no iCal. Thu 7pm + Sun 10am could be seeded.
 
 ### NYC Phase 3d — Deferred
 
