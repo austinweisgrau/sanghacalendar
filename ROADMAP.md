@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-06 (heartbeat 9)_
+_Last updated: 2026-05-07 (heartbeat 10)_
 
 ## Current Status
 
@@ -120,7 +120,7 @@ Candidate metros (rough priority):
 4. Boston/Cambridge 🔄 **Phase 3 Boston live May 6** (5 centers) — see below
 5. DC 🔄 **Phase 3 DC live May 6** (2 centers) — see below
 6. Chicago 🔄 **Phase 3 Chicago live May 6** (15+ centers via Tockify aggregator)
-7. Seattle
+7. Seattle 🔄 **Phase 3 Seattle live May 7** (5 centers) — see below
 8. Denver/Boulder
 9. Austin
 10. Portland
@@ -235,6 +235,25 @@ Center bios added for 7 key Chicago centers.
 
 **Skipped/deferred:**
 - Kadampa Chicago (meditateinchicago.org): Wix-based, no iCal. Eventbrite possible future add.
+
+### Seattle Phase 3 — ✅ Live May 7 (5 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Seattle Insight Meditation Society | iCal feed (`seattleinsight.org/events/?ical=1`) | ✅ Live — 27 events |
+| KMC Washington (Kadampa Seattle) | iCal feed (`meditateinseattle.org/events/?ical=1`, Chrome UA required) | ✅ Live — 25 events |
+| Nalandabodhi Seattle (Nalanda West) | iCal feed (`nalandabodhi.org/?ical=1`, filtered to "Nalandabodhi Seattle"/"Nalanda West" in LOCATION) | ✅ Live — 5 events |
+| Shambhala Meditation Center of Seattle | Recurring sits seeded — Cloudflare blocks iCal, HTML scraping viable but deferred | ✅ Live — Thu 7pm, Sun 10am in-person; Mon 6:30pm online; Wed 7pm hybrid |
+| Seattle Buddhist Center (Triratna) | Recurring sits seeded — no iCal, static schedule page | ✅ Live — Thu 7pm, Sun 6pm in-person |
+
+City filter: Washington state + Seattle city added to `_filters.html`.
+Center bios: 5 new entries in `centers.py`.
+`ingestion/sources/seattle.py` created with `fetch_nalandabodhi_seattle()` custom scraper.
+
+**Skipped/deferred:**
+- Cloud Mountain Retreat Center: retreat-only, no regular drop-in sits
+- Eastside Dharma Collective: no web presence found (possibly Meetup-only)
+- Shambhala Seattle iCal: Cloudflare blocks `?ical=1`. Monthly HTML calendar at `/monthly-calendar/` is scrapable if needed.
 
 ### NYC Phase 3d — Deferred
 
