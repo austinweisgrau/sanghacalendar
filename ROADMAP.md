@@ -1,12 +1,12 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-07 (heartbeat 11)_
+_Last updated: 2026-05-07 (heartbeat 12)_
 
 ## Current Status
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 500+ events in 30-day window (500 cap), 36 organizations
+- 500+ events in 30-day window (500 cap), 40 organizations
 - 640 manual recurring sit instances seeded May 3 (27 sit definitions)
 - Map view live at `/map` — all centers pinned with tradition colors
 - 28 center bio pages (centers.py complete)
@@ -122,8 +122,8 @@ Candidate metros (rough priority):
 6. Chicago 🔄 **Phase 3 Chicago live May 6** (15+ centers via Tockify aggregator)
 7. Seattle 🔄 **Phase 3 Seattle live May 7** (5 centers) — see below
 8. Denver/Boulder 🔄 **Phase 3 Denver/Boulder live May 7** (5 centers) — see below
-9. Austin
-10. Portland
+9. Portland 🔄 **Phase 3 Portland live May 7** (4 centers) — see below
+10. Austin
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -273,6 +273,27 @@ Center bios: 5 new entries in `centers.py`.
 - Nalandabodhi Colorado (Boulder): FullCalendar JS-rendered, no iCal. Regular schedule could be seeded.
 - Kadampa Meditation Center Colorado (Denver): `?ical=1` returns 403. Possible Eventbrite.
 - Eyes of Compassion Sangha (Denver, Plum Village): no iCal. Thu 7pm + Sun 10am could be seeded.
+
+### Portland Phase 3 — ✅ Live May 7 (4 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Dharma Rain Zen Center (Roseway NE) | iCal feed (`dharma-rain.org/events/?ical=1`) | ✅ Live — 17 events. Soto Zen, oldest in Oregon (1975). Wed evenings + Sun mornings + early morning zazen. |
+| Kagyu Changchub Chuling (Beaumont-Wilshire NE) | iCal feed (`kcc.org/calendar/month/?ical=1`) | ✅ Live — 25 events. Karma Kagyu Tibetan. Sun Shamatha AM/PM, Wed Chenrezi, Thu Silent Sit, daily AM online. |
+| Portland Insight Meditation Community (Brentwood SE) | Recurring sits seeded — Wix site, no iCal | ✅ Live — 4 sits: Sun 9:30am hybrid, Mon 7:30am hybrid, Tue 6:30pm in-person, Wed 7pm hybrid. |
+| Portland Shambhala (Buckman/Richmond SE) | Recurring sits seeded — dynamic FullCalendar, no static iCal | ✅ Live — Mon/Fri 6pm in-person + Sun 10am online. |
+
+City filter: Oregon state + Portland city added to `_filters.html`.
+Center bios: 4 new entries in `centers.py`.
+`ingestion/sources/portland.py` created, wired into coordinator + abraxis.
+`sangha-seed-recurring.js` now includes Portland sits (+ Seattle and Denver/Boulder added retroactively).
+
+**Skipped/deferred:**
+- Heart of Wisdom Zen Temple (zendust.org): `/events/?ical=1` needs testing — may work
+- Dorje Ling Portland (Forest Park): no iCal, weekly sits could be seeded
+- Tathagata Meditation Center: is San Jose, CA (Bay Area) — not a Portland center
+
+---
 
 ### NYC Phase 3d — Deferred
 
