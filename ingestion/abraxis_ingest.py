@@ -41,6 +41,7 @@ from ingestion.sources.seattle import fetch_nalandabodhi_seattle, run_seattle_ic
 from ingestion.sources import denver as denver_sources
 from ingestion.sources import portland as portland_sources
 from ingestion.sources import austin as austin_sources
+from ingestion.sources.minneapolis import fetch_common_ground
 
 log = logging.getLogger(__name__)
 
@@ -476,6 +477,15 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Austin iCal {org_id} failed: {e}")
+
+    # Minneapolis Phase 3 — Common Ground via Sanity API
+    log.info("--- Minneapolis Phase 3: Common Ground Sanity API ---")
+    try:
+        events = fetch_common_ground()
+        log.info(f"  Common Ground → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ Common Ground Sanity API failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

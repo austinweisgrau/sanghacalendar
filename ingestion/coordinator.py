@@ -35,6 +35,8 @@ from ingestion.sources.seattle import fetch_nalandabodhi_seattle, run_seattle_ic
 from ingestion.sources import denver as denver_sources
 from ingestion.sources import portland as portland_sources
 from ingestion.sources import austin as austin_sources
+from ingestion.sources import minneapolis as minneapolis_sources
+from ingestion.sources.minneapolis import fetch_common_ground
 
 log = logging.getLogger(__name__)
 
@@ -477,6 +479,20 @@ def run_austin_phase3() -> list[Event]:
     return all_events
 
 
+def run_minneapolis_phase3() -> list[Event]:
+    """Phase 3 Minneapolis: Common Ground via Sanity API."""
+    all_events: list[Event] = []
+
+    try:
+        events = fetch_common_ground()
+        log.info(f"  Common Ground → {len(events)} events")
+        all_events.extend(events)
+    except Exception as e:
+        log.error(f"  ✗ Common Ground fetch failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -496,6 +512,7 @@ def main():
         + run_denver_phase3()
         + run_portland_phase3()
         + run_austin_phase3()
+        + run_minneapolis_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

@@ -1437,4 +1437,87 @@ CENTERS = {
             "realize their true nature.'"
         ),
     },
+    # ── Minneapolis / Saint Paul — Phase 3 ───────────────────────────────────
+    "common_ground": {
+        "id": "common_ground",
+        "name": "Common Ground Meditation Center",
+        "tradition": "theravada",
+        "url": "https://commongroundmeditation.org",
+        "address": "2700 East 26th Street",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": "55406",
+        "neighborhood": "Seward / Longfellow",
+        "lat": 44.9620,
+        "lng": -93.2305,
+        "description": (
+            "Common Ground Meditation Center is Minneapolis's home of Insight / Vipassana "
+            "meditation in the IMS / Spirit Rock tradition. Located at 2700 East 26th Street in "
+            "the Seward neighborhood. Senior teachers Mark Nunberg and Shelly Graf lead a rich "
+            "calendar: daily Open Meditation (7am, various teachers), weekly sitting groups, "
+            "community groups (BIPOC, LGBTQ+, recovery, young adults), half-day and residential "
+            "retreats, and beginner courses. Free and by-donation options available. "
+            "Welcoming practice home for all."
+        ),
+    },
+    "mn_zen": {
+        "id": "mn_zen",
+        "name": "Minnesota Zen Meditation Center",
+        "tradition": "zen",
+        "url": "https://mnzencenter.org",
+        "address": "3343 East Bde Maka Ska Pkwy",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": "55408",
+        "neighborhood": "Lakewood / Bde Maka Ska",
+        "lat": 44.9434,
+        "lng": -93.3173,
+        "description": (
+            "Minnesota Zen Meditation Center (MZMC) is a Soto Zen center founded in 1972 in "
+            "the Dainin Katagiri Roshi lineage, on the west shore of Bde Maka Ska (Lake Calhoun). "
+            "One of the oldest and most established Zen centers in the Midwest. Resident teacher: "
+            "Myo Denis Lahey. Daily zazen: Mon–Fri 6:30am, Sat–Sun 7:30am; evening zazen "
+            "Mon–Thu 5:30pm, Fri 6pm. Wednesday dharma talks 7:30pm. Sunday Morning Program "
+            "9:30am (zazen + service + dharma talk). Sesshin and workshops offered."
+        ),
+    },
+    "clouds_in_water": {
+        "id": "clouds_in_water",
+        "name": "Clouds in Water Zen Center",
+        "tradition": "zen",
+        "url": "https://cloudsinwater.org",
+        "address": "308 Prince St",
+        "city": "Saint Paul",
+        "state": "MN",
+        "zip": "55107",
+        "neighborhood": "Lowertown / Saint Paul",
+        "lat": 44.9397,
+        "lng": -93.0961,
+        "description": (
+            "Clouds in Water Zen Center is a Soto Zen center in historic Lowertown, Saint Paul. "
+            "Teacher emerita Roshi Diane Musho Hamilton; current abbot Dokai Georgesen. "
+            "Morning zazen Mon–Fri 7–8:30am (in-person + Zoom available some days). "
+            "Sunday morning 9:30am zazen + dharma talk. Sesshin, workshops, and retreats. "
+            "Drop-in welcome; online practice community."
+        ),
+    },
+    "shambhala_minneapolis": {
+        "id": "shambhala_minneapolis",
+        "name": "Shambhala Meditation Center of Minneapolis",
+        "tradition": "tibetan",
+        "url": "https://minneapolis.shambhala.org",
+        "address": "1544 Nicollet Ave",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": "55403",
+        "neighborhood": "Whittier",
+        "lat": 44.9657,
+        "lng": -93.2896,
+        "description": (
+            "Shambhala Meditation Center of Minneapolis (Chögyam Trungpa lineage) in the "
+            "Whittier neighborhood. Offers Shambhala Training weekends, weekly community "
+            "meditation, and open houses. The Shambhala path cultivates basic goodness and "
+            "fearless presence in daily life."
+        ),
+    },
 }

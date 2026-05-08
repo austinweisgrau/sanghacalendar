@@ -757,6 +757,79 @@ const SITS = [
     notes: "Saturday Program: 8am informal zazen + beginner instruction (most Saturdays), 9:15am zazen, 10:15am Dharma talk, 11:15am tea.",
     source_url: "https://austinzencenter.org", event_url: "https://austinzencenter.org/event-calendar/",
   },
+
+  // ── Minneapolis / Saint Paul, MN ──────────────────────────────────────────
+  // Minnesota Zen Meditation Center — Squarespace (no iCal)
+  // Dainin Katagiri Roshi lineage. 3343 East Bde Maka Ska Pkwy, Minneapolis.
+  {
+    org_id: "mn_zen", org_name: "Minnesota Zen Meditation Center",
+    title: "Morning Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "3343 East Bde Maka Ska Pkwy", city: "Minneapolis", state: "MN", neighborhood: "Lakewood / Bde Maka Ska",
+    lat: 44.9434, lng: -93.3173, tradition: "zen", location_type: "in-person",
+    notes: "Weekday morning zazen 6:30am. Drop-in welcome.",
+    source_url: "https://mnzencenter.org", event_url: "https://mnzencenter.org/calendar/",
+  },
+  {
+    org_id: "mn_zen", org_name: "Minnesota Zen Meditation Center",
+    title: "Morning Zazen",
+    days: ["Saturday", "Sunday"], time: { h: 7, m: 30 }, duration_min: 60,
+    address: "3343 East Bde Maka Ska Pkwy", city: "Minneapolis", state: "MN", neighborhood: "Lakewood / Bde Maka Ska",
+    lat: 44.9434, lng: -93.3173, tradition: "zen", location_type: "in-person",
+    notes: "Weekend morning zazen 7:30am. Drop-in welcome.",
+    source_url: "https://mnzencenter.org", event_url: "https://mnzencenter.org/calendar/",
+  },
+  {
+    org_id: "mn_zen", org_name: "Minnesota Zen Meditation Center",
+    title: "Evening Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday"], time: { h: 17, m: 30 }, duration_min: 60,
+    address: "3343 East Bde Maka Ska Pkwy", city: "Minneapolis", state: "MN", neighborhood: "Lakewood / Bde Maka Ska",
+    lat: 44.9434, lng: -93.3173, tradition: "zen", location_type: "in-person",
+    notes: "Weekday evening zazen 5:30pm (Mon–Thu). Drop-in welcome.",
+    source_url: "https://mnzencenter.org", event_url: "https://mnzencenter.org/calendar/",
+  },
+  {
+    org_id: "mn_zen", org_name: "Minnesota Zen Meditation Center",
+    title: "Sunday Morning Program",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 120,
+    address: "3343 East Bde Maka Ska Pkwy", city: "Minneapolis", state: "MN", neighborhood: "Lakewood / Bde Maka Ska",
+    lat: 44.9434, lng: -93.3173, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Program 9:30am: zazen, kinhin, service, dharma talk. Drop-in welcome.",
+    source_url: "https://mnzencenter.org", event_url: "https://mnzencenter.org/calendar/",
+  },
+
+  // Clouds in Water Zen Center — Squarespace (no iCal)
+  // Soto Zen. 308 Prince St, Lowertown, Saint Paul.
+  {
+    org_id: "clouds_in_water", org_name: "Clouds in Water Zen Center",
+    title: "Morning Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], time: { h: 7, m: 0 }, duration_min: 90,
+    address: "308 Prince St", city: "Saint Paul", state: "MN", neighborhood: "Lowertown / Saint Paul",
+    lat: 44.9397, lng: -93.0961, tradition: "zen", location_type: "in-person",
+    notes: "Morning zazen 7–8:30am, Mon–Fri. Wednesday adds dharma study after zazen. Drop-in welcome.",
+    source_url: "https://cloudsinwater.org", event_url: "https://cloudsinwater.org/calendar",
+  },
+  {
+    org_id: "clouds_in_water", org_name: "Clouds in Water Zen Center",
+    title: "Sunday Morning Program",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 120,
+    address: "308 Prince St", city: "Saint Paul", state: "MN", neighborhood: "Lowertown / Saint Paul",
+    lat: 44.9397, lng: -93.0961, tradition: "zen", location_type: "in-person",
+    notes: "Sunday morning 9:30am zazen + dharma talk. Drop-in welcome.",
+    source_url: "https://cloudsinwater.org", event_url: "https://cloudsinwater.org/calendar",
+  },
+
+  // Shambhala Meditation Center of Minneapolis — Cloudflare-blocked (no iCal)
+  // 1544 Nicollet Ave, Whittier, Minneapolis.
+  {
+    org_id: "shambhala_minneapolis", org_name: "Shambhala Meditation Center of Minneapolis",
+    title: "Community Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1544 Nicollet Ave", city: "Minneapolis", state: "MN", neighborhood: "Whittier",
+    lat: 44.9657, lng: -93.2896, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly community meditation. Shambhala tradition (Chögyam Trungpa lineage). All welcome.",
+    source_url: "https://minneapolis.shambhala.org", event_url: "https://minneapolis.shambhala.org/calendar/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
