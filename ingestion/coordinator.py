@@ -336,7 +336,7 @@ def run_dc_phase3() -> list[Event]:
 
 
 def run_chicago_phase3() -> list[Event]:
-    """Phase 3 Chicago: Sit Around Chicago Tockify aggregator iCal feed."""
+    """Phase 3 Chicago: Sit Around Chicago Tockify aggregator iCal feed + Kadampa Eventbrite."""
     all_events: list[Event] = []
 
     try:
@@ -345,6 +345,29 @@ def run_chicago_phase3() -> list[Event]:
         all_events.extend(events)
     except Exception as e:
         log.error(f"  ✗ Tockify Chicago fetch failed: {e}")
+
+    # Kadampa Chicago — Eventbrite (not in Tockify aggregator)
+    for org_id, feed_cfg in chicago_sources.EVENTBRITE_FEEDS.items():
+        center = chicago_sources.CENTERS_EXTRA[org_id]
+        log.info(f"Fetching {center.name} (Eventbrite Chicago)...")
+        try:
+            events = fetch_eventbrite_organizer(
+                organizer_id=feed_cfg["organizer_id"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Failed: {e}")
 
     return all_events
 

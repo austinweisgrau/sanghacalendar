@@ -200,6 +200,39 @@ TOCKIFY_CENTER_MAP: dict[str, tuple[str, Tradition]] = {
 }
 
 
+# ---------------------------------------------------------------------------
+# Kadampa Chicago — Eventbrite (not in Tockify aggregator)
+# ---------------------------------------------------------------------------
+
+CENTERS_EXTRA = {
+    "kadampa_chicago": Center(
+        id="kadampa_chicago",
+        name="Kadampa Meditation Center Chicago",
+        url="https://meditateinchicago.org",
+        address="1507 E 53rd St",
+        city="Chicago",
+        state="IL",
+        zip_code="60615",
+        lat=41.7993,
+        lng=-87.5912,
+        neighborhood="Hyde Park",
+        tradition=Tradition.TIBETAN,
+        notes=(
+            "Kadampa Meditation Center Chicago (NKT tradition) in Hyde Park. Offers weekly "
+            "drop-in classes, guided meditations, and retreats drawing on Geshe Kelsang Gyatso's "
+            "teachings. Main location at 1507 E 53rd St; events listed on Eventbrite."
+        ),
+    ),
+}
+
+EVENTBRITE_FEEDS = {
+    "kadampa_chicago": {
+        "organizer_id": "32772634747",
+        "filter_to_sits": False,  # include classes, retreats, special programs
+    },
+}
+
+
 def _slug(name: str) -> str:
     """Convert center name to a stable org_id slug."""
     return re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")[:40]

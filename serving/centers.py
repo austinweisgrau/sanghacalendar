@@ -1071,6 +1071,25 @@ CENTERS = {
             "retreats with visiting teachers."
         ),
     },
+    "kadampa_chicago": {
+        "id": "kadampa_chicago",
+        "name": "Kadampa Meditation Center Chicago",
+        "tradition": "tibetan",
+        "url": "https://meditateinchicago.org",
+        "address": "1507 E 53rd St",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60615",
+        "neighborhood": "Hyde Park",
+        "lat": 41.7993,
+        "lng": -87.5912,
+        "description": (
+            "Kadampa Meditation Center Chicago (New Kadampa Tradition) in Hyde Park. Offers weekly "
+            "drop-in meditation classes, guided meditations, workshops, and retreats based on Geshe "
+            "Kelsang Gyatso's modern presentation of Buddhist teachings. Programs for beginners "
+            "and experienced practitioners, including the Foundation Program. Events listed on Eventbrite."
+        ),
+    },
     # ── Seattle / Washington — Phase 3 ────────────────────────────────────────
     "seattle_insight": {
         "id": "seattle_insight",

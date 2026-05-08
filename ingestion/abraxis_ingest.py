@@ -35,6 +35,7 @@ from ingestion.sources import la as la_sources
 from ingestion.sources.la import fetch_insightla
 from ingestion.sources import boston as boston_sources
 from ingestion.sources.dc import fetch_imcw
+from ingestion.sources import chicago as chicago_sources
 from ingestion.sources.chicago import fetch_tockify_chicago
 from ingestion.sources.seattle import fetch_nalandabodhi_seattle, run_seattle_ical
 from ingestion.sources import denver as denver_sources
@@ -364,6 +365,29 @@ def main():
         all_events.extend(events)
     except Exception as e:
         log.error(f"  ✗ Tockify Chicago fetch failed: {e}")
+
+    # Chicago Phase 3 — Kadampa Chicago Eventbrite
+    for org_id, feed_cfg in chicago_sources.EVENTBRITE_FEEDS.items():
+        center = chicago_sources.CENTERS_EXTRA[org_id]
+        log.info(f"  Fetching {center.name} (Eventbrite Chicago)...")
+        try:
+            events = fetch_eventbrite_organizer(
+                organizer_id=feed_cfg["organizer_id"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"    → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Kadampa Chicago Eventbrite failed: {e}")
 
     # Seattle Phase 3 — iCal feeds + Nalandabodhi custom scraper
     log.info("--- Seattle Phase 3: iCal feeds + Nalandabodhi ---")
