@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-08 (heartbeat 14)_
+_Last updated: 2026-05-08 (heartbeat 15)_
 
 ## Current Status
 
@@ -124,6 +124,7 @@ Candidate metros (rough priority):
 8. Denver/Boulder 🔄 **Phase 3 Denver/Boulder live May 7** (5 centers) — see below
 9. Portland 🔄 **Phase 3 Portland live May 7** (4 centers) — see below
 10. Austin 🔄 **Phase 3 Austin live May 8** (2 centers) — see below
+11. Minneapolis/Saint Paul 🔄 **Phase 3 Minneapolis live May 8** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -311,6 +312,36 @@ Center bios added to centers.py for kadampa_austin + austin_zen.
 - Austin Insight Meditation (austininsightmeditation.org): iCal exists but stale (last event Oct 2024). Possibly dormant. Monitor.
 - Austin Shambhala: Domain parked/expired — skip.
 - Austin Zen Center iCal: Site under maintenance since at least 2026-03. Monitor for recovery.
+
+---
+
+### Minneapolis Phase 3 — ✅ Live May 8 (4 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Common Ground Meditation Center (Seward, Minneapolis) | Sanity CMS public GROQ API — `https://4tyz2xuc.apicdn.sanity.io/` — 546 events/90-day window. Resolves `eventTemplate->` refs for titles. | ✅ Live — `fetch_common_ground()` in minneapolis.py. Daily Open Meditation (7am), weekly practice groups, community sits, retreats. |
+| Minnesota Zen Meditation Center (Bde Maka Ska, Minneapolis) | Recurring sits seeded — Squarespace, no iCal | ✅ Live — Daily zazen Mon–Fri 6:30am, Sat–Sun 7:30am; evening zazen Mon–Thu 5:30pm; Sunday Morning Program 9:30am. Katagiri Roshi lineage. |
+| Clouds in Water Zen Center (Lowertown, Saint Paul) | Recurring sits seeded — Squarespace, no iCal | ✅ Live — Morning zazen Mon–Fri 7am (90 min), Sunday Morning Program 9:30am. |
+| Shambhala Meditation Center of Minneapolis (Whittier) | Recurring sits seeded — Cloudflare-blocked WordPress | ✅ Live — Weekly Wednesday 7pm sit seeded. |
+
+City filter: Minnesota state + Minneapolis/Saint Paul cities added to `_filters.html`.
+Center bios: 4 new entries in `centers.py`.
+`ingestion/sources/minneapolis.py` created, wired into coordinator + abraxis.
+`sangha-seed-recurring.js`: 7 new sit defs (MZMC ×4, CiW ×2, Shambhala ×1).
+
+**Key technique: Sanity CMS public API**
+Common Ground uses Next.js + Sanity CMS. The Sanity public query API (`project_id.apicdn.sanity.io`) requires no auth for public datasets. GROQ syntax supports dereferencing with `->`. This pattern may apply to other centers using Sanity CMS.
+
+**Skipped/deferred:**
+- Kadampa Minneapolis (`meditationinminneapolis.org`): DNS failure — site down
+- Minneapolis Shambhala schedule: confirmed weekly Wed 7pm only (Cloudflare blocks detailed schedule check)
+- Twin Cities Vipassana Collective (tcvc.info): rural retreat center, no urban drop-in sits
+
+### Chicago — Kadampa Chicago Eventbrite added May 8
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Kadampa Meditation Center Chicago (Hyde Park) | Eventbrite organizer_id: 32772634747 | ✅ Live May 8 — 4 upcoming events confirmed (classes, retreats, special programs). Added to chicago.py CENTERS_EXTRA + EVENTBRITE_FEEDS. |
 
 ---
 
