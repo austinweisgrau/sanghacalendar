@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-07 (heartbeat 12)_
+_Last updated: 2026-05-08 (heartbeat 13)_
 
 ## Current Status
 
@@ -123,7 +123,7 @@ Candidate metros (rough priority):
 7. Seattle 🔄 **Phase 3 Seattle live May 7** (5 centers) — see below
 8. Denver/Boulder 🔄 **Phase 3 Denver/Boulder live May 7** (5 centers) — see below
 9. Portland 🔄 **Phase 3 Portland live May 7** (4 centers) — see below
-10. Austin
+10. Austin 🔄 **Phase 3 Austin live May 8** (2 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -289,9 +289,28 @@ Center bios: 4 new entries in `centers.py`.
 `sangha-seed-recurring.js` now includes Portland sits (+ Seattle and Denver/Boulder added retroactively).
 
 **Skipped/deferred:**
-- Heart of Wisdom Zen Temple (zendust.org): `/events/?ical=1` needs testing — may work
-- Dorje Ling Portland (Forest Park): no iCal, weekly sits could be seeded
+- Heart of Wisdom Zen Temple (zendust.org): ❌ Tested 2026-05-08 — `?ical=1` returns homepage HTML (WordPress without iCal plugin). Skip.
+- Dorje Ling Portland (Forest Park): no iCal, weekly sits could be seeded — deferred
 - Tathagata Meditation Center: is San Jose, CA (Bay Area) — not a Portland center
+
+---
+
+### Austin Phase 3 — ✅ Live May 8 (2 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Kadampa Meditation Center Austin (North Austin) | iCal feed (`meditationinaustin.org/events/?ical=1`) | ✅ Live — 23 events. NKT Tibetan. Main Austin location (7101 Easy Wind Drive) + Georgetown branch. Heart Jewel, Tsog, Foundation Program, Sunday General Program, weekend empowerments. |
+| Austin Zen Center (Hyde Park) | Recurring sits seeded — site under maintenance as of 2026-05-08 | ✅ Live — 4 sit types seeded: Tue–Fri 6am Morning Zazen, Tue–Thu 12pm Midday Zazen, Tue–Thu 5:40pm Evening Zazen, Sat 9:15am Weekend Zazen + Dharma Talk. Soto Zen (SFZC lineage). |
+
+City filter: Texas state + Austin city added to `_filters.html`.
+Center bios added to centers.py for kadampa_austin + austin_zen.
+`ingestion/sources/austin.py` created, wired into coordinator.py + abraxis_ingest.py.
+`sangha-seed-recurring.js` updated: 4 AZC sit types added (73 total sit defs, 1574 instances).
+
+**Skipped/deferred:**
+- Austin Insight Meditation (austininsightmeditation.org): iCal exists but stale (last event Oct 2024). Possibly dormant. Monitor.
+- Austin Shambhala: Domain parked/expired — skip.
+- Austin Zen Center iCal: Site under maintenance since at least 2026-03. Monitor for recovery.
 
 ---
 

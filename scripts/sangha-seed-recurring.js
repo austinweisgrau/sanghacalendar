@@ -717,6 +717,46 @@ const SITS = [
     notes: "Online Sunday morning meditation. Zoom link via portland.shambhala.org.",
     source_url: "https://portland.shambhala.org", event_url: "https://portland.shambhala.org/calendar/",
   },
+
+  // ── Austin, TX ────────────────────────────────────────────────────────────
+  // Austin Zen Center — site under maintenance 2026-05-08; schedule from archived content
+  // Soto Zen, Hyde Park, Central Austin. Full residential + lay schedule.
+  {
+    org_id: "austin_zen", org_name: "Austin Zen Center",
+    title: "Morning Zazen",
+    days: ["Tuesday", "Wednesday", "Thursday", "Friday"], time: { h: 6, m: 0 }, duration_min: 90,
+    address: "3014 Washington Square", city: "Austin", state: "TX", neighborhood: "Hyde Park / Central Austin",
+    lat: 30.3073, lng: -97.7421, tradition: "zen", location_type: "in-person",
+    notes: "Morning Program: 6:00am zazen, 6:35am kinhin, 6:45am zazen, 7:20am service. Soto Zen. Drop-in welcome.",
+    source_url: "https://austinzencenter.org", event_url: "https://austinzencenter.org/event-calendar/",
+  },
+  {
+    org_id: "austin_zen", org_name: "Austin Zen Center",
+    title: "Midday Zazen",
+    days: ["Tuesday", "Wednesday", "Thursday"], time: { h: 12, m: 0 }, duration_min: 60,
+    address: "3014 Washington Square", city: "Austin", state: "TX", neighborhood: "Hyde Park / Central Austin",
+    lat: 30.3073, lng: -97.7421, tradition: "zen", location_type: "in-person",
+    notes: "Informal zazen 12–1pm. Open to all.",
+    source_url: "https://austinzencenter.org", event_url: "https://austinzencenter.org/event-calendar/",
+  },
+  {
+    org_id: "austin_zen", org_name: "Austin Zen Center",
+    title: "Evening Zazen",
+    days: ["Tuesday", "Wednesday", "Thursday"], time: { h: 17, m: 40 }, duration_min: 45,
+    address: "3014 Washington Square", city: "Austin", state: "TX", neighborhood: "Hyde Park / Central Austin",
+    lat: 30.3073, lng: -97.7421, tradition: "zen", location_type: "in-person",
+    notes: "Evening Program: 5:40pm zazen, 6:15pm service. No evening program on Fridays.",
+    source_url: "https://austinzencenter.org", event_url: "https://austinzencenter.org/event-calendar/",
+  },
+  {
+    org_id: "austin_zen", org_name: "Austin Zen Center",
+    title: "Saturday Zazen & Dharma Talk",
+    days: ["Saturday"], time: { h: 9, m: 15 }, duration_min: 120,
+    address: "3014 Washington Square", city: "Austin", state: "TX", neighborhood: "Hyde Park / Central Austin",
+    lat: 30.3073, lng: -97.7421, tradition: "zen", location_type: "in-person",
+    notes: "Saturday Program: 8am informal zazen + beginner instruction (most Saturdays), 9:15am zazen, 10:15am Dharma talk, 11:15am tea.",
+    source_url: "https://austinzencenter.org", event_url: "https://austinzencenter.org/event-calendar/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

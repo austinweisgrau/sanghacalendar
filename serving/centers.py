@@ -1350,4 +1350,52 @@ CENTERS = {
             "Free introductory meditation instruction available."
         ),
     },
+
+    # ── Austin, TX ────────────────────────────────────────────────────────────
+    "kadampa_austin": {
+        "id": "kadampa_austin",
+        "name": "Kadampa Meditation Center Austin",
+        "tradition": "tibetan",
+        "url": "https://meditationinaustin.org",
+        "address": "7101 Easy Wind Drive, Unit 3108",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "78752",
+        "neighborhood": "North Austin / Rundberg",
+        "lat": 30.3785,
+        "lng": -97.7115,
+        "description": (
+            "Kadampa Meditation Center Austin (KMC Austin) is a Tibetan Buddhist center in "
+            "the New Kadampa Tradition (NKT-IKBU), offering classes and programs rooted in "
+            "Je Tsongkhapa's teachings as presented by Venerable Geshe Kelsang Gyatso. "
+            "Located at Vessel Offsite in North Austin, with a satellite branch at Georgetown "
+            "Public Library (402 W 8th St, Georgetown, TX 78626). Regular programs include "
+            "Heart Jewel, Wishfulfilling Jewel with Tsog, Foundation Program, and Sunday "
+            "General Program. Weekend empowerments and day courses offered throughout the year. "
+            "All are welcome; no prior experience necessary."
+        ),
+    },
+    "austin_zen": {
+        "id": "austin_zen",
+        "name": "Austin Zen Center",
+        "tradition": "zen",
+        "url": "https://austinzencenter.org",
+        "address": "3014 Washington Square",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "78705",
+        "neighborhood": "Hyde Park / Central Austin",
+        "lat": 30.3073,
+        "lng": -97.7421,
+        "description": (
+            "Austin Zen Center (AZC) is a Soto Zen Buddhist temple in the lineage of Shunryu "
+            "Suzuki Roshi and the San Francisco Zen Center, located in Hyde Park, Central Austin. "
+            "Offers a full monastic and lay practice schedule: Morning Program (6am zazen + kinhin "
+            "+ service, Tue–Fri), Midday Sit (12pm informal zazen, Tue–Thu), Evening Program "
+            "(5:40pm zazen + service, Tue–Thu), and Saturday Program (8am beginner instruction + "
+            "informal zazen, 9:15am zazen, 10:15am Dharma talk). Drop-in welcome; online "
+            "participation available for many programs. 'Our intention is to help all beings "
+            "realize their true nature.'"
+        ),
+    },
 }
