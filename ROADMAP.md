@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-08 (heartbeat 13)_
+_Last updated: 2026-05-08 (heartbeat 14)_
 
 ## Current Status
 
@@ -152,18 +152,18 @@ Candidate metros (rough priority):
 | New York Zendo Shobo-Ji (Zen Studies Society) | iCal feed (`zenstudies.org/events/new-york-zendo-calendar/?ical=1`) with "NYZ:"/"DBZ:"/"Online:" prefix stripping | ✅ Live — `fetch_zenstudies_nyc()` in nyc.py. Daily zazen + Sunday service seeded. |
 | ZCNYC / Fire Lotus Temple | LLM-assisted static HTML scrape of `zcnyc.org/calendar/` | ✅ Live — in `STATIC_HTML_FEEDS`. Sunday Morning Program + LGBTQIA+ sits seeded. |
 
-### LA Phase 3 — ✅ Live May 5 (2 centers)
+### LA Phase 3 — ✅ Live May 5–8 (3 centers)
 
 | Center | Approach | Status |
 |--------|----------|--------|
 | InsightLA (Santa Monica) | Schema.org Event HTML parser — `/fullcalendar/` page is server-side rendered with structured markup | ✅ Live — `fetch_insightla()` in la.py. ~18 events/page (online morning sits, Santa Monica Dharma Nights, Recovery Dharma, Qigong, MBSR classes). 2 pages fetched. |
 | Zen Center of Los Angeles (Koreatown) | LLM-assisted static HTML scrape of `zcla.org/calendars/` | ✅ Wired into STATIC_HTML_FEEDS in la.py. Will pick up on next Abraxis weekly run. |
+| Shambhala Meditation Center of Los Angeles (Koreatown) | iCal feed — `shambhala-koeln.de/ical.php?center=208` — restored 2026-05-08 (388 events) | ✅ Live May 8 — new center addition in la.py ICAL_FEEDS + coordinator + abraxis. |
 
 City filter updated: "Santa Monica (LA)" and "Los Angeles (LA)" added to index.html.
 Center bios added to centers.py for insightla + zcla.
 
 **Skipped for now:**
-- Shambhala LA (`shambhala-koeln.de/ical.php?center=208`) — Cologne server unreachable (same issue as Berkeley center=178)
 - Kadampa LA (`meditationinlosangeles.org`) — site down/offline
 - Against the Stream (`againstthestream.com`) — Squarespace, no iCal, retreat-focused
 
@@ -365,10 +365,12 @@ Goal: submit a URL (or just a city name) and get back a list of verified, normal
 - Cost: ~$0.01/week Bay Area scale; ~$5–10/year at full national scale
 - Used only for: location_type classification, is_sit detection, identity focus extraction on ambiguous events
 
-### Shambhala Berkeley iCal
-- `shambhala-koeln.de/ical.php?center=178` has been timing out for weeks (Apr 2026)
-- Manual recurring sits still in DB; removed from automated feed
-- Monitor: if Shambhala network restores this endpoint, re-add to automated feeds
+### Shambhala Berkeley / SF / LA iCal
+- `shambhala-koeln.de` server came back online 2026-05-08 (was down since ~Apr 2026)
+- Berkeley (center=178): 408 events — re-added to east_bay.py ICAL_FEEDS
+- SF (center=177): 120 events — newly wired to live feed (was manually seeded only)
+- LA (center=208): 388 events — new center; wired in la.py ICAL_FEEDS
+- DC (center=205), Boulder (center=191), Denver (center=218): valid iCal but 0 events — may be inactive chapters or different calendar IDs. Monitor.
 
 ---
 
