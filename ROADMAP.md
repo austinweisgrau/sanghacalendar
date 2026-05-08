@@ -101,11 +101,14 @@ Note: NorCal Sangha events span multiple Bay Area and NorCal locations. Events o
 
 ---
 
-### GCal Integration Button
+### GCal / iCal Subscribe Buttons (filter-aware)
 
-Placeholder is live in the UI. Feature pending:
+Removed from header May 8 — static links aren't useful without filter state.
+Feature pending:
+- Buttons should appear *after* filters are applied and generate URLs that reflect active filters
 - Generate `https://calendar.google.com/calendar/r?cid=...` deep links for filtered views
-- Requires serving a stable per-filter ICS URL first (see Phase 5)
+- Generate `webcal://...` links for Apple Calendar
+- Requires stable per-filter ICS URL (already live at `/feed.ics`) — just need UI/UX placement post-filter
 
 ---
 
