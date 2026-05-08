@@ -236,14 +236,37 @@ function fmtDateTime(iso) {
     + " " + d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
 }
 
-// Initialize map centered on East Bay
-const map = L.map("map").setView([37.855, -122.265], 11);
+// Initialize map — will pan to user location after markers load
+const DEFAULT_CENTER = [37.855, -122.265];
+const DEFAULT_ZOOM = 11;
+const map = L.map("map").setView(DEFAULT_CENTER, DEFAULT_ZOOM);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   maxZoom: 19,
 }).addTo(map);
 
 let markerLayer = L.layerGroup().addTo(map);
+
+function panToUser(lat, lng) {
+  map.setView([lat, lng], DEFAULT_ZOOM, { animate: true });
+}
+
+function tryIpGeolocation() {
+  fetch("https://ipapi.co/json/")
+    .then(r => r.json())
+    .then(d => { if (d.latitude && d.longitude) panToUser(d.latitude, d.longitude); })
+    .catch(() => {});
+}
+
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(
+    pos => panToUser(pos.coords.latitude, pos.coords.longitude),
+    () => tryIpGeolocation(),
+    { timeout: 5000 }
+  );
+} else {
+  tryIpGeolocation();
+}
 
 async function reloadMarkers() {
   markerLayer.clearLayers();
