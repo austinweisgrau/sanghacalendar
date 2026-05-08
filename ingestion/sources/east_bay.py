@@ -377,8 +377,18 @@ ICAL_FEEDS = {
         "url": "https://eastbaymeditation.org/?ical=1&eventDisplay=list",
         "filter_to_sits": True,
     },
-    # shambhala_berkeley: removed — shambhala-koeln.de feed consistently times out.
-    # Berkeley Shambhala events are covered by manual recurring sits already in the DB.
+    "shambhala_berkeley": {
+        # Shambhala central iCal server — restored 2026-05-08 after weeks of 522 errors.
+        # center=178 returned 408 events. filter_to_sits=False to include all programs.
+        "url": "https://shambhala-koeln.de/ical.php?center=178",
+        "filter_to_sits": False,
+    },
+    "shambhala_sf": {
+        # Shambhala central iCal server — center=177 (SF Glen Park). 120 events.
+        # Previously manually seeded. Now wired to live feed.
+        "url": "https://shambhala-koeln.de/ical.php?center=177",
+        "filter_to_sits": False,
+    },
     "everyday_zen": {
         "url": "https://everydayzen.org/?ical=1",
         "filter_to_sits": True,

@@ -68,6 +68,33 @@ CENTERS = {
             "Intro to Zen classes, Half-Day Zazen, Sunday services."
         ),
     ),
+    "shambhala_la": Center(
+        id="shambhala_la",
+        name="Shambhala Meditation Center of Los Angeles",
+        url="https://la.shambhala.org",
+        address="3580 W 1st St",
+        city="Los Angeles",
+        state="CA",
+        zip_code="90004",
+        lat=34.0693,
+        lng=-118.2979,
+        neighborhood="Koreatown / Westlake",
+        tradition=Tradition.TIBETAN,
+        notes=(
+            "Shambhala Buddhist tradition (Chögyam Trungpa lineage). "
+            "Weekly sitting meditation, Shambhala Training weekends, dharma talks. "
+            "Open to all — no experience required. Events via Shambhala central iCal server."
+        ),
+    ),
+}
+
+# Phase 3 LA — iCal feeds
+ICAL_FEEDS = {
+    "shambhala_la": {
+        # Shambhala central iCal server — center=208 (LA). 388 events as of 2026-05-08.
+        "url": "https://shambhala-koeln.de/ical.php?center=208",
+        "filter_to_sits": False,
+    },
 }
 
 # Phase 3 LA — Static HTML scraper (LLM-assisted) targets

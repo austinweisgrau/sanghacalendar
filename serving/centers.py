@@ -760,6 +760,26 @@ CENTERS = {
             "American Zen — many of today's prominent Zen teachers trained here."
         ),
     },
+    "shambhala_la": {
+        "id": "shambhala_la",
+        "name": "Shambhala Meditation Center of Los Angeles",
+        "tradition": "tibetan",
+        "url": "https://la.shambhala.org",
+        "address": "3580 W 1st St",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90004",
+        "neighborhood": "Koreatown / Westlake",
+        "lat": 34.0693,
+        "lng": -118.2979,
+        "description": (
+            "Shambhala Meditation Center of Los Angeles offers sitting meditation and "
+            "programs in the Shambhala Buddhist tradition (Tibetan Vajrayana lineage of "
+            "Chögyam Trungpa Rinpoche). Located in Koreatown/Westlake. Drop-in sitting "
+            "meditation, Shambhala Training weekends, and dharma talks open to all "
+            "— no experience required."
+        ),
+    },
     # ── Boston / Cambridge ────────────────────────────────────────────────────
     "shambhala_boston": {
         "id": "shambhala_boston",
