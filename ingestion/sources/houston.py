@@ -5,9 +5,13 @@ iCal feeds:
   - Chung Tai Zen Center of Houston (cthouston.org/events/?ical=1) — Chan (Taiwanese)
   - Dawn Mountain Center for Tibetan Buddhism (Google Calendar public ICS)
 
+Squarespace JSON:
+  - Houston Zen Center (houstonzen.org/events-calendar?format=json) — Soto Zen
+
 Recurring sits (no accessible iCal):
   - Insight Meditation Houston — Monday 7pm at 4949 Caroline St (Theravada/Vipassana)
   - Diamond Way Buddhist Center Houston — Wednesday 7:30pm at 5102 Center St (Tibetan)
+  - Houston Zen Center — daily zazen seeded as recurring sits
 """
 
 import logging
@@ -21,6 +25,28 @@ log = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 CENTERS = {
+    "houston_zen": Center(
+        id="houston_zen",
+        name="Houston Zen Center",
+        url="https://houstonzen.org",
+        address="1605 Heights Blvd",
+        city="Houston",
+        state="TX",
+        zip_code="77008",
+        lat=29.8004,
+        lng=-95.3984,
+        neighborhood="The Heights",
+        tradition=Tradition.ZEN,
+        notes=(
+            "Houston Zen Center (HZC) is a Soto Zen community in The Heights neighborhood, "
+            "offering one of the most active daily practice schedules in Texas. Morning zazen "
+            "(Mon–Thu 5:50am and 6:40am, Sat 8:20am) and evening zazen (Mon–Thu 5:30pm) are "
+            "open to all via Zoom and in-person. The full Sunday program (8:20am–noon) includes "
+            "chanting, zazen, dharma talks, and newcomer orientation. Weekly dharma talks by the "
+            "Abbot Gaelyn Godwin and visiting teachers. Free; donations welcome. Drop-in always "
+            "welcome."
+        ),
+    ),
     "chung_tai_houston": Center(
         id="chung_tai_houston",
         name="Chung Tai Zen Center of Houston",
@@ -111,6 +137,15 @@ CENTERS = {
 # ---------------------------------------------------------------------------
 # Phase 3 Houston — iCal feeds
 # ---------------------------------------------------------------------------
+
+SQUARESPACE_FEEDS = {
+    "houston_zen": {
+        # Squarespace events JSON API — confirmed working 2026-05-09
+        # Returns dharma talks, classes, retreats, ceremonies (~10 events per page)
+        "url": "https://houstonzen.org/events-calendar",
+        "filter_to_sits": False,  # include dharma talks and classes too
+    },
+}
 
 ICAL_FEEDS = {
     "chung_tai_houston": {

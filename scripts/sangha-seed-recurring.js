@@ -883,6 +883,44 @@ const SITS = [
     notes: "Short Buddhist teaching + guided Guru Yoga meditation (~30 min). Karma Kagyu lineage (Diamond Way, Lama Ole Nydahl). Free; donations welcome. All are welcome.",
     source_url: "https://diamondway.org/houston/", event_url: "https://diamondway.org/houston/events/",
   },
+  // Houston Zen Center — daily zazen (The Heights neighborhood, 1605 Heights Blvd)
+  // Schedule: houstonzen.org/schedule-of-meditation
+  {
+    org_id: "houston_zen", org_name: "Houston Zen Center",
+    title: "Morning Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday"], time: { h: 5, m: 50 }, duration_min: 85,
+    address: "1605 Heights Blvd", city: "Houston", state: "TX", neighborhood: "The Heights",
+    lat: 29.8004, lng: -95.3984, tradition: "zen", location_type: "hybrid",
+    notes: "Morning zazen at Houston Zen Center. Two periods: 5:50–6:30am (zazen), 6:30am kinhin, 6:40–7:10am (zazen). Chanting 7:10–7:15am. Virtual participation via Zoom Zendo. In-person and online. Free; all welcome.",
+    source_url: "https://houstonzen.org", event_url: "https://houstonzen.org/schedule-of-meditation",
+  },
+  {
+    org_id: "houston_zen", org_name: "Houston Zen Center",
+    title: "Evening Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday"], time: { h: 17, m: 30 }, duration_min: 40,
+    address: "1605 Heights Blvd", city: "Houston", state: "TX", neighborhood: "The Heights",
+    lat: 29.8004, lng: -95.3984, tradition: "zen", location_type: "hybrid",
+    notes: "Evening zazen period at Houston Zen Center, 5:30–6:10pm. In-person and via Zoom Zendo. Free; all welcome.",
+    source_url: "https://houstonzen.org", event_url: "https://houstonzen.org/schedule-of-meditation",
+  },
+  {
+    org_id: "houston_zen", org_name: "Houston Zen Center",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 8, m: 20 }, duration_min: 40,
+    address: "1605 Heights Blvd", city: "Houston", state: "TX", neighborhood: "The Heights",
+    lat: 29.8004, lng: -95.3984, tradition: "zen", location_type: "hybrid",
+    notes: "Saturday morning zazen, 8:20–9:00am. In-person and via Zoom Zendo. Free; all welcome.",
+    source_url: "https://houstonzen.org", event_url: "https://houstonzen.org/schedule-of-meditation",
+  },
+  {
+    org_id: "houston_zen", org_name: "Houston Zen Center",
+    title: "Sunday Zazen",
+    days: ["Sunday"], time: { h: 8, m: 50 }, duration_min: 30,
+    address: "1605 Heights Blvd", city: "Houston", state: "TX", neighborhood: "The Heights",
+    lat: 29.8004, lng: -95.3984, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday zazen, part of the full Sunday Program (8:20am–noon). Preceded by chanting at 8:20am; followed by newcomer orientation at 9:20am and dharma talk at 9:45am. In-person and Zoom. Free; all welcome.",
+    source_url: "https://houstonzen.org", event_url: "https://houstonzen.org/sunday-program",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

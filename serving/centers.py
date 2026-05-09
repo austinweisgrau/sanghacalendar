@@ -1542,6 +1542,30 @@ CENTERS = {
             "and the Williams World Peace Temple retreat center in northern Arizona."
         ),
     },
+    "houston_zen": {
+        "id": "houston_zen",
+        "name": "Houston Zen Center",
+        "tradition": "zen",
+        "url": "https://houstonzen.org",
+        "address": "1605 Heights Blvd",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77008",
+        "neighborhood": "The Heights",
+        "lat": 29.8004,
+        "lng": -95.3984,
+        "description": (
+            "Houston Zen Center (HZC) is a Soto Zen community in the historic Heights "
+            "neighborhood, offering one of the most active daily practice schedules in Texas. "
+            "Morning zazen (Mon–Thu at 5:50am and 6:40am, Saturday at 8:20am) and evening "
+            "zazen (Mon–Thu at 5:30pm) are open to all, both in-person and via Zoom Zendo. "
+            "The full Sunday program (8:20am–noon) includes chanting, zazen, a newcomer's "
+            "orientation, and a weekly dharma talk by Abbot Gaelyn Godwin or guest teachers. "
+            "Introduction to Zen meditation courses, identity-focused groups (Queer Dharma, "
+            "Zen en Español), a recovery sangha, and retreats at the affiliated Auspicious "
+            "Cloud Zen Retreat Center are offered throughout the year. Free; all welcome."
+        ),
+    },
     "chung_tai_houston": {
         "id": "chung_tai_houston",
         "name": "Chung Tai Zen Center of Houston",

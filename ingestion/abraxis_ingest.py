@@ -27,6 +27,7 @@ import httpx
 
 from ingestion.feeds.ical_feed import fetch_feed
 from ingestion.scrapers.eventbrite import fetch_eventbrite_organizer
+from ingestion.scrapers.squarespace import fetch_squarespace_calendar
 from ingestion.scrapers.static_html import fetch_static_html_calendar
 from ingestion.sources.east_bay import CENTERS, EVENTBRITE_FEEDS, ICAL_FEEDS, STATIC_HTML_FEEDS
 from ingestion.sources import nyc as nyc_sources
@@ -511,6 +512,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Houston iCal {org_id} failed: {e}")
+
+    # Houston Phase 3 — Squarespace JSON (Houston Zen Center dharma talks/classes)
+    log.info("--- Houston Phase 3: Squarespace JSON ---")
+    for org_id, feed_cfg in houston_sources.SQUARESPACE_FEEDS.items():
+        center = houston_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Squarespace)...")
+        try:
+            events = fetch_squarespace_calendar(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", False),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Houston Squarespace {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []
