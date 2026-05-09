@@ -830,6 +830,39 @@ const SITS = [
     notes: "Weekly community meditation. Shambhala tradition (Chögyam Trungpa lineage). All welcome.",
     source_url: "https://minneapolis.shambhala.org", event_url: "https://minneapolis.shambhala.org/calendar/",
   },
+
+  // ── Phoenix, AZ ───────────────────────────────────────────────────────────
+  // Kadampa Meditation Center Phoenix — Wix site (no iCal). NKT-IKBU.
+  // 614 East Townley Ave, Sunnyslope / North Phoenix. Verified 2026-05-09.
+  // Schedule from site nav: Sunday Morning, Monday Evening, Wednesday Evening GPs.
+  // Standard NKT General Program times used (7pm weeknight, 11am Sunday).
+  {
+    org_id: "kadampa_phoenix", org_name: "Kadampa Meditation Center Phoenix",
+    title: "Sunday Morning Meditation Class",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 90,
+    address: "614 East Townley Ave", city: "Phoenix", state: "AZ", neighborhood: "Sunnyslope / North Phoenix",
+    lat: 33.5731, lng: -112.0539, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome, no experience needed.",
+    source_url: "https://www.meditationinarizona.org", event_url: "https://www.meditationinarizona.org/sunday-morning",
+  },
+  {
+    org_id: "kadampa_phoenix", org_name: "Kadampa Meditation Center Phoenix",
+    title: "Monday Evening Meditation Class",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "614 East Townley Ave", city: "Phoenix", state: "AZ", neighborhood: "Sunnyslope / North Phoenix",
+    lat: 33.5731, lng: -112.0539, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome.",
+    source_url: "https://www.meditationinarizona.org", event_url: "https://www.meditationinarizona.org/monday-evening",
+  },
+  {
+    org_id: "kadampa_phoenix", org_name: "Kadampa Meditation Center Phoenix",
+    title: "Wednesday Evening Meditation Class",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "614 East Townley Ave", city: "Phoenix", state: "AZ", neighborhood: "Sunnyslope / North Phoenix",
+    lat: 33.5731, lng: -112.0539, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome.",
+    source_url: "https://www.meditationinarizona.org", event_url: "https://www.meditationinarizona.org/wednesday-evening",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

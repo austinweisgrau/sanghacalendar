@@ -1520,4 +1520,26 @@ CENTERS = {
             "fearless presence in daily life."
         ),
     },
+    "kadampa_phoenix": {
+        "id": "kadampa_phoenix",
+        "name": "Kadampa Meditation Center Phoenix",
+        "tradition": "tibetan",
+        "url": "https://www.meditationinarizona.org",
+        "address": "614 East Townley Ave",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85020",
+        "neighborhood": "Sunnyslope / North Phoenix",
+        "lat": 33.5731,
+        "lng": -112.0539,
+        "description": (
+            "Kadampa Meditation Center Phoenix (KMC Phoenix) is a Tibetan Buddhist center in "
+            "the New Kadampa Tradition (NKT-IKBU), located in the Sunnyslope neighborhood of "
+            "North Phoenix. Offers regular General Program meditation classes open to all: "
+            "Sunday morning, Monday evening, and Wednesday evening at the main Phoenix location, "
+            "plus satellite sits in Scottsdale, Surprise, Fountain Hills, and Mesa. "
+            "No experience necessary; all are welcome. KMC Phoenix also operates Tucson KMC AZ "
+            "and the Williams World Peace Temple retreat center in northern Arizona."
+        ),
+    },
 }
