@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-08 (heartbeat 15)_
+_Last updated: 2026-05-09 (heartbeat 16)_
 
 ## Current Status
 
@@ -128,6 +128,7 @@ Candidate metros (rough priority):
 9. Portland 🔄 **Phase 3 Portland live May 7** (4 centers) — see below
 10. Austin 🔄 **Phase 3 Austin live May 8** (2 centers) — see below
 11. Minneapolis/Saint Paul 🔄 **Phase 3 Minneapolis live May 8** (4 centers) — see below
+12. Phoenix 🔄 **Phase 3 Phoenix live May 9** (1 center) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -339,6 +340,27 @@ Common Ground uses Next.js + Sanity CMS. The Sanity public query API (`project_i
 - Kadampa Minneapolis (`meditationinminneapolis.org`): DNS failure — site down
 - Minneapolis Shambhala schedule: confirmed weekly Wed 7pm only (Cloudflare blocks detailed schedule check)
 - Twin Cities Vipassana Collective (tcvc.info): rural retreat center, no urban drop-in sits
+
+### Phoenix Phase 3 — ✅ Live May 9 (1 center)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Kadampa Meditation Center Phoenix (Sunnyslope) | Recurring sits seeded — Wix site, no accessible iCal | ✅ Live — Sun 11am, Mon 7pm, Wed 7pm General Program classes. 39 instances in 90-day window. |
+
+City filter: Arizona state + Phoenix/Scottsdale cities added to `_filters.html`.
+Center bio added to centers.py. `ingestion/sources/phoenix.py` created.
+
+**Research notes (2026-05-09):**
+- Phoenix Shambhala (phoenix.shambhala.org): **CLOSED Dec 31, 2025** — merged into Albuquerque Shambhala. Current programming (Sunday sits, Heart of Recovery) continues via Albuquerque Center zoom links.
+- KMC Phoenix (meditationinarizona.org): Wix site — no iCal accessible. Has satellite groups in Scottsdale, Surprise, Fountain Hills, Mesa, Tucson.
+- No other Phoenix Buddhist centers with accessible online calendars found.
+
+**Skipped/deferred:**
+- Phoenix Shambhala: Closed — not appropriate to add
+- KMC Scottsdale/Surprise/Fountain Hills/Mesa: satellite locations under same center
+- Albuquerque Shambhala: new metro (separate heartbeat)
+
+---
 
 ### Chicago — Kadampa Chicago Eventbrite added May 8
 
