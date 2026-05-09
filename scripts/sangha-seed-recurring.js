@@ -863,6 +863,26 @@ const SITS = [
     notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome.",
     source_url: "https://www.meditationinarizona.org", event_url: "https://www.meditationinarizona.org/wednesday-evening",
   },
+
+  // ── Houston, TX ────────────────────────────────────────────────────────────
+  {
+    org_id: "insight_meditation_houston", org_name: "Insight Meditation Houston",
+    title: "Monday Evening Meditation & Dharma Talk",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "4949 Caroline St", city: "Houston", state: "TX", neighborhood: "Museum District / Midtown",
+    lat: 29.7268, lng: -95.3836, tradition: "theravada", location_type: "hybrid",
+    notes: "Vipassana / Insight Meditation sit + dharma talk. At Covenant Church, Building B (Huff Fellowship Hall). Also via Zoom (ID: 848 4819 9460). Free; donations welcome. Held most Mondays except federal holidays.",
+    source_url: "https://insighthouston.org", event_url: "https://insighthouston.org/events",
+  },
+  {
+    org_id: "diamond_way_houston", org_name: "Diamond Way Buddhist Center Houston",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 30 }, duration_min: 30,
+    address: "5102 Center St", city: "Houston", state: "TX", neighborhood: "Heights / Washington Corridor",
+    lat: 29.7653, lng: -95.3987, tradition: "tibetan", location_type: "in-person",
+    notes: "Short Buddhist teaching + guided Guru Yoga meditation (~30 min). Karma Kagyu lineage (Diamond Way, Lama Ole Nydahl). Free; donations welcome. All are welcome.",
+    source_url: "https://diamondway.org/houston/", event_url: "https://diamondway.org/houston/events/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

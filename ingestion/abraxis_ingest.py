@@ -42,6 +42,7 @@ from ingestion.sources import denver as denver_sources
 from ingestion.sources import portland as portland_sources
 from ingestion.sources import austin as austin_sources
 from ingestion.sources.minneapolis import fetch_common_ground
+from ingestion.sources import houston as houston_sources
 
 log = logging.getLogger(__name__)
 
@@ -486,6 +487,30 @@ def main():
         all_events.extend(events)
     except Exception as e:
         log.error(f"  ✗ Common Ground Sanity API failed: {e}")
+
+    # Houston Phase 3 — iCal feeds (Chung Tai Zen Center + Dawn Mountain)
+    log.info("--- Houston Phase 3: iCal feeds ---")
+    for org_id, feed_cfg in houston_sources.ICAL_FEEDS.items():
+        center = houston_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Houston iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Houston iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

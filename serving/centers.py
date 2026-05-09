@@ -1542,4 +1542,87 @@ CENTERS = {
             "and the Williams World Peace Temple retreat center in northern Arizona."
         ),
     },
+    "chung_tai_houston": {
+        "id": "chung_tai_houston",
+        "name": "Chung Tai Zen Center of Houston",
+        "tradition": "zen",
+        "url": "https://cthouston.org",
+        "address": "12129 Bellaire Blvd",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77072",
+        "neighborhood": "Westchase / Bellaire",
+        "lat": 29.7122,
+        "lng": -95.5832,
+        "description": (
+            "Chung Tai Zen Center of Houston (普德精舍) is a Chan (Zen) Buddhist center "
+            "affiliated with Chung Tai Chan Monastery in Taiwan. Located in the Bellaire/Westchase "
+            "area of southwest Houston. Offers structured meditation programs at multiple skill "
+            "levels: Level 1 (Beginner) on Monday evenings 7:30pm and Saturday mornings 10am; "
+            "Level 2 (Intermediate) and Level 3 (Advanced) on Wednesday evenings 7:30pm; "
+            "Sutra Study on Thursday evenings 7pm; Youth and Children's Meditation on Saturday "
+            "afternoons 4:30pm. Monthly half-day retreats. All are welcome; no experience needed."
+        ),
+    },
+    "dawn_mountain_houston": {
+        "id": "dawn_mountain_houston",
+        "name": "Dawn Mountain Center for Tibetan Buddhism",
+        "tradition": "tibetan",
+        "url": "https://dawnmountain.org",
+        "address": "4803 San Felipe St",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77056",
+        "neighborhood": "Galleria / Uptown",
+        "lat": 29.7562,
+        "lng": -95.4643,
+        "description": (
+            "Dawn Mountain Center for Tibetan Buddhism is an ecumenical Tibetan Buddhist center "
+            "in Houston's Galleria area, founded in 1996 by Anne C. Klein (Rigzin Drolma) and "
+            "Harvey B. Aronson. One of the few Tibetan Buddhist centers in the US that bridges "
+            "academic Buddhist studies and contemplative practice. Offers free Sunday guided "
+            "meditations, Teaching Tuesdays, weekend retreats, and in-depth Dzogchen and Ngondro "
+            "study programs. Open to all levels."
+        ),
+    },
+    "insight_meditation_houston": {
+        "id": "insight_meditation_houston",
+        "name": "Insight Meditation Houston",
+        "tradition": "theravada",
+        "url": "https://insighthouston.org",
+        "address": "4949 Caroline St",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77004",
+        "neighborhood": "Museum District / Midtown",
+        "lat": 29.7268,
+        "lng": -95.3836,
+        "description": (
+            "Insight Meditation Houston (IMH) teaches in the Theravada Vipassana / Insight "
+            "Meditation tradition (Spirit Rock / IMS lineage). Weekly Monday evening sits "
+            "(7–8:30pm) with meditation and dharma talk at Covenant Church, Building B "
+            "(Huff Fellowship Hall), 4949 Caroline St, Museum District. Also available via "
+            "Zoom. Free; donations welcome. Annual 2-day 'Deepening the Dharma' retreat. "
+            "Sits are held most Mondays except federal holidays."
+        ),
+    },
+    "diamond_way_houston": {
+        "id": "diamond_way_houston",
+        "name": "Diamond Way Buddhist Center Houston",
+        "tradition": "tibetan",
+        "url": "https://diamondway.org/houston/",
+        "address": "5102 Center St",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77007",
+        "neighborhood": "Heights / Washington Corridor",
+        "lat": 29.7653,
+        "lng": -95.3987,
+        "description": (
+            "Diamond Way Buddhist Center Houston is part of the worldwide Diamond Way Buddhist "
+            "network (Karma Kagyu lineage, Lama Ole Nydahl). Weekly Wednesday evening program "
+            "at 7:30pm — a short Buddhist teaching followed by guided Guru Yoga meditation "
+            "(~30 minutes). Free; donations welcome. All are welcome, no experience needed."
+        ),
+    },
 }
