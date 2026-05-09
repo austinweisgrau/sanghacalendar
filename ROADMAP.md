@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-09 (heartbeat 16)_
+_Last updated: 2026-05-09 (heartbeat 17)_
 
 ## Current Status
 
@@ -129,6 +129,7 @@ Candidate metros (rough priority):
 10. Austin 🔄 **Phase 3 Austin live May 8** (2 centers) — see below
 11. Minneapolis/Saint Paul 🔄 **Phase 3 Minneapolis live May 8** (4 centers) — see below
 12. Phoenix 🔄 **Phase 3 Phoenix live May 9** (1 center) — see below
+13. Houston 🔄 **Phase 3 Houston live May 9** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -359,6 +360,34 @@ Center bio added to centers.py. `ingestion/sources/phoenix.py` created.
 - Phoenix Shambhala: Closed — not appropriate to add
 - KMC Scottsdale/Surprise/Fountain Hills/Mesa: satellite locations under same center
 - Albuquerque Shambhala: new metro (separate heartbeat)
+
+---
+
+### Houston Phase 3 — ✅ Live May 9 (4 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Chung Tai Zen Center of Houston (Bellaire/Westchase) | iCal feed (`cthouston.org/events/?ical=1`) — WordPress The Events Calendar | ✅ Live — Chan (Taiwanese) Zen. Mon 7:30pm + Sat 10am Beginner, Wed 7:30pm Intermediate/Advanced, Thu 7pm Sutra Study, monthly half-day retreats. |
+| Dawn Mountain Center for Tibetan Buddhism (Galleria) | Google Calendar public ICS (`dawnmountain.org_98i9a9njars99imv86omhfmebs@group.calendar.google.com`) | ✅ Live — Ecumenical Tibetan (Dzogchen, Ngondro). Free Sunday guided meditations, Teaching Tuesdays, weekend retreats. |
+| Insight Meditation Houston (Museum District) | Recurring sits seeded — WordPress site, no iCal endpoint | ✅ Live — Monday 7–8:30pm hybrid at Covenant Church, 4949 Caroline St. Vipassana/Theravada. |
+| Diamond Way Buddhist Center Houston (Heights) | Recurring sits seeded — no structured calendar | ✅ Live — Wednesday 7:30pm in-person at 5102 Center St. Karma Kagyu (Lama Ole Nydahl). |
+
+City filter: Houston city added to `_filters.html` (TX state already present).
+Center bios: 4 new entries in `centers.py`.
+`ingestion/sources/houston.py` created, wired into coordinator + abraxis.
+`sangha-seed-recurring.js`: 2 new sit defs (85 total, 1886 instances).
+
+**Research notes (2026-05-09):**
+- KMC Houston (meditationinhouston.org): on hiatus — paused most local programming, referring students to Dallas. Skip for now; monitor for reactivation.
+- Houston Shambhala (houston.shambhala.org): no active programs — dormant. Skip.
+- Houston Zen Center (houstonzen.org): Squarespace JSON API at `/events-calendar?format=json` — working, ~10 upcoming events confirmed (dharma talks, intro to Zen series, retreat days). Worth adding custom Squarespace scraper.
+- Drepung Loseling Institute of TX (drepungloselinginstitute.org): Wix site, Gelugpa lineage. Known schedule: Thu 7-9am, Sun 10am-12pm + 3-7pm. Could seed as recurring.
+
+**Skipped/deferred:**
+- Houston Zen Center: Squarespace JSON API needs custom scraper (deferred — next heartbeat candidate)
+- Drepung Loseling TX: Wix site, schedule known but requires seeding (deferred)
+- Lone Star Buddhist (Mahamevnawa): pop-up locations, no stable feed
+- Diamond Way Houston: no online calendar — seeded fixed Wed 7:30pm schedule
 
 ---
 
