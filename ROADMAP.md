@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-10 (heartbeat 19)_
+_Last updated: 2026-05-10 (heartbeat 20)_
 
 ## Current Status
 
@@ -130,6 +130,7 @@ Candidate metros (rough priority):
 11. Minneapolis/Saint Paul 🔄 **Phase 3 Minneapolis live May 8** (4 centers) — see below
 12. Phoenix 🔄 **Phase 3 Phoenix live May 9** (1 center) — see below
 13. Houston 🔄 **Phase 3 Houston live May 9** (4 centers) — see below
+14. Albuquerque/Santa Fe 🔄 **Phase 3 NM live May 10** (2 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -386,6 +387,23 @@ Center bios: 6 entries in `centers.py`.
 
 **Skipped/deferred:**
 - Lone Star Buddhist (Mahamevnawa): pop-up locations, no stable feed
+
+---
+
+### New Mexico Phase 3 — ✅ Live May 10 (2 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Albuquerque Shambhala Meditation Center (Old Town) | Cologne iCal server (shambhala-koeln.de center=268) — 244 events | ✅ Live — Sunday Public Sitting (in-person + online), Heart of Recovery, Nyinthün, Shambhala Training. 1102 Mountain Rd NW. Now also absorbing Phoenix Shambhala programming (closed Dec 31, 2025). |
+| Upaya Zen Center (Santa Fe) | WordPress iCal feed (`upaya.org/events/?ical=1`) — 30 events | ✅ Live — Daily Morning Zazen (7am), Midday Zazen (~12:20pm), Evening Zazen (5:30pm) + weekly Dharma talks + sesshins. 1404 Cerro Gordo Rd, Santa Fe NM. Roshi Joan Halifax lineage; one of the most prominent Soto Zen communities in the Southwest. |
+
+City filter: New Mexico state + Albuquerque/Santa Fe cities added to `_filters.html`.
+Center bios added to centers.py. `ingestion/sources/albuquerque.py` created, wired into coordinator + abraxis.
+
+**Skipped/deferred:**
+- Kadampa Albuquerque (`meditationinalbuquerque.org`): site returning 403 — monitor
+- Kagyu Shenpen Ösel Chöling (`shenpen.org`): 403 on main site — monitor
+- NM Vipassana: retreat center only, no drop-in sits
 
 ---
 
