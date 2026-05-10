@@ -39,6 +39,7 @@ from ingestion.sources import austin as austin_sources
 from ingestion.sources import minneapolis as minneapolis_sources
 from ingestion.sources.minneapolis import fetch_common_ground
 from ingestion.sources import houston as houston_sources
+from ingestion.sources import albuquerque as albuquerque_sources
 
 log = logging.getLogger(__name__)
 
@@ -547,6 +548,35 @@ def run_houston_phase3() -> list[Event]:
     return all_events
 
 
+def run_albuquerque_phase3() -> list[Event]:
+    """Phase 3 New Mexico: ABQ Shambhala (center=268) + Upaya Zen Center Santa Fe iCal."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in albuquerque_sources.ICAL_FEEDS.items():
+        center = albuquerque_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (NM iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ NM iCal {org_id} failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -568,6 +598,7 @@ def main():
         + run_austin_phase3()
         + run_minneapolis_phase3()
         + run_houston_phase3()
+        + run_albuquerque_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

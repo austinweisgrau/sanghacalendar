@@ -44,6 +44,7 @@ from ingestion.sources import portland as portland_sources
 from ingestion.sources import austin as austin_sources
 from ingestion.sources.minneapolis import fetch_common_ground
 from ingestion.sources import houston as houston_sources
+from ingestion.sources import albuquerque as albuquerque_sources
 
 log = logging.getLogger(__name__)
 
@@ -536,6 +537,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Houston Squarespace {org_id} failed: {e}")
+
+    # New Mexico Phase 3 — ABQ Shambhala + Upaya Zen Center Santa Fe
+    log.info("--- New Mexico Phase 3: iCal feeds ---")
+    for org_id, feed_cfg in albuquerque_sources.ICAL_FEEDS.items():
+        center = albuquerque_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (NM iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ NM iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

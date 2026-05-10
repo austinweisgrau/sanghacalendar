@@ -1649,6 +1649,50 @@ CENTERS = {
             "(~30 minutes). Free; donations welcome. All are welcome, no experience needed."
         ),
     },
+    "shambhala_albuquerque": {
+        "id": "shambhala_albuquerque",
+        "name": "Albuquerque Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://albuquerque.shambhala.org",
+        "address": "1102 Mountain Rd NW",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87102",
+        "neighborhood": "Old Town / Downtown",
+        "lat": 35.0912,
+        "lng": -106.6616,
+        "description": (
+            "Albuquerque Shambhala Meditation Center (ASMC) is a Tibetan Buddhist community "
+            "in the Shambhala lineage, located in Albuquerque's historic Old Town/Downtown "
+            "corridor. Offers Sunday Public Sitting (in-person and online), Heart of Recovery "
+            "programs, Nyinthün (all-day group practice), Shambhala Training weekends, and "
+            "dharma study groups. Now also hosts programming from Phoenix Shambhala (closed "
+            "Dec 31, 2025). Free and open to all; donations welcome."
+        ),
+    },
+    "upaya_zen_center": {
+        "id": "upaya_zen_center",
+        "name": "Upaya Zen Center",
+        "tradition": "zen",
+        "url": "https://www.upaya.org",
+        "address": "1404 Cerro Gordo Rd",
+        "city": "Santa Fe",
+        "state": "NM",
+        "zip": "87501",
+        "neighborhood": "Canyon Road / Arts District",
+        "lat": 35.6870,
+        "lng": -105.9393,
+        "description": (
+            "Upaya Zen Center is one of the most prominent Soto Zen communities in the American "
+            "Southwest, founded by Roshi Joan Halifax in 1990 on a five-acre campus in the "
+            "foothills of Santa Fe, NM. Daily practice open to visitors: Morning Zazen (7am), "
+            "Midday Zazen (~12:20pm), and Evening Zazen (5:30pm) — all in the zendo and often "
+            "via Zoom. Weekly Dharma talks, periodic sesshins, and transformative residential "
+            "retreats including the renowned Being with Dying professional training. The "
+            "Chaplaincy Training Program and Socially Engaged Buddhism initiatives draw "
+            "practitioners nationwide. Drop-in welcome; all traditions honored."
+        ),
+    },
     "drepung_loseling_texas": {
         "id": "drepung_loseling_texas",
         "name": "Drepung Loseling Institute of Texas",
