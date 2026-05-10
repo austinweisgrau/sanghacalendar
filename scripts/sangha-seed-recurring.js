@@ -921,6 +921,36 @@ const SITS = [
     notes: "Sunday zazen, part of the full Sunday Program (8:20am–noon). Preceded by chanting at 8:20am; followed by newcomer orientation at 9:20am and dharma talk at 9:45am. In-person and Zoom. Free; all welcome.",
     source_url: "https://houstonzen.org", event_url: "https://houstonzen.org/sunday-program",
   },
+  // ── Drepung Loseling Institute of Texas (Westbury, SW Houston) ─────────────
+  // Gelugpa Tibetan Buddhist center affiliated with Drepung Loseling Monastery.
+  // Schedule from drepungloselinginstitute.org (Wix site, no iCal — seeded as recurring)
+  {
+    org_id: "drepung_loseling_texas", org_name: "Drepung Loseling Institute of Texas",
+    title: "Thursday Morning Practice",
+    days: ["Thursday"], time: { h: 7, m: 0 }, duration_min: 120,
+    address: "11510 S Garden St", city: "Houston", state: "TX", neighborhood: "Westbury / Southwest Houston",
+    lat: 29.6620, lng: -95.4908, tradition: "tibetan", location_type: "in_person",
+    notes: "Weekly Thursday morning Tibetan Buddhist practice session, 7–9am. Gelugpa lineage (Drepung Loseling Monastery / His Holiness the 14th Dalai Lama). Includes meditation, prayers, and practice instruction. All are welcome; no experience necessary.",
+    source_url: "https://www.drepungloselinginstitute.org", event_url: "https://www.drepungloselinginstitute.org/schedule",
+  },
+  {
+    org_id: "drepung_loseling_texas", org_name: "Drepung Loseling Institute of Texas",
+    title: "Sunday Morning Program",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "11510 S Garden St", city: "Houston", state: "TX", neighborhood: "Westbury / Southwest Houston",
+    lat: 29.6620, lng: -95.4908, tradition: "tibetan", location_type: "in_person",
+    notes: "Sunday morning Tibetan Buddhist program, 10am–noon. Gelugpa lineage (Drepung Loseling Monastery). Meditation, teachings, and traditional practice. All welcome.",
+    source_url: "https://www.drepungloselinginstitute.org", event_url: "https://www.drepungloselinginstitute.org/schedule",
+  },
+  {
+    org_id: "drepung_loseling_texas", org_name: "Drepung Loseling Institute of Texas",
+    title: "Sunday Afternoon Program",
+    days: ["Sunday"], time: { h: 15, m: 0 }, duration_min: 240,
+    address: "11510 S Garden St", city: "Houston", state: "TX", neighborhood: "Westbury / Southwest Houston",
+    lat: 29.6620, lng: -95.4908, tradition: "tibetan", location_type: "in_person",
+    notes: "Sunday afternoon Tibetan Buddhist program, 3–7pm. Gelugpa lineage (Drepung Loseling Monastery). Extended session with meditation, dharma teachings, and ritual practice. All welcome.",
+    source_url: "https://www.drepungloselinginstitute.org", event_url: "https://www.drepungloselinginstitute.org/schedule",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

@@ -12,6 +12,7 @@ Recurring sits (no accessible iCal):
   - Insight Meditation Houston — Monday 7pm at 4949 Caroline St (Theravada/Vipassana)
   - Diamond Way Buddhist Center Houston — Wednesday 7:30pm at 5102 Center St (Tibetan)
   - Houston Zen Center — daily zazen seeded as recurring sits
+  - Drepung Loseling Institute of Texas — Thu 7-9am + Sun 10am-noon + Sun 3-7pm (Gelugpa Tibetan)
 """
 
 import logging
@@ -130,6 +131,27 @@ CENTERS = {
             "at 7:30pm — a short Buddhist teaching followed by guided Guru Yoga meditation "
             "(~30 minutes). Free; donations welcome. Located near the Heights/Washington "
             "Corridor area. All are welcome, no experience needed."
+        ),
+    ),
+    "drepung_loseling_texas": Center(
+        id="drepung_loseling_texas",
+        name="Drepung Loseling Institute of Texas",
+        url="https://www.drepungloselinginstitute.org",
+        address="11510 S Garden St",
+        city="Houston",
+        state="TX",
+        zip_code="77071",
+        lat=29.6620,
+        lng=-95.4908,
+        neighborhood="Westbury / Southwest Houston",
+        tradition=Tradition.TIBETAN,
+        notes=(
+            "Drepung Loseling Institute of Texas is a Tibetan Buddhist temple and meditation "
+            "center in the Westbury area of southwest Houston, affiliated with Drepung Loseling "
+            "Monastery in India under the patronage of His Holiness the 14th Dalai Lama "
+            "(Gelugpa lineage). Offers weekly Thursday morning practice (7–9am) and Sunday "
+            "programs: morning session (10am–noon) and afternoon program (3–7pm) that includes "
+            "meditation, teachings, and Tibetan Buddhist ritual practice. All are welcome."
         ),
     ),
 }

@@ -1649,4 +1649,26 @@ CENTERS = {
             "(~30 minutes). Free; donations welcome. All are welcome, no experience needed."
         ),
     },
+    "drepung_loseling_texas": {
+        "id": "drepung_loseling_texas",
+        "name": "Drepung Loseling Institute of Texas",
+        "tradition": "tibetan",
+        "url": "https://www.drepungloselinginstitute.org",
+        "address": "11510 S Garden St",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77071",
+        "neighborhood": "Westbury / Southwest Houston",
+        "lat": 29.6620,
+        "lng": -95.4908,
+        "description": (
+            "Drepung Loseling Institute of Texas is a Tibetan Buddhist temple and meditation "
+            "center in the Westbury area of southwest Houston, affiliated with Drepung Loseling "
+            "Monastery in India under the patronage of His Holiness the 14th Dalai Lama "
+            "(Gelugpa lineage). Weekly Thursday morning practice sessions (7–9am) and Sunday "
+            "programs — morning (10am–noon) and afternoon (3–7pm) — include meditation, dharma "
+            "teachings, and traditional Tibetan Buddhist practice. All are welcome; no "
+            "experience necessary."
+        ),
+    },
 }
