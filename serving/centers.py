@@ -1715,4 +1715,48 @@ CENTERS = {
             "experience necessary."
         ),
     },
+    "kmc_miami": {
+        "id": "kmc_miami",
+        "name": "Kadampa Meditation Center Miami",
+        "tradition": "tibetan",
+        "url": "https://meditationinmiami.org",
+        "address": "316 Miracle Mile",
+        "city": "Coral Gables",
+        "state": "FL",
+        "zip": "33134",
+        "neighborhood": "Coral Gables / Downtown Miami",
+        "lat": 25.7474,
+        "lng": -80.2575,
+        "description": (
+            "Kadampa Meditation Center Miami (KMC Miami) is a Tibetan Buddhist center in "
+            "the New Kadampa Tradition (NKT-IKBU), located on the famous Miracle Mile shopping "
+            "district in Coral Gables, FL. Offers weekly General Program meditation classes "
+            "open to all — no experience needed: Sunday 11am, Monday 7:30pm, Tuesday 7:30pm "
+            "(Meditación en español), Thursday 7:30pm, and a Friday lunchtime sit (12:15pm). "
+            "Monthly Tsog days, empowerments, and special programs. Branch of KMC Florida "
+            "(Sarasota). Free to attend; donations welcome."
+        ),
+    },
+    "kmc_fort_lauderdale": {
+        "id": "kmc_fort_lauderdale",
+        "name": "Kadampa Meditation Center Fort Lauderdale",
+        "tradition": "tibetan",
+        "url": "https://meditateinfortlauderdale.org",
+        "address": "4342 E Tradewinds Ave",
+        "city": "Lauderdale-by-the-Sea",
+        "state": "FL",
+        "zip": "33308",
+        "neighborhood": "Fort Lauderdale / Lauderdale-by-the-Sea",
+        "lat": 26.1904,
+        "lng": -80.0978,
+        "description": (
+            "Kadampa Meditation Center Fort Lauderdale is a Tibetan Buddhist center in "
+            "the New Kadampa Tradition (NKT-IKBU), located in the beach community of "
+            "Lauderdale-by-the-Sea (Broward County, ~30 miles north of Miami). Offers weekly "
+            "General Program meditation classes: Sundays 11am (90 min), Thursdays 7pm, "
+            "and a Wednesday lunchtime sit. Satellite sits in Delray Beach (2nd Wed) and "
+            "Hollywood (1st Fri). Monthly Tsog and special programs. Free to attend; "
+            "donations welcome."
+        ),
+    },
 }

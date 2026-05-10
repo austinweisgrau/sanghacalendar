@@ -35,8 +35,8 @@ const SITS = [
     title: "Wednesday Evening Sit",
     days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
     address: "2837 Claremont Blvd", city: "Berkeley", state: "CA", neighborhood: "Claremont",
-    lat: 37.8579, lng: -122.2432, tradition: "theravada", location_type: "in-person",
-    notes: "Teacher: Richard Shankman. Sit followed by brief dharma.",
+    lat: 37.8579, lng: -122.2432, tradition: "theravada", location_type: "hybrid",
+    notes: "Teacher: Richard Shankman. Sit followed by brief dharma. Also on Zoom: zoom.us/j/93748448333.",
     source_url: "https://www.mettadharma.org", event_url: "https://www.mettadharma.org/",
   },
   // Bay Zen
@@ -950,6 +950,54 @@ const SITS = [
     lat: 29.6620, lng: -95.4908, tradition: "tibetan", location_type: "in_person",
     notes: "Sunday afternoon Tibetan Buddhist program, 3–7pm. Gelugpa lineage (Drepung Loseling Monastery). Extended session with meditation, dharma teachings, and ritual practice. All welcome.",
     source_url: "https://www.drepungloselinginstitute.org", event_url: "https://www.drepungloselinginstitute.org/schedule",
+  },
+
+  // ── Miami / South Florida, FL ───────────────────────────────────────────────
+  // KMC Miami — Coral Gables (316 Miracle Mile). No iCal; schedule from meditationinmiami.org.
+  {
+    org_id: "kmc_miami", org_name: "Kadampa Meditation Center Miami",
+    title: "Sunday Morning Meditation Class",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 60,
+    address: "316 Miracle Mile", city: "Coral Gables", state: "FL", neighborhood: "Coral Gables / Downtown Miami",
+    lat: 25.7474, lng: -80.2575, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome, no experience needed.",
+    source_url: "https://meditationinmiami.org", event_url: "https://meditationinmiami.org/calendar/",
+  },
+  {
+    org_id: "kmc_miami", org_name: "Kadampa Meditation Center Miami",
+    title: "Monday Evening Meditation Class",
+    days: ["Monday"], time: { h: 19, m: 30 }, duration_min: 60,
+    address: "316 Miracle Mile", city: "Coral Gables", state: "FL", neighborhood: "Coral Gables / Downtown Miami",
+    lat: 25.7474, lng: -80.2575, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome.",
+    source_url: "https://meditationinmiami.org", event_url: "https://meditationinmiami.org/calendar/",
+  },
+  {
+    org_id: "kmc_miami", org_name: "Kadampa Meditation Center Miami",
+    title: "Clase de Meditación del Martes (Español)",
+    days: ["Tuesday"], time: { h: 19, m: 30 }, duration_min: 60,
+    address: "316 Miracle Mile", city: "Coral Gables", state: "FL", neighborhood: "Coral Gables / Downtown Miami",
+    lat: 25.7474, lng: -80.2575, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class taught entirely in Spanish. Meditación guiada + enseñanza del dharma. Todos son bienvenidos.",
+    source_url: "https://meditationinmiami.org", event_url: "https://meditationinmiami.org/calendar/",
+  },
+  {
+    org_id: "kmc_miami", org_name: "Kadampa Meditation Center Miami",
+    title: "Thursday Evening Meditation Class",
+    days: ["Thursday"], time: { h: 19, m: 30 }, duration_min: 60,
+    address: "316 Miracle Mile", city: "Coral Gables", state: "FL", neighborhood: "Coral Gables / Downtown Miami",
+    lat: 25.7474, lng: -80.2575, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome.",
+    source_url: "https://meditationinmiami.org", event_url: "https://meditationinmiami.org/calendar/",
+  },
+  {
+    org_id: "kmc_miami", org_name: "Kadampa Meditation Center Miami",
+    title: "Friday Lunchtime Meditation",
+    days: ["Friday"], time: { h: 12, m: 15 }, duration_min: 30,
+    address: "316 Miracle Mile", city: "Coral Gables", state: "FL", neighborhood: "Coral Gables / Downtown Miami",
+    lat: 25.7474, lng: -80.2575, tradition: "tibetan", location_type: "in-person",
+    notes: "Short lunchtime meditation session, 12:15–12:45pm. Free drop-in; no experience needed.",
+    source_url: "https://meditationinmiami.org", event_url: "https://meditationinmiami.org/calendar/",
   },
 ];
 
