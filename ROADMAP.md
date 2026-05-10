@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-09 (heartbeat 18)_
+_Last updated: 2026-05-10 (heartbeat 19)_
 
 ## Current Status
 
@@ -363,7 +363,7 @@ Center bio added to centers.py. `ingestion/sources/phoenix.py` created.
 
 ---
 
-### Houston Phase 3 — ✅ Live May 9 (5 centers)
+### Houston Phase 3 — ✅ Live May 9–10 (6 centers)
 
 | Center | Approach | Status |
 |--------|----------|--------|
@@ -371,21 +371,20 @@ Center bio added to centers.py. `ingestion/sources/phoenix.py` created.
 | Dawn Mountain Center for Tibetan Buddhism (Galleria) | Google Calendar public ICS (`dawnmountain.org_98i9a9njars99imv86omhfmebs@group.calendar.google.com`) | ✅ Live — Ecumenical Tibetan (Dzogchen, Ngondro). Free Sunday guided meditations, Teaching Tuesdays, weekend retreats. |
 | Insight Meditation Houston (Museum District) | Recurring sits seeded — WordPress site, no iCal endpoint | ✅ Live — Monday 7–8:30pm hybrid at Covenant Church, 4949 Caroline St. Vipassana/Theravada. |
 | Diamond Way Buddhist Center Houston (Heights) | Recurring sits seeded — no structured calendar | ✅ Live — Wednesday 7:30pm in-person at 5102 Center St. Karma Kagyu (Lama Ole Nydahl). |
-| Houston Zen Center (The Heights) | **NEW heartbeat 18** — Squarespace JSON API (`/events-calendar?format=json`) + 4 recurring sit defs | ✅ Live — Soto Zen. Daily zazen Mon–Thu (5:50am + 5:30pm), Sat 8:20am, Sun 8:50am. Weekly dharma talks via Squarespace scraper. |
+| Houston Zen Center (The Heights) | Squarespace JSON API (`/events-calendar?format=json`) + 4 recurring sit defs | ✅ Live — Soto Zen. Daily zazen Mon–Thu (5:50am + 5:30pm), Sat 8:20am, Sun 8:50am. Weekly dharma talks via Squarespace scraper. |
+| Drepung Loseling Institute of Texas (Westbury) | **NEW heartbeat 19** — Recurring sits seeded — Wix site, no iCal | ✅ Live — Gelugpa Tibetan (Dalai Lama lineage). Thu 7–9am, Sun 10am–noon, Sun 3–7pm. 11510 S Garden St. |
 
 City filter: Houston city in `_filters.html` (TX state present).
-Center bios: 5 entries in `centers.py`.
+Center bios: 6 entries in `centers.py`.
 `ingestion/sources/houston.py`: CENTERS + ICAL_FEEDS + SQUARESPACE_FEEDS.
 `ingestion/scrapers/squarespace.py`: new generic Squarespace JSON scraper.
-`sangha-seed-recurring.js`: 89 sit defs → 2016 instances (added HZC heartbeat 18).
+`sangha-seed-recurring.js`: 92 sit defs → ~2055 instances (added DLI-TX heartbeat 19).
 
-**Research notes (2026-05-09):**
+**Research notes:**
 - KMC Houston: on hiatus, referring students to Dallas. Skip.
 - Houston Shambhala: no active programs — dormant. Skip.
-- Drepung Loseling Institute of TX (drepungloselinginstitute.org): Wix site, Gelugpa lineage. Known schedule: Thu 7-9am, Sun 10am-12pm + 3-7pm. Could seed as recurring.
 
 **Skipped/deferred:**
-- Drepung Loseling TX: schedule known but site is Wix — could seed recurring (next candidate)
 - Lone Star Buddhist (Mahamevnawa): pop-up locations, no stable feed
 
 ---
