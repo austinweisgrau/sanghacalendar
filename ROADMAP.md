@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-10 (heartbeat 20)_
+_Last updated: 2026-05-10 (heartbeat 21)_
 
 ## Current Status
 
@@ -131,6 +131,7 @@ Candidate metros (rough priority):
 12. Phoenix 🔄 **Phase 3 Phoenix live May 9** (1 center) — see below
 13. Houston 🔄 **Phase 3 Houston live May 9** (4 centers) — see below
 14. Albuquerque/Santa Fe 🔄 **Phase 3 NM live May 10** (2 centers) — see below
+15. Miami/South Florida 🔄 **Phase 3 Miami live May 10** (2 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -404,6 +405,25 @@ Center bios added to centers.py. `ingestion/sources/albuquerque.py` created, wir
 - Kadampa Albuquerque (`meditationinalbuquerque.org`): site returning 403 — monitor
 - Kagyu Shenpen Ösel Chöling (`shenpen.org`): 403 on main site — monitor
 - NM Vipassana: retreat center only, no drop-in sits
+
+---
+
+### Miami / South Florida Phase 3 — ✅ Live May 10 (2 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Kadampa Meditation Center Miami (Coral Gables) | Recurring sits seeded — Wix site with AJAX calendar, no public iCal | ✅ Live — 5 sit types: Sun 11am, Mon 7:30pm, Tue 7:30pm (en español), Thu 7:30pm, Fri 12:15pm lunchtime |
+| Kadampa Meditation Center Fort Lauderdale (Lauderdale-by-the-Sea) | 2 Google Calendar public iCal feeds: GP Classes + Free Activities | ✅ Live — weekly GP sits (Sun/Wed/Thu), Tsog days, monthly events |
+
+City filter: Florida state + Coral Gables + Lauderdale-by-the-Sea cities added to `_filters.html`.
+Center bios added to centers.py.
+
+**Research notes (2026-05-10):**
+- Miami Shambhala: `miami.shambhala.org` redirects to main site — no active Miami center.
+- Insight Miami (`insightmiami.org`): small Wix sangha, private email-based locations — skip.
+- Southern Palm Zen Group (Boca Raton, `floridazen.com`): ~45 miles from Miami, no iCal — deferred.
+- KMC Florida (Sarasota): 65 miles north — separate metro; skip for now.
+- No Theravada/Vipassana centers with public calendars found in Miami metro.
 
 ---
 
