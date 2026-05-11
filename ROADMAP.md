@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-10 (heartbeat 21)_
+_Last updated: 2026-05-11 (heartbeat 22)_
 
 ## Current Status
 
@@ -132,6 +132,7 @@ Candidate metros (rough priority):
 13. Houston 🔄 **Phase 3 Houston live May 9** (4 centers) — see below
 14. Albuquerque/Santa Fe 🔄 **Phase 3 NM live May 10** (2 centers) — see below
 15. Miami/South Florida 🔄 **Phase 3 Miami live May 10** (2 centers) — see below
+16. San Diego 🔄 **Phase 3 San Diego live May 11** (2 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -424,6 +425,29 @@ Center bios added to centers.py.
 - Southern Palm Zen Group (Boca Raton, `floridazen.com`): ~45 miles from Miami, no iCal — deferred.
 - KMC Florida (Sarasota): 65 miles north — separate metro; skip for now.
 - No Theravada/Vipassana centers with public calendars found in Miami metro.
+
+---
+
+### San Diego Phase 3 — ✅ Live May 11 (2 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Kadampa Meditation Center San Diego (Normal Heights) | Google Calendar ICS (`sddharma.com_81dvn4rrqjn21vv23kqo4m66hs@group.calendar.google.com`) for special events + recurring sits seeded (Sun 10:30am, Mon 6:30pm, Thu 6:30pm) | ✅ Live — NKT Tibetan. Special events: retreats, empowerments, Tsog days. Branch locations in Chula Vista and Oceanside. |
+| San Diego Shambhala Meditation Center (Clairemont) | Cologne iCal server (shambhala-koeln.de center=254) — 232 events | ✅ Live — Shambhala lineage. Sunday public sitting (10–11am in-person), bi-weekly Wed online meditation (7pm), monthly EcoDharma group, Nyinthün. |
+
+City filter: "San Diego" added to CA state cities in `_filters.html`.
+Center bios added to centers.py. `ingestion/sources/san_diego.py` created, wired into coordinator + abraxis.
+`sangha-seed-recurring.js`: 3 new KMC San Diego sit defs (Sun/Mon/Thu).
+
+**Research notes (2026-05-11):**
+- Deer Park Monastery (Escondido, 35 mi north): retreat monastery, no regular public drop-in sits — skip.
+- Diamond Way San Diego: no accessible web presence found.
+- San Diego Zen Center (sdzc.org): domain not resolving — monitor.
+- Insight Meditation San Diego: domain not resolving — monitor.
+
+**Skipped/deferred:**
+- Deer Park Monastery: retreat-focused, no public drop-in calendar
+- KMC San Diego Google Calendar: mostly special events (2018–present); regular sits seeded separately
 
 ---
 

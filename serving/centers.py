@@ -1759,4 +1759,46 @@ CENTERS = {
             "donations welcome."
         ),
     },
+    "kmc_san_diego": {
+        "id": "kmc_san_diego",
+        "name": "Kadampa Meditation Center San Diego",
+        "tradition": "tibetan",
+        "url": "https://meditateinsandiego.org",
+        "address": "3502 Adams Ave",
+        "city": "San Diego",
+        "state": "CA",
+        "zip": "92116",
+        "neighborhood": "Normal Heights / North Park",
+        "lat": 32.7437,
+        "lng": -117.1381,
+        "description": (
+            "Kadampa Meditation Center San Diego (KMC San Diego) is a Tibetan Buddhist center "
+            "in the New Kadampa Tradition (NKT-IKBU), located in the Normal Heights neighborhood "
+            "of San Diego. Offers regular General Program meditation classes open to all — no "
+            "experience needed: Sunday 10:30am, Monday 6:30pm, and Thursday 6:30pm. Special "
+            "events including empowerments, day retreats, and silent retreats are held monthly. "
+            "Branch locations in Chula Vista and Oceanside. Free to attend; donations welcome."
+        ),
+    },
+    "shambhala_san_diego": {
+        "id": "shambhala_san_diego",
+        "name": "San Diego Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://sandiego.shambhala.org",
+        "address": "4622 Clairemont Dr",
+        "city": "San Diego",
+        "state": "CA",
+        "zip": "92117",
+        "neighborhood": "Clairemont / Bay Park",
+        "lat": 32.8030,
+        "lng": -117.1978,
+        "description": (
+            "San Diego Shambhala Meditation Center is a contemplative community in the Shambhala "
+            "lineage of Chögyam Trungpa Rinpoche, meeting in a home practice space in the "
+            "Clairemont neighborhood of San Diego. Offers a Sunday morning public meditation sit "
+            "(10–11am, in-person), bi-weekly Wednesday evening online meditation (7pm via Zoom), "
+            "a monthly EcoDharma & EcoSattva training group, and occasional Nyinthün all-day "
+            "group practice sessions. Open to all; drop-in welcome."
+        ),
+    },
 }

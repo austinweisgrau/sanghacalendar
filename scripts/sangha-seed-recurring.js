@@ -952,6 +952,36 @@ const SITS = [
     source_url: "https://www.drepungloselinginstitute.org", event_url: "https://www.drepungloselinginstitute.org/schedule",
   },
 
+  // ── San Diego, CA ────────────────────────────────────────────────────────────
+  // KMC San Diego — 3502 Adams Ave, Normal Heights. No iCal; schedule from meditateinsandiego.org.
+  {
+    org_id: "kmc_san_diego", org_name: "Kadampa Meditation Center San Diego",
+    title: "Sunday Morning Meditation Class",
+    days: ["Sunday"], time: { h: 10, m: 30 }, duration_min: 75,
+    address: "3502 Adams Ave", city: "San Diego", state: "CA", neighborhood: "Normal Heights / North Park",
+    lat: 32.7437, lng: -117.1381, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome, no experience needed.",
+    source_url: "https://meditateinsandiego.org", event_url: "https://meditateinsandiego.org/events/",
+  },
+  {
+    org_id: "kmc_san_diego", org_name: "Kadampa Meditation Center San Diego",
+    title: "Monday Evening Meditation Class",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "3502 Adams Ave", city: "San Diego", state: "CA", neighborhood: "Normal Heights / North Park",
+    lat: 32.7437, lng: -117.1381, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome.",
+    source_url: "https://meditateinsandiego.org", event_url: "https://meditateinsandiego.org/events/",
+  },
+  {
+    org_id: "kmc_san_diego", org_name: "Kadampa Meditation Center San Diego",
+    title: "Thursday Evening Meditation Class",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "3502 Adams Ave", city: "San Diego", state: "CA", neighborhood: "Normal Heights / North Park",
+    lat: 32.7437, lng: -117.1381, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome.",
+    source_url: "https://meditateinsandiego.org", event_url: "https://meditateinsandiego.org/events/",
+  },
+
   // ── Miami / South Florida, FL ───────────────────────────────────────────────
   // KMC Miami — Coral Gables (316 Miracle Mile). No iCal; schedule from meditationinmiami.org.
   {
