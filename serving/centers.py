@@ -1801,4 +1801,68 @@ CENTERS = {
             "group practice sessions. Open to all; drop-in welcome."
         ),
     },
+    # ── Atlanta, GA ───────────────────────────────────────────────────────────
+    "shambhala_atlanta": {
+        "id": "shambhala_atlanta",
+        "name": "Atlanta Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://atlanta.shambhala.org",
+        "address": "1447 Church St",
+        "city": "Decatur",
+        "state": "GA",
+        "zip": "30030",
+        "neighborhood": "Decatur / Atlanta metro",
+        "lat": 33.7763,
+        "lng": -84.2960,
+        "description": (
+            "Atlanta Shambhala Meditation Center is a contemplative community in the Shambhala "
+            "lineage of Chögyam Trungpa Rinpoche, located in a charming bungalow in Decatur "
+            "(just east of Atlanta proper). Offers drop-in public meditation on Sundays "
+            "(10am–noon), Tuesdays (7–8:30pm), and Fridays (noon–1pm). Also hosts the One "
+            "Breath Group, monthly BIPOC Sangha, monthly Queer Dharma group, and Shambhala "
+            "Training weekends. Open to all; drop-in welcome."
+        ),
+    },
+    "aszc": {
+        "id": "aszc",
+        "name": "Atlanta Soto Zen Center",
+        "tradition": "zen",
+        "url": "https://www.aszc.org",
+        "address": "1167 Zonolite Pl NE, Suite C",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30306",
+        "neighborhood": "Morningside / Lenox",
+        "lat": 33.8060,
+        "lng": -84.3420,
+        "description": (
+            "Atlanta Soto Zen Center (ASZC) is one of Atlanta's longest-running Zen centers, "
+            "founded in 1977 in the Soto Zen tradition. Offers daily zazen including a morning "
+            "Sunrise Sangha (6am, hybrid in-person + Zoom), Wednesday evening Introduction to "
+            "Zen Meditation (7–8:30pm, in-person drop-in), and Sunday Morning Service "
+            "(9am–noon, hybrid). Monthly Just Sit Saturdays and Roshi seminars. Located in "
+            "Morningside near Piedmont Park. Drop-in welcome."
+        ),
+    },
+    "kmc_georgia": {
+        "id": "kmc_georgia",
+        "name": "Kadampa Meditation Center Georgia",
+        "tradition": "tibetan",
+        "url": "https://www.meditationingeorgia.org",
+        "address": "741 Edgewood Ave NE",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30307",
+        "neighborhood": "Inman Park / Old Fourth Ward",
+        "lat": 33.7565,
+        "lng": -84.3560,
+        "description": (
+            "Kadampa Meditation Center Georgia (KMC Georgia) is a Tibetan Buddhist center in the "
+            "New Kadampa Tradition (NKT-IKBU), located in the Inman Park neighborhood near the "
+            "Atlanta BeltLine. Offers weekly drop-in General Program classes: Sunday 'Advice for "
+            "a Happy Life' (10:30–11:45am), Tuesday 'Meditation for Beginners' (7–8pm), and "
+            "Wednesday 'Modern Buddhism and Meditation' (7–8:15pm). All sessions include guided "
+            "meditation and Buddhist teachings. Drop-in welcome."
+        ),
+    },
 }

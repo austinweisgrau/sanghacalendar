@@ -47,6 +47,7 @@ from ingestion.sources import houston as houston_sources
 from ingestion.sources import albuquerque as albuquerque_sources
 from ingestion.sources import miami as miami_sources
 from ingestion.sources import san_diego as san_diego_sources
+from ingestion.sources import atlanta as atlanta_sources
 
 log = logging.getLogger(__name__)
 
@@ -611,6 +612,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ San Diego iCal {feed_id} failed: {e}")
+
+    # Atlanta Phase 3 — Atlanta Shambhala (Cologne iCal center=196)
+    log.info("--- Atlanta Phase 3: iCal feeds ---")
+    for feed_id, feed_cfg in atlanta_sources.ICAL_FEEDS.items():
+        center = atlanta_sources.CENTERS[feed_cfg["center_id"]]
+        log.info(f"Fetching {center.name} (Atlanta iCal: {feed_id})...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=center.id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Atlanta iCal {feed_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

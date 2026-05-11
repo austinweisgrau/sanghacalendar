@@ -1029,6 +1029,67 @@ const SITS = [
     notes: "Short lunchtime meditation session, 12:15–12:45pm. Free drop-in; no experience needed.",
     source_url: "https://meditationinmiami.org", event_url: "https://meditationinmiami.org/calendar/",
   },
+
+  // ── Atlanta Soto Zen Center (ASZC) — 1167 Zonolite Pl NE, Suite C, Atlanta GA 30306
+  // Squarespace site (no iCal). Schedule from aszc.org.
+  {
+    org_id: "aszc", org_name: "Atlanta Soto Zen Center",
+    title: "Sunrise Sangha",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    time: { h: 6, m: 0 }, duration_min: 50,
+    address: "1167 Zonolite Pl NE, Suite C", city: "Atlanta", state: "GA", neighborhood: "Morningside / Lenox",
+    lat: 33.8060, lng: -84.3420, tradition: "zen", location_type: "hybrid",
+    notes: "Daily morning zazen at 6am, hybrid in-person + Zoom. All experience levels welcome.",
+    source_url: "https://www.aszc.org", event_url: "https://www.aszc.org/schedule",
+  },
+  {
+    org_id: "aszc", org_name: "Atlanta Soto Zen Center",
+    title: "Introduction to Zen Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1167 Zonolite Pl NE, Suite C", city: "Atlanta", state: "GA", neighborhood: "Morningside / Lenox",
+    lat: 33.8060, lng: -84.3420, tradition: "zen", location_type: "in-person",
+    notes: "Drop-in friendly evening zazen with instruction. 7–8:30pm in-person. No experience needed.",
+    source_url: "https://www.aszc.org", event_url: "https://www.aszc.org/schedule",
+  },
+  {
+    org_id: "aszc", org_name: "Atlanta Soto Zen Center",
+    title: "Sunday Morning Service",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 180,
+    address: "1167 Zonolite Pl NE, Suite C", city: "Atlanta", state: "GA", neighborhood: "Morningside / Lenox",
+    lat: 33.8060, lng: -84.3420, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday program 9am–noon: silent meditation (9–10:30am), chanting, and dharma talk. Hybrid.",
+    source_url: "https://www.aszc.org", event_url: "https://www.aszc.org/schedule",
+  },
+
+  // ── Kadampa Meditation Center Georgia (KMC Georgia) — 741 Edgewood Ave NE, Atlanta GA 30307
+  // Squarespace site (no iCal). Schedule from meditationingeorgia.org.
+  {
+    org_id: "kmc_georgia", org_name: "Kadampa Meditation Center Georgia",
+    title: "Advice for a Happy Life",
+    days: ["Sunday"], time: { h: 10, m: 30 }, duration_min: 75,
+    address: "741 Edgewood Ave NE", city: "Atlanta", state: "GA", neighborhood: "Inman Park / Old Fourth Ward",
+    lat: 33.7565, lng: -84.3560, tradition: "tibetan", location_type: "in-person",
+    notes: "General Program class. Guided meditation + Buddhist wisdom on lasting happiness. Drop-in $15.",
+    source_url: "https://www.meditationingeorgia.org", event_url: "https://www.meditationingeorgia.org/calendar",
+  },
+  {
+    org_id: "kmc_georgia", org_name: "Kadampa Meditation Center Georgia",
+    title: "Meditation for Beginners",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "741 Edgewood Ave NE", city: "Atlanta", state: "GA", neighborhood: "Inman Park / Old Fourth Ward",
+    lat: 33.7565, lng: -84.3560, tradition: "tibetan", location_type: "in-person",
+    notes: "Beginner-friendly drop-in meditation class. 7–8pm in-person. Drop-in $10.",
+    source_url: "https://www.meditationingeorgia.org", event_url: "https://www.meditationingeorgia.org/calendar",
+  },
+  {
+    org_id: "kmc_georgia", org_name: "Kadampa Meditation Center Georgia",
+    title: "Modern Buddhism and Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 75,
+    address: "741 Edgewood Ave NE", city: "Atlanta", state: "GA", neighborhood: "Inman Park / Old Fourth Ward",
+    lat: 33.7565, lng: -84.3560, tradition: "tibetan", location_type: "in-person",
+    notes: "General Program class. Guided meditation + dharma teaching on modern Buddhist topics. Drop-in $15.",
+    source_url: "https://www.meditationingeorgia.org", event_url: "https://www.meditationingeorgia.org/calendar",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
