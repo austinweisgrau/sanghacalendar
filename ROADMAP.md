@@ -1,18 +1,19 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-11 (heartbeat 22)_
+_Last updated: 2026-05-11 (heartbeat 23)_
 
 ## Current Status
 
 **✅ Live at [sangha-calendar.fly.dev](https://sangha-calendar.fly.dev)**
 
-- 500+ events in 30-day window (500 cap), 41+ organizations
-- 89 recurring sit definitions → 2016 instances seeded (as of heartbeat 18)
+- 500+ events in 30-day window (500 cap), 44+ organizations
+- 95+ recurring sit definitions → 2100+ instances seeded (as of heartbeat 23)
 - Map view live at `/map` — all centers pinned with tradition colors
-- 29+ center bio pages (centers.py)
+- 32+ center bio pages (centers.py)
 - City filter includes 11 cities (Alameda, Kensington, Pleasant Hill, Richmond, Tiburon + more)
-- Ingestion sources: 30 iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley, Tibet House US) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley, ZCNYC) + Squarespace JSON (Houston Zen Center)
-- Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin + NorCal Plum Village network + 13 Phase 3 metros
+- Subscribe button: filter-aware GCal / Apple Calendar / .ics popup (heartbeat 23)
+- Ingestion sources: 31 iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley, Tibet House US) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley, ZCNYC) + Squarespace JSON (Houston Zen Center)
+- Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin + NorCal Plum Village network + 17 Phase 3 metros
 
 ---
 
@@ -133,6 +134,7 @@ Candidate metros (rough priority):
 14. Albuquerque/Santa Fe 🔄 **Phase 3 NM live May 10** (2 centers) — see below
 15. Miami/South Florida 🔄 **Phase 3 Miami live May 10** (2 centers) — see below
 16. San Diego 🔄 **Phase 3 San Diego live May 11** (2 centers) — see below
+17. Atlanta 🔄 **Phase 3 Atlanta live May 11** (3 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -448,6 +450,26 @@ Center bios added to centers.py. `ingestion/sources/san_diego.py` created, wired
 **Skipped/deferred:**
 - Deer Park Monastery: retreat-focused, no public drop-in calendar
 - KMC San Diego Google Calendar: mostly special events (2018–present); regular sits seeded separately
+
+---
+
+### Atlanta Phase 3 — ✅ Live May 11 (3 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Atlanta Shambhala Meditation Center (1447 Church St, Decatur GA) | Cologne iCal server (shambhala-koeln.de center=196) — 372 events. Drop-in sits: Fri noon, Sun 10am, Tue 7pm. One Breath Group Mon/Wed/Thu. BIPOC + Queer Dharma groups. | ✅ Live — wired into coordinator + abraxis. |
+| Atlanta Soto Zen Center (1167 Zonolite Pl NE, Atlanta GA) | Recurring sits seeded — Squarespace site, no iCal | ✅ Live — Daily Sunrise Sangha 6am (hybrid), Wed 7pm Intro to Zen (in-person), Sun 9am Sunday Service (hybrid). Founded 1977. |
+| Kadampa Meditation Center Georgia (741 Edgewood Ave NE, Inman Park, Atlanta GA) | Recurring sits seeded — Squarespace site, no iCal | ✅ Live — Sun 10:30am, Tue 7pm Beginners, Wed 7pm Modern Buddhism. NKT tradition. |
+
+City filter: Georgia state + Atlanta + Decatur cities added to `_filters.html`.
+Center bios added to centers.py. `ingestion/sources/atlanta.py` created, wired into coordinator + abraxis.
+`sangha-seed-recurring.js`: 6 new sit defs (ASZC daily + 2 weekly; KMC Georgia 3 weekly).
+
+**Research notes (2026-05-11):**
+- Drepung Loseling Institute (1781 Dresden Dr, Atlanta GA 30319): major Tibetan Buddhist institution, connected to Emory CBCT. Drop-in: Sun 11am Beginner's Meditation, Thu 7pm public talk. Static HTML table calendar at `drepung.org/changing/calendar/current.htm`. **High priority for next heartbeat — needs monthly HTML scraper.**
+- Red Clay Sangha (3315 Chamblee Dunwoody Rd, Chamblee GA): multi-tradition (Theravada/Chan/Zen), very active. Sun 9am + 5pm, Thu 7:30pm. RSS feed at `redclaysangha.org/Calendar/RSS` — needs iCal investigation.
+- Atlanta Insight Meditation Community (atlinsight.org): small Squarespace community. Tue 6:30pm + Thu 8am Zoom satsang. Low priority.
+- Diamond Way Atlanta: no active center found.
 
 ---
 
