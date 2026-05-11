@@ -30,6 +30,7 @@ class SourceType(str, Enum):
     WORDPRESS = "wordpress"
     SQUARESPACE = "squarespace"
     STATIC_HTML = "static_html"
+    RSS_FEED = "rss_feed"
     MANUAL = "manual"
 
 

@@ -1865,4 +1865,49 @@ CENTERS = {
             "meditation and Buddhist teachings. Drop-in welcome."
         ),
     },
+    "red_clay_sangha": {
+        "id": "red_clay_sangha",
+        "name": "Red Clay Sangha",
+        "tradition": "pluralist",
+        "url": "https://www.redclaysangha.org",
+        "address": "3315 Chamblee Dunwoody Rd",
+        "city": "Chamblee",
+        "state": "GA",
+        "zip": "30341",
+        "neighborhood": "Chamblee / Atlanta metro",
+        "lat": 33.8895,
+        "lng": -84.2984,
+        "description": (
+            "Red Clay Sangha is a vibrant multi-tradition Buddhist community in Chamblee "
+            "(northeast Atlanta metro), drawing from Theravada, Chan/Zen, and Plum Village "
+            "(Thich Nhat Hanh) lineages. Weekly events include Sunday Morning Meditation, Talk "
+            "and Service (9am, hybrid in-person + Zoom) and the Peach Blossom Sangha's "
+            "Mindfulness Practice in the Plum Village Tradition (Sundays 5pm, hybrid). Also "
+            "hosts a monthly Insight Dialog Practice Group (3rd Monday 7pm, Zoom), day retreats, "
+            "and community events. Drop-in welcome at all sitting sessions."
+        ),
+    },
+    "drepung_loseling_atlanta": {
+        "id": "drepung_loseling_atlanta",
+        "name": "Drepung Loseling Institute",
+        "tradition": "tibetan",
+        "url": "https://www.drepung.org",
+        "address": "1781 Dresden Dr NE",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30319",
+        "neighborhood": "Brookhaven / Lynwood Hills",
+        "lat": 33.8505,
+        "lng": -84.3247,
+        "description": (
+            "Drepung Loseling Institute is one of the foremost Tibetan Buddhist institutions in "
+            "North America, established in Atlanta in 1988 with the blessing of His Holiness the "
+            "Dalai Lama. Home to a community of resident Gelugpa monks, the center is a partner "
+            "institution of Emory University's Contemplative Studies program and the Mind & Life "
+            "Institute. Open public programs include Sunday 11am Meditation (in-person + "
+            "livestream) and a Tuesday 7pm Public Talk series by resident geshe Ngawang Phende "
+            "(in-person + livestream). Monthly Tsog ceremonies, retreats, and visiting teacher "
+            "programs are also offered."
+        ),
+    },
 }

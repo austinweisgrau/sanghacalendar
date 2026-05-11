@@ -1090,6 +1090,20 @@ const SITS = [
     notes: "General Program class. Guided meditation + dharma teaching on modern Buddhist topics. Drop-in $15.",
     source_url: "https://www.meditationingeorgia.org", event_url: "https://www.meditationingeorgia.org/calendar",
   },
+
+  // ── Drepung Loseling Institute — 1781 Dresden Dr NE, Brookhaven, Atlanta GA 30319
+  // Major Gelugpa Tibetan institution, partner of Emory CBCT. Resident monks.
+  // Public sits: Sunday 11am Open Meditation (in-person + livestream).
+  // Tuesday 7pm Public Talk series handled by static HTML scraper.
+  {
+    org_id: "drepung_loseling_atlanta", org_name: "Drepung Loseling Institute",
+    title: "Sunday Meditation",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 60,
+    address: "1781 Dresden Dr NE", city: "Atlanta", state: "GA", neighborhood: "Brookhaven / Lynwood Hills",
+    lat: 33.8505, lng: -84.3247, tradition: "tibetan", location_type: "hybrid",
+    notes: "Weekly open meditation led by resident teacher. In-person at 1781 Dresden Dr NE + livestream. All welcome, no experience needed.",
+    source_url: "https://www.drepung.org", event_url: "https://www.drepung.org/changing/calendar/current.htm",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

@@ -20,6 +20,7 @@ from ingestion.feeds.ical_feed import fetch_feed
 from ingestion.scrapers.eventbrite import fetch_eventbrite_organizer
 from ingestion.scrapers.squarespace import fetch_squarespace_calendar
 from ingestion.scrapers.static_html import fetch_static_html_calendar
+from ingestion.scrapers.wild_apricot_rss import fetch_wild_apricot_rss
 
 from ingestion.sources.east_bay import CENTERS, EVENTBRITE_FEEDS, ICAL_FEEDS, STATIC_HTML_FEEDS
 from ingestion.sources import nyc as nyc_sources
@@ -639,9 +640,10 @@ def run_san_diego_phase3() -> list[Event]:
 
 
 def run_atlanta_phase3() -> list[Event]:
-    """Phase 3 Atlanta: Atlanta Shambhala (Cologne iCal center=196)."""
+    """Phase 3 Atlanta: Shambhala (Cologne iCal), Red Clay Sangha (RSS), Drepung Loseling (HTML)."""
     all_events: list[Event] = []
 
+    # Atlanta Shambhala — Cologne iCal
     for feed_id, feed_cfg in atlanta_sources.ICAL_FEEDS.items():
         center = atlanta_sources.CENTERS[feed_cfg["center_id"]]
         log.info(f"Fetching {center.name} (Atlanta iCal: {feed_id})...")
@@ -663,6 +665,54 @@ def run_atlanta_phase3() -> list[Event]:
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Atlanta iCal {feed_id} failed: {e}")
+
+    # Red Clay Sangha — Wild Apricot RSS
+    for feed_id, feed_cfg in atlanta_sources.RSS_FEEDS.items():
+        center = atlanta_sources.CENTERS[feed_cfg["center_id"]]
+        log.info(f"Fetching {center.name} (Wild Apricot RSS: {feed_id})...")
+        try:
+            events = fetch_wild_apricot_rss(
+                url=feed_cfg["url"],
+                org_id=center.id,
+                org_name=center.name,
+                tradition=center.tradition,
+                title_keywords=feed_cfg["title_keywords"],
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                duration_min=feed_cfg.get("duration_min", 90),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Atlanta RSS {feed_id} failed: {e}")
+
+    # Drepung Loseling — static HTML monthly calendar
+    for feed_id, feed_cfg in atlanta_sources.STATIC_HTML_FEEDS.items():
+        center = atlanta_sources.CENTERS[feed_cfg["center_id"]]
+        log.info(f"Fetching {center.name} (static HTML: {feed_id})...")
+        try:
+            events = fetch_static_html_calendar(
+                url=feed_cfg["url"],
+                org_id=center.id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Atlanta static HTML {feed_id} failed: {e}")
 
     return all_events
 
