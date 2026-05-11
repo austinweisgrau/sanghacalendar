@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-11 (heartbeat 23)_
+_Last updated: 2026-05-11 (heartbeat 24)_
 
 ## Current Status
 
@@ -453,21 +453,24 @@ Center bios added to centers.py. `ingestion/sources/san_diego.py` created, wired
 
 ---
 
-### Atlanta Phase 3 — ✅ Live May 11 (3 centers)
+### Atlanta Phase 3 — ✅ Live May 11 (5 centers, heartbeat 24)
 
 | Center | Approach | Status |
 |--------|----------|--------|
 | Atlanta Shambhala Meditation Center (1447 Church St, Decatur GA) | Cologne iCal server (shambhala-koeln.de center=196) — 372 events. Drop-in sits: Fri noon, Sun 10am, Tue 7pm. One Breath Group Mon/Wed/Thu. BIPOC + Queer Dharma groups. | ✅ Live — wired into coordinator + abraxis. |
 | Atlanta Soto Zen Center (1167 Zonolite Pl NE, Atlanta GA) | Recurring sits seeded — Squarespace site, no iCal | ✅ Live — Daily Sunrise Sangha 6am (hybrid), Wed 7pm Intro to Zen (in-person), Sun 9am Sunday Service (hybrid). Founded 1977. |
 | Kadampa Meditation Center Georgia (741 Edgewood Ave NE, Inman Park, Atlanta GA) | Recurring sits seeded — Squarespace site, no iCal | ✅ Live — Sun 10:30am, Tue 7pm Beginners, Wed 7pm Modern Buddhism. NKT tradition. |
+| Red Clay Sangha (3315 Chamblee Dunwoody Rd, Chamblee GA) | **Wild Apricot RSS scraper** — new `ingestion/scrapers/wild_apricot_rss.py`. Multi-tradition (Theravada/Chan/Plum Village). 91 events from RSS feed (243 total items). | ✅ Live heartbeat 24 — Sunday Morning Meditation 9am, Plum Village Tradition 5pm, Insight Dialog 3rd Mon 7pm. |
+| Drepung Loseling Institute (1781 Dresden Dr NE, Brookhaven, Atlanta GA) | LLM-assisted static HTML scraper (`drepung.org/changing/calendar/current.htm`) + recurring Sun 11am seeded. Major Gelugpa institution, Emory CBCT partner, resident monks. | ✅ Live heartbeat 24 — Sun 11am Meditation seeded; monthly HTML scraper for special events. |
 
-City filter: Georgia state + Atlanta + Decatur cities added to `_filters.html`.
-Center bios added to centers.py. `ingestion/sources/atlanta.py` created, wired into coordinator + abraxis.
-`sangha-seed-recurring.js`: 6 new sit defs (ASZC daily + 2 weekly; KMC Georgia 3 weekly).
+City filter: Georgia state + Atlanta + Chamblee + Decatur cities in `_filters.html`.
+Center bios added to centers.py for all 5 Atlanta centers.
+`ingestion/sources/atlanta.py`: RSS_FEEDS + STATIC_HTML_FEEDS added.
+`ingestion/scrapers/wild_apricot_rss.py`: new generic Wild Apricot RSS scraper.
+`data/schemas/event.py`: SourceType.RSS_FEED added.
+`sangha-seed-recurring.js`: Drepung Loseling Atlanta Sun 11am added (now 96 sit defs).
 
-**Research notes (2026-05-11):**
-- Drepung Loseling Institute (1781 Dresden Dr, Atlanta GA 30319): major Tibetan Buddhist institution, connected to Emory CBCT. Drop-in: Sun 11am Beginner's Meditation, Thu 7pm public talk. Static HTML table calendar at `drepung.org/changing/calendar/current.htm`. **High priority for next heartbeat — needs monthly HTML scraper.**
-- Red Clay Sangha (3315 Chamblee Dunwoody Rd, Chamblee GA): multi-tradition (Theravada/Chan/Zen), very active. Sun 9am + 5pm, Thu 7:30pm. RSS feed at `redclaysangha.org/Calendar/RSS` — needs iCal investigation.
+**Skipped/deferred:**
 - Atlanta Insight Meditation Community (atlinsight.org): small Squarespace community. Tue 6:30pm + Thu 8am Zoom satsang. Low priority.
 - Diamond Way Atlanta: no active center found.
 
