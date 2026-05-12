@@ -1104,6 +1104,117 @@ const SITS = [
     notes: "Weekly open meditation led by resident teacher. In-person at 1781 Dresden Dr NE + livestream. All welcome, no experience needed.",
     source_url: "https://www.drepung.org", event_url: "https://www.drepung.org/changing/calendar/current.htm",
   },
+
+  // ── Philadelphia ────────────────────────────────────────────────────────────────────────
+  // Phase 3 Philadelphia — added 2026-05-12.
+  // Shambhala iCal (center=210) is down (522); seeding recurring sits instead.
+
+  // ── Shambhala Meditation Center of Philadelphia — 2030 Sansom St, Center City, PA 19103
+  // shambhala-koeln.de/ical.php?center=210 — returning 522 as of 2026-05-12. Monitor.
+  // Schedule from philadelphia.shambhala.org: Sun 10am drop-in sit, Thu 6pm drop-in sit.
+  {
+    org_id: "shambhala_philadelphia", org_name: "Shambhala Meditation Center of Philadelphia",
+    title: "Sunday Sitting Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "2030 Sansom St", city: "Philadelphia", state: "PA", neighborhood: "Center City West / Rittenhouse Square",
+    lat: 39.9518, lng: -75.1748, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly drop-in sitting meditation. In-person. First Sunday of each month is extended: 9:30am–noon.",
+    source_url: "https://philadelphia.shambhala.org", event_url: "https://philadelphia.shambhala.org/monthly-calendar/",
+  },
+  {
+    org_id: "shambhala_philadelphia", org_name: "Shambhala Meditation Center of Philadelphia",
+    title: "Thursday Sitting Meditation",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "2030 Sansom St", city: "Philadelphia", state: "PA", neighborhood: "Center City West / Rittenhouse Square",
+    lat: 39.9518, lng: -75.1748, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly drop-in sitting meditation. In-person.",
+    source_url: "https://philadelphia.shambhala.org", event_url: "https://philadelphia.shambhala.org/monthly-calendar/",
+  },
+
+  // ── Kadampa Meditation Center Philadelphia — 47-49 N 2nd St, Old City, PA 19106
+  // Wix site (meditationinphiladelphia.org) — no iCal. Schedule from website.
+  // Very active daily program; seeding Mon/Wed/Thu evenings and Sunday morning.
+  {
+    org_id: "kadampa_philadelphia", org_name: "Kadampa Meditation Center Philadelphia",
+    title: "Monday Evening Meditation",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 120,
+    address: "47-49 N 2nd St", city: "Philadelphia", state: "PA", neighborhood: "Old City",
+    lat: 39.9504, lng: -75.1431, tradition: "tibetan", location_type: "in-person",
+    notes: "General Program class. Guided meditation + Buddhist teachings. Drop-in welcome.",
+    source_url: "https://www.meditationinphiladelphia.org", event_url: "https://www.meditationinphiladelphia.org/calendar",
+  },
+  {
+    org_id: "kadampa_philadelphia", org_name: "Kadampa Meditation Center Philadelphia",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 18, m: 30 }, duration_min: 120,
+    address: "47-49 N 2nd St", city: "Philadelphia", state: "PA", neighborhood: "Old City",
+    lat: 39.9504, lng: -75.1431, tradition: "tibetan", location_type: "in-person",
+    notes: "General Program class. Guided meditation + Buddhist teachings. Drop-in welcome.",
+    source_url: "https://www.meditationinphiladelphia.org", event_url: "https://www.meditationinphiladelphia.org/calendar",
+  },
+  {
+    org_id: "kadampa_philadelphia", org_name: "Kadampa Meditation Center Philadelphia",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 120,
+    address: "47-49 N 2nd St", city: "Philadelphia", state: "PA", neighborhood: "Old City",
+    lat: 39.9504, lng: -75.1431, tradition: "tibetan", location_type: "in-person",
+    notes: "General Program class. Guided meditation + Buddhist teachings. Drop-in welcome.",
+    source_url: "https://www.meditationinphiladelphia.org", event_url: "https://www.meditationinphiladelphia.org/calendar",
+  },
+  {
+    org_id: "kadampa_philadelphia", org_name: "Kadampa Meditation Center Philadelphia",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 10, m: 30 }, duration_min: 90,
+    address: "47-49 N 2nd St", city: "Philadelphia", state: "PA", neighborhood: "Old City",
+    lat: 39.9504, lng: -75.1431, tradition: "tibetan", location_type: "in-person",
+    notes: "General Program class. Guided meditation + Buddhist teachings. Drop-in welcome.",
+    source_url: "https://www.meditationinphiladelphia.org", event_url: "https://www.meditationinphiladelphia.org/calendar",
+  },
+
+  // ── Zen Center of Philadelphia — 4904 Cedar Ave, West Philadelphia, PA 19143
+  // Ordinary Mind Zen School (Charlotte Joko Beck lineage). No public iCal.
+  // Google Calendar embedded via Simple Calendar WP plugin; calendar ID not extractable.
+  // Schedule from zencenterphiladelphia.net: Sun 10am (hybrid), Wed 7pm (hybrid).
+  {
+    org_id: "zen_center_philadelphia", org_name: "Zen Center of Philadelphia",
+    title: "Sunday Morning Program",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "4904 Cedar Ave", city: "Philadelphia", state: "PA", neighborhood: "Cedar Park / West Philadelphia",
+    lat: 39.9476, lng: -75.2277, tradition: "zen", location_type: "hybrid",
+    notes: "Weekly zazen and dharma talk. Hybrid in-person + Zoom. Drop-in welcome; sliding scale/donation.",
+    source_url: "https://www.zencenterphiladelphia.net", event_url: "https://www.zencenterphiladelphia.net/zcp-calendar/",
+  },
+  {
+    org_id: "zen_center_philadelphia", org_name: "Zen Center of Philadelphia",
+    title: "Wednesday Evening Sitting",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "4904 Cedar Ave", city: "Philadelphia", state: "PA", neighborhood: "Cedar Park / West Philadelphia",
+    lat: 39.9476, lng: -75.2277, tradition: "zen", location_type: "hybrid",
+    notes: "Weekly zazen. Hybrid in-person + Zoom. Drop-in welcome; donation-based.",
+    source_url: "https://www.zencenterphiladelphia.net", event_url: "https://www.zencenterphiladelphia.net/zcp-calendar/",
+  },
+
+  // ── Chenrezig Tibetan Buddhist Center — 954 N Marshall St, Northern Liberties, PA 19123
+  // Founded 1989 by Lama Losang Samten (Namgyal Monastery lineage). Non-sectarian Tibetan.
+  // Wix site (tibetanbuddhist.org) — no iCal. Schedule from website.
+  {
+    org_id: "chenrezig_philadelphia", org_name: "Chenrezig Tibetan Buddhist Center",
+    title: "Sunday Sangha",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "954 N Marshall St", city: "Philadelphia", state: "PA", neighborhood: "Northern Liberties / Callowhill",
+    lat: 39.9633, lng: -75.1504, tradition: "tibetan", location_type: "hybrid",
+    notes: "Weekly gathering: guided meditation, teachings, and community. Hybrid in-person + Zoom. Center opens 9am for self-guided practice. Drop-in welcome.",
+    source_url: "https://www.tibetanbuddhist.org", event_url: "https://www.tibetanbuddhist.org/calendar",
+  },
+  {
+    org_id: "chenrezig_philadelphia", org_name: "Chenrezig Tibetan Buddhist Center",
+    title: "Thursday Green Tara Puja",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "954 N Marshall St", city: "Philadelphia", state: "PA", neighborhood: "Northern Liberties / Callowhill",
+    lat: 39.9633, lng: -75.1504, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Tibetan Buddhist puja ceremony. In-person. Lama Losang Samten lineage. Drop-in welcome.",
+    source_url: "https://www.tibetanbuddhist.org", event_url: "https://www.tibetanbuddhist.org/calendar",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

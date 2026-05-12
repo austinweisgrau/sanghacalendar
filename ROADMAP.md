@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-11 (heartbeat 24)_
+_Last updated: 2026-05-12 (heartbeat 25)_
 
 ## Current Status
 
@@ -134,7 +134,8 @@ Candidate metros (rough priority):
 14. Albuquerque/Santa Fe 🔄 **Phase 3 NM live May 10** (2 centers) — see below
 15. Miami/South Florida 🔄 **Phase 3 Miami live May 10** (2 centers) — see below
 16. San Diego 🔄 **Phase 3 San Diego live May 11** (2 centers) — see below
-17. Atlanta 🔄 **Phase 3 Atlanta live May 11** (3 centers) — see below
+17. Atlanta 🔄 **Phase 3 Atlanta live May 11** (5 centers) — see below
+18. Philadelphia 🔄 **Phase 3 Philadelphia live May 12** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -473,6 +474,35 @@ Center bios added to centers.py for all 5 Atlanta centers.
 **Skipped/deferred:**
 - Atlanta Insight Meditation Community (atlinsight.org): small Squarespace community. Tue 6:30pm + Thu 8am Zoom satsang. Low priority.
 - Diamond Way Atlanta: no active center found.
+
+---
+
+### Philadelphia Phase 3 — ✅ Live May 12 (4 centers)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Shambhala Meditation Center of Philadelphia (2030 Sansom St, Center City) | Recurring sits seeded — Cologne iCal (center=210) returning 522 as of 2026-05-12. Sun 10am, Thu 6pm in-person. | ✅ Live heartbeat 25 |
+| Kadampa Meditation Center Philadelphia (47-49 N 2nd St, Old City) | Recurring sits seeded — Wix site, no iCal. Mon/Wed/Thu 6:30pm, Sun 10:30am in-person. | ✅ Live heartbeat 25 |
+| Zen Center of Philadelphia (4904 Cedar Ave, West Philadelphia) | Recurring sits seeded — WordPress + Simple Calendar plugin (Google Cal embedded; no extractable iCal). Sun 10am, Wed 7pm hybrid. Ordinary Mind Zen School lineage. | ✅ Live heartbeat 25 |
+| Chenrezig Tibetan Buddhist Center (954 N Marshall St, Northern Liberties) | Recurring sits seeded — Wix site, no iCal. Sun 10am hybrid, Thu 7pm Green Tara Puja in-person. Founded 1989 by Lama Losang Samten. | ✅ Live heartbeat 25 |
+
+City filter: Pennsylvania state + Philadelphia city added to `_filters.html`.
+Center bios added to centers.py for all 4 centers.
+`ingestion/sources/philadelphia.py` created (CENTERS registry + commented-out iCal entry for Shambhala).
+`sangha-seed-recurring.js`: 10 new sit defs (Shambhala ×2, Kadampa ×4, ZCP ×2, Chenrezig ×2).
+
+**Research notes (2026-05-12):**
+- Shambhala Philadelphia iCal (center=210): 522 error. Will re-activate when Cologne server recovers.
+- Kadampa Philadelphia: extremely active (daily program). Wix site; no iCal. Meetup presence possible future scrape.
+- Zen Center of Philadelphia: Google Calendar via Simple Calendar WP plugin. `data-calendar-id="6098"` is internal WP ID; Google Calendar ID not exposed in HTML. Monitor for public iCal workaround.
+- Nalandabodhi Philadelphia: WordPress iCal exists but returns empty VCALENDAR. No fixed address. Deferred.
+- Delaware Valley Insight Meditation: sitting groups at home locations/community spaces. Deferred.
+- Heart Sangha: sporadic Sunday Sangha (not weekly). Deferred.
+
+**Skipped/deferred:**
+- Nalandabodhi Philadelphia: empty iCal, no stable address — monitor
+- Heart Sangha: sporadic programming — skip for now
+- Delaware Valley Insight: peer-led home sitting groups, no stable venue
 
 ---
 

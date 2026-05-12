@@ -1910,4 +1910,90 @@ CENTERS = {
             "programs are also offered."
         ),
     },
+    # ── Philadelphia ──────────────────────────────────────────────────────────
+    "shambhala_philadelphia": {
+        "id": "shambhala_philadelphia",
+        "name": "Shambhala Meditation Center of Philadelphia",
+        "tradition": "tibetan",
+        "url": "https://philadelphia.shambhala.org",
+        "address": "2030 Sansom St",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zip": "19103",
+        "neighborhood": "Center City West / Rittenhouse Square",
+        "lat": 39.9518,
+        "lng": -75.1748,
+        "description": (
+            "Shambhala Meditation Center of Philadelphia is a contemplative community in the "
+            "Shambhala lineage of Chögyam Trungpa Rinpoche, located in Center City near "
+            "Rittenhouse Square. Offers regular drop-in Sunday Sitting Meditation (10–11am, "
+            "first Sunday extended 9:30am–noon) and Thursday Sitting Meditation (6–7pm). "
+            "Also hosts Monday Night sangha, Shambhala Training weekends, and dharma study "
+            "groups. All are welcome; no experience required."
+        ),
+    },
+    "kadampa_philadelphia": {
+        "id": "kadampa_philadelphia",
+        "name": "Kadampa Meditation Center Philadelphia",
+        "tradition": "tibetan",
+        "url": "https://www.meditationinphiladelphia.org",
+        "address": "47-49 N 2nd St",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zip": "19106",
+        "neighborhood": "Old City",
+        "lat": 39.9504,
+        "lng": -75.1431,
+        "description": (
+            "Kadampa Meditation Center Philadelphia (KMC Philadelphia) is a Tibetan Buddhist "
+            "center in the New Kadampa Tradition (NKT-IKBU), located in Old City Philadelphia "
+            "steps from the Delaware waterfront. One of the most active meditation centers in "
+            "the city, with classes nearly every day of the week — Monday, Wednesday, and "
+            "Thursday evenings (6:30pm), Tuesday (5pm), Friday mornings (8am), and Sunday "
+            "mornings (10:30am). All sessions include guided meditation and Buddhist teachings. "
+            "Drop-in fee; free for members. No experience necessary."
+        ),
+    },
+    "zen_center_philadelphia": {
+        "id": "zen_center_philadelphia",
+        "name": "Zen Center of Philadelphia",
+        "tradition": "zen",
+        "url": "https://www.zencenterphiladelphia.net",
+        "address": "4904 Cedar Ave",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zip": "19143",
+        "neighborhood": "Cedar Park / West Philadelphia",
+        "lat": 39.9476,
+        "lng": -75.2277,
+        "description": (
+            "Zen Center of Philadelphia (ZCP) is a Zen Buddhist community in the Ordinary "
+            "Mind Zen School lineage of Charlotte Joko Beck. Located in the Cedar Park "
+            "neighborhood of West Philadelphia. Offers weekly public zazen: Sunday Morning "
+            "Program (10am–noon, hybrid in-person + Zoom), Wednesday Evening Sitting "
+            "(7–8pm, hybrid), and daily online sits Mon–Fri 7–8am. Monthly sesshin retreats. "
+            "Drop-in welcome; sliding scale/donation-based."
+        ),
+    },
+    "chenrezig_philadelphia": {
+        "id": "chenrezig_philadelphia",
+        "name": "Chenrezig Tibetan Buddhist Center",
+        "tradition": "tibetan",
+        "url": "https://www.tibetanbuddhist.org",
+        "address": "954 N Marshall St",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zip": "19123",
+        "neighborhood": "Northern Liberties / Callowhill",
+        "lat": 39.9633,
+        "lng": -75.1504,
+        "description": (
+            "Chenrezig Tibetan Buddhist Center of Philadelphia is a non-sectarian Tibetan "
+            "Buddhist center founded in 1989 by Lama Losang Samten, a former monk of the "
+            "Dalai Lama's Namgyal Monastery. One of the oldest Tibetan Buddhist centers in "
+            "Philadelphia. Weekly Sunday Sangha (10–11:30am, hybrid in-person + Zoom, center "
+            "opens 9am for self-guided practice) and Thursday Green Tara Puja (7pm, in-person). "
+            "Monthly Medicine Buddha and other ceremonial programs. Open to all; drop-in welcome."
+        ),
+    },
 }
