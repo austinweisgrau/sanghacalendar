@@ -1306,6 +1306,85 @@ const SITS = [
     notes: "Daily online meditation and chanting via Zoom (except Wednesday and Friday). Free, open to all.",
     source_url: "https://www.nevadabuddhisttemple.org", event_url: "https://www.nevadabuddhisttemple.org",
   },
+
+  // ── Nashville, TN — Phase 3 (heartbeat 27)
+
+  // ── One Dharma Nashville — 530 26th Ave N, Nashville, TN 37209
+  // Insight Meditation / Vipassana. Teacher: Lisa Ernst. Germantown/Midtown.
+  {
+    org_id: "one_dharma_nashville", org_name: "One Dharma Nashville",
+    title: "Monday Evening Meditation",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "530 26th Ave N", city: "Nashville", state: "TN", neighborhood: "Germantown / Midtown",
+    lat: 36.1650, lng: -86.8149, tradition: "theravada", location_type: "hybrid",
+    notes: "Guided meditation, dharma talk, discussion. In-person + Zoom. All levels welcome. Suggested donation $10-$15.",
+    source_url: "https://onedharmanashville.com", event_url: "https://onedharmanashville.com/events/",
+  },
+
+  // ── Wild Heart Meditation Center — 3123 Gallatin Pike, Nashville, TN 37216
+  // Secular / multi-tradition. East Nashville, co-located with Nashville Zen Center.
+  // Dharma Punx / Against the Stream lineage. Drop-in, by donation.
+  {
+    org_id: "wild_heart_meditation", org_name: "Wild Heart Meditation Center",
+    title: "Wednesday Dharma & Discussion",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3123 Gallatin Pike", city: "Nashville", state: "TN", neighborhood: "East Nashville",
+    lat: 36.2038, lng: -86.7178, tradition: "theravada", location_type: "in-person",
+    notes: "Dharma talk and group discussion following meditation. Drop-in, by donation.",
+    source_url: "https://www.wildheartmeditationcenter.org", event_url: "https://www.wildheartmeditationcenter.org/weeklyprogramming",
+  },
+  {
+    org_id: "wild_heart_meditation", org_name: "Wild Heart Meditation Center",
+    title: "Friday Dharma & Discussion",
+    days: ["Friday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3123 Gallatin Pike", city: "Nashville", state: "TN", neighborhood: "East Nashville",
+    lat: 36.2038, lng: -86.7178, tradition: "theravada", location_type: "in-person",
+    notes: "Dharma talk and group discussion following meditation. Drop-in, by donation.",
+    source_url: "https://www.wildheartmeditationcenter.org", event_url: "https://www.wildheartmeditationcenter.org/weeklyprogramming",
+  },
+  {
+    org_id: "wild_heart_meditation", org_name: "Wild Heart Meditation Center",
+    title: "Sunday Dharma & Discussion",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 90,
+    address: "3123 Gallatin Pike", city: "Nashville", state: "TN", neighborhood: "East Nashville",
+    lat: 36.2038, lng: -86.7178, tradition: "theravada", location_type: "in-person",
+    notes: "Morning dharma talk and discussion. Rotating format by Sunday of month. Drop-in, by donation.",
+    source_url: "https://www.wildheartmeditationcenter.org", event_url: "https://www.wildheartmeditationcenter.org/weeklyprogramming",
+  },
+
+  // ── Nashville Zen Center — 3123 Gallatin Pike, Nashville, TN 37216
+  // Soto Zen (Silent Thunder Order, lineage of Zengaku Soyu Matsuoka).
+  // Co-located with Wild Heart Meditation Center.
+  {
+    org_id: "nashville_zen_center", org_name: "Nashville Zen Center",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "3123 Gallatin Pike", city: "Nashville", state: "TN", neighborhood: "East Nashville",
+    lat: 36.2038, lng: -86.7178, tradition: "zen", location_type: "in-person",
+    notes: "Zazen + instruction. Newcomers arrive at 6:30pm for orientation. Open to all.",
+    source_url: "https://nashvillezencenter.org", event_url: "https://nashvillezencenter.org",
+  },
+  {
+    org_id: "nashville_zen_center", org_name: "Nashville Zen Center",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 7, m: 0 }, duration_min: 60,
+    address: "3123 Gallatin Pike", city: "Nashville", state: "TN", neighborhood: "East Nashville",
+    lat: 36.2038, lng: -86.7178, tradition: "zen", location_type: "in-person",
+    notes: "Early morning zazen. Open to all, drop-in welcome.",
+    source_url: "https://nashvillezencenter.org", event_url: "https://nashvillezencenter.org",
+  },
+
+  // ── Padmasambhava Buddhist Center of Tennessee — 419 East Iris Drive, Nashville, TN 37204
+  // Tibetan (Nyingma/Dzogchen). PBC network, founded 1990. 12South neighborhood.
+  {
+    org_id: "pbc_tennessee", org_name: "Padmasambhava Buddhist Center of Tennessee",
+    title: "Sunday Calm Abiding Meditation",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 90,
+    address: "419 East Iris Drive", city: "Nashville", state: "TN", neighborhood: "12South / Waverly-Belmont",
+    lat: 36.1388, lng: -86.7903, tradition: "tibetan", location_type: "in-person",
+    notes: "Shamatha / calm abiding meditation open to all. No Buddhist background required. Free.",
+    source_url: "https://www.pbc-tn.org", event_url: "https://www.pbc-tn.org/schedule-1",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

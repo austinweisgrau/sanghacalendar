@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-12 (heartbeat 26)_
+_Last updated: 2026-05-12 (heartbeat 27)_
 
 ## Current Status
 
@@ -137,6 +137,7 @@ Candidate metros (rough priority):
 17. Atlanta 🔄 **Phase 3 Atlanta live May 11** (5 centers) — see below
 18. Philadelphia 🔄 **Phase 3 Philadelphia live May 12** (4 centers) — see below
 19. Las Vegas 🔄 **Phase 3 Las Vegas live May 12** (4 centers) — see below
+20. Nashville 🔄 **Phase 3 Nashville live May 12** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -532,6 +533,34 @@ Center bios added to centers.py for all 4 centers.
 - Kadampa LV: appears closed, redirecting to Arizona center
 - Bhodhiyana: site offline — monitor for recovery
 - Lohan Center: unusual tradition classification; deferred
+
+---
+
+### Nashville Phase 3 — ✅ Live May 12 (4 centers, heartbeat 27)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| One Dharma Nashville (530 26th Ave N, Germantown, Nashville TN 37209) | Recurring sits seeded — WordPress iCal exists but contains only out-of-area retreats; Mon 7pm in-person+Zoom sit seeded. Insight/Vipassana. Teacher: Lisa Ernst. | ✅ Live heartbeat 27 |
+| Wild Heart Meditation Center (3123 Gallatin Pike, East Nashville TN 37216) | Recurring sits seeded — Squarespace, no site-wide iCal. Wed 7pm, Fri 7pm, Sun 9am. Secular/multi-tradition (Dharma Punx lineage). Co-located with Nashville Zen Center. | ✅ Live heartbeat 27 |
+| Nashville Zen Center (3123 Gallatin Pike, East Nashville TN 37216) | Recurring sits seeded — Squarespace, no iCal. Tue 7pm + Sat 7am zazen. Soto Zen (Silent Thunder Order, Matsuoka lineage). | ✅ Live heartbeat 27 |
+| Padmasambhava Buddhist Center of Tennessee (419 East Iris Drive, 12South Nashville TN 37204) | Recurring sit seeded — Wix, no iCal. Sun 9:30am Calm Abiding Meditation. Tibetan (Nyingma/Dzogchen). Founded 1990, oldest Tibetan center in the region. | ✅ Live heartbeat 27 |
+
+Tennessee state + Nashville city added to `_filters.html`.
+Center bios added to centers.py for all 4 centers.
+`ingestion/sources/nashville.py` created (CENTERS registry).
+`sangha-seed-recurring.js`: 7 new sit defs (One Dharma ×1, Wild Heart ×3, NZC ×2, PBC-TN ×1).
+
+**Research notes (2026-05-12):**
+- One Dharma Nashville iCal (onedharmanashville.com/events/?ical=1): Active feed but only retreat events — all filtered out by filter_to_sits. Regular Monday sits seeded as recurring.
+- Wild Heart: Squarespace with per-event ICS links. No site-wide feed. Rich schedule (also Recovery Dharma, Queer Sangha, POC Sangha) — only core weekly sits seeded.
+- Nashville Zen Center: Squarespace, static schedule page only.
+- PBC-TN: Wix site. No iCal. Sun 9:30am confirmed from website.
+- Snow Lion Nashville (nashvillemeditates.org): Site unreachable — deferred until recovery.
+- Sitagu Buddhist Monastery (99 Lyle Lane): Burmese Theravada monastery — primarily devotional, no structured public sit calendar — skip.
+
+**Skipped/deferred:**
+- Snow Lion Nashville (Shambhala-derived): site down — monitor for recovery
+- Sitagu Buddhist Monastery: devotional focus, no public sit calendar
 
 ---
 

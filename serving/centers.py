@@ -2083,4 +2083,96 @@ CENTERS = {
             "All programs are free and open to the public."
         ),
     },
+    # ---------------------------------------------------------------------------
+    # Nashville, TN — Phase 3 (heartbeat 27)
+    # ---------------------------------------------------------------------------
+    "one_dharma_nashville": {
+        "id": "one_dharma_nashville",
+        "name": "One Dharma Nashville",
+        "tradition": "theravada",
+        "url": "https://onedharmanashville.com",
+        "address": "530 26th Ave N",
+        "city": "Nashville",
+        "state": "TN",
+        "zip": "37209",
+        "lat": 36.1650,
+        "lng": -86.8149,
+        "neighborhood": "Germantown / Midtown",
+        "bio": (
+            "One Dharma Nashville is an Insight Meditation community guided by teacher "
+            "Lisa Ernst, offering weekly drop-in sits in the Vipassana/Theravada tradition. "
+            "Monday Evening Meditation (7–8:30pm, hybrid in-person at 530 26th Ave N + Zoom) "
+            "includes guided meditation, dharma talk, and discussion — all levels welcome, "
+            "suggested donation $10–$15. Also Friday morning online sit (7:30–8am Zoom) and "
+            "1st & 3rd Thursday sits in Franklin, TN (The Factory at Franklin, 230 Franklin Rd). "
+            "No experience required."
+        ),
+    },
+    "wild_heart_meditation": {
+        "id": "wild_heart_meditation",
+        "name": "Wild Heart Meditation Center",
+        "tradition": "theravada",
+        "url": "https://www.wildheartmeditationcenter.org",
+        "address": "3123 Gallatin Pike",
+        "city": "Nashville",
+        "state": "TN",
+        "zip": "37216",
+        "lat": 36.2038,
+        "lng": -86.7178,
+        "neighborhood": "East Nashville",
+        "bio": (
+            "Wild Heart Meditation Center is an inclusive, secular meditation community "
+            "in East Nashville, rooted in the Dharma Punx and Against the Stream lineage. "
+            "Co-located with Nashville Zen Center at 3123 Gallatin Pike. Weekly in-person "
+            "sessions include Wednesday Dharma & Discussion (7–8:30pm), Friday Dharma & "
+            "Discussion (7–8:30pm), and Sunday Dharma & Discussion (9–10:30am). Also "
+            "hosts Monday Recovery Dharma (7pm), Tuesday POC Sangha (1st & 3rd Tue), "
+            "Thursday Queer Sangha (7pm), and daily morning online sits. All drop-in, "
+            "no registration, by donation."
+        ),
+    },
+    "nashville_zen_center": {
+        "id": "nashville_zen_center",
+        "name": "Nashville Zen Center",
+        "tradition": "zen",
+        "url": "https://nashvillezencenter.org",
+        "address": "3123 Gallatin Pike",
+        "city": "Nashville",
+        "state": "TN",
+        "zip": "37216",
+        "lat": 36.2038,
+        "lng": -86.7178,
+        "neighborhood": "East Nashville",
+        "bio": (
+            "Nashville Zen Center is a Soto Zen community in the Silent Thunder Order, "
+            "in the lineage of Zengaku Soyu Matsuoka, affiliated with Atlanta Soto Zen "
+            "Center. Located in East Nashville, sharing space with Wild Heart Meditation "
+            "Center. Weekly zazen: Tuesday 7pm (newcomers arrive at 6:30pm for orientation) "
+            "and Saturday 7am. Instruction provided for beginners; no prior experience "
+            "needed. Open to all."
+        ),
+    },
+    "pbc_tennessee": {
+        "id": "pbc_tennessee",
+        "name": "Padmasambhava Buddhist Center of Tennessee",
+        "tradition": "tibetan",
+        "url": "https://www.pbc-tn.org",
+        "address": "419 East Iris Drive",
+        "city": "Nashville",
+        "state": "TN",
+        "zip": "37204",
+        "lat": 36.1388,
+        "lng": -86.7903,
+        "neighborhood": "12South / Waverly-Belmont",
+        "bio": (
+            "Padmasambhava Buddhist Center of Tennessee (PBC-TN) is a Tibetan Buddhist "
+            "center in the Nyingma tradition (Dzogchen), part of the international PBC "
+            "network founded by Venerable Khenchen Palden Sherab Rinpoche. One of the "
+            "oldest and largest Tibetan dharma centers in the South, established in 1990. "
+            "Home practice at Yeshe Tsogyal Temple in Nashville's 12South neighborhood. "
+            "Weekly Sunday Calm Abiding Meditation (9:30–11am) is open to all — no "
+            "Buddhist background required. Teachings include Dzogchen, Vajrayana "
+            "practices, and seasonal retreats."
+        ),
+    },
 }
