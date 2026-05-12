@@ -1215,6 +1215,97 @@ const SITS = [
     notes: "Weekly Tibetan Buddhist puja ceremony. In-person. Lama Losang Samten lineage. Drop-in welcome.",
     source_url: "https://www.tibetanbuddhist.org", event_url: "https://www.tibetanbuddhist.org/calendar",
   },
+
+  // ── Chaiya Meditation Monastery — 7925 Virtue Ct, Las Vegas, NV 89113
+  // Theravada (Burmese lineage). Daily public meditation, free, drop-in. Also on Zoom.
+  // 4 daily sessions: 9am, 11am, 2pm, 5pm. Seeding 3 most accessible.
+  {
+    org_id: "chaiya_las_vegas", org_name: "Chaiya Meditation Monastery",
+    title: "Morning Meditation",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    time: { h: 9, m: 0 }, duration_min: 60,
+    address: "7925 Virtue Ct", city: "Las Vegas", state: "NV", neighborhood: "Enterprise / Southwest Las Vegas",
+    lat: 36.0602, lng: -115.2246, tradition: "theravada", location_type: "in-person",
+    notes: "Daily morning meditation. Free, drop-in. Also on Zoom (ID: 568 279 3041, passcode: Cmm45678).",
+    source_url: "https://chaiyacmm.org", event_url: "https://chaiyacmm.org/events",
+  },
+  {
+    org_id: "chaiya_las_vegas", org_name: "Chaiya Meditation Monastery",
+    title: "Afternoon Meditation",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    time: { h: 14, m: 0 }, duration_min: 60,
+    address: "7925 Virtue Ct", city: "Las Vegas", state: "NV", neighborhood: "Enterprise / Southwest Las Vegas",
+    lat: 36.0602, lng: -115.2246, tradition: "theravada", location_type: "in-person",
+    notes: "Daily afternoon meditation. Free, drop-in. Also on Zoom (ID: 568 279 3041, passcode: Cmm45678).",
+    source_url: "https://chaiyacmm.org", event_url: "https://chaiyacmm.org/events",
+  },
+  {
+    org_id: "chaiya_las_vegas", org_name: "Chaiya Meditation Monastery",
+    title: "Evening Meditation",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    time: { h: 17, m: 0 }, duration_min: 75,
+    address: "7925 Virtue Ct", city: "Las Vegas", state: "NV", neighborhood: "Enterprise / Southwest Las Vegas",
+    lat: 36.0602, lng: -115.2246, tradition: "theravada", location_type: "in-person",
+    notes: "Daily evening meditation. Free, drop-in. Also on Zoom (ID: 568 279 3041, passcode: Cmm45678).",
+    source_url: "https://chaiyacmm.org", event_url: "https://chaiyacmm.org/events",
+  },
+
+  // ── Zen Center of Las Vegas — 7925 Virtue Ct, Las Vegas, NV 89113
+  // Kwan Um School of Zen (Seung Sahn lineage). Teacher: Zen Master Ji Haeng.
+  // Same campus as Chaiya Meditation Monastery.
+  {
+    org_id: "zen_center_las_vegas", org_name: "Zen Center of Las Vegas",
+    title: "Sunday Zen Sitting",
+    days: ["Sunday"], time: { h: 13, m: 0 }, duration_min: 90,
+    address: "7925 Virtue Ct", city: "Las Vegas", state: "NV", neighborhood: "Enterprise / Southwest Las Vegas",
+    lat: 36.0602, lng: -115.2246, tradition: "zen", location_type: "in-person",
+    notes: "Weekly public Zen sitting. All levels welcome. Donation-based. Teacher: Zen Master Ji Haeng.",
+    source_url: "https://zenlasvegas.com", event_url: "https://zenlasvegas.com/practice-schedule/",
+  },
+  {
+    org_id: "zen_center_las_vegas", org_name: "Zen Center of Las Vegas",
+    title: "Beginners Introduction to Zen",
+    days: ["Sunday"], time: { h: 12, m: 0 }, duration_min: 60,
+    week_of_month: 1,
+    address: "7925 Virtue Ct", city: "Las Vegas", state: "NV", neighborhood: "Enterprise / Southwest Las Vegas",
+    lat: 36.0602, lng: -115.2246, tradition: "zen", location_type: "in-person",
+    notes: "First Sunday of each month. Free introduction to Zen practice. No experience needed.",
+    source_url: "https://zenlasvegas.com", event_url: "https://zenlasvegas.com/practice-schedule/",
+  },
+
+  // ── Diamond Way Buddhist Center Las Vegas — 3743 N Rosecrest Circle, Las Vegas, NV 89121
+  // Karma Kagyu Tibetan Buddhism (Lama Ole Nydahl). East Las Vegas.
+  {
+    org_id: "diamond_way_las_vegas", org_name: "Diamond Way Buddhist Center Las Vegas",
+    title: "Evening Meditation",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3743 N Rosecrest Circle", city: "Las Vegas", state: "NV", neighborhood: "East Las Vegas",
+    lat: 36.1448, lng: -115.0803, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Karma Kagyu meditation. Drop-in welcome. No experience needed. First Tuesday: Open House + Buddhism intro.",
+    source_url: "https://diamondway.org/lasvegas/", event_url: "https://diamondway.org/lasvegas/",
+  },
+
+  // ── Nevada Buddhist Temple — 2040 Abels Lane, North Las Vegas, NV 89115
+  // Sri Lankan Theravada. Resident monk: Bhante Deepananda. Free, all welcome.
+  {
+    org_id: "nevada_buddhist_temple", org_name: "Nevada Buddhist Temple",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "2040 Abels Lane", city: "North Las Vegas", state: "NV", neighborhood: "North Las Vegas",
+    lat: 36.2103, lng: -115.1214, tradition: "theravada", location_type: "in-person",
+    notes: "Weekly in-person meditation with Bhante Deepananda. Free, open to all.",
+    source_url: "https://www.nevadabuddhisttemple.org", event_url: "https://www.nevadabuddhisttemple.org",
+  },
+  {
+    org_id: "nevada_buddhist_temple", org_name: "Nevada Buddhist Temple",
+    title: "Online Evening Meditation & Chanting",
+    days: ["Monday","Tuesday","Thursday","Saturday","Sunday"],
+    time: { h: 19, m: 30 }, duration_min: 60,
+    address: "2040 Abels Lane", city: "North Las Vegas", state: "NV", neighborhood: "North Las Vegas",
+    lat: 36.2103, lng: -115.1214, tradition: "theravada", location_type: "online",
+    notes: "Daily online meditation and chanting via Zoom (except Wednesday and Friday). Free, open to all.",
+    source_url: "https://www.nevadabuddhisttemple.org", event_url: "https://www.nevadabuddhisttemple.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

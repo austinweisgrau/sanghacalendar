@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-12 (heartbeat 25)_
+_Last updated: 2026-05-12 (heartbeat 26)_
 
 ## Current Status
 
@@ -136,6 +136,7 @@ Candidate metros (rough priority):
 16. San Diego 🔄 **Phase 3 San Diego live May 11** (2 centers) — see below
 17. Atlanta 🔄 **Phase 3 Atlanta live May 11** (5 centers) — see below
 18. Philadelphia 🔄 **Phase 3 Philadelphia live May 12** (4 centers) — see below
+19. Las Vegas 🔄 **Phase 3 Las Vegas live May 12** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -503,6 +504,34 @@ Center bios added to centers.py for all 4 centers.
 - Nalandabodhi Philadelphia: empty iCal, no stable address — monitor
 - Heart Sangha: sporadic programming — skip for now
 - Delaware Valley Insight: peer-led home sitting groups, no stable venue
+
+---
+
+### Las Vegas Phase 3 — ✅ Live May 12 (4 centers, heartbeat 26)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Chaiya Meditation Monastery (7925 Virtue Ct, Enterprise/SW Las Vegas NV 89113) | Recurring sits seeded — Bravesites platform, no iCal. Daily sessions: 9am, 2pm, 5pm (Mon–Sun). Theravada (Burmese). | ✅ Live heartbeat 26 |
+| Zen Center of Las Vegas (7925 Virtue Ct, same campus as Chaiya) | Recurring sits seeded — static HTML schedule, no feed. Sun 1pm + 1st Sun noon Intro. Kwan Um School (Seung Sahn). | ✅ Live heartbeat 26 |
+| Diamond Way Buddhist Center Las Vegas (3743 N Rosecrest Circle, East Las Vegas NV 89121) | Recurring sit seeded — global network site, no iCal. Tue 7pm. Karma Kagyu (Lama Ole Nydahl). | ✅ Live heartbeat 26 |
+| Nevada Buddhist Temple (2040 Abels Lane, North Las Vegas NV 89115) | Recurring sits seeded — WordPress, no Events Calendar plugin. Wed 7pm in-person + Mon/Tue/Thu/Sat/Sun 7:30pm online. Sri Lankan Theravada. | ✅ Live heartbeat 26 |
+
+City filter: Nevada state + Las Vegas + North Las Vegas cities added to `_filters.html`.
+Center bios added to centers.py for all 4 centers.
+`ingestion/sources/las_vegas.py` created (CENTERS registry, ICAL_FEEDS empty).
+`sangha-seed-recurring.js`: 9 new sit defs (Chaiya ×3, Zen Center LV ×2, Diamond Way LV ×1, Nevada Buddhist Temple ×3). Now 125 sit defs → 2838 instances.
+
+**Research notes (2026-05-12):**
+- Kadampa LV (meditationinlasvegas.org): redirects to IKRC Grand Canyon AZ — appears closed.
+- Bhodhiyana Meditation Center (bhodhiyana.org): website offline — monitor.
+- Las Vegas Buddhist Sangha (lvbs.org): Jodo Shinshu / Pure Land devotional — not meditation-focused. Skip.
+- Lohan Spiritual Center (lvlohans.org): syncretic (Chan/Tibetan/Taoist/Shaolin) — deferred.
+- Nevada Buddhist Vihara (nbvlv.org): WordPress/Astra shell, no Events Calendar. Same tradition as Nevada Buddhist Temple; may be same or related entity.
+
+**Skipped/deferred:**
+- Kadampa LV: appears closed, redirecting to Arizona center
+- Bhodhiyana: site offline — monitor for recovery
+- Lohan Center: unusual tradition classification; deferred
 
 ---
 

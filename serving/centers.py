@@ -1996,4 +1996,91 @@ CENTERS = {
             "Monthly Medicine Buddha and other ceremonial programs. Open to all; drop-in welcome."
         ),
     },
+    # ── Las Vegas ─────────────────────────────────────────────────────────────
+    "chaiya_las_vegas": {
+        "id": "chaiya_las_vegas",
+        "name": "Chaiya Meditation Monastery",
+        "tradition": "theravada",
+        "url": "https://chaiyacmm.org",
+        "address": "7925 Virtue Ct",
+        "city": "Las Vegas",
+        "state": "NV",
+        "zip": "89113",
+        "lat": 36.0602,
+        "lng": -115.2246,
+        "neighborhood": "Enterprise / Southwest Las Vegas",
+        "bio": (
+            "Chaiya Meditation Monastery (CMM) is a Theravada Buddhist monastery in the "
+            "Enterprise area of southwest Las Vegas, founded in the Burmese Theravada "
+            "tradition. One of the most active Buddhist centers in the Las Vegas valley, "
+            "offering four daily meditation sessions open to the public: 9–10 AM, "
+            "11 AM–12:15 PM, 2–3 PM, and 5–6:15 PM. All sessions are free and open to "
+            "beginners; no experience required. Also available on Zoom (ID: 568 279 3041, "
+            "passcode: Cmm45678). Special programs include Vesak, Vassa (Rains Retreat), "
+            "and group ordinations."
+        ),
+    },
+    "zen_center_las_vegas": {
+        "id": "zen_center_las_vegas",
+        "name": "Zen Center of Las Vegas",
+        "tradition": "zen",
+        "url": "https://zenlasvegas.com",
+        "address": "7925 Virtue Ct",
+        "city": "Las Vegas",
+        "state": "NV",
+        "zip": "89113",
+        "lat": 36.0602,
+        "lng": -115.2246,
+        "neighborhood": "Enterprise / Southwest Las Vegas",
+        "bio": (
+            "Zen Center of Las Vegas is a Korean Zen community in the Kwan Um School of Zen, "
+            "the lineage of Zen Master Seung Sahn. Located on the same campus as Chaiya "
+            "Meditation Monastery in southwest Las Vegas. Teacher: Zen Master Ji Haeng. "
+            "Weekly Sunday practice at 1 PM — all levels welcome, drop-in. First Sunday of "
+            "each month includes a free Beginners Introduction at noon. "
+            "Donations appreciated but not required."
+        ),
+    },
+    "diamond_way_las_vegas": {
+        "id": "diamond_way_las_vegas",
+        "name": "Diamond Way Buddhist Center Las Vegas",
+        "tradition": "tibetan",
+        "url": "https://diamondway.org/lasvegas/",
+        "address": "3743 N Rosecrest Circle",
+        "city": "Las Vegas",
+        "state": "NV",
+        "zip": "89121",
+        "lat": 36.1448,
+        "lng": -115.0803,
+        "neighborhood": "East Las Vegas",
+        "bio": (
+            "Diamond Way Buddhist Center Las Vegas is a Tibetan Buddhist center in the "
+            "Karma Kagyu lineage of Lama Ole Nydahl. Located in east Las Vegas. Offers a "
+            "weekly public meditation every Tuesday at 7 PM — no prior experience required, "
+            "drop-in welcome. First Tuesday of each month is a free Open House with an "
+            "introduction to Buddhism and meditation. Part of the global Diamond Way "
+            "Buddhist network with 600+ centers worldwide."
+        ),
+    },
+    "nevada_buddhist_temple": {
+        "id": "nevada_buddhist_temple",
+        "name": "Nevada Buddhist Temple",
+        "tradition": "theravada",
+        "url": "https://www.nevadabuddhisttemple.org",
+        "address": "2040 Abels Lane",
+        "city": "North Las Vegas",
+        "state": "NV",
+        "zip": "89115",
+        "lat": 36.2103,
+        "lng": -115.1214,
+        "neighborhood": "North Las Vegas",
+        "bio": (
+            "Nevada Buddhist Temple is a Sri Lankan Theravada Buddhist temple in North Las "
+            "Vegas, with resident monk Bhante Deepananda. Offers weekly Wednesday Evening "
+            "Meditation (7–8 PM in-person) and daily online meditation and chanting via "
+            "Zoom (7:30 PM, except Wednesday and Friday). Monthly 'Meditation with a Monk' "
+            "sessions and traditional observances including Vesak, Poson, and Kathina. "
+            "All programs are free and open to the public."
+        ),
+    },
 }
