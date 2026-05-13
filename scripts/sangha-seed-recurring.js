@@ -1445,6 +1445,102 @@ const SITS = [
     source_url: "https://dharmagatezen.org", event_url: "https://dharmagatezen.org/calendar/",
   },
 
+  // ── Baltimore, MD ────────────────────────────────────────────────────────
+
+  // ── Baltimore Shambhala Centre — 33 W 33rd St (YMCA), Baltimore, MD 21218
+  // Shambhala / Tibetan. Biweekly in-person + Zoom. Shambhala iCal server down.
+  {
+    org_id: "baltimore_shambhala", org_name: "Baltimore Shambhala Centre",
+    title: "Meditation@33rd",
+    days: ["Saturday"], week_of_month: 2,
+    time: { h: 9, m: 0 }, duration_min: 60,
+    address: "33 W 33rd St", city: "Baltimore", state: "MD", neighborhood: "Charles Village (33rd Street YMCA)",
+    lat: 39.3277, lng: -76.6093, tradition: "tibetan", location_type: "hybrid",
+    notes: "In-person and Zoom. Open to all levels, no experience needed. Free. 2nd Saturday of the month.",
+    source_url: "https://baltimore.shambhala.org", event_url: "https://baltimore.shambhala.org/ongoing-offerings/",
+  },
+  {
+    org_id: "baltimore_shambhala", org_name: "Baltimore Shambhala Centre",
+    title: "Meditation@33rd",
+    days: ["Saturday"], week_of_month: 4,
+    time: { h: 9, m: 0 }, duration_min: 60,
+    address: "33 W 33rd St", city: "Baltimore", state: "MD", neighborhood: "Charles Village (33rd Street YMCA)",
+    lat: 39.3277, lng: -76.6093, tradition: "tibetan", location_type: "hybrid",
+    notes: "In-person and Zoom. Open to all levels, no experience needed. Free. 4th Saturday of the month.",
+    source_url: "https://baltimore.shambhala.org", event_url: "https://baltimore.shambhala.org/ongoing-offerings/",
+  },
+
+  // ── KMC Maryland — 901 Dartmouth Road, Baltimore, MD 21212 (Roland Park)
+  // New Kadampa Tradition (Tibetan/Gelug). Squarespace site, no iCal.
+  {
+    org_id: "kmc_maryland", org_name: "Kadampa Meditation Center Maryland",
+    title: "Meditations for Modern Life",
+    days: ["Wednesday"], time: { h: 11, m: 0 }, duration_min: 60,
+    address: "901 Dartmouth Road", city: "Baltimore", state: "MD", neighborhood: "Roland Park",
+    lat: 39.3562, lng: -76.6383, tradition: "tibetan", location_type: "in-person",
+    notes: "Drop-in class: guided meditation with Buddhist teaching. No experience needed. First class free, $12 thereafter.",
+    source_url: "https://www.meditationmd.org", event_url: "https://www.meditationmd.org/events-calendar",
+  },
+  {
+    org_id: "kmc_maryland", org_name: "Kadampa Meditation Center Maryland",
+    title: "Meditations for World Peace",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "901 Dartmouth Road", city: "Baltimore", state: "MD", neighborhood: "Roland Park",
+    lat: 39.3562, lng: -76.6383, tradition: "tibetan", location_type: "in-person",
+    notes: "Evening guided meditation class focused on developing peace of mind and compassion. First class free, $12 thereafter.",
+    source_url: "https://www.meditationmd.org", event_url: "https://www.meditationmd.org/events-calendar",
+  },
+  {
+    org_id: "kmc_maryland", org_name: "Kadampa Meditation Center Maryland",
+    title: "Meditations for Modern Life",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "901 Dartmouth Road", city: "Baltimore", state: "MD", neighborhood: "Roland Park",
+    lat: 39.3562, lng: -76.6383, tradition: "tibetan", location_type: "in-person",
+    notes: "Drop-in class: guided meditation with Buddhist teaching. No experience needed. First class free, $12 thereafter.",
+    source_url: "https://www.meditationmd.org", event_url: "https://www.meditationmd.org/events-calendar",
+  },
+  {
+    org_id: "kmc_maryland", org_name: "Kadampa Meditation Center Maryland",
+    title: "Meditations for Modern Life",
+    days: ["Sunday"], time: { h: 10, m: 30 }, duration_min: 75,
+    address: "901 Dartmouth Road", city: "Baltimore", state: "MD", neighborhood: "Roland Park",
+    lat: 39.3562, lng: -76.6383, tradition: "tibetan", location_type: "in-person",
+    notes: "Drop-in class: guided meditation with Buddhist teaching. No experience needed. First class free, $12 thereafter.",
+    source_url: "https://www.meditationmd.org", event_url: "https://www.meditationmd.org/events-calendar",
+  },
+
+  // ── KMC Maryland Canton — 1025 S Potomac St, Baltimore, MD 21224
+  {
+    org_id: "kmc_maryland_canton", org_name: "Kadampa Meditation Center Maryland — Canton",
+    title: "Meditations for Modern Life",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1025 S Potomac St", city: "Baltimore", state: "MD", neighborhood: "Canton",
+    lat: 39.2848, lng: -76.5758, tradition: "tibetan", location_type: "in-person",
+    notes: "Drop-in meditation class at the Canton branch (Church on the Square). No experience needed. First class free, $12 thereafter.",
+    source_url: "https://www.meditationmd.org", event_url: "https://www.meditationmd.org/events-calendar",
+  },
+
+  // ── Baltimore Dharma Group — 3107 N Charles St (Homewood Friends Meeting), Baltimore MD 21218
+  // Lay Soto Zen, shikantaza style. Wix site, no iCal.
+  {
+    org_id: "baltimore_dharma_group", org_name: "Baltimore Dharma Group",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 8, m: 0 }, duration_min: 90,
+    address: "3107 N Charles St", city: "Baltimore", state: "MD", neighborhood: "Guilford / Charles Village (Homewood Friends Meeting)",
+    lat: 39.3262, lng: -76.6202, tradition: "zen", location_type: "in-person",
+    notes: "Two 30-minute zazen periods with kinhin (walking meditation). Arrive by 7:55am. All levels welcome; free.",
+    source_url: "https://www.baltimoredharmagroup.org", event_url: "https://www.baltimoredharmagroup.org/schedule",
+  },
+  {
+    org_id: "baltimore_dharma_group", org_name: "Baltimore Dharma Group",
+    title: "Thursday Evening Zazen",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3107 N Charles St", city: "Baltimore", state: "MD", neighborhood: "Guilford / Charles Village (Homewood Friends Meeting)",
+    lat: 39.3262, lng: -76.6202, tradition: "zen", location_type: "in-person",
+    notes: "Alternates between open zazen (two 30-min periods + kinhin) and dharma class (30-min sit + dharma discussion). All levels welcome; free.",
+    source_url: "https://www.baltimoredharmagroup.org", event_url: "https://www.baltimoredharmagroup.org/schedule",
+  },
+
   // ── Sacramento, CA ────────────────────────────────────────────────────────
 
   // ── Sacramento Insight Meditation (SIM) — 3111 Wissemann Dr, Sacramento CA 95826

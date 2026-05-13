@@ -2333,6 +2333,95 @@ CENTERS = {
             "adults in their 20s–40s. All programs dana-based."
         ),
     },
+    # Baltimore, MD — Phase 3 (heartbeat 30)
+    "baltimore_shambhala": {
+        "id": "baltimore_shambhala",
+        "name": "Baltimore Shambhala Centre",
+        "tradition": "tibetan",
+        "url": "https://baltimore.shambhala.org",
+        "address": "33 W 33rd St",
+        "city": "Baltimore",
+        "state": "MD",
+        "zip": "21218",
+        "lat": 39.3277,
+        "lng": -76.6093,
+        "neighborhood": "Charles Village (33rd Street YMCA)",
+        "bio": (
+            "Baltimore Shambhala Centre is a meditation community in the Shambhala "
+            "lineage of Chögyam Trungpa Rinpoche and Sakyong Mipham Rinpoche, meeting "
+            "at the 33rd Street YMCA in Charles Village. Offers biweekly in-person "
+            "practice (Meditation@33rd, 2nd & 4th Saturdays 9–10am, hybrid in-person "
+            "and Zoom) and weekday morning sittings via Zoom (Mon–Fri 7–8am). Sunday "
+            "Morning Sitting (9–9:30am, Zoom) and Thursday Lojong Study Group also "
+            "offered. Programs are free and open to all — no experience required."
+        ),
+    },
+    "kmc_maryland": {
+        "id": "kmc_maryland",
+        "name": "Kadampa Meditation Center Maryland",
+        "tradition": "tibetan",
+        "url": "https://www.meditationmd.org",
+        "address": "901 Dartmouth Road",
+        "city": "Baltimore",
+        "state": "MD",
+        "zip": "21212",
+        "lat": 39.3562,
+        "lng": -76.6383,
+        "neighborhood": "Roland Park",
+        "bio": (
+            "Kadampa Meditation Center Maryland (KMC Maryland) is a New Kadampa "
+            "Tradition center in Roland Park, north Baltimore, offering multiple weekly "
+            "drop-in meditation classes. Schedule: Sunday Meditations for Modern Life "
+            "(10:30–11:45am), Wednesday Meditations for Modern Life (11am–noon), "
+            "Wednesday World Peace Meditation (6–7pm), Thursday Meditations for Modern "
+            "Life (6:30–7:45pm). Also runs a Canton branch (1025 S Potomac St) on "
+            "Tuesdays at 7pm. All classes taught in the NKT tradition (Tibetan Gelugpa "
+            "lineage). First class free; $12 thereafter. No Buddhist background required."
+        ),
+    },
+    "kmc_maryland_canton": {
+        "id": "kmc_maryland_canton",
+        "name": "Kadampa Meditation Center Maryland — Canton",
+        "tradition": "tibetan",
+        "url": "https://www.meditationmd.org",
+        "address": "1025 S Potomac St",
+        "city": "Baltimore",
+        "state": "MD",
+        "zip": "21224",
+        "lat": 39.2848,
+        "lng": -76.5758,
+        "neighborhood": "Canton",
+        "bio": (
+            "Kadampa Meditation Center Maryland's Canton branch meets at Church on "
+            "the Square (1025 S Potomac St) in southeast Baltimore's Canton "
+            "neighborhood. Weekly Tuesday meditation class (7–8pm): guided practice "
+            "in the New Kadampa Tradition (Tibetan Gelugpa lineage). Open to all "
+            "levels — no experience required. First class free, $12 thereafter. "
+            "For more information visit meditationmd.org."
+        ),
+    },
+    "baltimore_dharma_group": {
+        "id": "baltimore_dharma_group",
+        "name": "Baltimore Dharma Group",
+        "tradition": "zen",
+        "url": "https://www.baltimoredharmagroup.org",
+        "address": "3107 N Charles St",
+        "city": "Baltimore",
+        "state": "MD",
+        "zip": "21218",
+        "lat": 39.3262,
+        "lng": -76.6202,
+        "neighborhood": "Guilford / Charles Village (Homewood Friends Meeting)",
+        "bio": (
+            "Baltimore Dharma Group is a lay Soto Zen sangha practicing shikantaza "
+            "(just sitting) at Homewood Friends Meeting House in Baltimore's Charles "
+            "Village / Guilford area. Sunday morning zazen (8–9:30am): two "
+            "thirty-minute sitting periods with kinhin walking meditation, arrive by "
+            "7:55am. Thursday evenings alternate between open zazen (two 30-min "
+            "periods + kinhin) and dharma class (30-min sit + discussion). Free "
+            "and open to all — no prior meditation experience needed."
+        ),
+    },
     "lions_roar_dharma_center": {
         "id": "lions_roar_dharma_center",
         "name": "Lion's Roar Dharma Center",
