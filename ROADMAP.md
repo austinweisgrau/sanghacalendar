@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-12 (heartbeat 27)_
+_Last updated: 2026-05-13 (heartbeat 28)_
 
 ## Current Status
 
@@ -138,6 +138,7 @@ Candidate metros (rough priority):
 18. Philadelphia 🔄 **Phase 3 Philadelphia live May 12** (4 centers) — see below
 19. Las Vegas 🔄 **Phase 3 Las Vegas live May 12** (4 centers) — see below
 20. Nashville 🔄 **Phase 3 Nashville live May 12** (4 centers) — see below
+21. Detroit/SE Michigan 🔄 **Phase 3 Detroit live May 13** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -561,6 +562,43 @@ Center bios added to centers.py for all 4 centers.
 **Skipped/deferred:**
 - Snow Lion Nashville (Shambhala-derived): site down — monitor for recovery
 - Sitagu Buddhist Monastery: devotional focus, no public sit calendar
+
+---
+
+### Detroit / SE Michigan Phase 3 — ✅ Live May 13 (4 centers, heartbeat 28)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Detroit Zen Center (3030 Casmere St, Hamtramck MI) | Recurring sits seeded — Wix site, no iCal. Sun 10am Zen Workshop (2hr). Korean Zen (Chogye / Sudeok-sa), founded 1990. | ✅ Live heartbeat 28 |
+| Still Point Zen Buddhist Temple (4345 Trumbull Ave, Detroit MI) | Recurring sits seeded — Wix site, no iCal. Sun 8:30am + Sat 10am service (in-person + livestream). Korean Zen (Samu Sunim lineage). | ✅ Live heartbeat 28 |
+| Field Temple (5333 Elmwood Ave, Detroit MI) | Recurring sits seeded — simple static site, no iCal. Sun 10am outdoor zazen in garden. Korean Zen tradition. | ✅ Live heartbeat 28 |
+| Dharma Gate Zen Center (360 East Maple Suite K, Troy MI) | Recurring sits seeded — WordPress, weekday sittings on hiatus. Sun 10am service. Soto Zen. | ✅ Live heartbeat 28 |
+
+Michigan state + Detroit/Hamtramck/Troy cities added to `_filters.html`.
+Center bios added to centers.py for all 4 centers.
+`ingestion/sources/detroit.py` created (CENTERS registry).
+`sangha-seed-recurring.js`: 5 new sit defs (DZC ×1, Still Point ×2, Field Temple ×1, Dharma Gate ×1). Now 137 sit defs → 2994 instances.
+
+**Research notes (2026-05-13):**
+- Detroit Zen Center: Wix-based events page, no `?ical=1` feed. Sunday Workshop confirmed
+  10am–12pm weekly. First Sunday Beginners Workshop 9am–12pm.
+- Still Point Zen Buddhist Temple: Wix site. Sunday hours confirmed 8:30am–11:30am.
+  Saturday service also confirmed but exact start time unverified — seeded at 10am.
+- Field Temple: Simple site, Sunday 10–11am confirmed. Garden/outdoor location.
+- Dharma Gate Zen: WordPress but weekday sittings on hiatus. Sunday 10am only active sit.
+  Recovery Dharma also meets here (Sat 10am, Wed noon) — not seeded (recovery program).
+- Midwest Buddhist Meditation Center (Warren MI): Thai Theravada temple — daily practice
+  but not structured as public drop-in sits. Deferred.
+- Great Lakes Buddhist Vihara (Southfield MI): Theravada monastery — online courses only,
+  no regular public drop-in sittings. Deferred.
+- Ann Arbor centers (45 mi west): separate metro — deferred.
+
+**Skipped/deferred:**
+- Midwest Buddhist Meditation Center: Thai temple, not clear public drop-in format
+- Great Lakes Buddhist Vihara: Theravada monastery, online courses only
+- Ann Arbor centers: separate metro ~45 miles west (Insight Meditation Ann Arbor, Still
+  Mountain, Zen Buddhist Temple Ann Arbor, Jewel Heart) — future metro
+- Detroit St. Zen Center (detroitstzencenter.com): site returning 522 error — monitor
 
 ---
 
