@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-13 (heartbeat 29)_
+_Last updated: 2026-05-13 (heartbeat 30)_
 
 ## Current Status
 
@@ -13,7 +13,7 @@ _Last updated: 2026-05-13 (heartbeat 29)_
 - City filter includes 11 cities (Alameda, Kensington, Pleasant Hill, Richmond, Tiburon + more)
 - Subscribe button: filter-aware GCal / Apple Calendar / .ics popup (heartbeat 23)
 - Ingestion sources: 31 iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley, Tibet House US) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley, ZCNYC) + Squarespace JSON (Houston Zen Center)
-- Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin + NorCal Plum Village network + 17 Phase 3 metros
+- Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin + NorCal Plum Village network + 18 Phase 3 metros
 
 ---
 
@@ -140,6 +140,7 @@ Candidate metros (rough priority):
 20. Nashville 🔄 **Phase 3 Nashville live May 12** (4 centers) — see below
 21. Detroit/SE Michigan 🔄 **Phase 3 Detroit live May 13** (4 centers) — see below
 22. Sacramento 🔄 **Phase 3 Sacramento live May 13** (4 centers) — see below
+23. Baltimore 🔄 **Phase 3 Baltimore live May 13** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -640,6 +641,48 @@ Center bios added to centers.py for all 4 centers.
 - Sacramento Zen: private location not listed; deferred
 - Davis Shambhala (25 mi west): separate NorCal Shambhala entry — deferred
 - Davis Dharma Study Group: small group, deferred
+
+---
+
+### Baltimore Phase 3 — ✅ Live May 13 (4 centers, heartbeat 30)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Baltimore Shambhala Centre (33 W 33rd St, Baltimore MD 21218) | Recurring sits seeded — Shambhala iCal server (center=201) returns 522. Biweekly Sat 9am hybrid (2nd/4th Sat) at 33rd Street YMCA. Shambhala / Tibetan. | ✅ Live heartbeat 30 |
+| Kadampa Meditation Center Maryland (901 Dartmouth Rd, Baltimore MD 21212) | Recurring sits seeded — Squarespace site, no iCal. Wed 11am, Wed 6pm, Thu 6:30pm, Sun 10:30am in-person. New Kadampa Tradition (Tibetan/Gelug). | ✅ Live heartbeat 30 |
+| KMC Maryland Canton (1025 S Potomac St, Baltimore MD 21224) | Recurring sit seeded — Canton branch, Tue 7pm in-person at Church on the Square. | ✅ Live heartbeat 30 |
+| Baltimore Dharma Group (3107 N Charles St, Baltimore MD 21218) | Recurring sits seeded — Wix site, no iCal. Sun 8am + Thu 7pm zazen at Homewood Friends Meeting. Soto Zen, shikantaza style. | ✅ Live heartbeat 30 |
+
+Maryland state + Baltimore city added to `_filters.html`.
+Center bios added to centers.py for all 4 centers.
+`ingestion/sources/baltimore.py` created (CENTERS registry).
+`sangha-seed-recurring.js`: 9 new sit defs (Shambhala ×2, KMC MD ×4, KMC Canton ×1, BDG ×2). Now 148 sit defs → 3117 instances.
+
+**Research notes (2026-05-13):**
+- Baltimore Shambhala Centre: shambhala-koeln.de/ical.php?center=201 returns 522
+  (same as DC 205, Boulder 191, Denver 218 — Shambhala iCal server broadly down).
+  Meets at 33rd Street YMCA, Baltimore. 2nd/4th Sat Meditation@33rd (hybrid 9am).
+  Mon-Fri 7am online morning sit; Sun 9am online; Thu Lojong study group (Zoom).
+- KMC Maryland (meditationmd.org): Squarespace. 901 Dartmouth Rd, Roland Park.
+  Very active schedule: Wed 11am, Wed 6pm, Thu 6:30pm, Sun 10:30am. Also Canton
+  branch (1025 S Potomac St, Tue 7pm) and Columbia branch (Owen Brown Interfaith
+  Center, Tue 7:30pm) — Columbia deferred (25 mi from Baltimore center).
+- Baltimore Dharma Group (baltimoredharmagroup.org): Wix site, no iCal. Small lay
+  Soto Zen community at Homewood Friends Meeting House (3107 N Charles St).
+  Sun 8am zazen (two 30-min periods + kinhin). Thu evenings alternating dharma
+  class and open zazen. Free, all welcome.
+- Gampopa Center (Annapolis): Kagyu Tibetan, 918 Chesapeake Ave, ~30 mi south.
+  Deferred to future Annapolis/Chesapeake expansion.
+- Burning House Zendo (Westminster): Friday in-person canceled until July 2026.
+  Monitor for resumption; weekday Zoom sits only active currently.
+- Clare Sangha / ZC Baltimore: Primarily online Zen community. Deferred.
+
+**Skipped/deferred:**
+- Gampopa Center (Annapolis): 30 miles south — future Annapolis expansion
+- KMC Columbia: Owen Brown Interfaith Center, 25 miles from Baltimore — future metro
+- Columbia Insight Meditation Group (Ellicott City): 25 miles, school-year dependent
+- Burning House Zendo (Westminster): in-person sits canceled until July 2026
+- Clare Sangha: primarily online community
 
 ---
 
