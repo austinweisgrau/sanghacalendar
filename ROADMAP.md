@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-13 (heartbeat 28)_
+_Last updated: 2026-05-13 (heartbeat 29)_
 
 ## Current Status
 
@@ -139,6 +139,7 @@ Candidate metros (rough priority):
 19. Las Vegas 🔄 **Phase 3 Las Vegas live May 12** (4 centers) — see below
 20. Nashville 🔄 **Phase 3 Nashville live May 12** (4 centers) — see below
 21. Detroit/SE Michigan 🔄 **Phase 3 Detroit live May 13** (4 centers) — see below
+22. Sacramento 🔄 **Phase 3 Sacramento live May 13** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -599,6 +600,46 @@ Center bios added to centers.py for all 4 centers.
 - Ann Arbor centers: separate metro ~45 miles west (Insight Meditation Ann Arbor, Still
   Mountain, Zen Buddhist Temple Ann Arbor, Jewel Heart) — future metro
 - Detroit St. Zen Center (detroitstzencenter.com): site returning 522 error — monitor
+
+---
+
+### Sacramento Phase 3 — ✅ Live May 13 (4 centers, heartbeat 29)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Sacramento Buddhist Meditation Group (3111 Wissemann Dr, Sacramento CA 95826) | WordPress Events Calendar iCal — `sbmg.org/events/?ical=1`. Sun 10am sits with rotating teachers (pluralist), Tue 7am online. BIPOC Sangha 4th Sun. | ✅ Live heartbeat 29 |
+| Valley Streams Zen Sangha (3111 Wissemann Dr, Sacramento CA 95826) | WordPress Events Calendar iCal — `valleystreamszen.org/events/?ical=1`. Thu 6am Morning Zazen + Service (hybrid), Mon 7pm Evening Program. | ✅ Live heartbeat 29 |
+| Sacramento Insight Meditation (3111 Wissemann Dr, Sacramento CA 95826) | Recurring sits seeded — Incapsula blocks iCal at sactoinsight.org. Thu 7pm Meditation & Dharma Talk + Tue 6:30pm Dharma Recovery. Theravada/Vipassana. | ✅ Live heartbeat 29 |
+| Lion's Roar Dharma Center (3240 B Street, Sacramento CA 95816) | Google Calendar ICS — `9ohgorq8dhupc1u8b0hhtiafbc@group.calendar.google.com`. Monthly Vajrayana practices, Sunday services. Tibetan (Gelugpa). | ✅ Live heartbeat 29 |
+
+Sacramento city added to CA state filter in `_filters.html`.
+Center bios added to centers.py for all 4 centers.
+`ingestion/sources/sacramento.py` created.
+`sangha-seed-recurring.js`: 2 new SIM sit defs (Thu 7pm + Tue 6:30pm). Now 139 sit defs → 3020 instances.
+
+**Research notes (2026-05-13):**
+- Sacramento Dharma Center (sacdharma.org): 3111 Wissemann Drive, Sacramento CA 95826.
+  Shared campus (1.7 acres, 8000 sq ft) hosting SBMG, VSZS, and SIM. Central hub for
+  secular/pluralist Sacramento Buddhist community since 1970s.
+- SBMG (sbmg.org): Active iCal confirmed. Pluralist — rotating teachers from all traditions.
+  Also has BIPOC Sangha 4th Sunday at 1:15pm (identity-focused).
+- VSZS (valleystreamszen.org): Active iCal confirmed. Ordinary Mind Zen / Charlotte Joko Beck
+  lineage. Thu 6am zazen is a real sit (early but active). Export .ics visible on website.
+- SIM (sactoinsight.org): Incapsula/Imperva blocks all HTTP requests. Thu 7pm confirmed from
+  web search results + Sacramento Dharma Center event listings.
+- Lion's Roar (lionsroardharmacenter.org): Google Calendar ID decoded from iframe embed src
+  (base64-encoded). Calendar active, events 2024–2026. Monthly moon-phase Vajrayana practices.
+- Sacramento Shambhala: No independent center — NorCal Shambhala network (Berkeley/SF/Davis/
+  Silicon Valley/Sonoma). No Sacramento entry.
+- KMC Sacramento (meditationinsacramento.org): Domain not resolving — appears defunct.
+- Sacramento Zen (sacramentozen.com): Ordinary Mind Zen, private Elmhurst zendo, address
+  not published. Mon 7am + Tue 7pm sits; deferred (private location).
+
+**Skipped/deferred:**
+- KMC Sacramento: domain dead — monitor
+- Sacramento Zen: private location not listed; deferred
+- Davis Shambhala (25 mi west): separate NorCal Shambhala entry — deferred
+- Davis Dharma Study Group: small group, deferred
 
 ---
 
