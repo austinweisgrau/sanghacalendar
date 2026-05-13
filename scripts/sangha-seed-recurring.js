@@ -1385,6 +1385,65 @@ const SITS = [
     notes: "Shamatha / calm abiding meditation open to all. No Buddhist background required. Free.",
     source_url: "https://www.pbc-tn.org", event_url: "https://www.pbc-tn.org/schedule-1",
   },
+
+  // ── Detroit / SE Michigan ────────────────────────────────────────────────
+
+  // ── Detroit Zen Center — 3030 Casmere St, Hamtramck, MI 48212
+  // Korean Zen (Chogye Order / Sudeok-sa lineage). Founded 1990 by Abbot Hwalson Sunim.
+  {
+    org_id: "detroit_zen_center", org_name: "Detroit Zen Center",
+    title: "Sunday Zen Workshop",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "3030 Casmere St", city: "Hamtramck", state: "MI", neighborhood: "Hamtramck (Detroit metro)",
+    lat: 42.3936, lng: -83.0566, tradition: "zen", location_type: "in-person",
+    notes: "Guided meditation, dharma talk, and tea. Drop-in welcome, all levels. By donation. First Sunday is Beginners Workshop & Brunch (9am–12pm).",
+    source_url: "https://www.detroitzencenter.org", event_url: "https://www.detroitzencenter.org/events-registration",
+  },
+
+  // ── Still Point Zen Buddhist Temple — 4345 Trumbull Ave, Detroit, MI 48208
+  // Korean Zen (Samu Sunim lineage). Founded by P'arang Geri Larkin; teacher Koho Vince Anila.
+  {
+    org_id: "still_point_zen_detroit", org_name: "Still Point Zen Buddhist Temple",
+    title: "Sunday Service",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 180,
+    address: "4345 Trumbull Ave", city: "Detroit", state: "MI", neighborhood: "Corktown / Woodbridge",
+    lat: 42.3527, lng: -83.0731, tradition: "zen", location_type: "in-person",
+    notes: "Zazen, chanting, and dharma talk. In-person and livestreamed. Free, open to all.",
+    source_url: "https://www.stillpointzenbuddhisttemple.org", event_url: "https://www.stillpointzenbuddhisttemple.org",
+  },
+  {
+    org_id: "still_point_zen_detroit", org_name: "Still Point Zen Buddhist Temple",
+    title: "Saturday Service",
+    days: ["Saturday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "4345 Trumbull Ave", city: "Detroit", state: "MI", neighborhood: "Corktown / Woodbridge",
+    lat: 42.3527, lng: -83.0731, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Saturday service. In-person with livestream. Free, open to all.",
+    source_url: "https://www.stillpointzenbuddhisttemple.org", event_url: "https://www.stillpointzenbuddhisttemple.org",
+  },
+
+  // ── Field Temple — 5333 Elmwood Ave, Detroit, MI 48211
+  // Zen (Korean tradition). Outdoor garden sittings.
+  {
+    org_id: "field_temple_detroit", org_name: "Field Temple",
+    title: "Sunday Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "5333 Elmwood Ave", city: "Detroit", state: "MI", neighborhood: "Poletown East",
+    lat: 42.3699, lng: -83.0431, tradition: "zen", location_type: "in-person",
+    notes: "Two 20-min zazen periods, three-refuges chanting, dharma talk, and tea. Held in the garden or under trees. Free.",
+    source_url: "https://fieldtemple.org", event_url: "https://fieldtemple.org",
+  },
+
+  // ── Dharma Gate Zen Center — 360 East Maple Suite K, Troy, MI 48083
+  // Soto Zen. Troy is a Detroit northern suburb.
+  {
+    org_id: "dharma_gate_zen_troy", org_name: "Dharma Gate Zen Center",
+    title: "Sunday Service",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "360 East Maple Suite K", city: "Troy", state: "MI", neighborhood: "Troy (Detroit suburb)",
+    lat: 42.5798, lng: -83.1446, tradition: "zen", location_type: "in-person",
+    notes: "20-minute zazen and dharma talk. Beginners welcome; visitor guide available on website. Free.",
+    source_url: "https://dharmagatezen.org", event_url: "https://dharmagatezen.org/calendar/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

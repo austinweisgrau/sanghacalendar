@@ -2175,4 +2175,92 @@ CENTERS = {
             "practices, and seasonal retreats."
         ),
     },
+    # ── Detroit / SE Michigan ────────────────────────────────────────────────
+    "detroit_zen_center": {
+        "id": "detroit_zen_center",
+        "name": "Detroit Zen Center",
+        "tradition": "zen",
+        "url": "https://www.detroitzencenter.org",
+        "address": "3030 Casmere St",
+        "city": "Hamtramck",
+        "state": "MI",
+        "zip": "48212",
+        "lat": 42.3936,
+        "lng": -83.0566,
+        "neighborhood": "Hamtramck (Detroit metro)",
+        "bio": (
+            "Detroit Zen Center is a Korean Zen community in the Chogye Order, a "
+            "spiritual branch of Sudeok-sa Temple in Korea (founded 6th century CE). "
+            "Established in 1990 by Abbot Hwalson Sunim in Hamtramck, a small city "
+            "encircled by Detroit. Sunday Zen Workshop (10am–12pm): guided meditation, "
+            "dharma talk, and tea — open to all levels, drop-in welcome. First Sunday "
+            "Beginners Workshop & Brunch (9am–12pm) includes meditation instruction, "
+            "group sit, dharma talk, and dialogue. Organic gardens, plant-based meals, "
+            "and guest retreat lodging available on site. By donation."
+        ),
+    },
+    "still_point_zen_detroit": {
+        "id": "still_point_zen_detroit",
+        "name": "Still Point Zen Buddhist Temple",
+        "tradition": "zen",
+        "url": "https://www.stillpointzenbuddhisttemple.org",
+        "address": "4345 Trumbull Ave",
+        "city": "Detroit",
+        "state": "MI",
+        "zip": "48208",
+        "lat": 42.3527,
+        "lng": -83.0731,
+        "neighborhood": "Corktown / Woodbridge",
+        "bio": (
+            "Still Point Zen Buddhist Temple is a Korean Zen community in Detroit's "
+            "Corktown neighborhood, in the lineage of Venerable Samu Sunim. Founded "
+            "by P'arang Geri Larkin; current guiding teacher is Koho Vince Anila. "
+            "Sunday service (8:30–11:30am): zazen, chanting, dharma talk — in-person "
+            "and livestreamed. Saturday service also available in-person with "
+            "livestream. Hosts Recovery Dharma meetings and One Sangha outreach. "
+            "Known for deep engagement with Detroit's communities. Free and open to all."
+        ),
+    },
+    "field_temple_detroit": {
+        "id": "field_temple_detroit",
+        "name": "Field Temple",
+        "tradition": "zen",
+        "url": "https://fieldtemple.org",
+        "address": "5333 Elmwood Ave",
+        "city": "Detroit",
+        "state": "MI",
+        "zip": "48211",
+        "lat": 42.3699,
+        "lng": -83.0431,
+        "neighborhood": "Poletown East",
+        "bio": (
+            "Field Temple is a small Zen community in Detroit's Poletown East "
+            "neighborhood, practicing in the Korean Zen tradition. Sunday meditation "
+            "(10–11am): two twenty-minute zazen periods, chanting the three refuges "
+            "in Pali and English, followed by a dharma talk and tea. Sessions are "
+            "held in the garden or under the trees. Open to all — no experience "
+            "required. Free."
+        ),
+    },
+    "dharma_gate_zen_troy": {
+        "id": "dharma_gate_zen_troy",
+        "name": "Dharma Gate Zen Center",
+        "tradition": "zen",
+        "url": "https://dharmagatezen.org",
+        "address": "360 East Maple Suite K",
+        "city": "Troy",
+        "state": "MI",
+        "zip": "48083",
+        "lat": 42.5798,
+        "lng": -83.1446,
+        "neighborhood": "Troy (Detroit suburb)",
+        "bio": (
+            "Dharma Gate Zen Center is a Soto Zen community in Troy, Michigan (north "
+            "Detroit suburb). Sunday service (10–11am) includes a 20-minute zazen "
+            "period and dharma talk — open to all, beginners welcome with visitor "
+            "guide available. Also hosts Recovery Dharma meetings (Saturdays 10am "
+            "and Wednesdays noon) and Shinrin-Yoku forest bathing practice. "
+            "Weekday sitting currently on hiatus. Free to attend."
+        ),
+    },
 }
