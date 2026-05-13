@@ -1470,11 +1470,11 @@ CENTERS = {
         "state": "MN",
         "zip": "55408",
         "neighborhood": "Lakewood / Bde Maka Ska",
-        "lat": 44.9434,
-        "lng": -93.3173,
+        "lat": 44.9419,
+        "lng": -93.3032,
         "description": (
             "Minnesota Zen Meditation Center (MZMC) is a Soto Zen center founded in 1972 in "
-            "the Dainin Katagiri Roshi lineage, on the west shore of Bde Maka Ska (Lake Calhoun). "
+            "the Dainin Katagiri Roshi lineage, on the east shore of Bde Maka Ska (Lake Calhoun). "
             "One of the oldest and most established Zen centers in the Midwest. Resident teacher: "
             "Myo Denis Lahey. Daily zazen: Mon–Fri 6:30am, Sat–Sun 7:30am; evening zazen "
             "Mon–Thu 5:30pm, Fri 6pm. Wednesday dharma talks 7:30pm. Sunday Morning Program "
