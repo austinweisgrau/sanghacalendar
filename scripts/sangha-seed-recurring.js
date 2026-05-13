@@ -1444,6 +1444,30 @@ const SITS = [
     notes: "20-minute zazen and dharma talk. Beginners welcome; visitor guide available on website. Free.",
     source_url: "https://dharmagatezen.org", event_url: "https://dharmagatezen.org/calendar/",
   },
+
+  // ── Sacramento, CA ────────────────────────────────────────────────────────
+
+  // ── Sacramento Insight Meditation (SIM) — 3111 Wissemann Dr, Sacramento CA 95826
+  // Theravada/Vipassana. iCal blocked by Incapsula; seeded as recurring.
+  {
+    org_id: "sacramento_insight_meditation", org_name: "Sacramento Insight Meditation",
+    title: "Meditation and Dharma Talk",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "3111 Wissemann Drive", city: "Sacramento", state: "CA", neighborhood: "South Sacramento (Sacramento Dharma Center)",
+    lat: 38.5516, lng: -121.3810, tradition: "theravada", location_type: "hybrid",
+    notes: "Weekly Thursday evening sit: guided meditation, dharma talk, and discussion. Drop-in, all levels welcome. Dana-based.",
+    source_url: "https://sactoinsight.org", event_url: "https://sactoinsight.org/activities/practice-opportunities/sitting-groups/",
+  },
+  {
+    org_id: "sacramento_insight_meditation", org_name: "Sacramento Insight Meditation",
+    title: "Dharma Recovery Sangha",
+    days: ["Tuesday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "3111 Wissemann Drive", city: "Sacramento", state: "CA", neighborhood: "South Sacramento (Sacramento Dharma Center)",
+    lat: 38.5516, lng: -121.3810, tradition: "theravada", location_type: "in-person",
+    identity_focus: "recovery",
+    notes: "Meditation and community for people seeking recovery from addiction. Open to all. In-person only. Dana-based.",
+    source_url: "https://sactoinsight.org", event_url: "https://sactoinsight.org/activities/practice-opportunities/sitting-groups/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

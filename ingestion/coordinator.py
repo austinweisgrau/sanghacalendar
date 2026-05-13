@@ -46,6 +46,7 @@ from ingestion.sources import san_diego as san_diego_sources
 from ingestion.sources import atlanta as atlanta_sources
 from ingestion.sources import nashville as nashville_sources
 from ingestion.sources import detroit as detroit_sources
+from ingestion.sources import sacramento as sacramento_sources
 
 log = logging.getLogger(__name__)
 
@@ -733,6 +734,35 @@ def run_detroit_phase3() -> list[Event]:
     return []
 
 
+def run_sacramento_phase3() -> list[Event]:
+    """Phase 3 Sacramento: SBMG + VSZS (WordPress iCal) + Lion's Roar (Google Calendar)."""
+    all_events: list[Event] = []
+
+    for feed_id, feed_cfg in sacramento_sources.ICAL_FEEDS.items():
+        center = sacramento_sources.CENTERS[feed_cfg["center_id"]]
+        log.info(f"Fetching {center.name} (Sacramento iCal: {feed_id})...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=center.id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Sacramento iCal {feed_id} failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -760,6 +790,7 @@ def main():
         + run_atlanta_phase3()
         + run_nashville_phase3()
         + run_detroit_phase3()
+        + run_sacramento_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

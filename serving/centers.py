@@ -2263,4 +2263,96 @@ CENTERS = {
             "Weekday sitting currently on hiatus. Free to attend."
         ),
     },
+    "sbmg_sacramento": {
+        "id": "sbmg_sacramento",
+        "name": "Sacramento Buddhist Meditation Group",
+        "tradition": "pluralist",
+        "url": "https://sbmg.org",
+        "address": "3111 Wissemann Drive",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95826",
+        "lat": 38.5516,
+        "lng": -121.3810,
+        "neighborhood": "South Sacramento (Sacramento Dharma Center)",
+        "bio": (
+            "Sacramento Buddhist Meditation Group (SBMG) is the oldest and largest "
+            "pluralist meditation sangha in Sacramento, meeting since the 1970s. "
+            "Based at Sacramento Dharma Center, a shared nonprofit campus at 3111 "
+            "Wissemann Drive. Weekly Sunday Meditation & Dharma Talk (10am–12pm, "
+            "hybrid): 40-minute silent sit followed by a talk from rotating teachers "
+            "across Zen, Vipassana, Tibetan, and secular traditions. Also Tuesday "
+            "Online Morning Meditation (7am via Zoom), BIPOC Sangha (4th Sunday), "
+            "Family Sangha (4th Sunday), and Introduction to Meditation (1st Sundays). "
+            "All programs dana-based; all welcome."
+        ),
+    },
+    "valley_streams_zen": {
+        "id": "valley_streams_zen",
+        "name": "Valley Streams Zen Sangha",
+        "tradition": "zen",
+        "url": "https://valleystreamszen.org",
+        "address": "3111 Wissemann Drive",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95826",
+        "lat": 38.5516,
+        "lng": -121.3810,
+        "neighborhood": "South Sacramento (Sacramento Dharma Center)",
+        "bio": (
+            "Valley Streams Zen Sangha practices Soto Zen in the Ordinary Mind Zen "
+            "school — the lineage of Charlotte Joko Beck, adapting Zen practice for "
+            "Western students while maintaining traditional rigor. Based at Sacramento "
+            "Dharma Center, 3111 Wissemann Drive. Weekly Morning Zazen & Service "
+            "(Thursdays 6–7:30am, hybrid): zazen, kinhin, service, and tea. Monday "
+            "Evening Program (7–9pm, hybrid): dharma talks, study, and sitting. "
+            "Introduction to Zen Meditation offered monthly (2nd Monday 6pm). "
+            "Drop-in welcome; free."
+        ),
+    },
+    "sacramento_insight_meditation": {
+        "id": "sacramento_insight_meditation",
+        "name": "Sacramento Insight Meditation",
+        "tradition": "theravada",
+        "url": "https://sactoinsight.org",
+        "address": "3111 Wissemann Drive",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95826",
+        "lat": 38.5516,
+        "lng": -121.3810,
+        "neighborhood": "South Sacramento (Sacramento Dharma Center)",
+        "bio": (
+            "Sacramento Insight Meditation (SIM) is a Vipassana/Theravada sangha "
+            "meeting at Sacramento Dharma Center, 3111 Wissemann Drive. Weekly "
+            "Thursday Meditation & Dharma Talk (7–9pm, hybrid): guided sitting "
+            "practice, dharma talk, and discussion — open to all levels. Also "
+            "Tuesday Dharma Recovery Sangha (6:30–8pm, in-person): meditation and "
+            "community for people seeking recovery, open to everyone. Monthly one-day "
+            "retreats offered. Young Persons Sangha (Wednesdays, bi-weekly) for "
+            "adults in their 20s–40s. All programs dana-based."
+        ),
+    },
+    "lions_roar_dharma_center": {
+        "id": "lions_roar_dharma_center",
+        "name": "Lion's Roar Dharma Center",
+        "tradition": "tibetan",
+        "url": "https://lionsroardharmacenter.org",
+        "address": "3240 B Street",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95816",
+        "lat": 38.5768,
+        "lng": -121.4545,
+        "neighborhood": "Midtown Sacramento",
+        "bio": (
+            "Lion's Roar Dharma Center (LRDC) is a Tibetan Buddhist center in "
+            "Midtown Sacramento at the Do Nga Dargey Temple (3240 B Street, between "
+            "32nd and 33rd). Teacher: Lama Yeshe Jinpa. Offers monthly in-person "
+            "Vajrayana practices on the moon phases (waxing, full, waning, new), "
+            "Sunday services including Shambhala Journey, visiting teacher programs, "
+            "and the Sustainable Service Program (quarterly half-day retreats). "
+            "All programs are hybrid (in-person and online). Dana-based; all welcome."
+        ),
+    },
 }
