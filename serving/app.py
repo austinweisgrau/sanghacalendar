@@ -12,10 +12,12 @@ from icalendar import Calendar as ICalCalendar
 from icalendar import Event as ICalEvent
 
 from data.store import (
+    add_correction,
     add_submission,
     add_subscriber,
     dedup_events,
     get_active_subscribers,
+    get_corrections,
     get_submissions,
     get_upcoming_events,
     init_db,
@@ -274,6 +276,32 @@ def unsubscribe():
         "<p>This unsubscribe link may have already been used.</p>"
         '<p><a href="/">Return to calendar</a></p></body></html>'
     )
+
+
+@app.route("/api/corrections", methods=["POST"])
+def submit_correction():
+    body = request.get_json(silent=True)
+    if not body or not body.get("description"):
+        return jsonify({"error": "description is required"}), 400
+    for field in ("org_id", "org_name", "description", "contact"):
+        val = body.get(field)
+        if val and len(val) > 2000:
+            return jsonify({"error": f"{field} too long"}), 400
+    row_id = add_correction(
+        org_id=body.get("org_id"),
+        org_name=body.get("org_name"),
+        description=body["description"].strip(),
+        contact=body.get("contact"),
+    )
+    return jsonify({"ok": True, "id": row_id}), 201
+
+
+@app.route("/api/admin/corrections", methods=["GET"])
+def admin_corrections():
+    auth = request.headers.get("Authorization", "")
+    if not INGEST_TOKEN or auth != f"Bearer {INGEST_TOKEN}":
+        return jsonify({"error": "unauthorized"}), 401
+    return jsonify(get_corrections())
 
 
 @app.route("/api/admin/subscribers")

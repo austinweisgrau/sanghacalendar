@@ -68,6 +68,15 @@ CREATE TABLE IF NOT EXISTS center_submissions (
     submitter   TEXT,
     submitted_at TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS corrections (
+    id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    org_id       TEXT,
+    org_name     TEXT,
+    description  TEXT NOT NULL,
+    contact      TEXT,
+    submitted_at TEXT NOT NULL
+);
 """
 
 
@@ -240,6 +249,27 @@ def get_submissions() -> list[dict]:
     with _conn() as c:
         return [dict(r) for r in c.execute(
             "SELECT * FROM center_submissions ORDER BY submitted_at DESC"
+        ).fetchall()]
+
+
+def add_correction(org_id: str = None, org_name: str = None,
+                   description: str = "", contact: str = None) -> int:
+    """Insert a correction report. Returns the new row id."""
+    submitted_at = datetime.now(timezone.utc).isoformat()
+    with _conn() as c:
+        cur = c.execute(
+            """INSERT INTO corrections (org_id, org_name, description, contact, submitted_at)
+               VALUES (?, ?, ?, ?, ?)""",
+            (org_id, org_name, description, contact, submitted_at),
+        )
+        return cur.lastrowid
+
+
+def get_corrections() -> list[dict]:
+    """Return all correction reports, newest first."""
+    with _conn() as c:
+        return [dict(r) for r in c.execute(
+            "SELECT * FROM corrections ORDER BY submitted_at DESC"
         ).fetchall()]
 
 

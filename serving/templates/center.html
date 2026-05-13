@@ -203,7 +203,72 @@
 
 <div class="footer">
   <a href="/" style="color:inherit">← All centers</a>
+  &nbsp;·&nbsp;
+  <a href="#" onclick="openCorrectionModal();return false;" style="color:inherit">Report an issue</a>
 </div>
+
+<!-- Correction modal -->
+<div id="correction-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9999;align-items:center;justify-content:center">
+  <div style="background:#fff;border-radius:8px;padding:1.5rem;max-width:420px;width:90%;position:relative">
+    <button onclick="closeCorrectionModal()" style="position:absolute;top:.75rem;right:.75rem;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#888">&times;</button>
+    <h3 style="margin:0 0 .25rem;font-size:1rem">Report an issue</h3>
+    <p style="margin:0 0 1rem;font-size:.82rem;color:#666">For: <strong>{{ center.name }}</strong></p>
+    <form onsubmit="submitCorrection(event)">
+      <textarea id="corr-description" rows="4" placeholder="What's wrong? (wrong location, outdated hours, closed center, etc.)"
+        style="width:100%;box-sizing:border-box;padding:.5rem;border:1px solid #ccc;border-radius:4px;font-size:.85rem;resize:vertical"></textarea>
+      <input id="corr-contact" type="text" placeholder="Your email (optional)"
+        style="width:100%;box-sizing:border-box;margin-top:.5rem;padding:.5rem;border:1px solid #ccc;border-radius:4px;font-size:.85rem">
+      <div style="display:flex;justify-content:flex-end;align-items:center;gap:.75rem;margin-top:.75rem">
+        <span id="corr-status" style="font-size:.8rem;color:#666;flex:1"></span>
+        <button type="button" onclick="closeCorrectionModal()" style="padding:.4rem .9rem;border:1px solid #ccc;border-radius:4px;background:#fff;cursor:pointer;font-size:.85rem">Cancel</button>
+        <button type="submit" style="padding:.4rem .9rem;border:none;border-radius:4px;background:#4d7060;color:#fff;cursor:pointer;font-size:.85rem">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+function openCorrectionModal() {
+  document.getElementById("corr-description").value = "";
+  document.getElementById("corr-contact").value = "";
+  document.getElementById("corr-status").textContent = "";
+  document.getElementById("corr-status").style.color = "#666";
+  document.getElementById("correction-modal").style.display = "flex";
+}
+function closeCorrectionModal() {
+  document.getElementById("correction-modal").style.display = "none";
+}
+async function submitCorrection(e) {
+  e.preventDefault();
+  const statusEl = document.getElementById("corr-status");
+  const body = {
+    org_id: "{{ center.id }}",
+    org_name: "{{ center.name | e }}",
+    description: document.getElementById("corr-description").value.trim(),
+    contact: document.getElementById("corr-contact").value.trim() || null,
+  };
+  if (!body.description) { statusEl.textContent = "Please describe the issue."; return; }
+  statusEl.textContent = "Sending…";
+  try {
+    const r = await fetch("/api/corrections", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    if (r.ok) {
+      statusEl.style.color = "green";
+      statusEl.textContent = "Thanks — we'll look into it!";
+      setTimeout(closeCorrectionModal, 1500);
+    } else {
+      statusEl.style.color = "red";
+      statusEl.textContent = "Something went wrong. Try again?";
+    }
+  } catch {
+    statusEl.style.color = "red";
+    statusEl.textContent = "Network error. Try again?";
+  }
+}
+</script>
 
 <script>
 const TRAD_COLOR = "{{ color }}";
