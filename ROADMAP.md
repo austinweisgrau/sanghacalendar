@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-13 (heartbeat 30)_
+_Last updated: 2026-05-14 (heartbeat 31)_
 
 ## Current Status
 
@@ -141,6 +141,7 @@ Candidate metros (rough priority):
 21. Detroit/SE Michigan 🔄 **Phase 3 Detroit live May 13** (4 centers) — see below
 22. Sacramento 🔄 **Phase 3 Sacramento live May 13** (4 centers) — see below
 23. Baltimore 🔄 **Phase 3 Baltimore live May 13** (4 centers) — see below
+24. Pittsburgh 🔄 **Phase 3 Pittsburgh live May 14** (5 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -683,6 +684,40 @@ Center bios added to centers.py for all 4 centers.
 - Columbia Insight Meditation Group (Ellicott City): 25 miles, school-year dependent
 - Burning House Zendo (Westminster): in-person sits canceled until July 2026
 - Clare Sangha: primarily online community
+
+---
+
+### Pittsburgh Phase 3 — ✅ Live May 14 (5 centers, heartbeat 31)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Stillpoint — A Pittsburgh Zen Community (137 41st St, Lawrenceville, PA 15201) | Recurring sits seeded — WordPress, no iCal. Sun 9:30am + Wed 7pm zazen. Lay Zen community. | ✅ Live heartbeat 31 |
+| Pittsburgh Buddhist Center (58 QSI Lane, Allison Park, PA 15101) | Recurring sit seeded — WordPress, no iCal. Wed 7pm sit with resident Burmese monks. Theravada. Beginners 6:30pm. | ✅ Live heartbeat 31 |
+| Pittsburgh Buddhist Center — Oakmont (700 Allegheny River Blvd, Oakmont, PA 15139) | Recurring sit seeded — outreach location at Oakmont Carnegie Library. Tue 6pm. | ✅ Live heartbeat 31 |
+| Olmo Ling Bon Center and Institute (1101 Greenfield Ave, Greenfield, PA 15217) | Recurring sits seeded — Wix, no iCal. Dzogchen Practice Group 1st & 3rd Sundays 4pm hybrid. Tibetan Bon. | ✅ Live heartbeat 31 |
+| Three Rivers Tibetan Cultural Center (1660 Lincoln Way, White Oak, PA 15131) | Recurring sits seeded — static HTML, no iCal. Wed 7pm + Sun 10am hybrid. Drikung Kagyu. | ✅ Live heartbeat 31 |
+
+Pennsylvania state already present from Philadelphia; Pittsburgh + Allison Park + Oakmont + White Oak cities added to `_filters.html`.
+Center bios added to centers.py for all 5 centers.
+`ingestion/sources/pittsburgh.py` created (CENTERS registry, ICAL_FEEDS empty).
+`ingestion/coordinator.py`: `run_pittsburgh_phase3()` added.
+`sangha-seed-recurring.js`: 8 new sit defs (Stillpoint ×2, PBC main ×1, PBC Oakmont ×1, Olmo Ling ×2, TRTCC ×2). Now 156 sit defs → 3201 instances.
+
+**Research notes (2026-05-14):**
+- Stillpoint Zen (stillpointzen.org): Active lay Zen community in Lawrenceville. Sun 9:30–10:40am, Wed 7–8pm. Fourth Saturday all-day zazenkai (not seeded as weekly). Walk-in welcome.
+- Pittsburgh Buddhist Center (pittsburghbuddhistcenter.org): Theravada monastery with resident Burmese monks. Wed main sit + Tue/Mon/Thu outreach at Carnegie Libraries. Only Wed + Tue Oakmont seeded.
+- Olmo Ling (olmoling.org): Rare Tibetan Bon center (pre-Buddhist tradition). Wed Ngondro + Silent Meditation temporarily cancelled. Dzogchen Practice Group 1st/3rd Sundays 4pm (meditation) + 2nd/4th (reading/discussion, not seeded).
+- Three Rivers Tibetan CC (threeriverstibetancc.org): Drikung Kagyu, resident teachers Khenpo Choephel + Lama Kalsang. 12 miles SE of Pittsburgh in White Oak. Wed 7pm rotating practices; Sun 10am Vajrasattva.
+- Pittsburgh Shambhala: Disaffiliated from Shambhala International (2019). Website redirects to main shambhala.org. Skip.
+- Deep Spring Zen Temple (Sewickley, 20mi N): SZBA Soto Zen, orientation required. Deferred.
+- Neighborhood Zen (Greenfield): Soto Zen private community, sign-up required. Has Google Calendar. Deferred.
+
+**Skipped/deferred:**
+- Pittsburgh Shambhala: disaffiliated/inactive — skip
+- Deep Spring Zen Temple (Sewickley): orientation required, 20+ miles north — deferred
+- Neighborhood Zen: semi-private, registration required — deferred
+- Zen Group of Pittsburgh (Kwan Um, Wilkinsburg): small group, verify still active — deferred
+- Insight Meditation Community of Pittsburgh: Zoom-only, no stable website — deferred
 
 ---
 
