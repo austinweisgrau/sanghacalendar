@@ -1702,6 +1702,33 @@ const SITS = [
     notes: "Free weekly community meditation open to all. Tibetan Buddhist (Gelugpa/Mahayana). No experience required.",
     source_url: "https://www.jewelheart.org", event_url: "https://www.jewelheart.org/jewel-heart-calendar/",
   },
+
+  // ── St. Louis, MO ───────────────────────────────────────────────────────
+
+  // ── Sunday Sangha St. Louis — Brentwood, MO
+  // Theravada/Insight. No iCal. Sunday hybrid sit.
+  // Confluence Zen Center zazen sits come from iCal feed (coordinator + abraxis).
+  {
+    org_id: "sunday_sangha_stl", org_name: "Sunday Sangha St. Louis",
+    title: "Sunday Meditation",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 90,
+    address: "", city: "Brentwood", state: "MO", neighborhood: "Brentwood (St. Louis suburb)",
+    lat: 38.6107, lng: -90.3494, tradition: "theravada", location_type: "hybrid",
+    notes: "Insight Meditation community. ~40 min silent sit, brief instruction, dharma sharing, open discussion. All backgrounds welcome. Free (cash donations for space rental). Location + Zoom link provided via email list at sundaysangha-stl.org.",
+    source_url: "https://sundaysangha-stl.org", event_url: "https://sundaysangha-stl.org",
+  },
+
+  // ── Center for Pragmatic Buddhism STL — 5007 Waterman Blvd, St. Louis, MO 63108
+  // Chan/Zen/Pragmatist. Weekly Thursday sit at First Unitarian Church.
+  {
+    org_id: "center_pragmatic_buddhism_stl", org_name: "Center for Pragmatic Buddhism — St. Louis",
+    title: "Weekly Practice",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "5007 Waterman Boulevard", city: "St. Louis", state: "MO", neighborhood: "Central West End (at First Unitarian Church)",
+    lat: 38.6428, lng: -90.2724, tradition: "zen", location_type: "in-person",
+    notes: "Zazen, dharma talk, and group discussion. Enter through north/back garden walkway. Free, open to all.",
+    source_url: "https://www.pragmaticbuddhism.org/stlouis", event_url: "https://www.pragmaticbuddhism.org/stlouis",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

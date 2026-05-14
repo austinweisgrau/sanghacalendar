@@ -2604,6 +2604,76 @@ CENTERS = {
             "Contact: bon@olmoling.org."
         ),
     },
+    # ── St. Louis, MO ────────────────────────────────────────────────────────
+
+    "confluence_zen_stl": {
+        "id": "confluence_zen_stl",
+        "name": "Confluence Zen Center STL",
+        "tradition": "zen",
+        "url": "https://www.confluencezen.org",
+        "address": "3544 Oxford Avenue",
+        "city": "Maplewood",
+        "state": "MO",
+        "zip": "63143",
+        "lat": 38.5981,
+        "lng": -90.3287,
+        "neighborhood": "Maplewood (St. Louis suburb)",
+        "bio": (
+            "Confluence Zen Center STL is a Soto Zen lay community in Maplewood, MO, "
+            "led by Daigaku Rumme (SZBA-authorized teacher). Regular schedule: Morning "
+            "Zazen Mon/Tue/Thu 6:20–7:15am; Evening Zazen Monday 7–8pm; Sunday Zazen "
+            "9–11am (2nd, 3rd, 4th, and 5th Sundays); Beginner's Night first Tuesday "
+            "monthly 6:30pm. Periodic one-day sittings, sesshins (including Rohatsu in "
+            "December), and dharma study groups. Drop-in welcome for zazen; beginners "
+            "encouraged to attend Beginner's Night first. Free, dana-based."
+        ),
+    },
+    "sunday_sangha_stl": {
+        "id": "sunday_sangha_stl",
+        "name": "Sunday Sangha St. Louis",
+        "tradition": "theravada",
+        "url": "https://sundaysangha-stl.org",
+        "address": "",
+        "city": "Brentwood",
+        "state": "MO",
+        "zip": "63144",
+        "lat": 38.6107,
+        "lng": -90.3494,
+        "neighborhood": "Brentwood (St. Louis suburb)",
+        "bio": (
+            "Sunday Sangha St. Louis is a Theravada/Insight Meditation community "
+            "meeting every Sunday 11am–12:30pm in Brentwood, MO (hybrid: in-person "
+            "and Zoom). Sessions begin with ~40 minutes of silent meditation, followed "
+            "by brief instruction in the Insight tradition, facilitator sharing, and "
+            "open discussion. All spiritual backgrounds welcome. Free (donations "
+            "cover the $35/week space rental — cash only). Meeting location and Zoom "
+            "link shared with email list subscribers at sundaysangha-stl.org."
+        ),
+    },
+    "center_pragmatic_buddhism_stl": {
+        "id": "center_pragmatic_buddhism_stl",
+        "name": "Center for Pragmatic Buddhism — St. Louis",
+        "tradition": "zen",
+        "url": "https://www.pragmaticbuddhism.org/stlouis",
+        "address": "5007 Waterman Boulevard",
+        "city": "St. Louis",
+        "state": "MO",
+        "zip": "63108",
+        "lat": 38.6428,
+        "lng": -90.2724,
+        "neighborhood": "Central West End (at First Unitarian Church)",
+        "bio": (
+            "The Center for Pragmatic Buddhism (CPB) St. Louis chapter holds weekly "
+            "Thursday practice 7–8:30pm Central at First Unitarian Church of St. Louis "
+            "(5007 Waterman Blvd at Kingshighway, MO 63108). CPB synthesizes early "
+            "Indian Buddhist teachings (Nikayan), Chinese Chan and Japanese Zen, and "
+            "American Pragmatism. Practice combines zazen, dharma talks, and group "
+            "discussion. Enter through the north/back garden walkway to glass doors "
+            "on the left. Free and open to all. Weekday online sits also available "
+            "nationally via the CPB community."
+        ),
+    },
+
     "three_rivers_tibetan_pittsburgh": {
         "id": "three_rivers_tibetan_pittsburgh",
         "name": "Three Rivers Tibetan Cultural Center",

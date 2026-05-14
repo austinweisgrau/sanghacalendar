@@ -51,6 +51,7 @@ from ingestion.sources import san_diego as san_diego_sources
 from ingestion.sources import atlanta as atlanta_sources
 from ingestion.sources import sacramento as sacramento_sources
 from ingestion.sources import ann_arbor as ann_arbor_sources
+from ingestion.sources import st_louis as st_louis_sources
 
 log = logging.getLogger(__name__)
 
@@ -713,6 +714,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Sacramento iCal {feed_id} failed: {e}")
+
+    # St. Louis Phase 3 — Confluence Zen Center iCal
+    log.info("--- St. Louis Phase 3: iCal feeds ---")
+    for feed_id, feed_cfg in st_louis_sources.ICAL_FEEDS.items():
+        center = st_louis_sources.CENTERS[feed_cfg["center_id"]]
+        log.info(f"Fetching {center.name} (St. Louis iCal: {feed_id})...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=center.id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ St. Louis iCal {feed_id} failed: {e}")
 
     # Ann Arbor Phase 3 — Jewel Heart (Google Calendar iCal)
     log.info("--- Ann Arbor Phase 3: iCal feeds ---")

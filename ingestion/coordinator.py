@@ -49,6 +49,7 @@ from ingestion.sources import detroit as detroit_sources
 from ingestion.sources import sacramento as sacramento_sources
 from ingestion.sources import pittsburgh as pittsburgh_sources
 from ingestion.sources import ann_arbor as ann_arbor_sources
+from ingestion.sources import st_louis as st_louis_sources
 
 log = logging.getLogger(__name__)
 
@@ -772,6 +773,35 @@ def run_pittsburgh_phase3() -> list[Event]:
     return []
 
 
+def run_st_louis_phase3() -> list[Event]:
+    """Phase 3 St. Louis: Confluence Zen Center iCal feed."""
+    all_events: list[Event] = []
+
+    for feed_id, feed_cfg in st_louis_sources.ICAL_FEEDS.items():
+        center = st_louis_sources.CENTERS[feed_cfg["center_id"]]
+        log.info(f"Fetching {center.name} (St. Louis iCal: {feed_id})...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=center.id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ St. Louis iCal {feed_id} failed: {e}")
+
+    return all_events
+
+
 def run_ann_arbor_phase3() -> list[Event]:
     """Phase 3 Ann Arbor: Jewel Heart (Google Calendar iCal)."""
     all_events: list[Event] = []
@@ -831,6 +861,7 @@ def main():
         + run_sacramento_phase3()
         + run_pittsburgh_phase3()
         + run_ann_arbor_phase3()
+        + run_st_louis_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
