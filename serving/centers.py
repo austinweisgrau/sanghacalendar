@@ -2445,6 +2445,76 @@ CENTERS = {
         ),
     },
 
+    # ── Ann Arbor, MI ───────────────────────────────────────────────────────
+
+    "jewel_heart_ann_arbor": {
+        "id": "jewel_heart_ann_arbor",
+        "name": "Jewel Heart",
+        "tradition": "tibetan",
+        "url": "https://www.jewelheart.org",
+        "address": "1129 Oak Valley Drive",
+        "city": "Ann Arbor",
+        "state": "MI",
+        "zip": "48108",
+        "lat": 42.2209,
+        "lng": -83.6972,
+        "neighborhood": "Southeast Ann Arbor",
+        "bio": (
+            "Jewel Heart is a Tibetan Buddhist (Gelugpa/Mahayana) center founded by "
+            "Kyabje Gelek Rimpoche and now led by resident director Demo Rinpoche. "
+            "International headquarters at 1129 Oak Valley Drive, Ann Arbor — Gelek "
+            "Rimpoche taught here from 1988, and the 14th Dalai Lama offered teachings "
+            "here in 2008. Regular public offerings include a free weekly Community "
+            "Meditation (Tuesdays 6–6:45pm, in-person), Sunday programs (White Tara "
+            "Guided Meditation 9:30–10:30am, onsite + online), and periodic Wednesday "
+            "courses. All levels welcome; weekly sit is free."
+        ),
+    },
+    "insight_meditation_ann_arbor": {
+        "id": "insight_meditation_ann_arbor",
+        "name": "Insight Meditation Ann Arbor",
+        "tradition": "theravada",
+        "url": "https://insightmeditationannarbor.org",
+        "address": "180 Little Lake Drive, Suite 1",
+        "city": "Ann Arbor",
+        "state": "MI",
+        "zip": "48103",
+        "lat": 42.2810,
+        "lng": -83.7912,
+        "neighborhood": "West Ann Arbor (near Westgate)",
+        "bio": (
+            "Insight Meditation Ann Arbor (IMAA) offers Theravada / Insight Meditation "
+            "sits for all experience levels. Regular schedule: Sunday in-person meditation "
+            "(10–11:15am: 45-minute sit + dharma talk, at 180 Little Lake Drive Suite 1); "
+            "Saturday online meditation via Zoom (10–11:30am); weekday morning sits "
+            "Mon–Fri via Zoom (7:30–8:00am, optional continuation to 8:30am). Courses "
+            "in MBSR and other contemplative programs also offered. No experience required; "
+            "free and donation-based."
+        ),
+    },
+    "zen_buddhist_temple_ann_arbor": {
+        "id": "zen_buddhist_temple_ann_arbor",
+        "name": "Zen Buddhist Temple — Ann Arbor",
+        "tradition": "zen",
+        "url": "https://www.zenbuddhisttemple.org/annarbor",
+        "address": "1214 Packard Street",
+        "city": "Ann Arbor",
+        "state": "MI",
+        "zip": "48104",
+        "lat": 42.2631,
+        "lng": -83.7423,
+        "neighborhood": "Burns Park (near UMich campus)",
+        "bio": (
+            "Zen Buddhist Temple Ann Arbor is a Korean Zen (Son Buddhism) temple in "
+            "the Burns Park neighborhood, part of the Buddhist Society of Compassionate "
+            "Wisdom (founded by Samu Sunim). Resident priests: Haju Sunim and Maum. "
+            "Sunday Public Service (10am, in-person + livestreamed): meditation, dharma "
+            "talk, and ceremonies. Recovery Dharma (Sundays noon, online) and periodic "
+            "5-week Meditation Courses (Thursdays 6:30–8:30pm) also offered. Drop-in "
+            "welcome for Sunday services. Free."
+        ),
+    },
+
     # ── Pittsburgh, PA ──────────────────────────────────────────────────────
 
     "stillpoint_zen_pittsburgh": {

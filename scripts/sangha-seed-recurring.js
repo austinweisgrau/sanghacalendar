@@ -1654,6 +1654,54 @@ const SITS = [
     notes: "Vajrasattva purification practice. Hybrid in-person + Zoom. All levels welcome; free. Drikung Kagyu lineage.",
     source_url: "https://www.threeriverstibetancc.org", event_url: "https://www.threeriverstibetancc.org/schedule/",
   },
+
+  // ── Ann Arbor, MI ───────────────────────────────────────────────────────
+
+  // ── Insight Meditation Ann Arbor — 180 Little Lake Dr #1, Ann Arbor, MI 48103
+  // Theravada/Insight. No iCal. Sun in-person + Sat/weekday Zoom sits.
+  {
+    org_id: "insight_meditation_ann_arbor", org_name: "Insight Meditation Ann Arbor",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 75,
+    address: "180 Little Lake Drive, Suite 1", city: "Ann Arbor", state: "MI", neighborhood: "West Ann Arbor (near Westgate)",
+    lat: 42.2810, lng: -83.7912, tradition: "theravada", location_type: "in-person",
+    notes: "45-minute sit followed by dharma talk. Drop-in welcome; no experience required. Free and donation-based.",
+    source_url: "https://insightmeditationannarbor.org", event_url: "https://insightmeditationannarbor.org/regular-sittings/",
+  },
+  {
+    org_id: "insight_meditation_ann_arbor", org_name: "Insight Meditation Ann Arbor",
+    title: "Saturday Morning Meditation (Online)",
+    days: ["Saturday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "", city: "Ann Arbor", state: "MI", neighborhood: "Online (Zoom)",
+    lat: 42.2810, lng: -83.7912, tradition: "theravada", location_type: "online",
+    notes: "Weekly online sit via Zoom. No experience required. Free.",
+    source_url: "https://insightmeditationannarbor.org", event_url: "https://insightmeditationannarbor.org/regular-sittings/",
+  },
+
+  // ── Zen Buddhist Temple Ann Arbor — 1214 Packard St, Ann Arbor, MI 48104
+  // Korean Zen (Son Buddhism). Sunday service in-person + livestreamed.
+  {
+    org_id: "zen_buddhist_temple_ann_arbor", org_name: "Zen Buddhist Temple — Ann Arbor",
+    title: "Sunday Public Service",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "1214 Packard Street", city: "Ann Arbor", state: "MI", neighborhood: "Burns Park (near UMich campus)",
+    lat: 42.2631, lng: -83.7423, tradition: "zen", location_type: "in-person",
+    notes: "Korean Zen (Son Buddhism) Sunday service: meditation, dharma talk, ceremonies. In-person + livestreamed. Drop-in welcome. Free.",
+    source_url: "https://www.zenbuddhisttemple.org/annarbor", event_url: "https://www.zenbuddhisttemple.org/annarbor",
+  },
+
+  // ── Jewel Heart — 1129 Oak Valley Drive, Ann Arbor, MI 48108
+  // Tibetan Buddhist (Gelugpa). Free weekly community meditation Tuesdays.
+  // Special events via Google Calendar iCal (wired into coordinator + abraxis).
+  {
+    org_id: "jewel_heart_ann_arbor", org_name: "Jewel Heart",
+    title: "Community Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 45,
+    address: "1129 Oak Valley Drive", city: "Ann Arbor", state: "MI", neighborhood: "Southeast Ann Arbor",
+    lat: 42.2209, lng: -83.6972, tradition: "tibetan", location_type: "in-person",
+    notes: "Free weekly community meditation open to all. Tibetan Buddhist (Gelugpa/Mahayana). No experience required.",
+    source_url: "https://www.jewelheart.org", event_url: "https://www.jewelheart.org/jewel-heart-calendar/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

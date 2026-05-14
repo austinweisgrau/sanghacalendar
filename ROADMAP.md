@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-14 (heartbeat 31)_
+_Last updated: 2026-05-14 (heartbeat 32)_
 
 ## Current Status
 
@@ -142,6 +142,7 @@ Candidate metros (rough priority):
 22. Sacramento 🔄 **Phase 3 Sacramento live May 13** (4 centers) — see below
 23. Baltimore 🔄 **Phase 3 Baltimore live May 13** (4 centers) — see below
 24. Pittsburgh 🔄 **Phase 3 Pittsburgh live May 14** (5 centers) — see below
+25. Ann Arbor 🔄 **Phase 3 Ann Arbor live May 14** (3 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -718,6 +719,35 @@ Center bios added to centers.py for all 5 centers.
 - Neighborhood Zen: semi-private, registration required — deferred
 - Zen Group of Pittsburgh (Kwan Um, Wilkinsburg): small group, verify still active — deferred
 - Insight Meditation Community of Pittsburgh: Zoom-only, no stable website — deferred
+
+---
+
+### Ann Arbor Phase 3 — ✅ Live May 14 (3 centers, heartbeat 32)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Jewel Heart (1129 Oak Valley Dr, SE Ann Arbor, MI 48108) | Google Calendar public iCal (`annarbor@jewelheart.org`) — courses, retreats, special events. Tibetan Gelugpa. | ✅ Live heartbeat 32 — wired into coordinator + abraxis. Tue 6pm free community sit seeded as recurring. |
+| Insight Meditation Ann Arbor (180 Little Lake Dr #1, Ann Arbor, MI 48103) | Recurring sits seeded — WordPress, no Events Calendar iCal. Sun 10am in-person + Sat 10am online. Theravada/Vipassana. | ✅ Live heartbeat 32 |
+| Zen Buddhist Temple Ann Arbor (1214 Packard St, Ann Arbor, MI 48104) | Recurring sit seeded — Wix, no iCal. Sun 10am Korean Zen public service, in-person + livestreamed. | ✅ Live heartbeat 32 |
+
+Ann Arbor city added to MI state filter in `_filters.html` (Michigan state + Detroit cities already present from heartbeat 28).
+Center bios added to centers.py for all 3 centers.
+`ingestion/sources/ann_arbor.py` created (CENTERS registry + Jewel Heart Google Calendar ICAL_FEEDS).
+`ingestion/coordinator.py`: `run_ann_arbor_phase3()` added.
+`ingestion/abraxis_ingest.py`: Ann Arbor iCal section added.
+`sangha-seed-recurring.js`: 4 new sit defs (IMAA Sun + Sat, Zen Temple Sun, Jewel Heart Tue). 156+4 = 160 sit defs.
+
+**Research notes (2026-05-14):**
+- Jewel Heart (jewelheart.org): Founded by Kyabje Gelek Rimpoche (1988), current director Demo Rinpoche. 14th Dalai Lama taught here 2008. Google Calendar ID `annarbor@jewelheart.org` — active, public. Weekly free Community Meditation Tuesdays 6–6:45pm seeded as recurring (calendar also covers it but recurring ensures continuity). Sun White Tara program (9:30am) also in iCal.
+- IMAA (insightmeditationannarbor.org): WordPress site without The Events Calendar plugin; no iCal endpoint. Sun in-person (10–11:15am, 45-min sit + talk) seeded. Sat online Zoom (10–11:30am) seeded. Weekday 7:30am Zoom sits not seeded (Mon–Fri daily is complex to manage; can add if needed).
+- Zen Buddhist Temple (zenbuddhisttemple.org/annarbor): Wix site, no iCal. Korean Zen (Son Buddhism). Samu Sunim lineage. Resident priests Haju Sunim and Maum. Sunday service 10am seeded.
+- Still Mountain (stillmountain.org): Tai Chi center — false positive, skip.
+
+**Skipped/deferred:**
+- UMich Buddhist groups: website offline
+- Great Lakes Buddhist Vihara: Detroit-based, not Ann Arbor
+- Ann Arbor Karma Thegsum Choling: no accessible web presence found
+- SGI Ann Arbor: national org, deferred
 
 ---
 
