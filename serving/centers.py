@@ -2444,4 +2444,117 @@ CENTERS = {
             "All programs are hybrid (in-person and online). Dana-based; all welcome."
         ),
     },
+
+    # ── Pittsburgh, PA ──────────────────────────────────────────────────────
+
+    "stillpoint_zen_pittsburgh": {
+        "id": "stillpoint_zen_pittsburgh",
+        "name": "Stillpoint — A Pittsburgh Zen Community",
+        "tradition": "zen",
+        "url": "https://www.stillpointzen.org",
+        "address": "137 41st St",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": "15201",
+        "lat": 40.4646,
+        "lng": -79.9644,
+        "neighborhood": "Lawrenceville",
+        "bio": (
+            "Stillpoint is a lay Zen community in the Lawrenceville neighborhood of "
+            "Pittsburgh, offering drop-in zazen twice a week: Sunday morning "
+            "(9:30–10:40am) and Wednesday evening (7–8pm), plus a monthly all-day "
+            "zazenkai (fourth Saturday). Newcomers are warmly welcomed; a private "
+            "introduction to zazen is offered to those new to the practice. "
+            "No experience or membership required. Free, donation welcome. "
+            "Contact: sit@stillpointzen.org."
+        ),
+    },
+    "pittsburgh_buddhist_center": {
+        "id": "pittsburgh_buddhist_center",
+        "name": "Pittsburgh Buddhist Center",
+        "tradition": "theravada",
+        "url": "https://www.pittsburghbuddhistcenter.org",
+        "address": "58 QSI Lane",
+        "city": "Allison Park",
+        "state": "PA",
+        "zip": "15101",
+        "lat": 40.5760,
+        "lng": -79.9576,
+        "neighborhood": "Allison Park (Hampton Township)",
+        "bio": (
+            "Pittsburgh Buddhist Center is a Theravada community with resident Burmese "
+            "monks offering free public weekly sits. Main center: Wednesday evenings "
+            "(7–9:30pm, 58 QSI Lane, Allison Park; beginners arrive 6:30pm for private "
+            "instruction from monks). Outreach sits at Oakmont Carnegie Library "
+            "(Tuesday 6pm) and East Liberty Carnegie Library (Monday 6pm). Monks "
+            "available for dharma conversation after each sit. All programs free and "
+            "open to the public. Livestream: youtube.com/pbclive."
+        ),
+    },
+    "pittsburgh_buddhist_center_oakmont": {
+        "id": "pittsburgh_buddhist_center_oakmont",
+        "name": "Pittsburgh Buddhist Center — Oakmont",
+        "tradition": "theravada",
+        "url": "https://www.pittsburghbuddhistcenter.org",
+        "address": "700 Allegheny River Blvd",
+        "city": "Oakmont",
+        "state": "PA",
+        "zip": "15139",
+        "lat": 40.5209,
+        "lng": -79.8362,
+        "neighborhood": "Oakmont Carnegie Library",
+        "bio": (
+            "Pittsburgh Buddhist Center outreach sit at Oakmont Carnegie Library. "
+            "Weekly Tuesday evenings, 6pm. Led by resident Burmese monks from the "
+            "main Pittsburgh Buddhist Center in Allison Park. Free and open to the "
+            "public; all experience levels welcome. Monks available for dharma Q&A "
+            "after sits."
+        ),
+    },
+    "olmo_ling_pittsburgh": {
+        "id": "olmo_ling_pittsburgh",
+        "name": "Olmo Ling Bon Center and Institute",
+        "tradition": "tibetan",
+        "url": "https://www.olmoling.org",
+        "address": "1101 Greenfield Ave",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": "15217",
+        "lat": 40.4180,
+        "lng": -79.9449,
+        "neighborhood": "Greenfield",
+        "bio": (
+            "Olmo Ling Bon Center is a center for Tibetan Bon Buddhism — the indigenous "
+            "pre-Buddhist spiritual tradition of Tibet, closely related to but distinct "
+            "from Vajrayana Buddhism. Located in the Greenfield neighborhood of "
+            "Pittsburgh. The Sunday Dzogchen Practice Group (4–6pm) meets on 1st and "
+            "3rd Sundays in-person with Zoom option: meditation practice on 1st/3rd "
+            "Sundays, reading and discussion on 2nd/4th Sundays. Free and open to all. "
+            "Founded in the lineage of Geshe Tenzin Wangyal Rinpoche. "
+            "Contact: bon@olmoling.org."
+        ),
+    },
+    "three_rivers_tibetan_pittsburgh": {
+        "id": "three_rivers_tibetan_pittsburgh",
+        "name": "Three Rivers Tibetan Cultural Center",
+        "tradition": "tibetan",
+        "url": "https://www.threeriverstibetancc.org",
+        "address": "1660 Lincoln Way",
+        "city": "White Oak",
+        "state": "PA",
+        "zip": "15131",
+        "lat": 40.3407,
+        "lng": -79.8289,
+        "neighborhood": "White Oak (SE Pittsburgh metro)",
+        "bio": (
+            "Three Rivers Tibetan Cultural Center (TRTCC) is a Drikung Kagyu lineage "
+            "Tibetan Buddhist center in White Oak, PA (~12 miles southeast of Pittsburgh), "
+            "with resident teachers Ven. Khenpo Choephel and Ven. Lama Kalsang. Weekly "
+            "practices include rotating Chenrezig, Manjushri, Medicine Buddha, and Green "
+            "Tara pujas on Wednesday evenings (7pm, hybrid in-person + Zoom), Vajrasattva "
+            "practice on Sunday mornings (10am, hybrid), and Dharma Discussion on Saturdays "
+            "(10–10:30am, hybrid). Tuesday 7pm online Beginner Buddhism class. All levels "
+            "welcome; no experience required. Free."
+        ),
+    },
 }

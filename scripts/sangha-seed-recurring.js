@@ -1564,6 +1564,96 @@ const SITS = [
     notes: "Meditation and community for people seeking recovery from addiction. Open to all. In-person only. Dana-based.",
     source_url: "https://sactoinsight.org", event_url: "https://sactoinsight.org/activities/practice-opportunities/sitting-groups/",
   },
+
+  // ── Pittsburgh, PA ────────────────────────────────────────────────────────
+
+  // ── Stillpoint Zen — 137 41st St, Lawrenceville, Pittsburgh, PA 15201
+  // Lay Zen community. WordPress site, no iCal. Drop-in, free.
+  {
+    org_id: "stillpoint_zen_pittsburgh", org_name: "Stillpoint — A Pittsburgh Zen Community",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 70,
+    address: "137 41st St", city: "Pittsburgh", state: "PA", neighborhood: "Lawrenceville",
+    lat: 40.4646, lng: -79.9644, tradition: "zen", location_type: "in-person",
+    notes: "Drop-in zazen. Newcomers welcome; private intro to zazen available on request. No experience needed. Free, donation welcome.",
+    source_url: "https://www.stillpointzen.org", event_url: "https://www.stillpointzen.org",
+  },
+  {
+    org_id: "stillpoint_zen_pittsburgh", org_name: "Stillpoint — A Pittsburgh Zen Community",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "137 41st St", city: "Pittsburgh", state: "PA", neighborhood: "Lawrenceville",
+    lat: 40.4646, lng: -79.9644, tradition: "zen", location_type: "in-person",
+    notes: "Drop-in zazen. Newcomers welcome; private intro to zazen available on request. No experience needed. Free, donation welcome.",
+    source_url: "https://www.stillpointzen.org", event_url: "https://www.stillpointzen.org",
+  },
+
+  // ── Pittsburgh Buddhist Center — 58 QSI Lane, Allison Park, PA 15101
+  // Theravada; resident Burmese monks. No iCal. Free.
+  {
+    org_id: "pittsburgh_buddhist_center", org_name: "Pittsburgh Buddhist Center",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 150,
+    address: "58 QSI Lane", city: "Allison Park", state: "PA", neighborhood: "Allison Park (Hampton Township)",
+    lat: 40.5760, lng: -79.9576, tradition: "theravada", location_type: "in-person",
+    notes: "Led by resident Burmese monks. Beginners arrive 6:30pm for private instruction. Monks available for dharma conversation after sit. Free.",
+    source_url: "https://www.pittsburghbuddhistcenter.org", event_url: "https://www.pittsburghbuddhistcenter.org/weekly-meditation-programs/",
+  },
+
+  // ── Pittsburgh Buddhist Center Oakmont — 700 Allegheny River Blvd, Oakmont, PA 15139
+  {
+    org_id: "pittsburgh_buddhist_center_oakmont", org_name: "Pittsburgh Buddhist Center — Oakmont",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "700 Allegheny River Blvd", city: "Oakmont", state: "PA", neighborhood: "Oakmont Carnegie Library",
+    lat: 40.5209, lng: -79.8362, tradition: "theravada", location_type: "in-person",
+    notes: "Outreach sit at Oakmont Carnegie Library. Led by resident monks from Pittsburgh Buddhist Center. Free and open to all.",
+    source_url: "https://www.pittsburghbuddhistcenter.org", event_url: "https://www.pittsburghbuddhistcenter.org/weekly-meditation-programs/",
+  },
+
+  // ── Olmo Ling Bon Center — 1101 Greenfield Ave, Pittsburgh, PA 15217
+  // Tibetan Bon (pre-Buddhist). Dzogchen Practice Group: 1st & 3rd Sundays, in-person + Zoom.
+  {
+    org_id: "olmo_ling_pittsburgh", org_name: "Olmo Ling Bon Center and Institute",
+    title: "Dzogchen Practice Group",
+    days: ["Sunday"], week_of_month: 1,
+    time: { h: 16, m: 0 }, duration_min: 120,
+    address: "1101 Greenfield Ave", city: "Pittsburgh", state: "PA", neighborhood: "Greenfield",
+    lat: 40.4180, lng: -79.9449, tradition: "tibetan", location_type: "hybrid",
+    notes: "Guided Dzogchen meditation practice. In-person + Zoom. Free and open to all. 1st Sunday of the month. Tibetan Bon tradition.",
+    source_url: "https://www.olmoling.org", event_url: "https://www.olmoling.org/events/",
+  },
+  {
+    org_id: "olmo_ling_pittsburgh", org_name: "Olmo Ling Bon Center and Institute",
+    title: "Dzogchen Practice Group",
+    days: ["Sunday"], week_of_month: 3,
+    time: { h: 16, m: 0 }, duration_min: 120,
+    address: "1101 Greenfield Ave", city: "Pittsburgh", state: "PA", neighborhood: "Greenfield",
+    lat: 40.4180, lng: -79.9449, tradition: "tibetan", location_type: "hybrid",
+    notes: "Guided Dzogchen meditation practice. In-person + Zoom. Free and open to all. 3rd Sunday of the month. Tibetan Bon tradition.",
+    source_url: "https://www.olmoling.org", event_url: "https://www.olmoling.org/events/",
+  },
+
+  // ── Three Rivers Tibetan Cultural Center — 1660 Lincoln Way, White Oak, PA 15131
+  // Drikung Kagyu. Resident teachers. ~12 miles SE of Pittsburgh. Hybrid in-person + Zoom.
+  {
+    org_id: "three_rivers_tibetan_pittsburgh", org_name: "Three Rivers Tibetan Cultural Center",
+    title: "Wednesday Evening Practice",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1660 Lincoln Way", city: "White Oak", state: "PA", neighborhood: "White Oak (SE Pittsburgh metro)",
+    lat: 40.3407, lng: -79.8289, tradition: "tibetan", location_type: "hybrid",
+    notes: "Rotating practices: Chenrezig, Manjushri, Medicine Buddha, and Green Tara (schedule distributed via email). Hybrid in-person + Zoom. All levels welcome; free.",
+    source_url: "https://www.threeriverstibetancc.org", event_url: "https://www.threeriverstibetancc.org/schedule/",
+  },
+  {
+    org_id: "three_rivers_tibetan_pittsburgh", org_name: "Three Rivers Tibetan Cultural Center",
+    title: "Sunday Vajrasattva Practice",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "1660 Lincoln Way", city: "White Oak", state: "PA", neighborhood: "White Oak (SE Pittsburgh metro)",
+    lat: 40.3407, lng: -79.8289, tradition: "tibetan", location_type: "hybrid",
+    notes: "Vajrasattva purification practice. Hybrid in-person + Zoom. All levels welcome; free. Drikung Kagyu lineage.",
+    source_url: "https://www.threeriverstibetancc.org", event_url: "https://www.threeriverstibetancc.org/schedule/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

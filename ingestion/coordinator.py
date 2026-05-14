@@ -47,6 +47,7 @@ from ingestion.sources import atlanta as atlanta_sources
 from ingestion.sources import nashville as nashville_sources
 from ingestion.sources import detroit as detroit_sources
 from ingestion.sources import sacramento as sacramento_sources
+from ingestion.sources import pittsburgh as pittsburgh_sources
 
 log = logging.getLogger(__name__)
 
@@ -763,6 +764,13 @@ def run_sacramento_phase3() -> list[Event]:
     return all_events
 
 
+def run_pittsburgh_phase3() -> list[Event]:
+    """Phase 3 Pittsburgh: recurring sits only (seeded via sangha-seed-recurring.js)."""
+    # Pittsburgh sources have no active iCal feeds — all sits seeded as recurring.
+    # This function exists for structural consistency and future iCal additions.
+    return []
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -791,6 +799,7 @@ def main():
         + run_nashville_phase3()
         + run_detroit_phase3()
         + run_sacramento_phase3()
+        + run_pittsburgh_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
