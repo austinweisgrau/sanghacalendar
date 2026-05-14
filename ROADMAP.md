@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-14 (heartbeat 32)_
+_Last updated: 2026-05-14 (heartbeat 33)_
 
 ## Current Status
 
@@ -143,6 +143,7 @@ Candidate metros (rough priority):
 23. Baltimore 🔄 **Phase 3 Baltimore live May 13** (4 centers) — see below
 24. Pittsburgh 🔄 **Phase 3 Pittsburgh live May 14** (5 centers) — see below
 25. Ann Arbor 🔄 **Phase 3 Ann Arbor live May 14** (3 centers) — see below
+26. St. Louis 🔄 **Phase 3 St. Louis live May 14** (3 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -748,6 +749,43 @@ Center bios added to centers.py for all 3 centers.
 - Great Lakes Buddhist Vihara: Detroit-based, not Ann Arbor
 - Ann Arbor Karma Thegsum Choling: no accessible web presence found
 - SGI Ann Arbor: national org, deferred
+
+---
+
+### St. Louis Phase 3 — ✅ Live May 14 (3 centers, heartbeat 33)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Confluence Zen Center STL (3544 Oxford Ave, Maplewood, MO 63143) | WordPress All-in-One Event Calendar iCal feed — recurring Morning Zazen (Mon/Tue/Thu 6:20am), Evening Zazen (Mon 7pm), Sunday Zazen (2nd/3rd/4th/5th Sun 9am), Beginner's Night (1st Tue monthly). Soto Zen. | ✅ Live heartbeat 33 — wired into coordinator + abraxis |
+| Sunday Sangha St. Louis (Brentwood, MO) | Recurring sit seeded — Sunday 11am hybrid. Theravada/Insight. | ✅ Live heartbeat 33 |
+| Center for Pragmatic Buddhism STL (5007 Waterman Blvd, St. Louis MO 63108) | Recurring sit seeded — Thursday 7pm in-person at First Unitarian Church. Chan/Zen/Pragmatist. | ✅ Live heartbeat 33 |
+
+Missouri state + St. Louis/Maplewood/Brentwood cities added to `_filters.html`.
+Center bios added to centers.py for all 3 centers.
+`ingestion/sources/st_louis.py` created, wired into coordinator + abraxis.
+`sangha-seed-recurring.js`: 2 new sit defs (Sunday Sangha STL + CPB STL). Now 162 sit defs → 3279 instances.
+
+**Research notes (2026-05-14):**
+- Confluence Zen Center STL (confluencezen.org): SZBA-authorized teacher Daigaku Rumme.
+  Address: 3544 Oxford Ave, Maplewood MO 63143 (also listed as 7112 St. James Square in
+  older entries — same corner building). Active ai1ec iCal feed with RRULE-based recurring
+  events. Morning Zazen Mon/Tue/Thu 6:20am confirmed live in feed.
+- Sunday Sangha STL (sundaysangha-stl.org): Insight Meditation community in Brentwood.
+  Every Sunday 11am–12:30pm hybrid. Venue address not published publicly (email-list only).
+  Free; donation-based space rental.
+- Center for Pragmatic Buddhism STL (pragmaticbuddhism.org/stlouis): Thu 7–8:30pm Central
+  at First Unitarian Church of St. Louis. Syncretic Nikayan/Chan/Zen/Pragmatist approach.
+- St. Louis Shambhala: stlouis.shambhala.org redirects to main shambhala.org — likely
+  closed/inactive. Skip.
+- Missouri Zen Center (missourizencenter.org, 220 Spring Ave, Webster Groves): 500 error
+  on iCal endpoint. Schedule not publicly accessible. Defer.
+- Mid-America Buddhist Association (maba-usa.org): Chinese Chan, open Fri/Sat/Sun.
+  Primarily devotional; no structured public sit calendar found. Defer.
+
+**Skipped/deferred:**
+- St. Louis Shambhala: appears inactive/merged
+- Missouri Zen Center: 500 error on iCal — monitor for recovery
+- Mid-America Buddhist Association: devotional focus, no public sit calendar accessible
 
 ---
 
