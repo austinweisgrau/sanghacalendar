@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-15 (heartbeat 34)_
+_Last updated: 2026-05-15 (heartbeat 36)_
 
 ## Current Status
 
@@ -145,6 +145,7 @@ Candidate metros (rough priority):
 25. Ann Arbor 🔄 **Phase 3 Ann Arbor live May 14** (3 centers) — see below
 26. St. Louis 🔄 **Phase 3 St. Louis live May 14** (3 centers) — see below
 27. Kansas City 🔄 **Phase 3 Kansas City live May 15** (2 centers) — see below
+28. Richmond (VA) 🔄 **Phase 3 Richmond live May 15** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -871,6 +872,41 @@ Center bios added to centers.py for both centers.
 - Temple Buddhist Center / IMCKC: Squarespace JS-rendered calendar, times unconfirmed
 - Shambhala KC: defunct
 - Heartland Community of Mindful Living: online-only
+
+---
+
+### Richmond VA Phase 3 — ✅ Live May 15 (4 centers, heartbeat 36)
+
+All centers meet at **Ekoji Buddhist Sangha** (3411 Grove Ave, Fan District, Richmond VA 23221) — a multi-tradition Buddhist community hub.
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Insight Meditation Community of Richmond / IMCR (imcrva.org) | WordPress iCal feed (`?ical=1`, Chrome UA) for retreats/specials + Tue 7pm + Fri 5:45pm weekly sits seeded. Theravada/Vipassana. | ✅ Live heartbeat 36 |
+| Richmond Zen (richmondzen.org) | Recurring sits seeded — Soto Zen (Branching Streams/Shunryu Suzuki). Sun 9am, Tue 6:30am, Wed 7pm, Fri 6:30am. All in-person. | ✅ Live heartbeat 36 |
+| Nyama Sangha (ekojirichmond.org/richmond-shambhala/) | Recurring sit seeded — Shambhala-lineage, Sat 10:30am hybrid. | ✅ Live heartbeat 36 |
+| Palpung Shenpen Tharchin (palpungrichmond.org) | Recurring sit seeded — Tibetan Kagyu (Palpung), teacher Lama Linda. Thu 7pm hybrid; rotating practices by week. | ✅ Live heartbeat 36 |
+
+Virginia state + Richmond city added to `_filters.html`.
+Center bios added to centers.py for all 4 centers.
+`ingestion/sources/richmond.py` created with CENTERS + IMCR ICAL_FEEDS.
+`sangha-seed-recurring.js`: 8 new sit defs (IMCR ×2, Richmond Zen ×4, Nyama ×1, Palpung ×1). Now 186 sit defs → 3721 instances.
+
+**Research notes (2026-05-15):**
+- IMCR iCal feed (`imcrva.org/?ical=1`): WordPress Events Calendar, blocks default httpx UA
+  with 406; Chrome UA succeeds. Feed contains only retreats and special off-site events
+  (not regular weekly sits). Weekly sits (Tue 7pm, Fri 5:45pm) seeded as recurring.
+- Richmond Zen: Soto Zen, Branching Streams lineage. No iCal; static WordPress site.
+  Confirmed schedule from website. Guiding teacher: Josho Phelan Roshi.
+- Nyama Sangha: Richmond Shambhala-derived community at Ekoji. No dedicated website.
+- Palpung Shenpen Tharchin: Kagyu lineage. Thu 7pm confirmed; 4th Sun 2pm teaching
+  NOT seeded (low attendance monthly events — would need week_of_month=4).
+
+**Skipped/deferred:**
+- Integral Zen (at Ekoji): Mon 7–8:45pm. Ken Wilber/integral-influenced — unclear Buddhist tradition; deferred
+- Meditative Inquiry (at Ekoji): Sun 7–8:45pm + Wed 12:15pm Zoom. Non-traditional — deferred
+- Pure Land (at Ekoji): Sat 2pm. Pure Land devotional — deferred
+- Won Buddhism of Richmond (Mechanicsville): 20 miles north — deferred
+- Guhyasamaja Center (Fairfax VA): DC metro suburb, 45 miles north — covered under DC expansion if needed
 
 ---
 
