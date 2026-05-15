@@ -2787,6 +2787,98 @@ CENTERS = {
         ),
     },
 
+    "imcr": {
+        "id": "imcr",
+        "name": "Insight Meditation Community of Richmond",
+        "tradition": "theravada",
+        "url": "https://imcrva.org",
+        "address": "3411 Grove Avenue",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23221",
+        "lat": 37.5532,
+        "lng": -77.4774,
+        "neighborhood": "Fan District (at Ekoji)",
+        "bio": (
+            "Insight Meditation Community of Richmond (IMCR) is Richmond's primary "
+            "Vipassana/Insight Meditation community, meeting at Ekoji Buddhist Sangha "
+            "in the Fan District. Weekly sits: Tuesdays 7–9pm and Fridays 5:45–7:30pm "
+            "— sit, walking meditation, dharma teaching or book discussion — in-person "
+            "at Ekoji and via Zoom. Monthly specials include the 1st Sunday 'Unplug' "
+            "program, 2nd Saturday Early Sit (starting 5:45am), and Engaged Buddhism "
+            "evenings. Also offers daylong retreats and weekend retreats at off-site "
+            "locations. Free; dana welcome."
+        ),
+    },
+
+    "richmond_zen": {
+        "id": "richmond_zen",
+        "name": "Richmond Zen",
+        "tradition": "zen",
+        "url": "https://www.richmondzen.org",
+        "address": "3411 Grove Avenue",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23221",
+        "lat": 37.5532,
+        "lng": -77.4774,
+        "neighborhood": "Fan District (at Ekoji)",
+        "bio": (
+            "Richmond Zen practices in the Soto Zen lineage of Shunryu Suzuki Roshi, "
+            "affiliated with Branching Streams. Guiding teacher: Josho Phelan Roshi "
+            "(abbess, Chapel Hill Zen Center); head priest: Eden Kevin Heffernan. "
+            "Meets at Ekoji Buddhist Sangha in Richmond's Fan District. Schedule: "
+            "Sundays 9–11:30am, Tuesdays 6:30–7:30am, Wednesdays 7–8:30pm, Fridays "
+            "6:30–7:30am — all in-person. Newcomer orientations offered regularly. "
+            "Drop-in welcome. Free."
+        ),
+    },
+
+    "nyama_sangha": {
+        "id": "nyama_sangha",
+        "name": "Nyama Sangha",
+        "tradition": "tibetan",
+        "url": "https://ekojirichmond.org/richmond-shambhala/",
+        "address": "3411 Grove Avenue",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23221",
+        "lat": 37.5532,
+        "lng": -77.4774,
+        "neighborhood": "Fan District (at Ekoji)",
+        "bio": (
+            "Nyama Sangha is Richmond's Shambhala-lineage meditation community, "
+            "meeting weekly at Ekoji Buddhist Sangha in the Fan District. Saturday "
+            "morning sits at 10:30am in-person and via Zoom. Open to practitioners "
+            "of all backgrounds; no experience necessary. Instruction available for "
+            "newcomers. Free; donations appreciated."
+        ),
+    },
+
+    "palpung_richmond": {
+        "id": "palpung_richmond",
+        "name": "Palpung Shenpen Tharchin",
+        "tradition": "tibetan",
+        "url": "https://palpungrichmond.org",
+        "address": "3411 Grove Avenue",
+        "city": "Richmond",
+        "state": "VA",
+        "zip": "23221",
+        "lat": 37.5532,
+        "lng": -77.4774,
+        "neighborhood": "Fan District (at Ekoji)",
+        "bio": (
+            "Palpung Shenpen Tharchin is a Tibetan Buddhist community in the Palpung "
+            "Kagyu lineage, meeting at Ekoji Buddhist Sangha under the guidance of "
+            "Lama Linda. Thursday evenings 7pm in-person at Ekoji and via Zoom. "
+            "Practices rotate by week: 1st Thursday — Chenrezig in English; "
+            "2nd Thursday — Chenrezig in Tibetan; 3rd Thursday — Green Tara in "
+            "English; 4th Thursday — Green Tara in Tibetan; 5th Thursday — Medicine "
+            "Buddha. 4th Sunday afternoon teachings with Lama Linda (monthly). "
+            "All open to the public; newcomers welcome. Free."
+        ),
+    },
+
     "three_rivers_tibetan_pittsburgh": {
         "id": "three_rivers_tibetan_pittsburgh",
         "name": "Three Rivers Tibetan Cultural Center",

@@ -1892,6 +1892,88 @@ const SITS = [
     notes: "Kwan Um School of Zen, in-person. 1st Thursday: Q&A with Zen Master Bon Hae. 4th Thursday: kong-an interviews. Drop-in welcome. Free.",
     source_url: "https://www.kansaszencenter.org", event_url: "https://www.kansaszencenter.org",
   },
+
+  // ── Richmond, VA — all groups meet at Ekoji Buddhist Sangha, 3411 Grove Ave (Fan District) ──
+
+  // IMCR — Theravada/Insight — Tue 7pm + Fri 5:45pm weekly sits (iCal captures retreats; these cover regular sits)
+  {
+    org_id: "imcr", org_name: "Insight Meditation Community of Richmond",
+    title: "Tuesday Evening Sit",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "3411 Grove Avenue", city: "Richmond", state: "VA", neighborhood: "Fan District (at Ekoji)",
+    lat: 37.5532, lng: -77.4774, tradition: "theravada", location_type: "hybrid",
+    notes: "Sit, walking meditation, dharma talk + discussion. In-person at Ekoji + Zoom. Free; dana welcome.",
+    source_url: "https://imcrva.org", event_url: "https://imcrva.org/weekly-events/",
+  },
+  {
+    org_id: "imcr", org_name: "Insight Meditation Community of Richmond",
+    title: "Friday Evening Sit",
+    days: ["Friday"], time: { h: 17, m: 45 }, duration_min: 105,
+    address: "3411 Grove Avenue", city: "Richmond", state: "VA", neighborhood: "Fan District (at Ekoji)",
+    lat: 37.5532, lng: -77.4774, tradition: "theravada", location_type: "hybrid",
+    notes: "Sit, walking meditation, book reading + discussion. In-person at Ekoji + Zoom. Free; dana welcome.",
+    source_url: "https://imcrva.org", event_url: "https://imcrva.org/weekly-events/",
+  },
+
+  // Richmond Zen — Soto Zen (Branching Streams / Shunryu Suzuki lineage)
+  {
+    org_id: "richmond_zen", org_name: "Richmond Zen",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 150,
+    address: "3411 Grove Avenue", city: "Richmond", state: "VA", neighborhood: "Fan District (at Ekoji)",
+    lat: 37.5532, lng: -77.4774, tradition: "zen", location_type: "in-person",
+    notes: "Soto Zen, Branching Streams lineage. In-person. Newcomer orientations offered regularly. Drop-in welcome. Free.",
+    source_url: "https://www.richmondzen.org", event_url: "https://www.richmondzen.org",
+  },
+  {
+    org_id: "richmond_zen", org_name: "Richmond Zen",
+    title: "Tuesday Morning Zazen",
+    days: ["Tuesday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "3411 Grove Avenue", city: "Richmond", state: "VA", neighborhood: "Fan District (at Ekoji)",
+    lat: 37.5532, lng: -77.4774, tradition: "zen", location_type: "in-person",
+    notes: "Early morning zazen. In-person at Ekoji. Drop-in welcome. Free.",
+    source_url: "https://www.richmondzen.org", event_url: "https://www.richmondzen.org",
+  },
+  {
+    org_id: "richmond_zen", org_name: "Richmond Zen",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3411 Grove Avenue", city: "Richmond", state: "VA", neighborhood: "Fan District (at Ekoji)",
+    lat: 37.5532, lng: -77.4774, tradition: "zen", location_type: "in-person",
+    notes: "Soto Zen. In-person at Ekoji. Drop-in welcome. Free.",
+    source_url: "https://www.richmondzen.org", event_url: "https://www.richmondzen.org",
+  },
+  {
+    org_id: "richmond_zen", org_name: "Richmond Zen",
+    title: "Friday Morning Zazen",
+    days: ["Friday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "3411 Grove Avenue", city: "Richmond", state: "VA", neighborhood: "Fan District (at Ekoji)",
+    lat: 37.5532, lng: -77.4774, tradition: "zen", location_type: "in-person",
+    notes: "Early morning zazen. In-person at Ekoji. Drop-in welcome. Free.",
+    source_url: "https://www.richmondzen.org", event_url: "https://www.richmondzen.org",
+  },
+
+  // Nyama Sangha — Shambhala lineage — Sat 10:30am
+  {
+    org_id: "nyama_sangha", org_name: "Nyama Sangha",
+    title: "Saturday Morning Sit",
+    days: ["Saturday"], time: { h: 10, m: 30 }, duration_min: 60,
+    address: "3411 Grove Avenue", city: "Richmond", state: "VA", neighborhood: "Fan District (at Ekoji)",
+    lat: 37.5532, lng: -77.4774, tradition: "tibetan", location_type: "hybrid",
+    notes: "Shambhala-lineage community sit. In-person at Ekoji + Zoom. No experience needed. Free; donations appreciated.",
+    source_url: "https://ekojirichmond.org/richmond-shambhala/", event_url: "https://ekojirichmond.org/richmond-shambhala/",
+  },
+
+  // Palpung Shenpen Tharchin — Tibetan Kagyu — Thu 7pm
+  {
+    org_id: "palpung_richmond", org_name: "Palpung Shenpen Tharchin",
+    title: "Thursday Evening Practice",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3411 Grove Avenue", city: "Richmond", state: "VA", neighborhood: "Fan District (at Ekoji)",
+    lat: 37.5532, lng: -77.4774, tradition: "tibetan", location_type: "hybrid",
+    notes: "Tibetan Kagyu (Palpung lineage), teacher Lama Linda. Rotating practices by week-of-month: Chenrezig, Green Tara, Medicine Buddha. In-person at Ekoji + Zoom. All welcome; newcomers welcome. Free.",
+    source_url: "https://palpungrichmond.org", event_url: "https://palpungrichmond.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
