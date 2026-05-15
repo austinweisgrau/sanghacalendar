@@ -1,6 +1,6 @@
 # Sangha Calendar — Dev Roadmap
 
-_Last updated: 2026-05-14 (heartbeat 33)_
+_Last updated: 2026-05-15 (heartbeat 34)_
 
 ## Current Status
 
@@ -13,7 +13,7 @@ _Last updated: 2026-05-14 (heartbeat 33)_
 - City filter includes 11 cities (Alameda, Kensington, Pleasant Hill, Richmond, Tiburon + more)
 - Subscribe button: filter-aware GCal / Apple Calendar / .ics popup (heartbeat 23)
 - Ingestion sources: 31 iCal feeds + manually-seeded recurring sits + 45 Algolia (Spirit Rock) + 12 Momence (Berkeley Alembic) + Eventbrite (Nyingma, Insight Berkeley, Tibet House US) + static HTML (Bay Zen, Berkeley Priory, Insight Berkeley, ZCNYC) + Squarespace JSON (Houston Zen Center)
-- Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin + NorCal Plum Village network + 18 Phase 3 metros
+- Coverage: East Bay (incl. Pleasant Hill/Contra Costa) + SF + Marin + NorCal Plum Village network + 19 Phase 3 metros
 
 ---
 
@@ -802,6 +802,42 @@ Center bios added to centers.py for all 3 centers.
 | Center | Approach |
 |--------|----------|
 | Village Zendo | HARD: JS-rendered (Divi + EventOrganiser plugin), no iCal found, no `__NEXT_DATA__`. Needs headless browser. |
+
+---
+
+### Cincinnati Phase 3 — ✅ Live May 15 (3 centers, heartbeat 34)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Cincinnati Zen Center (6015 Vine St, Cincinnati OH 45216) | Recurring sits seeded — JS-rendered calendar, no iCal. Sun 8am, Mon 7pm, Wed 5:30pm, Thu 7pm in-person; Sat 8:30am online. Korean/Soto Zen. Furnace Mountain Sangha lineage. | ✅ Live heartbeat 34 |
+| Buddhist Dharma Center of Cincinnati (15 Moline Court, Northside, OH 45223) | Recurring sits seeded — Joomla JEvents calendar, iCal export 403. Daily 7am Zoom, Sun 10am hybrid, Tue 7pm in-person, Wed 7pm hybrid. Ecumenical/Theravada-leaning. | ✅ Live heartbeat 34 |
+| Gaden Samdrupling Buddhist Monastery (3046 Pavlova Drive, Colerain Township OH 45251) | Recurring sit seeded — custom visual calendar, no iCal. Wed 7–8pm Open Meditation (public drop-in). Gelugpa Tibetan (Gaden lineage). | ✅ Live heartbeat 34 |
+
+Ohio state + Cincinnati city added to `_filters.html`.
+Center bios added to centers.py for all 3 centers.
+`ingestion/sources/cincinnati.py` created (no active iCal feeds).
+`sangha-seed-recurring.js`: 10 new sit defs (CZC ×5, BDCC ×4, GSL ×1). Now 172 sit defs → 3487 instances.
+
+**Research notes (2026-05-15):**
+- Cincinnati Zen Center (cincinnatizencenter.org): Founded under Zen Master Dae Gak (Furnace
+  Mountain Sangha). Korean Kwan Um / Soto Zen. Calendar page is JS-rendered — no accessible
+  iCal feed. Confirmed schedule: Sun 8am, Mon 7pm, Wed 5:30pm, Thu 7pm in-person; Sat 8:30am Zoom.
+- Buddhist Dharma Center (cincinnatidharma.org): 15 Moline Court, Northside neighborhood.
+  Ecumenical/non-sectarian (Theravada-leaning). JEvents (Joomla) calendar — iCal export
+  endpoint returns 403. Daily 7am Zoom (all 7 days), Sun 10am hybrid, Tue 7pm in-person,
+  Wed 7pm hybrid instruction+discussion.
+- Gaden Samdrupling (gslmonastery.org): Tibetan Gelug monastery, West Side. Wed 7pm Open
+  Meditation specifically listed as public drop-in. Custom visual calendar, no iCal.
+- Cincinnati Shambhala: No active web presence found — defunct. Skip.
+- Tri-State Dharma: Insight Meditation, currently Zoom-only. Deferred.
+- Loveland Zen (Grailville, ~20 miles NE): Monday evenings hybrid. Deferred — outer suburb.
+- Being Peace Sangha (beingpeacecommunity.org): Thich Nhat Hanh lineage, online-only.
+
+**Skipped/deferred:**
+- Cincinnati Shambhala: defunct
+- Tri-State Dharma: Zoom-only
+- Loveland Zen: 20 miles NE of city center
+- Being Peace Sangha: online-only
 
 ---
 
