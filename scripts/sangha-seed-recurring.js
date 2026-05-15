@@ -1831,6 +1831,67 @@ const SITS = [
     notes: "Public drop-in silent meditation. Prayer books provided. Gelugpa Tibetan monastery. Free.",
     source_url: "https://www.gslmonastery.org", event_url: "https://www.gslmonastery.org",
   },
+
+  // ── Rime Buddhist Center — 2939 Wayne Ave, Kansas City MO 64109
+  // Non-sectarian Rimé pluralist. 30+ year old center; Mon-Fri noon sits + evening sits + Sunday.
+  {
+    org_id: "rime_buddhist_center", org_name: "Rime Buddhist Center",
+    title: "Daily Lunchtime Meditation",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    time: { h: 12, m: 0 }, duration_min: 30,
+    address: "2939 Wayne Avenue", city: "Kansas City", state: "MO", neighborhood: "Waldo/Brookside",
+    lat: 39.0278, lng: -94.5594, tradition: "pluralist", location_type: "in-person",
+    notes: "Daily 12–12:30pm group meditation, Mon–Fri. Drop-in; all traditions welcome. Free.",
+    source_url: "https://www.rimecenter.org", event_url: "https://www.rimecenter.org",
+  },
+  {
+    org_id: "rime_buddhist_center", org_name: "Rime Buddhist Center",
+    title: "Monday Evening Zen Meditation",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "2939 Wayne Avenue", city: "Kansas City", state: "MO", neighborhood: "Waldo/Brookside",
+    lat: 39.0278, lng: -94.5594, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Monday evening Zen meditation, 7–8pm. Drop-in. Free.",
+    source_url: "https://www.rimecenter.org", event_url: "https://www.rimecenter.org",
+  },
+  {
+    org_id: "rime_buddhist_center", org_name: "Rime Buddhist Center",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 30,
+    address: "2939 Wayne Avenue", city: "Kansas City", state: "MO", neighborhood: "Waldo/Brookside",
+    lat: 39.0278, lng: -94.5594, tradition: "pluralist", location_type: "in-person",
+    notes: "Weekly Wednesday 6pm free meditation instruction + 7–7:30pm group meditation. Drop-in. Free.",
+    source_url: "https://www.rimecenter.org", event_url: "https://www.rimecenter.org",
+  },
+  {
+    org_id: "rime_buddhist_center", org_name: "Rime Buddhist Center",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 30,
+    address: "2939 Wayne Avenue", city: "Kansas City", state: "MO", neighborhood: "Waldo/Brookside",
+    lat: 39.0278, lng: -94.5594, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Thursday 6–6:45pm group meditation + 7–7:30pm Medicine Buddha Sadhana. Drop-in. Free.",
+    source_url: "https://www.rimecenter.org", event_url: "https://www.rimecenter.org",
+  },
+  {
+    org_id: "rime_buddhist_center", org_name: "Rime Buddhist Center",
+    title: "Sunday Morning Service",
+    days: ["Sunday"], time: { h: 10, m: 30 }, duration_min: 60,
+    address: "2939 Wayne Avenue", city: "Kansas City", state: "MO", neighborhood: "Waldo/Brookside",
+    lat: 39.0278, lng: -94.5594, tradition: "pluralist", location_type: "in-person",
+    notes: "Sunday 10:30am Service/Practice. Childcare available. Drop-in. Free.",
+    source_url: "https://www.rimecenter.org", event_url: "https://www.rimecenter.org",
+  },
+
+  // ── Kansas Zen Center — Kansas City branch — Unity Temple on the Plaza, 707 W 47th St, KC MO 64112
+  // Kwan Um School of Zen. KC branch: Thursday 7pm in-person only.
+  {
+    org_id: "kansas_zen_center_kc", org_name: "Kansas Zen Center — Kansas City",
+    title: "Thursday Evening Zen",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "707 West 47th Street", city: "Kansas City", state: "MO", neighborhood: "Country Club Plaza (at Unity Temple)",
+    lat: 39.0462, lng: -94.5905, tradition: "zen", location_type: "in-person",
+    notes: "Kwan Um School of Zen, in-person. 1st Thursday: Q&A with Zen Master Bon Hae. 4th Thursday: kong-an interviews. Drop-in welcome. Free.",
+    source_url: "https://www.kansaszencenter.org", event_url: "https://www.kansaszencenter.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

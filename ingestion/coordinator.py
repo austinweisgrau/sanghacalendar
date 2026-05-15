@@ -51,6 +51,7 @@ from ingestion.sources import pittsburgh as pittsburgh_sources
 from ingestion.sources import ann_arbor as ann_arbor_sources
 from ingestion.sources import st_louis as st_louis_sources
 from ingestion.sources import cincinnati as cincinnati_sources
+from ingestion.sources import kansas_city as kansas_city_sources
 
 log = logging.getLogger(__name__)
 
@@ -839,6 +840,13 @@ def run_cincinnati_phase3() -> list[Event]:
     return []
 
 
+def run_kansas_city_phase3() -> list[Event]:
+    """Phase 3 Kansas City: recurring sits only (seeded via sangha-seed-recurring.js)."""
+    # Kansas City sources have no active iCal feeds — all sits seeded as recurring.
+    # This function exists for structural consistency and future iCal additions.
+    return []
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -871,6 +879,7 @@ def main():
         + run_ann_arbor_phase3()
         + run_st_louis_phase3()
         + run_cincinnati_phase3()
+        + run_kansas_city_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

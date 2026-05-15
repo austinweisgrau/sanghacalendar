@@ -2740,6 +2740,53 @@ CENTERS = {
         ),
     },
 
+    "rime_buddhist_center": {
+        "id": "rime_buddhist_center",
+        "name": "Rime Buddhist Center",
+        "tradition": "pluralist",
+        "url": "https://www.rimecenter.org",
+        "address": "2939 Wayne Avenue",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64109",
+        "lat": 39.0278,
+        "lng": -94.5594,
+        "neighborhood": "Waldo/Brookside",
+        "bio": (
+            "Rime Buddhist Center is one of the most active non-sectarian Buddhist "
+            "centers in the Midwest, with over 30 years in Kansas City's "
+            "Waldo/Brookside neighborhood. Founded on Rimé philosophy — drawing from "
+            "all four major Tibetan schools plus Zen — the center welcomes all "
+            "traditions and experience levels. Regular schedule: Mon–Fri 12–12:30pm "
+            "daily group meditation; Monday 7–8pm Zen Meditation; Wednesday 7–7:30pm "
+            "Group Meditation; Thursday 7–7:30pm Group Meditation and Medicine Buddha "
+            "Sadhana; Sunday 10:30am Service/Practice (childcare available). "
+            "Free; donations welcome."
+        ),
+    },
+
+    "kansas_zen_center_kc": {
+        "id": "kansas_zen_center_kc",
+        "name": "Kansas Zen Center — Kansas City",
+        "tradition": "zen",
+        "url": "https://www.kansaszencenter.org",
+        "address": "707 West 47th Street",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64112",
+        "lat": 39.0462,
+        "lng": -94.5905,
+        "neighborhood": "Country Club Plaza (at Unity Temple)",
+        "bio": (
+            "The Kansas City branch of the Kansas Zen Center holds weekly Thursday "
+            "evening sits at Unity Temple on the Plaza (47th & Jefferson). Practice "
+            "follows the Kwan Um School of Zen (Korean Zen) under Zen Master Bon Hae "
+            "(Judy Roitman). The first Thursday includes Q&A with the teacher; the "
+            "fourth Thursday features kong-an interviews with Dennis Duermeier JDPSN. "
+            "In-person only. Drop-in welcome. Free."
+        ),
+    },
+
     "three_rivers_tibetan_pittsburgh": {
         "id": "three_rivers_tibetan_pittsburgh",
         "name": "Three Rivers Tibetan Cultural Center",

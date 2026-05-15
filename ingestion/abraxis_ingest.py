@@ -53,6 +53,7 @@ from ingestion.sources import sacramento as sacramento_sources
 from ingestion.sources import ann_arbor as ann_arbor_sources
 from ingestion.sources import st_louis as st_louis_sources
 from ingestion.sources import cincinnati as cincinnati_sources
+from ingestion.sources import kansas_city as kansas_city_sources
 
 log = logging.getLogger(__name__)
 
@@ -766,6 +767,9 @@ def main():
 
     # Cincinnati Phase 3 — all sits seeded as recurring; no iCal feeds
     log.info("--- Cincinnati Phase 3: no iCal feeds (recurring sits only) ---")
+
+    # Kansas City Phase 3 — all sits seeded as recurring; no iCal feeds
+    log.info("--- Kansas City Phase 3: no iCal feeds (recurring sits only) ---")
 
     # Convert dataclasses to dicts
     dicts = []
