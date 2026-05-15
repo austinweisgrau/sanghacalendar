@@ -2674,6 +2674,72 @@ CENTERS = {
         ),
     },
 
+    "cincinnati_zen_center": {
+        "id": "cincinnati_zen_center",
+        "name": "Cincinnati Zen Center",
+        "tradition": "zen",
+        "url": "https://www.cincinnatizencenter.org",
+        "address": "6015 Vine Street",
+        "city": "Cincinnati",
+        "state": "OH",
+        "zip": "45216",
+        "lat": 39.1851,
+        "lng": -84.5036,
+        "neighborhood": "Hartwell (North Cincinnati)",
+        "bio": (
+            "Cincinnati Zen Center offers weekly in-person and online sits in the Hartwell "
+            "neighborhood of North Cincinnati. Founded under Zen Master Dae Gak (Furnace "
+            "Mountain Sangha), the center blends Korean Kwan Um and Soto Zen influences. "
+            "In-person schedule: Sunday 8am, Monday 7pm, Wednesday 5:30pm, Thursday 7pm — "
+            "all drop-in welcome; arrive 10–15 minutes early for your first visit. "
+            "Saturday 8:30am is virtual Zoom only. Doors lock at the start of sits. Free."
+        ),
+    },
+
+    "buddhist_dharma_center_cincinnati": {
+        "id": "buddhist_dharma_center_cincinnati",
+        "name": "Buddhist Dharma Center of Cincinnati",
+        "tradition": "pluralist",
+        "url": "https://www.cincinnatidharma.org",
+        "address": "15 Moline Court",
+        "city": "Cincinnati",
+        "state": "OH",
+        "zip": "45223",
+        "lat": 39.1716,
+        "lng": -84.5222,
+        "neighborhood": "Northside",
+        "bio": (
+            "The Buddhist Dharma Center of Cincinnati is a non-sectarian, ecumenical "
+            "practice community in the Northside neighborhood. Rooted in the Theravada/"
+            "Insight tradition but welcoming all approaches. Offers daily 7am Zoom sits "
+            "(seven days a week), Sunday 10am hybrid sits (ritual, two sits, and walking "
+            "meditation), Tuesday 7pm silent in-person sitting, and Wednesday 7pm hybrid "
+            "instruction and discussion. Periodic day-long retreats. Free; donations welcome."
+        ),
+    },
+
+    "gaden_samdrupling_monastery": {
+        "id": "gaden_samdrupling_monastery",
+        "name": "Gaden Samdrupling Buddhist Monastery",
+        "tradition": "tibetan",
+        "url": "https://www.gslmonastery.org",
+        "address": "3046 Pavlova Drive",
+        "city": "Cincinnati",
+        "state": "OH",
+        "zip": "45251",
+        "lat": 39.2147,
+        "lng": -84.6198,
+        "neighborhood": "Colerain Township (West Side)",
+        "bio": (
+            "Gaden Samdrupling Buddhist Monastery (GSL) is a Tibetan Buddhist monastery "
+            "of the Gelug school (Gaden lineage) on Cincinnati's West Side. The Wednesday "
+            "7–8pm Open Meditation is open to the public as a drop-in silent sitting — "
+            "monastery prayer books provided. Friday evenings offer an Introduction to "
+            "Buddhism with Ven. Jamyan Lama. One of the few Tibetan monasteries in the "
+            "greater Cincinnati region."
+        ),
+    },
+
     "three_rivers_tibetan_pittsburgh": {
         "id": "three_rivers_tibetan_pittsburgh",
         "name": "Three Rivers Tibetan Cultural Center",

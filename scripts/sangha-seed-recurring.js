@@ -1729,6 +1729,108 @@ const SITS = [
     notes: "Zazen, dharma talk, and group discussion. Enter through north/back garden walkway. Free, open to all.",
     source_url: "https://www.pragmaticbuddhism.org/stlouis", event_url: "https://www.pragmaticbuddhism.org/stlouis",
   },
+
+  // ── Cincinnati, OH ───────────────────────────────────────────────────────
+
+  // ── Cincinnati Zen Center — 6015 Vine St, Cincinnati, OH 45216
+  // Korean/Soto Zen. 4 in-person days + Saturday Zoom. Furnace Mountain Sangha lineage.
+  {
+    org_id: "cincinnati_zen_center", org_name: "Cincinnati Zen Center",
+    title: "Sunday Morning Zen",
+    days: ["Sunday"], time: { h: 8, m: 0 }, duration_min: 60,
+    address: "6015 Vine Street", city: "Cincinnati", state: "OH", neighborhood: "Hartwell (North Cincinnati)",
+    lat: 39.1851, lng: -84.5036, tradition: "zen", location_type: "in-person",
+    notes: "In-person drop-in zazen. Arrive 10–15 min early for first visit. Doors lock at sit time. Free.",
+    source_url: "https://www.cincinnatizencenter.org", event_url: "https://www.cincinnatizencenter.org",
+  },
+  {
+    org_id: "cincinnati_zen_center", org_name: "Cincinnati Zen Center",
+    title: "Monday Evening Zen",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "6015 Vine Street", city: "Cincinnati", state: "OH", neighborhood: "Hartwell (North Cincinnati)",
+    lat: 39.1851, lng: -84.5036, tradition: "zen", location_type: "in-person",
+    notes: "In-person drop-in zazen. Beginner-friendly; orientation offered. Arrive early for first visit. Free.",
+    source_url: "https://www.cincinnatizencenter.org", event_url: "https://www.cincinnatizencenter.org",
+  },
+  {
+    org_id: "cincinnati_zen_center", org_name: "Cincinnati Zen Center",
+    title: "Wednesday Evening Zen",
+    days: ["Wednesday"], time: { h: 17, m: 30 }, duration_min: 60,
+    address: "6015 Vine Street", city: "Cincinnati", state: "OH", neighborhood: "Hartwell (North Cincinnati)",
+    lat: 39.1851, lng: -84.5036, tradition: "zen", location_type: "in-person",
+    notes: "In-person drop-in zazen. Arrive 10–15 min early for first visit. Free.",
+    source_url: "https://www.cincinnatizencenter.org", event_url: "https://www.cincinnatizencenter.org",
+  },
+  {
+    org_id: "cincinnati_zen_center", org_name: "Cincinnati Zen Center",
+    title: "Thursday Evening Zen",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "6015 Vine Street", city: "Cincinnati", state: "OH", neighborhood: "Hartwell (North Cincinnati)",
+    lat: 39.1851, lng: -84.5036, tradition: "zen", location_type: "in-person",
+    notes: "In-person drop-in zazen. Arrive 10–15 min early for first visit. Free.",
+    source_url: "https://www.cincinnatizencenter.org", event_url: "https://www.cincinnatizencenter.org",
+  },
+  {
+    org_id: "cincinnati_zen_center", org_name: "Cincinnati Zen Center",
+    title: "Saturday Morning Zen (Online)",
+    days: ["Saturday"], time: { h: 8, m: 30 }, duration_min: 60,
+    address: "6015 Vine Street", city: "Cincinnati", state: "OH", neighborhood: "Hartwell (North Cincinnati)",
+    lat: 39.1851, lng: -84.5036, tradition: "zen", location_type: "online",
+    notes: "Virtual Zoom sit — Saturday morning only (not in-person). Link via website. Free.",
+    source_url: "https://www.cincinnatizencenter.org", event_url: "https://www.cincinnatizencenter.org",
+  },
+
+  // ── Buddhist Dharma Center of Cincinnati — 15 Moline Court, Northside, Cincinnati OH 45223
+  // Ecumenical/pluralist Theravada-leaning. Daily Zoom + weekly in-person and hybrid sits.
+  {
+    org_id: "buddhist_dharma_center_cincinnati", org_name: "Buddhist Dharma Center of Cincinnati",
+    title: "Daily Morning Meditation (Online)",
+    days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    time: { h: 7, m: 0 }, duration_min: 60,
+    address: "15 Moline Court", city: "Cincinnati", state: "OH", neighborhood: "Northside",
+    lat: 39.1716, lng: -84.5222, tradition: "pluralist", location_type: "online",
+    notes: "Daily Zoom silent meditation, 7 days a week. Drop-in; no registration required. Free.",
+    source_url: "https://www.cincinnatidharma.org", event_url: "https://www.cincinnatidharma.org",
+  },
+  {
+    org_id: "buddhist_dharma_center_cincinnati", org_name: "Buddhist Dharma Center of Cincinnati",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "15 Moline Court", city: "Cincinnati", state: "OH", neighborhood: "Northside",
+    lat: 39.1716, lng: -84.5222, tradition: "pluralist", location_type: "hybrid",
+    notes: "In-person + Zoom hybrid. Ritual opening, two sitting periods with walking meditation. All traditions welcome. Free.",
+    source_url: "https://www.cincinnatidharma.org", event_url: "https://www.cincinnatidharma.org",
+  },
+  {
+    org_id: "buddhist_dharma_center_cincinnati", org_name: "Buddhist Dharma Center of Cincinnati",
+    title: "Tuesday Evening Sitting",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 45,
+    address: "15 Moline Court", city: "Cincinnati", state: "OH", neighborhood: "Northside",
+    lat: 39.1716, lng: -84.5222, tradition: "pluralist", location_type: "in-person",
+    notes: "In-person only silent sitting. Drop-in. Free.",
+    source_url: "https://www.cincinnatidharma.org", event_url: "https://www.cincinnatidharma.org",
+  },
+  {
+    org_id: "buddhist_dharma_center_cincinnati", org_name: "Buddhist Dharma Center of Cincinnati",
+    title: "Wednesday Evening Practice",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "15 Moline Court", city: "Cincinnati", state: "OH", neighborhood: "Northside",
+    lat: 39.1716, lng: -84.5222, tradition: "pluralist", location_type: "hybrid",
+    notes: "In-person + Zoom hybrid. Meditation instruction and dharma discussion. Free.",
+    source_url: "https://www.cincinnatidharma.org", event_url: "https://www.cincinnatidharma.org",
+  },
+
+  // ── Gaden Samdrupling Buddhist Monastery — 3046 Pavlova Dr, Colerain Township, OH 45251
+  // Gelugpa Tibetan. Wednesday Open Meditation is specifically public drop-in.
+  {
+    org_id: "gaden_samdrupling_monastery", org_name: "Gaden Samdrupling Buddhist Monastery",
+    title: "Open Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "3046 Pavlova Drive", city: "Cincinnati", state: "OH", neighborhood: "Colerain Township (West Side)",
+    lat: 39.2147, lng: -84.6198, tradition: "tibetan", location_type: "in-person",
+    notes: "Public drop-in silent meditation. Prayer books provided. Gelugpa Tibetan monastery. Free.",
+    source_url: "https://www.gslmonastery.org", event_url: "https://www.gslmonastery.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

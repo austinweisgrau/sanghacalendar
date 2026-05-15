@@ -52,6 +52,7 @@ from ingestion.sources import atlanta as atlanta_sources
 from ingestion.sources import sacramento as sacramento_sources
 from ingestion.sources import ann_arbor as ann_arbor_sources
 from ingestion.sources import st_louis as st_louis_sources
+from ingestion.sources import cincinnati as cincinnati_sources
 
 log = logging.getLogger(__name__)
 
@@ -762,6 +763,9 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Ann Arbor iCal {feed_id} failed: {e}")
+
+    # Cincinnati Phase 3 — all sits seeded as recurring; no iCal feeds
+    log.info("--- Cincinnati Phase 3: no iCal feeds (recurring sits only) ---")
 
     # Convert dataclasses to dicts
     dicts = []
