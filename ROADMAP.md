@@ -144,6 +144,7 @@ Candidate metros (rough priority):
 24. Pittsburgh 🔄 **Phase 3 Pittsburgh live May 14** (5 centers) — see below
 25. Ann Arbor 🔄 **Phase 3 Ann Arbor live May 14** (3 centers) — see below
 26. St. Louis 🔄 **Phase 3 St. Louis live May 14** (3 centers) — see below
+27. Kansas City 🔄 **Phase 3 Kansas City live May 15** (2 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -838,6 +839,38 @@ Center bios added to centers.py for all 3 centers.
 - Tri-State Dharma: Zoom-only
 - Loveland Zen: 20 miles NE of city center
 - Being Peace Sangha: online-only
+
+---
+
+### Kansas City Phase 3 — ✅ Live May 15 (2 centers, heartbeat 35)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Rime Buddhist Center (2939 Wayne Ave, Waldo/Brookside, KC MO 64109) | Recurring sits seeded — custom website calendar, no iCal. Mon–Fri noon, Mon 7pm Zen, Wed 7pm Group Meditation, Thu 7pm Tibetan practice, Sun 10:30am Service. Non-sectarian Rimé pluralist; 30+ years. | ✅ Live heartbeat 35 |
+| Kansas Zen Center — KC branch (Unity Temple on the Plaza, 707 W 47th St, KC MO 64112) | Recurring sit seeded — per-event ICS only, no subscription feed. Thu 7pm in-person. Kwan Um School of Zen. | ✅ Live heartbeat 35 |
+
+Kansas City city added to MO state filter in `_filters.html`.
+Center bios added to centers.py for both centers.
+`ingestion/sources/kansas_city.py` created (no active iCal feeds).
+`sangha-seed-recurring.js`: 6 new sit defs (Rime ×5, KZC ×1). Now 178 sit defs → 3617 instances.
+
+**Research notes (2026-05-15):**
+- Rime Buddhist Center (rimecenter.org): 2939 Wayne Ave, Waldo/Brookside. Non-sectarian Rimé
+  philosophy — all four Tibetan schools + Zen. 30+ years active. Most active KC center.
+  No iCal feed; custom website calendar. Confirmed schedule from website.
+- Kansas Zen Center KC branch (kansaszencenter.org): Meets at Unity Temple on the Plaza,
+  707 W 47th St (47th & Jefferson). Kwan Um School of Zen. KC branch: Thu 7pm in-person only.
+  Per-event ICS links on Events page; no centralized subscription feed.
+- Temple Buddhist Center / IMCKC (templebuddhistcenter.com): Vipassana/Theravada-leaning,
+  also at Unity Temple. JS-rendered Squarespace calendar; specific sit times not confirmed.
+  Deferred for now.
+- Shambhala Kansas City: Defunct (kcshambhala.org gone). Skip.
+- Heartland Community of Mindful Living (Plum Village): Online-only Zoom. Deferred.
+
+**Skipped/deferred:**
+- Temple Buddhist Center / IMCKC: Squarespace JS-rendered calendar, times unconfirmed
+- Shambhala KC: defunct
+- Heartland Community of Mindful Living: online-only
 
 ---
 
