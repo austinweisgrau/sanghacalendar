@@ -146,6 +146,7 @@ Candidate metros (rough priority):
 26. St. Louis 🔄 **Phase 3 St. Louis live May 14** (3 centers) — see below
 27. Kansas City 🔄 **Phase 3 Kansas City live May 15** (2 centers) — see below
 28. Richmond (VA) 🔄 **Phase 3 Richmond live May 15** (4 centers) — see below
+29. Columbus (OH) 🔄 **Phase 3 Columbus live May 16** (5 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -907,6 +908,33 @@ Center bios added to centers.py for all 4 centers.
 - Pure Land (at Ekoji): Sat 2pm. Pure Land devotional — deferred
 - Won Buddhism of Richmond (Mechanicsville): 20 miles north — deferred
 - Guhyasamaja Center (Fairfax VA): DC metro suburb, 45 miles north — covered under DC expansion if needed
+
+### Columbus OH Phase 3 — ✅ Live May 16 (5 centers, heartbeat 37)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Columbus Karma Thegsum Choling / KTC (645 W. Rich St, Franklinton, Columbus OH 43215) | WordPress Events Calendar iCal feed (`columbusktc.org/events/?ical=1`). Karma Kagyu (affiliated with KTD monastery). Founded 1977. | ✅ Live heartbeat 37 — Sun 10am Intro Meditation (hybrid) + 11:30am Dharma Talk; Tue 7pm Chenrezig (virtual); Wed 12:15pm Midday Meditation (virtual). |
+| Mud Lotus Sangha (17 E. Tulane Rd, Clintonville / ILLIO Studios, Columbus OH 43202) | Recurring sits seeded — Squarespace, no master iCal feed. Most active Zen community in Columbus. | ✅ Live heartbeat 37 — Tue 7:30am Morning Sit (in-person), Wed 7pm Evening Zen (in-person), Thu 9am Morning Meditation (hybrid). |
+| Zen Columbus Sangha (93 W. Weisheimer Rd, First UU Church, Clintonville, Columbus OH 43214) | Recurring sits seeded — static HTML schedule, no iCal. Independent Soto Zen community. | ✅ Live heartbeat 37 — Tue 7pm + Sat 8:30am zazen, both hybrid. |
+| Central Ohio Center for Pragmatic Buddhism / COCPB (77 N. Brinker Ave, West Side, Columbus OH 43204) | Recurring sit seeded — Wix site, no iCal. Private residence zendo. | ✅ Live heartbeat 37 — Sun 9:30am zazen + dharma talk (in-person). |
+| Bliss Run Sangha (4211 Maize Rd, Unity Church, North Linden, Columbus OH 43224) | Recurring sit seeded — static site, no iCal. Plum Village lineage. | ✅ Live heartbeat 37 — Thu 7pm walking meditation + sitting + dharma discussion (in-person). |
+
+Columbus city added to OH state filter in `_filters.html`.
+Center bios added to centers.py for all 5 centers.
+`ingestion/sources/columbus.py` created with CENTERS + KTC ICAL_FEEDS.
+`sangha-seed-recurring.js`: 8 new sit defs (KTC ×1, Mud Lotus ×3, Zen Columbus ×2, COCPB ×1, Bliss Run ×1). 186 → 194 sit defs.
+
+**Research notes (2026-05-16):**
+- Columbus KTC: iCal confirmed. Most active Tibetan center in Columbus; 40+ years.
+- Columbus Shambhala (1271 E. Cooke Rd): Calendar empty as of May 2026 — monitor for revival.
+- BBAC (5208 Dierker Rd): Website offline — skip until restored.
+- NKT / Kadampa Columbus: no NKT center found in Columbus metro.
+- Grove City Zen: website ECONNREFUSED — likely inactive.
+
+**Skipped/deferred:**
+- Columbus Shambhala: no active events on calendar — monitor
+- Bodhi Buddhist Association (BBAC): website offline — monitor
+- NKT Columbus: no center found in Columbus
 
 ---
 
