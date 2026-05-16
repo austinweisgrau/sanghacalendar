@@ -57,6 +57,7 @@ from ingestion.sources import kansas_city as kansas_city_sources
 from ingestion.sources import richmond as richmond_sources
 from ingestion.sources import columbus as columbus_sources
 from ingestion.sources import raleigh as raleigh_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import salt_lake_city as slc_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -821,6 +822,9 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Columbus iCal {feed_id} failed: {e}")
+
+    # Salt Lake City Phase 3 — all sits seeded as recurring; no iCal feeds
+    log.info("--- Salt Lake City Phase 3: no iCal feeds (recurring sits only) ---")
 
     # Convert dataclasses to dicts
     dicts = []

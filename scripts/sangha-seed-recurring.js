@@ -2173,6 +2173,39 @@ const SITS = [
     notes: "Chanting service and two periods of zazen. Dokusan (private teacher interview) available. In-person.",
     source_url: "https://nczencenter.org", event_url: "https://nczencenter.org/practice-meetings/",
   },
+
+  // ─── Salt Lake City, UT ──────────────────────────────────────────────────
+
+  // Two Arrows Zen — 21 G Street, Salt Lake City UT (White Plum Asanga / Soto Zen)
+  {
+    org_id: "two_arrows_zen", org_name: "Two Arrows Zen",
+    title: "Morning Zazen",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday"], time: { h: 7, m: 0 }, duration_min: 75,
+    address: "21 G Street", city: "Salt Lake City", state: "UT", neighborhood: "The Avenues",
+    lat: 40.7729, lng: -111.8844, tradition: "zen", location_type: "in-person",
+    notes: "Soto Zen (White Plum Asanga lineage). Two periods of zazen (7:00am and 7:40am) with kinhin. In-person at the zendo. Drop-in welcome; arrive before the bell. Free.",
+    source_url: "https://twoarrowszen.org", event_url: "https://twoarrowszen.org/events/",
+  },
+  {
+    org_id: "two_arrows_zen", org_name: "Two Arrows Zen",
+    title: "Evening Zen Service",
+    days: ["Thursday"], time: { h: 17, m: 30 }, duration_min: 150,
+    address: "21 G Street", city: "Salt Lake City", state: "UT", neighborhood: "The Avenues",
+    lat: 40.7729, lng: -111.8844, tradition: "zen", location_type: "in-person",
+    notes: "Soto Zen. Thursday evening program (5:30–8pm): zazen, kinhin, dharma talk, and dokusan (private teacher interview). Beginners welcome. In-person.",
+    source_url: "https://twoarrowszen.org", event_url: "https://twoarrowszen.org/events/",
+  },
+
+  // Urgyen Samten Ling Gonpa — 740 S 300 West, Salt Lake City UT (Nyingma Tibetan)
+  {
+    org_id: "urgyen_samten_ling", org_name: "Urgyen Samten Ling Gonpa",
+    title: "Chenrezig Practice",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "740 South 300 West", city: "Salt Lake City", state: "UT", neighborhood: "Downtown Salt Lake City",
+    lat: 40.7520, lng: -111.9006, tradition: "tibetan", location_type: "online",
+    notes: "Nyingma Tibetan tradition. Weekly Chenrezig (Avalokiteshvara) practice via Zoom. Open to the public; no prior experience required. Register at urgyensamtenling.org.",
+    source_url: "https://www.urgyensamtenling.org", event_url: "https://www.urgyensamtenling.org/classes",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

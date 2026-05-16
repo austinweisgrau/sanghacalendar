@@ -3082,4 +3082,47 @@ CENTERS = {
             "welcome; no experience required. Free."
         ),
     },
+    # ── Salt Lake City, UT ───────────────────────────────────────────────────
+    "two_arrows_zen": {
+        "id": "two_arrows_zen",
+        "name": "Two Arrows Zen",
+        "tradition": "zen",
+        "url": "https://twoarrowszen.org",
+        "address": "21 G Street",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84103",
+        "neighborhood": "The Avenues",
+        "lat": 40.7729,
+        "lng": -111.8844,
+        "description": (
+            "Two Arrows Zen is a Soto Zen community in Salt Lake City's historic Avenues "
+            "neighborhood, practicing in the White Plum Asanga lineage (Maezumi Roshi). "
+            "Founded by Genro Gauntt Roshi. The zendo offers weekday morning zazen "
+            "(Mon–Fri 7:00am, two periods) and Thursday evening Zen service (5:30pm, "
+            "zazen + dharma talk). Seasonal sesshins and weekend intensives throughout "
+            "the year. Drop-in welcome; please arrive before the bell. Free."
+        ),
+    },
+    "urgyen_samten_ling": {
+        "id": "urgyen_samten_ling",
+        "name": "Urgyen Samten Ling Gonpa",
+        "tradition": "tibetan",
+        "url": "https://www.urgyensamtenling.org",
+        "address": "740 South 300 West",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84101",
+        "neighborhood": "Downtown Salt Lake City",
+        "lat": 40.7520,
+        "lng": -111.9006,
+        "description": (
+            "Urgyen Samten Ling Gonpa is a Nyingma Tibetan Buddhist center two blocks "
+            "from downtown Salt Lake City, founded by Khenpo Ugyen Tenzin Rinpoche. "
+            "Practices in the Ati Yoga / Dzogchen tradition. Public online practices "
+            "include Sunday Chenrezig (10am MST, Zoom), Friday Green Tara (10am, Zoom), "
+            "and Saturday Ngondro (10am, Zoom). In-person teachings available. "
+            "All levels welcome; no prior experience required."
+        ),
+    },
 }

@@ -148,6 +148,7 @@ Candidate metros (rough priority):
 28. Richmond (VA) 🔄 **Phase 3 Richmond live May 15** (4 centers) — see below
 29. Columbus (OH) 🔄 **Phase 3 Columbus live May 16** (5 centers) — see below
 30. Raleigh-Durham-Chapel Hill (NC) 🔄 **Phase 3 Triangle live May 16** (3 centers) — see below
+31. Salt Lake City (UT) 🔄 **Phase 3 SLC live May 16** (2 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -956,6 +957,41 @@ Center bios added to centers.py for all 3 centers.
 - Kadampa Center Raleigh (FPMT, kadampa-center.org): Drupal 7, JS-rendered calendar — no accessible iCal. Monitor for API access.
 - Kosala Kadampa Triangle (NKT, meditationinthetriangle.org): Squarespace, no iCal.
 - Sit Raleigh (sitraleigh.com): Tiny community, Tue 7pm only. Could seed if requested.
+
+---
+
+### Salt Lake City UT Phase 3 — ✅ Live May 16 (2 centers, heartbeat 39)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Two Arrows Zen (21 G Street, The Avenues, Salt Lake City UT 84103) | Recurring sits seeded — EventON AJAX calendar, no static iCal. Mon–Fri 7am Morning Zazen + Thu 5:30pm Evening Zen Service. Soto Zen, White Plum Asanga lineage. | ✅ Live heartbeat 39 |
+| Urgyen Samten Ling Gonpa (740 S 300 West, Downtown, Salt Lake City UT 84101) | Recurring sit seeded — Wix site, no iCal. Sun 10am Chenrezig Practice (Zoom/online). Nyingma Tibetan (Dzogchen). | ✅ Live heartbeat 39 |
+
+Utah state + Salt Lake City city added to `_filters.html`.
+Center bios added to centers.py for both centers.
+`ingestion/sources/salt_lake_city.py` created (CENTERS registry, no iCal feeds).
+`sangha-seed-recurring.js`: 3 new sit defs (Two Arrows ×2, Urgyen Samten Ling ×1). 206 → 209 sit defs.
+
+**Research notes (2026-05-16):**
+- SLC has a small but earnest Buddhist community in a heavily LDS region.
+- Two Arrows Zen: Well-established Soto Zen zendo in the Avenues. Genro Gauntt Roshi.
+  EventON AJAX calendar — no static iCal. Mon–Fri 7am (two periods) + Thu 5:30pm confirmed.
+- Urgyen Samten Ling: Nyingma gonpa near downtown. Khenpo Ugyen Tenzin Rinpoche.
+  Wix site, no iCal. Sunday 10am Chenrezig (Zoom) + Friday 10am Green Tara (Zoom) +
+  Saturday 10am Ngondro (Zoom). Only Chenrezig seeded as primary public sit.
+- SLC Shambhala (saltlake.shambhala.org): Redirects to shambhalanetwork.org — center
+  appears to have reorganized under the disaffiliated Shambhala Network. No schedule
+  accessible. Monitor for recovery.
+- Katog Janaling (katogjanaling.org): Nyingma, 3540 S 2208 E Keller Lane. Meetup-based;
+  specific weekly sit schedule not confirmed. Deferred.
+- Salt Lake Buddhist Temple (slbuddhist.org): Squarespace. Jodo Shinshu (Pure Land),
+  primarily devotional. Deferred.
+
+**Skipped/deferred:**
+- SLC Shambhala: redirected, no accessible schedule — monitor
+- Katog Janaling: weekly schedule unconfirmed via website — monitor
+- Salt Lake Buddhist Temple: Pure Land / devotional focus — deferred
+- Salt Lake Buddhist Fellowship: Jodo Shinshu, WordPress.com — deferred
 
 ---
 
