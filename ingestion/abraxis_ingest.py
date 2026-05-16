@@ -56,6 +56,7 @@ from ingestion.sources import cincinnati as cincinnati_sources
 from ingestion.sources import kansas_city as kansas_city_sources
 from ingestion.sources import richmond as richmond_sources
 from ingestion.sources import columbus as columbus_sources
+from ingestion.sources import raleigh as raleigh_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

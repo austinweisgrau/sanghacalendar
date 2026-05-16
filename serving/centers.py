@@ -2987,6 +2987,78 @@ CENTERS = {
         ),
     },
 
+    "durham_shambhala": {
+        "id": "durham_shambhala",
+        "name": "Durham Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://durham.shambhala.org",
+        "address": "733 Rutherford Street",
+        "city": "Durham",
+        "state": "NC",
+        "zip": "27705",
+        "lat": 36.0018,
+        "lng": -78.9281,
+        "neighborhood": "Duke Park",
+        "bio": (
+            "Durham Shambhala Meditation Center is part of the international Shambhala "
+            "network, offering meditation instruction rooted in the Tibetan and Shambhala "
+            "warrior traditions. Weekly schedule: Thursday Night Open House (7–8:30pm, "
+            "in-person — free meditation instruction, group sit, and refreshments, great "
+            "for newcomers); Sunday Morning Meditation (9am–noon, in-person); Saturday "
+            "Dharma Discussions (10:30am–noon, Zoom); Heart of Recovery on Wednesdays "
+            "(7pm, in-person). All are welcome; no experience required. Free."
+        ),
+    },
+
+    "chapel_hill_zen": {
+        "id": "chapel_hill_zen",
+        "name": "Chapel Hill Zen Center",
+        "tradition": "zen",
+        "url": "https://www.chzc.org",
+        "address": "5322 NC Highway 86",
+        "city": "Chapel Hill",
+        "state": "NC",
+        "zip": "27514",
+        "lat": 35.9763,
+        "lng": -79.0485,
+        "neighborhood": "North Chapel Hill",
+        "bio": (
+            "The Chapel Hill Zen Center practices Soto Zen in the lineage of Shunryu "
+            "Suzuki-roshi (San Francisco Zen Center tradition). Embracing diversity, the "
+            "center welcomes everyone to the practice of zazen. Located 2.5 miles north "
+            "of I-40 exit 266 on NC-86. Weekly schedule: Monday–Friday morning zazen at "
+            "6am and 6:50am (in-person and Zoom); Tuesday evening zazen at 7pm and 7:50pm "
+            "(in-person); Sunday morning zazen at 9am and 9:50am (in-person). Instruction "
+            "available Tuesday evenings and Sunday mornings — please contact before your "
+            "first visit."
+        ),
+    },
+
+    "nc_zen_center": {
+        "id": "nc_zen_center",
+        "name": "North Carolina Zen Center",
+        "tradition": "zen",
+        "url": "https://nczencenter.org",
+        "address": "390 Ironwood Road",
+        "city": "Pittsboro",
+        "state": "NC",
+        "zip": "27312",
+        "lat": 35.7268,
+        "lng": -79.1823,
+        "neighborhood": "Rural Chatham County",
+        "bio": (
+            "The North Carolina Zen Center (NCZC) is a residential Zen Buddhist community "
+            "and retreat center on 15 wooded acres south of Chapel Hill, led by Teshin "
+            "Roshi. A full week of practice is offered: Sunday morning (10am–noon, two "
+            "zazen periods + chanting service + dharma talk); Monday morning Zoom zazen "
+            "(7–7:50am); Tuesday evening dharma study + zazen (7–8:30pm, in-person); "
+            "Wednesday morning zazen (7–7:50am, hybrid); Thursday evening zazen + chanting "
+            "service with dokusan available (7–8:30pm, in-person); Friday morning zazen "
+            "(7–7:50am, hybrid). Residential practice and personal retreats available. "
+            "All levels welcome."
+        ),
+    },
+
     "three_rivers_tibetan_pittsburgh": {
         "id": "three_rivers_tibetan_pittsburgh",
         "name": "Three Rivers Tibetan Cultural Center",

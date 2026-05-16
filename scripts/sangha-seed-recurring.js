@@ -2057,6 +2057,122 @@ const SITS = [
     notes: "Plum Village (Thich Nhat Hanh / Order of Interbeing). Walking meditation, sitting meditation, dharma discussion. Newcomer orientation 6:45pm. Drop-in; free.",
     source_url: "https://www.blissrun.org", event_url: "https://www.blissrun.org/home/meetings",
   },
+
+  // ─── Research Triangle, NC (Raleigh-Durham-Chapel Hill) ────────────────────
+
+  // Durham Shambhala Meditation Center — 733 Rutherford St, Durham NC
+  {
+    org_id: "durham_shambhala", org_name: "Durham Shambhala Meditation Center",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 180,
+    address: "733 Rutherford Street", city: "Durham", state: "NC", neighborhood: "Duke Park",
+    lat: 36.0018, lng: -78.9281, tradition: "tibetan", location_type: "in-person",
+    notes: "Shambhala tradition. Group meditation open to all. In-person at Durham Shambhala Center. All welcome; no experience required. Free.",
+    source_url: "https://durham.shambhala.org", event_url: "https://durham.shambhala.org/monthly-calendar/",
+  },
+  {
+    org_id: "durham_shambhala", org_name: "Durham Shambhala Meditation Center",
+    title: "Thursday Night Open House",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "733 Rutherford Street", city: "Durham", state: "NC", neighborhood: "Duke Park",
+    lat: 36.0018, lng: -78.9281, tradition: "tibetan", location_type: "in-person",
+    notes: "Shambhala tradition. Free meditation instruction at 7pm, group sitting + walking meditation until 8pm, then refreshments. Great introduction for newcomers. In-person.",
+    source_url: "https://durham.shambhala.org", event_url: "https://durham.shambhala.org/monthly-calendar/",
+  },
+  {
+    org_id: "durham_shambhala", org_name: "Durham Shambhala Meditation Center",
+    title: "Saturday Dharma Discussions",
+    days: ["Saturday"], time: { h: 10, m: 30 }, duration_min: 90,
+    address: "733 Rutherford Street", city: "Durham", state: "NC", neighborhood: "Duke Park",
+    lat: 36.0018, lng: -78.9281, tradition: "tibetan", location_type: "online",
+    notes: "Shambhala tradition. Weekly Zoom gathering for meditations, contemplations, and group discussion. Online only.",
+    source_url: "https://durham.shambhala.org", event_url: "https://durham.shambhala.org/monthly-calendar/",
+  },
+  {
+    org_id: "durham_shambhala", org_name: "Durham Shambhala Meditation Center",
+    title: "Heart of Recovery",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "733 Rutherford Street", city: "Durham", state: "NC", neighborhood: "Duke Park",
+    lat: 36.0018, lng: -78.9281, tradition: "tibetan", location_type: "in-person",
+    notes: "Shambhala Heart of Recovery support group — meditation and community for those in recovery. In-person. All welcome.",
+    source_url: "https://durham.shambhala.org", event_url: "https://durham.shambhala.org/monthly-calendar/",
+  },
+
+  // Chapel Hill Zen Center — 5322 NC Hwy 86, Chapel Hill NC (SFZC Soto lineage)
+  {
+    org_id: "chapel_hill_zen", org_name: "Chapel Hill Zen Center",
+    title: "Morning Zazen",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday"], time: { h: 6, m: 0 }, duration_min: 55,
+    address: "5322 NC Highway 86", city: "Chapel Hill", state: "NC", neighborhood: "North Chapel Hill",
+    lat: 35.9763, lng: -79.0485, tradition: "zen", location_type: "hybrid",
+    notes: "Soto Zen (Shunryu Suzuki-roshi / SFZC lineage). Two periods of zazen: 6am and 6:50am. In-person and Zoom. All welcome; arrive on time.",
+    source_url: "https://www.chzc.org", event_url: "https://www.chzc.org",
+  },
+  {
+    org_id: "chapel_hill_zen", org_name: "Chapel Hill Zen Center",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 55,
+    address: "5322 NC Highway 86", city: "Chapel Hill", state: "NC", neighborhood: "North Chapel Hill",
+    lat: 35.9763, lng: -79.0485, tradition: "zen", location_type: "in-person",
+    notes: "Soto Zen. Two periods of zazen: 9am and 9:50am. Instruction available for newcomers. In-person only.",
+    source_url: "https://www.chzc.org", event_url: "https://www.chzc.org",
+  },
+  {
+    org_id: "chapel_hill_zen", org_name: "Chapel Hill Zen Center",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 55,
+    address: "5322 NC Highway 86", city: "Chapel Hill", state: "NC", neighborhood: "North Chapel Hill",
+    lat: 35.9763, lng: -79.0485, tradition: "zen", location_type: "in-person",
+    notes: "Soto Zen. Two periods of zazen: 7pm and 7:50pm. Instruction available for newcomers. In-person only.",
+    source_url: "https://www.chzc.org", event_url: "https://www.chzc.org",
+  },
+
+  // North Carolina Zen Center — 390 Ironwood Rd, Pittsboro NC (Teshin Roshi)
+  {
+    org_id: "nc_zen_center", org_name: "North Carolina Zen Center",
+    title: "Sunday Practice",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "390 Ironwood Road", city: "Pittsboro", state: "NC", neighborhood: "Rural Chatham County",
+    lat: 35.7268, lng: -79.1823, tradition: "zen", location_type: "in-person",
+    notes: "Two periods of zazen, chanting service, and dharma talk (Teisho). Community work period and brunch follow. All welcome. In-person.",
+    source_url: "https://nczencenter.org", event_url: "https://nczencenter.org/practice-meetings/",
+  },
+  {
+    org_id: "nc_zen_center", org_name: "North Carolina Zen Center",
+    title: "Morning Zazen",
+    days: ["Monday"], time: { h: 7, m: 0 }, duration_min: 50,
+    address: "390 Ironwood Road", city: "Pittsboro", state: "NC", neighborhood: "Rural Chatham County",
+    lat: 35.7268, lng: -79.1823, tradition: "zen", location_type: "online",
+    notes: "Monday morning zazen, Zoom only.",
+    source_url: "https://nczencenter.org", event_url: "https://nczencenter.org/practice-meetings/",
+  },
+  {
+    org_id: "nc_zen_center", org_name: "North Carolina Zen Center",
+    title: "Dharma Study and Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "390 Ironwood Road", city: "Pittsboro", state: "NC", neighborhood: "Rural Chatham County",
+    lat: 35.7268, lng: -79.1823, tradition: "zen", location_type: "in-person",
+    notes: "One period of zazen and dharma discussion. In-person.",
+    source_url: "https://nczencenter.org", event_url: "https://nczencenter.org/practice-meetings/",
+  },
+  {
+    org_id: "nc_zen_center", org_name: "North Carolina Zen Center",
+    title: "Morning Zazen",
+    days: ["Wednesday","Friday"], time: { h: 7, m: 0 }, duration_min: 50,
+    address: "390 Ironwood Road", city: "Pittsboro", state: "NC", neighborhood: "Rural Chatham County",
+    lat: 35.7268, lng: -79.1823, tradition: "zen", location_type: "hybrid",
+    notes: "Morning zazen in-person and on Zoom.",
+    source_url: "https://nczencenter.org", event_url: "https://nczencenter.org/practice-meetings/",
+  },
+  {
+    org_id: "nc_zen_center", org_name: "North Carolina Zen Center",
+    title: "Zazen and Chanting Service",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "390 Ironwood Road", city: "Pittsboro", state: "NC", neighborhood: "Rural Chatham County",
+    lat: 35.7268, lng: -79.1823, tradition: "zen", location_type: "in-person",
+    notes: "Chanting service and two periods of zazen. Dokusan (private teacher interview) available. In-person.",
+    source_url: "https://nczencenter.org", event_url: "https://nczencenter.org/practice-meetings/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
