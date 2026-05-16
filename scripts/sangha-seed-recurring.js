@@ -1974,6 +1974,89 @@ const SITS = [
     notes: "Tibetan Kagyu (Palpung lineage), teacher Lama Linda. Rotating practices by week-of-month: Chenrezig, Green Tara, Medicine Buddha. In-person at Ekoji + Zoom. All welcome; newcomers welcome. Free.",
     source_url: "https://palpungrichmond.org", event_url: "https://palpungrichmond.org",
   },
+
+  // ── Columbus, OH ──────────────────────────────────────────────────────────────
+  // Columbus KTC — Karma Kagyu Tibetan — Sunday hybrid sits (iCal also feeds these)
+  {
+    org_id: "columbus_ktc", org_name: "Columbus Karma Thegsum Choling",
+    title: "Introduction to Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "645 W. Rich Street", city: "Columbus", state: "OH", neighborhood: "Franklinton",
+    lat: 39.9553, lng: -83.0057, tradition: "tibetan", location_type: "hybrid",
+    notes: "Karma Kagyu lineage (affiliated with KTD monastery, Woodstock NY). Founded 1977. Guided meditation introduction open to all levels. In-person + virtual. Free.",
+    source_url: "https://columbusktc.org", event_url: "https://columbusktc.org/schedule/",
+  },
+
+  // Mud Lotus Sangha — Soto Zen (White Plum lineage) — 3 weekly sits at ILLIO Studios
+  {
+    org_id: "mud_lotus_sangha", org_name: "Mud Lotus Sangha",
+    title: "Morning Meditation",
+    days: ["Tuesday"], time: { h: 7, m: 30 }, duration_min: 30,
+    address: "17 E. Tulane Road", city: "Columbus", state: "OH", neighborhood: "Clintonville (at ILLIO Studios)",
+    lat: 40.0135, lng: -82.9975, tradition: "zen", location_type: "in_person",
+    notes: "Soto Zen, White Plum lineage. Early morning sit at ILLIO Studios. Drop-in; free.",
+    source_url: "https://www.mudlotussangha.org", event_url: "https://www.mudlotussangha.org/weekly-meditation",
+  },
+  {
+    org_id: "mud_lotus_sangha", org_name: "Mud Lotus Sangha",
+    title: "Evening Zen Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "17 E. Tulane Road", city: "Columbus", state: "OH", neighborhood: "Clintonville (at ILLIO Studios)",
+    lat: 40.0135, lng: -82.9975, tradition: "zen", location_type: "in_person",
+    notes: "Soto Zen, White Plum lineage. Zazen + dharma discussion at ILLIO Studios. Drop-in; free.",
+    source_url: "https://www.mudlotussangha.org", event_url: "https://www.mudlotussangha.org/weekly-meditation",
+  },
+  {
+    org_id: "mud_lotus_sangha", org_name: "Mud Lotus Sangha",
+    title: "Morning Meditation",
+    days: ["Thursday"], time: { h: 9, m: 0 }, duration_min: 60,
+    address: "17 E. Tulane Road", city: "Columbus", state: "OH", neighborhood: "Clintonville (at ILLIO Studios)",
+    lat: 40.0135, lng: -82.9975, tradition: "zen", location_type: "hybrid",
+    notes: "Soto Zen, White Plum lineage. Morning sit at ILLIO Studios + Zoom hybrid. Drop-in; free.",
+    source_url: "https://www.mudlotussangha.org", event_url: "https://www.mudlotussangha.org/weekly-meditation",
+  },
+
+  // Zen Columbus Sangha — independent Soto Zen — Tue + Sat at First UU Church
+  {
+    org_id: "zen_columbus", org_name: "Zen Columbus Sangha",
+    title: "Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 75,
+    address: "93 W. Weisheimer Road", city: "Columbus", state: "OH", neighborhood: "Clintonville (at First UU Church)",
+    lat: 40.0569, lng: -83.0201, tradition: "zen", location_type: "hybrid",
+    notes: "Independent Soto Zen. Two 25-min zazen periods + kinhin + brief service. In-person + Zoom. Drop-in; free.",
+    source_url: "http://zencolumbus.org", event_url: "http://zencolumbus.org/schedule.html",
+  },
+  {
+    org_id: "zen_columbus", org_name: "Zen Columbus Sangha",
+    title: "Zazen",
+    days: ["Saturday"], time: { h: 8, m: 30 }, duration_min: 75,
+    address: "93 W. Weisheimer Road", city: "Columbus", state: "OH", neighborhood: "Clintonville (at First UU Church)",
+    lat: 40.0569, lng: -83.0201, tradition: "zen", location_type: "hybrid",
+    notes: "Independent Soto Zen. Two 25-min zazen periods + kinhin + brief service. In-person + Zoom. Drop-in; free.",
+    source_url: "http://zencolumbus.org", event_url: "http://zencolumbus.org/schedule.html",
+  },
+
+  // COCPB — Pragmatic Buddhism (Zen/Nikayan/Chan) — Sunday zazen at private zendo
+  {
+    org_id: "cocpb_columbus", org_name: "Central Ohio Center for Pragmatic Buddhism",
+    title: "Sunday Zazen",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 150,
+    address: "77 N. Brinker Avenue", city: "Columbus", state: "OH", neighborhood: "West Side",
+    lat: 39.9706, lng: -83.0453, tradition: "zen", location_type: "in_person",
+    notes: "Pragmatic Buddhism: synthesis of Nikayan, Chan, Zen, and Pragmatist philosophy. Zazen + dharma talk. Private zendo (2nd floor, enter via back). All welcome; donations appreciated.",
+    source_url: "https://www.cocpb.com", event_url: "https://www.cocpb.com",
+  },
+
+  // Bliss Run Sangha — Plum Village / Thich Nhat Hanh — Thu evenings at Unity Church
+  {
+    org_id: "bliss_run_sangha", org_name: "Bliss Run Sangha",
+    title: "Thursday Evening Practice",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "4211 Maize Road", city: "Columbus", state: "OH", neighborhood: "North Linden (at Unity Church)",
+    lat: 40.0762, lng: -82.9981, tradition: "other", location_type: "in_person",
+    notes: "Plum Village (Thich Nhat Hanh / Order of Interbeing). Walking meditation, sitting meditation, dharma discussion. Newcomer orientation 6:45pm. Drop-in; free.",
+    source_url: "https://www.blissrun.org", event_url: "https://www.blissrun.org/home/meetings",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

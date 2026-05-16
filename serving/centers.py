@@ -2879,6 +2879,114 @@ CENTERS = {
         ),
     },
 
+    "columbus_ktc": {
+        "id": "columbus_ktc",
+        "name": "Columbus Karma Thegsum Choling",
+        "tradition": "tibetan",
+        "url": "https://columbusktc.org",
+        "address": "645 W. Rich Street",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43215",
+        "lat": 39.9553,
+        "lng": -83.0057,
+        "neighborhood": "Franklinton",
+        "bio": (
+            "Columbus Karma Thegsum Choling (KTC) is a Tibetan Buddhist meditation "
+            "center in the Karma Kagyu lineage, affiliated with Karma Triyana Dharmachakra "
+            "monastery in Woodstock, NY. Founded in 1977, one of the oldest Tibetan "
+            "Buddhist centers in the Midwest. Weekly program: Sunday Introduction to "
+            "Meditation (10am, hybrid) and Dharma Talk (11:30am), Tuesday Chenrezig "
+            "Puja (7pm, virtual), Wednesday Midday Meditation (12:15pm, virtual). "
+            "Free and open to all; no experience required."
+        ),
+    },
+
+    "mud_lotus_sangha": {
+        "id": "mud_lotus_sangha",
+        "name": "Mud Lotus Sangha",
+        "tradition": "zen",
+        "url": "https://www.mudlotussangha.org",
+        "address": "17 E. Tulane Road",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43202",
+        "lat": 40.0135,
+        "lng": -82.9975,
+        "neighborhood": "Clintonville (at ILLIO Studios)",
+        "bio": (
+            "Mud Lotus Sangha is Columbus's most active Zen community, practicing "
+            "Soto Zen (White Plum lineage) with engaged Buddhism influences, meeting "
+            "at ILLIO Studios in Clintonville. Weekly sits: Tuesday 7:30–8am Morning "
+            "Meditation (in-person), Wednesday 7–9pm Evening Zen with dharma discussion "
+            "(in-person), Thursday 9–10am Morning Meditation (hybrid). Monthly sesshins "
+            "and day retreats. Drop-in welcome; free."
+        ),
+    },
+
+    "zen_columbus": {
+        "id": "zen_columbus",
+        "name": "Zen Columbus Sangha",
+        "tradition": "zen",
+        "url": "http://zencolumbus.org",
+        "address": "93 W. Weisheimer Road",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43214",
+        "lat": 40.0569,
+        "lng": -83.0201,
+        "neighborhood": "Clintonville (at First UU Church)",
+        "bio": (
+            "Zen Columbus Sangha is an independent Soto Zen community offering weekly "
+            "zazen at the First Unitarian Universalist Church. Tuesday evenings 7–8:15pm "
+            "and Saturday mornings 8:30–9:45am: two 25-minute zazen periods with kinhin "
+            "and brief service. Both sessions are hybrid (in-person + Zoom). Introduction "
+            "to Zazen on the 2nd Saturday and 4th Tuesday monthly. All welcome; free."
+        ),
+    },
+
+    "cocpb_columbus": {
+        "id": "cocpb_columbus",
+        "name": "Central Ohio Center for Pragmatic Buddhism",
+        "tradition": "zen",
+        "url": "https://www.cocpb.com",
+        "address": "77 N. Brinker Avenue",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43204",
+        "lat": 39.9706,
+        "lng": -83.0453,
+        "neighborhood": "West Side",
+        "bio": (
+            "The Central Ohio Center for Pragmatic Buddhism (COCPB) synthesizes early "
+            "Nikayan Buddhism, Chan, Japanese Zen, and American Pragmatist philosophy. "
+            "Sensei Manny Shinshim leads weekly Sunday zazen (9:30am–noon) with dharma "
+            "talk in an intimate second-floor zendo on Columbus's West Side. In-person. "
+            "All welcome; donations appreciated."
+        ),
+    },
+
+    "bliss_run_sangha": {
+        "id": "bliss_run_sangha",
+        "name": "Bliss Run Sangha",
+        "tradition": "other",
+        "url": "https://www.blissrun.org",
+        "address": "4211 Maize Road",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43224",
+        "lat": 40.0762,
+        "lng": -82.9981,
+        "neighborhood": "North Linden (at Unity Church)",
+        "bio": (
+            "Bliss Run Sangha is a Plum Village (Thich Nhat Hanh / Order of Interbeing) "
+            "practice community at Unity Church in Columbus's North Linden neighborhood. "
+            "Thursday evenings: newcomer orientation at 6:45pm, then 7–9pm walking "
+            "meditation, sitting meditation, and dharma discussion. In-person. "
+            "All welcome; free."
+        ),
+    },
+
     "three_rivers_tibetan_pittsburgh": {
         "id": "three_rivers_tibetan_pittsburgh",
         "name": "Three Rivers Tibetan Cultural Center",
