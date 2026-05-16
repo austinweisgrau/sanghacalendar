@@ -147,6 +147,7 @@ Candidate metros (rough priority):
 27. Kansas City 🔄 **Phase 3 Kansas City live May 15** (2 centers) — see below
 28. Richmond (VA) 🔄 **Phase 3 Richmond live May 15** (4 centers) — see below
 29. Columbus (OH) 🔄 **Phase 3 Columbus live May 16** (5 centers) — see below
+30. Raleigh-Durham-Chapel Hill (NC) 🔄 **Phase 3 Triangle live May 16** (3 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -935,6 +936,26 @@ Center bios added to centers.py for all 5 centers.
 - Columbus Shambhala: no active events on calendar — monitor
 - Bodhi Buddhist Association (BBAC): website offline — monitor
 - NKT Columbus: no center found in Columbus
+
+---
+
+### Raleigh-Durham-Chapel Hill NC Phase 3 — ✅ Live May 16 (3 centers, heartbeat 38)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Durham Shambhala Meditation Center (733 Rutherford St, Durham NC 27705) | Recurring sits seeded — Shambhala custom WordPress, no iCal. | ✅ Live — Sun 9am–noon (in-person), Thu 7pm Open House (in-person), Sat 10:30am Dharma Discussions (Zoom), Wed 7pm Heart of Recovery (in-person). |
+| Chapel Hill Zen Center (5322 NC Hwy 86, Chapel Hill NC 27514) | Recurring sits seeded — WordPress ?ical=1 returns 404. Soto Zen, SFZC lineage. | ✅ Live — Mon–Fri 6am morning zazen (hybrid), Tue 7pm evening zazen (in-person), Sun 9am zazen (in-person). |
+| North Carolina Zen Center (390 Ironwood Rd, Pittsboro NC 27312) | Recurring sits seeded — WP Events Calendar iCal returns empty (0 bytes). 15 acres, Teshin Roshi. | ✅ Live — Sun 10am practice (in-person), Mon Zoom zazen, Tue 7pm dharma study (in-person), Wed/Fri 7am hybrid zazen, Thu 7pm chanting + zazen (in-person). |
+
+NC state + Chapel Hill/Durham/Pittsboro city filters added to `_filters.html`.
+Center bios added to centers.py for all 3 centers.
+`ingestion/sources/raleigh.py` created with CENTERS registry.
+`sangha-seed-recurring.js`: 12 new sit defs. 194 → 206 sit defs.
+
+**Skipped/deferred:**
+- Kadampa Center Raleigh (FPMT, kadampa-center.org): Drupal 7, JS-rendered calendar — no accessible iCal. Monitor for API access.
+- Kosala Kadampa Triangle (NKT, meditationinthetriangle.org): Squarespace, no iCal.
+- Sit Raleigh (sitraleigh.com): Tiny community, Tue 7pm only. Could seed if requested.
 
 ---
 
