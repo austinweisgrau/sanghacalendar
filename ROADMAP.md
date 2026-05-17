@@ -150,6 +150,7 @@ Candidate metros (rough priority):
 30. Raleigh-Durham-Chapel Hill (NC) 🔄 **Phase 3 Triangle live May 16** (3 centers) — see below
 31. Salt Lake City (UT) 🔄 **Phase 3 SLC live May 16** (2 centers) — see below
 32. New Orleans (LA) 🔄 **Phase 3 New Orleans live May 17** (2 centers) — see below
+33. Tampa Bay (FL) 🔄 **Phase 3 Tampa Bay live May 17** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -1024,6 +1025,25 @@ Center bios added to centers.py for both centers.
 - NOIMG: domain offline — monitor for recovery
 - Sangha House NOLA: schedule unconfirmed on website — monitor
 - Samten Choling: dynamic calendar, no iCal — monitor
+
+---
+
+### Tampa Bay FL Phase 3 — ✅ Live May 17 (4 centers, heartbeat 41)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Kadampa Meditation Center Tampa Bay (201 6th Ave S, Safety Harbor FL 34695) | Recurring sits seeded — Wix site, no iCal. NKT Tibetan. | ✅ Live heartbeat 41 — Sun 10am, Tue 10am, Thu 7pm in-person. |
+| Clear Water Zen Center (2476 Nursery Rd, Clearwater FL 33764) | Recurring sits seeded — Google Sites, no iCal. Non-sectarian Zen. | ✅ Live heartbeat 41 — Sun 9:30am, Mon 7pm, Wed 6:45pm (beginner), Fri 7pm in-person. |
+| Florida Community of Mindfulness (6501 N Nebraska Ave, Tampa FL 33604) | Wild Apricot RSS (`/page-1861378/RSS`) — 39 events. Daily 7am Morning Meditation + Sun 9:30am. Plum Village / Thich Nhat Hanh, teacher Fred Eppsteiner. | ✅ Live heartbeat 41 — RSS wired in coordinator + abraxis. |
+| Shambhala Meditation Center of St. Petersburg (5901 Haines Rd N, St. Petersburg FL 33714) | Recurring sits seeded — dynamic WordPress, no accessible iCal. | ✅ Live heartbeat 41 — Sun 10am in-person, Tue 7pm online. |
+
+FL state cities Tampa/Clearwater/Safety Harbor/St. Petersburg added to `_filters.html`.
+Center bios in centers.py; `ingestion/sources/tampa.py` created with CENTERS + RSS_FEEDS.
+`sangha-seed-recurring.js`: 9 new sit defs. 214 → 223 sit defs → 4345 instances.
+
+**Skipped/deferred:**
+- Samadhi Buddhist Meditation Center (St. Pete): small Wix sangha, Wed 7:30pm — deferred
+- Florida Buddhist Vihara: temple-focused, no public drop-in sits confirmed
 
 ---
 
