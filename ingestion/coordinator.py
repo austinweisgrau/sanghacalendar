@@ -58,6 +58,7 @@ from ingestion.sources import raleigh as raleigh_sources  # noqa: F401 (no live 
 from ingestion.sources import salt_lake_city as slc_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import new_orleans as new_orleans_sources
 from ingestion.sources import tampa as tampa_sources
+from ingestion.sources import charlotte as charlotte_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -985,6 +986,13 @@ def run_tampa_phase3() -> list[Event]:
     return all_events
 
 
+def run_charlotte_phase3() -> list[Event]:
+    """Phase 3 Charlotte NC: all centers seeded as recurring sits."""
+    # No live iCal feeds — all Charlotte centers use recurring sit seeding
+    # via scripts/sangha-seed-recurring.js
+    return []
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -1024,6 +1032,7 @@ def main():
         + run_salt_lake_city_phase3()
         + run_new_orleans_phase3()
         + run_tampa_phase3()
+        + run_charlotte_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

@@ -2349,6 +2349,126 @@ const SITS = [
     notes: "Shambhala lineage. Zoom-only. Sitting meditation with instruction and contemplation practice. Online.",
     source_url: "https://stpetersburg.shambhala.org", event_url: "https://stpetersburg.shambhala.org/ongoing-offerings/",
   },
+
+  // -----------------------------------------------------------------------
+  // Charlotte, NC Phase 3
+  // -----------------------------------------------------------------------
+
+  // Charlotte Buddhist Vihara — 3423 Stonehaven Dr, Charlotte NC 28215 (Theravada)
+  {
+    org_id: "charlotte_vihara", org_name: "Charlotte Buddhist Vihara",
+    title: "Evening of Personal Growth",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "3423 Stonehaven Dr", city: "Charlotte", state: "NC", neighborhood: "Northeast Charlotte",
+    lat: 35.2379, lng: -80.7626, tradition: "theravada", location_type: "hybrid",
+    notes: "Theravada. Tuesday evening: Dhamma talk and guided meditation. Led by Ayya Sudhamma. In-person and Zoom. Drop-in welcome; donations appreciated.",
+    source_url: "https://www.charlottebuddhistvihara.org", event_url: "https://www.charlottebuddhistvihara.org/schedule/",
+  },
+  {
+    org_id: "charlotte_vihara", org_name: "Charlotte Buddhist Vihara",
+    title: "Morning Meditation",
+    days: ["Wednesday"], time: { h: 10, m: 30 }, duration_min: 60,
+    address: "3423 Stonehaven Dr", city: "Charlotte", state: "NC", neighborhood: "Northeast Charlotte",
+    lat: 35.2379, lng: -80.7626, tradition: "theravada", location_type: "hybrid",
+    notes: "Theravada. Wednesday morning meditation. In-person and Zoom. Drop-in welcome.",
+    source_url: "https://www.charlottebuddhistvihara.org", event_url: "https://www.charlottebuddhistvihara.org/schedule/",
+  },
+  {
+    org_id: "charlotte_vihara", org_name: "Charlotte Buddhist Vihara",
+    title: "Meditation for Awakening",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3423 Stonehaven Dr", city: "Charlotte", state: "NC", neighborhood: "Northeast Charlotte",
+    lat: 35.2379, lng: -80.7626, tradition: "theravada", location_type: "hybrid",
+    notes: "Theravada. Thursday evening: Dhamma talk and guided meditation. In-person and Zoom. Drop-in welcome; donations appreciated.",
+    source_url: "https://www.charlottebuddhistvihara.org", event_url: "https://www.charlottebuddhistvihara.org/schedule/",
+  },
+  {
+    org_id: "charlotte_vihara", org_name: "Charlotte Buddhist Vihara",
+    title: "Buddhist Teachings",
+    days: ["Saturday"], time: { h: 14, m: 0 }, duration_min: 90,
+    address: "3423 Stonehaven Dr", city: "Charlotte", state: "NC", neighborhood: "Northeast Charlotte",
+    lat: 35.2379, lng: -80.7626, tradition: "theravada", location_type: "hybrid",
+    notes: "Theravada. Saturday afternoon: Dhamma talk and guided meditation. In-person and Zoom. Drop-in welcome; donations appreciated.",
+    source_url: "https://www.charlottebuddhistvihara.org", event_url: "https://www.charlottebuddhistvihara.org/schedule/",
+  },
+
+  // Insight Meditation Community of Charlotte (IMCC) — 3900 Park Road, Charlotte NC 28209
+  {
+    org_id: "imcc", org_name: "Insight Meditation Community of Charlotte",
+    title: "Dharma Talk and Meditation",
+    days: ["Tuesday"], time: { h: 12, m: 0 }, duration_min: 60,
+    address: "3900 Park Road", city: "Charlotte", state: "NC", neighborhood: "South Charlotte / Park Road",
+    lat: 35.1870, lng: -80.8565, tradition: "theravada", location_type: "online",
+    notes: "Vipassana / Insight Meditation. Tuesday noon: Dharma teaching followed by 30-min silent meditation. Zoom only. Drop-in welcome; dana basis.",
+    source_url: "https://www.imccharlotte.org", event_url: "https://www.imccharlotte.org/schedule/",
+  },
+  {
+    org_id: "imcc", org_name: "Insight Meditation Community of Charlotte",
+    title: "Wednesday Evening Sit",
+    days: ["Wednesday"], time: { h: 19, m: 30 }, duration_min: 90,
+    address: "3900 Park Road", city: "Charlotte", state: "NC", neighborhood: "South Charlotte / Park Road",
+    lat: 35.1870, lng: -80.8565, tradition: "theravada", location_type: "hybrid",
+    notes: "Vipassana / Insight Meditation. Wednesday 7pm: newcomer instruction (in-person); 7:30pm: silent meditation and Dharma talk (in-person and Zoom). Drop-in welcome; dana basis.",
+    source_url: "https://www.imccharlotte.org", event_url: "https://www.imccharlotte.org/schedule/",
+  },
+
+  // Kadampa Meditation Center North Carolina — 528 East Blvd, Charlotte NC 28203 (NKT Tibetan)
+  {
+    org_id: "kmc_nc", org_name: "Kadampa Meditation Center North Carolina",
+    title: "General Program",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 90,
+    address: "528 East Blvd", city: "Charlotte", state: "NC", neighborhood: "Dilworth",
+    lat: 35.2153, lng: -80.8422, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Tibetan. Sunday morning drop-in class with guided meditation and Buddhist teachings. All welcome; no experience required.",
+    source_url: "https://www.meditationcharlotte.org", event_url: "https://www.meditationcharlotte.org/calendar",
+  },
+  {
+    org_id: "kmc_nc", org_name: "Kadampa Meditation Center North Carolina",
+    title: "General Program",
+    days: ["Tuesday"], time: { h: 17, m: 0 }, duration_min: 60,
+    address: "528 East Blvd", city: "Charlotte", state: "NC", neighborhood: "Dilworth",
+    lat: 35.2153, lng: -80.8422, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Tibetan. Tuesday drop-in class with guided meditation and Buddhist teachings. All welcome.",
+    source_url: "https://www.meditationcharlotte.org", event_url: "https://www.meditationcharlotte.org/calendar",
+  },
+  {
+    org_id: "kmc_nc", org_name: "Kadampa Meditation Center North Carolina",
+    title: "General Program",
+    days: ["Wednesday"], time: { h: 17, m: 0 }, duration_min: 90,
+    address: "528 East Blvd", city: "Charlotte", state: "NC", neighborhood: "Dilworth",
+    lat: 35.2153, lng: -80.8422, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Tibetan. Wednesday drop-in class with guided meditation and Buddhist teachings. Also Foundation Program on Wednesdays. All welcome.",
+    source_url: "https://www.meditationcharlotte.org", event_url: "https://www.meditationcharlotte.org/calendar",
+  },
+  {
+    org_id: "kmc_nc", org_name: "Kadampa Meditation Center North Carolina",
+    title: "General Program",
+    days: ["Thursday"], time: { h: 17, m: 0 }, duration_min: 90,
+    address: "528 East Blvd", city: "Charlotte", state: "NC", neighborhood: "Dilworth",
+    lat: 35.2153, lng: -80.8422, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Tibetan. Thursday drop-in class with guided meditation and Buddhist teachings. All welcome.",
+    source_url: "https://www.meditationcharlotte.org", event_url: "https://www.meditationcharlotte.org/calendar",
+  },
+  {
+    org_id: "kmc_nc", org_name: "Kadampa Meditation Center North Carolina",
+    title: "General Program",
+    days: ["Saturday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "528 East Blvd", city: "Charlotte", state: "NC", neighborhood: "Dilworth",
+    lat: 35.2153, lng: -80.8422, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Tibetan. Saturday morning drop-in class with guided meditation and Buddhist teachings. All welcome; no experience required.",
+    source_url: "https://www.meditationcharlotte.org", event_url: "https://www.meditationcharlotte.org/calendar",
+  },
+
+  // Charlotte Community of Mindfulness (CCM) — 1931 Selwyn Ave, Charlotte NC 28207 (Plum Village)
+  {
+    org_id: "ccm_charlotte", org_name: "Charlotte Community of Mindfulness",
+    title: "Sunday Morning Sangha",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 90,
+    address: "1931 Selwyn Ave", city: "Charlotte", state: "NC", neighborhood: "Myers Park",
+    lat: 35.2025, lng: -80.8400, tradition: "zen", location_type: "hybrid",
+    notes: "Plum Village (Thich Nhat Hanh lineage). Sunday morning: sitting meditation, walking meditation, Dharma reading, sharing circle. In-person and Zoom. Last Sunday: Recitation ceremony. Free; donations welcomed.",
+    source_url: "https://www.charlottemindfulness.org", event_url: "https://www.charlottemindfulness.org/visit/schedule/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

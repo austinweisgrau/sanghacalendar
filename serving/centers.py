@@ -3258,4 +3258,91 @@ CENTERS = {
             "Drop-in welcome; no experience required."
         ),
     },
+
+    # -----------------------------------------------------------------------
+    # Charlotte, NC
+    # -----------------------------------------------------------------------
+
+    "charlotte_vihara": {
+        "id": "charlotte_vihara",
+        "name": "Charlotte Buddhist Vihara",
+        "tradition": "theravada",
+        "url": "https://www.charlottebuddhistvihara.org",
+        "address": "3423 Stonehaven Dr",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28215",
+        "neighborhood": "Northeast Charlotte",
+        "lat": 35.2379,
+        "lng": -80.7626,
+        "description": (
+            "Charlotte Buddhist Vihara is a Theravada Buddhist center led by Ayya Sudhamma, "
+            "one of the first fully ordained Theravada bhikkhunis (nuns) in the West. "
+            "Weekly offerings include Tuesday 'Evening of Personal Growth' (6pm, talk and "
+            "meditation, hybrid), Wednesday Meditation (10:30am, hybrid), Thursday "
+            "'Meditation for Awakening' (7pm, talk and meditation, hybrid), and Saturday "
+            "'Buddhist Teachings' (2pm, hybrid). All sessions include guided meditation "
+            "and Dhamma discussion. Drop-in welcome; donations appreciated."
+        ),
+    },
+    "imcc": {
+        "id": "imcc",
+        "name": "Insight Meditation Community of Charlotte",
+        "tradition": "theravada",
+        "url": "https://www.imccharlotte.org",
+        "address": "3900 Park Road",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28209",
+        "neighborhood": "South Charlotte / Park Road",
+        "lat": 35.1870,
+        "lng": -80.8565,
+        "description": (
+            "The Insight Meditation Community of Charlotte (IMCC) is a Theravada / Vipassana "
+            "sangha founded in 2009, meeting at Park Road Baptist Church. Offerings include "
+            "Tuesday noon Dharma teaching and silent meditation (Zoom), Wednesday 7pm "
+            "newcomer instruction (in-person) and 7:30pm silent meditation with Dharma "
+            "talk (hybrid). Drop-in welcome; dana basis."
+        ),
+    },
+    "kmc_nc": {
+        "id": "kmc_nc",
+        "name": "Kadampa Meditation Center North Carolina",
+        "tradition": "tibetan",
+        "url": "https://www.meditationcharlotte.org",
+        "address": "528 East Blvd",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28203",
+        "neighborhood": "Dilworth",
+        "lat": 35.2153,
+        "lng": -80.8422,
+        "description": (
+            "Kadampa Meditation Center North Carolina (KMC NC) is a New Kadampa Tradition "
+            "(NKT-IKBU) Tibetan Buddhist center in Charlotte's Dilworth neighborhood. "
+            "Weekly drop-in classes with guided meditation and Buddhist teachings: Sunday "
+            "9:30am, Tuesday 5pm, Wednesday 5pm, Thursday 5pm, Saturday 10am. Also hosts "
+            "Foundation Program and special events. All welcome; no experience required."
+        ),
+    },
+    "ccm_charlotte": {
+        "id": "ccm_charlotte",
+        "name": "Charlotte Community of Mindfulness",
+        "tradition": "zen",
+        "url": "https://www.charlottemindfulness.org",
+        "address": "1931 Selwyn Ave",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28207",
+        "neighborhood": "Myers Park",
+        "lat": 35.2025,
+        "lng": -80.8400,
+        "description": (
+            "The Charlotte Community of Mindfulness (CCM) is one of the oldest Plum Village "
+            "sanghas in the Southeast, founded in 1993 in the tradition of Thich Nhat Hanh. "
+            "Meets at Myers Park Baptist Church. Sunday Morning Sangha (8:30–10am) includes "
+            "sitting meditation, walking meditation, Dharma reading, and sharing circle "
+            "(in-person and Zoom). Last Sunday: Recitation ceremony. Free; donations welcomed."
+        ),
+    },
 }
