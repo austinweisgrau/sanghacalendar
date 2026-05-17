@@ -151,6 +151,7 @@ Candidate metros (rough priority):
 31. Salt Lake City (UT) 🔄 **Phase 3 SLC live May 16** (2 centers) — see below
 32. New Orleans (LA) 🔄 **Phase 3 New Orleans live May 17** (2 centers) — see below
 33. Tampa Bay (FL) 🔄 **Phase 3 Tampa Bay live May 17** (4 centers) — see below
+34. Charlotte (NC) 🔄 **Phase 3 Charlotte live May 17** (4 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -1044,6 +1045,27 @@ Center bios in centers.py; `ingestion/sources/tampa.py` created with CENTERS + R
 **Skipped/deferred:**
 - Samadhi Buddhist Meditation Center (St. Pete): small Wix sangha, Wed 7:30pm — deferred
 - Florida Buddhist Vihara: temple-focused, no public drop-in sits confirmed
+
+---
+
+### Charlotte NC Phase 3 — ✅ Live May 17 (4 centers, heartbeat 42)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Charlotte Buddhist Vihara (3423 Stonehaven Dr, Charlotte NC 28215) | Recurring sits seeded — iCal (tribe_events) Cloudflare-blocked. Theravada, Ayya Sudhamma. | ✅ Live heartbeat 42 — Tue 6pm, Wed 10:30am, Thu 7pm, Sat 2pm hybrid. |
+| Insight Meditation Community of Charlotte (3900 Park Road, Charlotte NC 28209) | Recurring sits seeded — iCal (MEC/WP) Cloudflare-blocked. Vipassana. | ✅ Live heartbeat 42 — Tue 12pm (Zoom), Wed 7:30pm (hybrid). |
+| Kadampa Meditation Center North Carolina (528 East Blvd, Charlotte NC 28203) | Recurring sits seeded — Wix site, no iCal. NKT Tibetan. | ✅ Live heartbeat 42 — Sun 9:30am, Tue 5pm, Wed 5pm, Thu 5pm, Sat 10am in-person. |
+| Charlotte Community of Mindfulness (1931 Selwyn Ave, Charlotte NC 28207) | Recurring sits seeded — no iCal. Plum Village / Thich Nhat Hanh. | ✅ Live heartbeat 42 — Sun 8:30am hybrid. |
+
+Charlotte city filter added to `_filters.html`. Center bios in centers.py.
+`ingestion/sources/charlotte.py` created; coordinator + abraxis wired.
+`sangha-seed-recurring.js`: 12 new sit defs. 223 → 235 sit defs → 4501 instances.
+
+**Skipped/deferred:**
+- Charlotte Zen Meditation Society (726 East Blvd): Meetup exists, 0 upcoming events — monitor
+- Greatwoods Zen (2631 Buckleigh Dr, east Charlotte): Plum Village, Squarespace 404 — monitor
+- Charlotte True Buddha Temple: Vajrayana/Chinese Tantric, no calendar system
+- Charlotte Vipassana Group (Goenka): private sits for established students only
 
 ---
 
