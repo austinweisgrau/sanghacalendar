@@ -3172,4 +3172,90 @@ CENTERS = {
             "dana basis."
         ),
     },
+    "kmc_tampa_bay": {
+        "id": "kmc_tampa_bay",
+        "name": "Kadampa Meditation Center Tampa Bay",
+        "tradition": "tibetan",
+        "url": "https://meditationintampabay.org",
+        "address": "201 6th Ave S",
+        "city": "Safety Harbor",
+        "state": "FL",
+        "zip": "34695",
+        "neighborhood": "Safety Harbor",
+        "lat": 27.9869,
+        "lng": -82.6932,
+        "description": (
+            "Kadampa Meditation Center Tampa Bay is a New Kadampa Tradition (NKT-IKBU) "
+            "Tibetan Buddhist center in Safety Harbor, serving the greater Tampa Bay metro. "
+            "Weekly drop-in classes include Sunday 'Meditations for World Peace' (10–11:15am), "
+            "Tuesday General Program (10–11am), and Thursday General Program (7–8:15pm). "
+            "All sessions include guided meditation and Buddhist teachings. Branch classes "
+            "held throughout Tampa Bay. Free or by donation for new students."
+        ),
+    },
+    "clear_water_zen": {
+        "id": "clear_water_zen",
+        "name": "Clear Water Zen Center",
+        "tradition": "zen",
+        "url": "https://www.clearwaterzencenter.org",
+        "address": "2476 Nursery Rd",
+        "city": "Clearwater",
+        "state": "FL",
+        "zip": "33764",
+        "neighborhood": "South Clearwater",
+        "lat": 27.9328,
+        "lng": -82.7555,
+        "description": (
+            "Clear Water Zen Center is a non-sectarian Zen meditation community in Clearwater, "
+            "founded in the 1980s by Ken Rosen. Weekly sits open to all: Sunday 9:30am–11:30am "
+            "(formal zazen rounds with dharma talk), Monday 7–8pm (open meditation), Wednesday "
+            "6:45pm (beginner class with instruction), and Friday 7–8pm (open meditation). "
+            "Periodic zazenkai Saturdays and multi-day mini sesshin. Drop-in welcome; "
+            "no experience needed. Free; donations appreciated."
+        ),
+    },
+    "fcm_tampa": {
+        "id": "fcm_tampa",
+        "name": "Florida Community of Mindfulness",
+        "tradition": "theravada",
+        "url": "https://www.floridamindfulness.org",
+        "address": "6501 N Nebraska Ave",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33604",
+        "neighborhood": "Seminole Heights",
+        "lat": 27.9987,
+        "lng": -82.4530,
+        "description": (
+            "The Florida Community of Mindfulness (FCM) is a contemplative community in the "
+            "Plum Village tradition of Thich Nhat Hanh, led by teacher Fred Eppsteiner. "
+            "Located in the Seminole Heights neighborhood of Tampa. Regular practice: daily "
+            "Morning Meditation (7–8am, in-person and online) and Sunday Meditation and Dharma "
+            "Talk (9:30–11:30am, in-person and online). Also hosts Mindful Yoga, Qigong, "
+            "Meditation in Recovery, Days of Mindfulness, and extended retreats. "
+            "Open to all; sliding scale fees for special programs."
+        ),
+    },
+    "shambhala_stpete": {
+        "id": "shambhala_stpete",
+        "name": "Shambhala Meditation Center of St. Petersburg",
+        "tradition": "tibetan",
+        "url": "https://stpetersburg.shambhala.org",
+        "address": "5901 Haines Rd N",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33714",
+        "neighborhood": "North St. Petersburg",
+        "lat": 27.8284,
+        "lng": -82.6788,
+        "description": (
+            "Shambhala Meditation Center of St. Petersburg is one of five Shambhala Florida "
+            "centers, in the Chögyam Trungpa Rinpoche lineage. Regular offerings include "
+            "Sunday Community Practice (10am–noon, in-person sitting and walking meditation "
+            "with instruction at 11am and discussion) and Tuesday Evening Contemplations "
+            "(7–8pm, Zoom only). First Sunday monthly: 'Learn to Meditate' intro class "
+            "(9am–noon). Also hosts Heart of Recovery and Shambhala Training weekends. "
+            "Drop-in welcome; no experience required."
+        ),
+    },
 }

@@ -2258,6 +2258,97 @@ const SITS = [
     notes: "Soto Zen. Sunday morning program: chanting, zazen, dharma talk or study group. In-person and Zoom. 2nd/4th Sundays: Beginner's Instruction at 8:45am. 1st Sunday: half-day sit.",
     source_url: "https://midcityzen.org", event_url: "https://midcityzen.org/schedule/",
   },
+
+  // -----------------------------------------------------------------------
+  // Tampa Bay Phase 3
+  // -----------------------------------------------------------------------
+
+  // Kadampa Meditation Center Tampa Bay (Safety Harbor, FL)
+  {
+    org_id: "kmc_tampa_bay", org_name: "Kadampa Meditation Center Tampa Bay",
+    title: "General Program",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 75,
+    address: "201 6th Ave S", city: "Safety Harbor", state: "FL", neighborhood: "Safety Harbor",
+    lat: 27.9869, lng: -82.6932, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Tibetan. Sunday 'Meditations for World Peace' class: guided meditation and Buddhist teachings. Drop-in welcome; fee or by donation.",
+    source_url: "https://meditationintampabay.org", event_url: "https://meditationintampabay.org/weekly-meditation-courses/classes-at-the-safety-harbor-center/",
+  },
+  {
+    org_id: "kmc_tampa_bay", org_name: "Kadampa Meditation Center Tampa Bay",
+    title: "General Program",
+    days: ["Tuesday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "201 6th Ave S", city: "Safety Harbor", state: "FL", neighborhood: "Safety Harbor",
+    lat: 27.9869, lng: -82.6932, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Tibetan. Tuesday morning General Program: guided meditation and Buddhist teachings. Drop-in welcome.",
+    source_url: "https://meditationintampabay.org", event_url: "https://meditationintampabay.org/weekly-meditation-courses/classes-at-the-safety-harbor-center/",
+  },
+  {
+    org_id: "kmc_tampa_bay", org_name: "Kadampa Meditation Center Tampa Bay",
+    title: "General Program",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 75,
+    address: "201 6th Ave S", city: "Safety Harbor", state: "FL", neighborhood: "Safety Harbor",
+    lat: 27.9869, lng: -82.6932, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Tibetan. Thursday evening General Program with Kadam Michelle Gauthier: guided meditation and Buddhist teachings. Drop-in welcome.",
+    source_url: "https://meditationintampabay.org", event_url: "https://meditationintampabay.org/weekly-meditation-courses/classes-at-the-safety-harbor-center/",
+  },
+
+  // Clear Water Zen Center (Clearwater, FL)
+  {
+    org_id: "clear_water_zen", org_name: "Clear Water Zen Center",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 120,
+    address: "2476 Nursery Rd", city: "Clearwater", state: "FL", neighborhood: "South Clearwater",
+    lat: 27.9328, lng: -82.7555, tradition: "zen", location_type: "in-person",
+    notes: "Zen. Formal zazen: three 35-min rounds with walking meditation (kinhin) between. First Sunday: meditation and chanting. Other Sundays: zazen with dharma talk. Newcomers arrive by 9am.",
+    source_url: "https://www.clearwaterzencenter.org", event_url: "https://www.clearwaterzencenter.org/my-calendar/schedule",
+  },
+  {
+    org_id: "clear_water_zen", org_name: "Clear Water Zen Center",
+    title: "Open Meditation",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "2476 Nursery Rd", city: "Clearwater", state: "FL", neighborhood: "South Clearwater",
+    lat: 27.9328, lng: -82.7555, tradition: "zen", location_type: "in-person",
+    notes: "Zen. Three 20-min zazen rounds with walking meditation between. Drop-in, all welcome. Free; donations appreciated.",
+    source_url: "https://www.clearwaterzencenter.org", event_url: "https://www.clearwaterzencenter.org/my-calendar/schedule",
+  },
+  {
+    org_id: "clear_water_zen", org_name: "Clear Water Zen Center",
+    title: "Beginner Meditation Class",
+    days: ["Wednesday"], time: { h: 18, m: 45 }, duration_min: 75,
+    address: "2476 Nursery Rd", city: "Clearwater", state: "FL", neighborhood: "South Clearwater",
+    lat: 27.9328, lng: -82.7555, tradition: "zen", location_type: "in-person",
+    notes: "Zen. Beginner's meditation class: instruction at 6:45pm, practice begins promptly at 7pm. Suitable for newcomers and ongoing practitioners.",
+    source_url: "https://www.clearwaterzencenter.org", event_url: "https://www.clearwaterzencenter.org/my-calendar/schedule",
+  },
+  {
+    org_id: "clear_water_zen", org_name: "Clear Water Zen Center",
+    title: "Open Meditation",
+    days: ["Friday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "2476 Nursery Rd", city: "Clearwater", state: "FL", neighborhood: "South Clearwater",
+    lat: 27.9328, lng: -82.7555, tradition: "zen", location_type: "in-person",
+    notes: "Zen. Three 20-min zazen rounds with walking meditation between. Drop-in, all welcome. Free; donations appreciated.",
+    source_url: "https://www.clearwaterzencenter.org", event_url: "https://www.clearwaterzencenter.org/my-calendar/schedule",
+  },
+
+  // Shambhala Meditation Center of St. Petersburg (St. Petersburg, FL)
+  {
+    org_id: "shambhala_stpete", org_name: "Shambhala Meditation Center of St. Petersburg",
+    title: "Sunday Community Practice",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "5901 Haines Rd N", city: "St. Petersburg", state: "FL", neighborhood: "North St. Petersburg",
+    lat: 27.8284, lng: -82.6788, tradition: "tibetan", location_type: "in-person",
+    notes: "Shambhala lineage. Extended sitting and walking meditation 10am–noon; participants may come and go. Informal meditation instruction at 11am followed by open discussion. First Sunday monthly: 'Learn to Meditate' intro 9am–noon.",
+    source_url: "https://stpetersburg.shambhala.org", event_url: "https://stpetersburg.shambhala.org/ongoing-offerings/",
+  },
+  {
+    org_id: "shambhala_stpete", org_name: "Shambhala Meditation Center of St. Petersburg",
+    title: "Tuesday Evening Contemplations",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "5901 Haines Rd N", city: "St. Petersburg", state: "FL", neighborhood: "North St. Petersburg",
+    lat: 27.8284, lng: -82.6788, tradition: "tibetan", location_type: "online",
+    notes: "Shambhala lineage. Zoom-only. Sitting meditation with instruction and contemplation practice. Online.",
+    source_url: "https://stpetersburg.shambhala.org", event_url: "https://stpetersburg.shambhala.org/ongoing-offerings/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

@@ -59,6 +59,7 @@ from ingestion.sources import columbus as columbus_sources
 from ingestion.sources import raleigh as raleigh_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import salt_lake_city as slc_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import new_orleans as new_orleans_sources
+from ingestion.sources import tampa as tampa_sources
 
 log = logging.getLogger(__name__)
 
@@ -850,6 +851,32 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ New Orleans iCal {org_id} failed: {e}")
+
+    # Tampa Bay Phase 3 — FCM Tampa Wild Apricot RSS
+    log.info("--- Tampa Bay Phase 3: FCM Tampa Wild Apricot RSS ---")
+    for feed_id, feed_cfg in tampa_sources.RSS_FEEDS.items():
+        center = tampa_sources.CENTERS[feed_cfg["center_id"]]
+        log.info(f"Fetching {center.name} (Wild Apricot RSS: {feed_id})...")
+        try:
+            events = fetch_wild_apricot_rss(
+                url=feed_cfg["url"],
+                org_id=center.id,
+                org_name=center.name,
+                tradition=center.tradition,
+                title_keywords=feed_cfg["title_keywords"],
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                duration_min=feed_cfg.get("duration_min", 90),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Tampa RSS {feed_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []
