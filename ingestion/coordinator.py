@@ -56,6 +56,7 @@ from ingestion.sources import richmond as richmond_sources
 from ingestion.sources import columbus as columbus_sources
 from ingestion.sources import raleigh as raleigh_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import salt_lake_city as slc_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import new_orleans as new_orleans_sources
 
 log = logging.getLogger(__name__)
 
@@ -923,6 +924,35 @@ def run_salt_lake_city_phase3() -> list[Event]:
     return []
 
 
+def run_new_orleans_phase3() -> list[Event]:
+    """Phase 3 New Orleans LA: Mid City Zen Google Calendar iCal."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in new_orleans_sources.ICAL_FEEDS.items():
+        center = new_orleans_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (New Orleans iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ New Orleans iCal {org_id} failed: {e}")
+
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -960,6 +990,7 @@ def main():
         + run_columbus_phase3()
         + run_raleigh_phase3()
         + run_salt_lake_city_phase3()
+        + run_new_orleans_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

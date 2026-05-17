@@ -3125,4 +3125,51 @@ CENTERS = {
             "All levels welcome; no prior experience required."
         ),
     },
+
+    # ── New Orleans, LA ──────────────────────────────────────────────────────
+    "nozt": {
+        "id": "nozt",
+        "name": "New Orleans Zen Temple",
+        "tradition": "zen",
+        "url": "https://www.neworleanszentemple.org",
+        "address": "8338 Oak Street, 2nd Floor",
+        "city": "New Orleans",
+        "state": "LA",
+        "zip": "70118",
+        "neighborhood": "Riverbend / Carrollton",
+        "lat": 29.9370,
+        "lng": -90.1195,
+        "description": (
+            "New Orleans Zen Temple (American Zen Association) is the oldest Zen center "
+            "in New Orleans, founded in 1983 by Robert Livingston Roshi in the lineage of "
+            "Master Taisen Deshimaru and the Association Zen Internationale. Moved to its "
+            "Oak Street location (above Yes, Yoga) in January 2023. Weekly zazen: Tuesday "
+            "evenings at 7pm, Thursday mornings at 6:30am, and Sunday mornings at 10am. "
+            "New practitioners should contact noztinfo@gmail.com to register for an intro "
+            "session before attending. Some sessions also available via Zoom. Donation-based."
+        ),
+    },
+    "mid_city_zen": {
+        "id": "mid_city_zen",
+        "name": "Mid City Zen",
+        "tradition": "zen",
+        "url": "https://midcityzen.org",
+        "address": "3248 Castiglione St",
+        "city": "New Orleans",
+        "state": "LA",
+        "zip": "70119",
+        "neighborhood": "Mid-City",
+        "lat": 29.9634,
+        "lng": -90.0888,
+        "description": (
+            "Mid City Zen is a peer-led Soto Zen community in New Orleans's Mid-City "
+            "neighborhood, founded in 2011 in the lineage of Shunryu Suzuki Roshi and the "
+            "San Francisco Zen Center. At its Castiglione Street location since 2014. "
+            "Regular practice: Mon/Wed/Fri morning zazen at 8am (in-person + Zoom); "
+            "Sunday Program at 9:30am — chanting, zazen, dharma study; Beginner's "
+            "Instruction 2nd/4th Sundays at 8:45am; first-Sunday half-day sits. "
+            "Special programs: Queer Zen, Sober Zen, seasonal retreats. Drop-in welcome; "
+            "dana basis."
+        ),
+    },
 }

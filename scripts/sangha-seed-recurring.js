@@ -2206,6 +2206,58 @@ const SITS = [
     notes: "Nyingma Tibetan tradition. Weekly Chenrezig (Avalokiteshvara) practice via Zoom. Open to the public; no prior experience required. Register at urgyensamtenling.org.",
     source_url: "https://www.urgyensamtenling.org", event_url: "https://www.urgyensamtenling.org/classes",
   },
+
+  // ─── New Orleans, LA ─────────────────────────────────────────────────────
+
+  // New Orleans Zen Temple — 8338 Oak St 2nd Fl, New Orleans LA (Soto Zen / AZI)
+  {
+    org_id: "nozt", org_name: "New Orleans Zen Temple",
+    title: "Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "8338 Oak Street, 2nd Floor", city: "New Orleans", state: "LA", neighborhood: "Riverbend / Carrollton",
+    lat: 29.9370, lng: -90.1195, tradition: "zen", location_type: "hybrid",
+    notes: "Soto Zen (Taisen Deshimaru / Association Zen Internationale lineage). Tuesday evening zazen, in-person and Zoom. New practitioners register via noztinfo@gmail.com. Donation-based.",
+    source_url: "https://www.neworleanszentemple.org", event_url: "https://www.neworleanszentemple.org",
+  },
+  {
+    org_id: "nozt", org_name: "New Orleans Zen Temple",
+    title: "Morning Zazen",
+    days: ["Thursday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "8338 Oak Street, 2nd Floor", city: "New Orleans", state: "LA", neighborhood: "Riverbend / Carrollton",
+    lat: 29.9370, lng: -90.1195, tradition: "zen", location_type: "in-person",
+    notes: "Soto Zen. Thursday early morning zazen, in-person only. New practitioners register via noztinfo@gmail.com. Donation-based.",
+    source_url: "https://www.neworleanszentemple.org", event_url: "https://www.neworleanszentemple.org",
+  },
+  {
+    org_id: "nozt", org_name: "New Orleans Zen Temple",
+    title: "Sunday Zazen",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "8338 Oak Street, 2nd Floor", city: "New Orleans", state: "LA", neighborhood: "Riverbend / Carrollton",
+    lat: 29.9370, lng: -90.1195, tradition: "zen", location_type: "in-person",
+    notes: "Soto Zen. Sunday morning zazen, in-person. New practitioners register via noztinfo@gmail.com. Donation-based.",
+    source_url: "https://www.neworleanszentemple.org", event_url: "https://www.neworleanszentemple.org",
+  },
+
+  // Mid City Zen — 3248 Castiglione St, New Orleans LA (Soto Zen / SFZC lineage)
+  // Note: special events (dharma talks, retreats, queer zen, etc.) come from Google Calendar iCal
+  {
+    org_id: "mid_city_zen", org_name: "Mid City Zen",
+    title: "Morning Zazen",
+    days: ["Monday","Wednesday","Friday"], time: { h: 8, m: 0 }, duration_min: 45,
+    address: "3248 Castiglione St", city: "New Orleans", state: "LA", neighborhood: "Mid-City",
+    lat: 29.9634, lng: -90.0888, tradition: "zen", location_type: "hybrid",
+    notes: "Soto Zen (Suzuki Roshi / SFZC lineage). Monday, Wednesday, and Friday morning zazen at 8am, in-person and Zoom. Drop-in welcome; dana basis.",
+    source_url: "https://midcityzen.org", event_url: "https://midcityzen.org/schedule/",
+  },
+  {
+    org_id: "mid_city_zen", org_name: "Mid City Zen",
+    title: "Sunday Program",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 75,
+    address: "3248 Castiglione St", city: "New Orleans", state: "LA", neighborhood: "Mid-City",
+    lat: 29.9634, lng: -90.0888, tradition: "zen", location_type: "hybrid",
+    notes: "Soto Zen. Sunday morning program: chanting, zazen, dharma talk or study group. In-person and Zoom. 2nd/4th Sundays: Beginner's Instruction at 8:45am. 1st Sunday: half-day sit.",
+    source_url: "https://midcityzen.org", event_url: "https://midcityzen.org/schedule/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

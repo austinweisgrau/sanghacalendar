@@ -58,6 +58,7 @@ from ingestion.sources import richmond as richmond_sources
 from ingestion.sources import columbus as columbus_sources
 from ingestion.sources import raleigh as raleigh_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import salt_lake_city as slc_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import new_orleans as new_orleans_sources
 
 log = logging.getLogger(__name__)
 
@@ -825,6 +826,30 @@ def main():
 
     # Salt Lake City Phase 3 — all sits seeded as recurring; no iCal feeds
     log.info("--- Salt Lake City Phase 3: no iCal feeds (recurring sits only) ---")
+
+    # New Orleans Phase 3 — Mid City Zen Google Calendar iCal
+    log.info("--- New Orleans Phase 3: Mid City Zen iCal ---")
+    for org_id, feed_cfg in new_orleans_sources.ICAL_FEEDS.items():
+        center = new_orleans_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (New Orleans iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ New Orleans iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []
