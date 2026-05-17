@@ -149,6 +149,7 @@ Candidate metros (rough priority):
 29. Columbus (OH) 🔄 **Phase 3 Columbus live May 16** (5 centers) — see below
 30. Raleigh-Durham-Chapel Hill (NC) 🔄 **Phase 3 Triangle live May 16** (3 centers) — see below
 31. Salt Lake City (UT) 🔄 **Phase 3 SLC live May 16** (2 centers) — see below
+32. New Orleans (LA) 🔄 **Phase 3 New Orleans live May 17** (2 centers) — see below
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
@@ -992,6 +993,37 @@ Center bios added to centers.py for both centers.
 - Katog Janaling: weekly schedule unconfirmed via website — monitor
 - Salt Lake Buddhist Temple: Pure Land / devotional focus — deferred
 - Salt Lake Buddhist Fellowship: Jodo Shinshu, WordPress.com — deferred
+
+---
+
+### New Orleans LA Phase 3 — ✅ Live May 17 (2 centers, heartbeat 40)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| New Orleans Zen Temple (8338 Oak St 2nd Fl, Riverbend, New Orleans LA 70118) | Recurring sits seeded — Squarespace site, no iCal. AZI / Taisen Deshimaru lineage, founded 1983, Robert Livingston Roshi. | ✅ Live heartbeat 40 — Tue 7pm hybrid, Thu 6:30am in-person, Sun 10am in-person. |
+| Mid City Zen (3248 Castiglione St, Mid-City, New Orleans LA 70119) | Google Calendar ICS (decoded from base64 iframe src) + recurring sits seeded for regular morning zazen. Suzuki Roshi / SFZC lineage, peer-led since 2011. | ✅ Live heartbeat 40 — Mon/Wed/Fri 8am hybrid, Sun 9:30am hybrid. Google Calendar wired for special events (dharma talks, retreats, identity sits). Note: calendar is historically focused — 0 future events as of May 2026; will auto-populate if calendar is updated. |
+
+Louisiana state + New Orleans city added to `_filters.html`.
+Center bios added to centers.py for both centers.
+`ingestion/sources/new_orleans.py` created with CENTERS + ICAL_FEEDS.
+`sangha-seed-recurring.js`: 5 new sit defs. 209 → 214 sit defs → 4228 instances.
+61 events in 60-day window verified on live API.
+
+**Research notes (2026-05-17):**
+- Mid City Zen Google Calendar: active feed but all historical events (most recent March 2026).
+  Regular sits best covered as recurring; iCal will capture future special events if maintained.
+- NOIMG (noimg.org): domain offline as of research. Theravada, Tue 7:30pm + Sat 3pm at Aikido
+  of New Orleans (3124 Magazine St). Monitor for recovery.
+- Sangha House NOLA (sanghahousenola.org): Opened 2024, Tremé neighborhood. Multi-tradition,
+  community-focused (Black, queer). Wix site, schedule unclear. Monitor for confirmed schedule.
+- Samten Choling (samtenchoeling.org): Tibetan Gelugpa, 7803 Nelson St. Founded 2020. Calendar
+  is dynamic. Monitor for iCal access.
+- MCGNO (mcgno.org): Plum Village tradition. Announced weekly group dissolution late 2024. Skip.
+
+**Skipped/deferred:**
+- NOIMG: domain offline — monitor for recovery
+- Sangha House NOLA: schedule unconfirmed on website — monitor
+- Samten Choling: dynamic calendar, no iCal — monitor
 
 ---
 
