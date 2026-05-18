@@ -152,6 +152,26 @@ Candidate metros (rough priority):
 32. New Orleans (LA) 🔄 **Phase 3 New Orleans live May 17** (2 centers) — see below
 33. Tampa Bay (FL) 🔄 **Phase 3 Tampa Bay live May 17** (4 centers) — see below
 34. Charlotte (NC) 🔄 **Phase 3 Charlotte live May 17** (4 centers) — see below
+35. Tucson (AZ) 🔄 **Phase 3 Tucson live May 18** (1 center) — see below
+
+### Tucson Phase 3 — ✅ Live May 18 (1 center, heartbeat 43)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Kadampa Meditation Center Arizona (5326 E. Pima St, Tucson AZ 85712) | Recurring sits seeded — Wix site, no iCal. Sun 10am (75 min), Tue 6:30pm (75 min), Sat 10am (30 min). NKT Tibetan. | ✅ Live heartbeat 43 |
+
+City filter: Tucson added to AZ state cities in `_filters.html`.
+Center bio added to centers.py. `ingestion/sources/tucson.py` created.
+`sangha-seed-recurring.js`: 3 new sit defs (235 → 238 total, 4540 instances).
+
+**Research notes (2026-05-18):**
+- Shambhala Tucson (tucson.shambhala.org): redirects to main shambhala.org — appears inactive.
+- Rincon Mountain Insight / Tucson Insight: domains dead.
+- Old Pueblo Zen: domain dead.
+- Diamond Way Tucson: domain dead; no AZ centers in global Diamond Way directory.
+- KMC Arizona is the only Tucson Buddhist center with an active web presence and confirmable schedule.
+
+---
 
 **Approach:** Abraxis monthly ingest cadence per metro once added. Research doc per metro in `memory/`. Start with centers already well-documented online (Spirit Rock → national Vipassana network is a good model).
 
