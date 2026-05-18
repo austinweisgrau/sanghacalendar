@@ -153,6 +153,7 @@ Candidate metros (rough priority):
 33. Tampa Bay (FL) 🔄 **Phase 3 Tampa Bay live May 17** (4 centers) — see below
 34. Charlotte (NC) 🔄 **Phase 3 Charlotte live May 17** (4 centers) — see below
 35. Tucson (AZ) 🔄 **Phase 3 Tucson live May 18** (1 center) — see below
+36. Honolulu (HI) 🔄 **Phase 3 Honolulu live May 18** (4 centers) — see below
 
 ### Tucson Phase 3 — ✅ Live May 18 (1 center, heartbeat 43)
 
@@ -170,6 +171,31 @@ Center bio added to centers.py. `ingestion/sources/tucson.py` created.
 - Old Pueblo Zen: domain dead.
 - Diamond Way Tucson: domain dead; no AZ centers in global Diamond Way directory.
 - KMC Arizona is the only Tucson Buddhist center with an active web presence and confirmable schedule.
+
+---
+
+### Honolulu Phase 3 — ✅ Live May 18 (4 centers, heartbeat 44)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Honolulu Diamond Sangha / Ko Ko An Zendo (2747 Waiomao Rd, Palolo HI 96816) | Recurring sits seeded — no iCal (static PDF calendar). Zen (Robert Aitken lineage). Mon–Fri 5:30am, Wed 7pm, Sun 9am. | ✅ Live heartbeat 44 |
+| Soto Mission of Hawaii / Shoboji (1708 Nuuanu Ave, Honolulu HI 96817) | Recurring sits seeded — no iCal. Soto Zen. Drop-in Mon/Wed/Fri 6:30am + Sun 9:30am. No reservation required. | ✅ Live heartbeat 44 |
+| Bodhi Tree Dharma Center (654A N. Judd St, Palama, Honolulu HI 96817) | Recurring sits seeded — no iCal (Meetup-based). Multi-tradition. Mon 6:30pm (Vipassana), Tue 6:30pm (Plum Village), Wed 6pm (Stillness), Sat 9am. | ✅ Live heartbeat 44 |
+| Aloha Sangha (2439 Holomua Pl, Palolo Valley, Honolulu HI 96816) | Recurring sit seeded — no iCal. Theravada/Insight, since 1998. Thu 6pm. | ✅ Live heartbeat 44 |
+
+Hawaii state + Honolulu city added to `_filters.html`.
+Center bios added to centers.py for all 4 centers.
+`ingestion/sources/honolulu.py` created; wired into coordinator + abraxis.
+`sangha-seed-recurring.js`: 10 new sit defs (238 → 248 total, 4748 instances).
+
+**Research notes (2026-05-18):**
+- Daihonzan Chozen-ji (3565 Kalihi St): Rinzai Zen — appointment-only, no drop-in. Skip.
+- Hawaii Kadhampa Buddhist Association (Waipahu, 20 mi west): different Kadhampa lineage (not NKT). Deferred.
+- Kagyu Thegchen Ling (26 Gartley Pl): stale events page (last 2023). Deferred.
+- Honolulu Shambhala: no active center found. Skip.
+- Insight Meditation Hawaii: Big Island based; Honolulu = Zoom-only. Skip.
+- KMC Hawaii (NKT): no Hawaii center found.
+- Buddhist Study Center (Jodo Shinshu): devotional/educational, not meditation-focused. Skip.
 
 ---
 
