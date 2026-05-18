@@ -60,6 +60,7 @@ from ingestion.sources import new_orleans as new_orleans_sources
 from ingestion.sources import tampa as tampa_sources
 from ingestion.sources import charlotte as charlotte_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import tucson as tucson_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import rochester as rochester_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -1008,6 +1009,13 @@ def run_honolulu_phase3() -> list[Event]:
     return []
 
 
+def run_rochester_phase3() -> list[Event]:
+    """Phase 3 Rochester NY: all centers seeded as recurring sits."""
+    # RZC (Cloudflare blocks iCal), Endless Path Zendo (static HTML), Dharma Refuge (Weebly)
+    # all seeded via scripts/sangha-seed-recurring.js
+    return []
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -1050,6 +1058,7 @@ def main():
         + run_charlotte_phase3()
         + run_tucson_phase3()
         + run_honolulu_phase3()
+        + run_rochester_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

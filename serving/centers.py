@@ -3450,4 +3450,73 @@ CENTERS = {
             "setting in upper Palolo Valley."
         ),
     },
+    # ── Rochester, NY ─────────────────────────────────────────────────────────
+    "rzc": {
+        "id": "rzc",
+        "name": "Rochester Zen Center",
+        "tradition": "zen",
+        "url": "https://www.rzc.org",
+        "address": "7 Arnold Park",
+        "city": "Rochester",
+        "state": "NY",
+        "zip": "14607",
+        "neighborhood": "Park Avenue",
+        "lat": 43.1596,
+        "lng": -77.5825,
+        "description": (
+            "The Rochester Zen Center is one of the most historically significant Zen "
+            "communities in North America. Founded in 1966 by Philip Kapleau Roshi — "
+            "author of The Three Pillars of Zen and one of the first Western teachers "
+            "authorized in the Zen tradition — RZC has shaped generations of Western "
+            "practitioners and teachers. Sitting practice is rigorous and formal: "
+            "zazen, kinhin, chanting, and dokusan (individual teacher meetings). Morning "
+            "sits run Tuesday through Friday at 6 AM; evening sits Monday and Thursday "
+            "at 7 PM; Saturday at 6:30 AM; Sunday program at 8:30 AM with zazen and a "
+            "Dharma talk. Drop-in students are welcome at most sits — newcomers should "
+            "contact the center for orientation. RZC also stewards Chapin Mill Retreat "
+            "Center, a 135-acre rural property near Batavia, NY."
+        ),
+    },
+    "endless_path_zendo": {
+        "id": "endless_path_zendo",
+        "name": "Endless Path Zendo",
+        "tradition": "zen",
+        "url": "https://www.endlesspathzendo.org",
+        "address": "56 Brighton Street",
+        "city": "Rochester",
+        "state": "NY",
+        "zip": "14607",
+        "neighborhood": "Swillburg",
+        "lat": 43.1540,
+        "lng": -77.5870,
+        "description": (
+            "Endless Path Zendo is a small Zen community in Rochester led by Roshi Rafe "
+            "Martin — a Dharma heir trained under both Philip Kapleau Roshi (Rochester "
+            "Zen Center) and Robert Aitken Roshi (Diamond Sangha). Formal zazen with "
+            "dokusan offered Tuesday and Wednesday mornings and evenings, Monday evenings "
+            "(informal), and Saturday mornings. First-time visitors join Tuesday evening "
+            "at 6:15 PM for orientation. Monthly sesshin, hybrid in-person and Zoom."
+        ),
+    },
+    "dharma_refuge_rochester": {
+        "id": "dharma_refuge_rochester",
+        "name": "Dharma Refuge",
+        "tradition": "tibetan",
+        "url": "https://www.dharmarefuge.com",
+        "address": "1124 Culver Road",
+        "city": "Rochester",
+        "state": "NY",
+        "zip": "14609",
+        "neighborhood": "Culver-University",
+        "lat": 43.1647,
+        "lng": -77.5604,
+        "description": (
+            "Dharma Refuge is a Rochester meditation community inspired by the teachings "
+            "of Anam Thubten Rinpoche and Pema Chodron's Lojong tradition. Hybrid "
+            "in-person (Covenant United Methodist Church) and Zoom. Meetings rotate "
+            "between guided sitting, video teachings, and book discussion. Wednesday "
+            "evenings 7–8:15 PM; Saturday mornings 10–11:30 AM. Donation-based, "
+            "drop-in welcome. All traditions and backgrounds welcome."
+        ),
+    },
 }

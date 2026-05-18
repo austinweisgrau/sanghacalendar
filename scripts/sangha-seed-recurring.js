@@ -1001,6 +1001,114 @@ const SITS = [
     source_url: "https://www.alohasangha.com", event_url: "https://www.alohasangha.com/meditation-hawaii/",
   },
 
+  // ── Rochester, NY ────────────────────────────────────────────────────────
+  // Rochester Zen Center — no iCal (Cloudflare blocks scraping).
+  // 7 Arnold Park, Rochester NY 14607. Kapleau lineage, founded 1966.
+  // Verified 2026-05-18.
+  {
+    org_id: "rzc", org_name: "Rochester Zen Center",
+    title: "Morning Zazen",
+    days: ["Tuesday", "Wednesday", "Thursday", "Friday"], time: { h: 6, m: 0 }, duration_min: 75,
+    address: "7 Arnold Park", city: "Rochester", state: "NY", neighborhood: "Park Avenue",
+    lat: 43.1596, lng: -77.5825, tradition: "zen", location_type: "in-person",
+    notes: "Formal morning zazen (1 hr) + 15 min chanting service, Tue–Fri 6–7:15am. Philip Kapleau Roshi lineage. Newcomers welcome — contact RZC for orientation first.",
+    source_url: "https://www.rzc.org", event_url: "https://www.rzc.org/sitting-schedule/",
+  },
+  {
+    org_id: "rzc", org_name: "Rochester Zen Center",
+    title: "Monday Evening Sitting",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "7 Arnold Park", city: "Rochester", state: "NY", neighborhood: "Park Avenue",
+    lat: 43.1596, lng: -77.5825, tradition: "zen", location_type: "in-person",
+    notes: "Three 35-min zazen rounds with kinhin; dokusan offered. 7–9pm. Philip Kapleau Roshi lineage.",
+    source_url: "https://www.rzc.org", event_url: "https://www.rzc.org/sitting-schedule/",
+  },
+  {
+    org_id: "rzc", org_name: "Rochester Zen Center",
+    title: "Thursday Evening Sitting",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "7 Arnold Park", city: "Rochester", state: "NY", neighborhood: "Park Avenue",
+    lat: 43.1596, lng: -77.5825, tradition: "zen", location_type: "in-person",
+    notes: "Three 35-min zazen rounds with kinhin; dokusan offered. 7–9pm.",
+    source_url: "https://www.rzc.org", event_url: "https://www.rzc.org/sitting-schedule/",
+  },
+  {
+    org_id: "rzc", org_name: "Rochester Zen Center",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "7 Arnold Park", city: "Rochester", state: "NY", neighborhood: "Park Avenue",
+    lat: 43.1596, lng: -77.5825, tradition: "zen", location_type: "in-person",
+    notes: "Zazen only (no chanting service), 6:30–7:30am. Drop-in welcome after orientation.",
+    source_url: "https://www.rzc.org", event_url: "https://www.rzc.org/sitting-schedule/",
+  },
+  {
+    org_id: "rzc", org_name: "Rochester Zen Center",
+    title: "Sunday Morning Program",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 120,
+    address: "7 Arnold Park", city: "Rochester", state: "NY", neighborhood: "Park Avenue",
+    lat: 43.1596, lng: -77.5825, tradition: "zen", location_type: "in-person",
+    notes: "50-min zazen + kinhin + chanting + teisho (Dharma talk). 8:30–10:30am. Full formal Sunday program.",
+    source_url: "https://www.rzc.org", event_url: "https://www.rzc.org/sitting-schedule/",
+  },
+  // Endless Path Zendo — no iCal (static HTML). Diamond Sangha / Kapleau lineage.
+  // 56 Brighton St, Rochester NY 14607. Roshi Rafe Martin. Verified 2026-05-18.
+  {
+    org_id: "endless_path_zendo", org_name: "Endless Path Zendo",
+    title: "Monday Evening Sitting",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "56 Brighton Street", city: "Rochester", state: "NY", neighborhood: "Swillburg",
+    lat: 43.1540, lng: -77.5870, tradition: "zen", location_type: "hybrid",
+    notes: "Informal Monday evening sitting, one zazen period, 7–8pm. In-person + Zoom. Roshi Rafe Martin (Diamond Sangha / Kapleau lineage).",
+    source_url: "https://www.endlesspathzendo.org", event_url: "https://www.endlesspathzendo.org/calendar.html",
+  },
+  {
+    org_id: "endless_path_zendo", org_name: "Endless Path Zendo",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "56 Brighton Street", city: "Rochester", state: "NY", neighborhood: "Swillburg",
+    lat: 43.1540, lng: -77.5870, tradition: "zen", location_type: "hybrid",
+    notes: "Three 25-min zazen periods, dokusan, kinhin, chanting service. 7–8:30pm. First-timers arrive 6:15pm for orientation.",
+    source_url: "https://www.endlesspathzendo.org", event_url: "https://www.endlesspathzendo.org/calendar.html",
+  },
+  {
+    org_id: "endless_path_zendo", org_name: "Endless Path Zendo",
+    title: "Wednesday Morning Zazen",
+    days: ["Wednesday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "56 Brighton Street", city: "Rochester", state: "NY", neighborhood: "Swillburg",
+    lat: 43.1540, lng: -77.5870, tradition: "zen", location_type: "in-person",
+    notes: "One hour zazen, dokusan offered. 6:30–7:30am.",
+    source_url: "https://www.endlesspathzendo.org", event_url: "https://www.endlesspathzendo.org/calendar.html",
+  },
+  {
+    org_id: "endless_path_zendo", org_name: "Endless Path Zendo",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 9, m: 0 }, duration_min: 150,
+    address: "56 Brighton Street", city: "Rochester", state: "NY", neighborhood: "Swillburg",
+    lat: 43.1540, lng: -77.5870, tradition: "zen", location_type: "hybrid",
+    notes: "Three zazen periods, dokusan, kinhin, teisho, group discussion. 9–11:30am. In-person + Zoom.",
+    source_url: "https://www.endlesspathzendo.org", event_url: "https://www.endlesspathzendo.org/calendar.html",
+  },
+  // Dharma Refuge — no iCal (Weebly). Tibetan-influenced (Anam Thubten / Lojong).
+  // 1124 Culver Rd, Rochester NY 14609. Verified 2026-05-18.
+  {
+    org_id: "dharma_refuge_rochester", org_name: "Dharma Refuge",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 75,
+    address: "1124 Culver Road", city: "Rochester", state: "NY", neighborhood: "Culver-University",
+    lat: 43.1647, lng: -77.5604, tradition: "tibetan", location_type: "hybrid",
+    notes: "Rotating format: guided sitting, video teaching (Anam Thubten / Pema Chodron), or book discussion. 7–8:15pm. In-person at Covenant United Methodist Church + Zoom. Donation-based, all welcome.",
+    source_url: "https://www.dharmarefuge.com", event_url: "https://www.dharmarefuge.com/schedule.html",
+  },
+  {
+    org_id: "dharma_refuge_rochester", org_name: "Dharma Refuge",
+    title: "Saturday Morning Meditation",
+    days: ["Saturday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "1124 Culver Road", city: "Rochester", state: "NY", neighborhood: "Culver-University",
+    lat: 43.1647, lng: -77.5604, tradition: "tibetan", location_type: "hybrid",
+    notes: "Saturday morning sit, 10–11:30am. In-person only for regular practice; hybrid when a guest teacher is present. Monthly all-day sit extends to 5pm.",
+    source_url: "https://www.dharmarefuge.com", event_url: "https://www.dharmarefuge.com/schedule.html",
+  },
+
   // ── Houston, TX ────────────────────────────────────────────────────────────
   {
     org_id: "insight_meditation_houston", org_name: "Insight Meditation Houston",

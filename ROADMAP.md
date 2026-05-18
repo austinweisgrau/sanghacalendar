@@ -154,6 +154,7 @@ Candidate metros (rough priority):
 34. Charlotte (NC) 🔄 **Phase 3 Charlotte live May 17** (4 centers) — see below
 35. Tucson (AZ) 🔄 **Phase 3 Tucson live May 18** (1 center) — see below
 36. Honolulu (HI) 🔄 **Phase 3 Honolulu live May 18** (4 centers) — see below
+37. Rochester (NY) 🔄 **Phase 3 Rochester live May 18** (3 centers) — see below
 
 ### Tucson Phase 3 — ✅ Live May 18 (1 center, heartbeat 43)
 
@@ -196,6 +197,28 @@ Center bios added to centers.py for all 4 centers.
 - Insight Meditation Hawaii: Big Island based; Honolulu = Zoom-only. Skip.
 - KMC Hawaii (NKT): no Hawaii center found.
 - Buddhist Study Center (Jodo Shinshu): devotional/educational, not meditation-focused. Skip.
+
+---
+
+### Rochester Phase 3 — ✅ Live May 18 (3 centers, heartbeat 45)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Rochester Zen Center (7 Arnold Park, Rochester NY 14607) | Recurring sits seeded — Cloudflare blocks iCal scraping. Tue–Fri 6am, Mon/Thu 7pm, Sat 6:30am, Sun 8:30am. Kapleau lineage Zen, founded 1966. | ✅ Live heartbeat 45 |
+| Endless Path Zendo (56 Brighton St, Rochester NY 14607) | Recurring sits seeded — static HTML site, no iCal. Mon 7pm, Tue 7pm, Wed 6:30am, Sat 9am. Diamond Sangha / Kapleau lineage (Roshi Rafe Martin). | ✅ Live heartbeat 45 |
+| Dharma Refuge (1124 Culver Rd, Rochester NY 14609) | Recurring sits seeded — Weebly site, no iCal. Wed 7pm, Sat 10am. Tibetan-influenced (Anam Thubten / Lojong), hybrid. | ✅ Live heartbeat 45 |
+
+Rochester city filter added to NY state in `_filters.html`.
+Center bios added to centers.py for all 3 centers.
+`ingestion/sources/rochester.py` created; wired into coordinator + abraxis.
+`sangha-seed-recurring.js`: 7 new sit defs (248 → 255 total).
+
+**Research notes (2026-05-18):**
+- Rochester Zen Center iCal: WordPress site but Cloudflare blocks all automated scraping. Recurring sits seeded instead.
+- White Lotus Buddhist Center (815 Park Ave, Drikung Kagyu): iCal endpoint returns 0 VEVENTs. Deferred — monitor.
+- Rochester Chan Buddhist Temple (1040 Winton Rd N): website inaccessible. Deferred.
+- Blooming Lilac Sangha (Brighton): Plum Village lineage, private home — contact required. Skip.
+- No Shambhala or Kadampa/KMC center found in Rochester.
 
 ---
 
