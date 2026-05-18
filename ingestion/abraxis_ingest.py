@@ -134,10 +134,19 @@ def post_events(events: list[dict]) -> int:
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--collect-only",
+        action="store_true",
+        help="Collect events and print as JSON to stdout; skip enrichment and posting.",
+    )
+    args, _ = parser.parse_known_args()
+
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
-    client = anthropic.Anthropic(api_key=ANTHROPIC_KEY) if ANTHROPIC_KEY else None
-    if not client:
+    client = anthropic.Anthropic(api_key=ANTHROPIC_KEY) if ANTHROPIC_KEY and not args.collect_only else None
+    if not client and not args.collect_only:
         log.warning("No ANTHROPIC_API_KEY — skipping enrichment, using heuristics only")
 
     all_events = []
@@ -906,6 +915,12 @@ def main():
         if client:
             d = enrich_event(d, client)
         dicts.append(d)
+
+    if args.collect_only:
+        import json as _json
+        print(_json.dumps(dicts))
+        log.info(f"--collect-only: printed {len(dicts)} events as JSON (no enrichment, no posting)")
+        return
 
     log.info(f"Posting {len(dicts)} events to {APP_URL}...")
     n = post_events(dicts)
