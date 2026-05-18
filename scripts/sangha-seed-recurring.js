@@ -864,6 +864,38 @@ const SITS = [
     source_url: "https://www.meditationinarizona.org", event_url: "https://www.meditationinarizona.org/wednesday-evening",
   },
 
+  // ── Tucson, AZ ─────────────────────────────────────────────────────────────
+  // Kadampa Meditation Center Arizona — Wix site (no iCal). NKT-IKBU.
+  // 5326 E. Pima Street, Midtown / East Tucson. Verified 2026-05-18.
+  // Schedule from /gp page: Sun 10am, Tue 6:30pm, Sat 10am.
+  {
+    org_id: "kmc_arizona_tucson", org_name: "Kadampa Meditation Center Arizona",
+    title: "Sunday Morning Meditation Class",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 75,
+    address: "5326 East Pima Street", city: "Tucson", state: "AZ", neighborhood: "Midtown / East Tucson",
+    lat: 32.2432, lng: -110.8789, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome, no experience needed.",
+    source_url: "https://www.meditationintucson.org", event_url: "https://www.meditationintucson.org/sunday-morning",
+  },
+  {
+    org_id: "kmc_arizona_tucson", org_name: "Kadampa Meditation Center Arizona",
+    title: "Tuesday Evening Meditation Class",
+    days: ["Tuesday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "5326 East Pima Street", city: "Tucson", state: "AZ", neighborhood: "Midtown / East Tucson",
+    lat: 32.2432, lng: -110.8789, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT General Program class. Guided meditation + dharma teaching. All welcome.",
+    source_url: "https://www.meditationintucson.org", event_url: "https://www.meditationintucson.org/tuesday-evening",
+  },
+  {
+    org_id: "kmc_arizona_tucson", org_name: "Kadampa Meditation Center Arizona",
+    title: "Saturday Morning Drop-In Meditation",
+    days: ["Saturday"], time: { h: 10, m: 0 }, duration_min: 30,
+    address: "5326 East Pima Street", city: "Tucson", state: "AZ", neighborhood: "Midtown / East Tucson",
+    lat: 32.2432, lng: -110.8789, tradition: "tibetan", location_type: "in-person",
+    notes: "Short guided meditation session — drop in any time. Free. Part of NKT 'Simply Meditate' program.",
+    source_url: "https://www.meditationintucson.org", event_url: "https://www.meditationintucson.org/simply-meditate",
+  },
+
   // ── Houston, TX ────────────────────────────────────────────────────────────
   {
     org_id: "insight_meditation_houston", org_name: "Insight Meditation Houston",

@@ -61,6 +61,7 @@ from ingestion.sources import salt_lake_city as slc_sources  # noqa: F401 (no li
 from ingestion.sources import new_orleans as new_orleans_sources
 from ingestion.sources import tampa as tampa_sources
 from ingestion.sources import charlotte as charlotte_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import tucson as tucson_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -881,6 +882,9 @@ def main():
 
     # Charlotte Phase 3 — all sits seeded as recurring; no iCal feeds
     log.info("--- Charlotte Phase 3: no iCal feeds (recurring sits only) ---")
+
+    # Tucson Phase 3 — all sits seeded as recurring; no iCal feeds
+    log.info("--- Tucson Phase 3: no iCal feeds (recurring sits only) ---")
 
     # Convert dataclasses to dicts
     dicts = []

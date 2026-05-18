@@ -1542,6 +1542,27 @@ CENTERS = {
             "and the Williams World Peace Temple retreat center in northern Arizona."
         ),
     },
+    "kmc_arizona_tucson": {
+        "id": "kmc_arizona_tucson",
+        "name": "Kadampa Meditation Center Arizona",
+        "tradition": "tibetan",
+        "url": "https://www.meditationintucson.org",
+        "address": "5326 East Pima Street",
+        "city": "Tucson",
+        "state": "AZ",
+        "zip": "85712",
+        "neighborhood": "Midtown / East Tucson",
+        "lat": 32.2432,
+        "lng": -110.8789,
+        "description": (
+            "Kadampa Meditation Center Arizona (KMC Arizona) is a Tibetan Buddhist center in "
+            "the New Kadampa Tradition (NKT-IKBU), located in Midtown Tucson. Offers weekly "
+            "General Program meditation classes open to all: Sunday morning, Tuesday evening, "
+            "and a brief Saturday morning drop-in. Classes include guided meditation and "
+            "dharma teaching on modern Kadampa Buddhism. No experience necessary; "
+            "all are welcome."
+        ),
+    },
     "houston_zen": {
         "id": "houston_zen",
         "name": "Houston Zen Center",
