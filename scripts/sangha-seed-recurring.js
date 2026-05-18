@@ -896,6 +896,111 @@ const SITS = [
     source_url: "https://www.meditationintucson.org", event_url: "https://www.meditationintucson.org/simply-meditate",
   },
 
+  // ── Honolulu, HI ─────────────────────────────────────────────────────────
+  // Honolulu Diamond Sangha (Ko Ko An Zendo) — no iCal. Zen (Robert Aitken lineage).
+  // 2747 Waiomao Rd, Palolo, Honolulu HI 96816. Verified 2026-05-18.
+  // Schedule: Mon–Fri 5:30am early morning zazen, Wed 7pm, Sun 9am.
+  // Newcomers attend one-time orientation (1st Sat 9am–noon); then drop-in welcome.
+  {
+    org_id: "diamond_sangha_honolulu", org_name: "Honolulu Diamond Sangha",
+    title: "Early Morning Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], time: { h: 5, m: 30 }, duration_min: 60,
+    address: "2747 Waiomao Road", city: "Honolulu", state: "HI", neighborhood: "Palolo",
+    lat: 21.3033, lng: -157.8018, tradition: "zen", location_type: "in-person",
+    notes: "Early morning formal zazen, Mon–Fri 5:30–6:30am. Robert Aitken Roshi lineage. Newcomers must attend one-time Saturday orientation first.",
+    source_url: "https://www.diamondsangha.org", event_url: "https://www.diamondsangha.org/practice/",
+  },
+  {
+    org_id: "diamond_sangha_honolulu", org_name: "Honolulu Diamond Sangha",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "2747 Waiomao Road", city: "Honolulu", state: "HI", neighborhood: "Palolo",
+    lat: 21.3033, lng: -157.8018, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday evening sitting, 7–9pm. Includes zazen and dharma discussion.",
+    source_url: "https://www.diamondsangha.org", event_url: "https://www.diamondsangha.org/practice/",
+  },
+  {
+    org_id: "diamond_sangha_honolulu", org_name: "Honolulu Diamond Sangha",
+    title: "Sunday Morning Sitting",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 120,
+    address: "2747 Waiomao Road", city: "Honolulu", state: "HI", neighborhood: "Palolo",
+    lat: 21.3033, lng: -157.8018, tradition: "zen", location_type: "in-person",
+    notes: "Sunday morning sitting 9–11am, followed by tea. All forms taught.",
+    source_url: "https://www.diamondsangha.org", event_url: "https://www.diamondsangha.org/practice/",
+  },
+  // Soto Mission of Hawaii / Shoboji — no iCal. Soto Zen.
+  // 1708 Nuuanu Ave, Honolulu HI 96817. Verified 2026-05-18.
+  // Schedule: Mon/Wed/Fri 6:30am zazen (drop-in, no reservation), Sun 9:30am service.
+  {
+    org_id: "soto_mission_honolulu", org_name: "Soto Mission of Hawaii",
+    title: "Morning Zazen",
+    days: ["Monday", "Wednesday", "Friday"], time: { h: 6, m: 30 }, duration_min: 75,
+    address: "1708 Nuuanu Avenue", city: "Honolulu", state: "HI", neighborhood: "Nuuanu",
+    lat: 21.3219, lng: -157.8431, tradition: "zen", location_type: "in-person",
+    notes: "Drop-in zazen Mon/Wed/Fri 6:30–7:45am. No reservation required; arrive 5 min early in comfortable clothes. Free, donations appreciated. Beginner-friendly.",
+    source_url: "https://www.sotomission.org", event_url: "https://www.sotomission.org/services",
+  },
+  {
+    org_id: "soto_mission_honolulu", org_name: "Soto Mission of Hawaii",
+    title: "Sunday Service",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 60,
+    address: "1708 Nuuanu Avenue", city: "Honolulu", state: "HI", neighborhood: "Nuuanu",
+    lat: 21.3219, lng: -157.8431, tradition: "zen", location_type: "in-person",
+    notes: "Sunday morning service 9:30am. Soto Zen (Shoboji). Open to the public.",
+    source_url: "https://www.sotomission.org", event_url: "https://www.sotomission.org/services",
+  },
+  // Bodhi Tree Dharma Center — no iCal (Meetup-based). Multi-tradition.
+  // 654A N. Judd St, Palama, Honolulu HI 96817. Verified 2026-05-18.
+  // Schedule: Mon 6:30pm Vipassana, Tue 6:30pm Plum Village, Wed 6pm Stillness, Sat 9am Vipassana.
+  {
+    org_id: "bodhi_tree_honolulu", org_name: "Bodhi Tree Dharma Center",
+    title: "Vipassana Meditation",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "654A N. Judd Street", city: "Honolulu", state: "HI", neighborhood: "Palama",
+    lat: 21.3179, lng: -157.8443, tradition: "theravada", location_type: "in-person",
+    notes: "Monday evening Vipassana Meditation, 6:30–8pm. Donation-based, beginner-friendly.",
+    source_url: "https://www.bodhitreehawaii.com", event_url: "https://www.meetup.com/bodhi-tree-meditation-centerhonolulu/",
+  },
+  {
+    org_id: "bodhi_tree_honolulu", org_name: "Bodhi Tree Dharma Center",
+    title: "Honolulu Mindfulness Community Sit",
+    days: ["Tuesday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "654A N. Judd Street", city: "Honolulu", state: "HI", neighborhood: "Palama",
+    lat: 21.3179, lng: -157.8443, tradition: "zen", location_type: "in-person",
+    notes: "Plum Village / Thich Nhat Hanh lineage. 1st/2nd/3rd Tuesdays in-person; 4th Tuesday via Zoom. 6:30–8pm. Drop-in welcome.",
+    source_url: "https://www.bodhitreehawaii.com", event_url: "https://www.honolulumindfulness.com/meditation-schedule.html",
+  },
+  {
+    org_id: "bodhi_tree_honolulu", org_name: "Bodhi Tree Dharma Center",
+    title: "Stillness and Awakenings Meditation",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "654A N. Judd Street", city: "Honolulu", state: "HI", neighborhood: "Palama",
+    lat: 21.3179, lng: -157.8443, tradition: "theravada", location_type: "in-person",
+    notes: "Wednesday evening Stillness and Awakenings Meditation, 6–7:30pm. Donation-based.",
+    source_url: "https://www.bodhitreehawaii.com", event_url: "https://www.meetup.com/bodhi-tree-meditation-centerhonolulu/",
+  },
+  {
+    org_id: "bodhi_tree_honolulu", org_name: "Bodhi Tree Dharma Center",
+    title: "Guided Vipassana Meditation",
+    days: ["Saturday"], time: { h: 9, m: 0 }, duration_min: 60,
+    address: "654A N. Judd Street", city: "Honolulu", state: "HI", neighborhood: "Palama",
+    lat: 21.3179, lng: -157.8443, tradition: "theravada", location_type: "in-person",
+    notes: "Saturday morning guided Vipassana, 9–10am. Donation-based, beginner-friendly.",
+    source_url: "https://www.bodhitreehawaii.com", event_url: "https://www.meetup.com/bodhi-tree-meditation-centerhonolulu/",
+  },
+  // Aloha Sangha — no iCal. Theravada / Insight Meditation.
+  // 2439 Holomua Place, Palolo Valley, Honolulu HI 96816. Active since 1998.
+  // Schedule: Thu 6pm (qigong + 2×25min sits + dharma talk).
+  {
+    org_id: "aloha_sangha_honolulu", org_name: "Aloha Sangha",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "2439 Holomua Place", city: "Honolulu", state: "HI", neighborhood: "Palolo Valley",
+    lat: 21.2989, lng: -157.7997, tradition: "theravada", location_type: "in-person",
+    notes: "Standing qigong + two 25-min sitting sessions + short dharma talk + Q&A. Beginner-friendly, donation-based. Operating since 1998. Limited parking — walk from 10th Ave.",
+    source_url: "https://www.alohasangha.com", event_url: "https://www.alohasangha.com/meditation-hawaii/",
+  },
+
   // ── Houston, TX ────────────────────────────────────────────────────────────
   {
     org_id: "insight_meditation_houston", org_name: "Insight Meditation Houston",

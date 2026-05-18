@@ -3366,4 +3366,88 @@ CENTERS = {
             "(in-person and Zoom). Last Sunday: Recitation ceremony. Free; donations welcomed."
         ),
     },
+    # ── Honolulu, HI ─────────────────────────────────────────────────────────
+    "diamond_sangha_honolulu": {
+        "id": "diamond_sangha_honolulu",
+        "name": "Honolulu Diamond Sangha",
+        "tradition": "zen",
+        "url": "https://www.diamondsangha.org",
+        "address": "2747 Waiomao Road",
+        "city": "Honolulu",
+        "state": "HI",
+        "zip": "96816",
+        "neighborhood": "Palolo",
+        "lat": 21.3033,
+        "lng": -157.8018,
+        "description": (
+            "Honolulu Diamond Sangha (Ko Ko An Zendo) is one of the most historically "
+            "significant Zen communities in Hawaii, founded in the lineage of Robert Aitken "
+            "Roshi — a founder of engaged Buddhism in the West and co-founder of the "
+            "international Diamond Sangha network. Situated in Palolo Valley, the zendo "
+            "offers early morning zazen Mon–Fri, evening sitting on Wednesdays, and Sunday "
+            "morning practice. Newcomers attend a one-time orientation (1st Saturday, 9am–noon); "
+            "regular students sit freely thereafter."
+        ),
+    },
+    "soto_mission_honolulu": {
+        "id": "soto_mission_honolulu",
+        "name": "Soto Mission of Hawaii",
+        "tradition": "zen",
+        "url": "https://www.sotomission.org",
+        "address": "1708 Nuuanu Avenue",
+        "city": "Honolulu",
+        "state": "HI",
+        "zip": "96817",
+        "neighborhood": "Nuuanu",
+        "lat": 21.3219,
+        "lng": -157.8431,
+        "description": (
+            "Soto Mission of Hawaii (Shoboji) is a Soto Zen temple on Nuuanu Avenue in "
+            "downtown Honolulu. One of the oldest Japanese-lineage Zen communities in Hawaii. "
+            "Morning zazen is explicitly open to the public on Mondays, Wednesdays, and Fridays "
+            "at 6:30 AM — no reservation required, just arrive five minutes early in comfortable "
+            "clothes. Free (donations appreciated). Sunday service at 9:30 AM. Welcoming to "
+            "complete beginners."
+        ),
+    },
+    "bodhi_tree_honolulu": {
+        "id": "bodhi_tree_honolulu",
+        "name": "Bodhi Tree Dharma Center",
+        "tradition": "theravada",
+        "url": "https://www.bodhitreehawaii.com",
+        "address": "654A N. Judd Street",
+        "city": "Honolulu",
+        "state": "HI",
+        "zip": "96817",
+        "neighborhood": "Palama",
+        "lat": 21.3179,
+        "lng": -157.8443,
+        "description": (
+            "Bodhi Tree Dharma Center is a multi-tradition meditation hub in Honolulu's "
+            "Palama neighborhood, hosting several regular sanghas including Vipassana "
+            "meditation, the Honolulu Mindfulness Community (Plum Village / Thich Nhat Hanh "
+            "lineage), and a Stillness & Awakenings practice group. Classes run Monday through "
+            "Saturday. Donation-based, beginner-friendly."
+        ),
+    },
+    "aloha_sangha_honolulu": {
+        "id": "aloha_sangha_honolulu",
+        "name": "Aloha Sangha",
+        "tradition": "theravada",
+        "url": "https://www.alohasangha.com",
+        "address": "2439 Holomua Place",
+        "city": "Honolulu",
+        "state": "HI",
+        "zip": "96816",
+        "neighborhood": "Palolo Valley",
+        "lat": 21.2989,
+        "lng": -157.7997,
+        "description": (
+            "Aloha Sangha is a small, donation-based Theravada / Insight Meditation community "
+            "in Palolo Valley, operating since 1998. Thursday evening sits (6–7:30 PM) combine "
+            "qigong, two 25-minute seated sessions, a short dharma talk, and Q&A. "
+            "Beginner-friendly; no meditation experience required. Located in a residential "
+            "setting in upper Palolo Valley."
+        ),
+    },
 }

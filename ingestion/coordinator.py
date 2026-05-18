@@ -1001,6 +1001,13 @@ def run_tucson_phase3() -> list[Event]:
     return []
 
 
+def run_honolulu_phase3() -> list[Event]:
+    """Phase 3 Honolulu HI: all centers seeded as recurring sits."""
+    # All Honolulu centers (Diamond Sangha, Soto Mission, Bodhi Tree, Aloha Sangha)
+    # have no accessible iCal feeds — sits seeded via scripts/sangha-seed-recurring.js
+    return []
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -1042,6 +1049,7 @@ def main():
         + run_tampa_phase3()
         + run_charlotte_phase3()
         + run_tucson_phase3()
+        + run_honolulu_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
