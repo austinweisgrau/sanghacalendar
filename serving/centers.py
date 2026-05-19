@@ -3645,4 +3645,113 @@ CENTERS = {
             "Meditation Center and Buddhist Vihara (KMCBV) at the same address."
         ),
     },
+    # ── Providence, RI — Phase 3 (heartbeat 47) ───────────────────────────────
+    "pzc": {
+        "id": "pzc",
+        "name": "Providence Zen Center",
+        "tradition": "zen",
+        "url": "https://providencezen.org",
+        "address": "99 Pound Road",
+        "city": "Cumberland",
+        "state": "RI",
+        "zip": "02864",
+        "lat": 41.9728,
+        "lng": -71.4300,
+        "neighborhood": "Cumberland",
+        "bio": (
+            "Providence Zen Center is the founding temple of the Kwan Um School of Zen "
+            "in the West, established in 1972 by Korean master Seung Sahn Sunim. One of "
+            "the most active residential Zen centers in North America, PZC offers daily "
+            "formal practice (108 bows, chanting, zazen) alongside public programs. The "
+            "Sunday Dharma Program (9–11 AM) includes beginner instruction, sitting, "
+            "walking, and a Dharma talk — drop-ins welcome. Wednesday evenings feature a "
+            "community dinner followed by meditation instruction and chanting. A satellite "
+            "West Side Zen Group meets in Providence on Fridays. Intensive retreats "
+            "(Kyol Che, YMJJ) offered throughout the year. Located in Cumberland, RI, "
+            "about 15 miles north of downtown Providence."
+        ),
+    },
+    "akbc_providence": {
+        "id": "akbc_providence",
+        "name": "Atisha Kadampa Buddhist Center",
+        "tradition": "tibetan",
+        "url": "https://meditationinrhodeisland.org",
+        "address": "339 Ives Street",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "02906",
+        "lat": 41.8198,
+        "lng": -71.3955,
+        "neighborhood": "Fox Point",
+        "bio": (
+            "Atisha Kadampa Buddhist Center (AKBC) is Rhode Island's New Kadampa "
+            "Tradition (NKT) center in Providence's Fox Point neighborhood. Weekly "
+            "programs include a Sunday morning class (11 AM–12:15 PM), lunchtime sits "
+            "on Mondays and Thursdays (12:15–12:45 PM), and a Wednesday evening class "
+            "(6–7:30 PM). All classes combine guided meditation with Buddhist teachings "
+            "in the Kadampa style. Beginners welcome; AKBC also runs a satellite group "
+            "in Little Compton, RI."
+        ),
+    },
+    "imcp": {
+        "id": "imcp",
+        "name": "Insight Meditation Community of Providence",
+        "tradition": "theravada",
+        "url": "https://www.insightprovidence.org",
+        "address": "354 Broadway",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "02909",
+        "lat": 41.8220,
+        "lng": -71.4272,
+        "neighborhood": "Broadway / West End",
+        "bio": (
+            "The Insight Meditation Community of Providence (IMCP) is a "
+            "practitioner-led Vipassana sangha meeting the 1st and 3rd Thursday of "
+            "each month. Evenings include 40 minutes of silent sitting, a Dharma "
+            "reading, and a discussion circle. Rooted in the Theravada/Insight "
+            "tradition, affiliated with the Insight Meditation Society and the Open "
+            "Sangha Foundation. Drop-in, donation-based."
+        ),
+    },
+    "insight_pvd": {
+        "id": "insight_pvd",
+        "name": "Insight Meditation Sangha Providence",
+        "tradition": "theravada",
+        "url": "https://www.insightpvd.com",
+        "address": "27 Sims Avenue",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "02909",
+        "lat": 41.8164,
+        "lng": -71.4256,
+        "neighborhood": "West End",
+        "bio": (
+            "Insight Meditation Sangha Providence is a Vipassana community in "
+            "Providence's West End offering weekly Wednesday evening meditation. "
+            "Sitting practice in the Insight/Theravada tradition; dharma study and "
+            "community discussion also offered. Drop-in friendly, donation-based. "
+            "Periodic retreats and practice groups throughout the year."
+        ),
+    },
+    "ricm_radiant_bell": {
+        "id": "ricm_radiant_bell",
+        "name": "RI Community of Mindfulness – Radiant Bell Sangha",
+        "tradition": "zen",
+        "url": "https://www.mindfulnessri.org",
+        "address": "5 Bell Street",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "02909",
+        "lat": 41.8248,
+        "lng": -71.4290,
+        "neighborhood": "College Hill / Wayland Square",
+        "bio": (
+            "The Radiant Bell Sangha is part of the Rhode Island Community of "
+            "Mindfulness (RICM), a network of Plum Village–tradition sanghas inspired "
+            "by Thich Nhat Hanh. Saturday morning gatherings (8–9:30 AM) at Bell "
+            "Street Chapel include sitting meditation, walking meditation, and a "
+            "Dharma talk or reading. Free and open to all; beginners welcome."
+        ),
+    },
 }

@@ -62,6 +62,7 @@ from ingestion.sources import charlotte as charlotte_sources  # noqa: F401 (no l
 from ingestion.sources import tucson as tucson_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import rochester as rochester_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import louisville as louisville_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import providence as providence_sources
 
 log = logging.getLogger(__name__)
 
@@ -1023,6 +1024,37 @@ def run_louisville_phase3() -> list[Event]:
     return []
 
 
+def run_providence_phase3() -> list[Event]:
+    """Phase 3 Providence RI: Providence Zen Center Tockify ICS + recurring-only centers."""
+    events: list[Event] = []
+
+    # Providence Zen Center — Tockify ICS feed
+    for org_id, feed_cfg in providence_sources.ICAL_FEEDS.items():
+        center = providence_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Providence Tockify iCal)...")
+        try:
+            evts = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(evts)} sits from {center.name}")
+            events.extend(evts)
+        except Exception as e:
+            log.error(f"  ✗ Providence iCal {org_id} failed: {e}")
+
+    # AKBC, IMCP, Insight PVD, RICM Radiant Bell — all seeded via sangha-seed-recurring.js
+    return events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -1067,6 +1099,7 @@ def main():
         + run_honolulu_phase3()
         + run_rochester_phase3()
         + run_louisville_phase3()
+        + run_providence_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

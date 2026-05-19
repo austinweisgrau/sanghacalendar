@@ -65,6 +65,7 @@ from ingestion.sources import tucson as tucson_sources  # noqa: F401 (no live fe
 from ingestion.sources import honolulu as honolulu_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import rochester as rochester_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import louisville as louisville_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import providence as providence_sources
 
 log = logging.getLogger(__name__)
 
@@ -897,6 +898,30 @@ def main():
 
     # Tucson Phase 3 — all sits seeded as recurring; no iCal feeds
     log.info("--- Tucson Phase 3: no iCal feeds (recurring sits only) ---")
+
+    # Providence RI Phase 3 — Providence Zen Center Tockify ICS + recurring-only centers
+    log.info("--- Providence RI Phase 3: iCal feeds ---")
+    for org_id, feed_cfg in providence_sources.ICAL_FEEDS.items():
+        center = providence_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Providence iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Providence iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

@@ -1204,6 +1204,91 @@ const SITS = [
     source_url: "https://kmpc.co", event_url: "https://kmpc.co",
   },
 
+  // ── Providence, RI ────────────────────────────────────────────────────────
+  // Providence Zen Center — live events via Tockify ICS (no recurring seeds needed).
+  // pzc: Sunday Dharma Program + Wednesday sit handled by coordinator iCal fetch.
+
+  // Atisha Kadampa Buddhist Center (AKBC) — NKT Tibetan. Verified 2026-05-19.
+  // 339 Ives St, Fox Point, Providence RI 02906. meditationinrhodeisland.org
+  {
+    org_id: "akbc_providence", org_name: "Atisha Kadampa Buddhist Center",
+    title: "Sunday Morning Meditation Class",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 75,
+    address: "339 Ives Street", city: "Providence", state: "RI", neighborhood: "Fox Point",
+    lat: 41.8198, lng: -71.3955, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Kadampa class: guided meditation + Buddhist teaching, 11am–12:15pm. In-person. Beginners welcome.",
+    source_url: "https://meditationinrhodeisland.org", event_url: "https://meditationinrhodeisland.org/akbc-calendar/",
+  },
+  {
+    org_id: "akbc_providence", org_name: "Atisha Kadampa Buddhist Center",
+    title: "Monday Lunchtime Meditation",
+    days: ["Monday"], time: { h: 12, m: 15 }, duration_min: 30,
+    address: "339 Ives Street", city: "Providence", state: "RI", neighborhood: "Fox Point",
+    lat: 41.8198, lng: -71.3955, tradition: "tibetan", location_type: "in-person",
+    notes: "Brief lunchtime sitting meditation, 12:15–12:45pm. In-person. NKT Kadampa.",
+    source_url: "https://meditationinrhodeisland.org", event_url: "https://meditationinrhodeisland.org/akbc-calendar/",
+  },
+  {
+    org_id: "akbc_providence", org_name: "Atisha Kadampa Buddhist Center",
+    title: "Wednesday Evening Meditation Class",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "339 Ives Street", city: "Providence", state: "RI", neighborhood: "Fox Point",
+    lat: 41.8198, lng: -71.3955, tradition: "tibetan", location_type: "in-person",
+    notes: "Evening meditation class, 6–7:30pm. Guided meditation + Buddhist teaching. NKT Kadampa. In-person.",
+    source_url: "https://meditationinrhodeisland.org", event_url: "https://meditationinrhodeisland.org/akbc-calendar/",
+  },
+  {
+    org_id: "akbc_providence", org_name: "Atisha Kadampa Buddhist Center",
+    title: "Thursday Lunchtime Meditation",
+    days: ["Thursday"], time: { h: 12, m: 15 }, duration_min: 30,
+    address: "339 Ives Street", city: "Providence", state: "RI", neighborhood: "Fox Point",
+    lat: 41.8198, lng: -71.3955, tradition: "tibetan", location_type: "in-person",
+    notes: "Brief lunchtime sitting meditation, 12:15–12:45pm. In-person. NKT Kadampa.",
+    source_url: "https://meditationinrhodeisland.org", event_url: "https://meditationinrhodeisland.org/akbc-calendar/",
+  },
+  // Insight Meditation Community of Providence (IMCP) — 1st & 3rd Thursday. Verified 2026-05-19.
+  // 354 Broadway, West End, Providence RI 02909. insightprovidence.org
+  {
+    org_id: "imcp", org_name: "Insight Meditation Community of Providence",
+    title: "Thursday Evening Meditation Sit",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90, week_of_month: 1,
+    address: "354 Broadway", city: "Providence", state: "RI", neighborhood: "Broadway / West End",
+    lat: 41.8220, lng: -71.4272, tradition: "theravada", location_type: "in-person",
+    notes: "1st Thursday of each month. 40-min silent sit + Dharma reading + discussion. Vipassana/Insight Meditation. Drop-in, donation-based.",
+    source_url: "https://www.insightprovidence.org", event_url: "https://www.insightprovidence.org",
+  },
+  {
+    org_id: "imcp", org_name: "Insight Meditation Community of Providence",
+    title: "Thursday Evening Meditation Sit",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90, week_of_month: 3,
+    address: "354 Broadway", city: "Providence", state: "RI", neighborhood: "Broadway / West End",
+    lat: 41.8220, lng: -71.4272, tradition: "theravada", location_type: "in-person",
+    notes: "3rd Thursday of each month. 40-min silent sit + Dharma reading + discussion. Vipassana/Insight Meditation. Drop-in, donation-based.",
+    source_url: "https://www.insightprovidence.org", event_url: "https://www.insightprovidence.org",
+  },
+  // Insight Meditation Sangha Providence — Wednesday evenings. Verified 2026-05-19.
+  // 27 Sims Ave, West End, Providence RI 02909. insightpvd.com
+  {
+    org_id: "insight_pvd", org_name: "Insight Meditation Sangha Providence",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "27 Sims Avenue", city: "Providence", state: "RI", neighborhood: "West End",
+    lat: 41.8164, lng: -71.4256, tradition: "theravada", location_type: "in-person",
+    notes: "Weekly Vipassana/Insight meditation sit, Wednesday evenings. Drop-in, donation-based.",
+    source_url: "https://www.insightpvd.com", event_url: "https://www.insightpvd.com",
+  },
+  // RI Community of Mindfulness — Radiant Bell Sangha (Plum Village). Verified 2026-05-19.
+  // Bell Street Chapel, 5 Bell St, Providence RI 02909. mindfulnessri.org
+  {
+    org_id: "ricm_radiant_bell", org_name: "RI Community of Mindfulness – Radiant Bell Sangha",
+    title: "Saturday Morning Mindfulness Gathering",
+    days: ["Saturday"], time: { h: 8, m: 0 }, duration_min: 90,
+    address: "5 Bell Street", city: "Providence", state: "RI", neighborhood: "College Hill / Wayland Square",
+    lat: 41.8248, lng: -71.4290, tradition: "zen", location_type: "in-person",
+    notes: "Plum Village / Thich Nhat Hanh lineage. Sitting meditation, walking meditation, Dharma talk/reading. At Bell Street Chapel. 8–9:30am. Free, all welcome.",
+    source_url: "https://www.mindfulnessri.org", event_url: "https://www.mindfulnessri.org/sanghas/",
+  },
+
   // ── Houston, TX ────────────────────────────────────────────────────────────
   {
     org_id: "insight_meditation_houston", org_name: "Insight Meditation Houston",
