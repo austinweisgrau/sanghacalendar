@@ -155,6 +155,8 @@ Candidate metros (rough priority):
 35. Tucson (AZ) 🔄 **Phase 3 Tucson live May 18** (1 center) — see below
 36. Honolulu (HI) 🔄 **Phase 3 Honolulu live May 18** (4 centers) — see below
 37. Rochester (NY) 🔄 **Phase 3 Rochester live May 18** (3 centers) — see below
+38. Louisville (KY) 🔄 **Phase 3 Louisville live May 19** (6 centers) — see below
+39. Providence (RI) 🔄 **Phase 3 Providence live May 19** (5 centers) — see below
 
 ### Tucson Phase 3 — ✅ Live May 18 (1 center, heartbeat 43)
 
@@ -219,6 +221,41 @@ Center bios added to centers.py for all 3 centers.
 - Rochester Chan Buddhist Temple (1040 Winton Rd N): website inaccessible. Deferred.
 - Blooming Lilac Sangha (Brighton): Plum Village lineage, private home — contact required. Skip.
 - No Shambhala or Kadampa/KMC center found in Rochester.
+
+### Louisville Phase 3 — ✅ Live May 19 (6 centers, heartbeat 46)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Louisville Zen Center (917 Rosemary Dr, Louisville KY 40205) | Recurring sits seeded — no iCal. Tue 6:30pm (Rosemary Dr) + Sun 6:30pm (Bardstown Rd). Kapleau lineage. | ✅ Live heartbeat 46 |
+| Open Mind Zen Louisville (1013 Bardstown Rd, Louisville KY 40204) | Recurring sit seeded — Sat 10:30am. White Plum Asanga. | ✅ Live heartbeat 46 |
+| Louisville Community of Mindful Living / Sangha Lou (115 S Ewing Ave, Louisville KY 40206) | Recurring sit seeded — Sun 10am. Plum Village / TNH. | ✅ Live heartbeat 46 |
+| Louisville Vipassana Community (2231 Payne St, Louisville KY 40206) | Recurring sit seeded — Mon 6:30pm. IMS-style Insight. | ✅ Live heartbeat 46 |
+| Drepung Gomang Center for Engaging Compassion (411 N Hubbards Ln, Louisville KY 40207) | Recurring sits seeded — Wed noon + Wed 7pm. Gelugpa Tibetan. | ✅ Live heartbeat 46 |
+| Kentucky Meditation Peace Center (4815 Manslick Rd, Louisville KY 40216) | Recurring sits seeded — Mon 7pm + Wed 7pm. Theravada. | ✅ Live heartbeat 46 |
+
+Louisville city filter added to KY state in `_filters.html`.
+`ingestion/sources/louisville.py` created; wired into coordinator + abraxis.
+`sangha-seed-recurring.js`: 13 new sit defs (255 → 268 total), 5047 instances seeded.
+
+### Providence Phase 3 — ✅ Live May 19 (5 centers, heartbeat 47)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Providence Zen Center (99 Pound Rd, Cumberland RI 02864) | Tockify ICS feed — `tockify.com/api/feeds/ics/providence.zen.center`. Korean Zen (Kwan Um), founded by Seung Sahn 1972. | ✅ Live heartbeat 47 |
+| Atisha Kadampa Buddhist Center (339 Ives St, Providence RI 02906) | Recurring sits seeded — NKT Tibetan. Sun 11am, Mon 12:15pm, Wed 6pm, Thu 12:15pm. | ✅ Live heartbeat 47 |
+| Insight Meditation Community of Providence (354 Broadway, Providence RI 02909) | Recurring sits seeded — 1st & 3rd Thursday 7pm. Vipassana/Theravada. | ✅ Live heartbeat 47 |
+| Insight Meditation Sangha Providence (27 Sims Ave, Providence RI 02909) | Recurring sit seeded — Wednesday evenings 7pm. Vipassana. | ✅ Live heartbeat 47 |
+| RI Community of Mindfulness – Radiant Bell Sangha (5 Bell St, Providence RI 02909) | Recurring sit seeded — Saturday mornings 8am. Plum Village / TNH. | ✅ Live heartbeat 47 |
+
+Providence + Cumberland city filters added to RI state in `_filters.html`.
+`ingestion/sources/providence.py` created; wired into coordinator + abraxis.
+`sangha-seed-recurring.js`: 8 new sit defs (268 → 276 total), 5131 instances seeded.
+
+**Research notes (2026-05-19):**
+- Shambhala Providence: confirmed CLOSED (Facebook confirms; no active center). Skip.
+- PZC in Cumberland (15 mi N of Providence) — still the Providence metro's primary Zen center.
+- Wat Thormikaram (177 Hanover St): Khmer Theravada, community-focused, no public drop-in program. Skip.
+- RICM Hope Street Sangha (1st & 4th Wed at 500 Hope St): skipped to avoid doubling Wed coverage with Insight PVD.
 
 ---
 
