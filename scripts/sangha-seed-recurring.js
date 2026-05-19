@@ -1109,6 +1109,101 @@ const SITS = [
     source_url: "https://www.dharmarefuge.com", event_url: "https://www.dharmarefuge.com/schedule.html",
   },
 
+  // ── Louisville, KY ────────────────────────────────────────────────────────
+  // Louisville Zen Center — Rinzai-Soto (Kapleau lineage). Verified 2026-05-19.
+  // 917 Rosemary Dr (Tue) / 1507 Bardstown Rd (Sun), Louisville KY 40205/40205.
+  {
+    org_id: "louisville_zen_center", org_name: "Louisville Zen Center",
+    title: "Tuesday Evening Sitting",
+    days: ["Tuesday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "917 Rosemary Drive", city: "Louisville", state: "KY", neighborhood: "Highlands / Tyler Park",
+    lat: 38.2355, lng: -85.7116, tradition: "zen", location_type: "hybrid",
+    notes: "Hybrid in-person + Zoom sit, 6:30–8pm. Newcomer orientation at 6pm. Philip Kapleau / Rochester Zen Center lineage.",
+    source_url: "https://www.louisvillezen.org", event_url: "https://www.louisvillezen.org/sittings.html",
+  },
+  {
+    org_id: "louisville_zen_center", org_name: "Louisville Zen Center",
+    title: "Sunday Evening Sitting",
+    days: ["Sunday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "1507 Bardstown Road", city: "Louisville", state: "KY", neighborhood: "Highlands / Bardstown Road",
+    lat: 38.2204, lng: -85.7212, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday evening hybrid sit at Infinite Bliss Yoga, 6:30–8pm. In-person + Zoom. Kapleau lineage.",
+    source_url: "https://www.louisvillezen.org", event_url: "https://www.louisvillezen.org/sittings.html",
+  },
+  // Open Mind Zen Louisville — White Plum Asanga. Verified 2026-05-19.
+  // 1013 Bardstown Rd, Louisville KY 40204. Global OMZ iCal is Melbourne-only.
+  {
+    org_id: "omz_louisville", org_name: "Open Mind Zen Louisville",
+    title: "Saturday Morning Meditation",
+    days: ["Saturday"], time: { h: 10, m: 30 }, duration_min: 90,
+    address: "1013 Bardstown Road", city: "Louisville", state: "KY", neighborhood: "Highlands / Bardstown Road",
+    lat: 38.2253, lng: -85.7212, tradition: "zen", location_type: "hybrid",
+    notes: "Zazen + Dharma talk, 10:30am–noon. In-person at Garner Large art space (orange door, alley entrance) + Zoom. White Plum Asanga lineage. Drop-in, no registration.",
+    source_url: "https://www.omzlouisville.com", event_url: "https://openmindzen.com/venue/open-mind-zen-louisville/",
+  },
+  // Sangha Lou (Louisville Community of Mindful Living) — Plum Village / TNH. Verified 2026-05-19.
+  // 115 S Ewing Ave, Louisville KY 40206.
+  {
+    org_id: "sangha_lou", org_name: "Louisville Community of Mindful Living (Sangha Lou)",
+    title: "Sunday Mindfulness Gathering",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "115 S Ewing Avenue", city: "Louisville", state: "KY", neighborhood: "Crescent Hill",
+    lat: 38.2322, lng: -85.7069, tradition: "zen", location_type: "hybrid",
+    notes: "Plum Village / Thich Nhat Hanh tradition. Sunday 10am–noon: sitting + walking meditation, dharma sharing, discussion. Hybrid in-person + Zoom. All welcome.",
+    source_url: "https://www.sanghalou.org", event_url: "https://www.sanghalou.org",
+  },
+  // Louisville Vipassana Community — Theravada / Insight Meditation. Verified 2026-05-19.
+  // Clifton Unitarian Universalist Church, 2231 Payne St, Louisville KY 40206.
+  {
+    org_id: "louisville_vipassana_community", org_name: "Louisville Vipassana Community",
+    title: "Monday Evening Meditation",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "2231 Payne Street", city: "Louisville", state: "KY", neighborhood: "Clifton",
+    lat: 38.2504, lng: -85.7105, tradition: "theravada", location_type: "hybrid",
+    notes: "IMS-style Insight Meditation. At Clifton UU Church — guided sit + walking + dharma talk + discussion. 6:30–8pm, in-person + Zoom. Donation-based, all welcome.",
+    source_url: "http://www.louisville-vipassana-community.org", event_url: "http://www.louisville-vipassana-community.org/schedule.html",
+  },
+  // Drepung Gomang Center for Engaging Compassion (DGCEC) — Tibetan (Gelugpa). Verified 2026-05-19.
+  // 411 N Hubbards Lane, Louisville KY 40207. Calendarize iCal is JS-rendered (not scrapable).
+  {
+    org_id: "drepung_gomang_louisville", org_name: "Drepung Gomang Center for Engaging Compassion",
+    title: "Wednesday Noontime Meditation",
+    days: ["Wednesday"], time: { h: 12, m: 10 }, duration_min: 30,
+    address: "411 N Hubbards Lane", city: "Louisville", state: "KY", neighborhood: "St. Matthews",
+    lat: 38.2632, lng: -85.6900, tradition: "tibetan", location_type: "in-person",
+    notes: "Brief 30-min noontime meditation, 12:10–12:40pm. In-person. All welcome. Gelugpa / Drepung Gomang lineage.",
+    source_url: "https://www.drepunggomangusa.org", event_url: "https://www.drepunggomangusa.org/events-calendar/",
+  },
+  {
+    org_id: "drepung_gomang_louisville", org_name: "Drepung Gomang Center for Engaging Compassion",
+    title: "Wednesday Evening Community Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "411 N Hubbards Lane", city: "Louisville", state: "KY", neighborhood: "St. Matthews",
+    lat: 38.2632, lng: -85.6900, tradition: "tibetan", location_type: "in-person",
+    notes: "Community meditation with chanting and prayers, 7–8pm. In-person. Open to all. Resident Geshe teaching. Drepung Gomang Gelugpa lineage.",
+    source_url: "https://www.drepunggomangusa.org", event_url: "https://www.drepunggomangusa.org/events-calendar/",
+  },
+  // Kentucky Meditation Peace Center (KMPC) — Theravada. Verified 2026-05-19.
+  // 4815 Manslick Rd, Louisville KY 40216. Resident monks, Vipassana teaching.
+  {
+    org_id: "kmpc_louisville", org_name: "Kentucky Meditation Peace Center",
+    title: "Monday Evening Group Meditation",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "4815 Manslick Road", city: "Louisville", state: "KY", neighborhood: "Pleasure Ridge Park / SW Jefferson",
+    lat: 38.1755, lng: -85.8014, tradition: "theravada", location_type: "in-person",
+    notes: "Weekly group Vipassana meditation with resident monks, 7–8:30pm. In-person. Beginner-friendly. Also operates as Kentucky Meditation Center and Buddhist Vihara (KMCBV).",
+    source_url: "https://kmpc.co", event_url: "https://kmpc.co",
+  },
+  {
+    org_id: "kmpc_louisville", org_name: "Kentucky Meditation Peace Center",
+    title: "Wednesday Evening Group Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "4815 Manslick Road", city: "Louisville", state: "KY", neighborhood: "Pleasure Ridge Park / SW Jefferson",
+    lat: 38.1755, lng: -85.8014, tradition: "theravada", location_type: "in-person",
+    notes: "Weekly group Vipassana meditation with resident monks, 7–8:30pm. In-person. Beginner-friendly.",
+    source_url: "https://kmpc.co", event_url: "https://kmpc.co",
+  },
+
   // ── Houston, TX ────────────────────────────────────────────────────────────
   {
     org_id: "insight_meditation_houston", org_name: "Insight Meditation Houston",

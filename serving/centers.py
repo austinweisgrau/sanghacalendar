@@ -3519,4 +3519,130 @@ CENTERS = {
             "drop-in welcome. All traditions and backgrounds welcome."
         ),
     },
+    # ── Louisville, KY — Phase 3 (heartbeat 46) ──────────────────────────────
+    "louisville_zen_center": {
+        "id": "louisville_zen_center",
+        "name": "Louisville Zen Center",
+        "tradition": "zen",
+        "url": "https://www.louisvillezen.org",
+        "address": "917 Rosemary Drive",
+        "city": "Louisville",
+        "state": "KY",
+        "zip": "40205",
+        "lat": 38.2355,
+        "lng": -85.7116,
+        "neighborhood": "Highlands / Tyler Park",
+        "bio": (
+            "Louisville Zen Center is a Rinzai-Soto Zen community in the lineage of "
+            "Rochester Zen Center (Philip Kapleau Roshi). Sits are held at two "
+            "Louisville locations: 917 Rosemary Dr (Tuesday evenings) and Infinite "
+            "Bliss Yoga at 1507 Bardstown Rd (Sunday evenings). Both sits run "
+            "6:30–8pm, hybrid in-person and Zoom. Newcomer orientation offered at "
+            "6pm before Tuesday's sit. Drop-in welcome; donation-based."
+        ),
+    },
+    "omz_louisville": {
+        "id": "omz_louisville",
+        "name": "Open Mind Zen Louisville",
+        "tradition": "zen",
+        "url": "https://www.omzlouisville.com",
+        "address": "1013 Bardstown Road",
+        "city": "Louisville",
+        "state": "KY",
+        "zip": "40204",
+        "lat": 38.2253,
+        "lng": -85.7212,
+        "neighborhood": "Highlands / Bardstown Road",
+        "bio": (
+            "Open Mind Zen Louisville is a lay Zen community in the White Plum Asanga "
+            "lineage, meeting at the Garner Large art space on Bardstown Road. "
+            "Saturday Morning Meditation (10:30am–noon): in-person zazen + Dharma "
+            "talk, hybrid Zoom available. Daily morning Zoom zazen (7–8am) drop-in. "
+            "Part of the Open Mind Zen network. Beginner-friendly, no registration required."
+        ),
+    },
+    "sangha_lou": {
+        "id": "sangha_lou",
+        "name": "Louisville Community of Mindful Living (Sangha Lou)",
+        "tradition": "zen",
+        "url": "https://www.sanghalou.org",
+        "address": "115 S Ewing Avenue",
+        "city": "Louisville",
+        "state": "KY",
+        "zip": "40206",
+        "lat": 38.2322,
+        "lng": -85.7069,
+        "neighborhood": "Crescent Hill",
+        "bio": (
+            "Louisville Community of Mindful Living (Sangha Lou) practices in the "
+            "tradition of Thich Nhat Hanh and Plum Village. Sunday gatherings "
+            "(10am–noon) include guided sitting, walking meditation, dharma sharing, "
+            "and discussion — hybrid in-person and Zoom. Open to all regardless of "
+            "background. Emphasis on applied mindfulness and engaged Buddhism."
+        ),
+    },
+    "louisville_vipassana_community": {
+        "id": "louisville_vipassana_community",
+        "name": "Louisville Vipassana Community",
+        "tradition": "theravada",
+        "url": "http://www.louisville-vipassana-community.org",
+        "address": "2231 Payne Street",
+        "city": "Louisville",
+        "state": "KY",
+        "zip": "40206",
+        "lat": 38.2504,
+        "lng": -85.7105,
+        "neighborhood": "Clifton",
+        "bio": (
+            "Louisville Vipassana Community offers weekly Insight Meditation gatherings "
+            "in the IMS / Spirit Rock tradition. Monday Evening Meditation (6:30–8pm) "
+            "meets at Clifton Unitarian Universalist Church — guided sitting, walking "
+            "meditation, dharma talk, and discussion. Hybrid in-person + Zoom. "
+            "Also Tuesday and Wednesday morning Zoom-only sits (7:30–8:05am). "
+            "Drop-in welcome; donation-based."
+        ),
+    },
+    "drepung_gomang_louisville": {
+        "id": "drepung_gomang_louisville",
+        "name": "Drepung Gomang Center for Engaging Compassion",
+        "tradition": "tibetan",
+        "url": "https://www.drepunggomangusa.org",
+        "address": "411 N Hubbards Lane",
+        "city": "Louisville",
+        "state": "KY",
+        "zip": "40207",
+        "lat": 38.2632,
+        "lng": -85.6900,
+        "neighborhood": "St. Matthews",
+        "bio": (
+            "Drepung Gomang Center for Engaging Compassion (DGCEC) is the Louisville "
+            "branch of Drepung Gomang monastery — one of the three great Gelugpa "
+            "monasteries of Tibet, re-established in South India after 1959. Resident "
+            "Geshe offers Tibetan Buddhist teachings and community practice. Weekly "
+            "Wednesday Noontime Meditation (12:10–12:40pm) and Wednesday Evening "
+            "Community Meditation with chanting and prayers (7–8pm). All sessions "
+            "open to the public; no prior experience needed."
+        ),
+    },
+    "kmpc_louisville": {
+        "id": "kmpc_louisville",
+        "name": "Kentucky Meditation Peace Center",
+        "tradition": "theravada",
+        "url": "https://kmpc.co",
+        "address": "4815 Manslick Road",
+        "city": "Louisville",
+        "state": "KY",
+        "zip": "40216",
+        "lat": 38.1755,
+        "lng": -85.8014,
+        "neighborhood": "Pleasure Ridge Park / SW Jefferson",
+        "bio": (
+            "Kentucky Meditation Peace Center and Buddhist Vihara (KMPC) is a "
+            "Theravada Buddhist center in southwest Louisville with resident monks "
+            "teaching Vipassana insight meditation. Weekly group meditation: Monday "
+            "and Wednesday evenings (7–8:30pm), in-person. Guided meditation for all "
+            "levels — beginners explicitly welcome. Also operates as Kentucky "
+            "Meditation Center and Buddhist Vihara (KMCBV) at the same address."
+        ),
+    },
 }

@@ -64,6 +64,7 @@ from ingestion.sources import charlotte as charlotte_sources  # noqa: F401 (no l
 from ingestion.sources import tucson as tucson_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import honolulu as honolulu_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import rochester as rochester_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import louisville as louisville_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
