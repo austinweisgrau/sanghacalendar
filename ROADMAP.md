@@ -157,6 +157,7 @@ Candidate metros (rough priority):
 37. Rochester (NY) 🔄 **Phase 3 Rochester live May 18** (3 centers) — see below
 38. Louisville (KY) 🔄 **Phase 3 Louisville live May 19** (6 centers) — see below
 39. Providence (RI) 🔄 **Phase 3 Providence live May 19** (5 centers) — see below
+40. Indianapolis (IN) 🔄 **Phase 3 Indianapolis live May 19** (2 centers) — see below
 
 ### Tucson Phase 3 — ✅ Live May 18 (1 center, heartbeat 43)
 
@@ -256,6 +257,25 @@ Providence + Cumberland city filters added to RI state in `_filters.html`.
 - PZC in Cumberland (15 mi N of Providence) — still the Providence metro's primary Zen center.
 - Wat Thormikaram (177 Hanover St): Khmer Theravada, community-focused, no public drop-in program. Skip.
 - RICM Hope Street Sangha (1st & 4th Wed at 500 Hope St): skipped to avoid doubling Wed coverage with Insight PVD.
+
+### Indianapolis Phase 3 — ✅ Live May 19 (2 centers, heartbeat 48)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| KMC Indianapolis / Dromtonpa (4010 W 86th St Ste C, Indianapolis IN 46268) | Recurring sits seeded — Squarespace, no iCal. Sun 11am, Thu 6pm, Fri 10am. NKT Tibetan. | ✅ Live heartbeat 48 |
+| Indianapolis Zen Center (3703 N. Washington Blvd, Indianapolis IN 46205) | Recurring sits seeded — Wix site, no iCal. Mon/Wed 7pm evenings, Mon/Wed/Fri 6:45am mornings, Sat 9:30am. Kwan Um Korean Zen (Seung Sahn lineage, est. 1991). Hybrid. | ✅ Live heartbeat 48 |
+
+Indiana state + Indianapolis city added to `_filters.html`.
+Center bios added to centers.py for both centers.
+`ingestion/sources/indianapolis.py` created; wired into coordinator + abraxis.
+`sangha-seed-recurring.js`: 7 new sit defs (276 → 283 total), 5248 instances seeded.
+
+**Research notes (2026-05-19):**
+- KMC Indianapolis: Squarespace site; no iCal (?ical=1 returns homepage, events-calendar?format=json returns HTML). Founded 1998.
+- IndyZen schedule confirmed via web search: Mon/Wed 7pm, Mon/Wed/Fri 6:45am, Sat 9:30am.
+- Indiana Buddhist Center (9260 E 10th St, Indianapolis IN 46229): Gelugpa / Dalai Lama lineage. Wix site, JS-rendered, schedule unclear; events currently in Greenwood (suburb). 0 Eventbrite upcoming events. Deferred.
+- Hoosier Heartland Shambhala: Based in Bloomington IN (IU town, 50 mi south). Not Indianapolis metro. Deferred.
+- TMBCC (Tibetan Mongolian Buddhist Cultural Center): 3655 S Snoddy Rd, Bloomington IN. Gelugpa, founded by Dalai Lama's brother. Bloomington-only; separate metro. Deferred.
 
 ---
 

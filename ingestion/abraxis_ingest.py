@@ -66,6 +66,7 @@ from ingestion.sources import honolulu as honolulu_sources  # noqa: F401 (no liv
 from ingestion.sources import rochester as rochester_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import louisville as louisville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import providence as providence_sources
+from ingestion.sources import indianapolis as indianapolis_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -922,6 +923,9 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Providence iCal {org_id} failed: {e}")
+
+    # Indianapolis Phase 3 — all sits seeded as recurring; no iCal feeds
+    log.info("--- Indianapolis Phase 3: no iCal feeds (recurring sits only) ---")
 
     # Convert dataclasses to dicts
     dicts = []

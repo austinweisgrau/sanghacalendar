@@ -3754,4 +3754,49 @@ CENTERS = {
             "Dharma talk or reading. Free and open to all; beginners welcome."
         ),
     },
+    "kmc_indianapolis": {
+        "id": "kmc_indianapolis",
+        "name": "Kadampa Meditation Center Indianapolis",
+        "tradition": "tibetan",
+        "url": "https://www.meditation-indianapolis.org",
+        "address": "4010 W 86th Street, Suite C",
+        "city": "Indianapolis",
+        "state": "IN",
+        "zip": "46268",
+        "lat": 39.9080,
+        "lng": -86.2012,
+        "neighborhood": "NW Indianapolis / North Willow",
+        "bio": (
+            "Kadampa Meditation Center Indianapolis (Dromtonpa KMC) is Indiana's "
+            "New Kadampa Tradition (NKT) center, founded in 1998 — one of the oldest "
+            "KMC centers in the US Midwest. Weekly public classes: Sunday General "
+            "Program (11 AM–12:15 PM), Thursday Evening Meditation (6–7 PM), and "
+            "Friday Morning Meditation (10–11:15 AM). All classes combine guided "
+            "meditation with Buddhist teachings in the Kadampa style. Drop-in "
+            "welcome; suggested donation ~$12. Located in northwest Indianapolis."
+        ),
+    },
+    "indianapolis_zen_center": {
+        "id": "indianapolis_zen_center",
+        "name": "Indianapolis Zen Center",
+        "tradition": "zen",
+        "url": "https://www.indyzen.org",
+        "address": "3703 N. Washington Boulevard",
+        "city": "Indianapolis",
+        "state": "IN",
+        "zip": "46205",
+        "lat": 39.8373,
+        "lng": -86.1569,
+        "neighborhood": "Meridian-Kessler",
+        "bio": (
+            "The Indianapolis Zen Center has offered Korean Zen practice in central "
+            "Indiana since 1991, as a member of the Kwan Um School of Zen (Seung Sahn "
+            "lineage). Evening sits Monday and Wednesday (7–8:30 PM) include two "
+            "25-minute sitting periods with walking meditation. Morning practice "
+            "Monday, Wednesday, and Friday (6:45–7:15 AM) combines sitting with a "
+            "brief reading and discussion. Saturday mornings (9:30–10:30 AM) include "
+            "chanting and sitting/walking. All sessions hybrid in-person + Zoom. "
+            "Monthly retreat 2nd Saturday. Drop-in, no charge."
+        ),
+    },
 }

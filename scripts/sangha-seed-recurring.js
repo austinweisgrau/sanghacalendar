@@ -1289,6 +1289,75 @@ const SITS = [
     source_url: "https://www.mindfulnessri.org", event_url: "https://www.mindfulnessri.org/sanghas/",
   },
 
+  // ── Indianapolis, IN ──────────────────────────────────────────────────────
+  // KMC Indianapolis (Dromtonpa Kadampa) — NKT Tibetan. Verified 2026-05-19.
+  // 4010 W 86th St Ste C, NW Indianapolis IN 46268. meditation-indianapolis.org
+  {
+    org_id: "kmc_indianapolis", org_name: "Kadampa Meditation Center Indianapolis",
+    title: "Sunday General Program",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 75,
+    address: "4010 W 86th Street, Suite C", city: "Indianapolis", state: "IN", neighborhood: "NW Indianapolis / North Willow",
+    lat: 39.9080, lng: -86.2012, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Kadampa class: guided meditation + Buddhist teaching. 11am–12:15pm. In-person. Beginners welcome; suggested donation ~$12.",
+    source_url: "https://www.meditation-indianapolis.org", event_url: "https://www.meditation-indianapolis.org/calendar",
+  },
+  {
+    org_id: "kmc_indianapolis", org_name: "Kadampa Meditation Center Indianapolis",
+    title: "Thursday Evening Meditation Class",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "4010 W 86th Street, Suite C", city: "Indianapolis", state: "IN", neighborhood: "NW Indianapolis / North Willow",
+    lat: 39.9080, lng: -86.2012, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Kadampa evening class: guided meditation + Buddhist teaching. 6–7pm. In-person. Drop-in welcome.",
+    source_url: "https://www.meditation-indianapolis.org", event_url: "https://www.meditation-indianapolis.org/calendar",
+  },
+  {
+    org_id: "kmc_indianapolis", org_name: "Kadampa Meditation Center Indianapolis",
+    title: "Friday Morning Meditation Class",
+    days: ["Friday"], time: { h: 10, m: 0 }, duration_min: 75,
+    address: "4010 W 86th Street, Suite C", city: "Indianapolis", state: "IN", neighborhood: "NW Indianapolis / North Willow",
+    lat: 39.9080, lng: -86.2012, tradition: "tibetan", location_type: "in-person",
+    notes: "NKT Kadampa morning class: guided meditation + Buddhist teaching. 10–11:15am. In-person. Drop-in welcome.",
+    source_url: "https://www.meditation-indianapolis.org", event_url: "https://www.meditation-indianapolis.org/calendar",
+  },
+  // Indianapolis Zen Center — Kwan Um Korean Zen (Seung Sahn lineage). Verified 2026-05-19.
+  // 3703 N. Washington Blvd, Meridian-Kessler, Indianapolis IN 46205. indyzen.org
+  {
+    org_id: "indianapolis_zen_center", org_name: "Indianapolis Zen Center",
+    title: "Monday Evening Sit",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3703 N. Washington Boulevard", city: "Indianapolis", state: "IN", neighborhood: "Meridian-Kessler",
+    lat: 39.8373, lng: -86.1569, tradition: "zen", location_type: "hybrid",
+    notes: "Two 25-min sitting periods + walking meditation. Doors open 6:30pm. Hybrid in-person + Zoom (bit.ly/IndyZen). Drop-in, no charge. Kwan Um School of Zen.",
+    source_url: "https://www.indyzen.org", event_url: "https://www.indyzen.org/practice",
+  },
+  {
+    org_id: "indianapolis_zen_center", org_name: "Indianapolis Zen Center",
+    title: "Wednesday Evening Sit",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3703 N. Washington Boulevard", city: "Indianapolis", state: "IN", neighborhood: "Meridian-Kessler",
+    lat: 39.8373, lng: -86.1569, tradition: "zen", location_type: "hybrid",
+    notes: "Two 25-min sitting periods + walking meditation. Doors open 6:30pm. Hybrid in-person + Zoom (bit.ly/IndyZen). Drop-in, no charge. Kwan Um School of Zen.",
+    source_url: "https://www.indyzen.org", event_url: "https://www.indyzen.org/practice",
+  },
+  {
+    org_id: "indianapolis_zen_center", org_name: "Indianapolis Zen Center",
+    title: "Morning Practice",
+    days: ["Monday", "Wednesday", "Friday"], time: { h: 6, m: 45 }, duration_min: 30,
+    address: "3703 N. Washington Boulevard", city: "Indianapolis", state: "IN", neighborhood: "Meridian-Kessler",
+    lat: 39.8373, lng: -86.1569, tradition: "zen", location_type: "hybrid",
+    notes: "25–30 min meditation + reading and discussion. 6:45–7:15am. Hybrid in-person + Zoom (bit.ly/IndyZen). Drop-in, no charge.",
+    source_url: "https://www.indyzen.org", event_url: "https://www.indyzen.org/practice",
+  },
+  {
+    org_id: "indianapolis_zen_center", org_name: "Indianapolis Zen Center",
+    title: "Saturday Morning Practice",
+    days: ["Saturday"], time: { h: 9, m: 30 }, duration_min: 60,
+    address: "3703 N. Washington Boulevard", city: "Indianapolis", state: "IN", neighborhood: "Meridian-Kessler",
+    lat: 39.8373, lng: -86.1569, tradition: "zen", location_type: "hybrid",
+    notes: "Chanting + sitting or walking meditation. 9:30–10:30am. Hybrid in-person + Zoom (bit.ly/IndyZen). Drop-in, no charge. Monthly retreat 2nd Saturday.",
+    source_url: "https://www.indyzen.org", event_url: "https://www.indyzen.org/practice",
+  },
+
   // ── Houston, TX ────────────────────────────────────────────────────────────
   {
     org_id: "insight_meditation_houston", org_name: "Insight Meditation Houston",
