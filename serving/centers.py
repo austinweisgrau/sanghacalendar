@@ -3799,4 +3799,47 @@ CENTERS = {
             "Monthly retreat 2nd Saturday. Drop-in, no charge."
         ),
     },
+    "okbv": {
+        "id": "okbv",
+        "name": "Oklahoma Buddhist Vihara",
+        "tradition": "theravada",
+        "url": "https://okbv.org",
+        "address": "4820 N Portland Ave",
+        "city": "Oklahoma City",
+        "state": "OK",
+        "zip": "73112",
+        "lat": 35.5005,
+        "lng": -97.5263,
+        "neighborhood": "Nichols Hills area / Uptown OKC",
+        "bio": (
+            "The Oklahoma Buddhist Vihara (OKBV) is a Theravada monastery in central "
+            "Oklahoma City, guided by resident monastics trained in the Theravada "
+            "tradition but welcoming practitioners of all backgrounds. Three weekly "
+            "public sits: Wednesday Silent Meditation (6–7 PM, in-person), Saturday "
+            "Pali Chanting and Meditation (6–7 PM, in-person), and Sunday Guided "
+            "Meditation and Discussion (5–6 PM, hybrid in-person + Google Meet — "
+            "30 min guided sit + 30 min dharma discussion). Free; donations welcome."
+        ),
+    },
+    "buddha_mind_okc": {
+        "id": "buddha_mind_okc",
+        "name": "Buddha Mind Monastery",
+        "tradition": "zen",
+        "url": "https://www.ctbuddhamind.org",
+        "address": "5800 S Anderson Rd",
+        "city": "Oklahoma City",
+        "state": "OK",
+        "zip": "73150",
+        "lat": 35.3908,
+        "lng": -97.4218,
+        "neighborhood": "SE Oklahoma City",
+        "bio": (
+            "Buddha Mind Monastery (佛心禪寺) is a Chinese Mahayana Zen monastery "
+            "in southeast Oklahoma City, founded in 2004. It offers free one-hour "
+            "guided meditation every Sunday from 3–4 PM, open to all regardless of "
+            "background or experience. The monastery also hosts monthly dharma "
+            "ceremonies and half-day meditation retreats. Situated on eleven acres; "
+            "open daily 2–5 PM for visits."
+        ),
+    },
 }

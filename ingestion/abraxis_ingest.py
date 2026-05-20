@@ -67,6 +67,7 @@ from ingestion.sources import rochester as rochester_sources  # noqa: F401 (no l
 from ingestion.sources import louisville as louisville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import providence as providence_sources
 from ingestion.sources import indianapolis as indianapolis_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import oklahoma_city as oklahoma_city_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -926,6 +927,9 @@ def main():
 
     # Indianapolis Phase 3 — all sits seeded as recurring; no iCal feeds
     log.info("--- Indianapolis Phase 3: no iCal feeds (recurring sits only) ---")
+
+    # Oklahoma City Phase 3 — all sits seeded as recurring; no iCal feeds
+    log.info("--- Oklahoma City Phase 3: no iCal feeds (recurring sits only) ---")
 
     # Convert dataclasses to dicts
     dicts = []

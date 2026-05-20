@@ -2963,6 +2963,48 @@ const SITS = [
     notes: "Plum Village (Thich Nhat Hanh lineage). Sunday morning: sitting meditation, walking meditation, Dharma reading, sharing circle. In-person and Zoom. Last Sunday: Recitation ceremony. Free; donations welcomed.",
     source_url: "https://www.charlottemindfulness.org", event_url: "https://www.charlottemindfulness.org/visit/schedule/",
   },
+
+  // ── Oklahoma City, OK ─────────────────────────────────────────────────────
+  // Oklahoma Buddhist Vihara — Theravada. Verified 2026-05-20.
+  // 4820 N Portland Ave, Oklahoma City OK 73112. okbv.org
+  {
+    org_id: "okbv", org_name: "Oklahoma Buddhist Vihara",
+    title: "Wednesday Silent Meditation",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "4820 N Portland Ave", city: "Oklahoma City", state: "OK", neighborhood: "Nichols Hills area / Uptown OKC",
+    lat: 35.5005, lng: -97.5263, tradition: "theravada", location_type: "in-person",
+    notes: "One-hour silent sitting meditation. In-person at the Vihara. Open to all traditions and backgrounds; no experience required. Free; donations welcome.",
+    source_url: "https://okbv.org", event_url: "https://okbv.org/calendar",
+  },
+  {
+    org_id: "okbv", org_name: "Oklahoma Buddhist Vihara",
+    title: "Saturday Pali Chanting & Meditation",
+    days: ["Saturday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "4820 N Portland Ave", city: "Oklahoma City", state: "OK", neighborhood: "Nichols Hills area / Uptown OKC",
+    lat: 35.5005, lng: -97.5263, tradition: "theravada", location_type: "in-person",
+    notes: "Pali chanting of the Buddha's teachings followed by silent meditation. In-person at the Vihara. All are welcome. Free; donations welcome.",
+    source_url: "https://okbv.org", event_url: "https://okbv.org/calendar",
+  },
+  {
+    org_id: "okbv", org_name: "Oklahoma Buddhist Vihara",
+    title: "Sunday Guided Meditation & Discussion",
+    days: ["Sunday"], time: { h: 17, m: 0 }, duration_min: 60,
+    address: "4820 N Portland Ave", city: "Oklahoma City", state: "OK", neighborhood: "Nichols Hills area / Uptown OKC",
+    lat: 35.5005, lng: -97.5263, tradition: "theravada", location_type: "hybrid",
+    notes: "30-min guided meditation followed by 30-min Dhamma discussion. Hybrid: in-person + Google Meet. All backgrounds welcome. Free; donations welcome.",
+    source_url: "https://okbv.org", event_url: "https://okbv.org/calendar",
+  },
+  // Buddha Mind Monastery OKC — Chinese Mahayana/Zen. Verified 2026-05-20.
+  // 5800 S Anderson Rd, Oklahoma City OK 73150. ctbuddhamind.org
+  {
+    org_id: "buddha_mind_okc", org_name: "Buddha Mind Monastery",
+    title: "Sunday Guided Meditation",
+    days: ["Sunday"], time: { h: 15, m: 0 }, duration_min: 60,
+    address: "5800 S Anderson Rd", city: "Oklahoma City", state: "OK", neighborhood: "SE Oklahoma City",
+    lat: 35.3908, lng: -97.4218, tradition: "zen", location_type: "in-person",
+    notes: "One-hour guided meditation open to all. Free. Chinese Mahayana/Zen monastery founded 2004. Monthly half-day retreats and dharma ceremonies also offered. Open daily 2–5pm.",
+    source_url: "https://www.ctbuddhamind.org", event_url: "https://www.ctbuddhamind.org/class-event-schedule/?lang=en",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
