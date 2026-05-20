@@ -158,6 +158,27 @@ Candidate metros (rough priority):
 38. Louisville (KY) 🔄 **Phase 3 Louisville live May 19** (6 centers) — see below
 39. Providence (RI) 🔄 **Phase 3 Providence live May 19** (5 centers) — see below
 40. Indianapolis (IN) 🔄 **Phase 3 Indianapolis live May 19** (2 centers) — see below
+41. Oklahoma City (OK) 🔄 **Phase 3 OKC live May 20** (2 centers) — see below
+
+### Oklahoma City Phase 3 — ✅ Live May 20 (2 centers, heartbeat 49)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Oklahoma Buddhist Vihara (4820 N Portland Ave, Oklahoma City OK 73112) | Recurring sits seeded — no iCal. Theravada. Wed 6pm (Silent Meditation), Sat 6pm (Pali Chanting + Sit), Sun 5pm (Guided Meditation + Discussion, hybrid). Free. | ✅ Live heartbeat 49 |
+| Buddha Mind Monastery (5800 S Anderson Rd, Oklahoma City OK 73150) | Recurring sit seeded — no iCal. Chinese Mahayana/Zen. Sun 3pm (One-Hour Guided Meditation). Free. Founded 2004. | ✅ Live heartbeat 49 |
+
+Oklahoma state + Oklahoma City city added to `_filters.html`.
+Center bios added to centers.py for both centers.
+`ingestion/sources/oklahoma_city.py` created; coordinator + abraxis wired.
+`sangha-seed-recurring.js`: 4 new sit defs (283 → 287 total, 5300 instances).
+
+**Research notes (2026-05-20):**
+- Memphis TN investigated first: Memphis Zen Community (memphiszen.org) domain dead; Tennessee Buddhist Vihara Wed sits are Skype-only; Pema Karpo no clear schedule (thin placeholder site). OKC chosen instead.
+- Ganden Ling Buddhist Center (NKT, 4813 N MacArthur Blvd): website offline — deferred.
+- Rissho Kosei-kai Dharma Center (2745 NW 40th St): Nichiren-influenced, services/Hoza circles not sit-focused. Skipped.
+- No Shambhala center found in OKC.
+
+---
 
 ### Tucson Phase 3 — ✅ Live May 18 (1 center, heartbeat 43)
 
