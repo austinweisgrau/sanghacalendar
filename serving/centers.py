@@ -3932,4 +3932,117 @@ CENTERS = {
             "international Shambhala Buddhist community (Chögyam Trungpa lineage)."
         ),
     },
+    "cleveland_shambhala": {
+        "id": "cleveland_shambhala",
+        "name": "Cleveland Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://cleveland.shambhala.org",
+        "address": "17309 Madison Avenue",
+        "city": "Cleveland",
+        "state": "OH",
+        "zip": "44107",
+        "lat": 41.4815,
+        "lng": -81.8025,
+        "neighborhood": "Lakewood",
+        "bio": (
+            "The Cleveland Shambhala Meditation Center offers authentic meditation "
+            "instruction rooted in the Tibetan Buddhist tradition brought to the West "
+            "by Chögyam Trungpa Rinpoche. Located in the Lakewood neighborhood west of "
+            "Cleveland, the center hosts three weekly open sits: Sunday Morning Sit "
+            "(10–11 AM), Tuesday Evening Sit (7–8 PM), and Wednesday Morning Sit "
+            "(10–11 AM). All sessions include alternating sitting and walking meditation "
+            "periods. No experience required; walk-in welcome. Part of the "
+            "international Shambhala community."
+        ),
+    },
+    "imc_cleveland": {
+        "id": "imc_cleveland",
+        "name": "Insight Meditation Cleveland",
+        "tradition": "vipassana",
+        "url": "https://imcleveland.org",
+        "address": "21600 Shaker Boulevard",
+        "city": "Cleveland",
+        "state": "OH",
+        "zip": "44122",
+        "lat": 41.4726,
+        "lng": -81.5575,
+        "neighborhood": "Shaker Heights / First Unitarian Church",
+        "bio": (
+            "Insight Meditation Cleveland (IMC) offers a network of drop-in sitting "
+            "groups throughout Northeast Ohio, rooted in the Theravada/Vipassana "
+            "tradition. The flagship Shaker Heights group meets weekly at the First "
+            "Unitarian Church of Cleveland (21600 Shaker Blvd) every Thursday "
+            "7–8:30 PM. Sessions include guided sitting meditation, walking "
+            "meditation, and dharma discussion. No registration required; dana "
+            "(donation) based. All levels welcome."
+        ),
+    },
+    "crooked_river_zen": {
+        "id": "crooked_river_zen",
+        "name": "Crooked River Zen Center",
+        "tradition": "zen",
+        "url": "https://www.crookedriverzen.org",
+        "address": "1813 Wilton Road",
+        "city": "Cleveland",
+        "state": "OH",
+        "zip": "44118",
+        "lat": 41.5095,
+        "lng": -81.5695,
+        "neighborhood": "Cleveland Heights",
+        "bio": (
+            "Crooked River Zen Center is a Soto Zen community in Cleveland Heights, "
+            "affiliated with the Soto Zen Buddhist Association. Teacher Sensei Dean "
+            "Williams leads three weekly sits open to all: Tuesday Evening (6–7 PM, "
+            "two 15-minute periods with kinhin and chanting), Thursday Evening "
+            "(7–8:30 PM, two 25-minute periods with kinhin, chanting, and dharma "
+            "talk), and Sunday Morning (9:30–11 AM, two 30-minute periods with "
+            "kinhin, chanting, and dharma talk). All sessions available in-person "
+            "and via Google Meet. No experience required; drop-in welcome."
+        ),
+    },
+    "cleveland_zazen_group": {
+        "id": "cleveland_zazen_group",
+        "name": "Cleveland Zazen Group",
+        "tradition": "zen",
+        "url": "https://www.zencleveland.com",
+        "address": "1813 Wilton Road",
+        "city": "Cleveland",
+        "state": "OH",
+        "zip": "44118",
+        "lat": 41.5097,
+        "lng": -81.5697,
+        "neighborhood": "Cleveland Heights",
+        "bio": (
+            "The Cleveland Zazen Group is one of Northeast Ohio's longest-standing "
+            "Zen communities, with over 40 years of continuous practice. Rooted in "
+            "the Rinzai–Soto lineage of Philip Kapleau and the Rochester Zen Center, "
+            "the group meets twice weekly in Cleveland Heights: Tuesday Evening "
+            "(7:30–8:45 PM, two rounds of zazen and kinhin) and Sunday Morning "
+            "(9 AM–11 AM or longer, with group instruction, dharma talks, and work "
+            "practice). The group shares its space at 1813 Wilton Road with Crooked "
+            "River Zen Center. Drop-in welcome; no prior experience necessary."
+        ),
+    },
+    "cloudwater_zendo": {
+        "id": "cloudwater_zendo",
+        "name": "CloudWater Zendo",
+        "tradition": "zen",
+        "url": "https://cloudwater.org",
+        "address": "4388 W Pleasant Valley Road",
+        "city": "Cleveland",
+        "state": "OH",
+        "zip": "44134",
+        "lat": 41.3738,
+        "lng": -81.7645,
+        "neighborhood": "Parma",
+        "bio": (
+            "CloudWater Zendo is a Chan Buddhist and Pure Land community affiliated "
+            "with the Dragon Flower Ch'an Temples lineage. The zendo hosts weekly "
+            "practice sessions open to all: Tuesday Evening (7 PM, two periods of "
+            "seated meditation, walking meditation, chanting, and dharma talk) and "
+            "Sunday Morning (9:30 AM, group Zen meditation). An introductory class "
+            "is offered on the 1st and 3rd Saturday at 11 AM. All are welcome; "
+            "no experience required."
+        ),
+    },
 }

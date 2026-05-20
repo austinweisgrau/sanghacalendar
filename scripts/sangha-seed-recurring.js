@@ -3105,6 +3105,127 @@ const SITS = [
     notes: "Weekly Friday evening sit at Center for Wholism. Instruction 6–6:30pm; group sitting and walking meditation 6:30–7:30pm. No experience required. Shambhala tradition. Free.",
     source_url: "https://hhsmg.shambhala.org", event_url: "https://hhsmg.shambhala.org/ongoing-offerings/",
   },
+
+  // -----------------------------------------------------------------------
+  // Cleveland, OH — Phase 3 (heartbeat 51)
+  // -----------------------------------------------------------------------
+
+  // Cleveland Shambhala Meditation Center — Lakewood, OH
+  // shambhala-koeln.de iCal (center=240) returning 522; seeding recurring sits.
+  // cleveland.shambhala.org/ongoing-offerings/
+  {
+    org_id: "cleveland_shambhala", org_name: "Cleveland Shambhala Meditation Center",
+    title: "Sunday Morning Sit",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "17309 Madison Avenue", city: "Cleveland", state: "OH", neighborhood: "Lakewood",
+    lat: 41.4815, lng: -81.8025, tradition: "tibetan", location_type: "hybrid",
+    notes: "Weekly Sunday morning open sit. Alternating sitting and walking meditation periods. No experience required; walk-in welcome. Shambhala tradition (Chögyam Trungpa lineage). Free.",
+    source_url: "https://cleveland.shambhala.org", event_url: "https://cleveland.shambhala.org/ongoing-offerings/",
+  },
+  {
+    org_id: "cleveland_shambhala", org_name: "Cleveland Shambhala Meditation Center",
+    title: "Tuesday Evening Sit",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "17309 Madison Avenue", city: "Cleveland", state: "OH", neighborhood: "Lakewood",
+    lat: 41.4815, lng: -81.8025, tradition: "tibetan", location_type: "hybrid",
+    notes: "Weekly Tuesday evening open sit. Alternating sitting and walking meditation periods. No experience required; walk-in welcome. Shambhala tradition. Free.",
+    source_url: "https://cleveland.shambhala.org", event_url: "https://cleveland.shambhala.org/ongoing-offerings/",
+  },
+  {
+    org_id: "cleveland_shambhala", org_name: "Cleveland Shambhala Meditation Center",
+    title: "Wednesday Morning Sit",
+    days: ["Wednesday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "17309 Madison Avenue", city: "Cleveland", state: "OH", neighborhood: "Lakewood",
+    lat: 41.4815, lng: -81.8025, tradition: "tibetan", location_type: "hybrid",
+    notes: "Weekly Wednesday morning open sit. Alternating sitting and walking meditation periods. No experience required; walk-in welcome. Shambhala tradition. Free.",
+    source_url: "https://cleveland.shambhala.org", event_url: "https://cleveland.shambhala.org/ongoing-offerings/",
+  },
+
+  // Insight Meditation Cleveland — Shaker Heights sitting group
+  // First Unitarian Church of Cleveland, 21600 Shaker Blvd
+  // imcleveland.org/groups/
+  {
+    org_id: "imc_cleveland", org_name: "Insight Meditation Cleveland",
+    title: "Thursday Evening Sit",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "21600 Shaker Boulevard", city: "Cleveland", state: "OH", neighborhood: "Shaker Heights / First Unitarian Church",
+    lat: 41.4726, lng: -81.5575, tradition: "vipassana", location_type: "in-person",
+    notes: "Weekly Thursday evening Insight Meditation sitting group at First Unitarian Church of Cleveland. Includes guided sitting, walking meditation, and dharma discussion. Drop-in; no registration; dana-based. All levels welcome.",
+    source_url: "https://imcleveland.org", event_url: "https://imcleveland.org/groups/",
+  },
+
+  // Crooked River Zen Center — Cleveland Heights, OH
+  // Soto Zen; teacher Sensei Dean Williams. Site suspended on Bluehost.
+  // szba.org/crooked-river-zen-center confirms schedule.
+  {
+    org_id: "crooked_river_zen", org_name: "Crooked River Zen Center",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "1813 Wilton Road", city: "Cleveland", state: "OH", neighborhood: "Cleveland Heights",
+    lat: 41.5095, lng: -81.5695, tradition: "zen", location_type: "hybrid",
+    notes: "Weekly Tuesday evening zazen: two 15-minute sitting periods, kinhin (walking meditation), chanting, and short dharma talk. In-person + Google Meet. Drop-in welcome. Soto Zen; no experience required.",
+    source_url: "https://www.crookedriverzen.org", event_url: "https://www.crookedriverzen.org",
+  },
+  {
+    org_id: "crooked_river_zen", org_name: "Crooked River Zen Center",
+    title: "Thursday Evening Zazen",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1813 Wilton Road", city: "Cleveland", state: "OH", neighborhood: "Cleveland Heights",
+    lat: 41.5095, lng: -81.5695, tradition: "zen", location_type: "hybrid",
+    notes: "Weekly Thursday evening zazen: two 25-minute sitting periods, kinhin, chanting, and dharma talk. In-person + Google Meet. Drop-in welcome. Soto Zen; no experience required.",
+    source_url: "https://www.crookedriverzen.org", event_url: "https://www.crookedriverzen.org",
+  },
+  {
+    org_id: "crooked_river_zen", org_name: "Crooked River Zen Center",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 90,
+    address: "1813 Wilton Road", city: "Cleveland", state: "OH", neighborhood: "Cleveland Heights",
+    lat: 41.5095, lng: -81.5695, tradition: "zen", location_type: "hybrid",
+    notes: "Weekly Sunday morning zazen: two 30-minute sitting periods, kinhin, chanting, and dharma talk. In-person + Google Meet. Drop-in welcome. Soto Zen; no experience required.",
+    source_url: "https://www.crookedriverzen.org", event_url: "https://www.crookedriverzen.org",
+  },
+
+  // Cleveland Zazen Group — Cleveland Heights, OH
+  // Kapleau/Rochester Zen lineage. 40+ year continuous practice. zencleveland.com
+  {
+    org_id: "cleveland_zazen_group", org_name: "Cleveland Zazen Group",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 30 }, duration_min: 75,
+    address: "1813 Wilton Road", city: "Cleveland", state: "OH", neighborhood: "Cleveland Heights",
+    lat: 41.5097, lng: -81.5697, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Tuesday evening zazen: two rounds of sitting and kinhin (walking meditation), occasional chanting. Kapleau/Rochester Zen lineage. Drop-in; no prior experience necessary.",
+    source_url: "https://www.zencleveland.com", event_url: "https://www.zencleveland.com/schedule-events",
+  },
+  {
+    org_id: "cleveland_zazen_group", org_name: "Cleveland Zazen Group",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 120,
+    address: "1813 Wilton Road", city: "Cleveland", state: "OH", neighborhood: "Cleveland Heights",
+    lat: 41.5097, lng: -81.5697, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Sunday morning zazen with group instruction, dharma talks, teisho, and work practice. Kapleau/Rochester Zen lineage. Drop-in; no prior experience necessary.",
+    source_url: "https://www.zencleveland.com", event_url: "https://www.zencleveland.com/schedule-events",
+  },
+
+  // CloudWater Zendo — Parma, OH (southwest Cleveland metro)
+  // Chan Buddhist and Pure Land (Dragon Flower Ch'an Temples). cloudwater.org
+  {
+    org_id: "cloudwater_zendo", org_name: "CloudWater Zendo",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "4388 W Pleasant Valley Road", city: "Cleveland", state: "OH", neighborhood: "Parma",
+    lat: 41.3738, lng: -81.7645, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Tuesday evening: two periods of seated meditation, walking meditation, chanting, and dharma talk. Chan Buddhist and Pure Land tradition (Dragon Flower Ch'an Temples lineage). All welcome.",
+    source_url: "https://cloudwater.org", event_url: "https://cloudwater.org",
+  },
+  {
+    org_id: "cloudwater_zendo", org_name: "CloudWater Zendo",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 90,
+    address: "4388 W Pleasant Valley Road", city: "Cleveland", state: "OH", neighborhood: "Parma",
+    lat: 41.3738, lng: -81.7645, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Sunday morning group Zen meditation. Chan Buddhist and Pure Land tradition (Dragon Flower Ch'an Temples lineage). All welcome; no experience required.",
+    source_url: "https://cloudwater.org", event_url: "https://cloudwater.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
