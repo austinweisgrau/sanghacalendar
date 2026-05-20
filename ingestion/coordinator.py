@@ -65,6 +65,7 @@ from ingestion.sources import louisville as louisville_sources  # noqa: F401 (no
 from ingestion.sources import providence as providence_sources
 from ingestion.sources import indianapolis as indianapolis_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import oklahoma_city as oklahoma_city_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import bloomington as bloomington_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -1038,6 +1039,12 @@ def run_oklahoma_city_phase3() -> list[Event]:
     return []
 
 
+def run_bloomington_phase3() -> list[Event]:
+    """Phase 3 Bloomington IN: all centers seeded as recurring sits."""
+    # No live iCal feeds extractable; all sits seeded via scripts/sangha-seed-recurring.js
+    return []
+
+
 def run_providence_phase3() -> list[Event]:
     """Phase 3 Providence RI: Providence Zen Center Tockify ICS + recurring-only centers."""
     events: list[Event] = []
@@ -1116,6 +1123,7 @@ def main():
         + run_providence_phase3()
         + run_indianapolis_phase3()
         + run_oklahoma_city_phase3()
+        + run_bloomington_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

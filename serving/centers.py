@@ -3842,4 +3842,94 @@ CENTERS = {
             "open daily 2–5 PM for visits."
         ),
     },
+    "tmbcc": {
+        "id": "tmbcc",
+        "name": "Tibetan Mongolian Buddhist Cultural Center",
+        "tradition": "tibetan",
+        "url": "https://tmbcc.org",
+        "address": "3655 S Snoddy Road",
+        "city": "Bloomington",
+        "state": "IN",
+        "zip": "47401",
+        "lat": 39.1198,
+        "lng": -86.5097,
+        "neighborhood": "South Bloomington",
+        "bio": (
+            "The Tibetan Mongolian Buddhist Cultural Center (TMBCC) is one of the "
+            "most significant Tibetan Buddhist institutions in North America. Founded "
+            "by Thubten Norbu — elder brother of His Holiness the 14th Dalai Lama — "
+            "on 108 acres in southern Bloomington, the campus includes the Kumbum "
+            "Chamtse Ling temple and Kumbum West monastery. Three weekly public "
+            "meditation programs: Monday Group Meditation (6:30–7:30 PM), Wednesday "
+            "Open Meditation (6–7 PM, open to anyone wishing to sit in stillness, "
+            "prayer, or practice), and Sunday Buddhist Philosophy Teachings "
+            "(10:30 AM–noon). Free and open to all."
+        ),
+    },
+    "kmc_bloomington": {
+        "id": "kmc_bloomington",
+        "name": "Kadampa Meditation Center Bloomington",
+        "tradition": "tibetan",
+        "url": "https://www.meditationinbloomington.org",
+        "address": "234 N. Morton Street",
+        "city": "Bloomington",
+        "state": "IN",
+        "zip": "47404",
+        "lat": 39.1662,
+        "lng": -86.5340,
+        "neighborhood": "Downtown Bloomington",
+        "bio": (
+            "Kadampa Meditation Center Bloomington (KMC Bloomington) is a New "
+            "Kadampa Tradition (NKT) center offering modern Tibetan Buddhist "
+            "teachings and guided meditation in downtown Bloomington, steps from "
+            "Indiana University. Three weekly drop-in public classes: Tuesday "
+            "Evening (6–7:15 PM), Wednesday Lunchtime (12:15–12:45 PM), and "
+            "Sunday General Program (11 AM–12:15 PM). Classes combine guided "
+            "meditation with Buddhist teachings. Drop-in welcome; suggested donation."
+        ),
+    },
+    "open_mind_zen_indiana": {
+        "id": "open_mind_zen_indiana",
+        "name": "Open Mind Zen Indiana",
+        "tradition": "zen",
+        "url": "https://openmindzenbloomington.org",
+        "address": "3820 E. Moores Pike",
+        "city": "Bloomington",
+        "state": "IN",
+        "zip": "47402",
+        "lat": 39.1539,
+        "lng": -86.4839,
+        "neighborhood": "East Bloomington / Friends Meeting House",
+        "bio": (
+            "Open Mind Zen Indiana (OMZI) is a contemporary Zen sangha meeting "
+            "weekly at the Bloomington Friends Meeting House. Practice includes "
+            "zazen sitting and walking meditation, koan study, dharma talks, "
+            "workshops, and retreats. Monday evening sits (7–9 PM) are open to "
+            "all; no experience required. OMZI is a 501(c)(3) nonprofit affiliated "
+            "with the Open Mind Zen tradition."
+        ),
+    },
+    "hoosier_heartland_shambhala": {
+        "id": "hoosier_heartland_shambhala",
+        "name": "Hoosier Heartland Shambhala Meditation Group",
+        "tradition": "tibetan",
+        "url": "https://hhsmg.shambhala.org",
+        "address": "2120 N Fee Lane",
+        "city": "Bloomington",
+        "state": "IN",
+        "zip": "47408",
+        "lat": 39.1810,
+        "lng": -86.5282,
+        "neighborhood": "North Bloomington / UU Church",
+        "bio": (
+            "The Hoosier Heartland Shambhala Meditation Group (HHSMG) offers three "
+            "weekly open sits in Bloomington, requiring no prior experience. Monday "
+            "Open Sit (noon–1 PM) at the Unitarian Universalist Church, 2120 N Fee "
+            "Ln — hybrid in-person + Zoom. Thursday Evening Sit (6–7:30 PM) at the "
+            "Tibetan Mongolian Buddhist Cultural Center (TMBCC). Friday Night Sit "
+            "(6–7:30 PM, instruction 6–6:30 PM) at the Center for Wholism, 2401 N. "
+            "Walnut St. All sits are free and open to the public. Part of the "
+            "international Shambhala Buddhist community (Chögyam Trungpa lineage)."
+        ),
+    },
 }

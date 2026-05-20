@@ -68,6 +68,7 @@ from ingestion.sources import louisville as louisville_sources  # noqa: F401 (no
 from ingestion.sources import providence as providence_sources
 from ingestion.sources import indianapolis as indianapolis_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import oklahoma_city as oklahoma_city_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import bloomington as bloomington_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

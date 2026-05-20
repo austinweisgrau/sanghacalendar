@@ -3005,6 +3005,106 @@ const SITS = [
     notes: "One-hour guided meditation open to all. Free. Chinese Mahayana/Zen monastery founded 2004. Monthly half-day retreats and dharma ceremonies also offered. Open daily 2–5pm.",
     source_url: "https://www.ctbuddhamind.org", event_url: "https://www.ctbuddhamind.org/class-event-schedule/?lang=en",
   },
+
+  // ── Bloomington, IN ───────────────────────────────────────────────────────
+  // TMBCC (Tibetan Mongolian Buddhist Cultural Center) — Tibetan (Gelug). Verified 2026-05-20.
+  // 3655 S Snoddy Rd, Bloomington IN 47401. tmbcc.org. No iCal (?ical=1 → 404).
+  {
+    org_id: "tmbcc", org_name: "Tibetan Mongolian Buddhist Cultural Center",
+    title: "Monday Group Meditation",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "3655 S Snoddy Road", city: "Bloomington", state: "IN", neighborhood: "South Bloomington",
+    lat: 39.1198, lng: -86.5097, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly group meditation at the TMBCC Kumbum Chamtse Ling campus. Open to all. Free. 108-acre center founded by Thubten Norbu, elder brother of the Dalai Lama.",
+    source_url: "https://tmbcc.org", event_url: "https://tmbcc.org/events/",
+  },
+  {
+    org_id: "tmbcc", org_name: "Tibetan Mongolian Buddhist Cultural Center",
+    title: "Wednesday Open Meditation",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "3655 S Snoddy Road", city: "Bloomington", state: "IN", neighborhood: "South Bloomington",
+    lat: 39.1198, lng: -86.5097, tradition: "tibetan", location_type: "in-person",
+    notes: "Open meditation session: sit in stillness, prayer, or meditation. Open to anyone regardless of tradition or experience. Free.",
+    source_url: "https://tmbcc.org", event_url: "https://tmbcc.org/events/",
+  },
+  {
+    org_id: "tmbcc", org_name: "Tibetan Mongolian Buddhist Cultural Center",
+    title: "Sunday Buddhist Philosophy Teachings",
+    days: ["Sunday"], time: { h: 10, m: 30 }, duration_min: 90,
+    address: "3655 S Snoddy Road", city: "Bloomington", state: "IN", neighborhood: "South Bloomington",
+    lat: 39.1198, lng: -86.5097, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Buddhist philosophy teachings. Open to all. Free. First Sunday of the month includes newcomer orientation at 2pm.",
+    source_url: "https://tmbcc.org", event_url: "https://tmbcc.org/events/",
+  },
+  // KMC Bloomington — NKT Tibetan. Verified 2026-05-20.
+  // 234 N. Morton St, Bloomington IN 47404. meditationinbloomington.org. Wix site, no iCal.
+  {
+    org_id: "kmc_bloomington", org_name: "Kadampa Meditation Center Bloomington",
+    title: "Tuesday Evening Meditation Class",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 75,
+    address: "234 N. Morton Street", city: "Bloomington", state: "IN", neighborhood: "Downtown Bloomington",
+    lat: 39.1662, lng: -86.5340, tradition: "tibetan", location_type: "in-person",
+    notes: "Drop-in class combining guided meditation with Buddhist teachings (Kadampa style). No experience needed. Suggested donation. Also available via Zoom for members.",
+    source_url: "https://www.meditationinbloomington.org", event_url: "https://www.meditationinbloomington.org/calendar",
+  },
+  {
+    org_id: "kmc_bloomington", org_name: "Kadampa Meditation Center Bloomington",
+    title: "Wednesday Lunchtime Meditation",
+    days: ["Wednesday"], time: { h: 12, m: 15 }, duration_min: 30,
+    address: "234 N. Morton Street", city: "Bloomington", state: "IN", neighborhood: "Downtown Bloomington",
+    lat: 39.1662, lng: -86.5340, tradition: "tibetan", location_type: "in-person",
+    notes: "30-min lunchtime guided meditation. Drop-in, no experience needed. Suggested donation. Downtown Bloomington near IU campus.",
+    source_url: "https://www.meditationinbloomington.org", event_url: "https://www.meditationinbloomington.org/calendar",
+  },
+  {
+    org_id: "kmc_bloomington", org_name: "Kadampa Meditation Center Bloomington",
+    title: "Sunday General Program",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 75,
+    address: "234 N. Morton Street", city: "Bloomington", state: "IN", neighborhood: "Downtown Bloomington",
+    lat: 39.1662, lng: -86.5340, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly General Program: guided meditation + Buddhist teachings. Drop-in, all welcome. Suggested donation. Also available via streaming for members.",
+    source_url: "https://www.meditationinbloomington.org", event_url: "https://www.meditationinbloomington.org/calendar",
+  },
+  // Open Mind Zen Indiana — Zen. Verified 2026-05-20.
+  // Bloomington Friends Meeting House, 3820 E. Moores Pike, Bloomington IN 47402.
+  {
+    org_id: "open_mind_zen_indiana", org_name: "Open Mind Zen Indiana",
+    title: "Monday Evening Zen Sit",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "3820 E. Moores Pike", city: "Bloomington", state: "IN", neighborhood: "East Bloomington / Friends Meeting House",
+    lat: 39.1539, lng: -86.4839, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Monday evening Zen practice: zazen sitting and walking meditation, koan study, dharma talks. Open to all; no experience required. Free (donations welcomed).",
+    source_url: "https://openmindzenbloomington.org", event_url: "https://openmindzenbloomington.org/schedule/",
+  },
+  // Hoosier Heartland Shambhala Meditation Group — Shambhala. Verified 2026-05-20.
+  // Three weekly sits at three Bloomington venues. hhsmg.shambhala.org
+  {
+    org_id: "hoosier_heartland_shambhala", org_name: "Hoosier Heartland Shambhala Meditation Group",
+    title: "Monday Open Sit",
+    days: ["Monday"], time: { h: 12, m: 0 }, duration_min: 60,
+    address: "2120 N Fee Lane", city: "Bloomington", state: "IN", neighborhood: "North Bloomington / UU Church",
+    lat: 39.1810, lng: -86.5282, tradition: "tibetan", location_type: "hybrid",
+    notes: "Weekly open sit at Unitarian Universalist Church. Hybrid: in-person + Zoom. No experience required. Shambhala tradition (Chögyam Trungpa lineage). Free.",
+    source_url: "https://hhsmg.shambhala.org", event_url: "https://hhsmg.shambhala.org/ongoing-offerings/",
+  },
+  {
+    org_id: "hoosier_heartland_shambhala", org_name: "Hoosier Heartland Shambhala Meditation Group",
+    title: "Thursday Evening Sit",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "3655 S Snoddy Road", city: "Bloomington", state: "IN", neighborhood: "South Bloomington / TMBCC",
+    lat: 39.1198, lng: -86.5097, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly evening sit held at the Tibetan Mongolian Buddhist Cultural Center (TMBCC) campus. No experience required. Shambhala tradition. Free.",
+    source_url: "https://hhsmg.shambhala.org", event_url: "https://hhsmg.shambhala.org/ongoing-offerings/",
+  },
+  {
+    org_id: "hoosier_heartland_shambhala", org_name: "Hoosier Heartland Shambhala Meditation Group",
+    title: "Friday Night Sit",
+    days: ["Friday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "2401 N. Walnut Street", city: "Bloomington", state: "IN", neighborhood: "North Bloomington / Center for Wholism",
+    lat: 39.1752, lng: -86.5253, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Friday evening sit at Center for Wholism. Instruction 6–6:30pm; group sitting and walking meditation 6:30–7:30pm. No experience required. Shambhala tradition. Free.",
+    source_url: "https://hhsmg.shambhala.org", event_url: "https://hhsmg.shambhala.org/ongoing-offerings/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
