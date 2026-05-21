@@ -4278,4 +4278,99 @@ CENTERS = {
             "contact (860) 232-8366 for current schedule and programs."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Omaha / Lincoln, NE — Phase 3 (heartbeat 54)
+    # -----------------------------------------------------------------------
+    "nebraska_zen_center": {
+        "id": "nebraska_zen_center",
+        "name": "Nebraska Zen Center / Heartland Temple",
+        "tradition": "zen",
+        "url": "https://nebraskazencenter.org",
+        "address": "3625 Lafayette Avenue",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68131",
+        "lat": 41.2613,
+        "lng": -96.0013,
+        "neighborhood": "Bemis Park / Midtown Omaha",
+        "bio": (
+            "Nebraska Zen Center (NZC), also known as Heartland Temple, is a Soto "
+            "Zen community in the lineage of Dainin Katagiri Roshi, founded in "
+            "Omaha in 1975 and one of the oldest Zen centers in the Midwest. "
+            "Located at 3625 Lafayette Avenue in Omaha's Bemis Park neighborhood "
+            "(since 1992). Sunday Open Zen (10 AM–noon): zazen, kinhin, and dharma "
+            "talk with tea; newcomers arrive at 9:15 AM for orientation. Wednesday "
+            "Evening (7 PM): two 30-minute zazen periods with kinhin and "
+            "Fukanzazengi recitation. Mon–Fri Morning Zazen (6–7:30 AM): in-person "
+            "and Zoom, open to all. All programs are by donation; drop-in welcome."
+        ),
+    },
+    "flatwater_collective": {
+        "id": "flatwater_collective",
+        "name": "Flatwater Collective",
+        "tradition": "pluralist",
+        "url": "https://www.flatwatercollective.org",
+        "address": "1219 Leavenworth Street",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68102",
+        "lat": 41.2571,
+        "lng": -95.9350,
+        "neighborhood": "Downtown Omaha",
+        "bio": (
+            "Flatwater Collective is a non-sectarian, community-focused Buddhist "
+            "meditation center in downtown Omaha offering freely given teachings "
+            "and a welcoming environment for practitioners of all backgrounds. "
+            "Thursday Evening (7–8 PM): 'Meditation Practice and Reflection' — "
+            "dharma talk + sitting meditation, beginner-friendly, freely offered. "
+            "Sunday Practice (4–5 PM): guided and silent meditation with a "
+            "different teacher each week. Also hosts daylong retreats, intro "
+            "meditation courses, and dharma study groups. Located at 1219 "
+            "Leavenworth Street; dana/donation appreciated."
+        ),
+    },
+    "honey_locust_sangha": {
+        "id": "honey_locust_sangha",
+        "name": "Honey Locust Sangha",
+        "tradition": "pluralist",
+        "url": "https://honeylocustsangha.org",
+        "address": "7641 Pacific Street",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68114",
+        "lat": 41.2376,
+        "lng": -96.0484,
+        "neighborhood": "Midtown / Pacific Street",
+        "bio": (
+            "Honey Locust Sangha is Omaha's Plum Village community, practicing in "
+            "the tradition of Thich Nhat Hanh and the Order of Interbeing. Meets "
+            "at The Yoga Path, 7641 Pacific Street. Monday Evening (6:30–8:30 PM): "
+            "sitting meditation, walking meditation, and dharma discussion. Friday "
+            "Evening (6–7 PM): sitting and walking meditation in noble silence. "
+            "First Saturday monthly: Thich Nhat Hanh book study. Zoom available. "
+            "All programs free and open to all; no experience required."
+        ),
+    },
+    "lincoln_zen_center": {
+        "id": "lincoln_zen_center",
+        "name": "Lincoln Zen Center",
+        "tradition": "zen",
+        "url": "https://www.lincolnzencenter.org",
+        "address": "3701 O Street, Suite 204",
+        "city": "Lincoln",
+        "state": "NE",
+        "zip": "68510",
+        "lat": 40.8057,
+        "lng": -96.6720,
+        "neighborhood": "Near South Lincoln",
+        "bio": (
+            "Lincoln Zen Center is a Soto Zen community in Lincoln, Nebraska "
+            "(the state capital, 55 miles southwest of Omaha). Located at 3701 "
+            "O Street, Suite 204. Three weekly public sitting programs: Sunday "
+            "Morning (10:30 AM–noon — meditation + dharma talk/discussion), "
+            "Monday Evening (5:30–6:45 PM — sitting, beginners welcome), and "
+            "Wednesday Morning (10:30–11:45 AM). Open to all; no experience "
+            "required; drop-in welcome."
+        ),
+    },
 }

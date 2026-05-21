@@ -159,6 +159,11 @@ Candidate metros (rough priority):
 39. Providence (RI) 🔄 **Phase 3 Providence live May 19** (5 centers) — see below
 40. Indianapolis (IN) 🔄 **Phase 3 Indianapolis live May 19** (2 centers) — see below
 41. Oklahoma City (OK) 🔄 **Phase 3 OKC live May 20** (2 centers) — see below
+42. Bloomington (IN) 🔄 **Phase 3 Bloomington live May 20** (4 centers) — heartbeat 50
+43. Cleveland (OH) 🔄 **Phase 3 Cleveland live May 20** (5 centers) — heartbeat 51
+44. Madison (WI) 🔄 **Phase 3 Madison live May 21** (5 centers) — heartbeat 52
+45. Hartford/New Haven (CT) 🔄 **Phase 3 Connecticut live May 21** (5 centers) — heartbeat 53
+46. Omaha/Lincoln (NE) 🔄 **Phase 3 Omaha live May 21** (4 centers) — heartbeat 54
 
 ### Oklahoma City Phase 3 — ✅ Live May 20 (2 centers, heartbeat 49)
 
@@ -177,6 +182,28 @@ Center bios added to centers.py for both centers.
 - Ganden Ling Buddhist Center (NKT, 4813 N MacArthur Blvd): website offline — deferred.
 - Rissho Kosei-kai Dharma Center (2745 NW 40th St): Nichiren-influenced, services/Hoza circles not sit-focused. Skipped.
 - No Shambhala center found in OKC.
+
+---
+
+### Omaha/Lincoln NE Phase 3 — ✅ Live May 21 (4 centers, heartbeat 54)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Nebraska Zen Center / Heartland Temple (3625 Lafayette Ave, Omaha NE 68131) | Recurring sits seeded — WordPress JS-rendered calendar, no iCal. Soto Zen (Katagiri lineage). Sun 10am Open Zen, Wed 7pm evening zazen, Mon–Fri 6am morning zazen. Founded 1975. | ✅ Live heartbeat 54 |
+| Flatwater Collective (1219 Leavenworth St, Omaha NE 68102) | Recurring sits seeded — Squarespace, no master iCal feed. Pluralist/non-sectarian. Thu 7pm Dharma Talk & Meditation, Sun 4pm Sunday Practice. | ✅ Live heartbeat 54 |
+| Honey Locust Sangha (at The Yoga Path, 7641 Pacific St, Omaha NE 68114) | Recurring sits seeded — static HTML, no calendar. Plum Village (Thich Nhat Hanh). Mon 6:30pm, Fri 6pm. | ✅ Live heartbeat 54 |
+| Lincoln Zen Center (3701 O Street #204, Lincoln NE 68510) | Recurring sits seeded — Wix site, no iCal. Soto Zen. Sun 10:30am, Mon 5:30pm, Wed 10:30am. | ✅ Live heartbeat 54 |
+
+Nebraska state + Omaha + Lincoln cities added to `_filters.html`.
+Center bios added to centers.py for all 4 centers.
+`ingestion/sources/omaha.py` created; coordinator + abraxis wired.
+`sangha-seed-recurring.js`: 10 new sit defs (328 → 338 total, 6015 instances).
+
+**Research notes (2026-05-21):**
+- Mindfulness Outreach Initiative (3015 Pacific St): physical location closed Jan 2025. Retreat-only (3x/year). Skipped.
+- Midwest Dharma Wheel (Lincoln): enrollment-based with waitlist; not drop-in. Skipped.
+- Nebraska Zen Center iCal: tried /?ical=1, /events/?ical=1, /events/feed/ical — all return HTML (not a Tribe Events Calendar despite appearance).
+- Flatwater Collective iCal: tested ?format=ical on calendar root — returns HTML; individual events expose per-event ICS but no unified feed.
 
 ---
 

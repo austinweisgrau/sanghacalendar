@@ -69,6 +69,7 @@ from ingestion.sources import bloomington as bloomington_sources  # noqa: F401 (
 from ingestion.sources import cleveland as cleveland_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import madison as madison_sources
 from ingestion.sources import connecticut as connecticut_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import omaha as omaha_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -1060,6 +1061,12 @@ def run_connecticut_phase3() -> list[Event]:
     return []
 
 
+def run_omaha_phase3() -> list[Event]:
+    """Phase 3 Omaha/Lincoln NE: all centers seeded as recurring sits."""
+    # No live iCal feeds accessible; all sits seeded via scripts/sangha-seed-recurring.js
+    return []
+
+
 def run_madison_phase3() -> list[Event]:
     """Phase 3 Madison WI: Shambhala Madison iCal feed + recurring-only centers."""
     all_events: list[Event] = []
@@ -1171,6 +1178,7 @@ def main():
         + run_cleveland_phase3()
         + run_madison_phase3()
         + run_connecticut_phase3()
+        + run_omaha_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

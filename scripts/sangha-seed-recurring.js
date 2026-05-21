@@ -3434,6 +3434,108 @@ const SITS = [
     notes: "Weekly Tuesday evening practice and study group at Hartford Karma Thegsum Choling (KTC), affiliated with Karma Triyana Dharmachakra (KTD Monastery), Woodstock NY — Karma Kagyu lineage of the Gyalwang Karmapa. Open to all; call (860) 232-8366 to confirm current schedule.",
     source_url: "https://ktchartford.org", event_url: "https://ktchartford.org",
   },
+
+  // ============================================================
+  // Omaha / Lincoln, NE Phase 3 (heartbeat 54)
+  // ============================================================
+
+  // Nebraska Zen Center / Heartland Temple — Soto Zen. nebraskazencenter.org
+  {
+    org_id: "nebraska_zen_center", org_name: "Nebraska Zen Center / Heartland Temple",
+    title: "Sunday Open Zen",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "3625 Lafayette Avenue", city: "Omaha", state: "NE", neighborhood: "Bemis Park / Midtown Omaha",
+    lat: 41.2613, lng: -96.0013, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Sunday Open Zen at Nebraska Zen Center (10am–noon): zazen, kinhin, dharma talk, and tea. Newcomers arrive 9:15am for orientation. Founded 1975 in the lineage of Dainin Katagiri Roshi; one of the oldest Zen centers in the Midwest. Drop-in welcome; by donation.",
+    source_url: "https://nebraskazencenter.org", event_url: "https://nebraskazencenter.org/programs/sunday-open-zen/",
+  },
+  {
+    org_id: "nebraska_zen_center", org_name: "Nebraska Zen Center / Heartland Temple",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 75,
+    address: "3625 Lafayette Avenue", city: "Omaha", state: "NE", neighborhood: "Bemis Park / Midtown Omaha",
+    lat: 41.2613, lng: -96.0013, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Wednesday evening zazen at Nebraska Zen Center (7pm): two 30-minute zazen periods with kinhin, Fukanzazengi recitation, and dharma discussion. Drop-in welcome; by donation.",
+    source_url: "https://nebraskazencenter.org", event_url: "https://nebraskazencenter.org/schedule/",
+  },
+  {
+    org_id: "nebraska_zen_center", org_name: "Nebraska Zen Center / Heartland Temple",
+    title: "Morning Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], time: { h: 6, m: 0 }, duration_min: 90,
+    address: "3625 Lafayette Avenue", city: "Omaha", state: "NE", neighborhood: "Bemis Park / Midtown Omaha",
+    lat: 41.2613, lng: -96.0013, tradition: "zen", location_type: "hybrid",
+    notes: "Weekday morning zazen at Nebraska Zen Center (6–7:30am), in-person and Zoom. Open to all practitioners; no experience required. By donation.",
+    source_url: "https://nebraskazencenter.org", event_url: "https://nebraskazencenter.org/schedule/",
+  },
+
+  // Flatwater Collective — Pluralist / non-sectarian Buddhist. flatwatercollective.org
+  {
+    org_id: "flatwater_collective", org_name: "Flatwater Collective",
+    title: "Meditation Practice and Reflection",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1219 Leavenworth Street", city: "Omaha", state: "NE", neighborhood: "Downtown Omaha",
+    lat: 41.2571, lng: -95.9350, tradition: "pluralist", location_type: "in-person",
+    notes: "Weekly Thursday evening program at Flatwater Collective (7–8pm): dharma talk and sitting meditation. Beginner-friendly, freely offered. Non-sectarian Buddhist community in downtown Omaha. Drop-in welcome; dana appreciated.",
+    source_url: "https://www.flatwatercollective.org", event_url: "https://www.flatwatercollective.org/calendar",
+  },
+  {
+    org_id: "flatwater_collective", org_name: "Flatwater Collective",
+    title: "Sunday Practice",
+    days: ["Sunday"], time: { h: 16, m: 0 }, duration_min: 60,
+    address: "1219 Leavenworth Street", city: "Omaha", state: "NE", neighborhood: "Downtown Omaha",
+    lat: 41.2571, lng: -95.9350, tradition: "pluralist", location_type: "in-person",
+    notes: "Weekly Sunday Practice at Flatwater Collective (4–5pm): guided and silent meditation with a different teacher each week. Non-sectarian Buddhist community. Drop-in welcome; dana appreciated.",
+    source_url: "https://www.flatwatercollective.org", event_url: "https://www.flatwatercollective.org/calendar",
+  },
+
+  // Honey Locust Sangha — Plum Village / Thich Nhat Hanh. honeylocustsangha.org
+  {
+    org_id: "honey_locust_sangha", org_name: "Honey Locust Sangha",
+    title: "Monday Evening Sitting",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 120,
+    address: "7641 Pacific Street", city: "Omaha", state: "NE", neighborhood: "Midtown / Pacific Street",
+    lat: 41.2376, lng: -96.0484, tradition: "pluralist", location_type: "in-person",
+    notes: "Weekly Monday evening at Honey Locust Sangha (6:30–8:30pm) at The Yoga Path: sitting meditation, walking meditation, and dharma discussion in the Plum Village tradition of Thich Nhat Hanh. Zoom also available. Free; open to all.",
+    source_url: "https://honeylocustsangha.org", event_url: "https://honeylocustsangha.org",
+  },
+  {
+    org_id: "honey_locust_sangha", org_name: "Honey Locust Sangha",
+    title: "Friday Evening Sitting",
+    days: ["Friday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "7641 Pacific Street", city: "Omaha", state: "NE", neighborhood: "Midtown / Pacific Street",
+    lat: 41.2376, lng: -96.0484, tradition: "pluralist", location_type: "in-person",
+    notes: "Weekly Friday evening at Honey Locust Sangha (6–7pm) at The Yoga Path: sitting and walking meditation in noble silence. Plum Village tradition of Thich Nhat Hanh. Zoom also available. Free; open to all.",
+    source_url: "https://honeylocustsangha.org", event_url: "https://honeylocustsangha.org",
+  },
+
+  // Lincoln Zen Center — Soto Zen. lincolnzencenter.org
+  {
+    org_id: "lincoln_zen_center", org_name: "Lincoln Zen Center",
+    title: "Sunday Morning Sitting",
+    days: ["Sunday"], time: { h: 10, m: 30 }, duration_min: 90,
+    address: "3701 O Street, Suite 204", city: "Lincoln", state: "NE", neighborhood: "Near South Lincoln",
+    lat: 40.8057, lng: -96.6720, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Sunday morning program at Lincoln Zen Center (10:30am–noon): sitting meditation followed by dharma talk and discussion. Soto Zen. Drop-in welcome; no experience required.",
+    source_url: "https://www.lincolnzencenter.org", event_url: "https://www.lincolnzencenter.org/calendar",
+  },
+  {
+    org_id: "lincoln_zen_center", org_name: "Lincoln Zen Center",
+    title: "Monday Evening Sitting",
+    days: ["Monday"], time: { h: 17, m: 30 }, duration_min: 75,
+    address: "3701 O Street, Suite 204", city: "Lincoln", state: "NE", neighborhood: "Near South Lincoln",
+    lat: 40.8057, lng: -96.6720, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Monday evening sitting at Lincoln Zen Center (5:30–6:45pm). Beginner instruction available. Soto Zen. Drop-in welcome; no experience required.",
+    source_url: "https://www.lincolnzencenter.org", event_url: "https://www.lincolnzencenter.org/calendar",
+  },
+  {
+    org_id: "lincoln_zen_center", org_name: "Lincoln Zen Center",
+    title: "Wednesday Morning Sitting",
+    days: ["Wednesday"], time: { h: 10, m: 30 }, duration_min: 75,
+    address: "3701 O Street, Suite 204", city: "Lincoln", state: "NE", neighborhood: "Near South Lincoln",
+    lat: 40.8057, lng: -96.6720, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Wednesday morning sitting at Lincoln Zen Center (10:30–11:45am). Soto Zen. Drop-in welcome; no experience required.",
+    source_url: "https://www.lincolnzencenter.org", event_url: "https://www.lincolnzencenter.org/calendar",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
