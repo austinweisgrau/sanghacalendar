@@ -71,6 +71,7 @@ from ingestion.sources import oklahoma_city as oklahoma_city_sources  # noqa: F4
 from ingestion.sources import bloomington as bloomington_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import cleveland as cleveland_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import madison as madison_sources
+from ingestion.sources import connecticut as connecticut_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -933,6 +934,9 @@ def main():
 
     # Oklahoma City Phase 3 — all sits seeded as recurring; no iCal feeds
     log.info("--- Oklahoma City Phase 3: no iCal feeds (recurring sits only) ---")
+
+    # Connecticut Phase 3 — all sits seeded as recurring; no iCal feeds
+    log.info("--- Connecticut Phase 3: no iCal feeds (recurring sits only) ---")
 
     # Madison WI Phase 3 — Shambhala Madison iCal feed + recurring-only centers
     log.info("--- Madison WI Phase 3: Shambhala Madison iCal feed ---")

@@ -4162,4 +4162,120 @@ CENTERS = {
             "Free; no experience required; no registration needed."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Connecticut — Hartford / New Haven Phase 3 (heartbeat 53)
+    # -----------------------------------------------------------------------
+    "new_haven_zen": {
+        "id": "new_haven_zen",
+        "name": "New Haven Zen Center",
+        "tradition": "zen",
+        "url": "https://www.newhavenzen.org",
+        "address": "193 Mansfield Street",
+        "city": "New Haven",
+        "state": "CT",
+        "zip": "06511",
+        "lat": 41.3117,
+        "lng": -72.9278,
+        "neighborhood": "East Rock",
+        "bio": (
+            "The New Haven Zen Center (NHZC) is a Kwan Um School of Zen community "
+            "founded in 1977, practicing Korean Zen in the lineage of Zen Master "
+            "Seungsahn. Located in New Haven's East Rock neighborhood, NHZC offers "
+            "two weekly public sitting programs open to all: Wednesday Evening "
+            "(7:30 PM — sitting, walking, and chanting; newcomer orientation 2nd "
+            "and 4th Wednesdays at 6:30 PM) and Sunday Morning (9 AM — sitting, "
+            "walking, and chanting through ~10:50 AM with dharma talk). One of "
+            "the oldest and most established Zen centers in New England. Drop-in "
+            "welcome; no experience required. Free; dana appreciated."
+        ),
+    },
+    "shambhala_new_haven": {
+        "id": "shambhala_new_haven",
+        "name": "Shambhala Meditation Center of New Haven",
+        "tradition": "tibetan",
+        "url": "https://newhaven.shambhala.org",
+        "address": "493 Whitney Avenue, 2nd Floor",
+        "city": "New Haven",
+        "state": "CT",
+        "zip": "06511",
+        "lat": 41.3238,
+        "lng": -72.9303,
+        "neighborhood": "East Rock / Whitney Avenue",
+        "bio": (
+            "The Shambhala Meditation Center of New Haven is part of the international "
+            "Shambhala community, rooted in the Tibetan Buddhist teachings of Chögyam "
+            "Trungpa Rinpoche and Sakyong Mipham Rinpoche. Located on the second floor "
+            "of East Rock Health & Wellness at 493 Whitney Avenue, the center offers "
+            "Sunday Morning Open Meditation (9:30–11:30 AM) — alternating sitting and "
+            "walking periods with instruction available for newcomers and a dharma talk "
+            "on the first Sunday of each month. Open to all; no experience required; "
+            "drop-in welcome. Suggested donation."
+        ),
+    },
+    "odiyana_kadampa": {
+        "id": "odiyana_kadampa",
+        "name": "Odiyana Kadampa Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://www.meditationinconnecticut.org",
+        "address": "450 New London Turnpike",
+        "city": "Glastonbury",
+        "state": "CT",
+        "zip": "06033",
+        "lat": 41.7084,
+        "lng": -72.5950,
+        "neighborhood": "Glastonbury (Hartford suburb)",
+        "bio": (
+            "Odiyana Kadampa Meditation Center is Connecticut's New Kadampa Tradition "
+            "(NKT-IKBU) center, offering modern Tibetan Buddhist teachings and guided "
+            "meditation at 450 New London Turnpike in Glastonbury, a suburb of Hartford. "
+            "Two weekly drop-in public classes: Sunday Morning (11 AM–12:15 PM, "
+            "'Meditation Made Easy') and Thursday Evening (7–8:15 PM). Classes combine "
+            "guided meditation with Buddhist philosophy in the Kadampa style and are "
+            "open to all levels. Suggested donation $8–12; free for members."
+        ),
+    },
+    "nalandabodhi_ct": {
+        "id": "nalandabodhi_ct",
+        "name": "Nalandabodhi Connecticut",
+        "tradition": "tibetan",
+        "url": "https://ct.nalandabodhi.org",
+        "address": "3 Barnard Lane, Suite 305",
+        "city": "Bloomfield",
+        "state": "CT",
+        "zip": "06002",
+        "lat": 41.8438,
+        "lng": -72.7197,
+        "neighborhood": "Bloomfield (Hartford suburb)",
+        "bio": (
+            "Nalandabodhi Connecticut is part of the Nalandabodhi international "
+            "sangha founded by Dzogchen Ponlop Rinpoche, practicing in the Kagyu "
+            "and Nyingma lineages of Tibetan Buddhism. The Connecticut center meets "
+            "at 3 Barnard Lane, Suite 305, Bloomfield (a Hartford suburb), and on "
+            "Zoom. Sunday morning program: 10–10:50 AM guided meditation followed "
+            "by 11–11:30 AM dharma discussion. Hybrid in-person and Zoom. Open to "
+            "all; free; no experience required."
+        ),
+    },
+    "hartford_ktc": {
+        "id": "hartford_ktc",
+        "name": "Hartford Karma Thegsum Choling",
+        "tradition": "tibetan",
+        "url": "https://ktchartford.org",
+        "address": "157 Elizabeth Street",
+        "city": "Hartford",
+        "state": "CT",
+        "zip": "06105",
+        "lat": 41.7627,
+        "lng": -72.6990,
+        "neighborhood": "West End, Hartford",
+        "bio": (
+            "Hartford Karma Thegsum Choling (KTC) is a Tibetan Buddhist meditation "
+            "center affiliated with Karma Triyana Dharmachakra (KTD Monastery) in "
+            "Woodstock, New York — the North American seat of His Holiness the "
+            "Gyalwang Karmapa in the Karma Kagyu lineage. Located in Hartford's "
+            "West End neighborhood, the center offers a Tuesday Evening practice "
+            "and study group (7 PM). Open to all; no experience required; "
+            "contact (860) 232-8366 for current schedule and programs."
+        ),
+    },
 }

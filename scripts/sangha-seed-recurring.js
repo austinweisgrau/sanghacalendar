@@ -3357,6 +3357,83 @@ const SITS = [
     notes: "Weekly Wednesday evening: short talk followed by guided Diamond Way meditation. Karma Kagyu / Lama Ole Nydahl lineage. Free; no registration required.",
     source_url: "https://diamondway.org/madison/", event_url: "https://diamondway.org/madison/",
   },
+
+  // ============================================================
+  // Connecticut — Hartford / New Haven Phase 3 (heartbeat 53)
+  // ============================================================
+
+  // New Haven Zen Center — Kwan Um School of Zen. newhavenzen.org
+  {
+    org_id: "new_haven_zen", org_name: "New Haven Zen Center",
+    title: "Wednesday Evening Sitting",
+    days: ["Wednesday"], time: { h: 19, m: 30 }, duration_min: 90,
+    address: "193 Mansfield Street", city: "New Haven", state: "CT", neighborhood: "East Rock",
+    lat: 41.3117, lng: -72.9278, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Wednesday evening zazen at the New Haven Zen Center (Kwan Um School of Zen). Schedule: 7pm chanting, 7:30pm sitting, walking, sitting. Newcomer orientation 2nd and 4th Wednesdays at 6:30pm. Drop-in welcome; free; dana appreciated.",
+    source_url: "https://www.newhavenzen.org", event_url: "https://www.newhavenzen.org/schedule",
+  },
+  {
+    org_id: "new_haven_zen", org_name: "New Haven Zen Center",
+    title: "Sunday Morning Sitting",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 110,
+    address: "193 Mansfield Street", city: "New Haven", state: "CT", neighborhood: "East Rock",
+    lat: 41.3117, lng: -72.9278, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Sunday morning program at the New Haven Zen Center (Kwan Um School of Zen). Sitting, walking, and chanting (9am–~10:50am) with dharma talk. Drop-in welcome; free; dana appreciated.",
+    source_url: "https://www.newhavenzen.org", event_url: "https://www.newhavenzen.org/schedule",
+  },
+
+  // Shambhala Meditation Center of New Haven — Tibetan/Shambhala. newhaven.shambhala.org
+  {
+    org_id: "shambhala_new_haven", org_name: "Shambhala Meditation Center of New Haven",
+    title: "Sunday Morning Open Meditation",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 120,
+    address: "493 Whitney Avenue, 2nd Floor", city: "New Haven", state: "CT", neighborhood: "East Rock / Whitney Avenue",
+    lat: 41.3238, lng: -72.9303, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Sunday open meditation at Shambhala Meditation Center of New Haven (9:30–11:30am). Alternating sitting and walking periods with instruction available; dharma talk on the first Sunday of each month. Located at East Rock Health & Wellness. Drop-in welcome; suggested donation.",
+    source_url: "https://newhaven.shambhala.org", event_url: "https://newhaven.shambhala.org/programs/monthly-calendar/",
+  },
+
+  // Odiyana Kadampa Meditation Center (NKT) — Glastonbury CT. meditationinconnecticut.org
+  {
+    org_id: "odiyana_kadampa", org_name: "Odiyana Kadampa Meditation Center",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 75,
+    address: "450 New London Turnpike", city: "Glastonbury", state: "CT", neighborhood: "Glastonbury (Hartford suburb)",
+    lat: 41.7084, lng: -72.5950, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Sunday 'Meditation Made Easy' class at Odiyana Kadampa Meditation Center (NKT), Glastonbury CT (11am–12:15pm). Guided meditation with Buddhist philosophy in the Kadampa style. Open to all levels; drop-in welcome. Suggested $8–12; free for members.",
+    source_url: "https://www.meditationinconnecticut.org", event_url: "https://www.meditationinconnecticut.org/calendar/",
+  },
+  {
+    org_id: "odiyana_kadampa", org_name: "Odiyana Kadampa Meditation Center",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 75,
+    address: "450 New London Turnpike", city: "Glastonbury", state: "CT", neighborhood: "Glastonbury (Hartford suburb)",
+    lat: 41.7084, lng: -72.5950, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Thursday evening meditation class at Odiyana Kadampa Meditation Center (NKT), Glastonbury CT (7–8:15pm). Guided meditation with Buddhist philosophy. Open to all levels; drop-in welcome. Suggested $8–12; free for members.",
+    source_url: "https://www.meditationinconnecticut.org", event_url: "https://www.meditationinconnecticut.org/calendar/",
+  },
+
+  // Nalandabodhi Connecticut — Tibetan Kagyu/Nyingma. ct.nalandabodhi.org
+  {
+    org_id: "nalandabodhi_ct", org_name: "Nalandabodhi Connecticut",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 50,
+    address: "3 Barnard Lane, Suite 305", city: "Bloomfield", state: "CT", neighborhood: "Bloomfield (Hartford suburb)",
+    lat: 41.8438, lng: -72.7197, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Sunday morning meditation at Nalandabodhi Connecticut (10–10:50am), followed by dharma discussion (11–11:30am). Kagyu/Nyingma lineage of Dzogchen Ponlop Rinpoche. Hybrid in-person (Bloomfield) and Zoom. Free; open to all.",
+    source_url: "https://ct.nalandabodhi.org", event_url: "https://ct.nalandabodhi.org/events/",
+  },
+
+  // Hartford Karma Thegsum Choling — Tibetan Karma Kagyu. ktchartford.org
+  {
+    org_id: "hartford_ktc", org_name: "Hartford Karma Thegsum Choling",
+    title: "Tuesday Evening Practice",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "157 Elizabeth Street", city: "Hartford", state: "CT", neighborhood: "West End, Hartford",
+    lat: 41.7627, lng: -72.6990, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Tuesday evening practice and study group at Hartford Karma Thegsum Choling (KTC), affiliated with Karma Triyana Dharmachakra (KTD Monastery), Woodstock NY — Karma Kagyu lineage of the Gyalwang Karmapa. Open to all; call (860) 232-8366 to confirm current schedule.",
+    source_url: "https://ktchartford.org", event_url: "https://ktchartford.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
