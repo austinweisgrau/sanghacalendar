@@ -4045,4 +4045,121 @@ CENTERS = {
             "no experience required."
         ),
     },
+    # ── Madison, WI ────────────────────────────────────────────────────────────
+    "shambhala_madison": {
+        "id": "shambhala_madison",
+        "name": "Shambhala Meditation Center of Madison",
+        "tradition": "tibetan",
+        "url": "https://madison.shambhala.org",
+        "address": "408 S. Baldwin Street",
+        "city": "Madison",
+        "state": "WI",
+        "zip": "53703",
+        "lat": 43.0706,
+        "lng": -89.3887,
+        "neighborhood": "Isthmus / Downtown Madison",
+        "bio": (
+            "The Shambhala Meditation Center of Madison offers weekly open sits "
+            "rooted in the Tibetan Buddhist tradition brought to the West by "
+            "Chögyam Trungpa Rinpoche. Located on the Madison Isthmus near the "
+            "Capitol, the center hosts Sunday Morning Public Meditation (10 AM–noon) "
+            "and Thursday Evening Public Meditation (7–8:30 PM). Both sessions "
+            "include alternating sitting and walking meditation periods with "
+            "instruction available. No experience required; drop-in welcome. "
+            "Part of the international Shambhala community."
+        ),
+    },
+    "kmc_madison": {
+        "id": "kmc_madison",
+        "name": "Kadampa Meditation Center Madison",
+        "tradition": "tibetan",
+        "url": "https://www.meditationinmadison.org",
+        "address": "1825 S. Park Street",
+        "city": "Madison",
+        "state": "WI",
+        "zip": "53713",
+        "lat": 43.0568,
+        "lng": -89.4019,
+        "neighborhood": "South Madison",
+        "bio": (
+            "Kadampa Meditation Center Madison (KMC Madison) is Wisconsin's "
+            "New Kadampa Tradition (NKT-IKBU) center, offering modern Tibetan "
+            "Buddhist teachings and guided meditation at 1825 S. Park Street "
+            "in South Madison. Three weekly drop-in public classes: Sunday "
+            "Morning Meditation (10–11:15 AM), Wednesday Meditation at Noon "
+            "(noon–12:30 PM, $5), and Thursday Buddhist Wisdom for Daily Life "
+            "(6:30–7:30 PM). Classes combine guided meditation with Buddhist "
+            "philosophy in the Kadampa style. Drop-in welcome; suggested $12/class."
+        ),
+    },
+    "madison_zen_center": {
+        "id": "madison_zen_center",
+        "name": "Madison Zen Center",
+        "tradition": "zen",
+        "url": "https://www.madisonzen.org",
+        "address": "1820 Jefferson Street",
+        "city": "Madison",
+        "state": "WI",
+        "zip": "53711",
+        "lat": 43.0617,
+        "lng": -89.3957,
+        "neighborhood": "Regent / UW Campus Area",
+        "bio": (
+            "The Madison Zen Center (MZC) is a lay Zen community affiliated with "
+            "the Rochester Zen Center, practicing in the combined Rinzai–Soto "
+            "lineage of Philip Kapleau Roshi. Under teacher Sensei Rick Smith, "
+            "MZC offers an extensive daily schedule: early morning zazen "
+            "Tuesday–Friday (6:30 AM), Monday Evening (7–8:30 PM, three 25-minute "
+            "rounds with kinhin and instruction), Wednesday Evening (6:30–8:30 PM), "
+            "and the main Sunday Program (8:30–10:30 AM with sitting, chanting, "
+            "and dharma talk). Drop-in welcome; all levels. Online via Zoom "
+            "available by contacting mzc@madisonzen.org."
+        ),
+    },
+    "snowflower_sangha": {
+        "id": "snowflower_sangha",
+        "name": "Snowflower Sangha",
+        "tradition": "zen",
+        "url": "https://snowflower.org",
+        "address": "1704 Roberts Court",
+        "city": "Madison",
+        "state": "WI",
+        "zip": "53711",
+        "lat": 43.0676,
+        "lng": -89.3780,
+        "neighborhood": "Vilas / Friends Meetinghouse",
+        "bio": (
+            "Snowflower Sangha is Madison's Plum Village community, practicing "
+            "in the tradition of Thich Nhat Hanh. The sangha meets multiple "
+            "times weekly across Madison. Tuesday Evening (7–8:30 PM) is held "
+            "hybrid at the Friends Meetinghouse (1704 Roberts Court) + Zoom. "
+            "Saturday Morning (10–11:30 AM) meets in-person at the Friends "
+            "Meetinghouse. Practice includes sitting meditation, walking "
+            "meditation, Dharma sharing, and chanting. Open to all; no "
+            "experience required. Free; dana welcome."
+        ),
+    },
+    "diamond_way_madison": {
+        "id": "diamond_way_madison",
+        "name": "Diamond Way Buddhist Center Madison",
+        "tradition": "tibetan",
+        "url": "https://diamondway.org/madison/",
+        "address": "104 King Street, Suite 302",
+        "city": "Madison",
+        "state": "WI",
+        "zip": "53703",
+        "lat": 43.0740,
+        "lng": -89.3840,
+        "neighborhood": "Downtown Madison",
+        "bio": (
+            "Diamond Way Buddhist Center Madison is a lay Karma Kagyu Tibetan "
+            "Buddhist center in downtown Madison, affiliated with Lama Ole "
+            "Nydahl's Diamond Way Buddhist Union and the 17th Karmapa Trinley "
+            "Thaye Dorje. Two weekly public meditation sessions open to all: "
+            "Sunday Evening (7:30 PM) and Wednesday Evening (7:30 PM) — each "
+            "featuring a short talk followed by a guided meditation. Located "
+            "on the third floor at 104 King Street, near the Capitol Square. "
+            "Free; no experience required; no registration needed."
+        ),
+    },
 }

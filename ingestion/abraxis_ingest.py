@@ -70,6 +70,7 @@ from ingestion.sources import indianapolis as indianapolis_sources  # noqa: F401
 from ingestion.sources import oklahoma_city as oklahoma_city_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import bloomington as bloomington_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import cleveland as cleveland_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import madison as madison_sources
 
 log = logging.getLogger(__name__)
 
@@ -932,6 +933,30 @@ def main():
 
     # Oklahoma City Phase 3 — all sits seeded as recurring; no iCal feeds
     log.info("--- Oklahoma City Phase 3: no iCal feeds (recurring sits only) ---")
+
+    # Madison WI Phase 3 — Shambhala Madison iCal feed + recurring-only centers
+    log.info("--- Madison WI Phase 3: Shambhala Madison iCal feed ---")
+    for org_id, feed_cfg in madison_sources.ICAL_FEEDS.items():
+        center = madison_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Madison iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Madison iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

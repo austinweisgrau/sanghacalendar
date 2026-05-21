@@ -3226,6 +3226,137 @@ const SITS = [
     notes: "Weekly Sunday morning group Zen meditation. Chan Buddhist and Pure Land tradition (Dragon Flower Ch'an Temples lineage). All welcome; no experience required.",
     source_url: "https://cloudwater.org", event_url: "https://cloudwater.org",
   },
+
+  // ── Madison, WI — Phase 3 (heartbeat 52) ───────────────────────────────────
+
+  // Kadampa Meditation Center Madison — 1825 S. Park St, Madison WI 53713
+  // NKT Tibetan. meditationinmadison.org. No iCal (WordPress/MEC broken feed).
+  {
+    org_id: "kmc_madison", org_name: "Kadampa Meditation Center Madison",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 75,
+    address: "1825 S. Park Street", city: "Madison", state: "WI", neighborhood: "South Madison",
+    lat: 43.0568, lng: -89.4019, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Sunday morning guided meditation class combining Buddhist teachings with meditation practice. NKT-IKBU tradition. Drop-in; suggested $12.",
+    source_url: "https://www.meditationinmadison.org", event_url: "https://www.meditationinmadison.org/ongoing-classes/",
+  },
+  {
+    org_id: "kmc_madison", org_name: "Kadampa Meditation Center Madison",
+    title: "Meditation at Noon",
+    days: ["Wednesday"], time: { h: 12, m: 0 }, duration_min: 30,
+    address: "1825 S. Park Street", city: "Madison", state: "WI", neighborhood: "South Madison",
+    lat: 43.0568, lng: -89.4019, tradition: "tibetan", location_type: "in-person",
+    notes: "Midday drop-in meditation session. In-person only; $5 suggested donation.",
+    source_url: "https://www.meditationinmadison.org", event_url: "https://www.meditationinmadison.org/ongoing-classes/",
+  },
+  {
+    org_id: "kmc_madison", org_name: "Kadampa Meditation Center Madison",
+    title: "Buddhist Wisdom for Daily Life",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "1825 S. Park Street", city: "Madison", state: "WI", neighborhood: "South Madison",
+    lat: 43.0568, lng: -89.4019, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Thursday evening: guided meditation with Buddhist teachings. NKT-IKBU tradition. Drop-in; suggested $12.",
+    source_url: "https://www.meditationinmadison.org", event_url: "https://www.meditationinmadison.org/ongoing-classes/",
+  },
+
+  // Madison Zen Center — 1820 Jefferson St, Madison WI 53711
+  // Kapleau/Rochester lineage (Sensei Rick Smith). madisonzen.org. No iCal.
+  {
+    org_id: "madison_zen_center", org_name: "Madison Zen Center",
+    title: "Sunday Morning Program",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 120,
+    address: "1820 Jefferson Street", city: "Madison", state: "WI", neighborhood: "Regent / UW Campus Area",
+    lat: 43.0617, lng: -89.3957, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Sunday program: zazen sitting, kinhin (walking meditation), chanting, and dharma talk. Kapleau/Rochester Zen lineage. Drop-in; all levels welcome.",
+    source_url: "https://www.madisonzen.org", event_url: "https://www.madisonzen.org/about/schedule/",
+  },
+  {
+    org_id: "madison_zen_center", org_name: "Madison Zen Center",
+    title: "Monday Evening Zazen",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1820 Jefferson Street", city: "Madison", state: "WI", neighborhood: "Regent / UW Campus Area",
+    lat: 43.0617, lng: -89.3957, tradition: "zen", location_type: "in-person",
+    notes: "Monday evening: three 25-minute rounds of zazen with kinhin and occasional private instruction. Drop-in welcome.",
+    source_url: "https://www.madisonzen.org", event_url: "https://www.madisonzen.org/about/schedule/",
+  },
+  {
+    org_id: "madison_zen_center", org_name: "Madison Zen Center",
+    title: "Tuesday Morning Zazen",
+    days: ["Tuesday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "1820 Jefferson Street", city: "Madison", state: "WI", neighborhood: "Regent / UW Campus Area",
+    lat: 43.0617, lng: -89.3957, tradition: "zen", location_type: "in-person",
+    notes: "Early morning zazen, one 60-minute round. Kapleau/Rochester lineage. Drop-in welcome.",
+    source_url: "https://www.madisonzen.org", event_url: "https://www.madisonzen.org/about/schedule/",
+  },
+  {
+    org_id: "madison_zen_center", org_name: "Madison Zen Center",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 18, m: 30 }, duration_min: 120,
+    address: "1820 Jefferson Street", city: "Madison", state: "WI", neighborhood: "Regent / UW Campus Area",
+    lat: 43.0617, lng: -89.3957, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday evening: three 35-minute rounds of zazen with kinhin and chanting. Kapleau/Rochester lineage. Drop-in welcome.",
+    source_url: "https://www.madisonzen.org", event_url: "https://www.madisonzen.org/about/schedule/",
+  },
+  {
+    org_id: "madison_zen_center", org_name: "Madison Zen Center",
+    title: "Thursday Morning Zazen",
+    days: ["Thursday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "1820 Jefferson Street", city: "Madison", state: "WI", neighborhood: "Regent / UW Campus Area",
+    lat: 43.0617, lng: -89.3957, tradition: "zen", location_type: "in-person",
+    notes: "Early morning zazen, one 60-minute round. Kapleau/Rochester lineage. Drop-in welcome.",
+    source_url: "https://www.madisonzen.org", event_url: "https://www.madisonzen.org/about/schedule/",
+  },
+  {
+    org_id: "madison_zen_center", org_name: "Madison Zen Center",
+    title: "Friday Morning Zazen",
+    days: ["Friday"], time: { h: 6, m: 30 }, duration_min: 70,
+    address: "1820 Jefferson Street", city: "Madison", state: "WI", neighborhood: "Regent / UW Campus Area",
+    lat: 43.0617, lng: -89.3957, tradition: "zen", location_type: "in-person",
+    notes: "Friday morning: zazen (one round) followed by chanting. Kapleau/Rochester lineage. Drop-in welcome.",
+    source_url: "https://www.madisonzen.org", event_url: "https://www.madisonzen.org/about/schedule/",
+  },
+
+  // Snowflower Sangha — Friends Meetinghouse, 1704 Roberts Court, Madison WI 53711
+  // Plum Village / Thich Nhat Hanh. snowflower.org. No iCal.
+  {
+    org_id: "snowflower_sangha", org_name: "Snowflower Sangha",
+    title: "Tuesday Evening Sangha",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1704 Roberts Court", city: "Madison", state: "WI", neighborhood: "Vilas / Friends Meetinghouse",
+    lat: 43.0676, lng: -89.3780, tradition: "zen", location_type: "hybrid",
+    notes: "Weekly Tuesday evening: sitting meditation, walking meditation, Dharma sharing, and chanting in the Plum Village / Thich Nhat Hanh tradition. In-person at Friends Meetinghouse + Zoom. Free; dana welcome.",
+    source_url: "https://snowflower.org", event_url: "https://snowflower.org/whenandwhere/",
+  },
+  {
+    org_id: "snowflower_sangha", org_name: "Snowflower Sangha",
+    title: "Saturday Morning Sangha",
+    days: ["Saturday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "1704 Roberts Court", city: "Madison", state: "WI", neighborhood: "Vilas / Friends Meetinghouse",
+    lat: 43.0676, lng: -89.3780, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Saturday morning: sitting and walking meditation in the Plum Village tradition. In-person at Friends Meetinghouse. Free; dana welcome.",
+    source_url: "https://snowflower.org", event_url: "https://snowflower.org/whenandwhere/",
+  },
+
+  // Diamond Way Buddhist Center Madison — 104 King St Suite 302, Madison WI 53703
+  // Karma Kagyu / Ole Nydahl. diamondway.org/madison. No iCal.
+  {
+    org_id: "diamond_way_madison", org_name: "Diamond Way Buddhist Center Madison",
+    title: "Sunday Evening Meditation",
+    days: ["Sunday"], time: { h: 19, m: 30 }, duration_min: 60,
+    address: "104 King Street, Suite 302", city: "Madison", state: "WI", neighborhood: "Downtown Madison",
+    lat: 43.0740, lng: -89.3840, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Sunday evening: short talk followed by guided Diamond Way meditation. Karma Kagyu / Lama Ole Nydahl lineage. Free; no registration required.",
+    source_url: "https://diamondway.org/madison/", event_url: "https://diamondway.org/madison/",
+  },
+  {
+    org_id: "diamond_way_madison", org_name: "Diamond Way Buddhist Center Madison",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 30 }, duration_min: 60,
+    address: "104 King Street, Suite 302", city: "Madison", state: "WI", neighborhood: "Downtown Madison",
+    lat: 43.0740, lng: -89.3840, tradition: "tibetan", location_type: "in-person",
+    notes: "Weekly Wednesday evening: short talk followed by guided Diamond Way meditation. Karma Kagyu / Lama Ole Nydahl lineage. Free; no registration required.",
+    source_url: "https://diamondway.org/madison/", event_url: "https://diamondway.org/madison/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

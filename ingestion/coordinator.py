@@ -67,6 +67,7 @@ from ingestion.sources import indianapolis as indianapolis_sources  # noqa: F401
 from ingestion.sources import oklahoma_city as oklahoma_city_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import bloomington as bloomington_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import cleveland as cleveland_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import madison as madison_sources
 
 log = logging.getLogger(__name__)
 
@@ -1052,6 +1053,35 @@ def run_cleveland_phase3() -> list[Event]:
     return []
 
 
+def run_madison_phase3() -> list[Event]:
+    """Phase 3 Madison WI: Shambhala Madison iCal feed + recurring-only centers."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in madison_sources.ICAL_FEEDS.items():
+        center = madison_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Madison iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Madison iCal feed {org_id} failed: {e}")
+
+    return all_events
+
+
 def run_providence_phase3() -> list[Event]:
     """Phase 3 Providence RI: Providence Zen Center Tockify ICS + recurring-only centers."""
     events: list[Event] = []
@@ -1132,6 +1162,7 @@ def main():
         + run_oklahoma_city_phase3()
         + run_bloomington_phase3()
         + run_cleveland_phase3()
+        + run_madison_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
