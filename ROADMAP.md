@@ -164,6 +164,7 @@ Candidate metros (rough priority):
 44. Madison (WI) 🔄 **Phase 3 Madison live May 21** (5 centers) — heartbeat 52
 45. Hartford/New Haven (CT) 🔄 **Phase 3 Connecticut live May 21** (5 centers) — heartbeat 53
 46. Omaha/Lincoln (NE) 🔄 **Phase 3 Omaha live May 21** (4 centers) — heartbeat 54
+47. Boise (ID) 🔄 **Phase 3 Boise live May 22** (5 centers) — heartbeat 55
 
 ### Oklahoma City Phase 3 — ✅ Live May 20 (2 centers, heartbeat 49)
 
