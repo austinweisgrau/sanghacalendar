@@ -3536,6 +3536,110 @@ const SITS = [
     notes: "Weekly Wednesday morning sitting at Lincoln Zen Center (10:30–11:45am). Soto Zen. Drop-in welcome; no experience required.",
     source_url: "https://www.lincolnzencenter.org", event_url: "https://www.lincolnzencenter.org/calendar",
   },
+
+  // ============================================================
+  // Boise, ID — Phase 3 (heartbeat 55)
+  // ============================================================
+
+  // Boise Zen Center — Soto Zen (SZBA). boisezencenter.org
+  {
+    org_id: "boise_zen_center", org_name: "Boise Zen Center",
+    title: "Wednesday Morning Zazen",
+    days: ["Wednesday"], time: { h: 7, m: 0 }, duration_min: 90,
+    address: "1524 W. Hays Street, Suite 101a", city: "Boise", state: "ID", neighborhood: "Downtown Boise",
+    lat: 43.6194, lng: -116.2052, tradition: "zen", location_type: "hybrid",
+    notes: "Weekly Wednesday morning zazen at Boise Zen Center (7–8:30am): zazen and kinhin, in-person and Zoom. Soto Zen (SZBA member), teacher Jisen Coghlan. Drop-in welcome; donation-based.",
+    source_url: "https://www.boisezencenter.org", event_url: "https://www.boisezencenter.org/schedule.html",
+  },
+  {
+    org_id: "boise_zen_center", org_name: "Boise Zen Center",
+    title: "Thursday Evening Zazen",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 70,
+    address: "1524 W. Hays Street, Suite 101a", city: "Boise", state: "ID", neighborhood: "Downtown Boise",
+    lat: 43.6194, lng: -116.2052, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Thursday evening zazen at Boise Zen Center (6–7:10pm): two sitting periods with kinhin, in-person. Soto Zen. Drop-in welcome; donation-based.",
+    source_url: "https://www.boisezencenter.org", event_url: "https://www.boisezencenter.org/schedule.html",
+  },
+  {
+    org_id: "boise_zen_center", org_name: "Boise Zen Center",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 8, m: 0 }, duration_min: 90,
+    address: "1524 W. Hays Street, Suite 101a", city: "Boise", state: "ID", neighborhood: "Downtown Boise",
+    lat: 43.6194, lng: -116.2052, tradition: "zen", location_type: "hybrid",
+    notes: "Weekly Saturday morning zazen at Boise Zen Center (8–9:30am): zazen and kinhin, in-person and Zoom. First Saturday monthly includes Introduction to Meditation. Soto Zen. Drop-in welcome; donation-based.",
+    source_url: "https://www.boisezencenter.org", event_url: "https://www.boisezencenter.org/schedule.html",
+  },
+
+  // Empty Gate Zen Center Boise — Kwan Um School of Zen. bibscenter.org
+  {
+    org_id: "empty_gate_zen_boise", org_name: "Empty Gate Zen Center Boise",
+    title: "Morning Sitting",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "901 N. 15th Street", city: "Boise", state: "ID", neighborhood: "North End Boise",
+    lat: 43.6218, lng: -116.2118, tradition: "zen", location_type: "hybrid",
+    notes: "Weekday morning sitting at Empty Gate Zen Center Boise (6:30–7:30am) at BIBS: sitting and kinhin, in-person and Zoom. Kwan Um School of Zen (Korean Zen), teacher Jeff Kitzes (Zen Master Bon Soeng). Drop-in welcome.",
+    source_url: "https://bibscenter.org", event_url: "https://bibscenter.org/class-calendar/",
+  },
+  {
+    org_id: "empty_gate_zen_boise", org_name: "Empty Gate Zen Center Boise",
+    title: "Thursday Evening Sitting",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "901 N. 15th Street", city: "Boise", state: "ID", neighborhood: "North End Boise",
+    lat: 43.6218, lng: -116.2118, tradition: "zen", location_type: "hybrid",
+    notes: "Weekly Thursday evening sitting at Empty Gate Zen Center Boise (7pm) at BIBS, in-person and Zoom. Kwan Um School of Zen. Drop-in welcome.",
+    source_url: "https://bibscenter.org", event_url: "https://bibscenter.org/class-calendar/",
+  },
+
+  // Boise Insight Sangha — Insight Meditation. boiseinsightsangha.wordpress.com
+  {
+    org_id: "boise_insight_sangha", org_name: "Boise Insight Sangha",
+    title: "Tuesday Evening Sitting",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "901 N. 15th Street", city: "Boise", state: "ID", neighborhood: "North End Boise",
+    lat: 43.6218, lng: -116.2118, tradition: "theravada", location_type: "in-person",
+    notes: "Weekly Tuesday evening at Boise Insight Sangha (6–7:30pm) at BIBS: sitting meditation and dharma discussion. Insight Meditation tradition. Drop-in welcome; open to all levels.",
+    source_url: "https://boiseinsightsangha.wordpress.com", event_url: "https://boiseinsightsangha.wordpress.com",
+  },
+
+  // Beginner's Mind Sangha — Plum Village / Thich Nhat Hanh. beginnersmindsangha.org
+  {
+    org_id: "beginners_mind_sangha_boise", org_name: "Beginner's Mind Sangha",
+    title: "Wednesday Evening Practice",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 75,
+    address: "901 N. 15th Street", city: "Boise", state: "ID", neighborhood: "North End Boise",
+    lat: 43.6218, lng: -116.2118, tradition: "pluralist", location_type: "in-person",
+    notes: "Weekly Wednesday evening at Beginner's Mind Sangha (7–8:15pm) at BIBS: sitting meditation, walking meditation, and dharma sharing. Plum Village tradition (Order of Interbeing, Thich Nhat Hanh lineage). Free; open to all.",
+    source_url: "https://www.beginnersmindsangha.org", event_url: "https://www.beginnersmindsangha.org",
+  },
+  {
+    org_id: "beginners_mind_sangha_boise", org_name: "Beginner's Mind Sangha",
+    title: "Sunday Morning Sangha",
+    days: ["Sunday"], time: { h: 10, m: 15 }, duration_min: 90,
+    address: "901 N. 15th Street", city: "Boise", state: "ID", neighborhood: "North End Boise",
+    lat: 43.6218, lng: -116.2118, tradition: "pluralist", location_type: "hybrid",
+    notes: "Weekly Sunday morning at Beginner's Mind Sangha (10:15–11:45am) at BIBS: sitting meditation and dharma discussion, in-person and Zoom. Third Sunday includes Three Jewels ceremony; fifth Sunday is a Day of Mindfulness. Plum Village tradition. Free; open to all.",
+    source_url: "https://www.beginnersmindsangha.org", event_url: "https://www.beginnersmindsangha.org",
+  },
+
+  // Heart of the Dharma — Nyingma Tibetan Buddhism. heartofdharma.org
+  {
+    org_id: "heart_of_the_dharma_boise", org_name: "Heart of the Dharma",
+    title: "Sunday Practice",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 75,
+    address: "1627 S. Orchard Street, Suite 200", city: "Boise", state: "ID", neighborhood: "South Boise",
+    lat: 43.5935, lng: -116.2210, tradition: "tibetan", location_type: "hybrid",
+    notes: "Weekly Sunday practice at Heart of the Dharma (11am–12:15pm): in-person and livestream. Nyingma Tibetan Buddhism, teacher Dana Marsh (ordained by Anam Thubten Rinpoche). Dana-based; open to all.",
+    source_url: "https://heartofdharma.org", event_url: "https://heartofdharma.org/calendar",
+  },
+  {
+    org_id: "heart_of_the_dharma_boise", org_name: "Heart of the Dharma",
+    title: "Tuesday Evening Practice",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1627 S. Orchard Street, Suite 200", city: "Boise", state: "ID", neighborhood: "South Boise",
+    lat: 43.5935, lng: -116.2210, tradition: "tibetan", location_type: "online",
+    notes: "Weekly Tuesday evening practice at Heart of the Dharma (7pm): online/livestream only. Nyingma Tibetan Buddhism. Dana-based; open to all.",
+    source_url: "https://heartofdharma.org", event_url: "https://heartofdharma.org/calendar",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

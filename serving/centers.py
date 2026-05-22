@@ -4373,4 +4373,113 @@ CENTERS = {
             "required; drop-in welcome."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Boise, ID — Phase 3 (heartbeat 55)
+    # -----------------------------------------------------------------------
+    "boise_zen_center": {
+        "id": "boise_zen_center",
+        "name": "Boise Zen Center",
+        "tradition": "zen",
+        "url": "https://www.boisezencenter.org",
+        "address": "1524 W. Hays Street, Suite 101a",
+        "city": "Boise",
+        "state": "ID",
+        "zip": "83702",
+        "lat": 43.6194,
+        "lng": -116.2052,
+        "neighborhood": "Downtown Boise",
+        "bio": (
+            "Boise Zen Center is a Soto Zen community (SZBA member) in downtown "
+            "Boise, guided by teacher Jisen Coghlan. Wednesday Morning (7–8:30 AM): "
+            "zazen and kinhin, in-person and Zoom. Thursday Evening (6–7:10 PM): "
+            "two sitting periods with kinhin, in-person. Saturday Morning "
+            "(8–9:30 AM): zazen and kinhin, in-person and Zoom. First Saturday "
+            "monthly includes Introduction to Meditation. Drop-in welcome; "
+            "donation-based. 501(c)(3) non-profit."
+        ),
+    },
+    "empty_gate_zen_boise": {
+        "id": "empty_gate_zen_boise",
+        "name": "Empty Gate Zen Center Boise",
+        "tradition": "zen",
+        "url": "https://bibscenter.org",
+        "address": "901 N. 15th Street",
+        "city": "Boise",
+        "state": "ID",
+        "zip": "83702",
+        "lat": 43.6218,
+        "lng": -116.2118,
+        "neighborhood": "North End Boise",
+        "bio": (
+            "Empty Gate Zen Center Boise is a Kwan Um School of Zen community "
+            "(Korean Zen), hosted at the Boise Institute for Buddhist Studies "
+            "(BIBS), 901 N. 15th Street. Guiding teacher Jeff Kitzes (Zen Master "
+            "Bon Soeng). Mon–Thu Morning (6:30–7:30 AM): sitting and kinhin, "
+            "in-person and Zoom. Thursday Evening (7 PM): evening sitting, "
+            "in-person and Zoom. Drop-in welcome."
+        ),
+    },
+    "boise_insight_sangha": {
+        "id": "boise_insight_sangha",
+        "name": "Boise Insight Sangha",
+        "tradition": "theravada",
+        "url": "https://boiseinsightsangha.wordpress.com",
+        "address": "901 N. 15th Street",
+        "city": "Boise",
+        "state": "ID",
+        "zip": "83702",
+        "lat": 43.6218,
+        "lng": -116.2118,
+        "neighborhood": "North End Boise",
+        "bio": (
+            "Boise Insight Sangha is an Insight Meditation group hosted at the "
+            "Boise Institute for Buddhist Studies (BIBS), 901 N. 15th Street. "
+            "Tuesday Evening (6–7:30 PM): sitting meditation and dharma discussion. "
+            "First Saturday monthly: half-day sitting (9 AM–12:30 PM). "
+            "Drop-in welcome; open to all levels."
+        ),
+    },
+    "beginners_mind_sangha_boise": {
+        "id": "beginners_mind_sangha_boise",
+        "name": "Beginner's Mind Sangha",
+        "tradition": "pluralist",
+        "url": "https://www.beginnersmindsangha.org",
+        "address": "901 N. 15th Street",
+        "city": "Boise",
+        "state": "ID",
+        "zip": "83702",
+        "lat": 43.6218,
+        "lng": -116.2118,
+        "neighborhood": "North End Boise",
+        "bio": (
+            "Beginner's Mind Sangha is Boise's Plum Village community, practicing "
+            "in the tradition of Thich Nhat Hanh and the Order of Interbeing. "
+            "Hosted at BIBS, 901 N. 15th Street. Wednesday Evening (7–8:15 PM): "
+            "sitting, walking meditation, and dharma sharing. Sunday Morning "
+            "(10:15–11:45 AM): sitting and dharma discussion, hybrid (in-person "
+            "+ Zoom). Third Sunday includes Three Jewels ceremony; fifth Sunday "
+            "is a Day of Mindfulness. Free; open to all."
+        ),
+    },
+    "heart_of_the_dharma_boise": {
+        "id": "heart_of_the_dharma_boise",
+        "name": "Heart of the Dharma",
+        "tradition": "tibetan",
+        "url": "https://heartofdharma.org",
+        "address": "1627 S. Orchard Street, Suite 200",
+        "city": "Boise",
+        "state": "ID",
+        "zip": "83705",
+        "lat": 43.5935,
+        "lng": -116.2210,
+        "neighborhood": "South Boise",
+        "bio": (
+            "Heart of the Dharma is a Nyingma Tibetan Buddhist center in Boise, "
+            "guided by teacher Dana Marsh (ordained by Anam Thubten Rinpoche). "
+            "Located at 1627 S. Orchard Street, Suite 200. Sunday Practice "
+            "(11 AM–12:15 PM): in-person and livestream. Tuesday Evening (7 PM): "
+            "online/livestream only. Also offers day-long and residential retreats "
+            "throughout the year. Dana-based; open to all."
+        ),
+    },
 }
