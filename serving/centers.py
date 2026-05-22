@@ -4548,4 +4548,49 @@ CENTERS = {
             "Foundation."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Fresno, CA — Phase 3 (heartbeat 57)
+    # -----------------------------------------------------------------------
+    "zen_center_fresno": {
+        "id": "zen_center_fresno",
+        "name": "Zen Center of Fresno",
+        "tradition": "zen",
+        "url": "https://zenfresno.org",
+        "address": "371 E. Bullard Ave., Suite 102",
+        "city": "Fresno",
+        "state": "CA",
+        "zip": "93710",
+        "lat": 36.8240,
+        "lng": -119.7965,
+        "neighborhood": "Central Fresno",
+        "bio": (
+            "Zen Center of Fresno is part of the Central Valley Zen Foundation, "
+            "in the Soto Zen lineage of Suzuki Roshi and Eihei Dogen. Saturday "
+            "mornings (9–11 AM): two 25-minute zazen periods with kinhin, "
+            "followed by a dharma talk at 10 AM and closing vows at 11 AM. "
+            "Drop-in welcome. Teacher: Soshin Bruce Jewell (transmitted Soto "
+            "teacher). Abbess: Myoan Grace Schireson."
+        ),
+    },
+    "fresno_buddhist_temple": {
+        "id": "fresno_buddhist_temple",
+        "name": "Fresno Buddhist Temple",
+        "tradition": "other",
+        "url": "https://fresnobuddhisttemple.org",
+        "address": "2690 E. Alluvial Ave.",
+        "city": "Fresno",
+        "state": "CA",
+        "zip": "93720",
+        "lat": 36.8776,
+        "lng": -119.7590,
+        "neighborhood": "Northeast Fresno",
+        "bio": (
+            "Fresno Buddhist Temple (Fresno Betsuin) is a Jodo Shinshu "
+            "(Pure Land) temple of the Buddhist Churches of America. Offers "
+            "regular public meditation: Sunday Meditation Class (8:30–9:15 AM) "
+            "in the Hondo — sitting and walking meditation, open to all. "
+            "Thursday Evening Meditation with Rev. Kaz (7–7:45 PM): hybrid "
+            "in-person + Zoom (email temple for link). Free; donations welcome."
+        ),
+    },
 }

@@ -72,6 +72,7 @@ from ingestion.sources import connecticut as connecticut_sources  # noqa: F401 (
 from ingestion.sources import omaha as omaha_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import boise as boise_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import spokane as spokane_sources
+from ingestion.sources import fresno as fresno_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

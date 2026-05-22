@@ -3666,6 +3666,41 @@ const SITS = [
     notes: "Weekly Sunday morning at Buddhist Institute of Universal Compassion (10am–12pm): meditation and teachings. Gelug Tibetan Buddhism, led by Venerable Geshe Thupten Phelgye. In-person at 728 E Rich Ave + Zoom (ID: 890 7744 2439). Open to all; dana-based.",
     source_url: "https://www.universalcompassion.org", event_url: "https://www.universalcompassion.org/schedule",
   },
+
+  // ============================================================
+  // Fresno, CA — Phase 3 (heartbeat 57)
+  // ============================================================
+
+  // Zen Center of Fresno — Soto Zen (Central Valley Zen Foundation). zenfresno.org
+  {
+    org_id: "zen_center_fresno", org_name: "Zen Center of Fresno",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 9, m: 0 }, duration_min: 120,
+    address: "371 E. Bullard Ave., Suite 102", city: "Fresno", state: "CA", neighborhood: "Central Fresno",
+    lat: 36.8240, lng: -119.7965, tradition: "zen", location_type: "in_person",
+    notes: "Weekly Saturday morning at Zen Center of Fresno (9am–11am): two 25-min zazen periods with kinhin (walking meditation), dharma talk at 10am, and closing vows. Soto Zen (Central Valley Zen Foundation). Drop-in welcome; free.",
+    source_url: "https://zenfresno.org", event_url: "https://zenfresno.org/schedule",
+  },
+
+  // Fresno Buddhist Temple — Jodo Shinshu (BCA). fresnobuddhisttemple.org
+  {
+    org_id: "fresno_buddhist_temple", org_name: "Fresno Buddhist Temple",
+    title: "Sunday Meditation Class",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 45,
+    address: "2690 E. Alluvial Ave.", city: "Fresno", state: "CA", neighborhood: "Northeast Fresno",
+    lat: 36.8776, lng: -119.7590, tradition: "other", location_type: "in_person",
+    notes: "Weekly Sunday Meditation Class at Fresno Buddhist Temple (8:30–9:15am): sitting and walking meditation in the Hondo. Jodo Shinshu / Buddhist Churches of America. Open to all; donations welcome.",
+    source_url: "https://fresnobuddhisttemple.org", event_url: "https://fresnobuddhisttemple.org/buddhist-retreat-sundays-mindful-meditation-dharma-discussion/",
+  },
+  {
+    org_id: "fresno_buddhist_temple", org_name: "Fresno Buddhist Temple",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 45,
+    address: "2690 E. Alluvial Ave.", city: "Fresno", state: "CA", neighborhood: "Northeast Fresno",
+    lat: 36.8776, lng: -119.7590, tradition: "other", location_type: "hybrid",
+    notes: "Weekly Thursday Evening Meditation with Rev. Kaz at Fresno Buddhist Temple (7–7:45pm): hybrid in-person + Zoom. Email the temple for the Zoom link. Jodo Shinshu / Buddhist Churches of America. Free; donations welcome.",
+    source_url: "https://fresnobuddhisttemple.org", event_url: "https://fresnobuddhisttemple.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
