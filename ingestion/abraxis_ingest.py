@@ -74,6 +74,7 @@ from ingestion.sources import madison as madison_sources
 from ingestion.sources import connecticut as connecticut_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import omaha as omaha_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import boise as boise_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import spokane as spokane_sources
 
 log = logging.getLogger(__name__)
 
@@ -966,6 +967,33 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Madison iCal {org_id} failed: {e}")
+
+    # Spokane WA Phase 3 — Zen Center of Spokane iCal feed + recurring-only centers
+    log.info("--- Spokane WA Phase 3: Zen Center iCal feed ---")
+    for org_id, feed_cfg in spokane_sources.ICAL_FEEDS.items():
+        center = spokane_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Spokane iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Spokane iCal {org_id} failed: {e}")
+
+    # Boise ID Phase 3 — all sits seeded as recurring; no iCal feeds
+    log.info("--- Boise ID Phase 3: no iCal feeds (recurring sits only) ---")
 
     # Convert dataclasses to dicts
     dicts = []

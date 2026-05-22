@@ -4482,4 +4482,70 @@ CENTERS = {
             "throughout the year. Dana-based; open to all."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Spokane, WA — Phase 3 (heartbeat 56)
+    # -----------------------------------------------------------------------
+    "zen_center_spokane": {
+        "id": "zen_center_spokane",
+        "name": "Zen Center of Spokane",
+        "tradition": "zen",
+        "url": "https://zencenterspokane.org",
+        "address": "25 W Main Ave, Suite 200",
+        "city": "Spokane",
+        "state": "WA",
+        "zip": "99201",
+        "lat": 47.6590,
+        "lng": -117.4260,
+        "neighborhood": "Downtown Spokane",
+        "bio": (
+            "Zen Center of Spokane is a Diamond Sangha community (blending Soto "
+            "and Rinzai Zen), located in the Saranac Building, 25 W Main Ave, 2nd "
+            "floor, Downtown Spokane. Monday Morning (7–7:50 AM): two 25-min "
+            "sitting periods, kinhin, and sutra recitation. Wednesday Evening "
+            "(7:15–8:15 PM): same format. Saturday Morning (8–9:30 AM): sitting, "
+            "kinhin, sutra, and dharma reading. All sessions offered in-person "
+            "and on Zoom. Drop-in welcome."
+        ),
+    },
+    "biuc_spokane": {
+        "id": "biuc_spokane",
+        "name": "Buddhist Institute of Universal Compassion",
+        "tradition": "tibetan",
+        "url": "https://www.universalcompassion.org",
+        "address": "728 E Rich Ave",
+        "city": "Spokane",
+        "state": "WA",
+        "zip": "99207",
+        "lat": 47.6608,
+        "lng": -117.3812,
+        "neighborhood": "East Spokane",
+        "bio": (
+            "Buddhist Institute of Universal Compassion (BIUC) is a Gelug "
+            "Tibetan Buddhist center in Spokane, founded 2017 and led by "
+            "Venerable Geshe Thupten Phelgye. Located at 728 E Rich Ave. "
+            "Saturday (9:30 AM–12 PM): meditation and teachings. Sunday "
+            "(10 AM–12 PM): meditation and teachings. Both sessions offered "
+            "in-person and on Zoom (ID: 890 7744 2439). Open to all; dana-based."
+        ),
+    },
+    "padma_ling_spokane": {
+        "id": "padma_ling_spokane",
+        "name": "Chagdud Gonpa Padma Ling",
+        "tradition": "tibetan",
+        "url": "https://www.chagdudgonpa.org/centers/padma-ling",
+        "address": "1014 W 7th Ave",
+        "city": "Spokane",
+        "state": "WA",
+        "zip": "99204",
+        "lat": 47.6496,
+        "lng": -117.4273,
+        "neighborhood": "South Hill",
+        "bio": (
+            "Chagdud Gonpa Padma Ling is a Nyingma Tibetan Buddhist center in "
+            "Spokane, active since 1990. Resident Lama Inge Zangmo offers "
+            "teachings twice weekly; contact padmaling21@gmail.com or "
+            "(509) 747-1559 for current schedule. Part of the Chagdud Gonpa "
+            "Foundation."
+        ),
+    },
 }

@@ -71,6 +71,7 @@ from ingestion.sources import madison as madison_sources
 from ingestion.sources import connecticut as connecticut_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import omaha as omaha_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import boise as boise_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import spokane as spokane_sources
 
 log = logging.getLogger(__name__)
 
@@ -1097,6 +1098,35 @@ def run_madison_phase3() -> list[Event]:
     return all_events
 
 
+def run_spokane_phase3() -> list[Event]:
+    """Phase 3 Spokane WA: Zen Center of Spokane iCal feed + recurring-only centers."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in spokane_sources.ICAL_FEEDS.items():
+        center = spokane_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Spokane iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Spokane iCal feed {org_id} failed: {e}")
+
+    return all_events
+
+
 def run_providence_phase3() -> list[Event]:
     """Phase 3 Providence RI: Providence Zen Center Tockify ICS + recurring-only centers."""
     events: list[Event] = []
@@ -1180,6 +1210,7 @@ def main():
         + run_madison_phase3()
         + run_connecticut_phase3()
         + run_omaha_phase3()
+        + run_spokane_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

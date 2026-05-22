@@ -3640,6 +3640,32 @@ const SITS = [
     notes: "Weekly Tuesday evening practice at Heart of the Dharma (7pm): online/livestream only. Nyingma Tibetan Buddhism. Dana-based; open to all.",
     source_url: "https://heartofdharma.org", event_url: "https://heartofdharma.org/calendar",
   },
+
+  // ============================================================
+  // Spokane, WA — Phase 3 (heartbeat 56)
+  // ============================================================
+  // Note: Zen Center of Spokane has a live iCal feed — events seeded via abraxis_ingest.py
+  // Recurring sits seeded here: Buddhist Institute of Universal Compassion (BIUC)
+
+  // Buddhist Institute of Universal Compassion — Gelug Tibetan. universalcompassion.org
+  {
+    org_id: "biuc_spokane", org_name: "Buddhist Institute of Universal Compassion",
+    title: "Saturday Morning Meditation and Teachings",
+    days: ["Saturday"], time: { h: 9, m: 30 }, duration_min: 150,
+    address: "728 E Rich Ave", city: "Spokane", state: "WA", neighborhood: "East Spokane",
+    lat: 47.6608, lng: -117.3812, tradition: "tibetan", location_type: "hybrid",
+    notes: "Weekly Saturday morning at Buddhist Institute of Universal Compassion (9:30am–12pm): meditation and teachings. Gelug Tibetan Buddhism, led by Venerable Geshe Thupten Phelgye. In-person at 728 E Rich Ave + Zoom (ID: 890 7744 2439). Open to all; dana-based.",
+    source_url: "https://www.universalcompassion.org", event_url: "https://www.universalcompassion.org/schedule",
+  },
+  {
+    org_id: "biuc_spokane", org_name: "Buddhist Institute of Universal Compassion",
+    title: "Sunday Morning Meditation and Teachings",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "728 E Rich Ave", city: "Spokane", state: "WA", neighborhood: "East Spokane",
+    lat: 47.6608, lng: -117.3812, tradition: "tibetan", location_type: "hybrid",
+    notes: "Weekly Sunday morning at Buddhist Institute of Universal Compassion (10am–12pm): meditation and teachings. Gelug Tibetan Buddhism, led by Venerable Geshe Thupten Phelgye. In-person at 728 E Rich Ave + Zoom (ID: 890 7744 2439). Open to all; dana-based.",
+    source_url: "https://www.universalcompassion.org", event_url: "https://www.universalcompassion.org/schedule",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
