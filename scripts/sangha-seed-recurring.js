@@ -3701,6 +3701,74 @@ const SITS = [
     notes: "Weekly Thursday Evening Meditation with Rev. Kaz at Fresno Buddhist Temple (7–7:45pm): hybrid in-person + Zoom. Email the temple for the Zoom link. Jodo Shinshu / Buddhist Churches of America. Free; donations welcome.",
     source_url: "https://fresnobuddhisttemple.org", event_url: "https://fresnobuddhisttemple.org",
   },
+
+  // Asheville, NC — Phase 3 (heartbeat 58)
+  // -------------------------------------------------------------------------
+
+  // Zen Center of Asheville — Soto Zen. zcasheville.org
+  // Morning zazen: Mon/Wed/Fri 6–6:50am
+  {
+    org_id: "zen_center_asheville", org_name: "Zen Center of Asheville",
+    title: "Morning Zazen",
+    days: ["Monday", "Wednesday", "Friday"], time: { h: 6, m: 0 }, duration_min: 50,
+    address: "227 Edgewood Rd", city: "Asheville", state: "NC", neighborhood: "North Asheville",
+    lat: 35.6182, lng: -82.5564, tradition: "zen", location_type: "in_person",
+    notes: "Monday/Wednesday/Friday morning zazen at Zen Center of Asheville (6–6:50am): 40 minutes of seated meditation. Soto Zen. Drop-in welcome; free (dana accepted).",
+    source_url: "https://zcasheville.org", event_url: "https://zcasheville.org/schedule.htm",
+  },
+  // Saturday extended morning
+  {
+    org_id: "zen_center_asheville", org_name: "Zen Center of Asheville",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 6, m: 0 }, duration_min: 100,
+    address: "227 Edgewood Rd", city: "Asheville", state: "NC", neighborhood: "North Asheville",
+    lat: 35.6182, lng: -82.5564, tradition: "zen", location_type: "in_person",
+    notes: "Saturday extended zazen at Zen Center of Asheville (6–7:40am): two 40-min zazen periods with kinhin (walking meditation) and closing Heart Sutra chant. Soto Zen. Drop-in welcome; free.",
+    source_url: "https://zcasheville.org", event_url: "https://zcasheville.org/schedule.htm",
+  },
+  // Tuesday evening zazen + talk
+  {
+    org_id: "zen_center_asheville", org_name: "Zen Center of Asheville",
+    title: "Evening Zazen & Dharma Talk",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "227 Edgewood Rd", city: "Asheville", state: "NC", neighborhood: "North Asheville",
+    lat: 35.6182, lng: -82.5564, tradition: "zen", location_type: "in_person",
+    notes: "Tuesday evening at Zen Center of Asheville (7–8:30pm): 30-min zazen, then 7:30–8:30pm dharma talk and discussion. Dana $10 requested. See dharma-study page for current speaker schedule.",
+    source_url: "https://zcasheville.org", event_url: "https://zcasheville.org/schedule.htm",
+  },
+
+  // Mountain Mindfulness Sangha of Asheville — Plum Village / TNH. mountainmindfulness.org
+  {
+    org_id: "mountain_mindfulness_asheville", org_name: "Mountain Mindfulness Sangha of Asheville",
+    title: "Thursday Evening Sangha",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "227 Edgewood Road", city: "Asheville", state: "NC", neighborhood: "North Asheville",
+    lat: 35.6182, lng: -82.5564, tradition: "other", location_type: "in_person",
+    notes: "Weekly Thursday evening at Mountain Mindfulness Sangha (7–8:30pm) at Asheville Friends Meeting, 227 Edgewood Rd. Four rotating formats: 1st Thu: Heart Sutra chanting; 2nd Thu: Plum Village book reading; 3rd Thu: silent sitting and walking; 4th Thu: Five Mindfulness Trainings recitation. Plum Village / Thich Nhat Hanh tradition. Drop-in; free.",
+    source_url: "https://www.mountainmindfulness.org", event_url: "https://www.mountainmindfulness.org/weekly-meditation-schedule.html",
+  },
+
+  // Asheville Insight Meditation — Vipassana/Theravada. ashevillemeditation.com
+  {
+    org_id: "asheville_insight_meditation", org_name: "Asheville Insight Meditation",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "85 Weaverville Road, Unit 5", city: "Woodfin", state: "NC", neighborhood: "Woodfin (North Asheville metro)",
+    lat: 35.6481, lng: -82.5802, tradition: "theravada", location_type: "hybrid",
+    notes: "Thursday Evening Meditation at Asheville Insight Meditation (7–8:30pm): 30-min guided meditation, 30-min dharma talk, 30-min Q&A/discussion. In-person at 85 Weaverville Road, Unit 5, Woodfin, plus Zoom. Vipassana / Insight tradition. Drop-in; free.",
+    source_url: "https://www.ashevillemeditation.com", event_url: "https://www.ashevillemeditation.com/weekly-schedule/",
+  },
+
+  // Anattasati Magga — Soto Zen lay sangha. anattasatimagga.org
+  {
+    org_id: "anattasati_magga", org_name: "Anattasati Magga",
+    title: "Sunday Morning Service",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "32 Mineral Dust Drive", city: "Asheville", state: "NC", neighborhood: "West Asheville",
+    lat: 35.5668, lng: -82.6224, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday morning at Anattasati Magga (10am–12pm): 30-min sitting meditation, chants and recitations, and a dharma class. In-person at 32 Mineral Dust Drive (7 quiet acres, West Asheville) or Zoom. Soto Zen lay sangha. 2nd Sunday includes new-student orientation. Free; donations welcome.",
+    source_url: "https://anattasatimagga.org", event_url: "https://anattasatimagga.org/practice/meditation/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

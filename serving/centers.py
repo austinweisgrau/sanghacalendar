@@ -4593,4 +4593,90 @@ CENTERS = {
             "in-person + Zoom (email temple for link). Free; donations welcome."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Asheville, NC — Phase 3 (heartbeat 58)
+    # -----------------------------------------------------------------------
+    "zen_center_asheville": {
+        "id": "zen_center_asheville",
+        "name": "Zen Center of Asheville",
+        "tradition": "zen",
+        "url": "https://zcasheville.org",
+        "address": "227 Edgewood Rd",
+        "city": "Asheville",
+        "state": "NC",
+        "zip": "28804",
+        "lat": 35.6182,
+        "lng": -82.5564,
+        "neighborhood": "North Asheville",
+        "bio": (
+            "Zen Center of Asheville (ZCA) offers regular zazen in the Soto Zen "
+            "tradition at the Asheville Friends Meeting building. Morning zazen: "
+            "Mon/Wed/Fri 6–6:50am (40 min zazen). Saturday 6–7:40am (extended: "
+            "two zazen periods, kinhin, and Heart Sutra). Tuesday evenings: 7pm "
+            "zazen (30 min) + dharma talk and discussion until 8:30pm. New student "
+            "instruction 1st Tuesdays at 6pm by registration. Dana $10 for evenings."
+        ),
+    },
+    "mountain_mindfulness_asheville": {
+        "id": "mountain_mindfulness_asheville",
+        "name": "Mountain Mindfulness Sangha of Asheville",
+        "tradition": "other",
+        "url": "https://www.mountainmindfulness.org",
+        "address": "227 Edgewood Road",
+        "city": "Asheville",
+        "state": "NC",
+        "zip": "28804",
+        "lat": 35.6182,
+        "lng": -82.5564,
+        "neighborhood": "North Asheville",
+        "bio": (
+            "Mountain Mindfulness Sangha practices engaged Buddhism in the Plum Village "
+            "tradition of Thich Nhat Hanh. Thursday 7–8:30pm at Asheville Friends "
+            "Meeting, 227 Edgewood Rd: four rotating formats — 1st Thu: Heart Sutra "
+            "chanting and study; 2nd Thu: Plum Village book reading; 3rd Thu: silent "
+            "sitting and walking; 4th Thu: Five Mindfulness Trainings recitation. "
+            "First Saturday of month (warm season): 10–11:30am outdoor practice at "
+            "Weaverville Main Street Nature Park. Drop-in; free."
+        ),
+    },
+    "asheville_insight_meditation": {
+        "id": "asheville_insight_meditation",
+        "name": "Asheville Insight Meditation",
+        "tradition": "theravada",
+        "url": "https://www.ashevillemeditation.com",
+        "address": "85 Weaverville Road, Unit 5",
+        "city": "Woodfin",
+        "state": "NC",
+        "zip": "28804",
+        "lat": 35.6481,
+        "lng": -82.5802,
+        "neighborhood": "Woodfin (North Asheville metro)",
+        "bio": (
+            "Asheville Insight Meditation offers weekly Vipassana sits ('Dharma without "
+            "the Dogma'). Thursday Evening Meditation 7–8:30pm: 30-min guided "
+            "meditation, 30-min dharma talk with visiting teachers, and 30-min Q&A — "
+            "in-person at 85 Weaverville Road, Unit 5, Woodfin, plus Zoom. Sunday "
+            "morning sits are Zoom-only. Drop-in; free."
+        ),
+    },
+    "anattasati_magga": {
+        "id": "anattasati_magga",
+        "name": "Anattasati Magga",
+        "tradition": "zen",
+        "url": "https://anattasatimagga.org",
+        "address": "32 Mineral Dust Drive",
+        "city": "Asheville",
+        "state": "NC",
+        "zip": "28806",
+        "lat": 35.5668,
+        "lng": -82.6224,
+        "neighborhood": "West Asheville",
+        "bio": (
+            "Anattasati Magga ('Path of Non-Self') is a lay Soto Zen sangha set on "
+            "7 quiet acres in West Asheville. Sunday 10am–12pm: 30-min sitting "
+            "meditation, chants and recitations, and a dharma class — in-person or "
+            "Zoom. Second Sunday includes new-student orientation. Teacher: Sujata "
+            "(Nancy Hampton). Free; donations welcome."
+        ),
+    },
 }
