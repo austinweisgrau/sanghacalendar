@@ -4763,4 +4763,89 @@ CENTERS = {
             "Dharma: 2nd Monday monthly, 7–8:30pm. Donations welcome."
         ),
     },
+    # -------------------------------------------------------------------------
+    # Eugene, OR — Phase 3 (heartbeat 60)
+    # -------------------------------------------------------------------------
+    "buddha_eye_temple": {
+        "id": "buddha_eye_temple",
+        "name": "Buddha Eye Temple",
+        "tradition": "zen",
+        "url": "https://www.buddhaeye.org",
+        "address": "2190 Garfield St",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97405",
+        "lat": 44.0268,
+        "lng": -123.0978,
+        "neighborhood": "South Eugene",
+        "bio": (
+            "Buddha Eye Temple is a Soto Zen temple (registered Soto Zen School) in "
+            "South Eugene, founded 2002. The main public program is the Sunday morning "
+            "service: Introduction to Meditation 8:45–9:50am, then Zazen 9:00am, and "
+            "Assembly/ceremony at 10:00am. All are welcome to the intro and zazen; no "
+            "registration required. Weekday zazen at 5:00am (Sep–Jun) or 5:30am "
+            "(summer). Sesshin and retreats offered several times a year."
+        ),
+    },
+    "blue_cliff_zen_eugene": {
+        "id": "blue_cliff_zen_eugene",
+        "name": "Blue Cliff Zen Center",
+        "tradition": "zen",
+        "url": "https://www.bluecliffzen.org",
+        "address": "352 W 12th Ave",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97401",
+        "lat": 44.0477,
+        "lng": -123.0888,
+        "neighborhood": "West University / Downtown Eugene",
+        "bio": (
+            "Blue Cliff Zen Center is a Western Zen community (Soto/Rinzai hybrid) "
+            "meeting inside Everyday People Yoga studio in Eugene, led by teacher "
+            "Matt Shinkai Kane. In-person + online hybrid programs: Tuesday and "
+            "Thursday 7:00–8:00am (zazen + optional instruction), Sunday 4:30–6:00pm "
+            "(zazen + dharma discussion). Drop-in welcome; dana-based."
+        ),
+    },
+    "zen_west_eugene": {
+        "id": "zen_west_eugene",
+        "name": "Zen West Eugene",
+        "tradition": "zen",
+        "url": "https://www.zenwesteugene.org",
+        "address": "1685 W 13th Ave",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97402",
+        "lat": 44.0456,
+        "lng": -123.1172,
+        "neighborhood": "Jefferson Westside / West Eugene",
+        "bio": (
+            "Zen West Eugene is a Soto Zen community affiliated with Dharma Rain Zen "
+            "Center (Portland), led by Debra Seido Martin (transmitted Soto Zen lay "
+            "teacher). Thursday evening program (7:00–8:45pm) at UUCE (1685 W 13th "
+            "Ave): zazen, kinhin, chanting, dharma talk/discussion. Monthly zazenkai "
+            "and sesshin 4x/year. Drop-in welcome."
+        ),
+    },
+    "river_wisdom_insight": {
+        "id": "river_wisdom_insight",
+        "name": "River Wisdom Insight Meditation Community",
+        "tradition": "theravada",
+        "url": "https://riverwisdominsight.com",
+        "address": "1685 W 13th Ave",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97402",
+        "lat": 44.0456,
+        "lng": -123.1172,
+        "neighborhood": "Jefferson Westside / West Eugene",
+        "bio": (
+            "River Wisdom Insight Meditation Community offers Insight Meditation in "
+            "the Theravada tradition, led by Linda Rose (student of Howie Cohn / "
+            "Spirit Rock lineage). 1st Saturday of month: 10:30am–12pm at UUCE "
+            "(1685 W 13th Ave) — sitting, dharma talk, discussion. 3rd Saturday: "
+            "10:30–11:30am at Buddha Eye Temple (2190 Garfield St). Drop-in welcome; "
+            "dana-based."
+        ),
+    },
 }

@@ -78,6 +78,7 @@ from ingestion.sources import spokane as spokane_sources
 from ingestion.sources import fresno as fresno_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import asheville as asheville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import burlington as burlington_sources
+from ingestion.sources import eugene as eugene_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

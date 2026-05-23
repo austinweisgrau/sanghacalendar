@@ -3819,6 +3819,88 @@ const SITS = [
     notes: "Burlington Dharma Collective Monday Night Dharma (2nd Monday monthly, 7–8:30pm) at Outright VT (241 N Winooski Ave). Vajrayana dharma discussion and practice. Led by Zac Ispa-Landa (Bhumisparsha / Lama Rod Owens lineage). Open to all; donations welcome.",
     source_url: "https://www.burlingtondharmacollective.com", event_url: "https://www.burlingtondharmacollective.com",
   },
+
+  // -------------------------------------------------------------------------
+  // Eugene, OR — Phase 3 (heartbeat 60)
+  // -------------------------------------------------------------------------
+
+  // Buddha Eye Temple — Soto Zen (Japanese). buddhaeye.org
+  // Sunday public program: Intro to Meditation 8:45am, Zazen 9am, Assembly 10am
+  {
+    org_id: "buddha_eye_temple", org_name: "Buddha Eye Temple",
+    title: "Sunday Morning Program",
+    days: ["Sunday"], time: { h: 8, m: 45 }, duration_min: 105,
+    address: "2190 Garfield St", city: "Eugene", state: "OR", neighborhood: "South Eugene",
+    lat: 44.0268, lng: -123.0978, tradition: "zen", location_type: "in-person",
+    notes: "Buddha Eye Temple Sunday Morning Program (8:45am–~10:30am): Introduction to Meditation 8:45–9:50am (open to all levels), Zazen 9:00am, Assembly/ceremony 10:00am. Soto Zen (registered Soto Zen School). Drop-in welcome; no registration needed.",
+    source_url: "https://www.buddhaeye.org", event_url: "https://www.buddhaeye.org/schedule/",
+  },
+
+  // Blue Cliff Zen Center — Western Zen (Soto/Rinzai). bluecliffzen.org
+  // Tuesday 7–8am in-person + online
+  {
+    org_id: "blue_cliff_zen_eugene", org_name: "Blue Cliff Zen Center",
+    title: "Morning Zazen",
+    days: ["Tuesday"], time: { h: 7, m: 0 }, duration_min: 60,
+    address: "352 W 12th Ave", city: "Eugene", state: "OR", neighborhood: "West University / Downtown Eugene",
+    lat: 44.0477, lng: -123.0888, tradition: "zen", location_type: "hybrid",
+    notes: "Blue Cliff Zen Center Tuesday morning zazen (7–8am) at Everyday People Yoga studio (352 W 12th Ave). In-person + online hybrid. Teacher: Matt Shinkai Kane. Drop-in welcome; dana-based.",
+    source_url: "https://www.bluecliffzen.org", event_url: "https://www.bluecliffzen.org",
+  },
+  // Thursday 7–8am in-person + online
+  {
+    org_id: "blue_cliff_zen_eugene", org_name: "Blue Cliff Zen Center",
+    title: "Morning Zazen",
+    days: ["Thursday"], time: { h: 7, m: 0 }, duration_min: 60,
+    address: "352 W 12th Ave", city: "Eugene", state: "OR", neighborhood: "West University / Downtown Eugene",
+    lat: 44.0477, lng: -123.0888, tradition: "zen", location_type: "hybrid",
+    notes: "Blue Cliff Zen Center Thursday morning zazen (7–8am) at Everyday People Yoga studio (352 W 12th Ave). In-person + online hybrid. Teacher: Matt Shinkai Kane. Drop-in welcome; dana-based.",
+    source_url: "https://www.bluecliffzen.org", event_url: "https://www.bluecliffzen.org",
+  },
+  // Sunday 4:30–6pm in-person + online
+  {
+    org_id: "blue_cliff_zen_eugene", org_name: "Blue Cliff Zen Center",
+    title: "Sunday Evening Sitting",
+    days: ["Sunday"], time: { h: 16, m: 30 }, duration_min: 90,
+    address: "352 W 12th Ave", city: "Eugene", state: "OR", neighborhood: "West University / Downtown Eugene",
+    lat: 44.0477, lng: -123.0888, tradition: "zen", location_type: "hybrid",
+    notes: "Blue Cliff Zen Center Sunday evening sitting (4:30–6pm) at Everyday People Yoga studio (352 W 12th Ave). Zazen + dharma discussion. In-person + online hybrid. Teacher: Matt Shinkai Kane. Drop-in welcome; dana-based.",
+    source_url: "https://www.bluecliffzen.org", event_url: "https://www.bluecliffzen.org",
+  },
+
+  // Zen West Eugene — Soto Zen (Dharma Rain affiliate). zenwesteugene.org
+  // Thursday evening 7–8:45pm at UUCE
+  {
+    org_id: "zen_west_eugene", org_name: "Zen West Eugene",
+    title: "Thursday Evening Zazen",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 105,
+    address: "1685 W 13th Ave", city: "Eugene", state: "OR", neighborhood: "Jefferson Westside / West Eugene",
+    lat: 44.0456, lng: -123.1172, tradition: "zen", location_type: "in-person",
+    notes: "Zen West Eugene Thursday evening program (7:00–8:45pm) at UUCE (1685 W 13th Ave). Zazen, kinhin (walking meditation), zazen, chanting/recitation, dharma talk/discussion. Soto Zen; Dharma Rain affiliate, led by Debra Seido Martin. Drop-in welcome.",
+    source_url: "https://www.zenwesteugene.org", event_url: "https://www.zenwesteugene.org/calendar",
+  },
+
+  // River Wisdom Insight Meditation Community — Theravada/Insight. riverwisdominsight.com
+  // 1st Saturday 10:30am–12pm at UUCE
+  {
+    org_id: "river_wisdom_insight", org_name: "River Wisdom Insight Meditation Community",
+    title: "Insight Meditation Sit & Dharma Talk",
+    days: ["Saturday"], week_of_month: 1, time: { h: 10, m: 30 }, duration_min: 90,
+    address: "1685 W 13th Ave", city: "Eugene", state: "OR", neighborhood: "Jefferson Westside / West Eugene",
+    lat: 44.0456, lng: -123.1172, tradition: "theravada", location_type: "in-person",
+    notes: "River Wisdom Insight Meditation Community 1st Saturday (10:30am–12pm) at UUCE (1685 W 13th Ave). Sitting meditation, dharma talk, and discussion. Led by Linda Rose (Spirit Rock / Howie Cohn lineage). Drop-in welcome; dana-based.",
+    source_url: "https://riverwisdominsight.com", event_url: "https://riverwisdominsight.com/programs/",
+  },
+  // 3rd Saturday 10:30–11:30am at Buddha Eye Temple
+  {
+    org_id: "river_wisdom_insight", org_name: "River Wisdom Insight Meditation Community",
+    title: "Insight Meditation Sit",
+    days: ["Saturday"], week_of_month: 3, time: { h: 10, m: 30 }, duration_min: 60,
+    address: "2190 Garfield St", city: "Eugene", state: "OR", neighborhood: "South Eugene",
+    lat: 44.0268, lng: -123.0978, tradition: "theravada", location_type: "in-person",
+    notes: "River Wisdom Insight Meditation Community 3rd Saturday (10:30–11:30am) at Buddha Eye Temple (2190 Garfield St, Eugene). Sitting meditation. Led by Linda Rose (Spirit Rock / Howie Cohn lineage). Drop-in welcome; dana-based.",
+    source_url: "https://riverwisdominsight.com", event_url: "https://riverwisdominsight.com/programs/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
