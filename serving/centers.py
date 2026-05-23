@@ -4679,4 +4679,88 @@ CENTERS = {
             "(Nancy Hampton). Free; donations welcome."
         ),
     },
+    "burlington_shambhala": {
+        "id": "burlington_shambhala",
+        "name": "Burlington Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://burlington.shambhala.org",
+        "address": "187 S Winooski Ave",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05401",
+        "lat": 44.4710,
+        "lng": -73.2135,
+        "neighborhood": "Downtown Burlington",
+        "bio": (
+            "Burlington Shambhala Meditation Center, founded 1972, offers two weekly "
+            "drop-in programs in the Tibetan Kagyu/Shambhala tradition. Sunday Open "
+            "Meditation (9am–12pm): sitting practice with instruction available "
+            "10am–12pm. Mid-Week Dharma (Wednesday 5:30–7pm): weekly drop-in with "
+            "meditation, instruction, and dharma discussion. Located in the Hood Plant "
+            "building at S Winooski Ave and King St, Downtown Burlington."
+        ),
+    },
+    "vermont_zen_center": {
+        "id": "vermont_zen_center",
+        "name": "Vermont Zen Center",
+        "tradition": "zen",
+        "url": "https://vermontzen.org",
+        "address": "480 Thomas Road",
+        "city": "Shelburne",
+        "state": "VT",
+        "zip": "05482",
+        "lat": 44.3910,
+        "lng": -73.2210,
+        "neighborhood": "Shelburne (Burlington metro)",
+        "bio": (
+            "Vermont Zen Center (founded 1988) is a Kapleau-lineage Soto/Rinzai Zen "
+            "community in Shelburne, 8 miles south of Burlington, now led by Sensei "
+            "Bodhi Murillo. Weekday morning zazen (Mon–Fri 6–7am, Zoom) is open to "
+            "those who have attended an introductory workshop. In-person evening and "
+            "Sunday sits are for members and trial members. First Monday monthly: "
+            "'Finding Your Seat' orientation for newcomers. Sesshin and retreats "
+            "offered throughout the year."
+        ),
+    },
+    "burlington_buddhist_sangha": {
+        "id": "burlington_buddhist_sangha",
+        "name": "Burlington Buddhist Sangha",
+        "tradition": "theravada",
+        "url": "https://burlingtonbuddhist.org",
+        "address": "187 S Winooski Ave",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05401",
+        "lat": 44.4710,
+        "lng": -73.2135,
+        "neighborhood": "Downtown Burlington",
+        "bio": (
+            "Burlington Buddhist Sangha is a peer-led Insight Meditation community "
+            "practicing in the Theravada tradition. 1st, 2nd, and 3rd Sundays "
+            "(9:30–11:30am): sitting meditation, dharma talk, and discussion at the "
+            "Burlington Shambhala Center (187 S Winooski Ave). 4th Sundays are "
+            "online-only (Zoom). Dana-based; free. Beginners are welcome to monthly "
+            "intro sessions before joining regular sits."
+        ),
+    },
+    "burlington_dharma_collective": {
+        "id": "burlington_dharma_collective",
+        "name": "Burlington Dharma Collective",
+        "tradition": "tibetan",
+        "url": "https://www.burlingtondharmacollective.com",
+        "address": "241 N Winooski Ave",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05401",
+        "lat": 44.4777,
+        "lng": -73.2126,
+        "neighborhood": "Old North End Burlington",
+        "bio": (
+            "Burlington Dharma Collective is a liberatory Vajrayana community (founded "
+            "~2023) led by Zac Ispa-Landa, a student of Lama Rod Owens "
+            "(Bhumisparsha lineage). Meets at Outright VT (241 N Winooski Ave). "
+            "Weekly Meditation: Friday 8–8:45am, fully open drop-in. Monday Night "
+            "Dharma: 2nd Monday monthly, 7–8:30pm. Donations welcome."
+        ),
+    },
 }

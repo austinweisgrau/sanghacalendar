@@ -3769,6 +3769,56 @@ const SITS = [
     notes: "Sunday morning at Anattasati Magga (10am–12pm): 30-min sitting meditation, chants and recitations, and a dharma class. In-person at 32 Mineral Dust Drive (7 quiet acres, West Asheville) or Zoom. Soto Zen lay sangha. 2nd Sunday includes new-student orientation. Free; donations welcome.",
     source_url: "https://anattasatimagga.org", event_url: "https://anattasatimagga.org/practice/meditation/",
   },
+
+  // Burlington Buddhist Sangha — Insight/Theravada. burlingtonbuddhist.org
+  // 1st, 2nd, 3rd Sundays in-person; 4th Sunday Zoom-only (not seeded)
+  {
+    org_id: "burlington_buddhist_sangha", org_name: "Burlington Buddhist Sangha",
+    title: "Sunday Sit & Dharma Talk",
+    days: ["Sunday"], week_of_month: 1, time: { h: 9, m: 30 }, duration_min: 120,
+    address: "187 S Winooski Ave", city: "Burlington", state: "VT", neighborhood: "Downtown Burlington",
+    lat: 44.4710, lng: -73.2135, tradition: "theravada", location_type: "in-person",
+    notes: "Burlington Buddhist Sangha 1st Sunday (9:30–11:30am): sitting meditation, dharma talk, and discussion at the Burlington Shambhala Center (187 S Winooski Ave). Peer-led Insight Meditation community. Drop-in for experienced practitioners; dana-based, free.",
+    source_url: "https://burlingtonbuddhist.org", event_url: "https://burlingtonbuddhist.org",
+  },
+  {
+    org_id: "burlington_buddhist_sangha", org_name: "Burlington Buddhist Sangha",
+    title: "Sunday Sit & Dharma Talk",
+    days: ["Sunday"], week_of_month: 2, time: { h: 9, m: 30 }, duration_min: 120,
+    address: "187 S Winooski Ave", city: "Burlington", state: "VT", neighborhood: "Downtown Burlington",
+    lat: 44.4710, lng: -73.2135, tradition: "theravada", location_type: "in-person",
+    notes: "Burlington Buddhist Sangha 2nd Sunday (9:30–11:30am): sitting meditation, dharma talk, and discussion at the Burlington Shambhala Center (187 S Winooski Ave). Peer-led Insight Meditation community. Drop-in for experienced practitioners; dana-based, free.",
+    source_url: "https://burlingtonbuddhist.org", event_url: "https://burlingtonbuddhist.org",
+  },
+  {
+    org_id: "burlington_buddhist_sangha", org_name: "Burlington Buddhist Sangha",
+    title: "Sunday Sit & Dharma Talk",
+    days: ["Sunday"], week_of_month: 3, time: { h: 9, m: 30 }, duration_min: 120,
+    address: "187 S Winooski Ave", city: "Burlington", state: "VT", neighborhood: "Downtown Burlington",
+    lat: 44.4710, lng: -73.2135, tradition: "theravada", location_type: "in-person",
+    notes: "Burlington Buddhist Sangha 3rd Sunday (9:30–11:30am): sitting meditation, dharma talk, and discussion at the Burlington Shambhala Center (187 S Winooski Ave). Peer-led Insight Meditation community. Drop-in for experienced practitioners; dana-based, free.",
+    source_url: "https://burlingtonbuddhist.org", event_url: "https://burlingtonbuddhist.org",
+  },
+
+  // Burlington Dharma Collective — Vajrayana (Lama Rod Owens / Bhumisparsha). burlingtondharmacollective.com
+  {
+    org_id: "burlington_dharma_collective", org_name: "Burlington Dharma Collective",
+    title: "Weekly Meditation",
+    days: ["Friday"], time: { h: 8, m: 0 }, duration_min: 45,
+    address: "241 N Winooski Ave", city: "Burlington", state: "VT", neighborhood: "Old North End Burlington",
+    lat: 44.4777, lng: -73.2126, tradition: "tibetan", location_type: "in-person",
+    notes: "Burlington Dharma Collective weekly meditation (Friday 8–8:45am) at Outright VT (241 N Winooski Ave, side door from driveway). Vajrayana community led by Zac Ispa-Landa (student of Lama Rod Owens, Bhumisparsha lineage). Fully open drop-in; donations welcome.",
+    source_url: "https://www.burlingtondharmacollective.com", event_url: "https://www.burlingtondharmacollective.com",
+  },
+  {
+    org_id: "burlington_dharma_collective", org_name: "Burlington Dharma Collective",
+    title: "Monday Night Dharma",
+    days: ["Monday"], week_of_month: 2, time: { h: 19, m: 0 }, duration_min: 90,
+    address: "241 N Winooski Ave", city: "Burlington", state: "VT", neighborhood: "Old North End Burlington",
+    lat: 44.4777, lng: -73.2126, tradition: "tibetan", location_type: "in-person",
+    notes: "Burlington Dharma Collective Monday Night Dharma (2nd Monday monthly, 7–8:30pm) at Outright VT (241 N Winooski Ave). Vajrayana dharma discussion and practice. Led by Zac Ispa-Landa (Bhumisparsha / Lama Rod Owens lineage). Open to all; donations welcome.",
+    source_url: "https://www.burlingtondharmacollective.com", event_url: "https://www.burlingtondharmacollective.com",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

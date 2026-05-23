@@ -74,6 +74,7 @@ from ingestion.sources import boise as boise_sources  # noqa: F401 (no live feed
 from ingestion.sources import spokane as spokane_sources
 from ingestion.sources import fresno as fresno_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import asheville as asheville_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import burlington as burlington_sources
 
 log = logging.getLogger(__name__)
 
@@ -1129,6 +1130,36 @@ def run_spokane_phase3() -> list[Event]:
     return all_events
 
 
+def run_burlington_phase3() -> list[Event]:
+    """Phase 3 Burlington VT: Shambhala iCal + Vermont Zen Center Tockify + recurring-only centers."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in burlington_sources.ICAL_FEEDS.items():
+        center = burlington_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Burlington iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Burlington iCal feed {org_id} failed: {e}")
+
+    # Burlington Buddhist Sangha + Burlington Dharma Collective — seeded via sangha-seed-recurring.js
+    return all_events
+
+
 def run_providence_phase3() -> list[Event]:
     """Phase 3 Providence RI: Providence Zen Center Tockify ICS + recurring-only centers."""
     events: list[Event] = []
@@ -1213,6 +1244,7 @@ def main():
         + run_connecticut_phase3()
         + run_omaha_phase3()
         + run_spokane_phase3()
+        + run_burlington_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

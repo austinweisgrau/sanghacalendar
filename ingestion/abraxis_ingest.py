@@ -77,6 +77,7 @@ from ingestion.sources import boise as boise_sources  # noqa: F401 (no live feed
 from ingestion.sources import spokane as spokane_sources
 from ingestion.sources import fresno as fresno_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import asheville as asheville_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import burlington as burlington_sources
 
 log = logging.getLogger(__name__)
 
@@ -996,6 +997,33 @@ def main():
 
     # Boise ID Phase 3 — all sits seeded as recurring; no iCal feeds
     log.info("--- Boise ID Phase 3: no iCal feeds (recurring sits only) ---")
+
+    # Burlington VT Phase 3 — Shambhala iCal + Vermont Zen Center Tockify + recurring-only centers
+    log.info("--- Burlington VT Phase 3: Shambhala iCal + Vermont Zen Center Tockify ---")
+    for org_id, feed_cfg in burlington_sources.ICAL_FEEDS.items():
+        center = burlington_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Burlington iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Burlington iCal {org_id} failed: {e}")
+
+    # Burlington Buddhist Sangha + Burlington Dharma Collective — seeded via sangha-seed-recurring.js
+    log.info("--- Burlington VT: Burlington Buddhist Sangha + Dharma Collective (recurring sits only) ---")
 
     # Convert dataclasses to dicts
     dicts = []
