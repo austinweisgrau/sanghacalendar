@@ -76,6 +76,7 @@ from ingestion.sources import fresno as fresno_sources  # noqa: F401 (no live fe
 from ingestion.sources import asheville as asheville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import burlington as burlington_sources
 from ingestion.sources import eugene as eugene_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import santa_cruz as santa_cruz_sources
 
 log = logging.getLogger(__name__)
 
@@ -1161,6 +1162,36 @@ def run_burlington_phase3() -> list[Event]:
     return all_events
 
 
+def run_santa_cruz_phase3() -> list[Event]:
+    """Phase 3 Santa Cruz CA: Ocean Gate Zen Tockify ICS + recurring-only centers."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in santa_cruz_sources.ICAL_FEEDS.items():
+        center = santa_cruz_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Santa Cruz iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Santa Cruz iCal feed {org_id} failed: {e}")
+
+    # SCZC, Insight Santa Cruz, Land of Medicine Buddha — seeded via sangha-seed-recurring.js
+    return all_events
+
+
 def run_providence_phase3() -> list[Event]:
     """Phase 3 Providence RI: Providence Zen Center Tockify ICS + recurring-only centers."""
     events: list[Event] = []
@@ -1246,6 +1277,7 @@ def main():
         + run_omaha_phase3()
         + run_spokane_phase3()
         + run_burlington_phase3()
+        + run_santa_cruz_phase3()
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

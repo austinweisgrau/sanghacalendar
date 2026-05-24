@@ -4848,4 +4848,90 @@ CENTERS = {
             "dana-based."
         ),
     },
+    # --- Santa Cruz, CA ---
+    "ocean_gate_zen": {
+        "id": "ocean_gate_zen",
+        "name": "Ocean Gate Zen Center",
+        "tradition": "zen",
+        "url": "https://oceangatezen.org",
+        "address": "920 41st Ave Suite F",
+        "city": "Santa Cruz",
+        "state": "CA",
+        "zip": "95062",
+        "lat": 36.9719,
+        "lng": -121.9920,
+        "neighborhood": "Opal Cliffs / 41st Ave District",
+        "bio": (
+            "Ocean Gate Zen Center is a Soto Zen community founded ~2021, led by "
+            "Eikei Susan O'Brien (transmitted Soto teacher, dharma successor of "
+            "Shohaku Okumura). Located at 920 41st Ave Suite F (enter from back "
+            "parking lot). Public programs: Tue/Thu morning zazen 6:45–8:00am "
+            "(in-person + Zoom); Fri morning zazen 9:00–9:40am; Thu evening 6:00pm "
+            "zazen + dharma Q&A (in-person + Zoom); Sat 9:00am 'Come As You Are' "
+            "sit + dharma talk (in-person). Drop-in welcome."
+        ),
+    },
+    "sczc": {
+        "id": "sczc",
+        "name": "Santa Cruz Zen Center",
+        "tradition": "zen",
+        "url": "https://sczc.org",
+        "address": "113 School St",
+        "city": "Santa Cruz",
+        "state": "CA",
+        "zip": "95060",
+        "lat": 36.9783,
+        "lng": -122.0278,
+        "neighborhood": "Downtown Santa Cruz",
+        "bio": (
+            "Santa Cruz Zen Center (SCZC, formally Jorinzan Gyokuon-ji) is the oldest "
+            "and largest Zen center in Santa Cruz, founded 1970 in the Soto Zen "
+            "lineage (SZBA member). Daily zazen schedule: Mon–Fri 6:00am and 6:00pm "
+            "(in-person + Zoom); Wednesday evening 6:30pm kinhin + dharma talk; "
+            "Saturday 8:30am zazen; Sunday 6:00pm zazen. Introduction to Zen "
+            "typically 3rd Saturday 1–2pm. Sesshin and retreats throughout the year. "
+            "Drop-in welcome."
+        ),
+    },
+    "insight_santa_cruz": {
+        "id": "insight_santa_cruz",
+        "name": "Insight Santa Cruz",
+        "tradition": "theravada",
+        "url": "https://www.insightsantacruz.org",
+        "address": "740 Front Street, Suite 240",
+        "city": "Santa Cruz",
+        "state": "CA",
+        "zip": "95060",
+        "lat": 36.9742,
+        "lng": -122.0308,
+        "neighborhood": "Downtown Santa Cruz",
+        "bio": (
+            "Insight Santa Cruz is a Vipassana/Insight Meditation community in "
+            "downtown Santa Cruz (740 Front St, Suite 240). Regular in-person/hybrid "
+            "public sits: Sunday 9:00am volunteer-led sit; Tuesday 12:00pm "
+            "All-Community Sit with teacher; Wednesday 6:00pm All-Community Sit; "
+            "4th Tuesday 7pm Rainbow Sangha (LGBTQ+ inclusive). Dana-based; all welcome."
+        ),
+    },
+    "land_of_medicine_buddha": {
+        "id": "land_of_medicine_buddha",
+        "name": "Land of Medicine Buddha",
+        "tradition": "tibetan",
+        "url": "https://www.landofmedicinebuddha.org",
+        "address": "5800 Prescott Rd",
+        "city": "Soquel",
+        "state": "CA",
+        "zip": "95073",
+        "lat": 37.0061,
+        "lng": -121.9497,
+        "neighborhood": "Santa Cruz Mountains / Soquel Hills",
+        "bio": (
+            "Land of Medicine Buddha (LMB) is an FPMT/Gelug Tibetan Buddhist retreat "
+            "and study center in the hills above Soquel, near Santa Cruz. The main "
+            "public sit is the weekly Sunday Drop-In Meditation (9:00–10:00am) at the "
+            "Gompa, led by Ven. Yangchen — suitable for all levels, no registration "
+            "required. Online daily Zoom meditation sessions also available. Retreats "
+            "and teachings offered throughout the year."
+        ),
+    },
 }

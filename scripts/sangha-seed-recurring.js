@@ -3901,6 +3901,96 @@ const SITS = [
     notes: "River Wisdom Insight Meditation Community 3rd Saturday (10:30–11:30am) at Buddha Eye Temple (2190 Garfield St, Eugene). Sitting meditation. Led by Linda Rose (Spirit Rock / Howie Cohn lineage). Drop-in welcome; dana-based.",
     source_url: "https://riverwisdominsight.com", event_url: "https://riverwisdominsight.com/programs/",
   },
+
+  // ============================================================
+  // Santa Cruz, CA — Phase 3 (heartbeat 61)
+  // ============================================================
+
+  // Santa Cruz Zen Center (SCZC) — Soto Zen (SZBA). sczc.org
+  // Mon–Fri 6am morning zazen (hybrid)
+  {
+    org_id: "sczc", org_name: "Santa Cruz Zen Center",
+    title: "Morning Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], time: { h: 6, m: 0 }, duration_min: 40,
+    address: "113 School St", city: "Santa Cruz", state: "CA", neighborhood: "Downtown Santa Cruz",
+    lat: 36.9783, lng: -122.0278, tradition: "zen", location_type: "hybrid",
+    notes: "Santa Cruz Zen Center weekday morning zazen (6:00–6:40am) at 113 School St, Santa Cruz. Zazen followed by morning service at 6:40am. In-person + Zoom hybrid. Founded 1970, Soto Zen (SZBA). Drop-in welcome.",
+    source_url: "https://sczc.org", event_url: "https://sczc.org/zazen-schedule",
+  },
+  // Wednesday evening dharma program (hybrid)
+  {
+    org_id: "sczc", org_name: "Santa Cruz Zen Center",
+    title: "Wednesday Evening Dharma Program",
+    days: ["Wednesday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "113 School St", city: "Santa Cruz", state: "CA", neighborhood: "Downtown Santa Cruz",
+    lat: 36.9783, lng: -122.0278, tradition: "zen", location_type: "hybrid",
+    notes: "Santa Cruz Zen Center Wednesday evening program (6:30–7:30pm): kinhin (walking meditation) at 6:30pm, dharma lecture and discussion at 6:40pm. In-person + Zoom hybrid. Drop-in welcome.",
+    source_url: "https://sczc.org", event_url: "https://sczc.org/zazen-schedule",
+  },
+  // Saturday 8:30am zazen (hybrid)
+  {
+    org_id: "sczc", org_name: "Santa Cruz Zen Center",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 8, m: 30 }, duration_min: 40,
+    address: "113 School St", city: "Santa Cruz", state: "CA", neighborhood: "Downtown Santa Cruz",
+    lat: 36.9783, lng: -122.0278, tradition: "zen", location_type: "hybrid",
+    notes: "Santa Cruz Zen Center Saturday morning zazen (8:30–9:10am) at 113 School St, Santa Cruz. In-person + Zoom hybrid. Drop-in welcome; no registration needed.",
+    source_url: "https://sczc.org", event_url: "https://sczc.org/zazen-schedule",
+  },
+  // Sunday 6pm zazen (hybrid)
+  {
+    org_id: "sczc", org_name: "Santa Cruz Zen Center",
+    title: "Sunday Evening Zazen",
+    days: ["Sunday"], time: { h: 18, m: 0 }, duration_min: 40,
+    address: "113 School St", city: "Santa Cruz", state: "CA", neighborhood: "Downtown Santa Cruz",
+    lat: 36.9783, lng: -122.0278, tradition: "zen", location_type: "hybrid",
+    notes: "Santa Cruz Zen Center Sunday evening zazen (6:00–6:40pm) at 113 School St, Santa Cruz. In-person + Zoom hybrid. No service follows. Drop-in welcome.",
+    source_url: "https://sczc.org", event_url: "https://sczc.org/zazen-schedule",
+  },
+
+  // Insight Santa Cruz — Insight/Vipassana. insightsantacruz.org
+  // Sunday 9am volunteer-led sit (hybrid)
+  {
+    org_id: "insight_santa_cruz", org_name: "Insight Santa Cruz",
+    title: "Sunday Morning Sit",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 45,
+    address: "740 Front Street, Suite 240", city: "Santa Cruz", state: "CA", neighborhood: "Downtown Santa Cruz",
+    lat: 36.9742, lng: -122.0308, tradition: "theravada", location_type: "hybrid",
+    notes: "Insight Santa Cruz Sunday 9:00–9:45am volunteer-led sitting meditation with short reading. In-center (740 Front St, Suite 240) + online hybrid. Drop-in welcome; dana-based.",
+    source_url: "https://www.insightsantacruz.org", event_url: "https://www.insightsantacruz.org/practice/",
+  },
+  // Tuesday 12pm All-Community Sit with teacher (hybrid)
+  {
+    org_id: "insight_santa_cruz", org_name: "Insight Santa Cruz",
+    title: "Tuesday Community Sit",
+    days: ["Tuesday"], time: { h: 12, m: 0 }, duration_min: 60,
+    address: "740 Front Street, Suite 240", city: "Santa Cruz", state: "CA", neighborhood: "Downtown Santa Cruz",
+    lat: 36.9742, lng: -122.0308, tradition: "theravada", location_type: "hybrid",
+    notes: "Insight Santa Cruz Tuesday 12:00–1:00pm All-Community Sit with teacher (in-center + online hybrid). Vipassana/Insight Meditation; drop-in welcome; dana-based.",
+    source_url: "https://www.insightsantacruz.org", event_url: "https://www.insightsantacruz.org/practice/",
+  },
+  // Wednesday 6pm All-Community Sit (hybrid)
+  {
+    org_id: "insight_santa_cruz", org_name: "Insight Santa Cruz",
+    title: "Wednesday Evening Community Sit",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 75,
+    address: "740 Front Street, Suite 240", city: "Santa Cruz", state: "CA", neighborhood: "Downtown Santa Cruz",
+    lat: 36.9742, lng: -122.0308, tradition: "theravada", location_type: "hybrid",
+    notes: "Insight Santa Cruz Wednesday 6:00–7:15pm All-Community Sit (in-center + online hybrid). Vipassana/Insight Meditation; drop-in welcome; dana-based.",
+    source_url: "https://www.insightsantacruz.org", event_url: "https://www.insightsantacruz.org/practice/",
+  },
+
+  // Land of Medicine Buddha — FPMT/Gelug Tibetan. landofmedicinebuddha.org
+  // Sunday 9am Drop-In Meditation (in-person at Gompa)
+  {
+    org_id: "land_of_medicine_buddha", org_name: "Land of Medicine Buddha",
+    title: "Sunday Drop-In Meditation",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 60,
+    address: "5800 Prescott Rd", city: "Soquel", state: "CA", neighborhood: "Santa Cruz Mountains / Soquel Hills",
+    lat: 37.0061, lng: -121.9497, tradition: "tibetan", location_type: "in-person",
+    notes: "Land of Medicine Buddha Sunday Drop-In Meditation (9:00–10:00am) at the Gompa, 5800 Prescott Rd, Soquel. Led by Ven. Yangchen. Sitting and walking meditation; suitable for all levels. No registration required. FPMT/Gelug Tibetan Buddhist center.",
+    source_url: "https://www.landofmedicinebuddha.org", event_url: "https://www.landofmedicinebuddha.org/programs/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

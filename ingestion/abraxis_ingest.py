@@ -79,6 +79,7 @@ from ingestion.sources import fresno as fresno_sources  # noqa: F401 (no live fe
 from ingestion.sources import asheville as asheville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import burlington as burlington_sources
 from ingestion.sources import eugene as eugene_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import santa_cruz as santa_cruz_sources
 
 log = logging.getLogger(__name__)
 
@@ -1025,6 +1026,33 @@ def main():
 
     # Burlington Buddhist Sangha + Burlington Dharma Collective — seeded via sangha-seed-recurring.js
     log.info("--- Burlington VT: Burlington Buddhist Sangha + Dharma Collective (recurring sits only) ---")
+
+    # Santa Cruz CA Phase 3 — Ocean Gate Zen Tockify ICS + recurring-only centers
+    log.info("--- Santa Cruz CA Phase 3: Ocean Gate Zen Tockify ICS ---")
+    for org_id, feed_cfg in santa_cruz_sources.ICAL_FEEDS.items():
+        center = santa_cruz_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Santa Cruz iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Santa Cruz iCal {org_id} failed: {e}")
+
+    # SCZC, Insight Santa Cruz, Land of Medicine Buddha — seeded via sangha-seed-recurring.js
+    log.info("--- Santa Cruz CA: SCZC + Insight SC + Land of Medicine Buddha (recurring sits only) ---")
 
     # Convert dataclasses to dicts
     dicts = []
