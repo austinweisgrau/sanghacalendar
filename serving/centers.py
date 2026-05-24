@@ -4934,4 +4934,70 @@ CENTERS = {
             "and teachings offered throughout the year."
         ),
     },
+    # -------------------------------------------------------------------------
+    # Wichita, KS — Phase 3 (heartbeat 62)
+    # -------------------------------------------------------------------------
+    "southwind_sangha": {
+        "id": "southwind_sangha",
+        "name": "Southwind Sangha",
+        "tradition": "zen",
+        "url": "https://southwindsangha.org",
+        "address": "5620 E 21st St N",
+        "city": "Wichita",
+        "state": "KS",
+        "zip": "67208",
+        "lat": 37.7220,
+        "lng": -97.2520,
+        "neighborhood": "Northeast Wichita",
+        "bio": (
+            "Southwind Sangha is a Soto Zen Buddhist community (Soto Zen Buddhist "
+            "Association / SZBA member) meeting at Pine Valley Christian Church in "
+            "northeast Wichita. Regular schedule: Sunday 9:00–10:30am (zazen, kinhin, "
+            "Heart Sutra chanting) and Wednesday 7:00–8:00pm sits. Third Saturday of "
+            "each month: 8:00am–12:00pm silent half-day retreat. Drop-in welcome. "
+            "Contact via Facebook or harold.sanki@gmail.com for Zoom link."
+        ),
+    },
+    "wichita_ktc": {
+        "id": "wichita_ktc",
+        "name": "Wichita KTC",
+        "tradition": "tibetan",
+        "url": "https://wichitaktc.org",
+        "address": "425 S Yale Ave",
+        "city": "Wichita",
+        "state": "KS",
+        "zip": "67218",
+        "lat": 37.6810,
+        "lng": -97.2680,
+        "neighborhood": "East Wichita",
+        "bio": (
+            "Wichita KTC (Karma Thegsum Chöling) is a Tibetan Buddhist meditation "
+            "center in the Karma Kagyu lineage. Sunday program 10:00am–11:45am: "
+            "1st and 3rd Sundays feature the Chenrezik Sadhana (compassion practice, "
+            "sitting meditation, dharma talk); 2nd and 4th Sundays offer explicit "
+            "sitting meditation followed by discussion and book study. All are welcome. "
+            "Contact: ktcwichita@yahoo.com."
+        ),
+    },
+    "dmck": {
+        "id": "dmck",
+        "name": "Dhammakaya Meditation Center Kansas",
+        "tradition": "theravada",
+        "url": "https://www.meditationkansas.org",
+        "address": "1650 S Water St",
+        "city": "Wichita",
+        "state": "KS",
+        "zip": "67213",
+        "lat": 37.6635,
+        "lng": -97.3305,
+        "neighborhood": "South Wichita",
+        "bio": (
+            "Dhammakaya Meditation Center Kansas (DMCK) is a Thai Theravada Buddhist "
+            "center offering public meditation classes in Wichita. Saturday public "
+            "meditation class 3:30–5:00pm at 1650 S Water St (most Saturdays; first "
+            "Saturday of month and special holidays off). No experience necessary; "
+            "open to all. The Dhammakaya tradition emphasizes samadhi (concentration) "
+            "meditation and the Middle Way of inner stillness."
+        ),
+    },
 }

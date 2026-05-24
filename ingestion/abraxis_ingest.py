@@ -80,6 +80,7 @@ from ingestion.sources import asheville as asheville_sources  # noqa: F401 (no l
 from ingestion.sources import burlington as burlington_sources
 from ingestion.sources import eugene as eugene_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import santa_cruz as santa_cruz_sources
+from ingestion.sources import wichita as wichita_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -1053,6 +1054,9 @@ def main():
 
     # SCZC, Insight Santa Cruz, Land of Medicine Buddha — seeded via sangha-seed-recurring.js
     log.info("--- Santa Cruz CA: SCZC + Insight SC + Land of Medicine Buddha (recurring sits only) ---")
+
+    # Wichita KS Phase 3 — all centers seeded via sangha-seed-recurring.js (no live feeds)
+    log.info("--- Wichita KS Phase 3: Southwind Sangha + Wichita KTC + DMCK (recurring sits only) ---")
 
     # Convert dataclasses to dicts
     dicts = []

@@ -3991,6 +3991,59 @@ const SITS = [
     notes: "Land of Medicine Buddha Sunday Drop-In Meditation (9:00–10:00am) at the Gompa, 5800 Prescott Rd, Soquel. Led by Ven. Yangchen. Sitting and walking meditation; suitable for all levels. No registration required. FPMT/Gelug Tibetan Buddhist center.",
     source_url: "https://www.landofmedicinebuddha.org", event_url: "https://www.landofmedicinebuddha.org/programs/",
   },
+
+  // -------------------------------------------------------------------------
+  // Wichita, KS — Phase 3 (heartbeat 62)
+  // -------------------------------------------------------------------------
+
+  // Southwind Sangha — Soto Zen (SZBA). southwindsangha.org
+  // Meets at Pine Valley Christian Church, 5620 E 21st St N, Wichita KS 67208
+  // Sunday 9–10:30am (zazen, kinhin, Heart Sutra)
+  {
+    org_id: "southwind_sangha", org_name: "Southwind Sangha",
+    title: "Sunday Zazen",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 90,
+    address: "5620 E 21st St N", city: "Wichita", state: "KS", neighborhood: "Northeast Wichita",
+    lat: 37.7220, lng: -97.2520, tradition: "zen", location_type: "hybrid",
+    notes: "Southwind Sangha Sunday service (9:00–10:30am) at Pine Valley Christian Church, 5620 E 21st St N, Wichita KS. Two rounds of seated zazen separated by kinhin (walking meditation), Heart Sutra chanting. In-person + Zoom hybrid. SZBA member. Drop-in welcome; contact harold.sanki@gmail.com or Facebook for Zoom link.",
+    source_url: "https://southwindsangha.org", event_url: "https://southwindsangha.org",
+  },
+  // Wednesday 7–8pm sit
+  {
+    org_id: "southwind_sangha", org_name: "Southwind Sangha",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "5620 E 21st St N", city: "Wichita", state: "KS", neighborhood: "Northeast Wichita",
+    lat: 37.7220, lng: -97.2520, tradition: "zen", location_type: "hybrid",
+    notes: "Southwind Sangha Wednesday evening sit (7:00–8:00pm) at Pine Valley Christian Church, Wichita KS. First Wednesday = Introduction to Zen & Zazen. Third Wednesday = single 30-min sit + dharma discussion. In-person + Zoom hybrid. Drop-in welcome.",
+    source_url: "https://southwindsangha.org", event_url: "https://southwindsangha.org",
+  },
+
+  // Wichita KTC — Karma Kagyu Tibetan. wichitaktc.org
+  // 425 S Yale Ave, Wichita KS 67218
+  // Every Sunday 10am (1st/3rd = Chenrezik Sadhana; 2nd/4th = Sitting Meditation)
+  {
+    org_id: "wichita_ktc", org_name: "Wichita KTC",
+    title: "Sunday Program",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 105,
+    address: "425 S Yale Ave", city: "Wichita", state: "KS", neighborhood: "East Wichita",
+    lat: 37.6810, lng: -97.2680, tradition: "tibetan", location_type: "in-person",
+    notes: "Wichita KTC Sunday program (10:00am–11:45am) at 425 S Yale Ave, Wichita KS. Karma Kagyu lineage. 1st and 3rd Sundays: Chenrezik Sadhana (compassion practice, mantra, sitting meditation) followed by dharma talk. 2nd and 4th Sundays: Sitting Meditation (10:00am) + discussion/book study (10:40–11:45am). All welcome. Contact ktcwichita@yahoo.com.",
+    source_url: "https://wichitaktc.org", event_url: "https://wichitaktc.org",
+  },
+
+  // Dhammakaya Meditation Center Kansas — Thai Theravada. meditationkansas.org
+  // 1650 S Water St, Wichita KS 67213
+  // Saturday 3:30–5pm (most weeks; first Sat of month off)
+  {
+    org_id: "dmck", org_name: "Dhammakaya Meditation Center Kansas",
+    title: "Saturday Meditation Class",
+    days: ["Saturday"], time: { h: 15, m: 30 }, duration_min: 90,
+    address: "1650 S Water St", city: "Wichita", state: "KS", neighborhood: "South Wichita",
+    lat: 37.6635, lng: -97.3305, tradition: "theravada", location_type: "in-person",
+    notes: "Dhammakaya Meditation Center Kansas Saturday public meditation class (3:30–5:00pm) at 1650 S Water St, Wichita KS. Thai Theravada (Dhammakaya tradition). No experience necessary; open to all. First Saturday of each month and special holidays may be off — check meditationkansas.org for updates.",
+    source_url: "https://www.meditationkansas.org", event_url: "https://www.meditationkansas.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
