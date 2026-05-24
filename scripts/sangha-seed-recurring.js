@@ -4044,6 +4044,52 @@ const SITS = [
     notes: "Dhammakaya Meditation Center Kansas Saturday public meditation class (3:30–5:00pm) at 1650 S Water St, Wichita KS. Thai Theravada (Dhammakaya tradition). No experience necessary; open to all. First Saturday of each month and special holidays may be off — check meditationkansas.org for updates.",
     source_url: "https://www.meditationkansas.org", event_url: "https://www.meditationkansas.org",
   },
+
+  // ---------------------------------------------------------------------------
+  // Missoula, MT — Phase 3 (heartbeat 63)
+  // ---------------------------------------------------------------------------
+
+  // Open Way Sangha — Plum Village / Vietnamese Zen (Thich Nhat Hanh lineage). openway.org
+  {
+    org_id: "open_way_sangha", org_name: "Open Way Sangha",
+    title: "Tuesday Evening Sit",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "702 Brooks St", city: "Missoula", state: "MT", neighborhood: "South Missoula",
+    lat: 46.8533, lng: -114.0078, tradition: "zen", location_type: "in-person",
+    notes: "Open Way Sangha Tuesday evening sit (7:00–9:00pm) at 702 Brooks St, Missoula MT. Plum Village / Thich Nhat Hanh lineage. Rotating monthly format: dharma talk + sharing; meditation + sutra service + sharing; Mindfulness Trainings recitation + sharing; tea ceremony + sharing; special programs. All are welcome. Free (dana). Contact openwaysangha@gmail.com.",
+    source_url: "https://www.openway.org", event_url: "https://www.openway.org/calendar",
+  },
+  {
+    org_id: "open_way_sangha", org_name: "Open Way Sangha",
+    title: "Saturday Morning Sit",
+    days: ["Saturday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "702 Brooks St", city: "Missoula", state: "MT", neighborhood: "South Missoula",
+    lat: 46.8533, lng: -114.0078, tradition: "zen", location_type: "in-person",
+    notes: "Open Way Sangha Saturday morning sit (10:00am–noon) at 702 Brooks St, Missoula MT. Plum Village / Thich Nhat Hanh lineage. Rotating monthly format: dharma talk + sharing; meditation + sutra service + sharing; Mindfulness Trainings recitation + sharing; tea ceremony + sharing; special programs. All are welcome. Free (dana). Contact openwaysangha@gmail.com.",
+    source_url: "https://www.openway.org", event_url: "https://www.openway.org/calendar",
+  },
+
+  // Osel Shen Phen Ling — FPMT Gelug Tibetan. fpmtosel.wordpress.com
+  {
+    org_id: "osel_shen_phen_ling", org_name: "Osel Shen Phen Ling",
+    title: "Monday Evening Meditation",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "500 N Higgins Ave, Suite 208A", city: "Missoula", state: "MT", neighborhood: "Downtown Missoula",
+    lat: 46.8723, lng: -113.9940, tradition: "tibetan", location_type: "in-person",
+    notes: "Osel Shen Phen Ling Monday evening guided meditation (7:00pm, ~1 hour) at 500 N Higgins Ave Suite 208A, Missoula MT. FPMT Gelug Tibetan Buddhist center established 1986. Shamatha stabilizing meditation + brief prayers. No experience necessary; drop-in welcome. Free. Contact oselshenphenling@gmail.com or 406-327-1204.",
+    source_url: "https://fpmtosel.wordpress.com", event_url: "https://fpmtosel.wordpress.com",
+  },
+
+  // Rocky Mountain Buddhist Center — Triratna (FWBO). rockymountainbuddhistcenter.org
+  {
+    org_id: "rocky_mountain_bc", org_name: "Rocky Mountain Buddhist Center",
+    title: "Sangha Night",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "540 South 2nd West", city: "Missoula", state: "MT", neighborhood: "University District",
+    lat: 46.8645, lng: -114.0120, tradition: "other", location_type: "in-person",
+    notes: "Rocky Mountain Buddhist Center Wednesday Sangha Night (7:00–9:00pm) at 540 South 2nd West, Missoula MT. Triratna Buddhist Community (formerly FWBO). Teaches Mindfulness of Breathing and Metta Bhavana. Open to those who have completed the 5-week Intro to Meditation and Buddhism course. Located near University of Montana campus. Contact fwbomissoula@gmail.com.",
+    source_url: "http://rockymountainbuddhistcenter.org", event_url: "http://rockymountainbuddhistcenter.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

@@ -81,6 +81,7 @@ from ingestion.sources import burlington as burlington_sources
 from ingestion.sources import eugene as eugene_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import santa_cruz as santa_cruz_sources
 from ingestion.sources import wichita as wichita_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import missoula as missoula_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

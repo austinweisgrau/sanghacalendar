@@ -5000,4 +5000,73 @@ CENTERS = {
             "meditation and the Middle Way of inner stillness."
         ),
     },
+    # -------------------------------------------------------------------------
+    # Missoula, MT
+    # -------------------------------------------------------------------------
+    "open_way_sangha": {
+        "id": "open_way_sangha",
+        "name": "Open Way Sangha",
+        "tradition": "zen",
+        "url": "https://www.openway.org",
+        "address": "702 Brooks St",
+        "city": "Missoula",
+        "state": "MT",
+        "zip": "59801",
+        "lat": 46.8533,
+        "lng": -114.0078,
+        "neighborhood": "South Missoula",
+        "bio": (
+            "Open Way Sangha is a Plum Village (Thich Nhat Hanh / Vietnamese Zen) "
+            "community that has been practicing in Missoula since the 1990s. Meets at "
+            "702 Brooks St: Tuesdays 7:00–9:00pm and Saturdays 10:00am–12:00pm. "
+            "Monthly format rotates between dharma talk + sharing, sutra service + "
+            "meditation, Mindfulness Trainings recitation, tea ceremony, and special "
+            "programs. All are welcome — new people encouraged. Dana-based. "
+            "Contact openwaysangha@gmail.com."
+        ),
+    },
+    "osel_shen_phen_ling": {
+        "id": "osel_shen_phen_ling",
+        "name": "Osel Shen Phen Ling",
+        "tradition": "tibetan",
+        "url": "https://fpmtosel.wordpress.com",
+        "address": "500 N Higgins Ave, Suite 208A",
+        "city": "Missoula",
+        "state": "MT",
+        "zip": "59802",
+        "lat": 46.8723,
+        "lng": -113.9940,
+        "neighborhood": "Downtown Missoula",
+        "bio": (
+            "Osel Shen Phen Ling is an FPMT (Foundation for the Preservation of the "
+            "Mahayana Tradition) Gelug Tibetan Buddhist center established in 1986 — "
+            "one of Montana's oldest Buddhist organizations. Located at 500 N Higgins "
+            "Ave in downtown Missoula. Monday 7:00pm: weekly guided meditation (~30 "
+            "minutes of shamatha with brief prayers). No experience necessary; free. "
+            "Also offers seasonal intro courses (Meditation 101, Buddhism in a Nutshell). "
+            "Contact oselshenphenling@gmail.com."
+        ),
+    },
+    "rocky_mountain_bc": {
+        "id": "rocky_mountain_bc",
+        "name": "Rocky Mountain Buddhist Center",
+        "tradition": "other",
+        "url": "http://rockymountainbuddhistcenter.org",
+        "address": "540 South 2nd West",
+        "city": "Missoula",
+        "state": "MT",
+        "zip": "59801",
+        "lat": 46.8645,
+        "lng": -114.0120,
+        "neighborhood": "University District",
+        "bio": (
+            "Rocky Mountain Buddhist Center is part of the Triratna Buddhist Community "
+            "(formerly Friends of the Western Buddhist Order / FWBO), located near the "
+            "University of Montana campus. Founded by UM Asian Studies professor Alan "
+            "Sponburg. Wednesday Sangha Night 7:00–9:00pm teaches Mindfulness of "
+            "Breathing and Metta Bhavana. Open to those who have completed their "
+            "5-week intro course. Intro sessions run periodically — contact "
+            "fwbomissoula@gmail.com."
+        ),
+    },
 }
