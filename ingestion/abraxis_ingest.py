@@ -84,6 +84,7 @@ from ingestion.sources import wichita as wichita_sources  # noqa: F401 (no live 
 from ingestion.sources import missoula as missoula_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import bozeman as bozeman_sources
 from ingestion.sources import lehigh_valley as lehigh_valley_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import knoxville as knoxville_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

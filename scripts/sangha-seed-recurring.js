@@ -4092,6 +4092,82 @@ const SITS = [
   },
 
   // -------------------------------------------------------------------------
+  // Knoxville, TN — Phase 3 (heartbeat 66)
+  // -------------------------------------------------------------------------
+
+  // Mountain Solid, Water Reflecting Sangha — Plum Village / TNH lineage. knoxmindful.org
+  // West Knoxville Friends Meeting House, 1517 Meeting House Rd, Knoxville TN 37909.
+  // Active since 1998. Weekly Sunday 4–5:30pm, hybrid (in-person + Zoom).
+  {
+    org_id: "mountain_solid_water_reflecting", org_name: "Mountain Solid, Water Reflecting Sangha",
+    title: "Sunday Sangha Sitting",
+    days: ["Sunday"], time: { h: 16, m: 0 }, duration_min: 90,
+    address: "1517 Meeting House Rd", city: "Knoxville", state: "TN", neighborhood: "West Knoxville",
+    lat: 35.9388, lng: -84.0801, tradition: "zen", location_type: "hybrid",
+    notes: "Mountain Solid, Water Reflecting Sangha Sunday sit (4:00–5:30pm) at West Knoxville Friends Meeting House, 1517 Meeting House Rd. Plum Village / Order of Interbeing in the tradition of Thich Nhat Hanh. 1st Sundays: book discussion. 2nd Sundays: Mindfulness Trainings recitation + potluck. All welcome; no experience needed. In-person + Zoom (passcode 800925 — see knoxmindful.org).",
+    source_url: "https://www.knoxmindful.org", event_url: "https://www.knoxmindful.org/events",
+  },
+
+  // Knoxville Community of Mindfulness — multi-tradition Vipassana/Zen/Dzogchen. knoxcomind.org
+  // Meaningful Life Center, 116 Carr St, Knoxville TN. 1st & 3rd Thursdays in-person 6:30–8pm.
+  {
+    org_id: "knoxville_community_mindfulness", org_name: "Knoxville Community of Mindfulness",
+    title: "Thursday Evening Sit",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 90,
+    week_of_month: 1,
+    address: "116 Carr St", city: "Knoxville", state: "TN", neighborhood: "Old North Knoxville",
+    lat: 35.9837, lng: -83.9424, tradition: "other", location_type: "hybrid",
+    notes: "Knoxville Community of Mindfulness 1st Thursday evening sit (6:30–8:00pm) at the Meaningful Life Center, 116 Carr St, Knoxville TN. Led by John Blackburn (50+ years practice in Vipassana, Zen, and Dzogchen). In-person + Zoom. All traditions welcome; no charge. knoxcomind.org.",
+    source_url: "https://www.knoxcomind.org", event_url: "https://www.knoxcomind.org",
+  },
+  {
+    org_id: "knoxville_community_mindfulness", org_name: "Knoxville Community of Mindfulness",
+    title: "Thursday Evening Sit",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 90,
+    week_of_month: 3,
+    address: "116 Carr St", city: "Knoxville", state: "TN", neighborhood: "Old North Knoxville",
+    lat: 35.9837, lng: -83.9424, tradition: "other", location_type: "hybrid",
+    notes: "Knoxville Community of Mindfulness 3rd Thursday evening sit (6:30–8:00pm) at the Meaningful Life Center, 116 Carr St, Knoxville TN. Led by John Blackburn (50+ years practice in Vipassana, Zen, and Dzogchen). In-person + Zoom. All traditions welcome; no charge. knoxcomind.org.",
+    source_url: "https://www.knoxcomind.org", event_url: "https://www.knoxcomind.org",
+  },
+
+  // Je Tsongkhapa Kadampa Buddhist Center – Knoxville (NKT outreach from KMC Asheville).
+  // OASIS Institute, 4918 Homberg Dr, Knoxville TN. Weekly Tuesday 7:15–8:30pm.
+  {
+    org_id: "je_tsongkhapa_knoxville", org_name: "Je Tsongkhapa Kadampa Buddhist Center – Knoxville",
+    title: "Tuesday Drop-In Meditation Class",
+    days: ["Tuesday"], time: { h: 19, m: 15 }, duration_min: 75,
+    address: "4918 Homberg Dr", city: "Knoxville", state: "TN", neighborhood: "Bearden",
+    lat: 35.9488, lng: -84.0165, tradition: "tibetan", location_type: "in-person",
+    notes: "Je Tsongkhapa Kadampa Buddhist Center Tuesday drop-in meditation class (7:15–8:30pm) at the OASIS Institute, 4918 Homberg Dr, Bearden, Knoxville TN. NKT outreach program of KMC Asheville (NC). Teachings from Kadampa Buddhist philosophy; no background or reservation needed. Part of 1,300+ center NKT-IKBU network. Info: meditationinasheville.org.",
+    source_url: "https://www.meditationinasheville.org/tuesday-evening-drop-in-meditation-class-knoxville-tn/",
+    event_url: "https://www.meditationinasheville.org/tuesday-evening-drop-in-meditation-class-knoxville-tn/",
+  },
+
+  // Lotus Light Contemplative Community Center — multi-tradition hub. lotuslightcenter.org
+  // 501 Arthur St, Knoxville TN 37921 (Mechanicsville, ~1 mi west of UT). Two primary sits:
+  //   Insight Meditation: Monday 7:00–8:30pm
+  //   Zazen: Sunday 4:00–5:00pm
+  {
+    org_id: "lotus_light_knoxville", org_name: "Lotus Light Contemplative Community Center",
+    title: "Insight Meditation",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "501 Arthur St", city: "Knoxville", state: "TN", neighborhood: "Mechanicsville",
+    lat: 35.9764, lng: -83.9567, tradition: "other", location_type: "hybrid",
+    notes: "Lotus Light Contemplative Community Center Insight Meditation (7:00–8:30pm every Monday) at 501 Arthur St, Mechanicsville, Knoxville TN. Vipassana-style sitting in a welcoming multi-tradition setting. Zoom also available (PW: lotus — link at lotuslightcenter.org). Free, all welcome.",
+    source_url: "https://lotuslightcenter.org", event_url: "https://lotuslightcenter.org/calendar/",
+  },
+  {
+    org_id: "lotus_light_knoxville", org_name: "Lotus Light Contemplative Community Center",
+    title: "Zazen",
+    days: ["Sunday"], time: { h: 16, m: 0 }, duration_min: 60,
+    address: "501 Arthur St", city: "Knoxville", state: "TN", neighborhood: "Mechanicsville",
+    lat: 35.9764, lng: -83.9567, tradition: "zen", location_type: "hybrid",
+    notes: "Lotus Light Contemplative Community Center Zazen (4:00–5:00pm every Sunday) at 501 Arthur St, Mechanicsville, Knoxville TN. Zen sitting meditation in a community hub home to Losel Shedrup Ling (Tibetan Buddhist) and other groups. Zoom available (PW: lotus — link at lotuslightcenter.org). Free, all welcome.",
+    source_url: "https://lotuslightcenter.org", event_url: "https://lotuslightcenter.org/calendar/",
+  },
+
+  // -------------------------------------------------------------------------
   // Lehigh Valley, PA — Phase 3 (heartbeat 65)
   // -------------------------------------------------------------------------
 

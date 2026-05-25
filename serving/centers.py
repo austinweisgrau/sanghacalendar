@@ -5098,6 +5098,102 @@ CENTERS = {
         ),
     },
     # -------------------------------------------------------------------------
+    # Knoxville, TN — Phase 3 (heartbeat 66)
+    # -------------------------------------------------------------------------
+    "mountain_solid_water_reflecting": {
+        "id": "mountain_solid_water_reflecting",
+        "name": "Mountain Solid, Water Reflecting Sangha",
+        "tradition": "zen",
+        "url": "https://www.knoxmindful.org",
+        "address": "1517 Meeting House Rd",
+        "city": "Knoxville",
+        "state": "TN",
+        "zip": "37909",
+        "lat": 35.9388,
+        "lng": -84.0801,
+        "neighborhood": "West Knoxville",
+        "bio": (
+            "Mountain Solid, Water Reflecting Sangha has practiced together in "
+            "Knoxville since 1998, following the teachings of Thich Nhat Hanh "
+            "and the Plum Village tradition. They meet every Sunday 4:00–5:30pm "
+            "at the West Knoxville Friends Meeting House (1517 Meeting House Rd). "
+            "1st Sundays include a book discussion; 2nd Sundays feature the "
+            "recitation of the Mindfulness Trainings followed by mindful eating "
+            "and a vegetarian potluck. All are welcome — no experience or "
+            "reservation required. Hybrid in-person and Zoom."
+        ),
+    },
+    "knoxville_community_mindfulness": {
+        "id": "knoxville_community_mindfulness",
+        "name": "Knoxville Community of Mindfulness",
+        "tradition": "other",
+        "url": "https://www.knoxcomind.org",
+        "address": "116 Carr St",
+        "city": "Knoxville",
+        "state": "TN",
+        "zip": "37919",
+        "lat": 35.9837,
+        "lng": -83.9424,
+        "neighborhood": "Old North Knoxville",
+        "bio": (
+            "Knoxville Community of Mindfulness is a multi-tradition sangha "
+            "led by John Blackburn, who has practiced for over 50 years in the "
+            "Vipassana, Zen, and Dzogchen traditions. The community meets at "
+            "the Meaningful Life Center (116 Carr St, Knoxville) on the 1st "
+            "and 3rd Thursdays of each month, 6:30–8:00pm, with simultaneous "
+            "Zoom for remote participants. Courses on the Four Noble Truths, "
+            "Metta, Lojong, and other topics are offered throughout the year. "
+            "All traditions and experience levels welcome; no charge to attend."
+        ),
+    },
+    "je_tsongkhapa_knoxville": {
+        "id": "je_tsongkhapa_knoxville",
+        "name": "Je Tsongkhapa Kadampa Buddhist Center – Knoxville",
+        "tradition": "tibetan",
+        "url": "https://www.meditationinasheville.org/tuesday-evening-drop-in-meditation-class-knoxville-tn/",
+        "address": "4918 Homberg Dr",
+        "city": "Knoxville",
+        "state": "TN",
+        "zip": "37919",
+        "lat": 35.9488,
+        "lng": -84.0165,
+        "neighborhood": "Bearden",
+        "bio": (
+            "Je Tsongkhapa Kadampa Buddhist Center offers a weekly Tuesday "
+            "evening drop-in meditation class in Knoxville, run as an outreach "
+            "program of KMC Asheville (North Carolina). Classes meet 7:15–8:30pm "
+            "at the OASIS Institute (4918 Homberg Dr, Bearden). Teachings are "
+            "rooted in the New Kadampa Tradition and explore practical "
+            "meditation techniques for modern life. No Buddhist background or "
+            "reservation is required. Part of the worldwide NKT-IKBU network "
+            "of over 1,300 centers."
+        ),
+    },
+    "lotus_light_knoxville": {
+        "id": "lotus_light_knoxville",
+        "name": "Lotus Light Contemplative Community Center",
+        "tradition": "other",
+        "url": "https://lotuslightcenter.org",
+        "address": "501 Arthur St",
+        "city": "Knoxville",
+        "state": "TN",
+        "zip": "37921",
+        "lat": 35.9764,
+        "lng": -83.9567,
+        "neighborhood": "Mechanicsville",
+        "bio": (
+            "Lotus Light Contemplative Community Center is a multi-tradition "
+            "hub in Knoxville's Mechanicsville neighborhood, about a mile west "
+            "of UT campus. The center is home to Losel Shedrup Ling, a Gelug "
+            "Tibetan Buddhist community following the Knoxville's Buddhist "
+            "practice since the 1990s, as well as several independent groups "
+            "offering Insight Meditation (Mondays 7pm), Zazen (Sundays 4pm), "
+            "Chenrezig Compassion Practice (Wednesdays 6pm), and Recovery "
+            "Dharma (multiple times weekly). Visiting teachers and dharma "
+            "talks offered throughout the year. All are welcome."
+        ),
+    },
+    # -------------------------------------------------------------------------
     # Lehigh Valley, PA — Phase 3 (heartbeat 65)
     # -------------------------------------------------------------------------
     "dharma_moon_sangha": {
