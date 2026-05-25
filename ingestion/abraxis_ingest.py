@@ -82,6 +82,7 @@ from ingestion.sources import eugene as eugene_sources  # noqa: F401 (no live fe
 from ingestion.sources import santa_cruz as santa_cruz_sources
 from ingestion.sources import wichita as wichita_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import missoula as missoula_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import bozeman as bozeman_sources
 
 log = logging.getLogger(__name__)
 
@@ -1058,6 +1059,33 @@ def main():
 
     # Wichita KS Phase 3 — all centers seeded via sangha-seed-recurring.js (no live feeds)
     log.info("--- Wichita KS Phase 3: Southwind Sangha + Wichita KTC + DMCK (recurring sits only) ---")
+
+    # Missoula MT Phase 3 — all centers seeded via sangha-seed-recurring.js (no live feeds)
+    log.info("--- Missoula MT Phase 3: Open Way Sangha + Osel Shen Phen Ling + Rocky Mtn BC (recurring sits only) ---")
+
+    # Bozeman MT Phase 3 — Bozeman Dharma Center WordPress iCal feed
+    log.info("--- Bozeman MT Phase 3: Bozeman Dharma Center iCal feed ---")
+    for org_id, feed_cfg in bozeman_sources.ICAL_FEEDS.items():
+        center = bozeman_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Bozeman iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Bozeman iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

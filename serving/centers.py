@@ -5069,4 +5069,32 @@ CENTERS = {
             "fwbomissoula@gmail.com."
         ),
     },
+    # -------------------------------------------------------------------------
+    # Bozeman, MT
+    # -------------------------------------------------------------------------
+    "bozeman_dharma_center": {
+        "id": "bozeman_dharma_center",
+        "name": "Bozeman Dharma Center",
+        "tradition": "other",
+        "url": "https://bozemandharmacenter.org",
+        "address": "206 E Griffin Dr",
+        "city": "Bozeman",
+        "state": "MT",
+        "zip": "59715",
+        "lat": 45.6784,
+        "lng": -111.0346,
+        "neighborhood": "Downtown Bozeman",
+        "bio": (
+            "Bozeman Dharma Center is a multi-tradition Buddhist hub in Bozeman, MT, "
+            "meeting at Fork & Spoon (206 E Griffin Dr). It hosts seven resident "
+            "groups: Bozeman Zen Group (Soto Zen / Branching Streams / Berkeley Zen "
+            "Center lineage), Bozeman Insight Community (Vipassana, est. 1996), "
+            "Joining Rivers Sangha (Plum Village/Thich Nhat Hanh), Tergar Bozeman "
+            "(Yongey Mingyur Rinpoche), Palyul Tibetan Buddhist Sangha "
+            "(Nyingma/Namdroling), MindSpace (young adults 18–40), and Recovery "
+            "Dharma. Also hosts a daily Noon Sit (M–F 12–1pm, open and silent). "
+            "Northwest Dharma Association member. All traditions welcome. "
+            "(406) 219-2140 · info@bozemandharmacenter.org."
+        ),
+    },
 }

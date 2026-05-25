@@ -1294,6 +1294,79 @@ Goal: submit a URL (or just a city name) and get back a list of verified, normal
 - LA (center=208): 388 events — new center; wired in la.py ICAL_FEEDS
 - DC (center=205), Boulder (center=191), Denver (center=218): valid iCal but 0 events — may be inactive chapters or different calendar IDs. Monitor.
 
+### Missoula Phase 3 — ✅ Live May 24 (3 centers, heartbeat 63)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Open Way Sangha (702 Brooks St, Missoula MT 59801) | Recurring sits seeded — Squarespace calendar, no iCal. Vietnamese Zen / Plum Village. Tue 7–9pm + Sat 10am–noon. | ✅ Live heartbeat 63 |
+| Osel Shen Phen Ling (500 N Higgins Ave Suite 208A, Missoula MT 59802) | Recurring sit seeded — WordPress.com, no iCal. FPMT Tibetan (Gelug). Mon 7pm (~1h). Est. 1986. | ✅ Live heartbeat 63 |
+| Rocky Mountain Buddhist Center (540 South 2nd West, Missoula MT 59801) | Recurring sit seeded — site SSL expired, no iCal. Triratna Buddhist Community (FWBO). Wed 7–9pm Sangha Night (requires 5-week intro course). Near UM campus. | ✅ Live heartbeat 63 |
+
+Montana state + Missoula city added to `_filters.html`.
+Center bios added to centers.py for all 3 centers.
+`ingestion/sources/missoula.py` created; coordinator + abraxis wired.
+`sangha-seed-recurring.js`: 4 new sit defs (383 → 387 total), 6709 instances. 51 Missoula events live.
+
+**Research notes (2026-05-24):**
+- Open Way Sangha: Thich Nhat Hanh / Plum Village lineage, founded in Missoula in the 1990s. Drop-in welcome.
+- Osel Shen Phen Ling: One of Montana's oldest Buddhist orgs (1986). FPMT Gelug. Mon sits are drop-in.
+- Rocky Mountain Buddhist Center: Triratna lineage, founded by UM professor Alan Sponburg. Sangha Night
+  requires completion of 5-week intro course. Intro runs periodically.
+- Big Sky Mind (Kagyu): 1st Monday monthly + weekly group by email only; deferred.
+- Ewam Sang-ngag Ling (Nyingma): structured courses only, no confirmed drop-in; deferred.
+- No active Shambhala or Vipassana drop-in center found in Missoula.
+
+---
+
+### Bozeman Phase 3 — ✅ Live May 25 (1 center hub, heartbeat 64)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Bozeman Dharma Center (206 E Griffin Dr, Bozeman MT 59715) | Live WordPress iCal feed (bozemandharmacenter.org/calendar/?ical=1). Multi-tradition hub: Zen, Vipassana, Plum Village, Tergar, Nyingma, young adults, recovery. 30 events in feed. | ✅ Live heartbeat 64 |
+
+Bozeman city added to `_filters.html` (MT section).
+Center bio added to centers.py.
+`ingestion/sources/bozeman.py` created; coordinator + abraxis wired.
+
+**Research notes (2026-05-25):**
+- Bozeman Dharma Center: NW Dharma Association member. Current location is Fork & Spoon
+  (206 E Griffin Dr), a pay-what-you-can community restaurant. BDC website still lists
+  3810 Valley Commons Dr as postal address but all live iCal events are at Griffin St.
+- Resident groups: Bozeman Zen Group (Soto/Branching Streams, teacher Karen DeCotis,
+  dharma heir of Berkeley Zen Center's Sojun Weitsman Roshi); Bozeman Insight Community
+  (Vipassana, est. 1996, Thu 6:30pm + Tue 10:30am Zoom); Joining Rivers Sangha (Plum
+  Village/TNH, Mon 7pm); Tergar Bozeman (Mingyur Rinpoche, Wed 5:30pm, free); Palyul
+  Tibetan Buddhist Sangha (Nyingma/Namdroling, 1st+3rd Sun 9am); MindSpace young adults
+  (18–40, Tue 6:30pm); Recovery Dharma (Mon 5:30pm); Noon Sit (M–F 12pm).
+- No Shambhala, KMC/Kadampa, or standalone Zen center in Bozeman.
+- Vipassana Montana (Goenka 10-day retreats): not a Bozeman public-access center; skip.
+
+---
+
+### Wichita Phase 3 — ✅ Live May 24 (3 centers, heartbeat 62)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Southwind Sangha (5620 E 21st St N, Wichita KS 67208) | Recurring sits seeded — no iCal (contact-based mailing list). Soto Zen (SZBA). Sun 9am + Wed 7pm. | ✅ Live heartbeat 62 |
+| Wichita KTC (425 S Yale Ave, Wichita KS 67218) | Recurring sit seeded — no iCal. Karma Kagyu Tibetan. Every Sunday 10am (1st/3rd = Chenrezik Sadhana; 2nd/4th = Sitting Meditation). | ✅ Live heartbeat 62 |
+| Dhammakaya Meditation Center Kansas (1650 S Water St, Wichita KS 67213) | Recurring sit seeded — no iCal. Thai Theravada (Dhammakaya). Saturday 3:30–5pm. | ✅ Live heartbeat 62 |
+
+Kansas state + Wichita city added to `_filters.html`.
+Center bios added to centers.py for all 3 centers.
+`ingestion/sources/wichita.py` created; coordinator + abraxis wired.
+`sangha-seed-recurring.js`: 4 new sit defs (379 → 383 total), 6657 instances. 51 Wichita events live.
+
+**Research notes (2026-05-24):**
+- Southwind Sangha: SZBA-member Soto Zen group meeting at a church. Very welcoming to beginners.
+  First Wednesday = Intro to Zen. Third Saturday = half-day silent retreat 8am–noon.
+- Wichita KTC: Karma Thegsum Chöling. 1st/3rd Sunday Chenrezik Sadhana includes sitting meditation.
+  2nd/4th Sunday is explicit Sitting Meditation + discussion. All Sundays seeded as one entry.
+- Dhammakaya: Thai Theravada emphasis on samadhi. First Saturday of month may be off.
+- Kansas Meditation Center (kansasmeditationcenter.com): Theravada monastery; schedule not confirmed — deferred.
+- Mindfulness Practice Group of Kansas (Plum Village/TNH) at Wat Wichitaram (5327 N Broadway): schedule unconfirmed — deferred.
+- Zen Friends of Wichita (First UU Church): schedule unconfirmed — deferred.
+- No KMC/NKT or active Shambhala center in Wichita.
+
 ---
 
 ## Research Docs
