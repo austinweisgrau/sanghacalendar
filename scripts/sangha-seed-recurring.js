@@ -4090,6 +4090,48 @@ const SITS = [
     notes: "Rocky Mountain Buddhist Center Wednesday Sangha Night (7:00–9:00pm) at 540 South 2nd West, Missoula MT. Triratna Buddhist Community (formerly FWBO). Teaches Mindfulness of Breathing and Metta Bhavana. Open to those who have completed the 5-week Intro to Meditation and Buddhism course. Located near University of Montana campus. Contact fwbomissoula@gmail.com.",
     source_url: "http://rockymountainbuddhistcenter.org", event_url: "http://rockymountainbuddhistcenter.org",
   },
+
+  // -------------------------------------------------------------------------
+  // Lehigh Valley, PA — Phase 3 (heartbeat 65)
+  // -------------------------------------------------------------------------
+
+  // Dharma Moon Sangha — Plum Village / Order of Interbeing. dharmamoonsangha.com
+  // Living Room Yoga, 1328 Chestnut St, Emmaus PA 18049. Active since 2009.
+  {
+    org_id: "dharma_moon_sangha", org_name: "Dharma Moon Sangha",
+    title: "Tuesday Evening Sit",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1328 Chestnut St", city: "Emmaus", state: "PA", neighborhood: "Emmaus",
+    lat: 40.5380, lng: -75.4998, tradition: "zen", location_type: "hybrid",
+    notes: "Dharma Moon Sangha Tuesday sit (7:00–8:30pm) at Living Room Yoga, 1328 Chestnut St, Emmaus PA. Plum Village / Order of Interbeing. 20-min zazen, kinhin (walking meditation), more seated meditation, dharma sharing. In-person + simultaneous Zoom. Free, drop-in welcome. Contact emmaussangha@gmail.com for Zoom link.",
+    source_url: "https://dharmamoonsangha.com", event_url: "https://dharmamoonsangha.com",
+  },
+
+  // Blue Mountain Zendo — Rinzai Zen. bluemountainzendo.org
+  // Bethlehem PA 18017 (private address; call 484-735-0636). Rev. Ryuun Joriki Baker.
+  {
+    org_id: "blue_mountain_zendo", org_name: "Blue Mountain Zendo",
+    title: "Sunday Zen Service",
+    days: ["Sunday"], time: { h: 17, m: 0 }, duration_min: 120,
+    address: "Bethlehem, PA", city: "Bethlehem", state: "PA", neighborhood: "Bethlehem",
+    lat: 40.6259, lng: -75.3705, tradition: "zen", location_type: "in-person",
+    notes: "Blue Mountain Zendo (Koryu-ji) Sunday Zen service (5:00–7:00pm) in Bethlehem, PA. Rinzai Zen; led by Rev. Ryuun Joriki Baker. Full service: chanting, zazen, kinhin (walking meditation), formal eating (oryoki), dharma talk, tea fellowship. Newcomers welcome — arrive 15 min early. Private home; call 484-735-0636 or visit bluemountainzendo.org for directions.",
+    source_url: "https://www.bluemountainzendo.org", event_url: "https://www.bluemountainzendo.org",
+  },
+
+  // Lehigh Valley Buddhist Group — non-sectarian ecumenical. lvbuddhistgroup.org
+  // Unity of Lehigh Valley, 26 N 3rd St, Emmaus PA 18049. Monthly Sundays.
+  // 2026 upcoming dates: Jun 21, Jul 12, Aug 16 (3rd Sun), Sep 20 (3rd Sun), Oct 18 (3rd Sun)
+  {
+    org_id: "lv_buddhist_group", org_name: "Lehigh Valley Buddhist Group",
+    title: "Monthly Sunday Gathering",
+    days: ["Sunday"], time: { h: 16, m: 0 }, duration_min: 90,
+    dates: ["2026-06-21", "2026-07-12", "2026-08-16", "2026-09-20", "2026-10-18"],
+    address: "26 N 3rd St", city: "Emmaus", state: "PA", neighborhood: "Emmaus",
+    lat: 40.5378, lng: -75.4965, tradition: "other", location_type: "in-person",
+    notes: "Lehigh Valley Buddhist Group monthly Sunday gathering (4:00–5:30pm) at Unity of Lehigh Valley church, 26 N 3rd St, Emmaus PA. Non-sectarian; guest teachers from Theravada, Tibetan, Zen, and other traditions lead meditation and dharma talks. Open to all. Free. Info@lvbuddhistgroup.org.",
+    source_url: "https://www.lvbuddhistgroup.org", event_url: "https://www.lvbuddhistgroup.org/events-2-1",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

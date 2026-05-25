@@ -5097,4 +5097,73 @@ CENTERS = {
             "(406) 219-2140 · info@bozemandharmacenter.org."
         ),
     },
+    # -------------------------------------------------------------------------
+    # Lehigh Valley, PA — Phase 3 (heartbeat 65)
+    # -------------------------------------------------------------------------
+    "dharma_moon_sangha": {
+        "id": "dharma_moon_sangha",
+        "name": "Dharma Moon Sangha",
+        "tradition": "zen",
+        "url": "https://dharmamoonsangha.com",
+        "address": "1328 Chestnut St",
+        "city": "Emmaus",
+        "state": "PA",
+        "zip": "18049",
+        "lat": 40.5380,
+        "lng": -75.4998,
+        "neighborhood": "Emmaus",
+        "bio": (
+            "Dharma Moon Sangha is a Plum Village / Order of Interbeing community "
+            "that has been sitting together in the Lehigh Valley since 2009. They "
+            "meet every Tuesday at 7:00pm at Living Room Yoga (1328 Chestnut St, "
+            "Emmaus). Practice includes 20 minutes of zazen, kinhin (walking "
+            "meditation), more seated meditation, and dharma sharing. In-person "
+            "and simultaneous Zoom. Free, drop-in welcome. "
+            "Contact emmaussangha@gmail.com for the Zoom link."
+        ),
+    },
+    "blue_mountain_zendo": {
+        "id": "blue_mountain_zendo",
+        "name": "Blue Mountain Zendo",
+        "tradition": "zen",
+        "url": "https://www.bluemountainzendo.org",
+        "address": "Bethlehem, PA",
+        "city": "Bethlehem",
+        "state": "PA",
+        "zip": "18017",
+        "lat": 40.6259,
+        "lng": -75.3705,
+        "neighborhood": "Bethlehem",
+        "bio": (
+            "Blue Mountain Zendo (Koryu-ji) is a Rinzai Zen center led by "
+            "Rev. Ryuun Joriki Baker. The Bethlehem Zendo meets every Sunday "
+            "5:00–7:00pm for a full Zen service: chanting, zazen, kinhin (walking "
+            "meditation), formal eating (oryoki), a dharma talk, and tea "
+            "fellowship. Newcomers are welcome — arrive 15 minutes early for "
+            "orientation. The Bethlehem location is a private home; call "
+            "484-735-0636 or visit the website for directions. A second location "
+            "operates in Bushkill, PA (Pocono Mountains)."
+        ),
+    },
+    "lv_buddhist_group": {
+        "id": "lv_buddhist_group",
+        "name": "Lehigh Valley Buddhist Group",
+        "tradition": "other",
+        "url": "https://www.lvbuddhistgroup.org",
+        "address": "26 N 3rd St",
+        "city": "Emmaus",
+        "state": "PA",
+        "zip": "18049",
+        "lat": 40.5378,
+        "lng": -75.4965,
+        "neighborhood": "Emmaus",
+        "bio": (
+            "Lehigh Valley Buddhist Group is a non-sectarian, ecumenical sangha "
+            "that has served the Lehigh Valley since the 1980s. Monthly Sunday "
+            "gatherings (4:00–5:30pm) at Unity of Lehigh Valley church bring in "
+            "guest teachers from Theravada, Tibetan, Zen, and other traditions "
+            "for guided meditation and dharma talks. Open to Buddhist and "
+            "non-Buddhist alike. Free. Info@lvbuddhistgroup.org."
+        ),
+    },
 }

@@ -83,6 +83,7 @@ from ingestion.sources import santa_cruz as santa_cruz_sources
 from ingestion.sources import wichita as wichita_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import missoula as missoula_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import bozeman as bozeman_sources
+from ingestion.sources import lehigh_valley as lehigh_valley_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -1062,6 +1063,9 @@ def main():
 
     # Missoula MT Phase 3 — all centers seeded via sangha-seed-recurring.js (no live feeds)
     log.info("--- Missoula MT Phase 3: Open Way Sangha + Osel Shen Phen Ling + Rocky Mtn BC (recurring sits only) ---")
+
+    # Lehigh Valley PA Phase 3 — all centers seeded via sangha-seed-recurring.js (no live feeds)
+    log.info("--- Lehigh Valley PA Phase 3: Dharma Moon Sangha + Blue Mountain Zendo + LV Buddhist Group (recurring sits only) ---")
 
     # Bozeman MT Phase 3 — Bozeman Dharma Center WordPress iCal feed
     log.info("--- Bozeman MT Phase 3: Bozeman Dharma Center iCal feed ---")
