@@ -86,7 +86,7 @@ CENTERS = {
         lat=41.4726,
         lng=-81.5575,
         neighborhood="Shaker Heights / First Unitarian Church",
-        tradition=Tradition.VIPASSANA,
+        tradition=Tradition.THERAVADA,
         notes=(
             "Insight Meditation Cleveland (IMC) offers a network of drop-in sitting "
             "groups throughout Northeast Ohio, rooted in the Theravada/Vipassana "
