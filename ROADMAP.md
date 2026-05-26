@@ -165,6 +165,39 @@ Candidate metros (rough priority):
 45. Hartford/New Haven (CT) 🔄 **Phase 3 Connecticut live May 21** (5 centers) — heartbeat 53
 46. Omaha/Lincoln (NE) 🔄 **Phase 3 Omaha live May 21** (4 centers) — heartbeat 54
 47. Boise (ID) 🔄 **Phase 3 Boise live May 22** (5 centers) — heartbeat 55
+48. Spokane (WA) 🔄 **Phase 3 Spokane live May 22** (3 centers) — heartbeat 56
+49. Fresno (CA) 🔄 **Phase 3 Fresno live May 22** (2 centers) — heartbeat 57
+50. Asheville (NC) 🔄 **Phase 3 Asheville live May 23** (4 centers) — heartbeat 58
+51. Burlington (VT) 🔄 **Phase 3 Burlington live May 23** (4 centers) — heartbeat 59
+52. Eugene (OR) 🔄 **Phase 3 Eugene live May 24** (4 centers) — heartbeat 60
+53. Santa Cruz (CA) 🔄 **Phase 3 Santa Cruz live May 24** (4 centers) — heartbeat 61
+54. Wichita (KS) 🔄 **Phase 3 Wichita live May 24** (3 centers) — heartbeat 62
+55. Missoula (MT) 🔄 **Phase 3 Missoula live May 25** (3 centers) — heartbeat 63
+56. Bozeman (MT) 🔄 **Phase 3 Bozeman live May 25** (1 hub, iCal) — heartbeat 64
+57. Lehigh Valley (PA) 🔄 **Phase 3 Lehigh Valley live May 25** (3 centers) — heartbeat 65
+58. Knoxville (TN) 🔄 **Phase 3 Knoxville live May 26** (4 centers) — heartbeat 66
+59. Chattanooga (TN) 🔄 **Phase 3 Chattanooga live May 26** (3 centers) — heartbeat 67
+60. Colorado Springs (CO) 🔄 **Phase 3 CO Springs live May 26** (5 centers) — heartbeat 68
+61. Fort Collins (CO) 🔄 **Phase 3 Fort Collins live May 26** (3 centers) — heartbeat 69
+
+### Fort Collins Phase 3 — ✅ Live May 26 (3 centers, heartbeat 69)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Heruka Kadampa Meditation Center (149 W Harvard St Suite 102, Fort Collins CO 80525) | Live iCal feed — `meditateinfortcollins.org/calendar/?ical=1`. NKT Tibetan (founded 1999). Multiple weekly drop-in sits. | ✅ Live heartbeat 69 |
+| Prairie Mountain Zen Center — Fort Collins (at Plymouth Congregational Church, 916 W Prospect Rd, Fort Collins CO 80526) | Recurring sit seeded — Wix site, no iCal. Thu 6:30–8:00pm. Soto Zen (Katagiri lineage, SZBA member). | ✅ Live heartbeat 69 |
+| Zen Meditation with Cathy Wright (Iyengar Yoga of Fort Collins) | Recurring sit seeded — Mon 5:30–6:30pm. Harada-Yasutani Zen (Dharma transmission 2023). Resumed June 2026. | ✅ Live heartbeat 69 |
+
+Colorado state: Fort Collins city filter added to `_filters.html`.
+Center bios added to centers.py for all 3 centers.
+`ingestion/sources/fort_collins.py` created; coordinator + abraxis wired.
+`sangha-seed-recurring.js`: 2 new sit defs (408 → 410 total), 6978 instances seeded.
+
+**Research notes (2026-05-26):**
+- Fort Collins Shambhala: CLOSED — "let go of its lease and is not presently meeting."
+- Fort Collins Zen Center (Kwan Um, 629 Smith St): likely dormant — website down, not in Kwan Um Americas active directory.
+- Fort Collins Zen Group (PO Box 546): likely dormant — website down, likely merged with Great Mountain Zen Center in Berthoud.
+- Peaceful Heart Sangha (Plum Village, 2nd/4th Sundays): bemindfulfortcollins.org unreachable; schedule via private Google Group email list. Deferred.
 
 ### Oklahoma City Phase 3 — ✅ Live May 20 (2 centers, heartbeat 49)
 

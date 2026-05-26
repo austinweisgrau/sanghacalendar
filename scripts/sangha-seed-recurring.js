@@ -4356,6 +4356,36 @@ const SITS = [
     notes: "Tibetan Meditation Center Colorado Sunday Morning Meditation (10:00–11:00am) at 3560 Hartsock Lane, Colorado Springs CO 80917. Led by Geshe Wangden Tashi (trained 20+ years at Sera Je Monastery, Gelug lineage). Includes compassion teaching, silent meditation, mantra recitation, and group discussion. Drop-in, all welcome, free. tibetanmeditationcentercolorado.com.",
     source_url: "https://www.tibetanmeditationcentercolorado.com", event_url: "https://www.tibetanmeditationcentercolorado.com",
   },
+
+  // -----------------------------------------------------------------------
+  // Fort Collins, CO — Phase 3 (heartbeat 69)
+  // -----------------------------------------------------------------------
+
+  // Prairie Mountain Zen Center — Fort Collins group. Soto Zen (Katagiri lineage).
+  // Plymouth Congregational Church, 916 W Prospect Rd, Fort Collins CO 80526.
+  // Thu 6:30–8:00pm. Drop-in, free.
+  {
+    org_id: "prairie_mountain_zen_fc", org_name: "Prairie Mountain Zen Center — Fort Collins",
+    title: "Thursday Evening Zazen",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "916 W Prospect Rd", city: "Fort Collins", state: "CO", neighborhood: "CSU Area",
+    lat: 40.5684, lng: -105.0969, tradition: "zen", location_type: "in-person",
+    notes: "Prairie Mountain Zen Center — Fort Collins Thursday Evening Zazen (6:30–8:00pm) at Plymouth Congregational Church, 916 W Prospect Rd, Fort Collins CO 80526 (enter from north parking lot door, follow signs to choir room). 30 minutes sitting + 10 minutes walking + tea and dharma discussion. Teacher trained under Dainin Katagiri Roshi at Minnesota Zen Center 1977–1989; listed with Soto Zen Buddhist Association (SZBA). Drop-in welcome, no fee. Contact: cliff@prairiemountain.org. prairiemountain.org/fort-collins.html.",
+    source_url: "https://www.prairiemountain.org/fort-collins.html", event_url: "https://www.prairiemountain.org/fort-collins.html",
+  },
+
+  // Zen Meditation with Cathy Wright — Iyengar Yoga of Fort Collins.
+  // Harada-Yasutani Zen (Dharma transmission 2023, Zen Center of Denver lineage).
+  // Mon 5:30–6:30pm. Drop-in, free. Note: resumed June 1, 2026.
+  {
+    org_id: "zen_fc_wright", org_name: "Zen Meditation with Cathy Wright — Fort Collins",
+    title: "Monday Evening Zen Sitting",
+    days: ["Monday"], time: { h: 17, m: 30 }, duration_min: 60,
+    address: "Fort Collins", city: "Fort Collins", state: "CO", neighborhood: "Fort Collins",
+    lat: 40.5853, lng: -105.0844, tradition: "zen", location_type: "in-person",
+    notes: "Monday Evening Zen Sitting (5:30–6:30pm) at Iyengar Yoga of Fort Collins (Sunrise Room), Fort Collins CO. Led by Cathy 'Seizan' Wright, who received Dharma transmission in 2023 from Peggy Metta Roshi at the Zen Center of Denver (Harada-Yasutani lineage, Soto and Rinzai styles). One hour silent sitting. Drop-in welcome; free, donations accepted for space rental. Resumed June 2026. cwrightyoga.com/zen-meditation/.",
+    source_url: "https://www.cwrightyoga.com/zen-meditation/", event_url: "https://www.cwrightyoga.com/zen-meditation/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

@@ -5450,4 +5450,79 @@ CENTERS = {
             "tibetanmeditationcentercolorado.com."
         ),
     },
+    # ------------------------------------------------------------------
+    # Fort Collins, CO — Phase 3 (heartbeat 69)
+    # ------------------------------------------------------------------
+    "heruka_kadampa_fc": {
+        "id": "heruka_kadampa_fc",
+        "name": "Heruka Kadampa Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://www.meditateinfortcollins.org",
+        "address": "149 W Harvard St Suite 102",
+        "city": "Fort Collins",
+        "state": "CO",
+        "zip": "80525",
+        "lat": 40.5542,
+        "lng": -105.0787,
+        "neighborhood": "Midtown Fort Collins",
+        "bio": (
+            "Heruka Kadampa Meditation Center is a New Kadampa Tradition (NKT) "
+            "center in Fort Collins, founded in 1999 as part of the Gelug lineage "
+            "revived by Geshe Kelsang Gyatso. One of the most active Buddhist "
+            "centers in northern Colorado, offering multiple weekly drop-in "
+            "meditation classes: Monday evenings at FoCo Cafe (6:30–7:30pm, $10), "
+            "Thursday lunchtime Simply Meditate (12:15–12:45pm), Wednesday evening "
+            "class (7:00–8:30pm, $15), Friday after-work meditation (5:30–6:15pm), "
+            "Sunday morning class (11:30am–12:45pm, $15), and Sunday Prayers for "
+            "World Peace (2:00–3:00pm, free). No one turned away for lack of funds; "
+            "income-based pricing available. 149 W Harvard St, Suite 102, Fort "
+            "Collins CO 80525. meditateinfortcollins.org."
+        ),
+    },
+    "prairie_mountain_zen_fc": {
+        "id": "prairie_mountain_zen_fc",
+        "name": "Prairie Mountain Zen Center — Fort Collins",
+        "tradition": "zen",
+        "url": "https://www.prairiemountain.org/fort-collins.html",
+        "address": "916 W Prospect Rd",
+        "city": "Fort Collins",
+        "state": "CO",
+        "zip": "80526",
+        "lat": 40.5684,
+        "lng": -105.0969,
+        "neighborhood": "CSU Area",
+        "bio": (
+            "Prairie Mountain Zen Center's Fort Collins sitting group meets weekly "
+            "at Plymouth Congregational Church (916 W Prospect Rd — enter from the "
+            "north parking lot, follow signs to the choir room). The teacher was "
+            "trained under Dainin Katagiri Roshi at Minnesota Zen Center from "
+            "1977 to 1989 and is listed with the Soto Zen Buddhist Association "
+            "(SZBA). Thursday evenings 6:30–8:00pm: 30 minutes sitting, 10 minutes "
+            "walking, tea and dharma discussion. Drop-in welcome; no fee. Occasional "
+            "Saturday one-day sittings at the same location. "
+            "prairiemountain.org/fort-collins.html."
+        ),
+    },
+    "zen_fc_wright": {
+        "id": "zen_fc_wright",
+        "name": "Zen Meditation with Cathy Wright — Fort Collins",
+        "tradition": "zen",
+        "url": "https://www.cwrightyoga.com/zen-meditation/",
+        "address": "Fort Collins",
+        "city": "Fort Collins",
+        "state": "CO",
+        "zip": "80521",
+        "lat": 40.5853,
+        "lng": -105.0844,
+        "neighborhood": "Fort Collins",
+        "bio": (
+            "Weekly Zen sitting meditation led by Cathy 'Seizan' Wright, an "
+            "authorized teacher who received Dharma transmission in 2023 from "
+            "Peggy Metta Roshi at the Zen Center of Denver. Harada-Yasutani "
+            "lineage (training in both Soto and Rinzai styles). Monday evenings "
+            "5:30–6:30pm at the Iyengar Yoga of Fort Collins (Sunrise Room). "
+            "One hour of silent sitting. Drop-in welcome; free, donations accepted "
+            "for space rental. cwrightyoga.com/zen-meditation/."
+        ),
+    },
 }

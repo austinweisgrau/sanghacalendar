@@ -87,6 +87,7 @@ from ingestion.sources import lehigh_valley as lehigh_valley_sources  # noqa: F4
 from ingestion.sources import knoxville as knoxville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import chattanooga as chattanooga_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import colorado_springs as colorado_springs_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import fort_collins as fort_collins_sources
 
 log = logging.getLogger(__name__)
 
@@ -1069,6 +1070,30 @@ def main():
 
     # Lehigh Valley PA Phase 3 — all centers seeded via sangha-seed-recurring.js (no live feeds)
     log.info("--- Lehigh Valley PA Phase 3: Dharma Moon Sangha + Blue Mountain Zendo + LV Buddhist Group (recurring sits only) ---")
+
+    # Fort Collins CO Phase 3 — Heruka Kadampa iCal feed + recurring-only centers
+    log.info("--- Fort Collins CO Phase 3: Heruka Kadampa iCal feed ---")
+    for org_id, feed_cfg in fort_collins_sources.ICAL_FEEDS.items():
+        center = fort_collins_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Fort Collins iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Fort Collins iCal {org_id} failed: {e}")
 
     # Bozeman MT Phase 3 — Bozeman Dharma Center WordPress iCal feed
     log.info("--- Bozeman MT Phase 3: Bozeman Dharma Center iCal feed ---")
