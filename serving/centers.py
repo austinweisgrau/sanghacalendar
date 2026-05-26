@@ -5262,4 +5262,78 @@ CENTERS = {
             "non-Buddhist alike. Free. Info@lvbuddhistgroup.org."
         ),
     },
+    # -------------------------------------------------------------------------
+    # Chattanooga, TN — Phase 3 (heartbeat 67)
+    # -------------------------------------------------------------------------
+    "chattanooga_insight_group": {
+        "id": "chattanooga_insight_group",
+        "name": "Chattanooga Insight Group",
+        "tradition": "theravada",
+        "url": "https://chattanoogainsight.com",
+        "address": "400 E Main St Ste 150",
+        "city": "Chattanooga",
+        "state": "TN",
+        "zip": "37408",
+        "lat": 35.0484,
+        "lng": -85.3087,
+        "neighborhood": "Downtown Chattanooga",
+        "bio": (
+            "Chattanooga Insight Group continues the practice community that grew "
+            "from the Chattanooga Insight Meditation Community (CIMC, which closed "
+            "in December 2025). The group is dedicated to meditation and mindfulness "
+            "in the Insight/Vipassana tradition, exploring themes of mindfulness, "
+            "insight, daily life practice, and the transformative power of presence. "
+            "Weekly Thursday evenings, 6:30–7:45pm, at the Center for Mindful "
+            "Living (400 E Main St Ste 150, downtown Chattanooga). Sessions begin "
+            "with 30 minutes of silent meditation, followed by a dharma talk or "
+            "sharing and Q&A. In-person. Free. chattanoogainsight.com."
+        ),
+    },
+    "zen_group_chattanooga": {
+        "id": "zen_group_chattanooga",
+        "name": "Zen Group of Chattanooga",
+        "tradition": "zen",
+        "url": "https://storder.org/portfolio/chattanooga-zen-group/",
+        "address": "335 Crestway Drive",
+        "city": "Chattanooga",
+        "state": "TN",
+        "zip": "37411",
+        "lat": 35.0203,
+        "lng": -85.2395,
+        "neighborhood": "Eastdale",
+        "bio": (
+            "Zen Group of Chattanooga is an affiliate of the Silent Thunder Order, "
+            "continuing the Soto Zen lineage of Soyu Matsuoka Roshi — one of the "
+            "first Japanese teachers to transmit Soto Zen in North America. "
+            "Sunday morning sitting from 7:30–9:00am at 335 Crestway Drive. "
+            "Format: three 20–25 minute zazen periods alternating with kinhin "
+            "(walking meditation). Newcomers are welcome and instruction is "
+            "available. No fee; donations appreciated. Contact: tlrieth@comcast.net."
+        ),
+    },
+    "paramita_center_southeast": {
+        "id": "paramita_center_southeast",
+        "name": "Paramita Center Southeast",
+        "tradition": "tibetan",
+        "url": "https://buddhismsoutheast.org",
+        "address": "1918 Union Ave",
+        "city": "Chattanooga",
+        "state": "TN",
+        "zip": "37405",
+        "lat": 35.0713,
+        "lng": -85.3128,
+        "neighborhood": "North Chattanooga",
+        "bio": (
+            "Paramita Center Southeast is a teaching center for meditation and "
+            "Tibetan Buddhism in Chattanooga, affiliated with the Paramita Centres "
+            "of Québec, Toronto, France, and India. The center is in the Gelug "
+            "tradition; its spiritual director is Lama Samten, and its senior "
+            "teacher is Tibetan monk Tenzin Gawa (Jason Simard). Regular 'Happy "
+            "Hour' meditation every Tuesday, 5:30–6:30pm, at St Andrews Center "
+            "(1918 Union Ave, North Chattanooga) — a brief intro teaching, group "
+            "practice, and discussion. All traditions and levels welcome. The "
+            "center also offers lamrim courses, multi-day urban retreats, and "
+            "visiting teacher events throughout the year. buddhismsoutheast.org."
+        ),
+    },
 }

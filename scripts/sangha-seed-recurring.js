@@ -4208,6 +4208,49 @@ const SITS = [
     notes: "Lehigh Valley Buddhist Group monthly Sunday gathering (4:00–5:30pm) at Unity of Lehigh Valley church, 26 N 3rd St, Emmaus PA. Non-sectarian; guest teachers from Theravada, Tibetan, Zen, and other traditions lead meditation and dharma talks. Open to all. Free. Info@lvbuddhistgroup.org.",
     source_url: "https://www.lvbuddhistgroup.org", event_url: "https://www.lvbuddhistgroup.org/events-2-1",
   },
+
+  // -------------------------------------------------------------------------
+  // Chattanooga, TN — Phase 3 (heartbeat 67)
+  // -------------------------------------------------------------------------
+
+  // Chattanooga Insight Group — Vipassana/Insight tradition. chattanoogainsight.com
+  // Center for Mindful Living, 400 E Main St Ste 150, Chattanooga TN 37408.
+  // Continues community after CIMC closed Dec 2025. Weekly Thursday 6:30–7:45pm.
+  {
+    org_id: "chattanooga_insight_group", org_name: "Chattanooga Insight Group",
+    title: "Thursday Evening Sit",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "400 E Main St Ste 150", city: "Chattanooga", state: "TN", neighborhood: "Downtown Chattanooga",
+    lat: 35.0484, lng: -85.3087, tradition: "theravada", location_type: "in-person",
+    notes: "Chattanooga Insight Group Thursday evening sit (6:30–7:45pm) at Center for Mindful Living, 400 E Main St Ste 150, downtown Chattanooga TN. Insight/Vipassana tradition. Begins with 30 min silent meditation, followed by dharma talk or sharing and Q&A. Continues the community of the former CIMC (closed Dec 2025). Free, all welcome. chattanoogainsight.com.",
+    source_url: "https://chattanoogainsight.com", event_url: "https://breathingbody.net/events/chattanooga-insight-group/",
+  },
+
+  // Zen Group of Chattanooga — Soto Zen, Silent Thunder Order (Matsuoka lineage).
+  // 335 Crestway Drive, Chattanooga TN 37411. Weekly Sunday 7:30–9:00am.
+  // Format: 3x20–25 min zazen + 2x5 min kinhin. Contact: tlrieth@comcast.net.
+  {
+    org_id: "zen_group_chattanooga", org_name: "Zen Group of Chattanooga",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 7, m: 30 }, duration_min: 90,
+    address: "335 Crestway Drive", city: "Chattanooga", state: "TN", neighborhood: "Eastdale",
+    lat: 35.0203, lng: -85.2395, tradition: "zen", location_type: "in-person",
+    notes: "Zen Group of Chattanooga Sunday morning zazen (7:30–9:00am) at 335 Crestway Drive, Chattanooga TN. Soto Zen, Silent Thunder Order (Soyu Matsuoka Roshi lineage). Three 20–25 min zazen periods alternating with kinhin (walking meditation). Newcomers welcome; instruction available. Free, donations appreciated. Contact: tlrieth@comcast.net.",
+    source_url: "https://storder.org/portfolio/chattanooga-zen-group/", event_url: "https://storder.org/portfolio/chattanooga-zen-group/",
+  },
+
+  // Paramita Center Southeast — Tibetan Gelug, Paramita lineage (Quebec/India).
+  // St Andrews Center, 1918 Union Ave, Chattanooga TN 37405.
+  // Regular "Happy Hour" meditation: Tuesday 5:30–6:30pm. All traditions welcome.
+  {
+    org_id: "paramita_center_southeast", org_name: "Paramita Center Southeast",
+    title: "Tuesday Happy Hour Meditation",
+    days: ["Tuesday"], time: { h: 17, m: 30 }, duration_min: 60,
+    address: "1918 Union Ave", city: "Chattanooga", state: "TN", neighborhood: "North Chattanooga",
+    lat: 35.0713, lng: -85.3128, tradition: "tibetan", location_type: "in-person",
+    notes: "Paramita Center Southeast Tuesday 'Happy Hour' meditation (5:30–6:30pm) at St Andrews Center, 1918 Union Ave, North Chattanooga TN. Tibetan Gelug tradition (Paramita Centres lineage); senior teacher Tenzin Gawa (Jason Simard). Brief intro teaching, group practice, and discussion. All traditions and levels welcome. Free. buddhismsoutheast.org.",
+    source_url: "https://buddhismsoutheast.org", event_url: "https://buddhismsoutheast.org/calendar/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
