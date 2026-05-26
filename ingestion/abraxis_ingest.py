@@ -86,6 +86,7 @@ from ingestion.sources import bozeman as bozeman_sources
 from ingestion.sources import lehigh_valley as lehigh_valley_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import knoxville as knoxville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import chattanooga as chattanooga_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import colorado_springs as colorado_springs_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

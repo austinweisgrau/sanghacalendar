@@ -5336,4 +5336,118 @@ CENTERS = {
             "visiting teacher events throughout the year. buddhismsoutheast.org."
         ),
     },
+    # ------------------------------------------------------------------
+    # Colorado Springs, CO — Phase 3 (heartbeat 68)
+    # ------------------------------------------------------------------
+    "springs_mountain_sangha": {
+        "id": "springs_mountain_sangha",
+        "name": "Springs Mountain Sangha",
+        "tradition": "zen",
+        "url": "https://www.smszen.org",
+        "address": "1010 N Nevada Ave",
+        "city": "Colorado Springs",
+        "state": "CO",
+        "zip": "80903",
+        "lat": 38.8433,
+        "lng": -104.8225,
+        "neighborhood": "Colorado College",
+        "bio": (
+            "Springs Mountain Sangha is a Zen community in the Pacific Zen School "
+            "lineage (Open Source Zen), rooted in the Sanbo Kyodan tradition. The "
+            "sangha meets three times weekly at Shove Chapel on the Colorado College "
+            "campus in Colorado Springs. Monday evenings 6:00–8:00pm (sitting + "
+            "dharma talk; Zoom also available). Wednesday mornings 6:30–7:30am and "
+            "Saturday mornings 6:30–8:30am (sitting + walking meditation). All sits "
+            "are drop-in — 'We consider a member anyone who wishes to be considered "
+            "a member. There are no membership dues or sign-up requirements.' "
+            "Instruction available for newcomers. Free. smszen.org."
+        ),
+    },
+    "rocky_mountain_insight_cs": {
+        "id": "rocky_mountain_insight_cs",
+        "name": "Rocky Mountain Insight",
+        "tradition": "theravada",
+        "url": "https://rockymountaininsight.org",
+        "address": "2525 W Pikes Peak Ave Suite A",
+        "city": "Colorado Springs",
+        "state": "CO",
+        "zip": "80904",
+        "lat": 38.8673,
+        "lng": -104.8806,
+        "neighborhood": "Old Colorado City",
+        "bio": (
+            "Rocky Mountain Insight is a Vipassana/Insight Meditation community "
+            "in the Theravada tradition, located in Colorado Springs' Old Colorado "
+            "City neighborhood. Sunday mornings 9:00–10:00am: sitting practice and "
+            "dharma reading. Wednesday evenings 6:00–7:00pm: Sangha Night — walking "
+            "meditation, sitting, dharma talk, and community (open to all). Both "
+            "sessions are drop-in and available in-person and via Zoom. First and "
+            "third Wednesdays include a 5:15pm new-student orientation. Free; "
+            "donations welcome. rockymountaininsight.org."
+        ),
+    },
+    "bodhimind_center_cs": {
+        "id": "bodhimind_center_cs",
+        "name": "BodhiMind Center",
+        "tradition": "tibetan",
+        "url": "https://bodhimindcenter.org",
+        "address": "2955 Professional Place Suite 101",
+        "city": "Colorado Springs",
+        "state": "CO",
+        "zip": "80904",
+        "lat": 38.8670,
+        "lng": -104.8731,
+        "neighborhood": "Old Colorado City",
+        "bio": (
+            "BodhiMind Center is a nonsectarian Buddhist center in Colorado Springs, "
+            "rooted in the Tibetan tradition and founded with the guidance of Khen "
+            "Rinpoche Lobzang Tsetan. Tuesday and Thursday evenings, 6:00–8:00pm. "
+            "Each session includes two 20-minute sitting meditation periods, a "
+            "teaching, and group discussion. Drop-in welcome; both in-person and "
+            "Zoom available. No membership fees. 2955 Professional Place Suite 101, "
+            "Colorado Springs CO 80904. bodhimindcenter.org."
+        ),
+    },
+    "kadampa_cs": {
+        "id": "kadampa_cs",
+        "name": "Kadampa Meditation Center — Colorado Springs",
+        "tradition": "tibetan",
+        "url": "https://meditationincolorado.org/colorado-springs/",
+        "address": "2611 W Colorado Ave Studio B",
+        "city": "Colorado Springs",
+        "state": "CO",
+        "zip": "80904",
+        "lat": 38.8590,
+        "lng": -104.8780,
+        "neighborhood": "Old Colorado City",
+        "bio": (
+            "Kadampa Meditation Center Colorado Springs is a branch of KMC Colorado "
+            "(Denver), part of the New Kadampa Tradition — the Gelug lineage as "
+            "revived by Geshe Kelsang Gyatso. Drop-in meditation classes Monday "
+            "evenings, 6:30–7:45pm, at Edenology Holistic Wellness (2611 W. Colorado "
+            "Ave., Studio B). $15/class; low-income accommodations available. No "
+            "registration required. meditationincolorado.org/colorado-springs/."
+        ),
+    },
+    "tibetan_meditation_center_cs": {
+        "id": "tibetan_meditation_center_cs",
+        "name": "Tibetan Meditation Center Colorado",
+        "tradition": "tibetan",
+        "url": "https://www.tibetanmeditationcentercolorado.com",
+        "address": "3560 Hartsock Lane",
+        "city": "Colorado Springs",
+        "state": "CO",
+        "zip": "80917",
+        "lat": 38.9017,
+        "lng": -104.7558,
+        "neighborhood": "Northeast Colorado Springs",
+        "bio": (
+            "Tibetan Meditation Center Colorado is led by Geshe Wangden Tashi, who "
+            "trained for over 20 years at Sera Je Monastery in India (Gelug lineage). "
+            "Sunday mornings 10:00–11:00am: compassion teaching, silent meditation, "
+            "mantra recitation, and group discussion. Drop-in; all are welcome. "
+            "Free. 3560 Hartsock Lane, Colorado Springs CO 80917. "
+            "tibetanmeditationcentercolorado.com."
+        ),
+    },
 }

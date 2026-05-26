@@ -4251,6 +4251,111 @@ const SITS = [
     notes: "Paramita Center Southeast Tuesday 'Happy Hour' meditation (5:30–6:30pm) at St Andrews Center, 1918 Union Ave, North Chattanooga TN. Tibetan Gelug tradition (Paramita Centres lineage); senior teacher Tenzin Gawa (Jason Simard). Brief intro teaching, group practice, and discussion. All traditions and levels welcome. Free. buddhismsoutheast.org.",
     source_url: "https://buddhismsoutheast.org", event_url: "https://buddhismsoutheast.org/calendar/",
   },
+
+  // -----------------------------------------------------------------------
+  // Colorado Springs, CO — Phase 3 (heartbeat 68)
+  // -----------------------------------------------------------------------
+
+  // Springs Mountain Sangha — Pacific Zen School / Sanbo Kyodan lineage.
+  // Shove Chapel, Colorado College, Colorado Springs CO 80903.
+  // Mon 6–8pm (dharma talk), Wed 6:30–7:30am, Sat 6:30–8:30am. Drop-in, free.
+  {
+    org_id: "springs_mountain_sangha", org_name: "Springs Mountain Sangha",
+    title: "Monday Evening Zen Sitting",
+    days: ["Monday"], time: { h: 18, m: 0 }, duration_min: 120,
+    address: "1010 N Nevada Ave", city: "Colorado Springs", state: "CO", neighborhood: "Colorado College",
+    lat: 38.8433, lng: -104.8225, tradition: "zen", location_type: "in-person",
+    notes: "Springs Mountain Sangha Monday Evening Zen Sitting (6:00–8:00pm) at Shove Chapel, Colorado College, Colorado Springs CO. Pacific Zen School / Open Source Zen / Sanbo Kyodan lineage. Two sitting periods + dharma talk. Also available via Zoom. Drop-in, free. smszen.org.",
+    source_url: "https://www.smszen.org", event_url: "https://www.smszen.org/sangha-event-calendar/",
+  },
+  {
+    org_id: "springs_mountain_sangha", org_name: "Springs Mountain Sangha",
+    title: "Wednesday Morning Zen Sitting",
+    days: ["Wednesday"], time: { h: 6, m: 30 }, duration_min: 60,
+    address: "1010 N Nevada Ave", city: "Colorado Springs", state: "CO", neighborhood: "Colorado College",
+    lat: 38.8433, lng: -104.8225, tradition: "zen", location_type: "in-person",
+    notes: "Springs Mountain Sangha Wednesday Morning Zen Sitting (6:30–7:30am) at Shove Chapel, Colorado College, Colorado Springs CO. Two sitting periods with walking meditation. Drop-in, free. smszen.org.",
+    source_url: "https://www.smszen.org", event_url: "https://www.smszen.org/sangha-event-calendar/",
+  },
+  {
+    org_id: "springs_mountain_sangha", org_name: "Springs Mountain Sangha",
+    title: "Saturday Morning Zen Sitting",
+    days: ["Saturday"], time: { h: 6, m: 30 }, duration_min: 120,
+    address: "1010 N Nevada Ave", city: "Colorado Springs", state: "CO", neighborhood: "Colorado College",
+    lat: 38.8433, lng: -104.8225, tradition: "zen", location_type: "in-person",
+    notes: "Springs Mountain Sangha Saturday Morning Zen Sitting (6:30–8:30am) at Shove Chapel, Colorado College, Colorado Springs CO. Four sitting periods with walking meditation. Drop-in, free. smszen.org.",
+    source_url: "https://www.smszen.org", event_url: "https://www.smszen.org/sangha-event-calendar/",
+  },
+
+  // Rocky Mountain Insight — Vipassana/Insight Meditation (Theravada).
+  // 2525 W Pikes Peak Ave Suite A, Colorado Springs CO 80904 (Old Colorado City).
+  // Sun 9–10am, Wed 6–7pm. Drop-in, free, in-person + Zoom.
+  {
+    org_id: "rocky_mountain_insight_cs", org_name: "Rocky Mountain Insight",
+    title: "Sunday Morning Vipassana Sit",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 60,
+    address: "2525 W Pikes Peak Ave Suite A", city: "Colorado Springs", state: "CO", neighborhood: "Old Colorado City",
+    lat: 38.8673, lng: -104.8806, tradition: "theravada", location_type: "in-person",
+    notes: "Rocky Mountain Insight Sunday Morning Vipassana Sit (9:00–10:00am) at 2525 W. Pikes Peak Ave. Suite A, Old Colorado City, Colorado Springs CO. Sitting practice and dharma reading. Drop-in, in-person + Zoom. Free; donations welcome. rockymountaininsight.org.",
+    source_url: "https://rockymountaininsight.org", event_url: "https://rockymountaininsight.org/classes/",
+  },
+  {
+    org_id: "rocky_mountain_insight_cs", org_name: "Rocky Mountain Insight",
+    title: "Wednesday Sangha Night",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "2525 W Pikes Peak Ave Suite A", city: "Colorado Springs", state: "CO", neighborhood: "Old Colorado City",
+    lat: 38.8673, lng: -104.8806, tradition: "theravada", location_type: "in-person",
+    notes: "Rocky Mountain Insight Wednesday Sangha Night (6:00–7:00pm) at 2525 W. Pikes Peak Ave. Suite A, Old Colorado City, Colorado Springs CO. Walking meditation, sitting, dharma talk, and community. Open to all. In-person + Zoom. Free; donations welcome. rockymountaininsight.org.",
+    source_url: "https://rockymountaininsight.org", event_url: "https://rockymountaininsight.org/classes/",
+  },
+
+  // BodhiMind Center — Nonsectarian Buddhist, rooted in Tibetan tradition.
+  // 2955 Professional Place Suite 101, Colorado Springs CO 80904.
+  // Tue & Thu 6–8pm. Drop-in, free, in-person + Zoom.
+  {
+    org_id: "bodhimind_center_cs", org_name: "BodhiMind Center",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 120,
+    address: "2955 Professional Place Suite 101", city: "Colorado Springs", state: "CO", neighborhood: "Old Colorado City",
+    lat: 38.8670, lng: -104.8731, tradition: "tibetan", location_type: "in-person",
+    notes: "BodhiMind Center Tuesday Evening Meditation (6:00–8:00pm) at 2955 Professional Place Suite 101, Colorado Springs CO. Nonsectarian Buddhist center rooted in Tibetan tradition (founded with support of Khen Rinpoche Lobzang Tsetan). Two 20-min sitting periods + teaching + discussion. Drop-in, free, in-person + Zoom. bodhimindcenter.org.",
+    source_url: "https://bodhimindcenter.org", event_url: "https://bodhimindcenter.org/event-calendar/",
+  },
+  {
+    org_id: "bodhimind_center_cs", org_name: "BodhiMind Center",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 120,
+    address: "2955 Professional Place Suite 101", city: "Colorado Springs", state: "CO", neighborhood: "Old Colorado City",
+    lat: 38.8670, lng: -104.8731, tradition: "tibetan", location_type: "in-person",
+    notes: "BodhiMind Center Thursday Evening Meditation (6:00–8:00pm) at 2955 Professional Place Suite 101, Colorado Springs CO. Two 20-min sitting periods + teaching + discussion. Drop-in, free, in-person + Zoom. bodhimindcenter.org.",
+    source_url: "https://bodhimindcenter.org", event_url: "https://bodhimindcenter.org/event-calendar/",
+  },
+
+  // Kadampa Meditation Center — Colorado Springs. New Kadampa Tradition (NKT/Gelug).
+  // Edenology Holistic Wellness, 2611 W Colorado Ave Studio B, Colorado Springs CO 80904.
+  // Mon 6:30–7:45pm. Drop-in, $15/class.
+  {
+    org_id: "kadampa_cs", org_name: "Kadampa Meditation Center — Colorado Springs",
+    title: "Monday Evening Meditation Class",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "2611 W Colorado Ave Studio B", city: "Colorado Springs", state: "CO", neighborhood: "Old Colorado City",
+    lat: 38.8590, lng: -104.8780, tradition: "tibetan", location_type: "in-person",
+    notes: "Kadampa Meditation Center — Colorado Springs Monday Evening Meditation Class (6:30–7:45pm) at Edenology Holistic Wellness, 2611 W. Colorado Ave. Studio B, Colorado Springs CO. New Kadampa Tradition (Gelug lineage, Geshe Kelsang Gyatso). Drop-in, no registration. $15/class; low-income accommodations available. meditationincolorado.org/colorado-springs/.",
+    source_url: "https://meditationincolorado.org/colorado-springs/", event_url: "https://meditationincolorado.org/colorado-springs/",
+  },
+
+  // Tibetan Meditation Center Colorado — Tibetan Buddhism (Gelug).
+  // 3560 Hartsock Lane, Colorado Springs CO 80917.
+  // Sun 10–11am. Drop-in, free.
+  {
+    org_id: "tibetan_meditation_center_cs", org_name: "Tibetan Meditation Center Colorado",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "3560 Hartsock Lane", city: "Colorado Springs", state: "CO", neighborhood: "Northeast Colorado Springs",
+    lat: 38.9017, lng: -104.7558, tradition: "tibetan", location_type: "in-person",
+    notes: "Tibetan Meditation Center Colorado Sunday Morning Meditation (10:00–11:00am) at 3560 Hartsock Lane, Colorado Springs CO 80917. Led by Geshe Wangden Tashi (trained 20+ years at Sera Je Monastery, Gelug lineage). Includes compassion teaching, silent meditation, mantra recitation, and group discussion. Drop-in, all welcome, free. tibetanmeditationcentercolorado.com.",
+    source_url: "https://www.tibetanmeditationcentercolorado.com", event_url: "https://www.tibetanmeditationcentercolorado.com",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
