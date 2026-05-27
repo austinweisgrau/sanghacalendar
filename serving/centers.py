@@ -1563,6 +1563,110 @@ CENTERS = {
             "all are welcome."
         ),
     },
+    # Tucson, AZ — Phase 3 expansion (heartbeat 70)
+    "insight_meditation_tucson": {
+        "id": "insight_meditation_tucson",
+        "name": "Insight Meditation Tucson",
+        "tradition": "theravada",
+        "url": "https://www.insightmeditationtucson.org",
+        "address": "931 North Fifth Avenue",
+        "city": "Tucson",
+        "state": "AZ",
+        "zip": "85705",
+        "neighborhood": "Armory Park / Barrio Historico",
+        "lat": 32.2282,
+        "lng": -110.9741,
+        "description": (
+            "Insight Meditation Tucson (IMT) is a Theravada/Vipassana community "
+            "offering weekly drop-in sits at the Pima Friends Meeting House. "
+            "Thursday evenings 6:00–7:45pm: guided meditation, dharma talk, and "
+            "discussion — in-person and Zoom. Also a 1st Monday beginner drop-in "
+            "(5:30–6:30pm) and weekday morning Zoom sits (Mon–Fri 7:00–7:30am). "
+            "Beginner-friendly; no registration needed. insightmeditationtucson.org."
+        ),
+    },
+    "tcmc_tucson": {
+        "id": "tcmc_tucson",
+        "name": "Tucson Community Meditation Center",
+        "tradition": "theravada",
+        "url": "https://tucsonmeditation.org",
+        "address": "1147 North Howard Boulevard",
+        "city": "Tucson",
+        "state": "AZ",
+        "zip": "85705",
+        "neighborhood": "Midtown Tucson",
+        "lat": 32.2337,
+        "lng": -110.9734,
+        "description": (
+            "Tucson Community Meditation Center (TCMC) is a non-sectarian Vipassana "
+            "community founded in 1984 — one of the oldest meditation centers in Tucson. "
+            "Offers multiple weekly sits: Monday 6pm 'Meditating in Community' (hybrid), "
+            "Tuesday 5pm peer-led silent sit (in-person), Wednesday 6pm Mindfulness & "
+            "Loving Kindness (hybrid), Thursday 6pm Heart of Recovery, and 1st Sunday "
+            "8:30am drop-in. Drop-in welcome; dana-based. tucsonmeditation.org."
+        ),
+    },
+    "zen_desert_sangha_tucson": {
+        "id": "zen_desert_sangha_tucson",
+        "name": "Zen Desert Sangha",
+        "tradition": "zen",
+        "url": "https://www.zendesertsangha.org",
+        "address": "3226 North Martin Avenue",
+        "city": "Tucson",
+        "state": "AZ",
+        "zip": "85712",
+        "neighborhood": "Richland Heights",
+        "lat": 32.2591,
+        "lng": -110.9232,
+        "description": (
+            "Zen Desert Sangha is a Zen community in the Diamond Sangha lineage "
+            "(Robert Aitken Roshi), practicing in Tucson since the 1990s. Monday and "
+            "Wednesday evenings 6:30–8pm: zazen open to all. Saturday mornings: "
+            "7:30am–10:30am full sitting schedule with samu and chanting (also Zoom). "
+            "Sunday 5–6:30pm sitting. No advance contact needed; all welcome. "
+            "zendesertsangha.org."
+        ),
+    },
+    "awam_tbi_tucson": {
+        "id": "awam_tbi_tucson",
+        "name": "Awam Tibetan Buddhist Institute",
+        "tradition": "tibetan",
+        "url": "https://www.awaminstitute.org",
+        "address": "301B North Longfellow Avenue",
+        "city": "Tucson",
+        "state": "AZ",
+        "zip": "85711",
+        "neighborhood": "Midtown Tucson",
+        "lat": 32.2362,
+        "lng": -110.9042,
+        "description": (
+            "Awam Tibetan Buddhist Institute is a Nyingma Dzogchen center in Tucson, "
+            "founded by Venerable Khenchen Tsewang Rigdzin Rinpoche. Offers Sunday "
+            "morning teachings (9:30–10:30am, Zoom + YouTube) and Wednesday evening "
+            "mindfulness practice (6:00–6:30pm). Active YouTube channel with hundreds "
+            "of teachings. awaminstitute.org."
+        ),
+    },
+    "desert_rain_zen_tucson": {
+        "id": "desert_rain_zen_tucson",
+        "name": "Desert Rain Zen",
+        "tradition": "zen",
+        "url": "https://www.desertrainzen.org",
+        "address": "1401 East First Street",
+        "city": "Tucson",
+        "state": "AZ",
+        "zip": "85719",
+        "neighborhood": "University of Arizona Campus",
+        "lat": 32.2253,
+        "lng": -110.9459,
+        "description": (
+            "Desert Rain Zen is a Zen meditation group meeting at the Little Chapel "
+            "of All Nations on the University of Arizona campus. Thursday evenings "
+            "6:30–7:30pm: guided meditation, hybrid in-person + Zoom. Sunday 3:30–5pm: "
+            "zazen and koan conversation (Zoom). Beginner-friendly. Harada-Yasutani "
+            "Zen lineage. desertrainzen.org."
+        ),
+    },
     "houston_zen": {
         "id": "houston_zen",
         "name": "Houston Zen Center",

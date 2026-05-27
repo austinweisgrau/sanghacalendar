@@ -896,6 +896,116 @@ const SITS = [
     source_url: "https://www.meditationintucson.org", event_url: "https://www.meditationintucson.org/simply-meditate",
   },
 
+  // Insight Meditation Tucson — Theravada/Vipassana. Pima Friends Meeting House.
+  // 931 N Fifth Ave, Tucson AZ 85705. Verified 2026-05-27.
+  // Thu drop-in 6–7:45pm hybrid; 1st Mon 5:30–6:30pm beginner drop-in.
+  {
+    org_id: "insight_meditation_tucson", org_name: "Insight Meditation Tucson",
+    title: "Thursday Evening Drop-In Sit",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 105,
+    address: "931 North Fifth Avenue", city: "Tucson", state: "AZ", neighborhood: "Armory Park / Barrio Historico",
+    lat: 32.2282, lng: -110.9741, tradition: "theravada", location_type: "hybrid",
+    notes: "Weekly drop-in: guided meditation, dharma talk, discussion. In-person + Zoom. All welcome, no experience needed.",
+    source_url: "https://www.insightmeditationtucson.org", event_url: "https://www.insightmeditationtucson.org/classes",
+  },
+
+  // Tucson Community Meditation Center — non-sectarian Vipassana, founded 1984.
+  // 1147 N Howard Blvd, Tucson AZ 85705. Verified 2026-05-27.
+  // Mon 6pm, Tue 5pm, Wed 6pm (hybrid). Thu 6pm, 1st Sun 8:30am also offered.
+  {
+    org_id: "tcmc_tucson", org_name: "Tucson Community Meditation Center",
+    title: "Monday Evening Sit — Meditating in Community",
+    days: ["Monday"], time: { h: 18, m: 0 }, duration_min: 80,
+    address: "1147 North Howard Boulevard", city: "Tucson", state: "AZ", neighborhood: "Midtown Tucson",
+    lat: 32.2337, lng: -110.9734, tradition: "theravada", location_type: "hybrid",
+    notes: "Hybrid in-person + Zoom. Guided meditation and community sitting. Drop-in, dana-based.",
+    source_url: "https://tucsonmeditation.org", event_url: "https://tucsonmeditation.org/classes-sits/classes",
+  },
+  {
+    org_id: "tcmc_tucson", org_name: "Tucson Community Meditation Center",
+    title: "Tuesday Silent Sit",
+    days: ["Tuesday"], time: { h: 17, m: 0 }, duration_min: 55,
+    address: "1147 North Howard Boulevard", city: "Tucson", state: "AZ", neighborhood: "Midtown Tucson",
+    lat: 32.2337, lng: -110.9734, tradition: "theravada", location_type: "in-person",
+    notes: "Peer-led silent sitting meditation. In-person only. Drop-in, dana-based.",
+    source_url: "https://tucsonmeditation.org", event_url: "https://tucsonmeditation.org/classes-sits/classes",
+  },
+  {
+    org_id: "tcmc_tucson", org_name: "Tucson Community Meditation Center",
+    title: "Wednesday Evening Sit — Mindfulness and Loving Kindness",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "1147 North Howard Boulevard", city: "Tucson", state: "AZ", neighborhood: "Midtown Tucson",
+    lat: 32.2337, lng: -110.9734, tradition: "theravada", location_type: "hybrid",
+    notes: "Guided mindfulness and loving kindness meditation. Hybrid in-person + Zoom. Drop-in, dana-based.",
+    source_url: "https://tucsonmeditation.org", event_url: "https://tucsonmeditation.org/classes-sits/classes",
+  },
+
+  // Zen Desert Sangha — Diamond Sangha (Robert Aitken Roshi) lineage.
+  // 3226 N Martin Ave, Tucson AZ 85712. Verified 2026-05-27.
+  // Mon/Wed 6:30–8pm; Sat 7:30am–10:30am; Sun 5–6:30pm.
+  {
+    org_id: "zen_desert_sangha_tucson", org_name: "Zen Desert Sangha",
+    title: "Evening Zazen",
+    days: ["Monday", "Wednesday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "3226 North Martin Avenue", city: "Tucson", state: "AZ", neighborhood: "Richland Heights",
+    lat: 32.2591, lng: -110.9232, tradition: "zen", location_type: "in-person",
+    notes: "Monday and Wednesday evening zazen: sitting and walking meditation. All welcome; no advance contact needed. Free.",
+    source_url: "https://www.zendesertsangha.org", event_url: "https://www.zendesertsangha.org/schedule",
+  },
+  {
+    org_id: "zen_desert_sangha_tucson", org_name: "Zen Desert Sangha",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 7, m: 30 }, duration_min: 180,
+    address: "3226 North Martin Avenue", city: "Tucson", state: "AZ", neighborhood: "Richland Heights",
+    lat: 32.2591, lng: -110.9232, tradition: "zen", location_type: "hybrid",
+    notes: "Tea 7:25am, zazen 7:30–8:30am, samu (work practice) 8:30–9am, chanting 9–9:30am, zazen 9:30–10:30am. Also on Zoom.",
+    source_url: "https://www.zendesertsangha.org", event_url: "https://www.zendesertsangha.org/schedule",
+  },
+  {
+    org_id: "zen_desert_sangha_tucson", org_name: "Zen Desert Sangha",
+    title: "Sunday Evening Sitting",
+    days: ["Sunday"], time: { h: 17, m: 0 }, duration_min: 90,
+    address: "3226 North Martin Avenue", city: "Tucson", state: "AZ", neighborhood: "Richland Heights",
+    lat: 32.2591, lng: -110.9232, tradition: "zen", location_type: "in-person",
+    notes: "Sunday evening sitting, 5–6:30pm. All are welcome.",
+    source_url: "https://www.zendesertsangha.org", event_url: "https://www.zendesertsangha.org/schedule",
+  },
+
+  // Awam Tibetan Buddhist Institute — Nyingma Dzogchen.
+  // 301B N Longfellow Ave, Tucson AZ 85711. Verified 2026-05-27.
+  // Sun 9:30am teachings (Zoom+YouTube), Wed 6pm mindfulness.
+  {
+    org_id: "awam_tbi_tucson", org_name: "Awam Tibetan Buddhist Institute",
+    title: "Sunday Morning Teachings",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 60,
+    address: "301B North Longfellow Avenue", city: "Tucson", state: "AZ", neighborhood: "Midtown Tucson",
+    lat: 32.2362, lng: -110.9042, tradition: "tibetan", location_type: "hybrid",
+    notes: "In-depth Dzogchen and Nyingma teachings. In-person + Zoom + YouTube livestream. All welcome.",
+    source_url: "https://www.awaminstitute.org", event_url: "https://www.awaminstitute.org/schedule",
+  },
+  {
+    org_id: "awam_tbi_tucson", org_name: "Awam Tibetan Buddhist Institute",
+    title: "Wednesday Evening Mindfulness Practice",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 30,
+    address: "301B North Longfellow Avenue", city: "Tucson", state: "AZ", neighborhood: "Midtown Tucson",
+    lat: 32.2362, lng: -110.9042, tradition: "tibetan", location_type: "in-person",
+    notes: "Brief mindfulness and meditation practice session. All welcome.",
+    source_url: "https://www.awaminstitute.org", event_url: "https://www.awaminstitute.org/schedule",
+  },
+
+  // Desert Rain Zen — Harada-Yasutani Zen. UA campus.
+  // Little Chapel of All Nations, 1401 E First St, Tucson AZ 85719. Verified 2026-05-27.
+  // Thu 6:30–7:30pm hybrid; Sun 3:30–5pm Zoom.
+  {
+    org_id: "desert_rain_zen_tucson", org_name: "Desert Rain Zen",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "1401 East First Street", city: "Tucson", state: "AZ", neighborhood: "University of Arizona Campus",
+    lat: 32.2253, lng: -110.9459, tradition: "zen", location_type: "hybrid",
+    notes: "Guided meditation, hybrid in-person + Zoom. Beginner-friendly. Contact desertrainzen@gmail.com for Zoom link.",
+    source_url: "https://www.desertrainzen.org", event_url: "https://www.desertrainzen.org",
+  },
+
   // ── Honolulu, HI ─────────────────────────────────────────────────────────
   // Honolulu Diamond Sangha (Ko Ko An Zendo) — no iCal. Zen (Robert Aitken lineage).
   // 2747 Waiomao Rd, Palolo, Honolulu HI 96816. Verified 2026-05-18.
