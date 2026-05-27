@@ -4496,6 +4496,54 @@ const SITS = [
     notes: "Monday Evening Zen Sitting (5:30–6:30pm) at Iyengar Yoga of Fort Collins (Sunrise Room), Fort Collins CO. Led by Cathy 'Seizan' Wright, who received Dharma transmission in 2023 from Peggy Metta Roshi at the Zen Center of Denver (Harada-Yasutani lineage, Soto and Rinzai styles). One hour silent sitting. Drop-in welcome; free, donations accepted for space rental. Resumed June 2026. cwrightyoga.com/zen-meditation/.",
     source_url: "https://www.cwrightyoga.com/zen-meditation/", event_url: "https://www.cwrightyoga.com/zen-meditation/",
   },
+
+  // -----------------------------------------------------------------------
+  // Bend / Central Oregon — Phase 3 (heartbeat 71)
+  // -----------------------------------------------------------------------
+
+  // Bend Zen — lay-led Zen group since 2003. Mon 7–8pm at Trinity Episcopal.
+  {
+    org_id: "bend_zen", org_name: "Bend Zen",
+    title: "Monday Evening Zen Sitting",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "469 NW Wall St", city: "Bend", state: "OR", neighborhood: "Downtown Bend",
+    lat: 44.0578, lng: -121.3155, tradition: "zen", location_type: "in-person",
+    notes: "Monday Evening Zen Sitting (7:00–8:00pm) at Brooks Hall, Trinity Episcopal Church (469 NW Wall St, east entrance), Bend OR 97703. Social tea starts 6:40pm; dharma discussion group follows 8:00–8:30pm. Lay-led Zen group practicing since 2003, welcoming all traditions. Drop-in welcome; no fee. bendzen.net.",
+    source_url: "https://www.bendzen.net", event_url: "https://www.bendzen.net",
+  },
+
+  // Natural Mind Dharma Center — Nyingma Tibetan (Dudjom Tersar), Bend OR.
+  // Sun 8–9am (open to all) + Wed 7–8pm (Vajrayana experience preferred).
+  {
+    org_id: "natural_mind_bend", org_name: "Natural Mind Dharma Center",
+    title: "Sunday Morning Vajrayana Practice",
+    days: ["Sunday"], time: { h: 8, m: 0 }, duration_min: 60,
+    address: "345 SW Century Dr, Suite 2", city: "Bend", state: "OR", neighborhood: "Southwest Bend",
+    lat: 44.0422, lng: -121.3358, tradition: "tibetan", location_type: "hybrid",
+    notes: "Sunday Morning Vajrayana Buddhist Practices and Dharma Talk (8:00–9:00am) at Natural Mind Dharma Center, 345 SW Century Dr #2, Bend OR 97702. Open to everyone. In-person and online (link via newsletter). Nyingma Tibetan tradition, Dudjom Tersar lineage. Teacher: Michael Scott Stevens (Pema Kunsang). Founded 1996. naturalminddharma.org.",
+    source_url: "https://naturalminddharma.org/our-schedule/", event_url: "https://naturalminddharma.org/our-schedule/",
+  },
+  {
+    org_id: "natural_mind_bend", org_name: "Natural Mind Dharma Center",
+    title: "Wednesday Evening Practice and Teachings",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "345 SW Century Dr, Suite 2", city: "Bend", state: "OR", neighborhood: "Southwest Bend",
+    lat: 44.0422, lng: -121.3358, tradition: "tibetan", location_type: "hybrid",
+    notes: "Wednesday Evening Practice and Focused Teachings (7:00–8:00pm) at Natural Mind Dharma Center, 345 SW Century Dr #2, Bend OR 97702. Best for those with some experience in the Vajrayana tradition. In-person and online (link via newsletter). Nyingma Tibetan tradition, Dudjom Tersar lineage. naturalminddharma.org.",
+    source_url: "https://naturalminddharma.org/our-schedule/", event_url: "https://naturalminddharma.org/our-schedule/",
+  },
+
+  // IIMC Redmond — non-sectarian Theravada/Vipassana, Redmond OR (~15 mi N of Bend).
+  // Sun 1pm community practice (walking + sitting + metta). In-person.
+  {
+    org_id: "iimc_redmond", org_name: "International Insight Meditation Center of Oregon",
+    title: "Sunday Community Practice",
+    days: ["Sunday"], time: { h: 13, m: 0 }, duration_min: 120,
+    address: "805 NW 95th St", city: "Redmond", state: "OR", neighborhood: "Redmond",
+    lat: 44.2780, lng: -121.1519, tradition: "theravada", location_type: "in-person",
+    notes: "Sunday Community Practice (1:00–3:00pm) at International Insight Meditation Center of Oregon (IIMC), 805 NW 95th St, Redmond OR 97756 (~15 miles north of Bend). Includes walking meditation, sitting meditation, and metta (loving-kindness). Non-sectarian Buddhist center founded 2015, dedicated to the Buddha's teachings as found in the Suttas. Monthly Peace Weekends on the third weekend. iimc-redmond.org.",
+    source_url: "https://www.iimc-redmond.org/", event_url: "https://www.iimc-redmond.org/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

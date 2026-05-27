@@ -5629,4 +5629,76 @@ CENTERS = {
             "for space rental. cwrightyoga.com/zen-meditation/."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Bend / Central Oregon — Phase 3 (heartbeat 71)
+    # -----------------------------------------------------------------------
+    "bend_zen": {
+        "id": "bend_zen",
+        "name": "Bend Zen",
+        "tradition": "zen",
+        "url": "https://www.bendzen.net",
+        "address": "469 NW Wall St",
+        "city": "Bend",
+        "state": "OR",
+        "zip": "97703",
+        "lat": 44.0578,
+        "lng": -121.3155,
+        "neighborhood": "Downtown Bend",
+        "bio": (
+            "Bend Zen is a lay-led Zen sitting group that has practiced together "
+            "since 2003. While welcoming all contemplative traditions, the group "
+            "uses a distinctly Zen form: sitting meditation, kinhin (walking "
+            "meditation), and dharma discussion. Meets every Monday evening at "
+            "Brooks Hall in Trinity Episcopal Church (469 NW Wall St, east "
+            "entrance): social tea 6:40pm, sit 7:00–8:00pm, dharma discussion "
+            "8:00–8:30pm. Drop-in welcome; no fee. bendzen.net."
+        ),
+    },
+    "natural_mind_bend": {
+        "id": "natural_mind_bend",
+        "name": "Natural Mind Dharma Center",
+        "tradition": "tibetan",
+        "url": "https://naturalminddharma.org",
+        "address": "345 SW Century Dr, Suite 2",
+        "city": "Bend",
+        "state": "OR",
+        "zip": "97702",
+        "lat": 44.0422,
+        "lng": -121.3358,
+        "neighborhood": "Southwest Bend",
+        "bio": (
+            "Natural Mind Dharma Center is a Nyingma Tibetan Buddhist center in "
+            "Bend, founded in 1996 by Michael Scott Stevens (Pema Kunsang) in the "
+            "Dudjom Tersar lineage. Emphasizes Vajrayana meditation, visualization, "
+            "mantra, and Dzogchen practice. Sunday 8–9am: Vajrayana Practices and "
+            "Dharma Talk, open to all (in-person + online). Wednesday 7–8pm: "
+            "Practice and Focused Teachings, best for those with some Vajrayana "
+            "experience (in-person + online). 345 SW Century Dr #2, Bend OR 97702. "
+            "naturalminddharma.org."
+        ),
+    },
+    "iimc_redmond": {
+        "id": "iimc_redmond",
+        "name": "International Insight Meditation Center of Oregon",
+        "tradition": "theravada",
+        "url": "https://www.iimc-redmond.org",
+        "address": "805 NW 95th St",
+        "city": "Redmond",
+        "state": "OR",
+        "zip": "97756",
+        "lat": 44.2780,
+        "lng": -121.1519,
+        "neighborhood": "Redmond",
+        "bio": (
+            "International Insight Meditation Center of Oregon (IIMC) is a "
+            "non-sectarian Buddhist meditation center in Redmond (~15 miles north "
+            "of Bend), founded in 2015. Dedicated to the study and practice of "
+            "the Buddha's teachings as found in the Suttas, with a focus on "
+            "Vipassana (insight meditation) and metta (loving-kindness). Sunday "
+            "1:00–3:00pm: Community Practice (walking meditation, sitting, and "
+            "metta), in-person. Monthly Peace Weekends on the third weekend. "
+            "Saturday online Dhamma talks and Suttas study group. "
+            "805 NW 95th St, Redmond OR 97756. iimc-redmond.org."
+        ),
+    },
 }
