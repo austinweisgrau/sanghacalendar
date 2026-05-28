@@ -5701,4 +5701,74 @@ CENTERS = {
             "805 NW 95th St, Redmond OR 97756. iimc-redmond.org."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Anchorage, Alaska — Phase 3 (heartbeat 72)
+    # -----------------------------------------------------------------------
+    "anchorage_zen": {
+        "id": "anchorage_zen",
+        "name": "Anchorage Zen Community",
+        "tradition": "zen",
+        "url": "http://www.anchoragezen.com",
+        "address": "711 Barrow St",
+        "city": "Anchorage",
+        "state": "AK",
+        "zip": "99501",
+        "lat": 61.2143,
+        "lng": -149.9003,
+        "neighborhood": "Downtown Anchorage",
+        "bio": (
+            "Anchorage Zen Community (AZC) is Anchorage's primary Zen sitting group, "
+            "led by ordained priest Genmyo Zeedyk (Dharma transmission 2013). Soto "
+            "Zen tradition. Located at 711 Barrow St, downtown Anchorage. Sunday "
+            "program: 8:30–9:55am zazen with kinhin (in-person + Zoom), followed by "
+            "10:00am Dharma talk and discussion. Beginner instruction available before "
+            "the 9am session. Drop-in welcome; no cost. Weekday morning Zoom sittings "
+            "also offered. anchoragezen.com."
+        ),
+    },
+    "upright_noble_zen": {
+        "id": "upright_noble_zen",
+        "name": "Upright Noble Zen",
+        "tradition": "zen",
+        "url": "https://uprightnoble.wordpress.com",
+        "address": "437 E 3rd Ave",
+        "city": "Anchorage",
+        "state": "AK",
+        "zip": "99501",
+        "lat": 61.2163,
+        "lng": -149.8775,
+        "neighborhood": "Downtown Anchorage",
+        "bio": (
+            "Upright Noble Zen is a Soto Zen group in Anchorage led by Dana Kojun "
+            "Lederhos-Hull, the first Dharma Successor of Chozen (Jan) and Hogen Bays "
+            "of Great Vow Zen Monastery. Member of the White Plum Asanga and Soto Zen "
+            "Buddhist Association. Sunday 5:00–6:30pm in-person at the Pioneer "
+            "Schoolhouse (437 E 3rd Ave) plus Zoom; includes two zazen periods, Dharma "
+            "Talk, and chanting. Monday–Thursday 6:30am Zoom-only 25-min sitting. "
+            "Everyone welcome; drop-in. Monthly retreats October through April. "
+            "uprightnoble.wordpress.com."
+        ),
+    },
+    "katog_sangyey_ling": {
+        "id": "katog_sangyey_ling",
+        "name": "Katog Sangyey Ling",
+        "tradition": "tibetan",
+        "url": "https://www.katogsangyeyling.org",
+        "address": "4105 E Turnagain Blvd, Suite C3",
+        "city": "Anchorage",
+        "state": "AK",
+        "zip": "99517",
+        "lat": 61.2061,
+        "lng": -149.9448,
+        "neighborhood": "Turnagain",
+        "bio": (
+            "Katog Sangyey Ling is a Tibetan Buddhist center in the Nyingma Katog "
+            "Choling lineage, under the guidance of Khentrul Lodrö Thayé Rinpoche. "
+            "Located at 4105 E Turnagain Blvd, Suite C3, Anchorage AK 99517. Tuesday "
+            "6:30–7:30pm hybrid (in-person + Zoom). Sessions rotate monthly between "
+            "Tonglen (loving-kindness), Shamatha (calm-abiding meditation), and Heart "
+            "Sutra practice. No prior experience necessary; everyone welcome. "
+            "katogsangyeyling.org."
+        ),
+    },
 }

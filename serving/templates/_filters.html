@@ -6,6 +6,7 @@
   </select>
   <select id="filter-state" onchange="onStateChange()">
     <option value="">All states</option>
+    <option value="AK">Alaska</option>
     <option value="AZ">Arizona</option>
     <option value="CA">California</option>
     <option value="CO">Colorado</option>
@@ -45,6 +46,7 @@
   <div class="multi-select" id="city-picker">
     <div class="multi-select-trigger" id="city-trigger" onclick="toggleCityDropdown(event)">All cities</div>
     <div class="multi-select-dropdown" id="city-dropdown">
+      <label class="multi-select-option" data-state="AK"><input type="checkbox" value="Anchorage" onchange="onCityChange()"> Anchorage</label>
       <label class="multi-select-option" data-state="AZ"><input type="checkbox" value="Phoenix" onchange="onCityChange()"> Phoenix</label>
       <label class="multi-select-option" data-state="AZ"><input type="checkbox" value="Scottsdale" onchange="onCityChange()"> Scottsdale</label>
       <label class="multi-select-option" data-state="AZ"><input type="checkbox" value="Tucson" onchange="onCityChange()"> Tucson</label>

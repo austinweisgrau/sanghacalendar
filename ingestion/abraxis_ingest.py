@@ -89,6 +89,7 @@ from ingestion.sources import chattanooga as chattanooga_sources  # noqa: F401 (
 from ingestion.sources import colorado_springs as colorado_springs_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import fort_collins as fort_collins_sources
 from ingestion.sources import bend as bend_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import anchorage as anchorage_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

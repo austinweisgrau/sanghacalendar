@@ -4544,6 +4544,55 @@ const SITS = [
     notes: "Sunday Community Practice (1:00–3:00pm) at International Insight Meditation Center of Oregon (IIMC), 805 NW 95th St, Redmond OR 97756 (~15 miles north of Bend). Includes walking meditation, sitting meditation, and metta (loving-kindness). Non-sectarian Buddhist center founded 2015, dedicated to the Buddha's teachings as found in the Suttas. Monthly Peace Weekends on the third weekend. iimc-redmond.org.",
     source_url: "https://www.iimc-redmond.org/", event_url: "https://www.iimc-redmond.org/",
   },
+
+  // -----------------------------------------------------------------------
+  // Anchorage, Alaska — Phase 3 (heartbeat 72)
+  // -----------------------------------------------------------------------
+
+  // Anchorage Zen Community — Soto Zen, ordained teacher Genmyo Zeedyk.
+  // Sun 8:30–9:55am hybrid (zazen + kinhin; dharma talk 10am). Drop-in welcome.
+  {
+    org_id: "anchorage_zen", org_name: "Anchorage Zen Community",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 85,
+    address: "711 Barrow St", city: "Anchorage", state: "AK", neighborhood: "Downtown Anchorage",
+    lat: 61.2143, lng: -149.9003, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Morning Zazen (8:30–9:55am) at Anchorage Zen Community (AZC), 711 Barrow St, Anchorage AK 99501 (between 7th and 8th Ave, downtown). In-person and Zoom. Multiple zazen periods with kinhin (walking meditation); Dharma talk and discussion at 10:00am. Beginner instruction available before the 9am session. Drop-in welcome; no cost. Led by Genmyo Zeedyk (ordained 2009, Dharma transmission 2013). anchoragezen.com.",
+    source_url: "http://www.anchoragezen.com", event_url: "http://www.anchoragezen.com",
+  },
+
+  // Upright Noble Zen — Soto Zen, White Plum Asanga (Chozen/Hogen Bays lineage).
+  // Sun 5–6:30pm hybrid at Pioneer Schoolhouse + Mon–Thu 6:30am Zoom.
+  {
+    org_id: "upright_noble_zen", org_name: "Upright Noble Zen",
+    title: "Sunday Evening Zazen",
+    days: ["Sunday"], time: { h: 17, m: 0 }, duration_min: 90,
+    address: "437 E 3rd Ave", city: "Anchorage", state: "AK", neighborhood: "Downtown Anchorage",
+    lat: 61.2163, lng: -149.8775, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Evening Zazen (5:00–6:30pm) at Upright Noble Zen, Pioneer Schoolhouse, 437 E 3rd Avenue, Anchorage AK 99501. In-person and Zoom (ID 898-544-2353, password: zazen). Includes two 25-minute zazen periods, Dharma Talk, brief check-in, and chanting. Arrive by 4:55pm. Teacher: Dana Kojun Lederhos-Hull (Dharma Successor of Chozen and Hogen Bays, White Plum Asanga). Everyone welcome; drop-in. uprightnoble.wordpress.com.",
+    source_url: "https://uprightnoble.wordpress.com", event_url: "https://uprightnoble.wordpress.com",
+  },
+  {
+    org_id: "upright_noble_zen", org_name: "Upright Noble Zen",
+    title: "Weekday Morning Zazen (Zoom)",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday"], time: { h: 6, m: 30 }, duration_min: 30,
+    address: "Zoom", city: "Anchorage", state: "AK", neighborhood: "Online",
+    lat: 61.2163, lng: -149.8775, tradition: "zen", location_type: "online",
+    notes: "Weekday Morning Zazen (6:30–7:00am) via Zoom only. Upright Noble Zen, Anchorage AK. 25-minute sitting period followed by Heart Sutra chanting. Zoom ID 898-544-2353, password: zazen. Monday through Thursday. Drop-in welcome. uprightnoble.wordpress.com.",
+    source_url: "https://uprightnoble.wordpress.com", event_url: "https://uprightnoble.wordpress.com",
+  },
+
+  // Katog Sangyey Ling — Nyingma Tibetan (Katog Choling lineage).
+  // Tue 6:30–7:30pm hybrid. Alternates Tonglen, Shamatha, Heart Sutra monthly.
+  {
+    org_id: "katog_sangyey_ling", org_name: "Katog Sangyey Ling",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "4105 E Turnagain Blvd, Suite C3", city: "Anchorage", state: "AK", neighborhood: "Turnagain",
+    lat: 61.2061, lng: -149.9448, tradition: "tibetan", location_type: "hybrid",
+    notes: "Tuesday Evening Meditation (6:30–7:30pm) at Katog Sangyey Ling, 4105 E Turnagain Blvd, Suite C3, Anchorage AK 99517 (Turnagain neighborhood). In-person and Zoom (email katogsangyeyling@gmail.com for Zoom link). Nyingma Tibetan Buddhist tradition, Katog Choling lineage under Khentrul Lodrö Thayé Rinpoche. Sessions alternate monthly between Tonglen (loving-kindness), Shamatha (calm-abiding), and Heart Sutra. No prior experience necessary; everyone welcome. (907) 947-8881. katogsangyeyling.org.",
+    source_url: "https://www.katogsangyeyling.org", event_url: "https://www.katogsangyeyling.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

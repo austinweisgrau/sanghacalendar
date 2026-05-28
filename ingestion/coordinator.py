@@ -85,6 +85,7 @@ from ingestion.sources import knoxville as knoxville_sources  # noqa: F401 (no l
 from ingestion.sources import chattanooga as chattanooga_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import colorado_springs as colorado_springs_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import fort_collins as fort_collins_sources
+from ingestion.sources import anchorage as anchorage_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -1349,6 +1350,7 @@ def main():
         # Lehigh Valley PA Phase 3 — all centers seeded via sangha-seed-recurring.js
         # Chattanooga TN Phase 3 — all centers seeded via sangha-seed-recurring.js
         # Colorado Springs CO Phase 3 — all centers seeded via sangha-seed-recurring.js
+        # Anchorage AK Phase 3 — all centers seeded via sangha-seed-recurring.js
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")
