@@ -5702,6 +5702,94 @@ CENTERS = {
         ),
     },
     # -----------------------------------------------------------------------
+    # Birmingham, Alabama — Phase 3 (heartbeat 73)
+    # -----------------------------------------------------------------------
+    "birmingham_shambhala": {
+        "id": "birmingham_shambhala",
+        "name": "Birmingham Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://birmingham.shambhala.org",
+        "address": "714 37th Street South",
+        "city": "Birmingham",
+        "state": "AL",
+        "zip": "35222",
+        "lat": 33.5132,
+        "lng": -86.7684,
+        "neighborhood": "Avondale",
+        "bio": (
+            "Birmingham Shambhala Meditation Center has served the Birmingham area "
+            "since 1997, offering welcoming entry into Shambhala Buddhist meditation "
+            "practice. Located in the Avondale neighborhood. Regular public sits: "
+            "Monday and Tuesday 7–8pm (hybrid; newcomers welcome), Wednesday 7–8am "
+            "(in-person), Friday 7–8am (hybrid), and First Sunday 10am–noon (hybrid). "
+            "The center also hosts Burning Rock Soto Zen (Sunday 1:15pm) and Recovery "
+            "Dharma (Sunday 6:30pm). All sits free and open to all. "
+            "birmingham.shambhala.org. (205) 515-1756."
+        ),
+    },
+    "burning_rock_soto_zen": {
+        "id": "burning_rock_soto_zen",
+        "name": "Burning Rock Soto Zen",
+        "tradition": "zen",
+        "url": "https://alabamameditationnetwork.com/burning-rock-soto-zen/",
+        "address": "714 37th Street South",
+        "city": "Birmingham",
+        "state": "AL",
+        "zip": "35222",
+        "lat": 33.5132,
+        "lng": -86.7684,
+        "neighborhood": "Avondale",
+        "bio": (
+            "Burning Rock Soto Zen is a Soto Zen sitting group led by Andrew Keitt, "
+            "affiliated with the Silent Thunder Order and the Atlanta Soto Zen Center. "
+            "Meets at Birmingham Shambhala Meditation Center, 714 37th Street South. "
+            "Public zazen Sundays 1:15–2pm (beginner orientation 1:15–1:30pm, zazen "
+            "1:30–2pm). Quarterly extended sittings noon–5pm. Free; drop-in welcome."
+        ),
+    },
+    "cahaba_river_sangha": {
+        "id": "cahaba_river_sangha",
+        "name": "Cahaba River Sangha",
+        "tradition": "zen",
+        "url": "https://cahabariversangha.com",
+        "address": "2803 Highland Ave",
+        "city": "Birmingham",
+        "state": "AL",
+        "zip": "35205",
+        "lat": 33.5011,
+        "lng": -86.7975,
+        "neighborhood": "Southside",
+        "bio": (
+            "Cahaba River Sangha is Birmingham's Plum Village / Thich Nhat Hanh "
+            "community, meeting at Unity Church of Birmingham in the Southside "
+            "neighborhood. The main weekly public sit is Thursday 7:00–8:30pm "
+            "(meditation, dharma talk, and discussion; hybrid in-person + Zoom). "
+            "Monthly Days of Mindfulness offered free with registration. "
+            "cahabariversangha.com."
+        ),
+    },
+    "losel_maitri": {
+        "id": "losel_maitri",
+        "name": "Losel Maitri Tibetan Buddhist Center",
+        "tradition": "tibetan",
+        "url": "https://www.facebook.com/LoselMaitriBuddhist/",
+        "address": "3224 Green Valley Rd",
+        "city": "Vestavia Hills",
+        "state": "AL",
+        "zip": "35243",
+        "lat": 33.4728,
+        "lng": -86.7332,
+        "neighborhood": "Cahaba Heights",
+        "bio": (
+            "Losel Maitri Tibetan Buddhist Center is affiliated with Namgyal Monastery "
+            "(Ithaca, NY), the personal North American monastery of His Holiness the "
+            "Dalai Lama. Resident teacher: Ven. Tenzin Deshek. Located in Cahaba "
+            "Heights (Vestavia Hills). Open Tuesday worship service 7–8pm; Tuesday "
+            "5:50pm introduction to Buddhism class. Website currently offline — see "
+            "Facebook for schedule. (205) 470-6940."
+        ),
+    },
+    # -----------------------------------------------------------------------
     # Anchorage, Alaska — Phase 3 (heartbeat 72)
     # -----------------------------------------------------------------------
     "anchorage_zen": {

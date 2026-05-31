@@ -4546,6 +4546,98 @@ const SITS = [
   },
 
   // -----------------------------------------------------------------------
+  // Birmingham, Alabama — Phase 3 (heartbeat 73)
+  // -----------------------------------------------------------------------
+
+  // Birmingham Shambhala — Monday Evening Sitting (hybrid)
+  {
+    org_id: "birmingham_shambhala", org_name: "Birmingham Shambhala Meditation Center",
+    title: "Monday Evening Sitting",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "714 37th Street South", city: "Birmingham", state: "AL", neighborhood: "Avondale",
+    lat: 33.5132, lng: -86.7684, tradition: "tibetan", location_type: "hybrid",
+    notes: "Monday Evening Sitting (7:00–8:00pm) at Birmingham Shambhala Meditation Center, 714 37th Street South, Birmingham AL 35222 (Avondale). In-person and Zoom. Newcomers receive abbreviated instruction at the start. Shambhala Buddhist tradition; all are welcome. Free. birmingham.shambhala.org. (205) 515-1756.",
+    source_url: "https://birmingham.shambhala.org", event_url: "https://birmingham.shambhala.org",
+  },
+
+  // Birmingham Shambhala — Tuesday Evening Sitting (hybrid)
+  {
+    org_id: "birmingham_shambhala", org_name: "Birmingham Shambhala Meditation Center",
+    title: "Tuesday Evening Sitting",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "714 37th Street South", city: "Birmingham", state: "AL", neighborhood: "Avondale",
+    lat: 33.5132, lng: -86.7684, tradition: "tibetan", location_type: "hybrid",
+    notes: "Tuesday Evening Sitting (7:00–8:00pm) at Birmingham Shambhala Meditation Center, 714 37th Street South, Birmingham AL 35222 (Avondale). In-person and Zoom. Newcomers welcome; abbreviated instruction provided. Free. birmingham.shambhala.org.",
+    source_url: "https://birmingham.shambhala.org", event_url: "https://birmingham.shambhala.org",
+  },
+
+  // Birmingham Shambhala — Wednesday Morning Sitting (in-person)
+  {
+    org_id: "birmingham_shambhala", org_name: "Birmingham Shambhala Meditation Center",
+    title: "Wednesday Morning Sitting",
+    days: ["Wednesday"], time: { h: 7, m: 0 }, duration_min: 60,
+    address: "714 37th Street South", city: "Birmingham", state: "AL", neighborhood: "Avondale",
+    lat: 33.5132, lng: -86.7684, tradition: "tibetan", location_type: "in-person",
+    notes: "Wednesday Morning Sitting (7:00–8:00am) at Birmingham Shambhala Meditation Center, 714 37th Street South, Birmingham AL 35222 (Avondale). In-person only. Shambhala Buddhist meditation. Free and open to all. birmingham.shambhala.org.",
+    source_url: "https://birmingham.shambhala.org", event_url: "https://birmingham.shambhala.org",
+  },
+
+  // Birmingham Shambhala — Friday Morning Sitting (hybrid)
+  {
+    org_id: "birmingham_shambhala", org_name: "Birmingham Shambhala Meditation Center",
+    title: "Friday Morning Sitting",
+    days: ["Friday"], time: { h: 7, m: 0 }, duration_min: 60,
+    address: "714 37th Street South", city: "Birmingham", state: "AL", neighborhood: "Avondale",
+    lat: 33.5132, lng: -86.7684, tradition: "tibetan", location_type: "hybrid",
+    notes: "Friday Morning Sitting (7:00–8:00am) at Birmingham Shambhala Meditation Center, 714 37th Street South, Birmingham AL 35222 (Avondale). In-person and Zoom. Shambhala Buddhist meditation. Free and open to all. birmingham.shambhala.org.",
+    source_url: "https://birmingham.shambhala.org", event_url: "https://birmingham.shambhala.org",
+  },
+
+  // Birmingham Shambhala — First Sunday Community Sit (hybrid, monthly)
+  {
+    org_id: "birmingham_shambhala", org_name: "Birmingham Shambhala Meditation Center",
+    title: "First Sunday Community Sit",
+    days: ["Sunday"], week_of_month: 1, time: { h: 10, m: 0 }, duration_min: 120,
+    address: "714 37th Street South", city: "Birmingham", state: "AL", neighborhood: "Avondale",
+    lat: 33.5132, lng: -86.7684, tradition: "tibetan", location_type: "hybrid",
+    notes: "First Sunday Community Sit (10:00am–noon) at Birmingham Shambhala Meditation Center, 714 37th Street South, Birmingham AL 35222 (Avondale). First Sunday of each month. In-person and Zoom. Longer community gathering including meditation, dharma discussion, and community time. Free and open to all. birmingham.shambhala.org.",
+    source_url: "https://birmingham.shambhala.org", event_url: "https://birmingham.shambhala.org",
+  },
+
+  // Burning Rock Soto Zen — Sunday Zazen (in-person, at Shambhala)
+  {
+    org_id: "burning_rock_soto_zen", org_name: "Burning Rock Soto Zen",
+    title: "Sunday Zazen",
+    days: ["Sunday"], time: { h: 13, m: 15 }, duration_min: 45,
+    address: "714 37th Street South", city: "Birmingham", state: "AL", neighborhood: "Avondale",
+    lat: 33.5132, lng: -86.7684, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Zazen (1:15–2:00pm) at Burning Rock Soto Zen, meeting at Birmingham Shambhala Meditation Center, 714 37th Street South, Birmingham AL 35222 (Avondale). Beginner orientation 1:15–1:30pm, zazen 1:30–2:00pm. Soto Zen tradition, affiliated with the Silent Thunder Order and Atlanta Soto Zen Center. Teacher: Andrew Keitt. Free; drop-in welcome. alabamameditationnetwork.com/burning-rock-soto-zen/.",
+    source_url: "https://alabamameditationnetwork.com/burning-rock-soto-zen/", event_url: "https://alabamameditationnetwork.com/burning-rock-soto-zen/",
+  },
+
+  // Cahaba River Sangha — Thursday Evening Sit (hybrid, Plum Village)
+  {
+    org_id: "cahaba_river_sangha", org_name: "Cahaba River Sangha",
+    title: "Thursday Evening Sit",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "2803 Highland Ave", city: "Birmingham", state: "AL", neighborhood: "Southside",
+    lat: 33.5011, lng: -86.7975, tradition: "zen", location_type: "hybrid",
+    notes: "Thursday Evening Sit (7:00–8:30pm) at Cahaba River Sangha, Unity Church of Birmingham, 2803 Highland Ave, Birmingham AL 35205 (Southside). In-person and Zoom. Plum Village / Thich Nhat Hanh tradition. Includes sitting meditation, walking meditation, and dharma talk/discussion. All are welcome; free. cahabariversangha.com.",
+    source_url: "https://cahabariversangha.com", event_url: "https://cahabariversangha.com",
+  },
+
+  // Losel Maitri Tibetan Buddhist Center — Tuesday Evening Worship
+  {
+    org_id: "losel_maitri", org_name: "Losel Maitri Tibetan Buddhist Center",
+    title: "Tuesday Evening Worship",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "3224 Green Valley Rd", city: "Vestavia Hills", state: "AL", neighborhood: "Cahaba Heights",
+    lat: 33.4728, lng: -86.7332, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Worship Service (7:00–8:00pm) at Losel Maitri Tibetan Buddhist Center, 3224 Green Valley Rd, Cahaba Heights (Vestavia Hills), AL 35243. Open to all. Affiliated with Namgyal Monastery (Ithaca, NY), the personal North American monastery of His Holiness the Dalai Lama. Resident teacher: Ven. Tenzin Deshek. Introduction to Buddhism class at 5:50pm. (205) 470-6940.",
+    source_url: "https://www.facebook.com/LoselMaitriBuddhist/", event_url: "https://www.facebook.com/LoselMaitriBuddhist/",
+  },
+
+  // -----------------------------------------------------------------------
   // Anchorage, Alaska — Phase 3 (heartbeat 72)
   // -----------------------------------------------------------------------
 
