@@ -179,6 +179,16 @@ Candidate metros (rough priority):
 59. Chattanooga (TN) 🔄 **Phase 3 Chattanooga live May 26** (3 centers) — heartbeat 67
 60. Colorado Springs (CO) 🔄 **Phase 3 CO Springs live May 26** (5 centers) — heartbeat 68
 61. Fort Collins (CO) 🔄 **Phase 3 Fort Collins live May 26** (3 centers) — heartbeat 69
+62. Birmingham (AL) 🔄 **Phase 3 Birmingham live May 31** (4 centers) — heartbeat 73
+
+### Birmingham Phase 3 — ✅ Live May 31 (4 centers, heartbeat 73)
+
+| Center | Approach | Status |
+|--------|----------|--------|
+| Birmingham Shambhala Meditation Center (714 37th St S, Birmingham AL 35222) | Recurring sits — Mon/Tue 7pm hybrid, Wed/Fri 7am, 1st Sun 10am hybrid. iCal unavailable (Cologne server 404, local site Cloudflare-blocked). | ✅ Live heartbeat 73 |
+| Burning Rock Soto Zen (meets at Shambhala) | Recurring sit — Sun 1:15pm in-person. Soto Zen (Silent Thunder Order / ASZC). | ✅ Live heartbeat 73 |
+| Cahaba River Sangha (Unity Church, 2803 Highland Ave, Birmingham AL 35205) | Recurring sit — Thu 7pm hybrid. Plum Village / TNH. WordPress site, no iCal plugin. | ✅ Live heartbeat 73 |
+| Losel Maitri Tibetan Buddhist Center (3224 Green Valley Rd, Vestavia Hills AL 35243) | Recurring sit — Tue 7pm in-person. Namgyal Monastery lineage. Website offline; sourced from Facebook. | ✅ Live heartbeat 73 |
 
 ### Fort Collins Phase 3 — ✅ Live May 26 (3 centers, heartbeat 69)
 
