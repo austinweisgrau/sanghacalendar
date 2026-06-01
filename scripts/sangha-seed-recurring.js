@@ -4685,6 +4685,19 @@ const SITS = [
     notes: "Tuesday Evening Meditation (6:30–7:30pm) at Katog Sangyey Ling, 4105 E Turnagain Blvd, Suite C3, Anchorage AK 99517 (Turnagain neighborhood). In-person and Zoom (email katogsangyeyling@gmail.com for Zoom link). Nyingma Tibetan Buddhist tradition, Katog Choling lineage under Khentrul Lodrö Thayé Rinpoche. Sessions alternate monthly between Tonglen (loving-kindness), Shamatha (calm-abiding), and Heart Sutra. No prior experience necessary; everyone welcome. (907) 947-8881. katogsangyeyling.org.",
     source_url: "https://www.katogsangyeyling.org", event_url: "https://www.katogsangyeyling.org",
   },
+
+  // Green Mountain Zen Center — Korean/Rinzai Zen (Single Flower Sangha / Kwan Um lineage).
+  // Sun 6–7:30pm hybrid at private zendo, 12035 Mountcrest Rd SE, Huntsville AL 35803.
+  // Founded 1993. Guiding teacher: Zen Master George Bowman (BoMun); local teachers Gary Beard + Jim Gordon.
+  {
+    org_id: "green_mountain_zen", org_name: "Green Mountain Zen Center",
+    title: "Sunday Evening Meditation",
+    days: ["Sunday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "12035 Mountcrest Rd SE", city: "Huntsville", state: "AL", neighborhood: "Green Mountain",
+    lat: 34.6279, lng: -86.5183, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Evening Meditation (6:00–7:30pm) at Green Mountain Zen Center, 12035 Mountcrest Rd SE, Huntsville AL 35803 (Green Mountain neighborhood). In-person and Zoom. Brief chanting period followed by two zazen periods with kinhin (walking meditation). Newcomers welcome; optional social gathering at a local deli after the service. Email greenmountainzenhsv@gmail.com or call (256) 426-3344 before first visit. Kwan Um School of Zen / Single Flower Sangha lineage. gmzc.us.",
+    source_url: "https://www.gmzc.us", event_url: "https://www.gmzc.us/weekly-practice/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

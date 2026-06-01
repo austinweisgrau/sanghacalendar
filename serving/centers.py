@@ -5859,4 +5859,33 @@ CENTERS = {
             "katogsangyeyling.org."
         ),
     },
+
+    # -----------------------------------------------------------------------
+    # Huntsville, Alabama — Phase 3 (heartbeat 74)
+    # -----------------------------------------------------------------------
+    "green_mountain_zen": {
+        "id": "green_mountain_zen",
+        "name": "Green Mountain Zen Center",
+        "tradition": "zen",
+        "url": "https://www.gmzc.us",
+        "address": "12035 Mountcrest Rd SE",
+        "city": "Huntsville",
+        "state": "AL",
+        "zip": "35803",
+        "lat": 34.6279,
+        "lng": -86.5183,
+        "neighborhood": "Green Mountain",
+        "bio": (
+            "Green Mountain Zen Center (GMZC) has served Huntsville since 1993, "
+            "making it one of the oldest Zen communities in Alabama. Rooted in the "
+            "Kwan Um School of Zen (Korean Zen, Seung Sahn lineage) through the "
+            "Single Flower Sangha of Zen Master George Bowman (BoMun). Local "
+            "teachers are Gary Beard (Bodhin) and Jim Gordon (Shogen). Located in "
+            "the Green Mountain neighborhood of south Huntsville. Sunday Meditation "
+            "6:00–7:30pm — chanting, zazen, and kinhin (in-person + Zoom). "
+            "Wednesday Night Dharma Discussion 7:00–8:30pm. Drop-in welcome; "
+            "email before first visit. greenmountainzenhsv@gmail.com · "
+            "(256) 426-3344 · gmzc.us."
+        ),
+    },
 }
