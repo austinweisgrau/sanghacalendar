@@ -4698,6 +4698,47 @@ const SITS = [
     notes: "Sunday Evening Meditation (6:00–7:30pm) at Green Mountain Zen Center, 12035 Mountcrest Rd SE, Huntsville AL 35803 (Green Mountain neighborhood). In-person and Zoom. Brief chanting period followed by two zazen periods with kinhin (walking meditation). Newcomers welcome; optional social gathering at a local deli after the service. Email greenmountainzenhsv@gmail.com or call (256) 426-3344 before first visit. Kwan Um School of Zen / Single Flower Sangha lineage. gmzc.us.",
     source_url: "https://www.gmzc.us", event_url: "https://www.gmzc.us/weekly-practice/",
   },
+
+  // -----------------------------------------------------------------------
+  // Flagstaff, Arizona — Phase 3 (heartbeat 75)
+  // -----------------------------------------------------------------------
+
+  // Flagstaff Insight Meditation Community (FIMC) — Theravada/Vipassana.
+  // Mon 6:30–8:00pm hybrid at Beacon UU (510 N Leroux St, downtown Flagstaff).
+  // Confirmed at flagstaffinsight.org ("at 6:30PM (MST)" per live site JS).
+  {
+    org_id: "fimc_flagstaff", org_name: "Flagstaff Insight Meditation Community",
+    title: "Monday Evening Meditation & Dharma Talk",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "510 N Leroux St", city: "Flagstaff", state: "AZ", neighborhood: "Downtown Flagstaff",
+    lat: 35.2004, lng: -111.6519, tradition: "theravada", location_type: "hybrid",
+    notes: "Monday Evening Meditation (6:30–8:00pm) at Flagstaff Insight Meditation Community (FIMC), Beacon Unitarian Universalist Congregation, 510 N Leroux St, Flagstaff AZ 86001 (downtown). In-person and Zoom. Sitting meditation followed by a dharma talk and optional discussion. Free, dana-based; all are welcome. flagstaffinsight.org.",
+    source_url: "https://flagstaffinsight.org", event_url: "https://flagstaffinsight.org/calendar/",
+  },
+
+  // Flagstaff Zen Sangha — Diamond Sangha lineage (Robert Aitken Roshi).
+  // Sun 8:30am in-person at Human Nature Studio, 2 S Beaver St Suite 150.
+  {
+    org_id: "flagstaff_zen_sangha", org_name: "Flagstaff Zen Sangha",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 90,
+    address: "2 S Beaver St, Suite 150", city: "Flagstaff", state: "AZ", neighborhood: "Downtown Flagstaff",
+    lat: 35.1988, lng: -111.6510, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Zazen (8:30am) at Flagstaff Zen Sangha, Human Nature Studio, 2 South Beaver St Suite 150, Flagstaff AZ 86001 (downtown). Sutra service, kinhin (walking meditation), and two 25-minute zazen periods. First-time visitors welcome at 8:00am for brief orientation. Diamond Sangha lineage (Robert Aitken Roshi). In-person only; drop-in welcome. Free. (928) 699-6651.",
+    source_url: "https://flagstaff365.com/organization/flagstaff-zen-sangha/", event_url: "https://flagstaff365.com/organization/flagstaff-zen-sangha/",
+  },
+
+  // IKRC Grand Canyon — Flagstaff outreach class. NKT/Kadampa.
+  // Tue 6:30–7:45pm at Beacon UU (510 N Leroux St), $10/$5 students.
+  {
+    org_id: "ikrc_flagstaff", org_name: "Kadampa Meditation — Flagstaff Class",
+    title: "Tuesday Evening Meditation Class",
+    days: ["Tuesday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "510 N Leroux St", city: "Flagstaff", state: "AZ", neighborhood: "Downtown Flagstaff",
+    lat: 35.2004, lng: -111.6519, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Meditation Class (6:30–7:45pm) at Beacon Unitarian Universalist Congregation, 510 N Leroux St, Flagstaff AZ 86001 (downtown). Outreach class from the International Kadampa Retreat Center Grand Canyon (Williams, AZ). Beginner-friendly guided meditation and Buddhist teaching; no experience needed. Cost: $10 / $5 students and seniors / free for monthly members. New Kadampa Tradition (NKT). meditationinnorthernarizona.org/flagstaff/.",
+    source_url: "https://meditationinnorthernarizona.org/flagstaff/", event_url: "https://meditationinnorthernarizona.org/flagstaff/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

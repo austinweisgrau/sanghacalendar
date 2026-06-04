@@ -5888,4 +5888,68 @@ CENTERS = {
             "(256) 426-3344 · gmzc.us."
         ),
     },
+    # Flagstaff, Arizona — Phase 3 (heartbeat 75)
+    "fimc_flagstaff": {
+        "id": "fimc_flagstaff",
+        "name": "Flagstaff Insight Meditation Community",
+        "tradition": "theravada",
+        "url": "https://flagstaffinsight.org",
+        "address": "510 N Leroux St",
+        "city": "Flagstaff",
+        "state": "AZ",
+        "zip": "86001",
+        "neighborhood": "Downtown Flagstaff",
+        "lat": 35.2004,
+        "lng": -111.6519,
+        "description": (
+            "Flagstaff Insight Meditation Community (FIMC) brings Theravada/Vipassana "
+            "practice to the Colorado Plateau. Monday Evening: 6:30pm at Beacon "
+            "Unitarian Universalist Congregation (510 N Leroux St) — sitting "
+            "meditation + dharma talk, hybrid in-person and Zoom. Daily online sits "
+            "at 5:00–5:30am and 7:30–8:00am. Free, dana-based; drop-in welcome. "
+            "flagstaffinsight.org."
+        ),
+    },
+    "flagstaff_zen_sangha": {
+        "id": "flagstaff_zen_sangha",
+        "name": "Flagstaff Zen Sangha",
+        "tradition": "zen",
+        "url": "https://flagstaff365.com/organization/flagstaff-zen-sangha/",
+        "address": "2 S Beaver St, Suite 150",
+        "city": "Flagstaff",
+        "state": "AZ",
+        "zip": "86001",
+        "neighborhood": "Downtown Flagstaff",
+        "lat": 35.1988,
+        "lng": -111.6510,
+        "description": (
+            "Flagstaff Zen Sangha practices in the Diamond Sangha lineage of Robert "
+            "Aitken Roshi. Sunday Morning: 8:30am at Human Nature Studio (2 South "
+            "Beaver St, Suite 150, downtown). Sutra service, kinhin, and two "
+            "25-minute zazen periods. First-timers arrive at 8:00am for orientation. "
+            "In-person only; drop-in welcome. Free. (928) 699-6651."
+        ),
+    },
+    "ikrc_flagstaff": {
+        "id": "ikrc_flagstaff",
+        "name": "Kadampa Meditation — Flagstaff Class",
+        "tradition": "tibetan",
+        "url": "https://meditationinnorthernarizona.org/flagstaff/",
+        "address": "510 N Leroux St",
+        "city": "Flagstaff",
+        "state": "AZ",
+        "zip": "86001",
+        "neighborhood": "Downtown Flagstaff",
+        "lat": 35.2004,
+        "lng": -111.6519,
+        "description": (
+            "Weekly outreach class from the International Kadampa Retreat Center "
+            "Grand Canyon (IKRC GC) in Williams, AZ — home to the fifth Kadampa "
+            "World Peace Temple. Tuesday Evening: 6:30–7:45pm at Beacon Unitarian "
+            "Universalist Congregation (510 N Leroux St). Beginner-friendly guided "
+            "meditation and Buddhist teaching. $10 / $5 students & seniors / free "
+            "for members. New Kadampa Tradition. "
+            "meditationinnorthernarizona.org/flagstaff/."
+        ),
+    },
 }

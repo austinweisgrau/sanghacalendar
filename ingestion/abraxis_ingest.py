@@ -92,6 +92,7 @@ from ingestion.sources import bend as bend_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import anchorage as anchorage_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import birmingham as birmingham_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import huntsville as huntsville_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import flagstaff as flagstaff_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
