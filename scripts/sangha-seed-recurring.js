@@ -4739,6 +4739,68 @@ const SITS = [
     notes: "Tuesday Evening Meditation Class (6:30–7:45pm) at Beacon Unitarian Universalist Congregation, 510 N Leroux St, Flagstaff AZ 86001 (downtown). Outreach class from the International Kadampa Retreat Center Grand Canyon (Williams, AZ). Beginner-friendly guided meditation and Buddhist teaching; no experience needed. Cost: $10 / $5 students and seniors / free for monthly members. New Kadampa Tradition (NKT). meditationinnorthernarizona.org/flagstaff/.",
     source_url: "https://meditationinnorthernarizona.org/flagstaff/", event_url: "https://meditationinnorthernarizona.org/flagstaff/",
   },
+
+  // -----------------------------------------------------------------------
+  // Gainesville, Florida — Phase 3 (heartbeat 76)
+  // -----------------------------------------------------------------------
+
+  // Gainesville KTC — Karma Kagyu Tibetan. Sun 9:30am in-person.
+  // 1216 NW 9th Ave (Duckpond neighborhood). Teacher: Lama Losang.
+  {
+    org_id: "ktc_gainesville", org_name: "Gainesville Karma Thegsum Choling",
+    title: "Sunday Morning Meditation & Teachings",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 150,
+    address: "1216 NW 9th Ave", city: "Gainesville", state: "FL", neighborhood: "Duckpond",
+    lat: 29.6592, lng: -82.3378, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Morning Program (9:00am–noon) at Gainesville Karma Thegsum Choling (KTC), 1216 NW 9th Ave, Gainesville FL 32601. Nejang & Qi Gong at 9:00am, sitting meditation at 9:30am, Buddhist teachings at 10:00am. Open to the public; drop-in welcome. Karma Kagyu / Tibetan Buddhist. Teacher: Lama Losang (Dr. David Bole). (352) 335-1975. ktcgainesville.org.",
+    source_url: "https://www.ktcgainesville.org", event_url: "https://www.ktcgainesville.org",
+  },
+
+  // Shambhala Gainesville — Tuesday evening in-person sit.
+  // 1899 NE 23rd Ave. Drop-in; rotating formats.
+  {
+    org_id: "shambhala_gainesville", org_name: "Shambhala Gainesville",
+    title: "Tuesday Evening Sitting Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "1899 NE 23rd Ave", city: "Gainesville", state: "FL", neighborhood: "Northeast Gainesville",
+    lat: 29.6768, lng: -82.3028, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Sitting Meditation (6:00–7:00pm) at Shambhala Gainesville, 1899 NE 23rd Ave, Gainesville FL 32609. Rotating formats: meditation instruction, compassion practice, or group chants. Drop-in welcome; all levels. (352) 448-5870. gainesville.shambhala.org.",
+    source_url: "https://gainesville.shambhala.org", event_url: "https://gainesville.shambhala.org/ongoing-offerings/",
+  },
+
+  // Shambhala Gainesville — Sunday morning in-person sit + discussion.
+  {
+    org_id: "shambhala_gainesville", org_name: "Shambhala Gainesville",
+    title: "Sunday Morning Meditation & Discussion",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "1899 NE 23rd Ave", city: "Gainesville", state: "FL", neighborhood: "Northeast Gainesville",
+    lat: 29.6768, lng: -82.3028, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Morning Program (10:00am–12:00pm) at Shambhala Gainesville, 1899 NE 23rd Ave, Gainesville FL 32609. Sitting meditation, walking meditation, and book discussion. Beginner instruction at 9:30am for newcomers. Drop-in welcome; all levels. (352) 448-5870. gainesville.shambhala.org.",
+    source_url: "https://gainesville.shambhala.org", event_url: "https://gainesville.shambhala.org/ongoing-offerings/",
+  },
+
+  // Vipassana Karuna Sangha — Theravada. Thu 6pm in-person at Karuna Cottage.
+  // Private residence, NW Gainesville. Teacher: Nancy Lasseter.
+  {
+    org_id: "vipassana_karuna_gainesville", org_name: "Vipassana Karuna Sangha",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "Karuna Cottage", city: "Gainesville", state: "FL", neighborhood: "Northwest Gainesville",
+    lat: 29.6950, lng: -82.3500, tradition: "theravada", location_type: "in-person",
+    notes: "Thursday Evening Meditation (6:00–7:30pm) at Vipassana Karuna Sangha, Karuna Cottage, Gainesville FL (private residence in NW Gainesville; location shared with registered participants). 30-min guided meditation, 10-min walking meditation, 20-min silent sit, teaching, and community sharing. Arrive by 5:50pm. All welcome; free, donations appreciated. Teacher: Nancy Lasseter. nancylasseter@gmail.com. nancylasseter.com/vipassana-karuna-sangha/.",
+    source_url: "https://nancylasseter.com/vipassana-karuna-sangha/", event_url: "https://nancylasseter.com/vipassana-karuna-sangha/",
+  },
+
+  // Florida Sanbo Zen — Zen (Sanbo lineage). Wed 6pm in-person + online at Karuna Cottage.
+  {
+    org_id: "florida_sanbo_zen", org_name: "Florida Sanbo Zen",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 105,
+    address: "Karuna Cottage", city: "Gainesville", state: "FL", neighborhood: "Northwest Gainesville",
+    lat: 29.6950, lng: -82.3500, tradition: "zen", location_type: "hybrid",
+    notes: "Wednesday Evening Zazen (6:00–7:45pm) at Florida Sanbo Zen, Karuna Cottage, Gainesville FL (private residence; location shared on registration). Zazen, kinhin (walking meditation), and tea. In-person with online option available. All levels and traditions welcome; drop-in. Suggested donation $5–$20. Sanbo Zen lineage; teachers Shana Smith, Debi and Bob Kolb. floridasanbozen@gmail.com. nancylasseter.com/fl-sanbo-zen/.",
+    source_url: "https://nancylasseter.com/fl-sanbo-zen/", event_url: "https://nancylasseter.com/fl-sanbo-zen/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

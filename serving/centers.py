@@ -5952,4 +5952,91 @@ CENTERS = {
             "meditationinnorthernarizona.org/flagstaff/."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Gainesville, FL — Phase 3 (heartbeat 76)
+    # -----------------------------------------------------------------------
+    "ktc_gainesville": {
+        "id": "ktc_gainesville",
+        "name": "Gainesville Karma Thegsum Choling",
+        "tradition": "tibetan",
+        "url": "https://www.ktcgainesville.org",
+        "address": "1216 NW 9th Ave",
+        "city": "Gainesville",
+        "state": "FL",
+        "zip": "32601",
+        "neighborhood": "Duckpond",
+        "lat": 29.6592,
+        "lng": -82.3378,
+        "description": (
+            "Gainesville Karma Thegsum Choling (KTC) is a Tibetan Buddhist center "
+            "in the Karma Kagyu lineage, led by Lama Losang (Dr. David Bole). "
+            "Sunday Program: Nejang & Qi Gong at 9:00am, sitting meditation at "
+            "9:30am, Buddhist teachings at 10:00am — open to the public, drop-in "
+            "welcome. Member of the Gainesville Buddhist Alliance. "
+            "(352) 335-1975 · ktcgainesville.org."
+        ),
+    },
+    "shambhala_gainesville": {
+        "id": "shambhala_gainesville",
+        "name": "Shambhala Gainesville",
+        "tradition": "tibetan",
+        "url": "https://gainesville.shambhala.org",
+        "address": "1899 NE 23rd Ave",
+        "city": "Gainesville",
+        "state": "FL",
+        "zip": "32609",
+        "neighborhood": "Northeast Gainesville",
+        "lat": 29.6768,
+        "lng": -82.3028,
+        "description": (
+            "Shambhala Gainesville offers weekly in-person sitting at 1899 NE 23rd "
+            "Ave. Tuesday Evening (6:00–7:00pm): rotating formats — instruction, "
+            "compassion practice, or chants; drop-in. Sunday Morning (10:00am–noon): "
+            "sitting + walking meditation + book discussion; beginner instruction at "
+            "9:30am; drop-in. Also hosts Rainbow Dharma (LGBTQIA+-led sits, 2nd & "
+            "4th Thursdays 6:30pm). (352) 448-5870 · gainesville.shambhala.org."
+        ),
+    },
+    "vipassana_karuna_gainesville": {
+        "id": "vipassana_karuna_gainesville",
+        "name": "Vipassana Karuna Sangha",
+        "tradition": "theravada",
+        "url": "https://nancylasseter.com/vipassana-karuna-sangha/",
+        "address": "Karuna Cottage",
+        "city": "Gainesville",
+        "state": "FL",
+        "zip": "32653",
+        "neighborhood": "Northwest Gainesville",
+        "lat": 29.6950,
+        "lng": -82.3500,
+        "description": (
+            "Vipassana Karuna Sangha is a Theravada/Vipassana community led by Nancy "
+            "Lasseter at Karuna Cottage, a private residence in northwest Gainesville. "
+            "Thursday Evening (6:00–7:30pm): guided meditation, walking meditation, "
+            "silent sit, teaching, and community sharing. All welcome; free "
+            "(donations suggested). Location provided on request. Member of the "
+            "Gainesville Buddhist Alliance. nancylasseter.com/vipassana-karuna-sangha/."
+        ),
+    },
+    "florida_sanbo_zen": {
+        "id": "florida_sanbo_zen",
+        "name": "Florida Sanbo Zen",
+        "tradition": "zen",
+        "url": "https://nancylasseter.com/fl-sanbo-zen/",
+        "address": "Karuna Cottage",
+        "city": "Gainesville",
+        "state": "FL",
+        "zip": "32653",
+        "neighborhood": "Northwest Gainesville",
+        "lat": 29.6950,
+        "lng": -82.3500,
+        "description": (
+            "Florida Sanbo Zen is a Zen sitting group in the Sanbo Zen lineage, "
+            "meeting at Karuna Cottage in northwest Gainesville. Teachers: Shana "
+            "Smith and senior practitioners Debi and Bob Kolb. Wednesday Evening "
+            "(6:00–7:45pm): zazen, kinhin, and tea; in-person with online option. "
+            "All levels welcome; drop-in. Suggested dana $5–$20. Member of the "
+            "Gainesville Buddhist Alliance. nancylasseter.com/fl-sanbo-zen/."
+        ),
+    },
 }
