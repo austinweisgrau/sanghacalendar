@@ -4801,6 +4801,57 @@ const SITS = [
     notes: "Wednesday Evening Zazen (6:00–7:45pm) at Florida Sanbo Zen, Karuna Cottage, Gainesville FL (private residence; location shared on registration). Zazen, kinhin (walking meditation), and tea. In-person with online option available. All levels and traditions welcome; drop-in. Suggested donation $5–$20. Sanbo Zen lineage; teachers Shana Smith, Debi and Bob Kolb. floridasanbozen@gmail.com. nancylasseter.com/fl-sanbo-zen/.",
     source_url: "https://nancylasseter.com/fl-sanbo-zen/", event_url: "https://nancylasseter.com/fl-sanbo-zen/",
   },
+
+  // -----------------------------------------------------------------------
+  // Des Moines, Iowa — Phase 3 (heartbeat 77)
+  // -----------------------------------------------------------------------
+
+  // Des Moines Zen Center — Soto Zen. Sun 7:10am in-person.
+  // 6901 SW 14th St, SW Des Moines. Open to all; drop-in.
+  {
+    org_id: "des_moines_zen", org_name: "Des Moines Zen Center",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 7, m: 10 }, duration_min: 100,
+    address: "6901 SW 14th St", city: "Des Moines", state: "IA", neighborhood: "Southwest Des Moines",
+    lat: 41.5558, lng: -93.6480, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Program (7:10–8:50am) at Des Moines Zen Center (Deep River Temple / Shinsenji), 6901 SW 14th St, Des Moines IA 50315. Zazen instruction at 7:40am, zazen 7:10–8:40am, kinhin (walking meditation), morning service, and dharma talk from 8:50am. Open to all; drop-in welcome. Soto Zen. dsmzencenter.org.",
+    source_url: "https://www.dsmzencenter.org", event_url: "https://www.dsmzencenter.org/practice/",
+  },
+
+  // Des Moines Zen Center — Wednesday evening zazen. 6pm in-person.
+  {
+    org_id: "des_moines_zen", org_name: "Des Moines Zen Center",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 40,
+    address: "6901 SW 14th St", city: "Des Moines", state: "IA", neighborhood: "Southwest Des Moines",
+    lat: 41.5558, lng: -93.6480, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday Evening Zazen (6:00–6:40pm) at Des Moines Zen Center (Deep River Temple / Shinsenji), 6901 SW 14th St, Des Moines IA 50315. Zazen instruction offered at 5:40pm for newcomers; zazen 6:00–6:40pm. Zen Study Group follows on 2nd, 3rd, and 4th Wednesdays (6:50–8:00pm). Open to all; drop-in welcome. dsmzencenter.org.",
+    source_url: "https://www.dsmzencenter.org", event_url: "https://www.dsmzencenter.org/practice/",
+  },
+
+  // Pure Land of Iowa — Theravada. Wed 6:30pm in-person at Clive temple.
+  // Teacher: Bhante Dhammapala. 8364 Hickman Rd, Clive IA (western DSM suburb).
+  {
+    org_id: "pure_land_iowa", org_name: "Pure Land of Iowa",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 18, m: 30 }, duration_min: 105,
+    address: "8364 Hickman Rd", city: "Clive", state: "IA", neighborhood: "Clive",
+    lat: 41.5985, lng: -93.7729, tradition: "theravada", location_type: "in-person",
+    notes: "Wednesday Evening Meditation (6:30–8:15pm) at Pure Land of Iowa, 8364 Hickman Rd, Clive IA 50325 (western Des Moines suburb). Guided meditation, group discussion, and silent sitting in the Theravada tradition. Teacher: Bhante Dhammapala. Beginner-friendly; drop-in welcome. (515) 331-4144. purelandofiowa.org.",
+    source_url: "https://www.purelandofiowa.org", event_url: "https://www.purelandofiowa.org",
+  },
+
+  // Pure Land of Iowa — Zen. Thu 7pm in-person at Clive temple.
+  // Teacher: Daishin Eric McCabe.
+  {
+    org_id: "pure_land_iowa", org_name: "Pure Land of Iowa",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "8364 Hickman Rd", city: "Clive", state: "IA", neighborhood: "Clive",
+    lat: 41.5985, lng: -93.7729, tradition: "zen", location_type: "in-person",
+    notes: "Thursday Evening Meditation (7:00–8:00pm) at Pure Land of Iowa, 8364 Hickman Rd, Clive IA 50325 (western Des Moines suburb). Guided meditation in the Zen tradition. Teacher: Daishin Eric McCabe. Beginner-friendly; drop-in welcome. (515) 331-4144. purelandofiowa.org.",
+    source_url: "https://www.purelandofiowa.org", event_url: "https://www.purelandofiowa.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

@@ -6039,4 +6039,49 @@ CENTERS = {
             "Gainesville Buddhist Alliance. nancylasseter.com/fl-sanbo-zen/."
         ),
     },
+    # ── Des Moines, Iowa — Phase 3 (heartbeat 77) ─────────────────────────────
+    "des_moines_zen": {
+        "id": "des_moines_zen",
+        "name": "Des Moines Zen Center",
+        "tradition": "zen",
+        "url": "https://www.dsmzencenter.org",
+        "address": "6901 SW 14th St",
+        "city": "Des Moines",
+        "state": "IA",
+        "zip": "50315",
+        "neighborhood": "Southwest Des Moines",
+        "lat": 41.5558,
+        "lng": -93.6480,
+        "description": (
+            "Des Moines Zen Center (Deep River Temple / Shinsenji) is a Soto Zen "
+            "practice community at 6901 SW 14th St. Committed to inclusivity and "
+            "diversity, welcoming all backgrounds. Sunday Morning Program: zazen "
+            "7:10–8:40am, kinhin, morning service, and dharma talk from 8:50am. "
+            "Wednesday Evening: zazen instruction 5:40pm, zazen 6:00–6:40pm, Zen "
+            "Study Group 2nd–4th Wednesdays 6:50–8:00pm. Drop-in welcome. "
+            "dsmzencenter.org."
+        ),
+    },
+    "pure_land_iowa": {
+        "id": "pure_land_iowa",
+        "name": "Pure Land of Iowa",
+        "tradition": "other",
+        "url": "https://www.purelandofiowa.org",
+        "address": "8364 Hickman Rd",
+        "city": "Clive",
+        "state": "IA",
+        "zip": "50325",
+        "neighborhood": "Clive",
+        "lat": 41.5985,
+        "lng": -93.7729,
+        "description": (
+            "Pure Land of Iowa is a multi-tradition Buddhist temple at 8364 Hickman Rd "
+            "in Clive (western Des Moines suburb). Teachers include Daishin Eric McCabe "
+            "(Zen) and Bhante Dhammapala (Theravada). Weekly in-person sits: Wednesday "
+            "Evening (6:30–8:15pm) — Theravada guided meditation + discussion with "
+            "Bhante Dhammapala; Thursday Evening (7:00–8:00pm) — Zen sitting with "
+            "Daishin Eric McCabe. All beginner-friendly; open to the public. "
+            "(515) 331-4144 · purelandofiowa.org."
+        ),
+    },
 }
