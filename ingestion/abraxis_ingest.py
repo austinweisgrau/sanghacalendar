@@ -95,6 +95,7 @@ from ingestion.sources import huntsville as huntsville_sources  # noqa: F401 (no
 from ingestion.sources import flagstaff as flagstaff_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import gainesville as gainesville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import des_moines as des_moines_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import lexington_ky as lexington_ky_sources
 
 log = logging.getLogger(__name__)
 

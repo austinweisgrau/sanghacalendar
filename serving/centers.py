@@ -6084,4 +6084,90 @@ CENTERS = {
             "(515) 331-4144 · purelandofiowa.org."
         ),
     },
+    # ── Lexington, KY — Phase 3 (heartbeat 78) ────────────────────────────────
+    "shambhala_lexington": {
+        "id": "shambhala_lexington",
+        "name": "Lexington Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://lexington.shambhala.org",
+        "address": "305 W Maxwell Street",
+        "city": "Lexington",
+        "state": "KY",
+        "zip": "40508",
+        "lat": 38.0413,
+        "lng": -84.5043,
+        "neighborhood": "University / Downtown",
+        "bio": (
+            "Lexington Shambhala Meditation Center is a community in the Kagyu-Nyingma "
+            "lineage founded by Chögyam Trungpa Rinpoche. Located near the University "
+            "of Kentucky campus at 305 W Maxwell Street. Weekly programs: Café Shambhala "
+            "(Saturdays 10am–noon) — group sitting + dharma reading + discussion, with "
+            "free instruction for newcomers; Tuesday Tune In (Tuesdays 6–7pm) — three "
+            "staggered 30-minute sitting blocks with free instruction. All open to the "
+            "public. lexington.shambhala.org."
+        ),
+    },
+    "lexington_zen": {
+        "id": "lexington_zen",
+        "name": "Lexington Zen Center",
+        "tradition": "zen",
+        "url": "https://lexingtonzencenter.org",
+        "address": "649 Price Avenue",
+        "city": "Lexington",
+        "state": "KY",
+        "zip": "40508",
+        "lat": 38.0530,
+        "lng": -84.5000,
+        "neighborhood": "Downtown / Northside",
+        "bio": (
+            "Lexington Zen Center is a Korean/American Zen community in the Chogye "
+            "lineage, a student group of Zen Master Dae Gak of Furnace Mountain Retreat "
+            "Center (Clay City, KY). Meets at the Friends (Quaker) Meetinghouse, 649 "
+            "Price Avenue. First Sunday of each month: 2pm in-person sit — two 25-minute "
+            "periods of zazen with walking meditation between. All other Sundays via "
+            "Zoom. Small welcoming community; email before visiting. "
+            "lexingtonzencenter.org."
+        ),
+    },
+    "bluegrass_zen_lexington": {
+        "id": "bluegrass_zen_lexington",
+        "name": "Bluegrass Zen",
+        "tradition": "zen",
+        "url": "https://bluegrasszen.org",
+        "address": "3564 Clays Mill Road",
+        "city": "Lexington",
+        "state": "KY",
+        "zip": "40503",
+        "lat": 38.0132,
+        "lng": -84.5472,
+        "neighborhood": "Southwest Lexington",
+        "bio": (
+            "Bluegrass Zen is a Chan (Chinese Zen) community affiliated with the Pacific "
+            "Zen Institute, led by Rev. David Parks, Roshi. Lexington sits meet Thursday "
+            "evenings at 6:30pm at the Unitarian Universalist Church of Lexington (UUCL), "
+            "3564 Clays Mill Road. Also has a Berea, KY location on Monday evenings. "
+            "Open to all; no experience required. bluegrasszen.org."
+        ),
+    },
+    "uucl_sunday_sangha": {
+        "id": "uucl_sunday_sangha",
+        "name": "UUCL Sunday Sangha",
+        "tradition": "other",
+        "url": "https://sites.google.com/uucl.org/sundaysangha",
+        "address": "3564 Clays Mill Road",
+        "city": "Lexington",
+        "state": "KY",
+        "zip": "40503",
+        "lat": 38.0132,
+        "lng": -84.5472,
+        "neighborhood": "Southwest Lexington",
+        "bio": (
+            "UUCL Sunday Sangha is an interfaith mindfulness community meeting at the "
+            "Unitarian Universalist Church of Lexington, drawing on the Plum Village "
+            "tradition of Thich Nhat Hanh. Sundays 9–10:45am: silent sitting (9–9:30am, "
+            "in-person), then hybrid dharma discussion (9:45–10:45am, in-person + Zoom). "
+            "Open to all backgrounds. Contact: sangha@uucl.org. "
+            "sites.google.com/uucl.org/sundaysangha."
+        ),
+    },
 }

@@ -4852,6 +4852,43 @@ const SITS = [
     notes: "Thursday Evening Meditation (7:00–8:00pm) at Pure Land of Iowa, 8364 Hickman Rd, Clive IA 50325 (western Des Moines suburb). Guided meditation in the Zen tradition. Teacher: Daishin Eric McCabe. Beginner-friendly; drop-in welcome. (515) 331-4144. purelandofiowa.org.",
     source_url: "https://www.purelandofiowa.org", event_url: "https://www.purelandofiowa.org",
   },
+
+  // ── Lexington, KY — Phase 3 (heartbeat 78) ───────────────────────────────
+  // Lexington Zen Center — Chogye/Dae Gak lineage. First Sunday monthly, 2pm.
+  // 649 Price Ave (Quaker Meetinghouse), Lexington KY 40508. Email before visiting.
+  {
+    org_id: "lexington_zen", org_name: "Lexington Zen Center",
+    title: "Sunday Sitting Meditation",
+    days: ["Sunday"], week_of_month: 1, time: { h: 14, m: 0 }, duration_min: 90,
+    address: "649 Price Avenue", city: "Lexington", state: "KY", neighborhood: "Downtown / Northside",
+    lat: 38.0530, lng: -84.5000, tradition: "zen", location_type: "in-person",
+    notes: "First Sunday of each month, 2pm in-person at the Friends (Quaker) Meetinghouse, 649 Price Ave, Lexington KY 40508. Two 25-minute periods of zazen separated by walking meditation. Chogye Korean Zen lineage — student community of Zen Master Dae Gak (Furnace Mountain). Email before visiting (occasional cancellations). All other Sundays via Zoom only. lexingtonzencenter.org.",
+    source_url: "https://lexingtonzencenter.org", event_url: "https://lexingtonzencenter.org/about/events/",
+  },
+
+  // Bluegrass Zen — Chan / Pacific Zen Institute. Thu 6:30pm at UUCL.
+  // 3564 Clays Mill Rd, Lexington KY 40503. Teacher: Rev. David Parks, Roshi.
+  {
+    org_id: "bluegrass_zen_lexington", org_name: "Bluegrass Zen",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "3564 Clays Mill Road", city: "Lexington", state: "KY", neighborhood: "Southwest Lexington",
+    lat: 38.0132, lng: -84.5472, tradition: "zen", location_type: "in-person",
+    notes: "Thursday Evening Meditation (6:30–7:30pm) at Bluegrass Zen, meeting in the Purple Room at the Unitarian Universalist Church of Lexington (UUCL), 3564 Clays Mill Rd, Lexington KY 40503. Chan (Chinese Zen) lineage affiliated with Pacific Zen Institute, led by Rev. David Parks, Roshi. Open to all — no experience required. bluegrasszen.org.",
+    source_url: "https://bluegrasszen.org", event_url: "https://bluegrasszen.org/locations/",
+  },
+
+  // UUCL Sunday Sangha — TNH/Plum Village-influenced interfaith. Sun 9am hybrid.
+  // 3564 Clays Mill Rd, Lexington KY 40503. Contact: sangha@uucl.org.
+  {
+    org_id: "uucl_sunday_sangha", org_name: "UUCL Sunday Sangha",
+    title: "Sunday Morning Sitting",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 105,
+    address: "3564 Clays Mill Road", city: "Lexington", state: "KY", neighborhood: "Southwest Lexington",
+    lat: 38.0132, lng: -84.5472, tradition: "other", location_type: "hybrid",
+    notes: "Sunday Morning Sitting (9–10:45am) at UUCL Sunday Sangha, Unitarian Universalist Church of Lexington, 3564 Clays Mill Rd, Lexington KY 40503. Interfaith mindfulness community influenced by Thich Nhat Hanh / Plum Village tradition. Silent sitting 9–9:30am (in-person only), then hybrid group dharma discussion 9:45–10:45am (in-person + Google Meet). Open to all backgrounds. Contact: sangha@uucl.org.",
+    source_url: "https://sites.google.com/uucl.org/sundaysangha", event_url: "https://sites.google.com/uucl.org/sundaysangha/info",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
