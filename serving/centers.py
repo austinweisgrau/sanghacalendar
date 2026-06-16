@@ -693,6 +693,91 @@ CENTERS = {
             "Zoom) and a TGNC Practice Night (2nd Thursdays 6:30pm, in-person)."
         ),
     },
+    "kadampa_brooklyn": {
+        "id": "kadampa_brooklyn",
+        "name": "Kadampa Meditation Center Brooklyn",
+        "tradition": "tibetan",
+        "url": "https://www.brooklynmeditation.org",
+        "address": "444 Atlantic Ave",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zip": "11217",
+        "neighborhood": "Boerum Hill",
+        "lat": 40.6847,
+        "lng": -73.9892,
+        "description": (
+            "Kadampa Meditation Center Brooklyn (formerly Vajradhara Meditation Center, est. 2005) "
+            "is a New Kadampa Tradition (NKT-IKBU) Tibetan Buddhist center with the main location "
+            "at 444 Atlantic Ave in Boerum Hill plus branches in Williamsburg, Bay Ridge, and "
+            "Bed-Stuy. Drop-in classes run most days of the week, including Monday and Wednesday "
+            "evenings, Thursday lunchtime, and Sunday mornings. Summer outdoor meditation in "
+            "Prospect Park. All are welcome, no prior experience needed."
+        ),
+    },
+    "shantideva_brooklyn": {
+        "id": "shantideva_brooklyn",
+        "name": "Shantideva Center",
+        "tradition": "tibetan",
+        "url": "https://shantidevanyc.org",
+        "address": "432 6th Ave",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zip": "11215",
+        "neighborhood": "Park Slope",
+        "lat": 40.6742,
+        "lng": -73.9780,
+        "description": (
+            "Shantideva Center is an FPMT (Foundation for the Preservation of the Mahayana "
+            "Tradition) Tibetan Buddhist center in Park Slope, Brooklyn, in the Gelug lineage "
+            "of Lama Yeshe and Lama Zopa Rinpoche. Named for the 8th-century Indian master "
+            "Shantideva. Offers a rich weekly schedule including Monday evening Meditation 101, "
+            "Thursday lunchtime meditation, Saturday in-depth training, and various online "
+            "offerings. Both visiting teachers and resident programs. Open to practitioners "
+            "of all experience levels."
+        ),
+    },
+    "rock_blossom_sangha": {
+        "id": "rock_blossom_sangha",
+        "name": "Rock Blossom Sangha",
+        "tradition": "zen",
+        "url": "https://rockblossom.org",
+        "address": "1012 8th Ave",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zip": "11215",
+        "neighborhood": "Park Slope",
+        "lat": 40.6665,
+        "lng": -73.9803,
+        "description": (
+            "Rock Blossom Sangha is a Plum Village community (Thich Nhat Hanh / Order of "
+            "Interbeing) based in Park Slope, Brooklyn. They meet Sundays at 6pm in-person "
+            "at Church of Gethsemane (with Zoom option) and Thursdays at 6:30pm online. "
+            "Practice emphasizes mindfulness, loving-kindness, and engaged Buddhism in the "
+            "tradition of Thich Nhat Hanh. Part of Community of Mindfulness NY Metro. "
+            "Welcoming and inclusive — all are welcome."
+        ),
+    },
+    "dharma_punx_nyc": {
+        "id": "dharma_punx_nyc",
+        "name": "Dharma Punx NYC",
+        "tradition": "theravada",
+        "url": "https://www.dharmapunxnyc.com",
+        "address": "105 Grand St",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zip": "11249",
+        "neighborhood": "Williamsburg",
+        "lat": 40.7145,
+        "lng": -73.9650,
+        "description": (
+            "Dharma Punx NYC is a secular/Theravada meditation community led by teachers "
+            "Josh Korda and Kathy Cherry. Known for accessible, psychologically grounded "
+            "teachings rooted in the early Buddhist tradition. Monthly in-person sits on "
+            "the 1st Tuesday of each month at 105 Grand St in Williamsburg; weekly Zoom "
+            "sits every Tuesday at 7pm. All events are by donation. Also hosts retreats "
+            "at Garrison Institute and Omega. A beloved NYC dharma institution."
+        ),
+    },
     "norcal_sangha": {
         "id": "norcal_sangha",
         "name": "NorCal Sangha Community",

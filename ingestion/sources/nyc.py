@@ -146,6 +146,63 @@ CENTERS = {
         tradition=Tradition.ZEN,
         notes="Soto Zen center in the Mountains and Rivers Order (Zen Mountain Monastery). Sunday Morning Program 9:30am–12:30pm; daily zazen; LGBTQIA+ Sitting Group 1st/3rd Tuesdays 6pm (Zoom); TGNC Practice Night 2nd Thursdays 6:30pm (in-person); monthly half-day sits.",
     ),
+    # ---- Brooklyn Phase 3d ----
+    "kadampa_brooklyn": Center(
+        id="kadampa_brooklyn",
+        name="Kadampa Meditation Center Brooklyn",
+        url="https://www.brooklynmeditation.org",
+        address="444 Atlantic Ave",
+        city="Brooklyn",
+        state="NY",
+        zip_code="11217",
+        lat=40.6847,
+        lng=-73.9892,
+        neighborhood="Boerum Hill",
+        tradition=Tradition.TIBETAN,
+        notes="New Kadampa Tradition (NKT-IKBU) Tibetan Buddhist center, est. 2005. Main Brooklyn location plus Williamsburg, Bay Ridge, and Bed-Stuy branches. Drop-in classes Mon–Sun. Monday 7pm, Wednesday 7pm, Thursday 12:15pm lunchtime, Sunday 11:30am General Program. Summer outdoor meditation in Prospect Park.",
+    ),
+    "shantideva_brooklyn": Center(
+        id="shantideva_brooklyn",
+        name="Shantideva Center",
+        url="https://shantidevanyc.org",
+        address="432 6th Ave",
+        city="Brooklyn",
+        state="NY",
+        zip_code="11215",
+        lat=40.6742,
+        lng=-73.9780,
+        neighborhood="Park Slope",
+        tradition=Tradition.TIBETAN,
+        notes="FPMT (Foundation for the Preservation of the Mahayana Tradition) center in Park Slope. Gelug Tibetan lineage of Lama Yeshe and Lama Zopa Rinpoche. Very active programming: Monday 7:30pm Meditation 101, Thursday 1pm lunchtime meditation, Saturday 9:30am in-depth training. Both in-person and online offerings.",
+    ),
+    "rock_blossom_sangha": Center(
+        id="rock_blossom_sangha",
+        name="Rock Blossom Sangha",
+        url="https://rockblossom.org",
+        address="1012 8th Ave",
+        city="Brooklyn",
+        state="NY",
+        zip_code="11215",
+        lat=40.6665,
+        lng=-73.9803,
+        neighborhood="Park Slope",
+        tradition=Tradition.ZEN,
+        notes="Plum Village tradition (Thich Nhat Hanh / Order of Interbeing) sangha in Park Slope. Meets Sundays 6pm in-person at Church of Gethsemane (hybrid) and Thursdays 6:30pm online via Zoom. Part of Community of Mindfulness NY Metro.",
+    ),
+    "dharma_punx_nyc": Center(
+        id="dharma_punx_nyc",
+        name="Dharma Punx NYC",
+        url="https://www.dharmapunxnyc.com",
+        address="105 Grand St",
+        city="Brooklyn",
+        state="NY",
+        zip_code="11249",
+        lat=40.7145,
+        lng=-73.9650,
+        neighborhood="Williamsburg",
+        tradition=Tradition.THERAVADA,
+        notes="Secular/Theravada meditation community led by Josh Korda and Kathy Cherry. Monthly in-person sits on 1st Tuesdays 7pm at 105 Grand St, Williamsburg (Grand Street Healing Project). Weekly Zoom sits Tuesdays 7pm. All by donation. Hosts retreats at Garrison Institute and Omega.",
+    ),
 }
 
 
@@ -178,6 +235,13 @@ EVENTBRITE_FEEDS = {
         "organizer_id": "3903735193",
         "filter_to_sits": False,  # include lectures, exhibitions, special programs
     },
+    # Phase 3d — Brooklyn
+    "kadampa_brooklyn": {
+        # Kadampa Meditation Center Brooklyn (also covers Williamsburg branch)
+        # organizer_id: "Kadampa Meditation Center Brooklyn / Vajradhara"
+        "organizer_id": "341863409",
+        "filter_to_sits": False,  # include all classes and programs
+    },
 }
 
 # Phase 3c — Static HTML feeds (LLM-assisted)
@@ -187,6 +251,12 @@ STATIC_HTML_FEEDS = {
         # Events are server-side rendered in the HTML. Scrape monthly calendar view.
         "url": "https://zcnyc.org/calendar/",
         "filter_to_sits": True,
+    },
+    # Phase 3d — Brooklyn
+    "shantideva_brooklyn": {
+        # Shantideva Center (FPMT Park Slope) — website calendar.
+        "url": "https://shantidevanyc.org/calendar/",
+        "filter_to_sits": False,  # include classes, guided meditation, workshops
     },
 }
 

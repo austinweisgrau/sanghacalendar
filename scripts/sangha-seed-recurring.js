@@ -490,6 +490,38 @@ const SITS = [
     notes: "1st and 3rd Tuesdays 6pm ET, online via Zoom. Open to LGBTQIA+ practitioners. Soto Zen practice.",
     source_url: "https://zcnyc.org", event_url: "https://zcnyc.org/practice/",
   },
+  // ── Brooklyn Phase 3d — Rock Blossom Sangha + Dharma Punx NYC ───────────
+  // Rock Blossom Sangha (Plum Village / Thich Nhat Hanh) — Park Slope
+  {
+    org_id: "rock_blossom_sangha", org_name: "Rock Blossom Sangha",
+    title: "Sunday Evening Sit",
+    days: ["Sunday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "1012 8th Ave", city: "Brooklyn", state: "NY", neighborhood: "Park Slope",
+    lat: 40.6665, lng: -73.9803, tradition: "zen", location_type: "hybrid",
+    notes: "In-person at Church of Gethsemane, Park Slope, plus hybrid Zoom. Plum Village tradition (Order of Interbeing). All welcome.",
+    source_url: "https://rockblossom.org", event_url: "https://rockblossom.org",
+  },
+  {
+    org_id: "rock_blossom_sangha", org_name: "Rock Blossom Sangha",
+    title: "Thursday Evening Sit",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "Online (Zoom)", city: "Brooklyn", state: "NY", neighborhood: "Park Slope",
+    lat: 40.6665, lng: -73.9803, tradition: "zen", location_type: "online",
+    notes: "Weekly Thursday sit via Zoom. Plum Village tradition. Contact rockblossom.org for link.",
+    source_url: "https://rockblossom.org", event_url: "https://rockblossom.org",
+  },
+  // Dharma Punx NYC — Williamsburg (monthly in-person; weekly Zoom)
+  {
+    org_id: "dharma_punx_nyc", org_name: "Dharma Punx NYC",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    week_of_month: 1,
+    address: "105 Grand St", city: "Brooklyn", state: "NY", neighborhood: "Williamsburg",
+    lat: 40.7145, lng: -73.9650, tradition: "theravada", location_type: "in-person",
+    notes: "1st Tuesday of each month, in-person at Grand Street Healing Project, Williamsburg. Led by Josh Korda and Kathy Cherry. Free (by donation). Other Tuesdays online via Zoom.",
+    source_url: "https://www.dharmapunxnyc.com", event_url: "https://www.dharmapunxnyc.com/calendar",
+  },
+
   // ── Boston / Cambridge ────────────────────────────────────────────────────
   // Greater Boston Zen Center (GBZC) — Central Square, Cambridge
   {
