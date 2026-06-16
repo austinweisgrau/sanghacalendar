@@ -4889,6 +4889,41 @@ const SITS = [
     notes: "Sunday Morning Sitting (9–10:45am) at UUCL Sunday Sangha, Unitarian Universalist Church of Lexington, 3564 Clays Mill Rd, Lexington KY 40503. Interfaith mindfulness community influenced by Thich Nhat Hanh / Plum Village tradition. Silent sitting 9–9:30am (in-person only), then hybrid group dharma discussion 9:45–10:45am (in-person + Google Meet). Open to all backgrounds. Contact: sangha@uucl.org.",
     source_url: "https://sites.google.com/uucl.org/sundaysangha", event_url: "https://sites.google.com/uucl.org/sundaysangha/info",
   },
+
+  // ── Memphis, TN — Phase 3 (heartbeat 79) ──────────────────────────────────
+
+  // ── Memphis Zen Community — 3387 Walnut Grove Rd, Memphis, TN 38111
+  // Soto Zen (founded 1998). Website unreachable as of 2026-06; schedule via directory.
+  {
+    org_id: "memphis_zen", org_name: "Memphis Zen Community",
+    title: "Sunday Zen Sitting",
+    days: ["Sunday"], time: { h: 17, m: 0 }, duration_min: 90,
+    address: "3387 Walnut Grove Rd", city: "Memphis", state: "TN", neighborhood: "Midtown Memphis",
+    lat: 35.1249, lng: -90.0073, tradition: "zen", location_type: "in-person",
+    notes: "Weekly Sunday sitting meditation (5:00–6:30pm) at Memphis Zen Community, 3387 Walnut Grove Rd, Midtown Memphis. Soto lineage, founded 1998. Open to all, no experience required. Drop-in welcome. memphiszen.org.",
+    source_url: "https://memphiszen.org", event_url: "https://memphiszen.org/calendar/",
+  },
+
+  // ── Pema Karpo Meditation Center — 3921 Frayser Raleigh Rd, Memphis, TN 38128
+  // Nyingma Tibetan Buddhism. Online-primary. 11-acre campus in Frayser.
+  {
+    org_id: "pema_karpo_memphis", org_name: "Pema Karpo Meditation Center",
+    title: "Sunday Online Service",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 90,
+    address: "3921 Frayser Raleigh Rd", city: "Memphis", state: "TN", neighborhood: "Frayser",
+    lat: 35.2175, lng: -90.0183, tradition: "tibetan", location_type: "online",
+    notes: "Sunday online service (11am–12:30pm CT) via Zoom. Nyingma Tibetan Buddhism. All welcome. Join via Zoom link at pemakarpo.org. In-person events announced via email list.",
+    source_url: "https://pemakarpo.org", event_url: "https://pemakarpo.org",
+  },
+  {
+    org_id: "pema_karpo_memphis", org_name: "Pema Karpo Meditation Center",
+    title: "Wednesday Sadhana of Shakyamuni Buddha",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "3921 Frayser Raleigh Rd", city: "Memphis", state: "TN", neighborhood: "Frayser",
+    lat: 35.2175, lng: -90.0183, tradition: "tibetan", location_type: "online",
+    notes: "Weekly Wednesday Sadhana of Shakyamuni Buddha with Q&A (7–8pm CT) via Shambhala Online. Nyingma Tibetan Buddhist practice. Open to all. pemakarpo.org.",
+    source_url: "https://pemakarpo.org", event_url: "https://pemakarpo.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

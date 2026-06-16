@@ -96,6 +96,7 @@ from ingestion.sources import flagstaff as flagstaff_sources  # noqa: F401 (no l
 from ingestion.sources import gainesville as gainesville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import des_moines as des_moines_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import lexington_ky as lexington_ky_sources
+from ingestion.sources import memphis as memphis_sources
 
 log = logging.getLogger(__name__)
 
@@ -1126,6 +1127,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Bozeman iCal {org_id} failed: {e}")
+
+    # Memphis TN + Batesville MS Phase 3 — Magnolia Grove Monastery Eventbrite
+    log.info("--- Memphis TN / Batesville MS Phase 3: Magnolia Grove Monastery Eventbrite ---")
+    for org_id, feed_cfg in memphis_sources.EVENTBRITE_FEEDS.items():
+        center = memphis_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Memphis Eventbrite)...")
+        try:
+            events = fetch_eventbrite_organizer(
+                organizer_id=feed_cfg["organizer_id"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Memphis Eventbrite {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

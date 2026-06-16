@@ -6170,4 +6170,66 @@ CENTERS = {
             "sites.google.com/uucl.org/sundaysangha."
         ),
     },
+    # ── Memphis, TN + Batesville, MS ─────────────────────────────────────────
+    "memphis_zen": {
+        "id": "memphis_zen",
+        "name": "Memphis Zen Community",
+        "tradition": "zen",
+        "url": "https://memphiszen.org",
+        "address": "3387 Walnut Grove Rd",
+        "city": "Memphis",
+        "state": "TN",
+        "zip": "38111",
+        "lat": 35.1249,
+        "lng": -90.0073,
+        "neighborhood": "Midtown Memphis",
+        "bio": (
+            "Memphis Zen Community is a Soto Zen sangha in Midtown Memphis, founded in 1998. "
+            "Weekly Sunday sitting meditation (5:00–6:30pm, in-person) at 3387 Walnut Grove Rd. "
+            "Open to all; no prior experience required. Drop-in welcome."
+        ),
+    },
+    "pema_karpo_memphis": {
+        "id": "pema_karpo_memphis",
+        "name": "Pema Karpo Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://pemakarpo.org",
+        "address": "3921 Frayser Raleigh Rd",
+        "city": "Memphis",
+        "state": "TN",
+        "zip": "38128",
+        "lat": 35.2175,
+        "lng": -90.0183,
+        "neighborhood": "Frayser",
+        "bio": (
+            "Pema Karpo Meditation Center is a Nyingma Tibetan Buddhist center on an 11-acre "
+            "campus in the Frayser neighborhood of north Memphis. Offers weekly online services: "
+            "Sunday 11:00am–12:30pm CT via Zoom (general service) and Wednesday 7–8pm Sadhana of "
+            "Shakyamuni Buddha via Shambhala Online. In-person events are announced via email list — "
+            "join at pemakarpomeditation@gmail.com."
+        ),
+    },
+    "magnolia_grove_monastery": {
+        "id": "magnolia_grove_monastery",
+        "name": "Magnolia Grove Monastery",
+        "tradition": "zen",
+        "url": "https://magnoliagrovemonastery.org",
+        "address": "123 Towles Rd",
+        "city": "Batesville",
+        "state": "MS",
+        "zip": "38606",
+        "lat": 34.3186,
+        "lng": -89.9447,
+        "neighborhood": "Batesville",
+        "bio": (
+            "Magnolia Grove Monastery is a fully-ordained Plum Village monastery in the "
+            "tradition of Thich Nhat Hanh, located on a rural campus in Batesville, MS "
+            "(approximately 60 miles south of Memphis). Home to both monks and nuns, it is "
+            "the leading Plum Village practice center in the Southeast United States. "
+            "Monthly Sunday Days of Mindfulness (free, typically 8:30am–2pm, registration "
+            "required via Eventbrite) offer sitting meditation, walking meditation, dharma "
+            "talks, and mindful meals. Personal and themed retreats also available. "
+            "magnoliagrovemonastery.org · (662) 267-6437."
+        ),
+    },
 }
