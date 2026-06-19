@@ -6317,4 +6317,66 @@ CENTERS = {
             "magnoliagrovemonastery.org · (662) 267-6437."
         ),
     },
+    "insight_meditation_charlottesville": {
+        "id": "insight_meditation_charlottesville",
+        "name": "Insight Meditation Community of Charlottesville",
+        "tradition": "theravada",
+        "url": "https://www.imeditation.org",
+        "address": "717 Rugby Road",
+        "city": "Charlottesville",
+        "state": "VA",
+        "zip": "22903",
+        "lat": 38.0517,
+        "lng": -78.4968,
+        "neighborhood": "Rugby Road / UVA",
+        "bio": (
+            "Insight Meditation Community of Charlottesville (IMCC) is a Theravada/Vipassana "
+            "sangha founded in 1996, with approximately 175 members. Meets at the Unitarian "
+            "Universalist Church of Charlottesville, 717 Rugby Road. Tuesday evenings "
+            "7:00–8:30pm: hybrid sit (in-person + Zoom) — guided meditation followed by "
+            "dharma talk. Typical attendance ~50–60 people. Additional weekly sits available; "
+            "see website for details. Free, open to all. imeditation.org."
+        ),
+    },
+    "clear_spring_zen_charlottesville": {
+        "id": "clear_spring_zen_charlottesville",
+        "name": "Clear Spring Zen",
+        "tradition": "zen",
+        "url": "https://clearspringzen.org",
+        "address": "717 Rugby Road",
+        "city": "Charlottesville",
+        "state": "VA",
+        "zip": "22903",
+        "lat": 38.0517,
+        "lng": -78.4968,
+        "neighborhood": "Rugby Road / UVA",
+        "bio": (
+            "Clear Spring Zen is a Zen community in the Diamond Sangha lineage (Robert Aitken "
+            "Roshi), led by teacher Marian Morgan. Two public sits open to all: Wednesday "
+            "7–8pm in-person at UU Church, 717 Rugby Road, Charlottesville; and Sunday "
+            "9–10:30am via Zoom. Additional sits at the Crozet Zendo (contact teacher for "
+            "address and schedule). Free, no experience required. clearspringzen.org."
+        ),
+    },
+    "blue_ridge_zen": {
+        "id": "blue_ridge_zen",
+        "name": "Blue Ridge Zen Group",
+        "tradition": "zen",
+        "url": "https://www.brzen.org",
+        "address": "4425 Advance Mills Road",
+        "city": "Earlysville",
+        "state": "VA",
+        "zip": "22936",
+        "lat": 38.1547,
+        "lng": -78.4697,
+        "neighborhood": "Earlysville (Albemarle County)",
+        "bio": (
+            "Blue Ridge Zen Group is a Rinzai Zen community in the Myoshin-ji temple lineage, "
+            "led by teacher Teido (Bill) Stephens. Founded in 1975 and affiliated with "
+            "Rinzai-ji, it is one of the longest-established Rinzai communities on the East "
+            "Coast. Meets at a private zendo in Earlysville, Albemarle County (~10 miles north "
+            "of Charlottesville). Tuesday zazen 5:30–6pm and Sunday sitting 9–10:15am. "
+            "Contact via brzen.org for zendo address and directions before visiting. brzen.org."
+        ),
+    },
 }

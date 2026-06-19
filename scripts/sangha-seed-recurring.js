@@ -4956,6 +4956,59 @@ const SITS = [
     notes: "Weekly Wednesday Sadhana of Shakyamuni Buddha with Q&A (7–8pm CT) via Shambhala Online. Nyingma Tibetan Buddhist practice. Open to all. pemakarpo.org.",
     source_url: "https://pemakarpo.org", event_url: "https://pemakarpo.org",
   },
+
+  // ── Charlottesville, VA — Phase 3 (heartbeat 80) ──────────────────────────
+
+  // ── Insight Meditation Community of Charlottesville — 717 Rugby Rd, Charlottesville VA 22903
+  {
+    org_id: "insight_meditation_charlottesville", org_name: "Insight Meditation Community of Charlottesville",
+    title: "Tuesday Evening Sit & Dharma Talk",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "717 Rugby Road", city: "Charlottesville", state: "VA", neighborhood: "Rugby Road / UVA",
+    lat: 38.0517, lng: -78.4968, tradition: "theravada", location_type: "hybrid",
+    notes: "Weekly Tuesday evening sit (7:00–8:30pm ET) at Unitarian Universalist Church of Charlottesville, 717 Rugby Road. Guided meditation (~35 min) followed by dharma talk. In-person + Zoom. ~50–60 attendees. Founded 1996. All welcome, free. imeditation.org.",
+    source_url: "https://www.imeditation.org", event_url: "https://www.imeditation.org/tuesdayeveningmeetings",
+  },
+
+  // ── Clear Spring Zen — 717 Rugby Rd (UU Church), Charlottesville VA 22903
+  {
+    org_id: "clear_spring_zen_charlottesville", org_name: "Clear Spring Zen",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "717 Rugby Road", city: "Charlottesville", state: "VA", neighborhood: "Rugby Road / UVA",
+    lat: 38.0517, lng: -78.4968, tradition: "zen", location_type: "in_person",
+    notes: "Weekly Wednesday evening zazen (7–8pm ET) at UU Church of Charlottesville, 717 Rugby Road. Diamond Sangha Zen lineage; teacher Marian Morgan. Open to all, free. clearspringzen.org.",
+    source_url: "https://clearspringzen.org", event_url: "https://clearspringzen.org",
+  },
+  {
+    org_id: "clear_spring_zen_charlottesville", org_name: "Clear Spring Zen",
+    title: "Sunday Morning Zazen (Zoom)",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 90,
+    address: "717 Rugby Road", city: "Charlottesville", state: "VA", neighborhood: "Rugby Road / UVA",
+    lat: 38.0517, lng: -78.4968, tradition: "zen", location_type: "online",
+    notes: "Weekly Sunday morning zazen (9–10:30am ET) via Zoom. Diamond Sangha Zen lineage; teacher Marian Morgan. Open to all, free. Contact clearspringzen.org for Zoom link. clearspringzen.org.",
+    source_url: "https://clearspringzen.org", event_url: "https://clearspringzen.org",
+  },
+
+  // ── Blue Ridge Zen Group — 4425 Advance Mills Rd, Earlysville VA 22936
+  {
+    org_id: "blue_ridge_zen", org_name: "Blue Ridge Zen Group",
+    title: "Tuesday Zazen",
+    days: ["Tuesday"], time: { h: 17, m: 30 }, duration_min: 30,
+    address: "4425 Advance Mills Road", city: "Earlysville", state: "VA", neighborhood: "Earlysville (Albemarle County)",
+    lat: 38.1547, lng: -78.4697, tradition: "zen", location_type: "in_person",
+    notes: "Weekly Tuesday zazen (5:30–6pm ET) at private Rinzai Zen zendo in Earlysville, Albemarle County (~10 miles north of Charlottesville). Contact brzen.org for exact address before visiting. Myoshin-ji lineage, teacher Teido (Bill) Stephens. Founded 1975. brzen.org.",
+    source_url: "https://www.brzen.org", event_url: "https://www.brzen.org/Schedule.html",
+  },
+  {
+    org_id: "blue_ridge_zen", org_name: "Blue Ridge Zen Group",
+    title: "Sunday Morning Sitting",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 75,
+    address: "4425 Advance Mills Road", city: "Earlysville", state: "VA", neighborhood: "Earlysville (Albemarle County)",
+    lat: 38.1547, lng: -78.4697, tradition: "zen", location_type: "in_person",
+    notes: "Weekly Sunday morning sitting (9–10:15am ET) at private Rinzai Zen zendo in Earlysville (~10 miles north of Charlottesville). Contact brzen.org for exact address. Myoshin-ji lineage, teacher Teido (Bill) Stephens. Founded 1975. brzen.org.",
+    source_url: "https://www.brzen.org", event_url: "https://www.brzen.org/Schedule.html",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
