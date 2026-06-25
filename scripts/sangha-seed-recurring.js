@@ -5009,6 +5009,34 @@ const SITS = [
     notes: "Weekly Sunday morning sitting (9–10:15am ET) at private Rinzai Zen zendo in Earlysville (~10 miles north of Charlottesville). Contact brzen.org for exact address. Myoshin-ji lineage, teacher Teido (Bill) Stephens. Founded 1975. brzen.org.",
     source_url: "https://www.brzen.org", event_url: "https://www.brzen.org/Schedule.html",
   },
+
+  // -----------------------------------------------------------------------
+  // Tallahassee, Florida — Phase 3 (heartbeat 81)
+  // -----------------------------------------------------------------------
+
+  // Cypress Tree Zen Group — Kwan Um Zen. Sun 8:30am–11am in-person.
+  // 1819 Doric Dr (NW Tallahassee). Bows, chanting, zazen, dharma discussion.
+  {
+    org_id: "cypress_tree_zen_tallahassee", org_name: "Cypress Tree Zen Group",
+    title: "Sunday Morning Zen Practice",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 150,
+    address: "1819 Doric Dr", city: "Tallahassee", state: "FL", neighborhood: "Northwest Tallahassee",
+    lat: 30.4777, lng: -84.3015, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Zen Practice (8:30–11am ET) at Cypress Tree Zen Group, 1819 Doric Dr, Tallahassee FL 32303. Program includes bows, chanting, seated meditation, walking meditation, and dharma discussion. Kwan Um School of Zen (Korean Chogye Zen, founded by Seung Sahn). Drop-in welcome; free. webdharma.com/ctzg/.",
+    source_url: "https://webdharma.com/ctzg/", event_url: "https://webdharma.com/ctzg/",
+  },
+
+  // Tallahassee Shambhala — Tuesday evening meditation & chanting. 7–8pm in-person.
+  // 2700 Apalachee Pkwy Suite A. Contact: (850) 219-1223.
+  {
+    org_id: "shambhala_tallahassee", org_name: "Tallahassee Shambhala Meditation Group",
+    title: "Tuesday Evening Meditation & Chanting",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "2700 Apalachee Pkwy Suite A", city: "Tallahassee", state: "FL", neighborhood: "Apalachee Parkway",
+    lat: 30.4248, lng: -84.2565, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Meditation & Chanting (7:00–8:00pm ET) at Tallahassee Shambhala Meditation Group, 2700 Apalachee Pkwy Suite A, Tallahassee FL 32301. Part of the global Shambhala community. Drop-in welcome. (850) 219-1223. tallahassee.shambhala.org.",
+    source_url: "https://tallahassee.shambhala.org", event_url: "https://tallahassee.shambhala.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

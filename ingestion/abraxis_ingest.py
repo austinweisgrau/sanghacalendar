@@ -98,6 +98,7 @@ from ingestion.sources import des_moines as des_moines_sources  # noqa: F401 (no
 from ingestion.sources import lexington_ky as lexington_ky_sources
 from ingestion.sources import memphis as memphis_sources
 from ingestion.sources import charlottesville as charlottesville_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import tallahassee as tallahassee_sources
 
 log = logging.getLogger(__name__)
 
@@ -1152,6 +1153,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Memphis Eventbrite {org_id} failed: {e}")
+
+    # Tallahassee FL Phase 3 — Tallahassee Chan Center iCal feed
+    log.info("--- Tallahassee FL Phase 3: Tallahassee Chan Center iCal feed ---")
+    for org_id, feed_cfg in tallahassee_sources.ICAL_FEEDS.items():
+        center = tallahassee_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Tallahassee iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Tallahassee iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

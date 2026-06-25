@@ -6379,4 +6379,66 @@ CENTERS = {
             "Contact via brzen.org for zendo address and directions before visiting. brzen.org."
         ),
     },
+    # Tallahassee, FL — Phase 3 (heartbeat 81)
+    "tallahassee_chan_center": {
+        "id": "tallahassee_chan_center",
+        "name": "Tallahassee Chan Center",
+        "tradition": "zen",
+        "url": "https://tallahasseechan.org",
+        "address": "1310 N Paul Russell Rd",
+        "city": "Tallahassee",
+        "state": "FL",
+        "zip": "32301",
+        "lat": 30.4134,
+        "lng": -84.2426,
+        "neighborhood": "Southwood",
+        "bio": (
+            "Tallahassee Chan Center (TCC) is led by Guo Gu (Jimmy Yu), a Dharma Drum Chan "
+            "lineage teacher and FSU religion professor. Active weekly programs include: "
+            "Sunday Morning Meditation (9:30–11am, free, in-person + Zoom); Monday Night "
+            "Meditation (6:30–8pm, free); first-Thursday Short Meditation Instructions "
+            "(6:30–8pm); third-Friday Bodhisattva Precepts Recitation (6–8pm); and Sunday "
+            "Meditation on Recovery (11am–noon, free). All in-person events at "
+            "1310 N Paul Russell Rd. tallahasseechan.org."
+        ),
+    },
+    "cypress_tree_zen_tallahassee": {
+        "id": "cypress_tree_zen_tallahassee",
+        "name": "Cypress Tree Zen Group",
+        "tradition": "zen",
+        "url": "https://webdharma.com/ctzg/",
+        "address": "1819 Doric Dr",
+        "city": "Tallahassee",
+        "state": "FL",
+        "zip": "32303",
+        "lat": 30.4777,
+        "lng": -84.3015,
+        "neighborhood": "Northwest Tallahassee",
+        "bio": (
+            "Cypress Tree Zen Group is affiliated with the Kwan Um School of Zen (Korean "
+            "Chogye Zen, founded by Seung Sahn). Meets at 1819 Doric Dr in northwest "
+            "Tallahassee on Sunday mornings (8:30–11am): bows, chanting, seated meditation, "
+            "and dharma discussion. Drop-in welcome; free. webdharma.com/ctzg/."
+        ),
+    },
+    "shambhala_tallahassee": {
+        "id": "shambhala_tallahassee",
+        "name": "Tallahassee Shambhala Meditation Group",
+        "tradition": "tibetan",
+        "url": "https://tallahassee.shambhala.org",
+        "address": "2700 Apalachee Pkwy Suite A",
+        "city": "Tallahassee",
+        "state": "FL",
+        "zip": "32301",
+        "lat": 30.4248,
+        "lng": -84.2565,
+        "neighborhood": "Apalachee Parkway",
+        "bio": (
+            "Tallahassee Shambhala Meditation Group offers weekly Tuesday evening "
+            "meditation and chanting (7:00–8:00pm) at 2700 Apalachee Pkwy Suite A. "
+            "Part of the global Shambhala network presenting meditation as a path "
+            "for daily life and social transformation. Drop-in welcome. "
+            "(850) 219-1223 · tallahassee.shambhala.org."
+        ),
+    },
 }
