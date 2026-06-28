@@ -6441,4 +6441,111 @@ CENTERS = {
             "(850) 219-1223 · tallahassee.shambhala.org."
         ),
     },
+
+    # -----------------------------------------------------------------------
+    # Dallas / Fort Worth, Texas — Phase 3 (heartbeat 82)
+    # -----------------------------------------------------------------------
+
+    "kmc_texas": {
+        "id": "kmc_texas",
+        "name": "Kadampa Meditation Center Texas",
+        "tradition": "tibetan",
+        "url": "https://www.meditationintexas.org",
+        "address": "1875 Laws St",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75207",
+        "neighborhood": "West End",
+        "lat": 32.7820,
+        "lng": -96.8093,
+        "description": (
+            "KMC Texas is a major New Kadampa Tradition (NKT) center in downtown Dallas, "
+            "housed in an 8,500 sq ft temple near the Dallas World Aquarium. Drop-in "
+            "meditation classes run Sunday 11am (English + Spanish), Tuesday 7pm, and "
+            "Thursday 7pm — each class stands alone, all levels welcome. Also runs "
+            "satellite classes in Fort Worth, Plano, McKinney, and Denton. "
+            "meditationintexas.org."
+        ),
+    },
+    "maria_kannon_zen_dallas": {
+        "id": "maria_kannon_zen_dallas",
+        "name": "Maria Kannon Zen Center",
+        "tradition": "zen",
+        "url": "https://www.mkzc.org",
+        "address": "1450 Old Gate Lane",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75218",
+        "neighborhood": "White Rock",
+        "lat": 32.8333,
+        "lng": -96.7108,
+        "description": (
+            "Maria Kannon Zen Center offers Soto Zen meditation practice in northeast "
+            "Dallas, meeting on the second floor of White Rock United Methodist Church. "
+            "Weekly in-person/hybrid sessions: Monday noon (12–1pm), Monday evening "
+            "(7:30–9pm), Wednesday evening (7:30–9pm), and Saturday morning (10:30am–noon). "
+            "All are hybrid (zendo + Zoom). 214-388-1122 · mkzc.org."
+        ),
+    },
+    "shambhala_dallas": {
+        "id": "shambhala_dallas",
+        "name": "Dallas Shambhala Meditation Center",
+        "tradition": "tibetan",
+        "url": "https://dallas.shambhala.org",
+        "address": "13140 Coit Rd Suite 117",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75240",
+        "neighborhood": "Far North Dallas",
+        "lat": 32.9344,
+        "lng": -96.7818,
+        "description": (
+            "Dallas Shambhala Meditation Center offers weekly public meditation in the "
+            "Chögyam Trungpa Rinpoche lineage. Free meditation instruction every Sunday "
+            "morning (meditation + dharma talk) and Tuesday evening. The Shambhala "
+            "tradition presents meditation as a path for daily life and social "
+            "transformation, rooted in Kagyu and Nyingma Buddhism. dallas.shambhala.org."
+        ),
+    },
+    "ktc_dallas": {
+        "id": "ktc_dallas",
+        "name": "KTC Dallas — Karma Thegsum Choling",
+        "tradition": "tibetan",
+        "url": "https://www.ktcdallas.org",
+        "address": "1000 Armeda Ave",
+        "city": "Irving",
+        "state": "TX",
+        "zip": "75061",
+        "neighborhood": "Irving",
+        "lat": 32.8187,
+        "lng": -96.9625,
+        "description": (
+            "Dallas Karma Thegsum Choling (KTC Dallas) is a Kagyu Tibetan Buddhist "
+            "center in Irving, founded in 1984 by Khenpo Karthar Rinpoche of KTD "
+            "Woodstock. Open every Sunday 9:30am–1pm: free introduction to meditation "
+            "(9:30–10:30am) taught by Lama Dudjom Dorjee, followed by dharma teachings. "
+            "Third Saturday monthly: Buddhism and meditation intro class. ktcdallas.org."
+        ),
+    },
+    "dallas_meditation_center": {
+        "id": "dallas_meditation_center",
+        "name": "Dallas Meditation Center",
+        "tradition": "zen",
+        "url": "https://dallasmeditationcenter.com",
+        "address": "810 W Arapaho Rd Suite 98",
+        "city": "Richardson",
+        "state": "TX",
+        "zip": "75080",
+        "neighborhood": "Richardson",
+        "lat": 32.9777,
+        "lng": -96.7303,
+        "description": (
+            "Dallas Meditation Center is a mindfulness community in Richardson inspired "
+            "by Thich Nhat Hanh's Plum Village tradition. 'Zen-to-Go' weekday noon sits "
+            "(Mon–Thu 12:00–12:45pm in-person) offer a gentle midday pause for all "
+            "levels. Monday 7:30–9pm session is online. Practice includes sitting "
+            "meditation, walking meditation, dharma talks, and Plum Village chanting. "
+            "dallasmeditationcenter.com."
+        ),
+    },
 }

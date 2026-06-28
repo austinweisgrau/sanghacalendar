@@ -95,6 +95,7 @@ from ingestion.sources import lexington_ky as lexington_ky_sources
 from ingestion.sources import memphis as memphis_sources
 from ingestion.sources import charlottesville as charlottesville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import tallahassee as tallahassee_sources
+from ingestion.sources import dallas as dallas_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -1455,6 +1456,7 @@ def main():
         # Anchorage AK Phase 3 — all centers seeded via sangha-seed-recurring.js
         # Des Moines IA Phase 3 — all centers seeded via sangha-seed-recurring.js
         # Charlottesville VA Phase 3 — all centers seeded via sangha-seed-recurring.js
+        # Dallas/Fort Worth TX Phase 3 — all centers seeded via sangha-seed-recurring.js
     )
     n = upsert_events(events)
     print(f"\n✓ {n} events upserted")

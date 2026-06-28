@@ -99,6 +99,7 @@ from ingestion.sources import lexington_ky as lexington_ky_sources
 from ingestion.sources import memphis as memphis_sources
 from ingestion.sources import charlottesville as charlottesville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import tallahassee as tallahassee_sources
+from ingestion.sources import dallas as dallas_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

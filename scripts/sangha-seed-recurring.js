@@ -5037,6 +5037,124 @@ const SITS = [
     notes: "Tuesday Evening Meditation & Chanting (7:00–8:00pm ET) at Tallahassee Shambhala Meditation Group, 2700 Apalachee Pkwy Suite A, Tallahassee FL 32301. Part of the global Shambhala community. Drop-in welcome. (850) 219-1223. tallahassee.shambhala.org.",
     source_url: "https://tallahassee.shambhala.org", event_url: "https://tallahassee.shambhala.org",
   },
+
+  // -----------------------------------------------------------------------
+  // Dallas / Fort Worth, Texas — Phase 3 (heartbeat 82)
+  // -----------------------------------------------------------------------
+
+  // KMC Texas — NKT Tibetan. Sun 11am, Tue 7pm, Thu 7pm in-person.
+  // 1875 Laws St (West End, near Dallas Aquarium). Drop-in, all levels.
+  {
+    org_id: "kmc_texas", org_name: "Kadampa Meditation Center Texas",
+    title: "Sunday Meditation Class",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 75,
+    address: "1875 Laws St", city: "Dallas", state: "TX", neighborhood: "West End",
+    lat: 32.7820, lng: -96.8093, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Meditation Class (11am–12:15pm CT) at Kadampa Meditation Center Texas, 1875 Laws St, Dallas TX 75207 (West End). Drop-in guided meditation and Buddhist teachings. Taught in English and Spanish. New Kadampa Tradition (NKT). All levels welcome. meditationintexas.org.",
+    source_url: "https://www.meditationintexas.org", event_url: "https://www.meditationintexas.org/meditation-classes",
+  },
+  {
+    org_id: "kmc_texas", org_name: "Kadampa Meditation Center Texas",
+    title: "Tuesday Evening Meditation Class",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 75,
+    address: "1875 Laws St", city: "Dallas", state: "TX", neighborhood: "West End",
+    lat: 32.7820, lng: -96.8093, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Meditation Class (7–8:15pm CT) at Kadampa Meditation Center Texas, 1875 Laws St, Dallas TX 75207. Drop-in guided meditation and Buddhist teachings. New Kadampa Tradition (NKT). All levels welcome. meditationintexas.org.",
+    source_url: "https://www.meditationintexas.org", event_url: "https://www.meditationintexas.org/meditation-classes",
+  },
+  {
+    org_id: "kmc_texas", org_name: "Kadampa Meditation Center Texas",
+    title: "Thursday Evening Meditation Class",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 75,
+    address: "1875 Laws St", city: "Dallas", state: "TX", neighborhood: "West End",
+    lat: 32.7820, lng: -96.8093, tradition: "tibetan", location_type: "in-person",
+    notes: "Thursday Evening Meditation Class (7–8:15pm CT) at Kadampa Meditation Center Texas, 1875 Laws St, Dallas TX 75207. Drop-in guided meditation and Buddhist teachings. New Kadampa Tradition (NKT). All levels welcome. meditationintexas.org.",
+    source_url: "https://www.meditationintexas.org", event_url: "https://www.meditationintexas.org/meditation-classes",
+  },
+
+  // Maria Kannon Zen Center — Soto Zen. Mon 12pm + Mon 7:30pm + Wed 7:30pm + Sat 10:30am hybrid.
+  // 1450 Old Gate Lane (White Rock UMC, 2nd floor), Dallas TX 75218.
+  {
+    org_id: "maria_kannon_zen_dallas", org_name: "Maria Kannon Zen Center",
+    title: "Monday Noon Zazen",
+    days: ["Monday"], time: { h: 12, m: 0 }, duration_min: 60,
+    address: "1450 Old Gate Lane", city: "Dallas", state: "TX", neighborhood: "White Rock",
+    lat: 32.8333, lng: -96.7108, tradition: "zen", location_type: "in-person",
+    notes: "Monday Noon Zazen (12–1pm CT) at Maria Kannon Zen Center, 1450 Old Gate Lane Rooms 200–201 (White Rock UMC, 2nd floor), Dallas TX 75218. Soto Zen. In-person. Drop-in welcome. 214-388-1122. mkzc.org.",
+    source_url: "https://www.mkzc.org", event_url: "https://www.mkzc.org",
+  },
+  {
+    org_id: "maria_kannon_zen_dallas", org_name: "Maria Kannon Zen Center",
+    title: "Monday Evening Zazen",
+    days: ["Monday"], time: { h: 19, m: 30 }, duration_min: 90,
+    address: "1450 Old Gate Lane", city: "Dallas", state: "TX", neighborhood: "White Rock",
+    lat: 32.8333, lng: -96.7108, tradition: "zen", location_type: "hybrid",
+    notes: "Monday Evening Zazen (7:30–9pm CT) at Maria Kannon Zen Center, 1450 Old Gate Lane Rooms 200–201 (White Rock UMC, 2nd floor), Dallas TX 75218. Soto Zen. Hybrid (Zendo + Zoom). Drop-in welcome. 214-388-1122. mkzc.org.",
+    source_url: "https://www.mkzc.org", event_url: "https://www.mkzc.org",
+  },
+  {
+    org_id: "maria_kannon_zen_dallas", org_name: "Maria Kannon Zen Center",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 30 }, duration_min: 90,
+    address: "1450 Old Gate Lane", city: "Dallas", state: "TX", neighborhood: "White Rock",
+    lat: 32.8333, lng: -96.7108, tradition: "zen", location_type: "hybrid",
+    notes: "Wednesday Evening Zazen (7:30–9pm CT) at Maria Kannon Zen Center, 1450 Old Gate Lane Rooms 200–201 (White Rock UMC, 2nd floor), Dallas TX 75218. Soto Zen. Hybrid (Zendo + Zoom). Drop-in welcome. 214-388-1122. mkzc.org.",
+    source_url: "https://www.mkzc.org", event_url: "https://www.mkzc.org",
+  },
+  {
+    org_id: "maria_kannon_zen_dallas", org_name: "Maria Kannon Zen Center",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 10, m: 30 }, duration_min: 90,
+    address: "1450 Old Gate Lane", city: "Dallas", state: "TX", neighborhood: "White Rock",
+    lat: 32.8333, lng: -96.7108, tradition: "zen", location_type: "hybrid",
+    notes: "Saturday Morning Zazen (10:30am–noon CT) at Maria Kannon Zen Center, 1450 Old Gate Lane Rooms 200–201 (White Rock UMC, 2nd floor), Dallas TX 75218. Soto Zen. Hybrid (Zendo + Zoom). Drop-in welcome. 214-388-1122. mkzc.org.",
+    source_url: "https://www.mkzc.org", event_url: "https://www.mkzc.org",
+  },
+
+  // Dallas Shambhala — Sun morning + Tue evening in-person.
+  // 13140 Coit Rd Suite 117, Dallas TX 75240 (Far North Dallas).
+  {
+    org_id: "shambhala_dallas", org_name: "Dallas Shambhala Meditation Center",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "13140 Coit Rd Suite 117", city: "Dallas", state: "TX", neighborhood: "Far North Dallas",
+    lat: 32.9344, lng: -96.7818, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Morning Meditation (10am–11:30am CT) at Dallas Shambhala Meditation Center, 13140 Coit Rd Suite 117, Dallas TX 75240. Seated meditation followed by dharma talk. Free meditation instruction available. Shambhala tradition (Chögyam Trungpa Rinpoche lineage). Drop-in welcome. dallas.shambhala.org.",
+    source_url: "https://dallas.shambhala.org", event_url: "https://dallas.shambhala.org",
+  },
+  {
+    org_id: "shambhala_dallas", org_name: "Dallas Shambhala Meditation Center",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "13140 Coit Rd Suite 117", city: "Dallas", state: "TX", neighborhood: "Far North Dallas",
+    lat: 32.9344, lng: -96.7818, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Meditation (7–8:30pm CT) at Dallas Shambhala Meditation Center, 13140 Coit Rd Suite 117, Dallas TX 75240. Seated meditation and dharma study. Free meditation instruction available. Shambhala tradition (Chögyam Trungpa lineage). Drop-in welcome. dallas.shambhala.org.",
+    source_url: "https://dallas.shambhala.org", event_url: "https://dallas.shambhala.org",
+  },
+
+  // KTC Dallas — Karma Kagyu Tibetan. Sun 9:30am–1pm in-person.
+  // 1000 Armeda Ave, Irving TX 75061. Free intro meditation 9:30–10:30am.
+  {
+    org_id: "ktc_dallas", org_name: "KTC Dallas — Karma Thegsum Choling",
+    title: "Sunday Meditation & Dharma",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 210,
+    address: "1000 Armeda Ave", city: "Irving", state: "TX", neighborhood: "Irving",
+    lat: 32.8187, lng: -96.9625, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Meditation & Dharma (9:30am–1pm CT) at KTC Dallas — Karma Thegsum Choling, 1000 Armeda Ave, Irving TX 75061. Free introduction to Buddhism and meditation class (9:30–10:30am) taught by Lama Dudjom Dorjee, followed by dharma teachings. Kagyu Tibetan Buddhism. Founded 1984 by Khenpo Karthar Rinpoche. Drop-in welcome; free. ktcdallas.org.",
+    source_url: "https://www.ktcdallas.org", event_url: "https://www.ktcdallas.org",
+  },
+
+  // Dallas Meditation Center — Plum Village. Mon–Thu 12pm in-person (45 min).
+  // 810 W. Arapaho Rd Suite 98, Richardson TX 75080.
+  {
+    org_id: "dallas_meditation_center", org_name: "Dallas Meditation Center",
+    title: "Zen-to-Go: Weekday Noon Sit",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday"], time: { h: 12, m: 0 }, duration_min: 45,
+    address: "810 W Arapaho Rd Suite 98", city: "Richardson", state: "TX", neighborhood: "Richardson",
+    lat: 32.9777, lng: -96.7303, tradition: "zen", location_type: "in-person",
+    notes: "Zen-to-Go: Weekday Noon Sit (12:00–12:45pm CT, Mon–Thu) at Dallas Meditation Center, 810 W. Arapaho Rd Suite 98, Richardson TX 75080. A gentle midday pause — sitting meditation in the Thich Nhat Hanh / Plum Village tradition. Open to all levels. Pay-what-you-can. dallasmeditationcenter.com.",
+    source_url: "https://dallasmeditationcenter.com", event_url: "https://dallasmeditationcenter.com",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
