@@ -5155,6 +5155,85 @@ const SITS = [
     notes: "Zen-to-Go: Weekday Noon Sit (12:00–12:45pm CT, Mon–Thu) at Dallas Meditation Center, 810 W. Arapaho Rd Suite 98, Richardson TX 75080. A gentle midday pause — sitting meditation in the Thich Nhat Hanh / Plum Village tradition. Open to all levels. Pay-what-you-can. dallasmeditationcenter.com.",
     source_url: "https://dallasmeditationcenter.com", event_url: "https://dallasmeditationcenter.com",
   },
+
+  // ============================================================
+  // Milwaukee WI — Phase 3 (heartbeat 83)
+  // Milwaukee Zen Center — Soto Zen. 2825 N. Stowell Ave, Milwaukee WI 53211.
+  // Schedule: Wed 6:30pm, Sat 7:30am, Sun 9:30am (key public sits).
+  // Also weekday mornings M-F 6:15am — seeded separately.
+  // ============================================================
+
+  // Milwaukee Zen Center — Wednesday evening zazen (drop-in, beginner instruction first 10 min)
+  {
+    org_id: "milwaukee_zen_center", org_name: "Milwaukee Zen Center",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "2825 N. Stowell Avenue", city: "Milwaukee", state: "WI", neighborhood: "East Side",
+    lat: 43.0748, lng: -87.8935, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday Evening Zazen (6:30–8pm CT) at Milwaukee Zen Center, 2825 N. Stowell Avenue, Milwaukee WI 53211. Soto Zen shikantaza. Beginner instruction offered in a separate room for the first 10 minutes. Periods of zazen and kinhin (walking meditation). No registration required; no charge (donations welcome). milwaukeezencenter.org.",
+    source_url: "https://www.milwaukeezencenter.org", event_url: "https://www.milwaukeezencenter.org/practice/weekly.html",
+  },
+
+  // Milwaukee Zen Center — Saturday morning zazen
+  {
+    org_id: "milwaukee_zen_center", org_name: "Milwaukee Zen Center",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 7, m: 30 }, duration_min: 165,
+    address: "2825 N. Stowell Avenue", city: "Milwaukee", state: "WI", neighborhood: "East Side",
+    lat: 43.0748, lng: -87.8935, tradition: "zen", location_type: "in-person",
+    notes: "Saturday Morning Zazen (7:30am–10:15am CT) at Milwaukee Zen Center, 2825 N. Stowell Avenue, Milwaukee WI 53211. Soto Zen shikantaza. Schedule: 7:30am zazen, 8am kinhin, 8:10am zazen, 8:40am service, 8:50am soji (work period), 9:15am reading group through 10:15am. Dharma text reading and discussion — no preparation required. No charge (donations welcome). milwaukeezencenter.org.",
+    source_url: "https://www.milwaukeezencenter.org", event_url: "https://www.milwaukeezencenter.org/practice/weekly.html",
+  },
+
+  // Milwaukee Zen Center — Sunday morning zazen + dharma talk
+  {
+    org_id: "milwaukee_zen_center", org_name: "Milwaukee Zen Center",
+    title: "Sunday Morning Zazen & Dharma Talk",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 90,
+    address: "2825 N. Stowell Avenue", city: "Milwaukee", state: "WI", neighborhood: "East Side",
+    lat: 43.0748, lng: -87.8935, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Zazen & Dharma Talk (9:30–11am CT) at Milwaukee Zen Center, 2825 N. Stowell Avenue, Milwaukee WI 53211. Soto Zen. 9:30am zazen, 10:10am kinhin, 10:20am dharma talk by practice director or guest, 11am tea and social time. Free Intro to Zazen offered separately at 8:20am. No registration required; no charge (donations welcome). milwaukeezencenter.org.",
+    source_url: "https://www.milwaukeezencenter.org", event_url: "https://www.milwaukeezencenter.org/practice/weekly.html",
+  },
+
+  // Milwaukee Zen Center — Weekday morning zazen (M-F)
+  {
+    org_id: "milwaukee_zen_center", org_name: "Milwaukee Zen Center",
+    title: "Weekday Morning Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], time: { h: 6, m: 15 }, duration_min: 75,
+    address: "2825 N. Stowell Avenue", city: "Milwaukee", state: "WI", neighborhood: "East Side",
+    lat: 43.0748, lng: -87.8935, tradition: "zen", location_type: "in-person",
+    notes: "Weekday Morning Zazen (6:15–7:30am CT, Mon–Fri) at Milwaukee Zen Center, 2825 N. Stowell Avenue, Milwaukee WI 53211. Soto Zen shikantaza. Two periods of zazen with kinhin (walking meditation) between; followed by chanting service. No registration required; no charge (donations welcome). milwaukeezencenter.org.",
+    source_url: "https://www.milwaukeezencenter.org", event_url: "https://www.milwaukeezencenter.org/practice/weekly.html",
+  },
+
+  // ============================================================
+  // Los Angeles CA — Dharma Vijaya expansion (heartbeat 83)
+  // Dharma Vijaya Buddhist Vihara — Sri Lankan Theravada.
+  // 1847 Crenshaw Blvd, Los Angeles CA 90019 (Crenshaw / Mid-City).
+  // ============================================================
+
+  // Dharma Vijaya — Tuesday evening meditation + Dhamma talk
+  {
+    org_id: "dharma_vijaya", org_name: "Dharma Vijaya Buddhist Vihara",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1847 Crenshaw Blvd", city: "Los Angeles", state: "CA", neighborhood: "Crenshaw / Mid-City",
+    lat: 34.0330, lng: -118.3375, tradition: "theravada", location_type: "in-person",
+    notes: "Tuesday Evening Meditation (7–8pm PT) at Dharma Vijaya Buddhist Vihara, 1847 Crenshaw Blvd, Los Angeles CA 90019. Guided meditation and Dhamma talk in the Theravada tradition. All levels welcome; no registration required. One of the oldest Theravada Buddhist temples in Southern California, founded 1980. dharmavijaya.org.",
+    source_url: "https://dharmavijaya.org", event_url: "https://dharmavijaya.org",
+  },
+
+  // Dharma Vijaya — Friday evening meditation + Dhamma talk
+  {
+    org_id: "dharma_vijaya", org_name: "Dharma Vijaya Buddhist Vihara",
+    title: "Friday Evening Meditation",
+    days: ["Friday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1847 Crenshaw Blvd", city: "Los Angeles", state: "CA", neighborhood: "Crenshaw / Mid-City",
+    lat: 34.0330, lng: -118.3375, tradition: "theravada", location_type: "in-person",
+    notes: "Friday Evening Meditation (7–8pm PT) at Dharma Vijaya Buddhist Vihara, 1847 Crenshaw Blvd, Los Angeles CA 90019. Guided meditation and Dhamma talk in the Theravada tradition. All levels welcome; no registration required. dharmavijaya.org.",
+    source_url: "https://dharmavijaya.org", event_url: "https://dharmavijaya.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

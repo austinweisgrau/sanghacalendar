@@ -6548,4 +6548,78 @@ CENTERS = {
             "dallasmeditationcenter.com."
         ),
     },
+    # ---------------------------------------------------------------------------
+    # Milwaukee WI — Phase 3 (heartbeat 83)
+    # ---------------------------------------------------------------------------
+    "shambhala_milwaukee": {
+        "id": "shambhala_milwaukee",
+        "name": "Shambhala Meditation Center of Milwaukee",
+        "tradition": "tibetan",
+        "url": "https://milwaukee.shambhala.org",
+        "address": "2344 N. Oakland Avenue",
+        "city": "Milwaukee",
+        "state": "WI",
+        "zip": "53211",
+        "neighborhood": "East Side",
+        "lat": 43.0693,
+        "lng": -87.8900,
+        "description": (
+            "Shambhala Meditation Center of Milwaukee offers weekly meditation and "
+            "dharma study rooted in the Shambhala Buddhist tradition founded by "
+            "Chögyam Trungpa Rinpoche. Weekly programs include Café Shambhala (Sunday "
+            "morning drop-in meditation and community), Tuesday evening meditation, "
+            "and Shambhala Training weekends. Open to all — no experience required. "
+            "2344 N. Oakland Avenue, Milwaukee WI 53211. milwaukee.shambhala.org."
+        ),
+    },
+    "milwaukee_zen_center": {
+        "id": "milwaukee_zen_center",
+        "name": "Milwaukee Zen Center",
+        "tradition": "zen",
+        "url": "https://www.milwaukeezencenter.org",
+        "address": "2825 N. Stowell Avenue",
+        "city": "Milwaukee",
+        "state": "WI",
+        "zip": "53211",
+        "neighborhood": "East Side",
+        "lat": 43.0748,
+        "lng": -87.8935,
+        "description": (
+            "Milwaukee Zen Center is a Soto Zen community offering shikantaza "
+            "('just sitting') in the tradition of Tozen Akiyama, Tonen O'Connor, "
+            "and Hoko Karnegis. Resident teacher: Reirin Alheidis Gumbel. The "
+            "schedule includes weekday mornings (M–F 6:15am), Wednesday evenings "
+            "(6:30pm, beginner instruction available), Saturday mornings (7:30am "
+            "zazen + service + dharma reading group), and Sunday mornings (8:20am "
+            "free Intro to Zazen, 9:30am zazen and dharma talk). No registration "
+            "required; no charge (donations welcome). 2825 N. Stowell Avenue, "
+            "Milwaukee WI 53211. milwaukeezencenter.org."
+        ),
+    },
+    # ---------------------------------------------------------------------------
+    # LA expansion — Phase 3 (heartbeat 83)
+    # ---------------------------------------------------------------------------
+    "dharma_vijaya": {
+        "id": "dharma_vijaya",
+        "name": "Dharma Vijaya Buddhist Vihara",
+        "tradition": "theravada",
+        "url": "https://dharmavijaya.org",
+        "address": "1847 Crenshaw Blvd",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90019",
+        "neighborhood": "Crenshaw / Mid-City",
+        "lat": 34.0330,
+        "lng": -118.3375,
+        "description": (
+            "Dharma Vijaya Buddhist Vihara is a Sri Lankan Theravada temple in "
+            "the Crenshaw neighborhood of Los Angeles, founded in 1980. One of "
+            "the oldest Theravada Buddhist temples in Southern California. Regular "
+            "public meditation: Tuesday and Friday 7–8pm (guided meditation and "
+            "Dhamma talk, all levels welcome). First Sunday of each month: one-day "
+            "meditation retreat, 7am–5pm. Morning puja and loving-kindness meditation "
+            "held daily at 6am. 1847 Crenshaw Blvd, Los Angeles CA 90019. "
+            "dharmavijaya.org."
+        ),
+    },
 }

@@ -96,6 +96,7 @@ from ingestion.sources import memphis as memphis_sources
 from ingestion.sources import charlottesville as charlottesville_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import tallahassee as tallahassee_sources
 from ingestion.sources import dallas as dallas_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import milwaukee as milwaukee_sources
 
 log = logging.getLogger(__name__)
 
@@ -1390,6 +1391,36 @@ def run_tallahassee_phase3() -> list[Event]:
     return all_events
 
 
+def run_milwaukee_phase3() -> list[Event]:
+    """Phase 3 Milwaukee WI: Shambhala Milwaukee iCal feed + recurring-only centers."""
+    all_events: list[Event] = []
+
+    for org_id, feed_cfg in milwaukee_sources.ICAL_FEEDS.items():
+        center = milwaukee_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Milwaukee iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Milwaukee iCal feed {org_id} failed: {e}")
+
+    # Milwaukee Zen Center — seeded via sangha-seed-recurring.js
+    return all_events
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
@@ -1450,6 +1481,7 @@ def main():
         + run_lexington_ky_phase3()
         + run_memphis_phase3()
         + run_tallahassee_phase3()
+        + run_milwaukee_phase3()
         # Lehigh Valley PA Phase 3 — all centers seeded via sangha-seed-recurring.js
         # Chattanooga TN Phase 3 — all centers seeded via sangha-seed-recurring.js
         # Colorado Springs CO Phase 3 — all centers seeded via sangha-seed-recurring.js

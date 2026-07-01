@@ -68,6 +68,29 @@ CENTERS = {
             "Intro to Zen classes, Half-Day Zazen, Sunday services."
         ),
     ),
+    "dharma_vijaya": Center(
+        id="dharma_vijaya",
+        name="Dharma Vijaya Buddhist Vihara",
+        url="https://dharmavijaya.org",
+        address="1847 Crenshaw Blvd",
+        city="Los Angeles",
+        state="CA",
+        zip_code="90019",
+        lat=34.0330,
+        lng=-118.3375,
+        neighborhood="Crenshaw / Mid-City",
+        tradition=Tradition.THERAVADA,
+        notes=(
+            "Dharma Vijaya Buddhist Vihara is a Sri Lankan Theravada temple "
+            "in the Crenshaw neighborhood of Los Angeles. Founded in 1980, it "
+            "is one of the oldest Theravada Buddhist temples in Southern California. "
+            "Regular public meditation: Tuesday and Friday 7–8pm (guided meditation "
+            "and Dhamma talk, all levels welcome). First Sunday of each month: "
+            "one-day meditation retreat, 7am–5pm. Monks hold a daily morning "
+            "puja, sutta recitation, and loving-kindness meditation at 6am. "
+            "1847 Crenshaw Blvd, Los Angeles CA 90019. dharmavijaya.org."
+        ),
+    ),
     "shambhala_la": Center(
         id="shambhala_la",
         name="Shambhala Meditation Center of Los Angeles",
