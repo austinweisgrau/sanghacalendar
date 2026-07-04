@@ -97,6 +97,7 @@ from ingestion.sources import charlottesville as charlottesville_sources  # noqa
 from ingestion.sources import tallahassee as tallahassee_sources
 from ingestion.sources import dallas as dallas_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import milwaukee as milwaukee_sources
+from ingestion.sources import tacoma as tacoma_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
@@ -1482,6 +1483,7 @@ def main():
         + run_memphis_phase3()
         + run_tallahassee_phase3()
         + run_milwaukee_phase3()
+        # Tacoma/South Sound WA Phase 3 — all centers seeded via sangha-seed-recurring.js
         # Lehigh Valley PA Phase 3 — all centers seeded via sangha-seed-recurring.js
         # Chattanooga TN Phase 3 — all centers seeded via sangha-seed-recurring.js
         # Colorado Springs CO Phase 3 — all centers seeded via sangha-seed-recurring.js

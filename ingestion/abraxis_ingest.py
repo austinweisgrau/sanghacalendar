@@ -101,6 +101,7 @@ from ingestion.sources import charlottesville as charlottesville_sources  # noqa
 from ingestion.sources import tallahassee as tallahassee_sources
 from ingestion.sources import dallas as dallas_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import milwaukee as milwaukee_sources
+from ingestion.sources import tacoma as tacoma_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

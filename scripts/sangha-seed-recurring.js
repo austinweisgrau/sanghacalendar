@@ -5234,6 +5234,112 @@ const SITS = [
     notes: "Friday Evening Meditation (7–8pm PT) at Dharma Vijaya Buddhist Vihara, 1847 Crenshaw Blvd, Los Angeles CA 90019. Guided meditation and Dhamma talk in the Theravada tradition. All levels welcome; no registration required. dharmavijaya.org.",
     source_url: "https://dharmavijaya.org", event_url: "https://dharmavijaya.org",
   },
+
+  // ============================================================
+  // Tacoma / South Sound WA — Phase 3 (heartbeat 84)
+  // 5 centers: Trikaya Zen, Tacoma Buddhist Center, Tacoma Shambhala,
+  // Tushita Kadampa (Olympia), Nalanda Institute (Olympia).
+  // No iCal feeds found — all seeded as recurring sits.
+  // ============================================================
+
+  // Trikaya Zen Center — Saturday morning zazen + dharma talk
+  {
+    org_id: "trikaya_zen", org_name: "Trikaya Zen Center",
+    title: "Saturday Morning Zazen & Dharma Talk",
+    days: ["Saturday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "2710 N. Madison St", city: "Tacoma", state: "WA", neighborhood: "North End",
+    lat: 47.2668, lng: -122.4695, tradition: "zen", location_type: "in-person",
+    notes: "Saturday Morning Zazen & Dharma Talk (10–11:30am PT) at Trikaya Zen Center, 2710 N. Madison St, Tacoma WA 98406. Soto Zen (White Plum Asanga lineage, Maezumi Roshi). Zazen followed by dharma talk and Q&A. Teacher: Sensei Rich Taido Christofferson. Drop-in welcome. trikayazencenter.org.",
+    source_url: "https://trikayazencenter.org", event_url: "https://trikayazencenter.org",
+  },
+
+  // Trikaya Zen Center — Sunday morning zazen + daisan (teacher interviews)
+  {
+    org_id: "trikaya_zen", org_name: "Trikaya Zen Center",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "2710 N. Madison St", city: "Tacoma", state: "WA", neighborhood: "North End",
+    lat: 47.2668, lng: -122.4695, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Zazen (10am PT) at Trikaya Zen Center, 2710 N. Madison St, Tacoma WA 98406. Soto Zen (White Plum Asanga). Zazen and private teacher interviews (daisan) with Sensei Rich Taido Christofferson. Both koan practice and shikantaza. Drop-in welcome. trikayazencenter.org.",
+    source_url: "https://trikayazencenter.org", event_url: "https://trikayazencenter.org",
+  },
+
+  // Tacoma Buddhist Center — Wednesday evening meditation + dharma discussion
+  {
+    org_id: "tacoma_buddhist_center", org_name: "Tacoma Buddhist Center",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 30 }, duration_min: 105,
+    address: "3410 N 18th St", city: "Tacoma", state: "WA", neighborhood: "North End / UPS Campus",
+    lat: 47.2683, lng: -122.4572, tradition: "pluralist", location_type: "in-person",
+    notes: "Wednesday Evening Meditation (7:30–9:15pm PT) at Tacoma Buddhist Center, Kliworth Chapel basement, University of Puget Sound, 3410 N 18th St, Tacoma WA 98416. Guided meditation and Buddhist dharma discussion. Triratna Buddhist Community (formerly FWBO), drawing on Theravada, Mahayana, and Vajrayana. All welcome; no experience needed. Suggested donation $10. tacomabuddhistcenter.org.",
+    source_url: "https://tacomabuddhistcenter.org", event_url: "https://tacomabuddhistcenter.org/classes.html",
+  },
+
+  // Tacoma Shambhala Meditation Group — Tuesday evening sit
+  {
+    org_id: "tacoma_shambhala", org_name: "Tacoma Shambhala Meditation Group",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 45 }, duration_min: 120,
+    address: "711 St Helens Ave #103", city: "Tacoma", state: "WA", neighborhood: "Downtown Tacoma",
+    lat: 47.2534, lng: -122.4433, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Meditation (6:45–8:45pm PT) at Good Karma Center for Joy, 711 St Helens Ave #103, Tacoma WA 98402. Tacoma Shambhala Meditation Group — satellite group of Shambhala Meditation Center of Seattle. Shambhala Buddhist tradition (Chögyam Trungpa Rinpoche lineage). All welcome; free introductory meditation instruction available. seattle.shambhala.org.",
+    source_url: "https://seattle.shambhala.org", event_url: "https://seattle.shambhala.org",
+  },
+
+  // Tushita Kadampa Buddhist Center (Olympia) — Sunday drop-in class
+  {
+    org_id: "tushita_kadampa", org_name: "Tushita Kadampa Buddhist Center",
+    title: "Sunday Meditation Class",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 75,
+    address: "211 Legion Way SW", city: "Olympia", state: "WA", neighborhood: "Downtown Olympia",
+    lat: 47.0436, lng: -122.9012, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Meditation Class (10–11:15am PT) at Tushita Kadampa Buddhist Center, 211 Legion Way SW, Olympia WA 98501. 'The Happiness Formula' — drop-in meditation class in the New Kadampa Tradition (NKT-IKBU). Tibetan Buddhist methods taught by Geshe Kelsang Gyatso's lineage. All levels welcome; no experience required. meditateinolympia.org.",
+    source_url: "https://meditateinolympia.org", event_url: "https://meditateinolympia.org/calendar/",
+  },
+
+  // Tushita Kadampa Buddhist Center (Olympia) — Wednesday drop-in class
+  {
+    org_id: "tushita_kadampa", org_name: "Tushita Kadampa Buddhist Center",
+    title: "Wednesday Meditation Class",
+    days: ["Wednesday"], time: { h: 12, m: 0 }, duration_min: 60,
+    address: "211 Legion Way SW", city: "Olympia", state: "WA", neighborhood: "Downtown Olympia",
+    lat: 47.0436, lng: -122.9012, tradition: "tibetan", location_type: "in-person",
+    notes: "Wednesday Meditation Class (noon–1pm PT) at Tushita Kadampa Buddhist Center, 211 Legion Way SW, Olympia WA 98501. 'Clear, Calm, Compassionate' — drop-in lunchtime meditation class in the New Kadampa Tradition (NKT-IKBU). All levels welcome. meditateinolympia.org.",
+    source_url: "https://meditateinolympia.org", event_url: "https://meditateinolympia.org/calendar/",
+  },
+
+  // Nalanda Institute (Olympia) — Lunchtime Mindfulness Meditation (Mon/Wed/Fri)
+  {
+    org_id: "nalanda_olympia", org_name: "Nalanda Institute for Buddhist Studies and Meditation",
+    title: "Lunchtime Mindfulness Meditation",
+    days: ["Monday", "Wednesday", "Friday"], time: { h: 12, m: 15 }, duration_min: 35,
+    address: "1620 4th Ave E", city: "Olympia", state: "WA", neighborhood: "East Olympia",
+    lat: 47.0560, lng: -122.8801, tradition: "tibetan", location_type: "in-person",
+    notes: "Lunchtime Mindfulness Meditation (12:15–12:50pm PT, Mon/Wed/Fri) at Nalanda Institute for Buddhist Studies and Meditation, 1620 4th Ave E, Olympia WA 98506. In-person guided meditation, non-sectarian. Led by Bob Harris and Kim Abbey. All welcome. nalandaolywa.org.",
+    source_url: "https://nalandaolywa.org", event_url: "https://nalandaolywa.org/practice.php",
+  },
+
+  // Nalanda Institute (Olympia) — Thursday Dharma Talk & Meditation
+  {
+    org_id: "nalanda_olympia", org_name: "Nalanda Institute for Buddhist Studies and Meditation",
+    title: "Thursday Dharma Talk & Meditation",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1620 4th Ave E", city: "Olympia", state: "WA", neighborhood: "East Olympia",
+    lat: 47.0560, lng: -122.8801, tradition: "tibetan", location_type: "hybrid",
+    notes: "Thursday Dharma Talk & Meditation (7–8:30pm PT) at Nalanda Institute for Buddhist Studies and Meditation, 1620 4th Ave E, Olympia WA 98506. In-person and Zoom (Meeting ID 459433559, password: Nalanda). Buddhist study and practice. Teacher: Lama Lungrik. All welcome. nalandaolywa.org.",
+    source_url: "https://nalandaolywa.org", event_url: "https://nalandaolywa.org/practice.php",
+  },
+
+  // Nalanda Institute (Olympia) — Saturday Chenrezig Meditation
+  {
+    org_id: "nalanda_olympia", org_name: "Nalanda Institute for Buddhist Studies and Meditation",
+    title: "Saturday Chenrezig Meditation",
+    days: ["Saturday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "1620 4th Ave E", city: "Olympia", state: "WA", neighborhood: "East Olympia",
+    lat: 47.0560, lng: -122.8801, tradition: "tibetan", location_type: "in-person",
+    notes: "Saturday Chenrezig Meditation (10–11:30am PT, most Saturdays) at Nalanda Institute for Buddhist Studies and Meditation, 1620 4th Ave E, Olympia WA 98506. Tibetan Buddhist Chenrezig (Avalokiteshvara) meditation practice led by Lama Lungrik. On Saturdays nearest the full moon: Green Tara Meditation instead. All welcome. nalandaolywa.org.",
+    source_url: "https://nalandaolywa.org", event_url: "https://nalandaolywa.org/practice.php",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

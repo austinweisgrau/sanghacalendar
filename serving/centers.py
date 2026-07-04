@@ -6622,4 +6622,115 @@ CENTERS = {
             "dharmavijaya.org."
         ),
     },
+    # ---------------------------------------------------------------------------
+    # Tacoma / South Sound WA — Phase 3 (heartbeat 84)
+    # ---------------------------------------------------------------------------
+    "trikaya_zen": {
+        "id": "trikaya_zen",
+        "name": "Trikaya Zen Center",
+        "tradition": "zen",
+        "url": "https://trikayazencenter.org",
+        "address": "2710 N. Madison St",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98406",
+        "neighborhood": "North End",
+        "lat": 47.2668,
+        "lng": -122.4695,
+        "description": (
+            "Trikaya Zen Center is a Soto Zen center in Tacoma practicing in the "
+            "White Plum Asanga lineage of Taizan Maezumi Roshi. Teacher: Sensei "
+            "Rich Taido Christofferson. Weekly public programs: Saturday 10–11:30am "
+            "(zazen + dharma talk and Q&A) and Sunday 10am (zazen + private teacher "
+            "interviews / daisan). Both koan practice and shikantaza offered. "
+            "Drop-in welcome. 2710 N. Madison St, Tacoma WA 98406. "
+            "trikayazencenter.org."
+        ),
+    },
+    "tacoma_buddhist_center": {
+        "id": "tacoma_buddhist_center",
+        "name": "Tacoma Buddhist Center",
+        "tradition": "pluralist",
+        "url": "https://tacomabuddhistcenter.org",
+        "address": "3410 N 18th St",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98416",
+        "neighborhood": "North End / UPS Campus",
+        "lat": 47.2683,
+        "lng": -122.4572,
+        "description": (
+            "Tacoma Buddhist Center is part of the Triratna Buddhist Community "
+            "(formerly Friends of the Western Buddhist Order), drawing on Theravada, "
+            "Mahayana, and Vajrayana traditions. Meets in Kliworth Chapel basement "
+            "at the University of Puget Sound campus. Weekly drop-in: Wednesday "
+            "7:30–9:15pm, led meditation + Buddhist dharma discussion. All welcome; "
+            "no experience needed; suggested donation $10. "
+            "3410 N 18th St, Tacoma WA 98416. tacomabuddhistcenter.org."
+        ),
+    },
+    "tacoma_shambhala": {
+        "id": "tacoma_shambhala",
+        "name": "Tacoma Shambhala Meditation Group",
+        "tradition": "tibetan",
+        "url": "https://seattle.shambhala.org",
+        "address": "711 St Helens Ave #103",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98402",
+        "neighborhood": "Downtown Tacoma",
+        "lat": 47.2534,
+        "lng": -122.4433,
+        "description": (
+            "Tacoma Shambhala Meditation Group is a satellite group of the Shambhala "
+            "Meditation Center of Seattle, meeting at Good Karma Center for Joy in "
+            "downtown Tacoma. Weekly program: Tuesday 6:45–8:45pm in-person meditation "
+            "in the Shambhala Buddhist tradition (Chögyam Trungpa Rinpoche lineage). "
+            "All welcome; free introductory instruction available. "
+            "711 St Helens Ave #103, Tacoma WA 98402. seattle.shambhala.org."
+        ),
+    },
+    "tushita_kadampa": {
+        "id": "tushita_kadampa",
+        "name": "Tushita Kadampa Buddhist Center",
+        "tradition": "tibetan",
+        "url": "https://meditateinolympia.org",
+        "address": "211 Legion Way SW",
+        "city": "Olympia",
+        "state": "WA",
+        "zip": "98501",
+        "neighborhood": "Downtown Olympia",
+        "lat": 47.0436,
+        "lng": -122.9012,
+        "description": (
+            "Tushita Kadampa Buddhist Center offers Tibetan Buddhist meditation "
+            "classes in the New Kadampa Tradition (NKT-IKBU) founded by Geshe "
+            "Kelsang Gyatso. Drop-in classes in downtown Olympia: Sunday 10–11:15am "
+            "and Wednesday noon–1pm. All levels welcome; no experience necessary. "
+            "Center is open one hour before and after each class. "
+            "211 Legion Way SW, Olympia WA 98501. meditateinolympia.org."
+        ),
+    },
+    "nalanda_olympia": {
+        "id": "nalanda_olympia",
+        "name": "Nalanda Institute for Buddhist Studies and Meditation",
+        "tradition": "tibetan",
+        "url": "https://nalandaolywa.org",
+        "address": "1620 4th Ave E",
+        "city": "Olympia",
+        "state": "WA",
+        "zip": "98506",
+        "neighborhood": "East Olympia",
+        "lat": 47.0560,
+        "lng": -122.8801,
+        "description": (
+            "Nalanda Institute for Buddhist Studies and Meditation offers a broad "
+            "schedule of meditation and dharma in Olympia. Public programs: Lunchtime "
+            "Mindfulness Meditation Mon/Wed/Fri 12:15–12:50pm (in-person); Thursday "
+            "Dharma Talk & Meditation 7–8:30pm (in-person + Zoom); Saturday Chenrezig "
+            "Meditation 10–11:30am (most Saturdays); 2nd and 4th Sunday 10am longer "
+            "meditation session. Tibetan-informed, non-sectarian. Teacher: Lama "
+            "Lungrik. 1620 4th Ave E, Olympia WA 98506. nalandaolywa.org."
+        ),
+    },
 }
