@@ -6733,4 +6733,91 @@ CENTERS = {
             "Lungrik. 1620 4th Ave E, Olympia WA 98506. nalandaolywa.org."
         ),
     },
+    # -------------------------------------------------------------------------
+    # Santa Barbara, CA — Phase 3 (heartbeat 85)
+    # -------------------------------------------------------------------------
+    "kmc_santa_barbara": {
+        "id": "kmc_santa_barbara",
+        "name": "Mahakankala Kadampa Buddhist Center",
+        "tradition": "tibetan",
+        "url": "https://meditationinsantabarbara.org",
+        "address": "1825 State Street Suite 202",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "zip": "93101",
+        "neighborhood": "Downtown Santa Barbara",
+        "lat": 34.4251,
+        "lng": -119.7031,
+        "description": (
+            "Mahakankala Kadampa Buddhist Center offers Tibetan Buddhist meditation "
+            "in the New Kadampa Tradition (NKT-IKBU) founded by Geshe Kelsang Gyatso. "
+            "Drop-in classes: Sunday 11am (meditation class) and Monday 6:30pm (Lamrim). "
+            "Also Foundation Program, lunchtime meditation, and regular prayer sessions. "
+            "All levels welcome; no experience needed. "
+            "1825 State Street Suite 202, Santa Barbara CA 93101. "
+            "meditationinsantabarbara.org."
+        ),
+    },
+    "open_door_sangha_sb": {
+        "id": "open_door_sangha_sb",
+        "name": "Open Door Sangha",
+        "tradition": "theravada",
+        "url": "https://www.insightmeditationsb.org",
+        "address": "227 East Arrellaga Street",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "zip": "93101",
+        "neighborhood": "Downtown Santa Barbara",
+        "lat": 34.4218,
+        "lng": -119.6912,
+        "description": (
+            "Open Door Sangha is a Theravada / Insight Meditation community in Santa "
+            "Barbara offering weekly sitting groups in the Vipassana tradition. Regular "
+            "programs at Unity Church: Monday Evening Sitting Group 7–8pm, Wednesday "
+            "Evening Sit & Discussion 7–8pm, Thursday Evening Sitting Group 7–8:30pm "
+            "(hybrid Zoom + in-person). Also Thursday Noon Meditation online. "
+            "Drop-in welcome; all levels; free. insightmeditationsb.org."
+        ),
+    },
+    "santa_barbara_zen_center": {
+        "id": "santa_barbara_zen_center",
+        "name": "Santa Barbara Zen Center",
+        "tradition": "zen",
+        "url": "https://www.santabarbarazencenter.org",
+        "address": "2050 Alameda Padre Serra Unit 100",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "zip": "93103",
+        "neighborhood": "Riviera / Mission Canyon",
+        "lat": 34.4313,
+        "lng": -119.6844,
+        "description": (
+            "Santa Barbara Zen Center is a Soto Zen community meeting twice monthly "
+            "on the 2nd and 4th Sunday at 9:45am, in-person and via Zoom. Located at "
+            "Santa Barbara Hospice on the Riviera hillside. All are welcome. "
+            "santabarbarazencenter@gmail.com. santabarbarazencenter.org."
+        ),
+    },
+    "bodhi_path_sb": {
+        "id": "bodhi_path_sb",
+        "name": "Bodhi Path Buddhist Center of Santa Barbara",
+        "tradition": "tibetan",
+        "url": "https://bodhipath.org/centers/sb/",
+        "address": "3815 State Street Suite G129",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "zip": "93101",
+        "neighborhood": "Upper State",
+        "lat": 34.4452,
+        "lng": -119.7404,
+        "description": (
+            "Bodhi Path Buddhist Center of Santa Barbara offers Karma Kagyu Tibetan "
+            "Buddhist practice and study, founded in 1997 at Shamar Rinpoche's direction. "
+            "Weekly meditation: Tuesday 6–7pm (in-person + Zoom). Weekly dharma "
+            "teaching: Thursday 7–9pm (in-person + Zoom). Monthly 'Joy of Practice' "
+            "for extended sitting and walking meditation. All welcome. "
+            "3815 State Street Suite G129, Santa Barbara CA 93101. "
+            "(805) 284-2704. bodhipath.org/centers/sb/."
+        ),
+    },
 }

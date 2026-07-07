@@ -5340,6 +5340,89 @@ const SITS = [
     notes: "Saturday Chenrezig Meditation (10–11:30am PT, most Saturdays) at Nalanda Institute for Buddhist Studies and Meditation, 1620 4th Ave E, Olympia WA 98506. Tibetan Buddhist Chenrezig (Avalokiteshvara) meditation practice led by Lama Lungrik. On Saturdays nearest the full moon: Green Tara Meditation instead. All welcome. nalandaolywa.org.",
     source_url: "https://nalandaolywa.org", event_url: "https://nalandaolywa.org/practice.php",
   },
+
+  // ============================================================
+  // Santa Barbara CA — Phase 3 (heartbeat 85)
+  // 4 centers: KMC (live iCal via abraxis_ingest), Open Door Sangha,
+  // Santa Barbara Zen Center, Bodhi Path Santa Barbara.
+  // ============================================================
+
+  // Open Door Sangha — Monday Evening Sitting Group
+  {
+    org_id: "open_door_sangha_sb", org_name: "Open Door Sangha",
+    title: "Monday Evening Sitting Group",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "227 East Arrellaga Street", city: "Santa Barbara", state: "CA", neighborhood: "Downtown Santa Barbara",
+    lat: 34.4218, lng: -119.6912, tradition: "theravada", location_type: "in-person",
+    notes: "Monday Evening Sitting Group (7–8pm PT) at Open Door Sangha, Unity Church, 227 East Arrellaga Street, Santa Barbara CA 93101. Theravada / Vipassana / Insight Meditation. Silent sitting followed by brief discussion. All levels welcome; drop-in; free. insightmeditationsb.org.",
+    source_url: "https://www.insightmeditationsb.org", event_url: "https://www.insightmeditationsb.org/programs",
+  },
+
+  // Open Door Sangha — Wednesday Evening Sit & Discussion
+  {
+    org_id: "open_door_sangha_sb", org_name: "Open Door Sangha",
+    title: "Wednesday Evening Sit & Discussion",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "227 East Arrellaga Street", city: "Santa Barbara", state: "CA", neighborhood: "Downtown Santa Barbara",
+    lat: 34.4218, lng: -119.6912, tradition: "theravada", location_type: "in-person",
+    notes: "Wednesday Evening Sit & Discussion (7–8pm PT) at Open Door Sangha, Unity Church, 227 East Arrellaga Street, Santa Barbara CA 93101. Theravada / Vipassana / Insight Meditation. Sitting followed by dharma discussion. All levels welcome; drop-in; free. insightmeditationsb.org.",
+    source_url: "https://www.insightmeditationsb.org", event_url: "https://www.insightmeditationsb.org/programs",
+  },
+
+  // Open Door Sangha — Thursday Evening Sitting Group (hybrid)
+  {
+    org_id: "open_door_sangha_sb", org_name: "Open Door Sangha",
+    title: "Thursday Evening Sitting Group",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "227 East Arrellaga Street", city: "Santa Barbara", state: "CA", neighborhood: "Downtown Santa Barbara",
+    lat: 34.4218, lng: -119.6912, tradition: "theravada", location_type: "hybrid",
+    notes: "Thursday Evening Sitting Group (7–8:30pm PT) at Open Door Sangha, Unity Church, 227 East Arrellaga Street, Santa Barbara CA 93101. Theravada / Vipassana / Insight Meditation. Hybrid: in-person and Zoom. Silent sitting followed by discussion. All levels welcome; drop-in; free. insightmeditationsb.org.",
+    source_url: "https://www.insightmeditationsb.org", event_url: "https://www.insightmeditationsb.org/programs",
+  },
+
+  // Santa Barbara Zen Center — 2nd Sunday morning sitting (in-person + Zoom)
+  {
+    org_id: "santa_barbara_zen_center", org_name: "Santa Barbara Zen Center",
+    title: "Sunday Morning Zen Sitting",
+    days: ["Sunday"], week_of_month: 2, time: { h: 9, m: 45 }, duration_min: 90,
+    address: "2050 Alameda Padre Serra Unit 100", city: "Santa Barbara", state: "CA", neighborhood: "Riviera / Mission Canyon",
+    lat: 34.4313, lng: -119.6844, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Morning Zen Sitting (9:45am PT, 2nd Sunday) at Santa Barbara Zen Center, 2050 Alameda Padre Serra Unit 100, Santa Barbara CA 93103. Soto Zen. In-person and Zoom. All are welcome. santabarbarazencenter.org.",
+    source_url: "https://www.santabarbarazencenter.org", event_url: "https://www.santabarbarazencenter.org/events",
+  },
+
+  // Santa Barbara Zen Center — 4th Sunday morning sitting (in-person + Zoom)
+  {
+    org_id: "santa_barbara_zen_center", org_name: "Santa Barbara Zen Center",
+    title: "Sunday Morning Zen Sitting",
+    days: ["Sunday"], week_of_month: 4, time: { h: 9, m: 45 }, duration_min: 90,
+    address: "2050 Alameda Padre Serra Unit 100", city: "Santa Barbara", state: "CA", neighborhood: "Riviera / Mission Canyon",
+    lat: 34.4313, lng: -119.6844, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Morning Zen Sitting (9:45am PT, 4th Sunday) at Santa Barbara Zen Center, 2050 Alameda Padre Serra Unit 100, Santa Barbara CA 93103. Soto Zen. In-person and Zoom. All are welcome. santabarbarazencenter.org.",
+    source_url: "https://www.santabarbarazencenter.org", event_url: "https://www.santabarbarazencenter.org/events",
+  },
+
+  // Bodhi Path Santa Barbara — Tuesday Evening Meditation
+  {
+    org_id: "bodhi_path_sb", org_name: "Bodhi Path Buddhist Center of Santa Barbara",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "3815 State Street Suite G129", city: "Santa Barbara", state: "CA", neighborhood: "Upper State",
+    lat: 34.4452, lng: -119.7404, tradition: "tibetan", location_type: "hybrid",
+    notes: "Tuesday Evening Meditation (6–7pm PT) at Bodhi Path Buddhist Center of Santa Barbara, 3815 State Street Suite G129, Santa Barbara CA 93101. Karma Kagyu Tibetan Buddhist meditation. In-person and Zoom. All are welcome; no experience needed. bodhipath.org/centers/sb/.",
+    source_url: "https://bodhipath.org/centers/sb/", event_url: "https://bodhipath.org/centers/sb/",
+  },
+
+  // Bodhi Path Santa Barbara — Thursday Evening Dharma Teaching
+  {
+    org_id: "bodhi_path_sb", org_name: "Bodhi Path Buddhist Center of Santa Barbara",
+    title: "Thursday Evening Dharma Teaching",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "3815 State Street Suite G129", city: "Santa Barbara", state: "CA", neighborhood: "Upper State",
+    lat: 34.4452, lng: -119.7404, tradition: "tibetan", location_type: "hybrid",
+    notes: "Thursday Evening Dharma Teaching (7–9pm PT) at Bodhi Path Buddhist Center of Santa Barbara, 3815 State Street Suite G129, Santa Barbara CA 93101. Karma Kagyu Tibetan Buddhist teachings including study and meditation. In-person and Zoom. All are welcome. bodhipath.org/centers/sb/.",
+    source_url: "https://bodhipath.org/centers/sb/", event_url: "https://bodhipath.org/centers/sb/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
