@@ -5423,6 +5423,67 @@ const SITS = [
     notes: "Thursday Evening Dharma Teaching (7–9pm PT) at Bodhi Path Buddhist Center of Santa Barbara, 3815 State Street Suite G129, Santa Barbara CA 93101. Karma Kagyu Tibetan Buddhist teachings including study and meditation. In-person and Zoom. All are welcome. bodhipath.org/centers/sb/.",
     source_url: "https://bodhipath.org/centers/sb/", event_url: "https://bodhipath.org/centers/sb/",
   },
+
+  // ── Buffalo, NY — Phase 3 (heartbeat 86) ────────────────────────────────
+
+  // ── Buffalo Zen Dharma Community — 724 Delaware Ave, Buffalo NY 14209
+  // Mountains and Rivers Order (Shugen Arnold Roshi / Zen Mountain Monastery lineage).
+  // Westminster Presbyterian Church. Drop-in Tuesday evenings; first Tuesday = newcomer intro.
+  {
+    org_id: "bzdc", org_name: "Buffalo Zen Dharma Community",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "724 Delaware Avenue", city: "Buffalo", state: "NY", neighborhood: "Allentown",
+    lat: 42.9130, lng: -78.8828, tradition: "zen", location_type: "in-person",
+    notes: "Tuesday Evening Zazen at Buffalo Zen Dharma Community (BZDC), Westminster Presbyterian Church, 724 Delaware Avenue, Buffalo NY 14209. Mountains and Rivers Order, affiliated with Zen Mountain Monastery. Zazen, dharma study, and community. First Tuesday is newcomer orientation (arrive early). Drop-in welcome; free. buffalozen.org.",
+    source_url: "https://www.buffalozen.org", event_url: "https://www.buffalozen.org/upcoming-events.html",
+  },
+
+  // ── Shambhala Meditation Group of Buffalo — 408 Franklin St, Buffalo NY 14202
+  // Tibetan Vajrayana (Shambhala / Chögyam Trungpa lineage). C.G. Jung Center, Allentown.
+  // Thu 7–9pm weekly; 2nd Sunday monthly Nyinthun.
+  {
+    org_id: "shambhala_buffalo", org_name: "Shambhala Meditation Group of Buffalo",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "408 Franklin Street", city: "Buffalo", state: "NY", neighborhood: "Allentown",
+    lat: 42.8962, lng: -78.8777, tradition: "tibetan", location_type: "in-person",
+    notes: "Thursday Evening Meditation (7–9pm ET) at Shambhala Meditation Group of Buffalo, C.G. Jung Center, 408 Franklin Street, Buffalo NY 14202. One hour sitting + walking meditation, short reading, tea. Free instruction available at 6:45pm for newcomers. Open to all; donations welcome. buffaloshambhala@gmail.com.",
+    source_url: "https://buffalo.shambhala.org", event_url: "https://buffalo.shambhala.org",
+  },
+  {
+    org_id: "shambhala_buffalo", org_name: "Shambhala Meditation Group of Buffalo",
+    title: "Nyinthun — Extended Sitting",
+    days: ["Sunday"], week_of_month: 2, time: { h: 10, m: 0 }, duration_min: 180,
+    address: "408 Franklin Street", city: "Buffalo", state: "NY", neighborhood: "Allentown",
+    lat: 42.8962, lng: -78.8777, tradition: "tibetan", location_type: "in-person",
+    notes: "2nd Sunday Nyinthun (extended sitting, 2–3 hours) at Shambhala Meditation Group of Buffalo, C.G. Jung Center, 408 Franklin Street, Buffalo NY 14202. Longer group sitting in the Shambhala tradition. Open to all; donations welcome. buffaloshambhala@gmail.com.",
+    source_url: "https://buffalo.shambhala.org", event_url: "https://buffalo.shambhala.org",
+  },
+
+  // ── Wat Prodketusa — 2660 Bedell Rd, Grand Island NY 14072
+  // Thai Theravada. Public Wednesday evening meditation (6–7:30pm ET).
+  {
+    org_id: "wat_prodketusa", org_name: "Wat Prodketusa — Niagara Falls Buddhist Meditation Center of NY",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "2660 Bedell Road", city: "Grand Island", state: "NY", neighborhood: "Grand Island (Buffalo metro)",
+    lat: 43.0187, lng: -78.9627, tradition: "theravada", location_type: "in-person",
+    notes: "Wednesday Evening Meditation (6–7:30pm ET) at Wat Prodketusa (Niagara Falls Buddhist Meditation Center of NY), 2660 Bedell Road, Grand Island NY 14072. Thai Theravada. Public sitting meditation session open to all. (716) 775-5446. watprodketusa.org.",
+    source_url: "https://watprodketusa.org", event_url: "https://watprodketusa.org",
+  },
+
+  // ── Peaceful Heart Sangha — 695 Elmwood Ave, Buffalo NY 14222 (Zoom)
+  // Plum Village / Thich Nhat Hanh lineage. Weekly Saturday 11am Zoom sit.
+  {
+    org_id: "peaceful_heart_buffalo", org_name: "Peaceful Heart Sangha",
+    title: "Saturday Morning Mindfulness Sitting",
+    days: ["Saturday"], time: { h: 11, m: 0 }, duration_min: 60,
+    address: "695 Elmwood Avenue", city: "Buffalo", state: "NY", neighborhood: "Elmwood Village",
+    lat: 42.9202, lng: -78.8792, tradition: "zen", location_type: "online",
+    notes: "Saturday Morning Mindfulness Sitting (11am–12pm ET) at Peaceful Heart Sangha, Buffalo. Plum Village / Thich Nhat Hanh lineage (Order of Interbeing). Guided sitting and walking meditation, dharma sharing via Zoom. In-person at UU Church of Buffalo (695 Elmwood Ave) when scheduled. All welcome; free. buffalomindfulness.org.",
+    source_url: "https://buffalomindfulness.org", event_url: "https://buffalomindfulness.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

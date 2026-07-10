@@ -6820,4 +6820,88 @@ CENTERS = {
             "(805) 284-2704. bodhipath.org/centers/sb/."
         ),
     },
+    # ── Buffalo, NY ──────────────────────────────────────────────────────────
+    "bzdc": {
+        "id": "bzdc",
+        "name": "Buffalo Zen Dharma Community",
+        "tradition": "zen",
+        "url": "https://www.buffalozen.org",
+        "address": "724 Delaware Avenue",
+        "city": "Buffalo",
+        "state": "NY",
+        "zip": "14209",
+        "neighborhood": "Allentown",
+        "lat": 42.9130,
+        "lng": -78.8828,
+        "description": (
+            "Buffalo Zen Dharma Community (BZDC) is a Mountains and Rivers Order sangha "
+            "affiliated with Zen Mountain Monastery (Mt. Tremper, NY) and teacher Shugen "
+            "Arnold Roshi. Offers weekly Tuesday evening zazen, dharma study, and "
+            "community practice at Westminster Presbyterian Church, 724 Delaware Avenue. "
+            "The first Tuesday of each month is a newcomer orientation. "
+            "Drop-in welcome; free. buffalozen.org."
+        ),
+    },
+    "shambhala_buffalo": {
+        "id": "shambhala_buffalo",
+        "name": "Shambhala Meditation Group of Buffalo",
+        "tradition": "tibetan",
+        "url": "https://buffalo.shambhala.org",
+        "address": "408 Franklin Street",
+        "city": "Buffalo",
+        "state": "NY",
+        "zip": "14202",
+        "neighborhood": "Allentown",
+        "lat": 42.8962,
+        "lng": -78.8777,
+        "description": (
+            "Shambhala Meditation Group of Buffalo is part of the Shambhala community "
+            "founded by Chögyam Trungpa Rinpoche. Meets at the C.G. Jung Center "
+            "(408 Franklin Street, Allentown), Thursdays 7–9pm: one hour of sitting and "
+            "walking meditation, short reading, and tea. Free instruction at 6:45pm. "
+            "Second Sunday monthly is an extended Nyinthun. Open to all; free. "
+            "buffaloshambhala@gmail.com / (716) 445-4446."
+        ),
+    },
+    "wat_prodketusa": {
+        "id": "wat_prodketusa",
+        "name": "Wat Prodketusa — Niagara Falls Buddhist Meditation Center of NY",
+        "tradition": "theravada",
+        "url": "https://watprodketusa.org",
+        "address": "2660 Bedell Road",
+        "city": "Grand Island",
+        "state": "NY",
+        "zip": "14072",
+        "neighborhood": "Grand Island (Buffalo metro)",
+        "lat": 43.0187,
+        "lng": -78.9627,
+        "description": (
+            "Wat Prodketusa (also known as Niagara Falls Buddhist Meditation Center of NY) "
+            "is a Thai Theravada temple on Grand Island, between Buffalo and Niagara Falls. "
+            "Offers public Wednesday evening meditation (6–7:30pm), daily chanting (6am "
+            "and 6pm), and Sunday services open to all. 2660 Bedell Road, Grand Island, "
+            "NY 14072. (716) 775-5446. watprodketusa.org."
+        ),
+    },
+    "peaceful_heart_buffalo": {
+        "id": "peaceful_heart_buffalo",
+        "name": "Peaceful Heart Sangha",
+        "tradition": "zen",
+        "url": "https://buffalomindfulness.org",
+        "address": "695 Elmwood Avenue",
+        "city": "Buffalo",
+        "state": "NY",
+        "zip": "14222",
+        "neighborhood": "Elmwood Village",
+        "lat": 42.9202,
+        "lng": -78.8792,
+        "description": (
+            "Peaceful Heart Sangha is a Buffalo-area community practicing in the "
+            "tradition of Thich Nhat Hanh and the Plum Village lineage (Order of "
+            "Interbeing). Weekly Saturday morning Zoom sit (11am–12pm ET) with "
+            "guided meditation and dharma sharing. In-person at the Unitarian "
+            "Universalist Church of Buffalo, 695 Elmwood Avenue. All welcome; free. "
+            "buffalomindfulness.org."
+        ),
+    },
 }
