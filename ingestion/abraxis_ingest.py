@@ -104,6 +104,7 @@ from ingestion.sources import milwaukee as milwaukee_sources
 from ingestion.sources import tacoma as tacoma_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import santa_barbara as santa_barbara_sources
 from ingestion.sources import buffalo as buffalo_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import albany as albany_sources
 
 log = logging.getLogger(__name__)
 
@@ -1206,6 +1207,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Milwaukee iCal {org_id} failed: {e}")
+
+    # Albany NY Capital Region Phase 3 — Kingfisher Sangha iCal feed
+    log.info("--- Albany NY Phase 3: Kingfisher Sangha iCal feed ---")
+    for org_id, feed_cfg in albany_sources.ICAL_FEEDS.items():
+        center = albany_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Albany iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Albany iCal {org_id} failed: {e}")
 
     # Santa Barbara CA Phase 3 — KMC Santa Barbara iCal feed
     log.info("--- Santa Barbara CA Phase 3: KMC Santa Barbara iCal feed ---")

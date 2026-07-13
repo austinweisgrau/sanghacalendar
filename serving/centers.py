@@ -6904,4 +6904,89 @@ CENTERS = {
             "buffalomindfulness.org."
         ),
     },
+    # ── Albany, NY Capital Region ──────────────────────────────────────────────
+    "kingfisher_sangha_schenectady": {
+        "id": "kingfisher_sangha_schenectady",
+        "name": "Kingfisher Sangha",
+        "tradition": "zen",
+        "url": "https://kingfishersangha.com",
+        "address": "1221 Wendell Ave",
+        "city": "Schenectady",
+        "state": "NY",
+        "zip": "12308",
+        "neighborhood": "Woodlawn",
+        "lat": 42.8033,
+        "lng": -73.9507,
+        "description": (
+            "Kingfisher Sangha is a Plum Village / Thich Nhat Hanh community in the "
+            "Capital Region of New York State, practicing mindfulness in the Order of "
+            "Interbeing tradition. The primary in-person sit is Kingfisher South, "
+            "meeting every Sunday 4:30–6pm at the Unitarian Universalist Society of "
+            "Schenectady (1221 Wendell Ave), offered hybrid in-person and on Zoom. "
+            "Additional online sub-groups meet throughout the week. All welcome; free. "
+            "kingfishersangha.com."
+        ),
+    },
+    "shambhala_albany": {
+        "id": "shambhala_albany",
+        "name": "Shambhala Meditation Center of Albany",
+        "tradition": "tibetan",
+        "url": "https://albany.shambhala.org",
+        "address": "747 Madison Avenue Suite 202",
+        "city": "Albany",
+        "state": "NY",
+        "zip": "12208",
+        "neighborhood": "Pine Hills",
+        "lat": 42.6539,
+        "lng": -73.7884,
+        "description": (
+            "Shambhala Meditation Center of Albany offers meditation in the Shambhala "
+            "tradition founded by Chögyam Trungpa Rinpoche. Weekly drop-in sits: Monday "
+            "5:30pm and Wednesday 6pm. Monthly extended sitting (Nyinthun) on the last "
+            "Sunday of the month at 11am. Also offers beginner programs and Heart of "
+            "Recovery. Located in the Pine Hills neighborhood, Albany NY 12208. "
+            "albany.shambhala.org."
+        ),
+    },
+    "shambhala_troy": {
+        "id": "shambhala_troy",
+        "name": "Shambhala Meditation Group of Troy",
+        "tradition": "tibetan",
+        "url": "https://troy.shambhala.org",
+        "address": "Congress Street",
+        "city": "Troy",
+        "state": "NY",
+        "zip": "12180",
+        "neighborhood": "Downtown Troy",
+        "lat": 42.7296,
+        "lng": -73.6930,
+        "description": (
+            "Shambhala Meditation Group of Troy is a sitting group in Troy, NY, "
+            "practicing in the Shambhala tradition of Chögyam Trungpa Rinpoche. "
+            "Meets weekly on Thursdays at 6:30pm for sitting meditation, a teaching, "
+            "and discussion; instruction available at 6pm for newcomers. Hybrid "
+            "in-person and Zoom. Contact: troy@shambhala.org. troy.shambhala.org."
+        ),
+    },
+    "albany_ktc": {
+        "id": "albany_ktc",
+        "name": "Albany KTC — Karma Thegsum Choling",
+        "tradition": "tibetan",
+        "url": "https://www.albanyktc.org",
+        "address": "199 Washington Avenue",
+        "city": "Rensselaer",
+        "state": "NY",
+        "zip": "12144",
+        "neighborhood": "Rensselaer (Albany metro)",
+        "lat": 42.6523,
+        "lng": -73.7371,
+        "description": (
+            "Albany KTC (Karma Thegsum Choling) is a Kagyu Tibetan Buddhist center "
+            "affiliated with Karma Triyana Dharmachakra (KTD), the North American seat "
+            "of His Holiness the 17th Karmapa Ogyen Trinley Dorje. Offers Sunday "
+            "morning public meditation (9:30am) and ongoing programs at 199 Washington "
+            "Avenue, Rensselaer, NY 12144 (across the Hudson from Albany). "
+            "Contact: ktc.director@albanyktc.org / (518) 434-7420. albanyktc.org."
+        ),
+    },
 }

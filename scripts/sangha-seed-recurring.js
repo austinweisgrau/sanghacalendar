@@ -5484,6 +5484,69 @@ const SITS = [
     notes: "Saturday Morning Mindfulness Sitting (11am–12pm ET) at Peaceful Heart Sangha, Buffalo. Plum Village / Thich Nhat Hanh lineage (Order of Interbeing). Guided sitting and walking meditation, dharma sharing via Zoom. In-person at UU Church of Buffalo (695 Elmwood Ave) when scheduled. All welcome; free. buffalomindfulness.org.",
     source_url: "https://buffalomindfulness.org", event_url: "https://buffalomindfulness.org",
   },
+
+  // ── Albany, NY Capital Region — Phase 3 (heartbeat 87) ──────────────────
+  // Shambhala Cologne iCal server (shambhala-koeln.de) timing out; seeding recurring.
+
+  // ── Shambhala Meditation Center of Albany — 747 Madison Ave Suite 202, Albany NY 12208
+  // Tibetan Vajrayana (Shambhala / Chögyam Trungpa lineage). Pine Hills neighborhood.
+  // Monday 5:30–6:30pm open sitting. Free, no experience needed.
+  {
+    org_id: "shambhala_albany", org_name: "Shambhala Meditation Center of Albany",
+    title: "Monday Open Sitting Meditation",
+    days: ["Monday"], time: { h: 17, m: 30 }, duration_min: 60,
+    address: "747 Madison Avenue Suite 202", city: "Albany", state: "NY", neighborhood: "Pine Hills",
+    lat: 42.6539, lng: -73.7884, tradition: "tibetan", location_type: "in-person",
+    notes: "Monday Open Sitting Meditation (5:30–6:30pm ET) at Shambhala Meditation Center of Albany, 747 Madison Ave Suite 202, Pine Hills, Albany NY 12208. Drop-in meditation in the Shambhala tradition; instruction available. All welcome; free. albany.shambhala.org.",
+    source_url: "https://albany.shambhala.org", event_url: "https://albany.shambhala.org/ongoing-offerings/",
+  },
+  // Wednesday 6:00–7:00pm open sitting
+  {
+    org_id: "shambhala_albany", org_name: "Shambhala Meditation Center of Albany",
+    title: "Wednesday Open Sitting Meditation",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "747 Madison Avenue Suite 202", city: "Albany", state: "NY", neighborhood: "Pine Hills",
+    lat: 42.6539, lng: -73.7884, tradition: "tibetan", location_type: "in-person",
+    notes: "Wednesday Open Sitting Meditation (6–7pm ET) at Shambhala Meditation Center of Albany, 747 Madison Ave Suite 202, Pine Hills, Albany NY 12208. Drop-in sitting meditation; free instruction available. All welcome. albany.shambhala.org.",
+    source_url: "https://albany.shambhala.org", event_url: "https://albany.shambhala.org/ongoing-offerings/",
+  },
+  // Last Sunday of month 11am–1pm Nyinthun (extended sitting)
+  {
+    org_id: "shambhala_albany", org_name: "Shambhala Meditation Center of Albany",
+    title: "Monthly Nyinthun (Extended Sitting)",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 120,
+    dates: ["2026-07-26", "2026-08-30", "2026-09-27", "2026-10-25"],
+    address: "747 Madison Avenue Suite 202", city: "Albany", state: "NY", neighborhood: "Pine Hills",
+    lat: 42.6539, lng: -73.7884, tradition: "tibetan", location_type: "in-person",
+    notes: "Monthly Nyinthun (last Sunday of month, 11am–1pm ET) at Shambhala Meditation Center of Albany, 747 Madison Ave Suite 202, Albany NY 12208. Extended group sitting in the Shambhala tradition. All welcome; donations appreciated. albany.shambhala.org.",
+    source_url: "https://albany.shambhala.org", event_url: "https://albany.shambhala.org/ongoing-offerings/",
+  },
+
+  // ── Shambhala Meditation Group of Troy — Congress Street, Troy NY 12180
+  // Tibetan Vajrayana (Shambhala / Chögyam Trungpa lineage). Downtown Troy.
+  // Thursday 6:30–7:30pm weekly sit (hybrid Zoom + in-person). Instruction at 6pm.
+  {
+    org_id: "shambhala_troy", org_name: "Shambhala Meditation Group of Troy",
+    title: "Thursday Evening Sitting Meditation",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "Congress Street", city: "Troy", state: "NY", neighborhood: "Downtown Troy",
+    lat: 42.7296, lng: -73.6930, tradition: "tibetan", location_type: "hybrid",
+    notes: "Thursday Evening Sitting Meditation (6:30–7:30pm ET) at Shambhala Meditation Group of Troy, Congress Street, Troy NY 12180. Format: sitting meditation, brief teaching, and discussion. Free instruction available at 6pm for newcomers. Hybrid in-person + Zoom. Contact: troy@shambhala.org. troy.shambhala.org.",
+    source_url: "https://troy.shambhala.org", event_url: "https://troy.shambhala.org",
+  },
+
+  // ── Albany KTC — 199 Washington Ave, Rensselaer NY 12144
+  // Kagyu Tibetan Buddhist (KTD affiliate). Across the Hudson from Albany.
+  // Sunday 9:30am public meditation.
+  {
+    org_id: "albany_ktc", org_name: "Albany KTC — Karma Thegsum Choling",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 90,
+    address: "199 Washington Avenue", city: "Rensselaer", state: "NY", neighborhood: "Rensselaer (Albany metro)",
+    lat: 42.6523, lng: -73.7371, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Morning Meditation (9:30am ET) at Albany KTC (Karma Thegsum Choling), 199 Washington Ave, Rensselaer NY 12144. Kagyu Tibetan Buddhist center affiliated with Karma Triyana Dharmachakra (KTD), North American seat of His Holiness the 17th Karmapa. Meditation instruction available. Contact: ktc.director@albanyktc.org / (518) 434-7420. albanyktc.org.",
+    source_url: "https://www.albanyktc.org", event_url: "https://www.albanyktc.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
