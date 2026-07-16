@@ -6989,4 +6989,73 @@ CENTERS = {
             "Contact: ktc.director@albanyktc.org / (518) 434-7420. albanyktc.org."
         ),
     },
+    # ── Virginia Beach / Hampton Roads, VA — Phase 3 (heartbeat 88) ─────────
+    "shakyamuni_vb": {
+        "id": "shakyamuni_vb",
+        "name": "Shakyamuni Buddhist Meditation Monastery",
+        "tradition": "theravada",
+        "url": "https://www.vbmeditation.org",
+        "address": "3285 Dam Neck Road",
+        "city": "Virginia Beach",
+        "state": "VA",
+        "zip": "23453",
+        "neighborhood": "Dam Neck",
+        "lat": 36.7619,
+        "lng": -76.0590,
+        "description": (
+            "Shakyamuni Buddhist Meditation Monastery is a Theravada Buddhist center "
+            "with a resident monk at 3285 Dam Neck Road, Virginia Beach VA 23453, "
+            "founded in 2019. Primary English-language public sit: Wednesday evenings "
+            "7–8:30pm (chanting, breathing meditation, insight meditation, music "
+            "meditation, and a dharma talk; open to all, free). Saturday 6–8:30pm "
+            "program is in Sinhalese/Pali for the Sri Lankan community. "
+            "Contact: info@vbmeditation.org / (301) 691-8899. vbmeditation.org."
+        ),
+    },
+    "mindfulness_community_hr": {
+        "id": "mindfulness_community_hr",
+        "name": "Mindfulness Community of Hampton Roads",
+        "tradition": "zen",
+        "url": "https://mindfulnesscommunityofhamptonroads.com",
+        "address": "612 Westover Avenue",
+        "city": "Norfolk",
+        "state": "VA",
+        "zip": "23507",
+        "neighborhood": "Ghent",
+        "lat": 36.8591,
+        "lng": -76.3000,
+        "description": (
+            "Mindfulness Community of Hampton Roads is a Plum Village / Thich Nhat "
+            "Hanh sangha in the Order of Interbeing tradition, founded in 1992. "
+            "Meets the 1st and 3rd Sunday of each month, 10:30am–12:30pm, at a "
+            "private home in Norfolk's Ghent neighborhood (612 Westover Avenue; "
+            "enter at rear door). Program: sitting meditation, walking meditation, "
+            "a dharma talk video, dharma sharing, and sutra reading. All welcome; "
+            "free. Contact: Allen Sandler, asandler@odu.edu / (757) 333-1501. "
+            "mindfulnesscommunityofhamptonroads.com."
+        ),
+    },
+    "dong_hung_vb": {
+        "id": "dong_hung_vb",
+        "name": "Dong Hung Temple — Buddhist Education Center of America",
+        "tradition": "mahayana",
+        "url": "https://www.buddhistedu.org",
+        "address": "423 Davis Street",
+        "city": "Virginia Beach",
+        "state": "VA",
+        "zip": "23462",
+        "neighborhood": "Kemps River",
+        "lat": 36.8184,
+        "lng": -76.1108,
+        "description": (
+            "Dong Hung Temple (Đông Hưng Temple) / Buddhist Education Center of "
+            "America is a Vietnamese Mahayana temple in Virginia Beach founded in "
+            "1998 by Venerable Thich Thong Kinh. Offers English-language sangha "
+            "programs: Sunday morning meditation services 7:45–8:45am in the Buddha "
+            "Hall (chanting, meditation, dharma sharing) and a 2nd Saturday Meditation "
+            "Hour (10–11am). Vietnamese-language community services also held Sunday "
+            "mornings. Contact English sangha: dhtenglishsangha@gmail.com / "
+            "(757) 689-3408. buddhistedu.org."
+        ),
+    },
 }

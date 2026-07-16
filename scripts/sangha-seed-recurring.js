@@ -5547,6 +5547,62 @@ const SITS = [
     notes: "Sunday Morning Meditation (9:30am ET) at Albany KTC (Karma Thegsum Choling), 199 Washington Ave, Rensselaer NY 12144. Kagyu Tibetan Buddhist center affiliated with Karma Triyana Dharmachakra (KTD), North American seat of His Holiness the 17th Karmapa. Meditation instruction available. Contact: ktc.director@albanyktc.org / (518) 434-7420. albanyktc.org.",
     source_url: "https://www.albanyktc.org", event_url: "https://www.albanyktc.org",
   },
+
+  // ── Virginia Beach / Hampton Roads, VA — Phase 3 (heartbeat 88) ─────────
+
+  // ── Shakyamuni Buddhist Meditation Monastery — 3285 Dam Neck Rd, Virginia Beach VA 23453
+  // Theravada (Sri Lankan lineage). Wednesday 7–8:30pm English public sit.
+  {
+    org_id: "shakyamuni_vb", org_name: "Shakyamuni Buddhist Meditation Monastery",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3285 Dam Neck Road", city: "Virginia Beach", state: "VA", neighborhood: "Dam Neck",
+    lat: 36.7619, lng: -76.0590, tradition: "theravada", location_type: "in-person",
+    notes: "Wednesday Evening Meditation (7–8:30pm ET) at Shakyamuni Buddhist Meditation Monastery, 3285 Dam Neck Road, Virginia Beach VA 23453. English-language program: chanting, breathing meditation, insight meditation, music meditation, and dharma talk. Open to all; free. info@vbmeditation.org / (301) 691-8899. vbmeditation.org.",
+    source_url: "https://www.vbmeditation.org", event_url: "https://www.vbmeditation.org/events.html",
+  },
+
+  // ── Mindfulness Community of Hampton Roads — 612 Westover Ave, Norfolk VA 23507
+  // Plum Village / Thich Nhat Hanh lineage. 1st & 3rd Sunday 10:30am–12:30pm.
+  {
+    org_id: "mindfulness_community_hr", org_name: "Mindfulness Community of Hampton Roads",
+    title: "Sunday Mindfulness Sitting",
+    days: ["Sunday"], week_of_month: 1, time: { h: 10, m: 30 }, duration_min: 120,
+    address: "612 Westover Avenue", city: "Norfolk", state: "VA", neighborhood: "Ghent",
+    lat: 36.8591, lng: -76.3000, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Mindfulness Sitting (10:30am–12:30pm ET) at Mindfulness Community of Hampton Roads, 612 Westover Avenue, Norfolk VA 23507 (enter rear door). 1st Sunday of each month. Plum Village / Thich Nhat Hanh lineage. Sitting meditation, walking meditation, dharma talk video, dharma sharing, and sutra reading. All welcome; free. Contact: Allen Sandler, asandler@odu.edu / (757) 333-1501. mindfulnesscommunityofhamptonroads.com.",
+    source_url: "https://mindfulnesscommunityofhamptonroads.com", event_url: "https://mindfulnesscommunityofhamptonroads.com/join-us",
+  },
+  {
+    org_id: "mindfulness_community_hr", org_name: "Mindfulness Community of Hampton Roads",
+    title: "Sunday Mindfulness Sitting",
+    days: ["Sunday"], week_of_month: 3, time: { h: 10, m: 30 }, duration_min: 120,
+    address: "612 Westover Avenue", city: "Norfolk", state: "VA", neighborhood: "Ghent",
+    lat: 36.8591, lng: -76.3000, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Mindfulness Sitting (10:30am–12:30pm ET) at Mindfulness Community of Hampton Roads, 612 Westover Avenue, Norfolk VA 23507 (enter rear door). 3rd Sunday of each month. Plum Village / Thich Nhat Hanh lineage. Sitting meditation, walking meditation, dharma talk video, dharma sharing, and sutra reading. All welcome; free. Contact: Allen Sandler, asandler@odu.edu / (757) 333-1501. mindfulnesscommunityofhamptonroads.com.",
+    source_url: "https://mindfulnesscommunityofhamptonroads.com", event_url: "https://mindfulnesscommunityofhamptonroads.com/join-us",
+  },
+
+  // ── Dong Hung Temple / Buddhist Education Center — 423 Davis St, Virginia Beach VA 23462
+  // Vietnamese Mahayana. Sunday 7:45am English service + 2nd Saturday 10am Meditation Hour.
+  {
+    org_id: "dong_hung_vb", org_name: "Dong Hung Temple — Buddhist Education Center of America",
+    title: "Sunday Morning Meditation Service",
+    days: ["Sunday"], time: { h: 7, m: 45 }, duration_min: 60,
+    address: "423 Davis Street", city: "Virginia Beach", state: "VA", neighborhood: "Kemps River",
+    lat: 36.8184, lng: -76.1108, tradition: "mahayana", location_type: "in-person",
+    notes: "Sunday Morning Meditation Service (7:45–8:45am ET) at Dong Hung Temple (Đông Hưng Temple) / Buddhist Education Center of America, 423 Davis Street, Virginia Beach VA 23462. English-language program in the Buddha Hall: chanting, meditation, teaching, and dharma sharing. Founded 1998 by Ven. Thich Thong Kinh. All welcome; free. Contact English sangha: dhtenglishsangha@gmail.com / (757) 689-3408. buddhistedu.org.",
+    source_url: "https://www.buddhistedu.org", event_url: "https://www.buddhistedu.org/monthly-schedule/",
+  },
+  {
+    org_id: "dong_hung_vb", org_name: "Dong Hung Temple — Buddhist Education Center of America",
+    title: "Meditation Hour",
+    days: ["Saturday"], week_of_month: 2, time: { h: 10, m: 0 }, duration_min: 60,
+    address: "423 Davis Street", city: "Virginia Beach", state: "VA", neighborhood: "Kemps River",
+    lat: 36.8184, lng: -76.1108, tradition: "mahayana", location_type: "in-person",
+    notes: "Meditation Hour (10–11am ET) at Dong Hung Temple / Buddhist Education Center of America, 423 Davis Street, Virginia Beach VA 23462. 2nd Saturday of each month. Guided meditation session open to all. Contact English sangha: dhtenglishsangha@gmail.com / (757) 689-3408. buddhistedu.org.",
+    source_url: "https://www.buddhistedu.org", event_url: "https://www.buddhistedu.org/monthly-schedule/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
