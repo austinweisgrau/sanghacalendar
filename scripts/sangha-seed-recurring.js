@@ -5603,6 +5603,74 @@ const SITS = [
     notes: "Meditation Hour (10–11am ET) at Dong Hung Temple / Buddhist Education Center of America, 423 Davis Street, Virginia Beach VA 23462. 2nd Saturday of each month. Guided meditation session open to all. Contact English sangha: dhtenglishsangha@gmail.com / (757) 689-3408. buddhistedu.org.",
     source_url: "https://www.buddhistedu.org", event_url: "https://www.buddhistedu.org/monthly-schedule/",
   },
+
+  // ── Reno / Northern Nevada — Phase 3 (heartbeat 89) ──────────────────────
+
+  // ── Dharma Zephyr Insight Meditation Community — Reno group
+  // Vipassana. Meets Monday 6:30–8:15pm at St. John's Episcopal Church, 1070 West Plumb Lane, Reno NV 89509.
+  {
+    org_id: "dharma_zephyr_reno", org_name: "Dharma Zephyr Insight Meditation Community",
+    title: "Monday Evening Meditation",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 105,
+    address: "1070 West Plumb Lane", city: "Reno", state: "NV", neighborhood: "Southwest Reno",
+    lat: 39.5074, lng: -119.8273, tradition: "theravada", location_type: "in-person",
+    notes: "Monday Evening Meditation (6:30–8:15pm PT) at Dharma Zephyr Insight Meditation Community, hosted at St. John's Episcopal Church, 1070 West Plumb Lane, Reno NV 89509. Vipassana (Insight Meditation) coalition of Northern Nevada sitting groups. Silent sitting, walking meditation, and dharma discussion. Dana-based; all welcome. Contact: Dionne, 775-771-3435. dharmazephyr.org.",
+    source_url: "https://dharmazephyr.org", event_url: "https://dharmazephyr.org/sitting-groups/",
+  },
+
+  // ── Reno Buddhist Center — 820 Plumas Street, Reno NV 89509
+  // Non-sectarian / Jodo Shinshu. Thursday 6–7pm Golden Light Meditation.
+  {
+    org_id: "reno_buddhist_center", org_name: "Reno Buddhist Center",
+    title: "Golden Light Meditation",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "820 Plumas Street", city: "Reno", state: "NV", neighborhood: "Midtown Reno",
+    lat: 39.5182, lng: -119.8195, tradition: "other", location_type: "in-person",
+    notes: "Golden Light Meditation (Thursday 6–7pm PT) at Reno Buddhist Center, 820 Plumas Street, Reno NV 89509. Traditional techniques of sitting and walking meditation with clear intention. Open to all; free. Non-sectarian center with Jodo Shinshu roots, in operation 29+ years. renobuddhistcenter.org.",
+    source_url: "https://www.renobuddhistcenter.org", event_url: "https://www.renobuddhistcenter.org/golden-light-meditation.html",
+  },
+
+  // ── Facing the Mountain Zen Group — Reno NV (address on website)
+  // Soto Zen / SFZC Branching Streams. Tuesday evenings: zazen + dharma talk.
+  {
+    org_id: "facing_mountain_zen", org_name: "Facing the Mountain Zen Group",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "Reno", city: "Reno", state: "NV", neighborhood: "Reno",
+    lat: 39.5296, lng: -119.8138, tradition: "zen", location_type: "in-person",
+    notes: "Tuesday Evening Zazen (Tuesday evenings PT) at Facing the Mountain Zen Group, Reno NV. Soto Zen sangha affiliated with San Francisco Zen Center's Branching Streams network. Led by Rev. Sekibu Alice Tulloch. Program: zazen (sitting meditation) and a dharma talk/lecture. See facingthemountain.org for current meeting address and exact time.",
+    source_url: "https://www.facingthemountain.org", event_url: "https://www.facingthemountain.org/sitting",
+  },
+
+  // ── Dharmakaya Buddhist Center — 140 Washington St LL30, Reno NV 89503
+  // FPMT Tibetan (Gelug). 1st/2nd/4th Sundays 9am.
+  {
+    org_id: "dharmakaya_reno", org_name: "Dharmakaya Buddhist Center",
+    title: "Sunday Morning Meditation & Study",
+    days: ["Sunday"], week_of_month: 1, time: { h: 9, m: 0 }, duration_min: 90,
+    address: "140 Washington Street, Suite LL30", city: "Reno", state: "NV", neighborhood: "Downtown Reno",
+    lat: 39.5247, lng: -119.8142, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Morning Meditation & Study (9am PT) at Dharmakaya Buddhist Center, 140 Washington Street Suite LL30, Reno NV 89503. FPMT (Foundation for the Preservation of the Mahayana Tradition) Tibetan Buddhist study group. Guided meditation, Buddhist philosophy, and Tonglen practice. 1st Sunday of the month. Monthly membership or drop-in. dharmakayacenter.com.",
+    source_url: "https://www.dharmakayacenter.com", event_url: "https://www.meetup.com/dharmakaya-buddhist-center-of-reno/",
+  },
+  {
+    org_id: "dharmakaya_reno", org_name: "Dharmakaya Buddhist Center",
+    title: "Sunday Morning Meditation & Study",
+    days: ["Sunday"], week_of_month: 2, time: { h: 9, m: 0 }, duration_min: 90,
+    address: "140 Washington Street, Suite LL30", city: "Reno", state: "NV", neighborhood: "Downtown Reno",
+    lat: 39.5247, lng: -119.8142, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Morning Meditation & Study (9am PT) at Dharmakaya Buddhist Center, 140 Washington Street Suite LL30, Reno NV 89503. FPMT (Foundation for the Preservation of the Mahayana Tradition) Tibetan Buddhist study group. Guided meditation, Buddhist philosophy, and Tonglen practice. 2nd Sunday of the month. Monthly membership or drop-in. dharmakayacenter.com.",
+    source_url: "https://www.dharmakayacenter.com", event_url: "https://www.meetup.com/dharmakaya-buddhist-center-of-reno/",
+  },
+  {
+    org_id: "dharmakaya_reno", org_name: "Dharmakaya Buddhist Center",
+    title: "Sunday Morning Meditation & Study",
+    days: ["Sunday"], week_of_month: 4, time: { h: 9, m: 0 }, duration_min: 90,
+    address: "140 Washington Street, Suite LL30", city: "Reno", state: "NV", neighborhood: "Downtown Reno",
+    lat: 39.5247, lng: -119.8142, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Morning Meditation & Study (9am PT) at Dharmakaya Buddhist Center, 140 Washington Street Suite LL30, Reno NV 89503. FPMT (Foundation for the Preservation of the Mahayana Tradition) Tibetan Buddhist study group. Guided meditation, Buddhist philosophy, and Tonglen practice. 4th Sunday of the month. Monthly membership or drop-in. dharmakayacenter.com.",
+    source_url: "https://www.dharmakayacenter.com", event_url: "https://www.meetup.com/dharmakaya-buddhist-center-of-reno/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

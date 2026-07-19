@@ -105,6 +105,7 @@ from ingestion.sources import tacoma as tacoma_sources  # noqa: F401 (no live fe
 from ingestion.sources import santa_barbara as santa_barbara_sources
 from ingestion.sources import buffalo as buffalo_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import albany as albany_sources
+from ingestion.sources import reno as reno_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

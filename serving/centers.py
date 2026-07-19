@@ -7058,4 +7058,90 @@ CENTERS = {
             "(757) 689-3408. buddhistedu.org."
         ),
     },
+
+    # ── Reno / Northern Nevada (heartbeat 89) ──────────────────────────────
+    "dharma_zephyr_reno": {
+        "id": "dharma_zephyr_reno",
+        "name": "Dharma Zephyr Insight Meditation Community",
+        "tradition": "theravada",
+        "url": "https://dharmazephyr.org",
+        "address": "1070 West Plumb Lane",
+        "city": "Reno",
+        "state": "NV",
+        "zip": "89509",
+        "neighborhood": "Southwest Reno",
+        "lat": 39.5074,
+        "lng": -119.8273,
+        "description": (
+            "Dharma Zephyr Insight Meditation Community is a coalition of Vipassana "
+            "(Insight Meditation) sitting groups in Northern Nevada. The Reno group "
+            "meets Monday evenings 6:30–8:15pm at St. John's Episcopal Church, 1070 "
+            "West Plumb Lane, Reno NV 89509. Program includes silent sitting, walking "
+            "meditation, and dharma discussion. Dana-based; all welcome. Contact: "
+            "Dionne, 775-771-3435. dharmazephyr.org."
+        ),
+    },
+    "reno_buddhist_center": {
+        "id": "reno_buddhist_center",
+        "name": "Reno Buddhist Center",
+        "tradition": "other",
+        "url": "https://www.renobuddhistcenter.org",
+        "address": "820 Plumas Street",
+        "city": "Reno",
+        "state": "NV",
+        "zip": "89509",
+        "neighborhood": "Midtown Reno",
+        "lat": 39.5182,
+        "lng": -119.8195,
+        "description": (
+            "Reno Buddhist Center (RBC) is a 29-year-old non-sectarian Buddhist "
+            "center at 820 Plumas Street, Reno NV 89509, with roots in the Jodo "
+            "Shinshu (Pure Land) tradition. Thursday Golden Light Meditation: "
+            "6–7pm (sitting and walking meditation; open to all, free). Also offers "
+            "twice-monthly Buddhist services, chanting, and sutra study. "
+            "renobuddhistcenter.org."
+        ),
+    },
+    "facing_mountain_zen": {
+        "id": "facing_mountain_zen",
+        "name": "Facing the Mountain Zen Group",
+        "tradition": "zen",
+        "url": "https://www.facingthemountain.org",
+        "address": "Reno",
+        "city": "Reno",
+        "state": "NV",
+        "zip": "89501",
+        "neighborhood": "Reno",
+        "lat": 39.5296,
+        "lng": -119.8138,
+        "description": (
+            "Facing the Mountain Zen Group is a Soto Zen sangha in Reno, Nevada, "
+            "affiliated with San Francisco Zen Center's Branching Streams network. "
+            "Led by Rev. Sekibu Alice Tulloch. Meets weekly on Tuesday evenings "
+            "for zazen and a dharma talk. See facingthemountain.org for current "
+            "meeting location and time."
+        ),
+    },
+    "dharmakaya_reno": {
+        "id": "dharmakaya_reno",
+        "name": "Dharmakaya Buddhist Center",
+        "tradition": "tibetan",
+        "url": "https://www.dharmakayacenter.com",
+        "address": "140 Washington Street, Suite LL30",
+        "city": "Reno",
+        "state": "NV",
+        "zip": "89503",
+        "neighborhood": "Downtown Reno",
+        "lat": 39.5247,
+        "lng": -119.8142,
+        "description": (
+            "Dharmakaya Buddhist Center is an FPMT (Foundation for the Preservation "
+            "of the Mahayana Tradition) Tibetan Buddhist study and meditation group "
+            "at 140 Washington Street, Suite LL30, Reno NV 89503. Offers drop-in "
+            "meditation, Buddhist philosophy classes (including Tonglen practice), "
+            "weekend retreats, and Saturday workshops. Study group meets 1st, 2nd, "
+            "and 4th Sundays at 9am. Monthly membership or drop-in. "
+            "dharmakayacenter.com."
+        ),
+    },
 }
