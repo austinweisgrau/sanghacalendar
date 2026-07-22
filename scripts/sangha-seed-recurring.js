@@ -5671,6 +5671,35 @@ const SITS = [
     notes: "Sunday Morning Meditation & Study (9am PT) at Dharmakaya Buddhist Center, 140 Washington Street Suite LL30, Reno NV 89503. FPMT (Foundation for the Preservation of the Mahayana Tradition) Tibetan Buddhist study group. Guided meditation, Buddhist philosophy, and Tonglen practice. 4th Sunday of the month. Monthly membership or drop-in. dharmakayacenter.com.",
     source_url: "https://www.dharmakayacenter.com", event_url: "https://www.meetup.com/dharmakaya-buddhist-center-of-reno/",
   },
+
+  // ── Greenville, South Carolina — Phase 3 (heartbeat 90) ─────────────────
+
+  // ── Carolina Buddhist Vihara — 113 Woodridge Circle, Greenville SC 29607
+  // Theravada (Sri Lankan, Bhikkhuni-led). Saturday 9:00–11:30am (meditation + sutta study).
+  // carolinabuddhist.org · email RSVP requested but open to public
+  {
+    org_id: "carolina_buddhist_vihara", org_name: "Carolina Buddhist Vihara",
+    title: "Saturday Morning Meditation & Sutta Study",
+    days: ["Saturday"], time: { h: 9, m: 0 }, duration_min: 150,
+    address: "113 Woodridge Circle", city: "Greenville", state: "SC", neighborhood: "Southeast Greenville",
+    lat: 34.8342, lng: -82.3571, tradition: "theravada", location_type: "in-person",
+    notes: "Saturday Morning Meditation & Sutta Study (9:00am–11:30am ET) at Carolina Buddhist Vihara, 113 Woodridge Circle, Greenville SC 29607. Theravada Buddhist center led by Bhikkhunis in the Sri Lankan lineage. Program: guided meditation 9–10am, short break, Sutta Study 10:15–11:30am. Offered in-person and via Zoom. Email registration requested: greenvillebv@gmail.com. Free (dana-based). (864) 329-9961. carolinabuddhist.org.",
+    source_url: "https://carolinabuddhist.org", event_url: "https://carolinabuddhist.org/programs-and-classes/",
+  },
+
+  // ── KMC South Carolina — Greenville Branch
+  // Kadampa (NKT). Greenville UU Fellowship, 1135 State Park Rd, Greenville SC 29609.
+  // Monday 6:30–7:45pm. On summer break Jul–Aug 2026; resumes fall 2026.
+  // meditationinsouthcarolina.org/greenville/
+  {
+    org_id: "kmc_sc_greenville", org_name: "KMC South Carolina — Greenville Branch",
+    title: "Monday Evening Meditation Class",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "1135 State Park Road", city: "Greenville", state: "SC", neighborhood: "North Greenville",
+    lat: 34.8738, lng: -82.4094, tradition: "tibetan", location_type: "in-person",
+    notes: "Monday Evening Meditation Class (6:30–7:45pm ET) at KMC South Carolina Greenville Branch, hosted at Greenville UU Fellowship, 1135 State Park Road, Greenville SC 29609. Kadampa Buddhist (New Kadampa Tradition). Each self-contained class: guided breathing meditation, dharma teaching, and second meditation. Suitable for complete beginners; no prior experience needed. Drop-in $15; series $75; free for members. Taught by Gen Kelsang Tabkay. Summer break Jul–Aug 2026; resumes fall 2026. meditationinsouthcarolina.org/greenville/.",
+    source_url: "https://meditationinsouthcarolina.org/greenville/", event_url: "https://www.meetup.com/Greenville-Meditation-and-Buddhism-Group/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

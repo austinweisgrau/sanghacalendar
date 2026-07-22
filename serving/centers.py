@@ -7144,4 +7144,73 @@ CENTERS = {
             "dharmakayacenter.com."
         ),
     },
+    # ── Greenville, South Carolina (heartbeat 90) ───────────────────────────
+    "greenville_zen": {
+        "id": "greenville_zen",
+        "name": "Greenville Zen Center",
+        "tradition": "zen",
+        "url": "https://greenvillezen.org",
+        "address": "52 Cleveland Street",
+        "city": "Greenville",
+        "state": "SC",
+        "zip": "29601",
+        "neighborhood": "Downtown Greenville",
+        "lat": 34.8490,
+        "lng": -82.4012,
+        "description": (
+            "Greenville Zen Center is a registered 501(c)(3) lay Soto Zen group "
+            "meeting at the Cancer Survivors Park Center for Hope & Healing, "
+            "52 Cleveland Street, Greenville SC 29601. Sits are held on the 1st "
+            "and 3rd Sundays of each month, 8:15–9:30am: two rounds of zazen "
+            "separated by kinhin (walking meditation), followed by a brief dharma "
+            "reading. Newcomers arrive by 7:50am for orientation; bell rings at "
+            "8:15 as a strict start. Free and open to all adults; true drop-in. "
+            "Free parking at 44 Cleveland Street. greenvillezen.org."
+        ),
+    },
+    "carolina_buddhist_vihara": {
+        "id": "carolina_buddhist_vihara",
+        "name": "Carolina Buddhist Vihara",
+        "tradition": "theravada",
+        "url": "https://carolinabuddhist.org",
+        "address": "113 Woodridge Circle",
+        "city": "Greenville",
+        "state": "SC",
+        "zip": "29607",
+        "neighborhood": "Southeast Greenville",
+        "lat": 34.8342,
+        "lng": -82.3571,
+        "description": (
+            "Carolina Buddhist Vihara is a Theravada Buddhist center in Greenville, "
+            "South Carolina, led by Bhikkhunis in the Sri Lankan lineage. Saturday "
+            "morning program at 113 Woodridge Circle: guided meditation 9:00–10:00am, "
+            "followed by Sutta Study 10:15–11:30am. Offered in-person and via Zoom. "
+            "Email registration requested (greenvillebv@gmail.com) to attend in "
+            "person or receive the Zoom link. Free (dana-based). "
+            "(864) 329-9961. carolinabuddhist.org."
+        ),
+    },
+    "kmc_sc_greenville": {
+        "id": "kmc_sc_greenville",
+        "name": "KMC South Carolina — Greenville Branch",
+        "tradition": "tibetan",
+        "url": "https://meditationinsouthcarolina.org/greenville/",
+        "address": "1135 State Park Road",
+        "city": "Greenville",
+        "state": "SC",
+        "zip": "29609",
+        "neighborhood": "North Greenville",
+        "lat": 34.8738,
+        "lng": -82.4094,
+        "description": (
+            "KMC South Carolina Greenville Branch is a Kadampa Buddhist (New Kadampa "
+            "Tradition) meditation class hosted at the Greenville Unitarian Universalist "
+            "Fellowship, 1135 State Park Road, Greenville SC 29609. Monday evenings "
+            "6:30–7:45pm (resumes fall 2026 after summer break). Each class includes "
+            "guided breathing meditation, a dharma teaching, and a second meditation — "
+            "suitable for complete beginners. Taught by Gen Kelsang Tabkay. Drop-in "
+            "$15; series $75; free for members. "
+            "meditationinsouthcarolina.org/greenville/."
+        ),
+    },
 }

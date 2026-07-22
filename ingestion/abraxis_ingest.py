@@ -106,6 +106,7 @@ from ingestion.sources import santa_barbara as santa_barbara_sources
 from ingestion.sources import buffalo as buffalo_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import albany as albany_sources
 from ingestion.sources import reno as reno_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import greenville as greenville_sources
 
 log = logging.getLogger(__name__)
 
@@ -1256,6 +1257,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Santa Barbara iCal {org_id} failed: {e}")
+
+    # Greenville SC Phase 3 — Greenville Zen Center iCal feed
+    log.info("--- Greenville SC Phase 3: Greenville Zen Center iCal feed ---")
+    for org_id, feed_cfg in greenville_sources.ICAL_FEEDS.items():
+        center = greenville_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Greenville iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Greenville iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []
