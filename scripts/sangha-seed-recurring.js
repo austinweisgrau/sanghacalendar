@@ -5700,6 +5700,66 @@ const SITS = [
     notes: "Monday Evening Meditation Class (6:30–7:45pm ET) at KMC South Carolina Greenville Branch, hosted at Greenville UU Fellowship, 1135 State Park Road, Greenville SC 29609. Kadampa Buddhist (New Kadampa Tradition). Each self-contained class: guided breathing meditation, dharma teaching, and second meditation. Suitable for complete beginners; no prior experience needed. Drop-in $15; series $75; free for members. Taught by Gen Kelsang Tabkay. Summer break Jul–Aug 2026; resumes fall 2026. meditationinsouthcarolina.org/greenville/.",
     source_url: "https://meditationinsouthcarolina.org/greenville/", event_url: "https://www.meetup.com/Greenville-Meditation-and-Buddhism-Group/",
   },
+
+  // ── Columbia, South Carolina — Phase 3 (heartbeat 91) ────────────────────
+
+  // ── KMC South Carolina (main Columbia center) — 2000 Park St Ste 103, Columbia SC 29201
+  // Kadampa (NKT). Sunday 10:30–11:45am, Wednesday 6:30–7:45pm. Founded 2002.
+  // meditationinsouthcarolina.org
+  {
+    org_id: "kmc_sc_columbia", org_name: "Kadampa Meditation Center South Carolina",
+    title: "Sunday Morning Meditation Class",
+    days: ["Sunday"], time: { h: 10, m: 30 }, duration_min: 75,
+    address: "2000 Park Street, Suite 103", city: "Columbia", state: "SC", neighborhood: "Five Points",
+    lat: 34.0019, lng: -81.0347, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Morning Meditation Class (10:30–11:45am ET) at Kadampa Meditation Center South Carolina, 2000 Park Street Suite 103, Columbia SC 29201 (enter and park from Calhoun Street). Tibetan Buddhist (New Kadampa Tradition / NKT-IKBU). Founded 2002. Each self-contained class: guided breathing meditation, dharma teaching, and second meditation — suitable for complete beginners. Drop-in $15; series $75; free for members. Resident Teacher: Kelsang Jangchen. meditationinsouthcarolina.org. (803) 200-2115.",
+    source_url: "https://meditationinsouthcarolina.org", event_url: "https://meditationinsouthcarolina.org/weekly/",
+  },
+  {
+    org_id: "kmc_sc_columbia", org_name: "Kadampa Meditation Center South Carolina",
+    title: "Wednesday Evening Meditation Class",
+    days: ["Wednesday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "2000 Park Street, Suite 103", city: "Columbia", state: "SC", neighborhood: "Five Points",
+    lat: 34.0019, lng: -81.0347, tradition: "tibetan", location_type: "in-person",
+    notes: "Wednesday Evening Meditation Class (6:30–7:45pm ET) at Kadampa Meditation Center South Carolina, 2000 Park Street Suite 103, Columbia SC 29201 (enter and park from Calhoun Street). Tibetan Buddhist (New Kadampa Tradition / NKT-IKBU). Each self-contained class: guided breathing meditation, dharma teaching, and second meditation — suitable for complete beginners. Drop-in $15; series $75; free for members. meditationinsouthcarolina.org. (803) 200-2115.",
+    source_url: "https://meditationinsouthcarolina.org", event_url: "https://meditationinsouthcarolina.org/weekly/",
+  },
+
+  // ── Columbia Zen Buddhist Priory — 426 Arrowwood Rd, Columbia SC 29210
+  // Soto Zen (OBC/Shasta Abbey lineage). Sunday 9:30–11:30am, Wednesday 6:30–8:15pm.
+  // Newcomers must call ahead and attend Friday 6pm orientation before regular sits.
+  // columbiazen.org
+  {
+    org_id: "columbia_zen_priory", org_name: "Columbia Zen Buddhist Priory",
+    title: "Sunday Morning Meditation & Dharma Talk",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 120,
+    address: "426 Arrowwood Road", city: "Columbia", state: "SC", neighborhood: "West Columbia",
+    lat: 34.0264, lng: -81.0997, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Meditation & Dharma Talk (9:30–11:30am ET) at Columbia Zen Buddhist Priory, 426 Arrowwood Road, Columbia SC 29210. Soto Zen (Order of Buddhist Contemplatives / Shasta Abbey lineage). Program: two periods of sitting meditation separated by walking meditation, morning service, and Dharma talk. Prior: Rev. Rokuzan Kroenke. First-time visitors must call ahead (803) 772-7552 and attend the Friday 6pm newcomer orientation before joining regular sits. columbiazen.org.",
+    source_url: "https://columbiazen.org", event_url: "https://columbiazen.org/coming-to-the-priory/schedule/",
+  },
+  {
+    org_id: "columbia_zen_priory", org_name: "Columbia Zen Buddhist Priory",
+    title: "Wednesday Evening Meditation & Dharma Talk",
+    days: ["Wednesday"], time: { h: 18, m: 30 }, duration_min: 105,
+    address: "426 Arrowwood Road", city: "Columbia", state: "SC", neighborhood: "West Columbia",
+    lat: 34.0264, lng: -81.0997, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday Evening Meditation & Dharma Talk (6:30–8:15pm ET) at Columbia Zen Buddhist Priory, 426 Arrowwood Road, Columbia SC 29210. Soto Zen (Order of Buddhist Contemplatives / Shasta Abbey lineage). Program: meditation, services, and Dharma talk. Prior: Rev. Rokuzan Kroenke. First-time visitors must call ahead (803) 772-7552 and attend the Friday 6pm newcomer orientation first. columbiazen.org.",
+    source_url: "https://columbiazen.org", event_url: "https://columbiazen.org/coming-to-the-priory/schedule/",
+  },
+
+  // ── SC Dharma Group — 3003 Columbia Ave, Columbia SC 29201
+  // Tibetan Buddhist (Gelug, H.H. Dalai Lama endorsed). Sunday 9:15am in-person sit.
+  // scdharma.org
+  {
+    org_id: "sc_dharma_group", org_name: "SC Dharma Group",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 9, m: 15 }, duration_min: 45,
+    address: "3003 Columbia Avenue", city: "Columbia", state: "SC", neighborhood: "Earlewood",
+    lat: 34.0145, lng: -81.0478, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Morning Meditation (9:15am ET) at SC Dharma Group, 3003 Columbia Avenue, Columbia SC 29201 (Earlewood neighborhood; meditation room behind main house). Tibetan Buddhist (Gelug tradition, endorsed by H.H. the Dalai Lama). Spiritual director: Geshe Dakpa Topgyal (based in Charleston). In-person sitting meditation at 9:15am, followed by dharma teachings via Zoom/TV at 10:00am. Drop-in, free, open to all. scdharma.org. (803) 467-7759.",
+    source_url: "https://www.scdharma.org", event_url: "https://www.scdharma.org/schedule",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

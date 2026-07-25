@@ -107,6 +107,7 @@ from ingestion.sources import buffalo as buffalo_sources  # noqa: F401 (no live 
 from ingestion.sources import albany as albany_sources
 from ingestion.sources import reno as reno_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import greenville as greenville_sources
+from ingestion.sources import columbia as columbia_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

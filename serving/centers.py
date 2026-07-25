@@ -7213,4 +7213,63 @@ CENTERS = {
             "meditationinsouthcarolina.org/greenville/."
         ),
     },
+
+    # ── Columbia, South Carolina — Phase 3 (heartbeat 91) ──────────────────
+
+    "kmc_sc_columbia": {
+        "id": "kmc_sc_columbia",
+        "name": "Kadampa Meditation Center South Carolina",
+        "url": "https://meditationinsouthcarolina.org",
+        "address": "2000 Park Street, Suite 103",
+        "city": "Columbia",
+        "state": "SC",
+        "zip": "29201",
+        "lat": 34.0019,
+        "lng": -81.0347,
+        "tradition": "tibetan",
+        "description": (
+            "Kadampa Meditation Center South Carolina (NKT-IKBU) at 2000 Park "
+            "Street Suite 103, Columbia SC. Sunday 10:30am and Wednesday 6:30pm "
+            "drop-in classes. Each class: guided meditation, dharma teaching, "
+            "second meditation. Beginners welcome. Drop-in $15. "
+            "meditationinsouthcarolina.org."
+        ),
+    },
+    "columbia_zen_priory": {
+        "id": "columbia_zen_priory",
+        "name": "Columbia Zen Buddhist Priory",
+        "url": "https://columbiazen.org",
+        "address": "426 Arrowwood Road",
+        "city": "Columbia",
+        "state": "SC",
+        "zip": "29210",
+        "lat": 34.0264,
+        "lng": -81.0997,
+        "tradition": "zen",
+        "description": (
+            "Columbia Zen Buddhist Priory (Order of Buddhist Contemplatives, "
+            "Shasta Abbey lineage). Soto Zen. 426 Arrowwood Road, Columbia SC. "
+            "Sunday 9:30am and Wednesday 6:30pm sits. First-time visitors "
+            "should attend Friday 6pm newcomer orientation and call ahead: "
+            "(803) 772-7552. columbiazen.org."
+        ),
+    },
+    "sc_dharma_group": {
+        "id": "sc_dharma_group",
+        "name": "SC Dharma Group",
+        "url": "https://www.scdharma.org",
+        "address": "3003 Columbia Avenue",
+        "city": "Columbia",
+        "state": "SC",
+        "zip": "29201",
+        "lat": 34.0145,
+        "lng": -81.0478,
+        "tradition": "tibetan",
+        "description": (
+            "SC Dharma Group, Tibetan Buddhist (Gelug tradition, H.H. Dalai "
+            "Lama endorsed). 3003 Columbia Avenue, Columbia SC. Sunday morning "
+            "in-person meditation 9:15am followed by Zoom teachings at 10am "
+            "with Geshe Dakpa Topgyal. Free, open to all. scdharma.org."
+        ),
+    },
 }
