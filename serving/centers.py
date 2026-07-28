@@ -7272,4 +7272,47 @@ CENTERS = {
             "with Geshe Dakpa Topgyal. Free, open to all. scdharma.org."
         ),
     },
+
+    # ── Baton Rouge, Louisiana — Phase 3 (heartbeat 92) ─────────────────────
+
+    "blue_lotus_br": {
+        "id": "blue_lotus_br",
+        "name": "Louisiana Buddhist Vihara — Blue Lotus Meditation Center",
+        "url": "https://www.louisianablbv.org",
+        "address": "8470 Goodwood Boulevard",
+        "city": "Baton Rouge",
+        "state": "LA",
+        "zip": "70806",
+        "lat": 30.4516,
+        "lng": -91.0798,
+        "tradition": "theravada",
+        "description": (
+            "Louisiana Buddhist Vihara / Blue Lotus Meditation Center — the first "
+            "Sri Lankan Theravada temple in Louisiana (founded 2018). Chief abbot: "
+            "Bhante Dhammadassi. Meets at the Unitarian Church of Baton Rouge, "
+            "8470 Goodwood Blvd. Public guided meditation (metta and mindfulness): "
+            "Wednesday 5:30–6:30pm and Saturday 5–6pm, in-person. Open to all; "
+            "free (dana). louisianablbv.org."
+        ),
+    },
+    "tam_bao_br": {
+        "id": "tam_bao_br",
+        "name": "Tam Bao Meditation Center",
+        "url": "https://www.batonrougebuddha.org",
+        "address": "975 Monterrey Boulevard",
+        "city": "Baton Rouge",
+        "state": "LA",
+        "zip": "70815",
+        "lat": 30.4618,
+        "lng": -91.0551,
+        "tradition": "zen",
+        "description": (
+            "Tam Bao Meditation Center, Vietnamese Buddhist temple founded 1985 "
+            "at 975 Monterrey Blvd, Baton Rouge LA. Abbot: Thich Dao Quang. "
+            "Affiliated with the Order of Interbeing (Thich Nhat Hanh lineage). "
+            "English-language sits: Friday 7:30pm, open to all. Special retreats "
+            "and Days of Mindfulness on Eventbrite. Hall capacity 150. "
+            "batonrougebuddha.org. (225) 248-8263."
+        ),
+    },
 }

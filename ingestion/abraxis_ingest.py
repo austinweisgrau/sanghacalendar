@@ -108,6 +108,7 @@ from ingestion.sources import albany as albany_sources
 from ingestion.sources import reno as reno_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import greenville as greenville_sources
 from ingestion.sources import columbia as columbia_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import baton_rouge as baton_rouge_sources
 
 log = logging.getLogger(__name__)
 
@@ -1282,6 +1283,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Greenville iCal {org_id} failed: {e}")
+
+    # Baton Rouge LA Phase 3 — Tam Bao Meditation Center Eventbrite
+    log.info("--- Baton Rouge LA Phase 3: Tam Bao Meditation Center Eventbrite ---")
+    for org_id, feed_cfg in baton_rouge_sources.EVENTBRITE_FEEDS.items():
+        center = baton_rouge_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Baton Rouge Eventbrite)...")
+        try:
+            events = fetch_eventbrite_organizer(
+                organizer_id=feed_cfg["organizer_id"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Baton Rouge Eventbrite {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

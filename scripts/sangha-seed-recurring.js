@@ -5760,6 +5760,43 @@ const SITS = [
     notes: "Sunday Morning Meditation (9:15am ET) at SC Dharma Group, 3003 Columbia Avenue, Columbia SC 29201 (Earlewood neighborhood; meditation room behind main house). Tibetan Buddhist (Gelug tradition, endorsed by H.H. the Dalai Lama). Spiritual director: Geshe Dakpa Topgyal (based in Charleston). In-person sitting meditation at 9:15am, followed by dharma teachings via Zoom/TV at 10:00am. Drop-in, free, open to all. scdharma.org. (803) 467-7759.",
     source_url: "https://www.scdharma.org", event_url: "https://www.scdharma.org/schedule",
   },
+
+  // ── Baton Rouge, Louisiana — Phase 3 (heartbeat 92) ────────────────────
+
+  // ── Blue Lotus / Louisiana Buddhist Vihara — 8470 Goodwood Blvd, Baton Rouge LA 70806
+  // Theravada (Sri Lankan lineage). Wed 5:30pm + Sat 5pm in-person at Unitarian Church of BR.
+  // louisianablbv.org
+  {
+    org_id: "blue_lotus_br", org_name: "Louisiana Buddhist Vihara — Blue Lotus Meditation Center",
+    title: "Wednesday Evening Guided Meditation",
+    days: ["Wednesday"], time: { h: 17, m: 30 }, duration_min: 60,
+    address: "8470 Goodwood Boulevard", city: "Baton Rouge", state: "LA", neighborhood: "Mid City",
+    lat: 30.4516, lng: -91.0798, tradition: "theravada", location_type: "in-person",
+    notes: "Wednesday Evening Guided Meditation (5:30–6:30pm CT) at Louisiana Buddhist Vihara / Blue Lotus Meditation Center, held at the Unitarian Church of Baton Rouge, 8470 Goodwood Boulevard, Baton Rouge LA 70806. Theravada (Sri Lankan lineage; Bhante Dhammadassi). Guided loving-kindness (metta) and mindfulness meditation. Open to all backgrounds; free (dana). louisianablbv.org.",
+    source_url: "https://www.louisianablbv.org", event_url: "https://www.louisianablbv.org/meditation",
+  },
+  {
+    org_id: "blue_lotus_br", org_name: "Louisiana Buddhist Vihara — Blue Lotus Meditation Center",
+    title: "Saturday Afternoon Guided Meditation",
+    days: ["Saturday"], time: { h: 17, m: 0 }, duration_min: 60,
+    address: "8470 Goodwood Boulevard", city: "Baton Rouge", state: "LA", neighborhood: "Mid City",
+    lat: 30.4516, lng: -91.0798, tradition: "theravada", location_type: "in-person",
+    notes: "Saturday Afternoon Guided Meditation (5:00–6:00pm CT) at Louisiana Buddhist Vihara / Blue Lotus Meditation Center, held at the Unitarian Church of Baton Rouge, 8470 Goodwood Boulevard, Baton Rouge LA 70806. Theravada (Sri Lankan lineage; Bhante Dhammadassi). Guided loving-kindness (metta) and mindfulness meditation. Open to all backgrounds; free (dana). louisianablbv.org.",
+    source_url: "https://www.louisianablbv.org", event_url: "https://www.louisianablbv.org/meditation",
+  },
+
+  // ── Tam Bao Meditation Center — 975 Monterrey Blvd, Baton Rouge LA 70815
+  // Vietnamese Mahayana / Order of Interbeing (Thich Nhat Hanh lineage).
+  // Friday 7:30pm English-language sits. batonrougebuddha.org
+  {
+    org_id: "tam_bao_br", org_name: "Tam Bao Meditation Center",
+    title: "Friday Evening Meditation (English)",
+    days: ["Friday"], time: { h: 19, m: 30 }, duration_min: 60,
+    address: "975 Monterrey Boulevard", city: "Baton Rouge", state: "LA", neighborhood: "Broadmoor",
+    lat: 30.4618, lng: -91.0551, tradition: "zen", location_type: "in-person",
+    notes: "Friday Evening Meditation in English (7:30pm CT) at Tam Bao Meditation Center, 975 Monterrey Boulevard, Baton Rouge LA 70815. Vietnamese Buddhist temple founded 1985. Abbot: Thich Dao Quang. Affiliated with the Order of Interbeing (Thich Nhat Hanh lineage). English-language sitting meditation and mindfulness practice open to all. Hall capacity 150. Contact: tambaobr@yahoo.com / (225) 248-8263. batonrougebuddha.org.",
+    source_url: "https://www.batonrougebuddha.org", event_url: "https://www.batonrougebuddha.org/schedules",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
