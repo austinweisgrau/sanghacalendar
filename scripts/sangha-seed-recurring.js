@@ -5761,6 +5761,65 @@ const SITS = [
     source_url: "https://www.scdharma.org", event_url: "https://www.scdharma.org/schedule",
   },
 
+  // ── Savannah, Georgia — Phase 3 (heartbeat 93) ─────────────────────────
+
+  // ── Ancient Oaks Zen Community — 4501 Montgomery Street D, Savannah GA 31405
+  // Soto Zen (IZGO / Maezumi lineage). Thu 7pm in-person + Sun 9am in-person.
+  // ancientoakszen.org
+  {
+    org_id: "ancient_oaks_zen", org_name: "Ancient Oaks Zen Community",
+    title: "Thursday Evening Zazen",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "4501 Montgomery Street D", city: "Savannah", state: "GA", neighborhood: "Midtown Savannah",
+    lat: 32.0850, lng: -81.1061, tradition: "zen", location_type: "in-person",
+    notes: "Thursday Evening Zazen (7:00–8:00pm ET) at Ancient Oaks Zen Community, 4501 Montgomery Street D, Savannah GA 31405. Soto Zen (International Zen Garland Order, Taizan Maezumi Roshi lineage). Zazen with Roshi Monika Genmitsu Kahn. In-person, drop-in. Founded 2012 by Roshi Paul Genki Kahn and Roshi Genmitsu Kahn. ancientoakszen.org.",
+    source_url: "https://ancientoakszen.org", event_url: "https://ancientoakszen.org/schedule",
+  },
+  {
+    org_id: "ancient_oaks_zen", org_name: "Ancient Oaks Zen Community",
+    title: "Sunday Morning Zen Program",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 150,
+    address: "4501 Montgomery Street D", city: "Savannah", state: "GA", neighborhood: "Midtown Savannah",
+    lat: 32.0850, lng: -81.1061, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Zen Program (9:00–11:30am ET) at Ancient Oaks Zen Community, 4501 Montgomery Street D, Savannah GA 31405. Soto Zen (International Zen Garland Order, Maezumi Roshi lineage). Full morning program: Zen liturgy, zazen, dokusan (individual student/teacher meeting), and Dharma Talk. In-person. ancientoakszen.org.",
+    source_url: "https://ancientoakszen.org", event_url: "https://ancientoakszen.org/schedule",
+  },
+
+  // ── Flying Cloud Zen — 2132 E Victory Drive, Savannah GA 31404
+  // Soto Zen (Silent Thunder Order / SFZC lineage). Thu 8am + Sat 8:30am in-person.
+  // flyingcloudzen.org
+  {
+    org_id: "flying_cloud_zen", org_name: "Flying Cloud Zen",
+    title: "Thursday Morning Zazen",
+    days: ["Thursday"], time: { h: 8, m: 0 }, duration_min: 30,
+    address: "2132 E Victory Drive", city: "Savannah", state: "GA", neighborhood: "Midtown Savannah",
+    lat: 32.0567, lng: -81.0627, tradition: "zen", location_type: "in-person",
+    notes: "Thursday Morning Zazen (8:00–8:30am ET) at Flying Cloud Zen, 2132 E Victory Drive, Savannah GA 31404. Soto Zen (Silent Thunder Order, SFZC / Shunryu Suzuki Roshi lineage). Teacher: Un Shin Cindy Beach, Sensei. Followed by optional Sutra chant at 8:25am. In-person, drop-in, free. Formerly 'Savannah Zen Center' and 'Floating Cloud Zen.' flyingcloudzen.org.",
+    source_url: "https://flyingcloudzen.org", event_url: "https://flyingcloudzen.org/programming",
+  },
+  {
+    org_id: "flying_cloud_zen", org_name: "Flying Cloud Zen",
+    title: "Saturday Morning Meditation Community",
+    days: ["Saturday"], time: { h: 8, m: 30 }, duration_min: 60,
+    address: "2132 E Victory Drive", city: "Savannah", state: "GA", neighborhood: "Midtown Savannah",
+    lat: 32.0567, lng: -81.0627, tradition: "zen", location_type: "in-person",
+    notes: "Saturday Morning Meditation Community (8:30–9:30am ET) at Flying Cloud Zen, 2132 E Victory Drive, Savannah GA 31404. Soto Zen (Silent Thunder Order). 8:30–8:55am shared silent meditation; 8:55–9:00am Metta Sutra and Heart Sutra; 9:00–9:30am informal practice check-in and Q&A (welcoming to newcomers and beginners). In-person, drop-in, free. flyingcloudzen.org.",
+    source_url: "https://flyingcloudzen.org", event_url: "https://flyingcloudzen.org/programming",
+  },
+
+  // ── Chua Cat Tuong / Vietnamese Buddhist Association of Savannah — 2619 US Hwy 80 W, Garden City GA 31408
+  // Vietnamese Mahayana / Pure Land. Thu 7pm English-language sits.
+  // savannahbuddhist.org
+  {
+    org_id: "chua_cat_tuong_savannah", org_name: "Vietnamese Buddhist Association of Savannah — Chùa Cát Tường",
+    title: "Thursday Evening Meditation (English)",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "2619 US Highway 80 W", city: "Garden City", state: "GA", neighborhood: "Garden City",
+    lat: 32.0889, lng: -81.1975, tradition: "other", location_type: "in-person",
+    notes: "Thursday Evening Meditation and Dhamma Talk in English (7:00–8:00pm ET) at Vietnamese Buddhist Association of Savannah / Chùa Cát Tường, 2619 US Highway 80 W, Garden City GA 31408 (~8 miles west of downtown Savannah). Vietnamese Mahayana / Pure Land tradition. In-person; no appointment needed, drop-in, open to all backgrounds. Free. Phone: 912-657-1876. savannahbuddhist.org.",
+    source_url: "https://savannahbuddhist.org", event_url: "https://savannahbuddhist.org/services",
+  },
+
   // ── Baton Rouge, Louisiana — Phase 3 (heartbeat 92) ────────────────────
 
   // ── Blue Lotus / Louisiana Buddhist Vihara — 8470 Goodwood Blvd, Baton Rouge LA 70806

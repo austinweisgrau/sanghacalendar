@@ -7315,4 +7315,71 @@ CENTERS = {
             "batonrougebuddha.org. (225) 248-8263."
         ),
     },
+    # ── Savannah, Georgia (heartbeat 93) ────────────────────────────────
+    "ancient_oaks_zen": {
+        "id": "ancient_oaks_zen",
+        "name": "Ancient Oaks Zen Community",
+        "url": "https://ancientoakszen.org",
+        "address": "4501 Montgomery Street D",
+        "city": "Savannah",
+        "state": "GA",
+        "zip": "31405",
+        "lat": 32.0850,
+        "lng": -81.1061,
+        "tradition": "zen",
+        "description": (
+            "Ancient Oaks Zen Community is a Soto Zen center in Savannah, Georgia, "
+            "founded in 2012 by Roshi Paul Genki Kahn and Roshi Monika Genmitsu Kahn. "
+            "Affiliated with the International Zen Garland Order (IZGO) in the lineage "
+            "of Taizan Maezumi Roshi. Address: 4501 Montgomery Street D, Savannah GA "
+            "31405. Public sitting schedule: Thursday 7–8pm zazen with Roshi Genmitsu "
+            "(in-person, drop-in); Sunday 9–11:30am full Zen morning program (liturgy, "
+            "zazen, dokusan, Dharma Talk, in-person). Also runs Ango and sesshins. "
+            "The most established Buddhist meditation center in Savannah. "
+            "ancientoakszen.org. Phone: 201-616-9263."
+        ),
+    },
+    "flying_cloud_zen": {
+        "id": "flying_cloud_zen",
+        "name": "Flying Cloud Zen",
+        "url": "https://flyingcloudzen.org",
+        "address": "2132 E Victory Drive",
+        "city": "Savannah",
+        "state": "GA",
+        "zip": "31404",
+        "lat": 32.0567,
+        "lng": -81.0627,
+        "tradition": "zen",
+        "description": (
+            "Flying Cloud Zen (formerly Savannah Zen Center / Floating Cloud Zen) is "
+            "a lay-led Soto Zen community in the lineage of Shunryu Suzuki Roshi and "
+            "the San Francisco Zen Center (Silent Thunder Order). Teacher: Un Shin "
+            "Cindy Beach, Sensei. Address: 2132 E Victory Drive, Savannah GA 31404. "
+            "Schedule: Thursday 8:00–8:30am zazen (in-person); Saturday 8:30–9:30am "
+            "Saturday Morning Meditation Community — shared silent sitting, sutra "
+            "chant, then informal practice Q&A (newcomer-friendly, in-person). "
+            "Free, drop-in. flyingcloudzen.org."
+        ),
+    },
+    "chua_cat_tuong_savannah": {
+        "id": "chua_cat_tuong_savannah",
+        "name": "Vietnamese Buddhist Association of Savannah — Chùa Cát Tường",
+        "url": "https://savannahbuddhist.org",
+        "address": "2619 US Highway 80 W",
+        "city": "Garden City",
+        "state": "GA",
+        "zip": "31408",
+        "lat": 32.0889,
+        "lng": -81.1975,
+        "tradition": "other",
+        "description": (
+            "Vietnamese Buddhist Association of Savannah / Chùa Cát Tường is a "
+            "Vietnamese Mahayana temple (Pure Land tradition) at 2619 US Highway 80 W, "
+            "Garden City GA 31408 (~8 miles west of downtown Savannah). "
+            "English-language meditation and Dhamma Talk: Thursday 7–8pm, in-person, "
+            "drop-in (no appointment needed), open to all backgrounds. Sunday 10am–12pm: "
+            "Vietnamese-language service with vegetarian meal following (all welcome). "
+            "Free. Phone: 912-657-1876. savannahbuddhist.org."
+        ),
+    },
 }
