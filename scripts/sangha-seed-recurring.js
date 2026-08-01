@@ -5820,6 +5820,75 @@ const SITS = [
     source_url: "https://savannahbuddhist.org", event_url: "https://savannahbuddhist.org/services",
   },
 
+  // ── Little Rock, Arkansas — Phase 3 (heartbeat 94) ──────────────────────
+
+  // ── Ecumenical Buddhist Society of Little Rock (EBS) — 1516 West 3rd St, Little Rock AR 72201
+  // Multi-tradition (Theravada, Soto Zen, Kwan Um Zen, Plum Village, Tibetan Nyingma/Sakya, secular).
+  // ebslr.org — free and open to all
+  {
+    org_id: "ebs_little_rock", org_name: "Ecumenical Buddhist Society of Little Rock",
+    title: "Lunchtime Silent Sit",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], time: { h: 11, m: 30 }, duration_min: 30,
+    address: "1516 West 3rd Street", city: "Little Rock", state: "AR", neighborhood: "Downtown Little Rock",
+    lat: 34.7448, lng: -92.2985, tradition: "other", location_type: "in-person",
+    notes: "Lunchtime Silent Sit (11:30am–12:00pm CT) at the Ecumenical Buddhist Society of Little Rock, 1516 West 3rd Street, Little Rock AR 72201. Multi-tradition center. Short silent sitting meditation, Monday–Friday. Drop-in, free, open to all backgrounds. ebslr.org.",
+    source_url: "https://www.ebslr.org", event_url: "https://www.ebslr.org/schedule",
+  },
+  {
+    org_id: "ebs_little_rock", org_name: "Ecumenical Buddhist Society of Little Rock",
+    title: "Weekend Morning Silent Sit",
+    days: ["Saturday", "Sunday"], time: { h: 9, m: 0 }, duration_min: 30,
+    address: "1516 West 3rd Street", city: "Little Rock", state: "AR", neighborhood: "Downtown Little Rock",
+    lat: 34.7448, lng: -92.2985, tradition: "other", location_type: "in-person",
+    notes: "Weekend Morning Silent Sit (9:00–9:30am CT) at the Ecumenical Buddhist Society of Little Rock, 1516 West 3rd Street, Little Rock AR 72201. Short silent sitting meditation Saturday and Sunday mornings. Drop-in, free, open to all backgrounds. ebslr.org.",
+    source_url: "https://www.ebslr.org", event_url: "https://www.ebslr.org/schedule",
+  },
+  {
+    org_id: "ebs_little_rock", org_name: "Ecumenical Buddhist Society of Little Rock",
+    title: "Wednesday Mindfulness Drop-In",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1516 West 3rd Street", city: "Little Rock", state: "AR", neighborhood: "Downtown Little Rock",
+    lat: 34.7448, lng: -92.2985, tradition: "other", location_type: "in-person",
+    notes: "Wednesday Mindfulness Drop-In (7:00–8:00pm CT) at the Ecumenical Buddhist Society of Little Rock, 1516 West 3rd Street, Little Rock AR 72201. Secular mindfulness / Buddhist meditation, drop-in, in-person, free, open to all. ebslr.org.",
+    source_url: "https://www.ebslr.org", event_url: "https://www.ebslr.org/schedule",
+  },
+  {
+    org_id: "ebs_little_rock", org_name: "Ecumenical Buddhist Society of Little Rock",
+    title: "Thursday Evening Mindfulness (Thich Nhat Hanh Tradition)",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1516 West 3rd Street", city: "Little Rock", state: "AR", neighborhood: "Downtown Little Rock",
+    lat: 34.7448, lng: -92.2985, tradition: "zen", location_type: "hybrid",
+    notes: "Thursday Evening Mindfulness in the Tradition of Thich Nhat Hanh (7:00–8:00pm CT) at the Ecumenical Buddhist Society of Little Rock, 1516 West 3rd Street, Little Rock AR 72201. Plum Village / Thich Nhat Hanh lineage. In-person and Zoom, drop-in, free. ebslr.org.",
+    source_url: "https://www.ebslr.org", event_url: "https://www.ebslr.org/schedule",
+  },
+  {
+    org_id: "ebs_little_rock", org_name: "Ecumenical Buddhist Society of Little Rock",
+    title: "Friday Evening Soto Zen Meditation",
+    days: ["Friday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "1516 West 3rd Street", city: "Little Rock", state: "AR", neighborhood: "Downtown Little Rock",
+    lat: 34.7448, lng: -92.2985, tradition: "zen", location_type: "in-person",
+    notes: "Friday Evening Soto Zen Meditation (6:30–7:30pm CT) at the Ecumenical Buddhist Society of Little Rock, 1516 West 3rd Street, Little Rock AR 72201. Soto Zen tradition. In-person, drop-in, free. ebslr.org.",
+    source_url: "https://www.ebslr.org", event_url: "https://www.ebslr.org/schedule",
+  },
+  {
+    org_id: "ebs_little_rock", org_name: "Ecumenical Buddhist Society of Little Rock",
+    title: "Sunday Theravada Practice",
+    days: ["Sunday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1516 West 3rd Street", city: "Little Rock", state: "AR", neighborhood: "Downtown Little Rock",
+    lat: 34.7448, lng: -92.2985, tradition: "theravada", location_type: "hybrid",
+    notes: "Sunday Evening Theravada Practice (7:00–8:00pm CT) at the Ecumenical Buddhist Society of Little Rock, 1516 West 3rd Street, Little Rock AR 72201. Theravada tradition. In-person and Zoom, drop-in, free. ebslr.org.",
+    source_url: "https://www.ebslr.org", event_url: "https://www.ebslr.org/schedule",
+  },
+  {
+    org_id: "ebs_little_rock", org_name: "Ecumenical Buddhist Society of Little Rock",
+    title: "Monthly Half-Day Retreat",
+    days: ["Saturday"], week_of_month: 1, time: { h: 13, m: 0 }, duration_min: 240,
+    address: "1516 West 3rd Street", city: "Little Rock", state: "AR", neighborhood: "Downtown Little Rock",
+    lat: 34.7448, lng: -92.2985, tradition: "other", location_type: "in-person",
+    notes: "Monthly Half-Day Retreat (1st Saturday, 1:00–5:00pm CT) at the Ecumenical Buddhist Society of Little Rock, 1516 West 3rd Street, Little Rock AR 72201. Multi-tradition community retreat. In-person, free (dana). ebslr.org.",
+    source_url: "https://www.ebslr.org", event_url: "https://www.ebslr.org/schedule",
+  },
+
   // ── Baton Rouge, Louisiana — Phase 3 (heartbeat 92) ────────────────────
 
   // ── Blue Lotus / Louisiana Buddhist Vihara — 8470 Goodwood Blvd, Baton Rouge LA 70806

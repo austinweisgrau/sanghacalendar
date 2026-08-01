@@ -7361,6 +7361,31 @@ CENTERS = {
             "Free, drop-in. flyingcloudzen.org."
         ),
     },
+    # ── Little Rock, Arkansas — Phase 3 (heartbeat 94) ──────────────────────
+    "ebs_little_rock": {
+        "id": "ebs_little_rock",
+        "name": "Ecumenical Buddhist Society of Little Rock",
+        "url": "https://www.ebslr.org",
+        "address": "1516 West 3rd Street",
+        "city": "Little Rock",
+        "state": "AR",
+        "zip": "72201",
+        "lat": 34.7448,
+        "lng": -92.2985,
+        "tradition": "other",
+        "description": (
+            "The Ecumenical Buddhist Society of Little Rock (EBS) is the primary and "
+            "most active Buddhist center in Arkansas, offering a richly multi-tradition "
+            "practice community at 1516 West 3rd Street, Little Rock AR 72201. "
+            "Programs span Theravada (Thai Forest), Soto Zen, Kwan Um Zen, "
+            "Plum Village / Thich Nhat Hanh, Tibetan Nyingma, Tibetan Sakya, and "
+            "secular mindfulness — all free and open to the public. "
+            "Daily lunchtime silent sits (Mon–Fri 11:30am, Sat–Sun 9am), Wednesday "
+            "evening Mindfulness Drop-in (7pm), Thursday TNH-lineage Mindfulness (7pm), "
+            "Friday Soto Zen (6:30pm), Sunday Theravada practice (7pm), and monthly "
+            "half-day retreats (1st Saturday 1pm). Phone: (501) 376-7056. ebslr.org."
+        ),
+    },
     "chua_cat_tuong_savannah": {
         "id": "chua_cat_tuong_savannah",
         "name": "Vietnamese Buddhist Association of Savannah — Chùa Cát Tường",
