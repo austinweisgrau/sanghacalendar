@@ -7361,6 +7361,52 @@ CENTERS = {
             "Free, drop-in. flyingcloudzen.org."
         ),
     },
+    # ── Northwest Arkansas (Fayetteville) — Phase 3 (heartbeat 95) ─────────
+    "morning_star_zen_fayetteville": {
+        "id": "morning_star_zen_fayetteville",
+        "name": "Morning Star Zen Center",
+        "url": "https://www.morningstarzencenter.org",
+        "address": "1599 W Halsell Road",
+        "city": "Fayetteville",
+        "state": "AR",
+        "zip": "72701",
+        "lat": 36.0604,
+        "lng": -94.1928,
+        "tradition": "zen",
+        "description": (
+            "Morning Star Zen Center is a Korean Zen (Kwan Um School of Zen) center "
+            "in Fayetteville, Arkansas, founded in 1986 by Barbara Taylor and Jim Jackson. "
+            "Teacher: John Kling (Dharma Teacher). Address: 1599 W Halsell Road, "
+            "Fayetteville AR 72701. Regular public sitting schedule: Tuesday and Thursday "
+            "6–7:15pm (sitting + optional study group from 7:15pm on Tuesdays); "
+            "Wednesday and Friday 7:30–8:30am morning zazen; monthly Sunday all-morning "
+            "retreat 7am–noon (1st Sunday). In-person; drop-in welcome; free. "
+            "One of the most established Zen centers in Arkansas. "
+            "Phone: 479-530-1098. morningstarzencenter.org."
+        ),
+    },
+    "tcia_fayetteville": {
+        "id": "tcia_fayetteville",
+        "name": "Tibetan Cultural Institute of Arkansas",
+        "url": "https://artibet.org",
+        "address": "622 Sycamore Street",
+        "city": "Fayetteville",
+        "state": "AR",
+        "zip": "72701",
+        "lat": 36.0720,
+        "lng": -94.1620,
+        "tradition": "tibetan",
+        "description": (
+            "The Tibetan Cultural Institute of Arkansas (TCIA) is a Fayetteville "
+            "nonprofit founded in 2006 by Professor Sidney Burris and Geshe Thupten "
+            "Dorjee (University of Arkansas). TCIA preserves Tibetan culture and "
+            "offers multi-tradition meditation programming: Sunday 11am–12:30pm "
+            "weekly group meditation (open to all; currently conducted via Zoom); "
+            "Wednesday evening advanced meditation group. Also hosts Sand Mandala "
+            "events and public teachings. University of Arkansas affiliation. "
+            "Phone: (479) 283-4601. artibet.org."
+        ),
+    },
     # ── Little Rock, Arkansas — Phase 3 (heartbeat 94) ──────────────────────
     "ebs_little_rock": {
         "id": "ebs_little_rock",

@@ -5820,6 +5820,52 @@ const SITS = [
     source_url: "https://savannahbuddhist.org", event_url: "https://savannahbuddhist.org/services",
   },
 
+  // ── Northwest Arkansas (Fayetteville) — Phase 3 (heartbeat 95) ──────────
+
+  // ── Morning Star Zen Center — 1599 W Halsell Road, Fayetteville AR 72701
+  // Kwan Um School of Zen (Korean Zen, Seung Sahn lineage). Founded 1986.
+  // morningstarzencenter.org — free, drop-in
+  {
+    org_id: "morning_star_zen_fayetteville", org_name: "Morning Star Zen Center",
+    title: "Tuesday/Thursday Evening Zazen",
+    days: ["Tuesday", "Thursday"], time: { h: 18, m: 0 }, duration_min: 75,
+    address: "1599 W Halsell Road", city: "Fayetteville", state: "AR", neighborhood: "West Fayetteville",
+    lat: 36.0604, lng: -94.1928, tradition: "zen", location_type: "in-person",
+    notes: "Tuesday and Thursday Evening Zazen (6:00–7:15pm CT) at Morning Star Zen Center, 1599 W Halsell Road, Fayetteville AR 72701. Kwan Um School of Zen (Korean Zen, Seung Sahn lineage). Teacher: John Kling, Dharma Teacher. Sitting meditation + walking; Tuesday includes optional study group at 7:15pm. Drop-in welcome; free. Phone: 479-530-1098. morningstarzencenter.org.",
+    source_url: "https://www.morningstarzencenter.org", event_url: "https://www.morningstarzencenter.org/schedule",
+  },
+  {
+    org_id: "morning_star_zen_fayetteville", org_name: "Morning Star Zen Center",
+    title: "Morning Zazen",
+    days: ["Wednesday", "Friday"], time: { h: 7, m: 30 }, duration_min: 60,
+    address: "1599 W Halsell Road", city: "Fayetteville", state: "AR", neighborhood: "West Fayetteville",
+    lat: 36.0604, lng: -94.1928, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday and Friday Morning Zazen (7:30–8:30am CT) at Morning Star Zen Center, 1599 W Halsell Road, Fayetteville AR 72701. Kwan Um School of Zen (Korean Zen). Drop-in welcome; free. morningstarzencenter.org.",
+    source_url: "https://www.morningstarzencenter.org", event_url: "https://www.morningstarzencenter.org/schedule",
+  },
+  {
+    org_id: "morning_star_zen_fayetteville", org_name: "Morning Star Zen Center",
+    title: "Monthly Sunday Morning Retreat",
+    days: ["Sunday"], week_of_month: 1, time: { h: 7, m: 0 }, duration_min: 300,
+    address: "1599 W Halsell Road", city: "Fayetteville", state: "AR", neighborhood: "West Fayetteville",
+    lat: 36.0604, lng: -94.1928, tradition: "zen", location_type: "in-person",
+    notes: "Monthly Sunday Morning Retreat (1st Sunday, 7am–noon CT) at Morning Star Zen Center, 1599 W Halsell Road, Fayetteville AR 72701. Kwan Um School of Zen. Intensive morning of zazen, kinhin, and dharma. Drop-in welcome; free. morningstarzencenter.org.",
+    source_url: "https://www.morningstarzencenter.org", event_url: "https://www.morningstarzencenter.org/schedule",
+  },
+
+  // ── Tibetan Cultural Institute of Arkansas (TCIA) — 622 Sycamore St, Fayetteville AR 72701
+  // Tibetan Buddhist / multi-tradition. Founded 2006, U of Arkansas-affiliated.
+  // artibet.org — open to all; free
+  {
+    org_id: "tcia_fayetteville", org_name: "Tibetan Cultural Institute of Arkansas",
+    title: "Sunday Group Meditation",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 90,
+    address: "622 Sycamore Street", city: "Fayetteville", state: "AR", neighborhood: "University District",
+    lat: 36.0720, lng: -94.1620, tradition: "tibetan", location_type: "online",
+    notes: "Sunday Group Meditation (11am–12:30pm CT) via Zoom at the Tibetan Cultural Institute of Arkansas (TCIA), Fayetteville AR 72701. Multi-tradition Buddhist meditation (Tibetan, Vipassana, and other lineages). Open to all backgrounds; guided by Geshe Thupten Dorjee and affiliated teachers. Free. Phone: (479) 283-4601. artibet.org.",
+    source_url: "https://artibet.org", event_url: "https://artibet.org/programs-outreach/meditation-classes/",
+  },
+
   // ── Little Rock, Arkansas — Phase 3 (heartbeat 94) ──────────────────────
 
   // ── Ecumenical Buddhist Society of Little Rock (EBS) — 1516 West 3rd St, Little Rock AR 72201
