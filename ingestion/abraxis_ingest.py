@@ -110,6 +110,7 @@ from ingestion.sources import greenville as greenville_sources
 from ingestion.sources import columbia as columbia_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import baton_rouge as baton_rouge_sources
 from ingestion.sources import savannah as savannah_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import corpus_christi as corpus_christi_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

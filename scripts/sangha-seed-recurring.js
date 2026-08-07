@@ -5971,6 +5971,31 @@ const SITS = [
     notes: "Friday Evening Meditation in English (7:30pm CT) at Tam Bao Meditation Center, 975 Monterrey Boulevard, Baton Rouge LA 70815. Vietnamese Buddhist temple founded 1985. Abbot: Thich Dao Quang. Affiliated with the Order of Interbeing (Thich Nhat Hanh lineage). English-language sitting meditation and mindfulness practice open to all. Hall capacity 150. Contact: tambaobr@yahoo.com / (225) 248-8263. batonrougebuddha.org.",
     source_url: "https://www.batonrougebuddha.org", event_url: "https://www.batonrougebuddha.org/schedules",
   },
+
+  // ── Corpus Christi, Texas — Phase 3 (heartbeat 96) ──────────────────────
+
+  // ── Chùa Hương Đàm Buddhist Center — 1305 Farm To Market 43, Corpus Christi TX 78415
+  // Vietnamese Mahayana (Pure Land / Zen mix). Described locally as "the only Buddhist
+  // temple in the Coastal Bend." English-language sits Fri evenings + Sun 10am.
+  // Phone: (361) 851-2680.
+  {
+    org_id: "chua_huong_dam_corpus_christi", org_name: "Chùa Hương Đàm Buddhist Center",
+    title: "Friday Evening Meditation (English)",
+    days: ["Friday"], time: { h: 19, m: 0 }, duration_min: 75,
+    address: "1305 Farm To Market 43", city: "Corpus Christi", state: "TX", neighborhood: "Northwest Corpus Christi",
+    lat: 27.7923, lng: -97.4457, tradition: "other", location_type: "in-person",
+    notes: "Friday Evening Meditation in English (~7:00–8:15pm CT) at Chùa Hương Đàm Buddhist Center, 1305 Farm To Market 43, Corpus Christi TX 78415. Vietnamese Mahayana temple (Pure Land / Zen mix). English-language session includes chant, silent sitting meditation, and walking meditation. Explicitly open to newcomers and all backgrounds. Free. Phone: (361) 851-2680.",
+    source_url: "https://www.facebook.com/profile.php?id=100063487073714", event_url: "https://www.facebook.com/profile.php?id=100063487073714",
+  },
+  {
+    org_id: "chua_huong_dam_corpus_christi", org_name: "Chùa Hương Đàm Buddhist Center",
+    title: "Sunday Morning Service",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "1305 Farm To Market 43", city: "Corpus Christi", state: "TX", neighborhood: "Northwest Corpus Christi",
+    lat: 27.7923, lng: -97.4457, tradition: "other", location_type: "in-person",
+    notes: "Sunday Morning Service (10:00–11:30am CT) at Chùa Hương Đàm Buddhist Center, 1305 Farm To Market 43, Corpus Christi TX 78415. Vietnamese Mahayana (Pure Land / Zen mix). Weekly service open to the public. Free. Phone: (361) 851-2680.",
+    source_url: "https://www.facebook.com/profile.php?id=100063487073714", event_url: "https://www.facebook.com/profile.php?id=100063487073714",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

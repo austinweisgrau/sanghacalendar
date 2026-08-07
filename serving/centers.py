@@ -7432,6 +7432,28 @@ CENTERS = {
             "half-day retreats (1st Saturday 1pm). Phone: (501) 376-7056. ebslr.org."
         ),
     },
+    # ── Corpus Christi, Texas — Phase 3 (heartbeat 96) ──────────────────────
+    "chua_huong_dam_corpus_christi": {
+        "id": "chua_huong_dam_corpus_christi",
+        "name": "Chùa Hương Đàm Buddhist Center",
+        "url": "https://www.facebook.com/profile.php?id=100063487073714",
+        "address": "1305 Farm To Market 43",
+        "city": "Corpus Christi",
+        "state": "TX",
+        "zip": "78415",
+        "lat": 27.7923,
+        "lng": -97.4457,
+        "tradition": "other",
+        "description": (
+            "Chùa Hương Đàm Buddhist Center is a Vietnamese Mahayana temple "
+            "(Pure Land / Zen mix) at 1305 Farm To Market 43, Corpus Christi TX 78415, "
+            "described locally as 'the only Buddhist temple in the Coastal Bend.' "
+            "Friday evening English-language meditation (chant, silent sit, walking "
+            "meditation) is explicitly open to newcomers and all backgrounds. "
+            "Sunday 10am weekly services also welcome the public. "
+            "Free. Phone: (361) 851-2680."
+        ),
+    },
     "chua_cat_tuong_savannah": {
         "id": "chua_cat_tuong_savannah",
         "name": "Vietnamese Buddhist Association of Savannah — Chùa Cát Tường",
