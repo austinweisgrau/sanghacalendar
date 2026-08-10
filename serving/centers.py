@@ -7454,6 +7454,49 @@ CENTERS = {
             "Free. Phone: (361) 851-2680."
         ),
     },
+    # ── Jackson, MS — Phase 3 (heartbeat 97) ─────────────────────────────────
+    "jackson_zen_group": {
+        "id": "jackson_zen_group",
+        "name": "Jackson Zen Group",
+        "url": "https://zeninmississippi.org",
+        "address": "4308 Old Canton Rd",
+        "city": "Jackson",
+        "state": "MS",
+        "zip": "39211",
+        "lat": 32.3780,
+        "lng": -90.1270,
+        "tradition": "zen",
+        "description": (
+            "Jackson Zen Group (Shorinji Zen Association) is a Soto-influenced Zen "
+            "group meeting at the Wolfe Fine Art Studio Dojo, 4308 Old Canton Rd, "
+            "North Jackson MS 39211. Regular schedule: Wednesday 7:00am (30-min zazen) "
+            "and Sunday 8:30am (two 30-min sittings with kinhin and ceremony). "
+            "A one-time orientation is required before your first sit — contact "
+            "jacksonzengroup@gmail.com to arrange. Open to all after orientation. "
+            "zeninmississippi.org · (601) 201-4228."
+        ),
+    },
+    "jackson_insight": {
+        "id": "jackson_insight",
+        "name": "Jackson Insight Meditation Group",
+        "url": "https://dharmainmississippi.com/opportunities-to-practice/jackson-insight-meditation-group",
+        "address": "4308 Old Canton Rd",
+        "city": "Jackson",
+        "state": "MS",
+        "zip": "39211",
+        "lat": 32.3780,
+        "lng": -90.1270,
+        "tradition": "theravada",
+        "description": (
+            "Jackson Insight Meditation Group is a Theravada / Vipassana community "
+            "meeting at the Wolfe Fine Art Studio Dojo, 4308 Old Canton Rd, "
+            "North Jackson MS 39211. Monday evenings: guided Metta (loving-kindness) "
+            "practice — beginner-friendly, drop-in. Saturday mornings: 30-min silent sit "
+            "followed by discussion of a recorded dharma talk or book study. Free and open "
+            "to all regardless of financial ability. Contact: bebewolfe@gmail.com or "
+            "(601) 201-4228. dharmainmississippi.com."
+        ),
+    },
     "chua_cat_tuong_savannah": {
         "id": "chua_cat_tuong_savannah",
         "name": "Vietnamese Buddhist Association of Savannah — Chùa Cát Tường",

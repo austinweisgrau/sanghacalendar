@@ -5996,6 +5996,52 @@ const SITS = [
     notes: "Sunday Morning Service (10:00–11:30am CT) at Chùa Hương Đàm Buddhist Center, 1305 Farm To Market 43, Corpus Christi TX 78415. Vietnamese Mahayana (Pure Land / Zen mix). Weekly service open to the public. Free. Phone: (361) 851-2680.",
     source_url: "https://www.facebook.com/profile.php?id=100063487073714", event_url: "https://www.facebook.com/profile.php?id=100063487073714",
   },
+
+  // ── Jackson, Mississippi — Phase 3 (heartbeat 97) ─────────────────────────
+  // Both groups meet at Wolfe Fine Art Studio Dojo, 4308 Old Canton Rd, Jackson MS 39211
+  // (North Jackson, near I-55 and Northside Drive). Contact: Bebe Wolfe (601) 201-4228.
+
+  // ── Jackson Zen Group — Shorinji Zen Association (Soto-influenced)
+  // zeninmississippi.org · One-time orientation required before first sit.
+  {
+    org_id: "jackson_zen_group", org_name: "Jackson Zen Group",
+    title: "Wednesday Morning Zazen",
+    days: ["Wednesday"], time: { h: 7, m: 0 }, duration_min: 30,
+    address: "4308 Old Canton Rd", city: "Jackson", state: "MS", neighborhood: "North Jackson",
+    lat: 32.3780, lng: -90.1270, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday Morning Zazen (7:00–7:30am CT) at the Wolfe Fine Art Studio Dojo, 4308 Old Canton Rd, Jackson MS 39211. Shorinji Zen Association (Soto-influenced). One-time orientation required before first sit — contact jacksonzengroup@gmail.com. Open to all after orientation. Free. zeninmississippi.org.",
+    source_url: "https://zeninmississippi.org", event_url: "https://zeninmississippi.org/schedule/schedule.php",
+  },
+  {
+    org_id: "jackson_zen_group", org_name: "Jackson Zen Group",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 75,
+    address: "4308 Old Canton Rd", city: "Jackson", state: "MS", neighborhood: "North Jackson",
+    lat: 32.3780, lng: -90.1270, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Zazen (8:30–9:45am CT) at the Wolfe Fine Art Studio Dojo, 4308 Old Canton Rd, Jackson MS 39211. Shorinji Zen Association (Soto-influenced). Two 30-min sitting periods with kinhin (walking meditation) and closing ceremony. One-time orientation required before first sit — contact jacksonzengroup@gmail.com. Open to all after orientation. Free. zeninmississippi.org.",
+    source_url: "https://zeninmississippi.org", event_url: "https://zeninmississippi.org/schedule/schedule.php",
+  },
+
+  // ── Jackson Insight Meditation Group — Theravada / Vipassana
+  // dharmainmississippi.com · Drop-in welcome. Free for all, regardless of financial ability.
+  {
+    org_id: "jackson_insight", org_name: "Jackson Insight Meditation Group",
+    title: "Monday Evening Metta Sit",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "4308 Old Canton Rd", city: "Jackson", state: "MS", neighborhood: "North Jackson",
+    lat: 32.3780, lng: -90.1270, tradition: "theravada", location_type: "in-person",
+    notes: "Monday Evening Metta (Loving-Kindness) Sit (~7:00–8:00pm CT) at the Wolfe Fine Art Studio Dojo, 4308 Old Canton Rd, Jackson MS 39211. Jackson Insight Meditation Group (Theravada / Vipassana). Guided loving-kindness practice, beginner-friendly. Drop-in welcome, no registration needed. Free. Contact: bebewolfe@gmail.com or (601) 201-4228. dharmainmississippi.com.",
+    source_url: "https://dharmainmississippi.com/opportunities-to-practice/jackson-insight-meditation-group", event_url: "https://dharmainmississippi.com/opportunities-to-practice/jackson-insight-meditation-group",
+  },
+  {
+    org_id: "jackson_insight", org_name: "Jackson Insight Meditation Group",
+    title: "Saturday Morning Sit & Dharma Study",
+    days: ["Saturday"], time: { h: 9, m: 0 }, duration_min: 75,
+    address: "4308 Old Canton Rd", city: "Jackson", state: "MS", neighborhood: "North Jackson",
+    lat: 32.3780, lng: -90.1270, tradition: "theravada", location_type: "in-person",
+    notes: "Saturday Morning Sit & Dharma Study (~9:00–10:15am CT) at the Wolfe Fine Art Studio Dojo, 4308 Old Canton Rd, Jackson MS 39211. Jackson Insight Meditation Group (Theravada / Vipassana). 30-min silent sitting followed by discussion of a recorded dharma talk or book study. Drop-in welcome, no registration. Free for all. Contact: bebewolfe@gmail.com or (601) 201-4228. dharmainmississippi.com.",
+    source_url: "https://dharmainmississippi.com/opportunities-to-practice/jackson-insight-meditation-group", event_url: "https://dharmainmississippi.com/opportunities-to-practice/jackson-insight-meditation-group",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
