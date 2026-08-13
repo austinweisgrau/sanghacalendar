@@ -5997,6 +5997,34 @@ const SITS = [
     source_url: "https://www.facebook.com/profile.php?id=100063487073714", event_url: "https://www.facebook.com/profile.php?id=100063487073714",
   },
 
+  // ── Grand Rapids, Michigan — Phase 3 (heartbeat 98) ────────────────────────
+  // Grand Rapids Buddhist Temple & Grand Rapids Zen (Sokukoji affiliate)
+  // 451 S Division Ave, Grand Rapids MI 49503 (Heartside neighborhood)
+
+  // ── Grand Rapids Buddhist Temple — Soto Zen primary, multi-tradition
+  // zengr.org · Sunday 9:30am in-person + YouTube/Zoom livestream
+  {
+    org_id: "grand_rapids_buddhist_temple", org_name: "Grand Rapids Buddhist Temple",
+    title: "Sunday Morning Service",
+    days: ["Sunday"], time: { h: 9, m: 30 }, duration_min: 90,
+    address: "451 S Division Ave", city: "Grand Rapids", state: "MI", neighborhood: "Heartside",
+    lat: 42.9548, lng: -85.6679, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Morning Service (9:30–11am ET) at Grand Rapids Buddhist Temple, 451 S Division Ave, Grand Rapids MI 49503. Soto Zen Mahayana (also Tibetan Gelug and Heartside Mindfulness). Chants and silent meditation 9:30am, full service 10am, social hour 11am. In-person and livestreamed on YouTube/Zoom. Free, open to all. zengr.org.",
+    source_url: "https://www.zengr.org", event_url: "https://www.zengr.org/sunday-services",
+  },
+
+  // ── Grand Rapids Zen — Sokukoji/Order of Immediate Light affiliate
+  // meetup.com/grandrapidszen · Tuesdays 6–8pm
+  {
+    org_id: "grand_rapids_zen", org_name: "Grand Rapids Zen (Sokukoji Affiliate)",
+    title: "Tuesday Evening Zen Sit",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 120,
+    address: "451 S Division Ave", city: "Grand Rapids", state: "MI", neighborhood: "Heartside",
+    lat: 42.9548, lng: -85.6679, tradition: "zen", location_type: "in-person",
+    notes: "Tuesday Evening Zen Sit (6–8pm ET) at Grand Rapids Buddhist Temple, 451 S Division Ave (rear entrance off Logan St), Grand Rapids MI 49503. Soto Zen — affiliated with SokukoJi Monastery, Battle Creek, and the Order of Immediate Light. Sitting meditation + dharma book study. Abbot Sokuzan gives occasional talks on the 1st Tuesday. Free, open to all. meetup.com/grandrapidszen.",
+    source_url: "https://www.meetup.com/grandrapidszen/", event_url: "https://www.meetup.com/grandrapidszen/",
+  },
+
   // ── Jackson, Mississippi — Phase 3 (heartbeat 97) ─────────────────────────
   // Both groups meet at Wolfe Fine Art Studio Dojo, 4308 Old Canton Rd, Jackson MS 39211
   // (North Jackson, near I-55 and Northside Drive). Contact: Bebe Wolfe (601) 201-4228.

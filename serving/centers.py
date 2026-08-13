@@ -7518,4 +7518,44 @@ CENTERS = {
             "Free. Phone: 912-657-1876. savannahbuddhist.org."
         ),
     },
+    "grand_rapids_buddhist_temple": {
+        "id": "grand_rapids_buddhist_temple",
+        "name": "Grand Rapids Buddhist Temple",
+        "url": "https://www.zengr.org",
+        "address": "451 S Division Ave",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9548,
+        "lng": -85.6679,
+        "tradition": "zen",
+        "description": (
+            "Grand Rapids Buddhist Temple is a multi-tradition center rooted in Soto Zen "
+            "Mahayana Buddhism, located at 451 S Division Ave in the Heartside neighborhood. "
+            "The temple also hosts Tibetan Gelug instruction and the Heartside Mindfulness "
+            "School. Sunday program: chants and silent meditation 9:30am, full service 10am, "
+            "social hour 11am — in-person and livestreamed on YouTube/Zoom. Open to all, free. "
+            "zengr.org."
+        ),
+    },
+    "grand_rapids_zen": {
+        "id": "grand_rapids_zen",
+        "name": "Grand Rapids Zen (Sokukoji Affiliate)",
+        "url": "https://www.meetup.com/grandrapidszen/",
+        "address": "451 S Division Ave",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "zip": "49503",
+        "lat": 42.9548,
+        "lng": -85.6679,
+        "tradition": "zen",
+        "description": (
+            "Grand Rapids Zen is a Soto Zen group affiliated with SokukoJi Buddhist Temple "
+            "Monastery in Battle Creek and the Order of Immediate Light. Meets Tuesdays "
+            "6–8pm at the Grand Rapids Buddhist Temple (rear entrance off Logan St), "
+            "451 S Division Ave. Sessions include sitting meditation and dharma book study. "
+            "Abbot Sokuzan occasionally gives talks on the 1st Tuesday. Free and open to all. "
+            "meetup.com/grandrapidszen."
+        ),
+    },
 }
