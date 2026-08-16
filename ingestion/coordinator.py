@@ -101,6 +101,7 @@ from ingestion.sources import tacoma as tacoma_sources  # noqa: F401 (no live fe
 from ingestion.sources import greenville as greenville_sources
 from ingestion.sources import columbia as columbia_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import corpus_christi as corpus_christi_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import kalamazoo as kalamazoo_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

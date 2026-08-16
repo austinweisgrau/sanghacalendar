@@ -113,6 +113,7 @@ from ingestion.sources import savannah as savannah_sources  # noqa: F401 (no liv
 from ingestion.sources import corpus_christi as corpus_christi_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import jackson_ms as jackson_ms_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import grand_rapids as grand_rapids_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import kalamazoo as kalamazoo_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

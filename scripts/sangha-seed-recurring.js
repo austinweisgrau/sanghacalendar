@@ -6025,6 +6025,68 @@ const SITS = [
     source_url: "https://www.meetup.com/grandrapidszen/", event_url: "https://www.meetup.com/grandrapidszen/",
   },
 
+  // ── Kalamazoo / Battle Creek, Michigan — Phase 3 (heartbeat 99) ─────────────
+  // SokukoJi Buddhist Temple Monastery (Battle Creek) + Jewel Heart West Michigan (Kalamazoo)
+
+  // ── SokukoJi — Soto Zen monastery, Battle Creek MI
+  // sokukoji.org · Daily sits open to all, drop-in welcome
+
+  // Sunday Morning Service — most public-facing session, hybrid in-person + Zoom
+  {
+    org_id: "sokukoji", org_name: "SokukoJi Buddhist Temple Monastery",
+    title: "Sunday Morning Service",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "33 Anderson Ct", city: "Battle Creek", state: "MI",
+    lat: 42.3170, lng: -85.1813, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Morning Service (10:00–11:00am ET) at SokukoJi Buddhist Temple Monastery, 33 Anderson Ct, Battle Creek MI 49017. Soto Zen / Order of Immediate Light (Soto + Kagyu blend), led by Abbot Kyoun Sokuzan. Zazen, chanting, dharma. In-person (drop-in welcome; chairs available; dark clothing encouraged) and on Zoom. Free; donations welcome. sokukoji.org.",
+    source_url: "https://www.sokukoji.org/meditate-with-us", event_url: "https://www.sokukoji.org/meditate-with-us",
+  },
+
+  // Wednesday Evening Service — accessible weeknight session
+  {
+    org_id: "sokukoji", org_name: "SokukoJi Buddhist Temple Monastery",
+    title: "Wednesday Evening Service",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "33 Anderson Ct", city: "Battle Creek", state: "MI",
+    lat: 42.3170, lng: -85.1813, tradition: "zen", location_type: "hybrid",
+    notes: "Wednesday Evening Service (7:00–8:00pm ET) at SokukoJi Buddhist Temple Monastery, 33 Anderson Ct, Battle Creek MI 49017. Zazen and chanting (Zazen 7:20pm), in-person and online (Zoom). Drop-in welcome. Free; donations welcome. sokukoji.org.",
+    source_url: "https://www.sokukoji.org/meditate-with-us", event_url: "https://www.sokukoji.org/meditate-with-us",
+  },
+
+  // Afternoon Meditation — Mon/Tue/Wed/Fri (core daily monastery practice)
+  {
+    org_id: "sokukoji", org_name: "SokukoJi Buddhist Temple Monastery",
+    title: "Afternoon Meditation",
+    days: ["Monday", "Tuesday", "Wednesday", "Friday"], time: { h: 14, m: 30 }, duration_min: 120,
+    address: "33 Anderson Ct", city: "Battle Creek", state: "MI",
+    lat: 42.3170, lng: -85.1813, tradition: "zen", location_type: "in-person",
+    notes: "Afternoon Meditation (2:30–4:30pm ET), Mon/Tue/Wed/Fri at SokukoJi Buddhist Temple Monastery, 33 Anderson Ct, Battle Creek MI 49017. Zazen, Maitri Bhavana (loving-kindness), and chanting. Open to all; drop-in welcome; chairs available; dark clothing encouraged. Free; donations welcome. sokukoji.org.",
+    source_url: "https://www.sokukoji.org/meditate-with-us", event_url: "https://www.sokukoji.org/meditate-with-us",
+  },
+
+  // Morning Service — Tue/Wed/Fri (for morning practitioners)
+  {
+    org_id: "sokukoji", org_name: "SokukoJi Buddhist Temple Monastery",
+    title: "Morning Service",
+    days: ["Tuesday", "Wednesday", "Friday"], time: { h: 8, m: 0 }, duration_min: 60,
+    address: "33 Anderson Ct", city: "Battle Creek", state: "MI",
+    lat: 42.3170, lng: -85.1813, tradition: "zen", location_type: "in-person",
+    notes: "Morning Service (8:00–9:00am ET), Tue/Wed/Fri at SokukoJi Buddhist Temple Monastery, 33 Anderson Ct, Battle Creek MI 49017. Zazen and chanting to start the day. Open to all; drop-in welcome. Free; donations welcome. sokukoji.org.",
+    source_url: "https://www.sokukoji.org/meditate-with-us", event_url: "https://www.sokukoji.org/meditate-with-us",
+  },
+
+  // ── Jewel Heart West Michigan — Tibetan Vajrayana, Kalamazoo MI
+  // jewelheart.org · Tuesday 7–8:30pm at People's Church of Kalamazoo
+  {
+    org_id: "jewel_heart_west_michigan", org_name: "Jewel Heart West Michigan",
+    title: "Tuesday Evening Dharma & Meditation",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1758 N 10th St", city: "Kalamazoo", state: "MI",
+    lat: 42.3091, lng: -85.5697, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Dharma & Meditation (7:00–8:30pm ET) at People's Church of Kalamazoo, 1758 N 10th St N, Kalamazoo MI 49009. Jewel Heart West Michigan — Tibetan Vajrayana, affiliated with Jewel Heart International (founded by Kyabje Gelek Rimpoche; also Demo Rinpoche). Course-based dharma study with sitting meditation. All are welcome; donations appreciated; no registration required. jewelheart.org/chapters/west-michigan.",
+    source_url: "https://www.jewelheart.org/chapters/west-michigan/", event_url: "https://www.jewelheart.org/chapters/west-michigan/west-michigan-programs/",
+  },
+
   // ── Jackson, Mississippi — Phase 3 (heartbeat 97) ─────────────────────────
   // Both groups meet at Wolfe Fine Art Studio Dojo, 4308 Old Canton Rd, Jackson MS 39211
   // (North Jackson, near I-55 and Northside Drive). Contact: Bebe Wolfe (601) 201-4228.

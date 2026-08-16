@@ -7558,4 +7558,45 @@ CENTERS = {
             "meetup.com/grandrapidszen."
         ),
     },
+    "sokukoji": {
+        "id": "sokukoji",
+        "name": "SokukoJi Buddhist Temple Monastery",
+        "url": "https://www.sokukoji.org",
+        "address": "33 Anderson Ct",
+        "city": "Battle Creek",
+        "state": "MI",
+        "zip": "49017",
+        "lat": 42.3170,
+        "lng": -85.1813,
+        "tradition": "zen",
+        "description": (
+            "SokukoJi Buddhist Temple Monastery is a Soto Zen monastery in Battle Creek led by "
+            "Abbot Kyoun Sokuzan. The Order of Immediate Light blends Soto Zen with Tibetan "
+            "Kagyu elements. Daily sitting practice with morning and afternoon sessions, "
+            "Wednesday evening service (7pm), and Sunday morning service (10am) — all open to "
+            "the public, drop-in welcome. Chairs available; dark non-descript clothing "
+            "encouraged. Online (Zoom) links available for most sessions. Free; donations "
+            "welcome. sokukoji.org."
+        ),
+    },
+    "jewel_heart_west_michigan": {
+        "id": "jewel_heart_west_michigan",
+        "name": "Jewel Heart West Michigan",
+        "url": "https://www.jewelheart.org/chapters/west-michigan/",
+        "address": "1758 N 10th St",
+        "city": "Kalamazoo",
+        "state": "MI",
+        "zip": "49009",
+        "lat": 42.3091,
+        "lng": -85.5697,
+        "tradition": "tibetan",
+        "description": (
+            "Jewel Heart West Michigan is a Tibetan Vajrayana center affiliated with Jewel "
+            "Heart International, founded by Kyabje Gelek Rimpoche and based in Ann Arbor. "
+            "Teachings are offered by Demo Rinpoche and local teachers. Meets Tuesdays "
+            "7–8:30pm at People's Church of Kalamazoo, 1758 N 10th St N, Kalamazoo MI 49009. "
+            "All are welcome; donations appreciated; no registration required. "
+            "jewelheart.org/chapters/west-michigan."
+        ),
+    },
 }
