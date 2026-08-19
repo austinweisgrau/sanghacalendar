@@ -7599,4 +7599,45 @@ CENTERS = {
             "jewelheart.org/chapters/west-michigan."
         ),
     },
+    "ozarks_dharma": {
+        "id": "ozarks_dharma",
+        "name": "Ozarks Dharma Community",
+        "url": "https://www.ozarksdharma.org",
+        "address": "1515 S National Ave",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806",
+        "lat": 37.1864,
+        "lng": -93.2875,
+        "tradition": "theravada",
+        "description": (
+            "Ozarks Dharma Community is a lay-led non-sectarian meditation community "
+            "founded in 2001. Rooted in the Insight/Vipassana tradition, drawing on teachers "
+            "including Jack Kornfield, Shinzen Young, Kenneth Folk, and Daniel Ingram. "
+            "Saturday mornings 9:00–10:15am and Thursday evenings 7:00–8:30pm, hybrid "
+            "in-person at National Avenue Christian Church (Parlor Room) and Zoom. "
+            "Monthly day-long silent retreats. Drop-in welcome, free. ozarksdharma.org."
+        ),
+    },
+    "dinh_quang": {
+        "id": "dinh_quang",
+        "name": "Dinh Quang Buddhist Temple",
+        "url": "https://dinhquangtemple.com",
+        "address": "2901 W High St",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65803",
+        "lat": 37.2177,
+        "lng": -93.3213,
+        "tradition": "zen",
+        "description": (
+            "Dinh Quang Buddhist Temple is a Vietnamese Buddhist community in Springfield "
+            "practicing in the Lâm Tế (Linji) Zen lineage blended with Pure Land. "
+            "Bilingual (English and Vietnamese). English-language services open to all: "
+            "Sunday 9:00am (chanting + meditation) and Wednesday 6:00pm (chanting + "
+            "meditation), followed by Dharma class. Third Saturday Days of Mindfulness. "
+            "Teacher: Giac Vien. Free and open to all. Phone: 417-866-1095. "
+            "dinhquangtemple.com."
+        ),
+    },
 }

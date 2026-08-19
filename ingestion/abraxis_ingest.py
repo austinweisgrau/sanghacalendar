@@ -114,6 +114,7 @@ from ingestion.sources import corpus_christi as corpus_christi_sources  # noqa: 
 from ingestion.sources import jackson_ms as jackson_ms_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import grand_rapids as grand_rapids_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import kalamazoo as kalamazoo_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import springfield_mo as springfield_mo_sources
 
 log = logging.getLogger(__name__)
 
@@ -1312,6 +1313,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Baton Rouge Eventbrite {org_id} failed: {e}")
+
+    # Springfield MO Phase 3 — Ozarks Dharma Community iCal
+    log.info("--- Springfield MO Phase 3: Ozarks Dharma Community iCal ---")
+    for org_id, feed_cfg in springfield_mo_sources.ICAL_FEEDS.items():
+        center = springfield_mo_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Springfield MO iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Springfield MO iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

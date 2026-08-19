@@ -6132,6 +6132,34 @@ const SITS = [
     notes: "Saturday Morning Sit & Dharma Study (~9:00–10:15am CT) at the Wolfe Fine Art Studio Dojo, 4308 Old Canton Rd, Jackson MS 39211. Jackson Insight Meditation Group (Theravada / Vipassana). 30-min silent sitting followed by discussion of a recorded dharma talk or book study. Drop-in welcome, no registration. Free for all. Contact: bebewolfe@gmail.com or (601) 201-4228. dharmainmississippi.com.",
     source_url: "https://dharmainmississippi.com/opportunities-to-practice/jackson-insight-meditation-group", event_url: "https://dharmainmississippi.com/opportunities-to-practice/jackson-insight-meditation-group",
   },
+
+  // ── Springfield, Missouri — Phase 3 (heartbeat 100) ──────────────────────
+  // Dinh Quang Buddhist Temple — Vietnamese Zen (Lâm Tế/Linji) + Pure Land
+  // 2901 W High St, Springfield MO 65803 · dinhquangtemple.com
+  // English-language services open to all. No machine-readable calendar.
+  // Ozarks Dharma Community (ozarks_dharma) is wired as a live iCal feed.
+
+  // ── Dinh Quang Buddhist Temple — Sunday English meditation
+  {
+    org_id: "dinh_quang", org_name: "Dinh Quang Buddhist Temple",
+    title: "Sunday Morning English Meditation",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 70,
+    address: "2901 W High St", city: "Springfield", state: "MO",
+    lat: 37.2177, lng: -93.3213, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning English Meditation (9:00–10:10am CT) at Dinh Quang Buddhist Temple, 2901 W High St, Springfield MO 65803. Vietnamese Lâm Tế (Linji) Zen + Pure Land tradition. English-language chanting and silent meditation open to all backgrounds. Followed by Dharma class 10:10am. Teacher: Giac Vien. Free. Also available via Zoom and Facebook Live. Phone: 417-866-1095. dinhquangtemple.com.",
+    source_url: "https://dinhquangtemple.com/index.php/practice/", event_url: "https://dinhquangtemple.com/index.php/practice/",
+  },
+
+  // ── Dinh Quang Buddhist Temple — Wednesday English meditation
+  {
+    org_id: "dinh_quang", org_name: "Dinh Quang Buddhist Temple",
+    title: "Wednesday Evening English Meditation",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 70,
+    address: "2901 W High St", city: "Springfield", state: "MO",
+    lat: 37.2177, lng: -93.3213, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday Evening English Meditation (6:00–7:10pm CT) at Dinh Quang Buddhist Temple, 2901 W High St, Springfield MO 65803. Vietnamese Lâm Tế (Linji) Zen + Pure Land tradition. English-language chanting and silent meditation open to all backgrounds. Followed by Dharma class 7:10pm. Teacher: Giac Vien. Free. Also available via Zoom. Phone: 417-866-1095. dinhquangtemple.com.",
+    source_url: "https://dinhquangtemple.com/index.php/practice/", event_url: "https://dinhquangtemple.com/index.php/practice/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
