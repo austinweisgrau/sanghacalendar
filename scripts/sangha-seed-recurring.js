@@ -6160,6 +6160,62 @@ const SITS = [
     notes: "Wednesday Evening English Meditation (6:00–7:10pm CT) at Dinh Quang Buddhist Temple, 2901 W High St, Springfield MO 65803. Vietnamese Lâm Tế (Linji) Zen + Pure Land tradition. English-language chanting and silent meditation open to all backgrounds. Followed by Dharma class 7:10pm. Teacher: Giac Vien. Free. Also available via Zoom. Phone: 417-866-1095. dinhquangtemple.com.",
     source_url: "https://dinhquangtemple.com/index.php/practice/", event_url: "https://dinhquangtemple.com/index.php/practice/",
   },
+
+  // ── Fort Wayne, Indiana — Phase 3 (heartbeat 101) ────────────────────────
+  // Two centers offering regular English-language public meditation.
+
+  // ── Insight Meditation Fort Wayne (IMFW) — Theravada/Vipassana, lay sangha
+  // imfw.org · Squarespace site, no iCal · Affiliated with Mid America Dharma
+  // 2332 Sandpoint Rd, Fort Wayne IN 46809 (SW Fort Wayne — "Sangha House")
+  {
+    org_id: "imfw", org_name: "Insight Meditation Fort Wayne",
+    title: "Tuesday Evening Sit",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "2332 Sandpoint Road", city: "Fort Wayne", state: "IN",
+    lat: 41.0485, lng: -85.2167, tradition: "theravada", location_type: "hybrid",
+    notes: "Tuesday Evening Sit (6:00–7:00pm ET) at the IMFW Sangha House, 2332 Sandpoint Rd, Fort Wayne IN 46809. Insight Meditation Fort Wayne (Theravada/Vipassana). 30 minutes of guided meditation followed by a dharma talk. Hybrid — in-person and Zoom (Zoom link via mailing list). Second Tuesday of each month includes a Refuge Ceremony. Drop-in welcome; no experience required; free. imfw.org.",
+    source_url: "https://www.imfw.org/tuesday", event_url: "https://www.imfw.org/tuesday",
+  },
+  {
+    org_id: "imfw", org_name: "Insight Meditation Fort Wayne",
+    title: "Sunday Morning Sit",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "2332 Sandpoint Road", city: "Fort Wayne", state: "IN",
+    lat: 41.0485, lng: -85.2167, tradition: "theravada", location_type: "in-person",
+    notes: "Sunday Morning Sit (10:00–11:00am ET) at the IMFW Sangha House, 2332 Sandpoint Rd, Fort Wayne IN 46809. Insight Meditation Fort Wayne (Theravada/Vipassana). 40 minutes of silent sitting meditation; walking meditation optional. In-person only. Drop-in welcome; no experience required; free. imfw.org.",
+    source_url: "https://www.imfw.org/sunday", event_url: "https://www.imfw.org/sunday",
+  },
+
+  // ── Indiana Buddhist Temple (Indiana Buddhist Vihara) — Theravada (Sri Lankan)
+  // indianabuddhistvihara.org · Static HTML · Hoagland IN (~15 mi SE of Fort Wayne)
+  // 7528 Thompson Rd, Hoagland IN 46745 · Abbot: Bhante Devananda · Founded 2003
+  {
+    org_id: "indiana_buddhist_vihara", org_name: "Indiana Buddhist Temple",
+    title: "Monday Metta Meditation",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "7528 Thompson Road", city: "Hoagland", state: "IN",
+    lat: 40.9892, lng: -84.9969, tradition: "theravada", location_type: "in-person",
+    notes: "Monday Loving-Kindness Meditation (Metta Bhavana, 6:30–7:30pm ET) at Indiana Buddhist Temple (Indiana Buddhist Vihara), 7528 Thompson Rd, Hoagland IN 46745 (~15 miles SE of Fort Wayne). Sri Lankan Theravada, Abbot Bhante Devananda. English-language, open to all backgrounds. Also livestreamed on Facebook and YouTube. Free. 260-447-5269. indianabuddhistvihara.org.",
+    source_url: "https://www.indianabuddhistvihara.org", event_url: "https://www.indianabuddhistvihara.org/events.html",
+  },
+  {
+    org_id: "indiana_buddhist_vihara", org_name: "Indiana Buddhist Temple",
+    title: "Thursday Anapanasati Meditation",
+    days: ["Thursday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "7528 Thompson Road", city: "Hoagland", state: "IN",
+    lat: 40.9892, lng: -84.9969, tradition: "theravada", location_type: "in-person",
+    notes: "Thursday Mindfulness of Breathing (Anapanasati Bhavana, 6:30–7:30pm ET) at Indiana Buddhist Temple (Indiana Buddhist Vihara), 7528 Thompson Rd, Hoagland IN 46745 (~15 miles SE of Fort Wayne). Sri Lankan Theravada, Abbot Bhante Devananda. English-language, open to all backgrounds. Also livestreamed on Facebook and YouTube. Free. 260-447-5269. indianabuddhistvihara.org.",
+    source_url: "https://www.indianabuddhistvihara.org", event_url: "https://www.indianabuddhistvihara.org/events.html",
+  },
+  {
+    org_id: "indiana_buddhist_vihara", org_name: "Indiana Buddhist Temple",
+    title: "Saturday Sutta Study & Meditation",
+    days: ["Saturday"], time: { h: 14, m: 0 }, duration_min: 90,
+    address: "7528 Thompson Road", city: "Hoagland", state: "IN",
+    lat: 40.9892, lng: -84.9969, tradition: "theravada", location_type: "in-person",
+    notes: "Saturday Sutta Discussion & Meditation (2:00–3:30pm ET) at Indiana Buddhist Temple (Indiana Buddhist Vihara), 7528 Thompson Rd, Hoagland IN 46745 (~15 miles SE of Fort Wayne). Sri Lankan Theravada, Abbot Bhante Devananda. Book study (Middle-length Discourses / Majjhima Nikaya) + silent sitting meditation. English-language, open to all backgrounds. Free. 260-447-5269. indianabuddhistvihara.org.",
+    source_url: "https://www.indianabuddhistvihara.org", event_url: "https://www.indianabuddhistvihara.org/events.html",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

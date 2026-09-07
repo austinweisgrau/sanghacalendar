@@ -7640,4 +7640,48 @@ CENTERS = {
             "dinhquangtemple.com."
         ),
     },
+    "imfw": {
+        "id": "imfw",
+        "name": "Insight Meditation Fort Wayne",
+        "url": "https://www.imfw.org",
+        "address": "2332 Sandpoint Road",
+        "city": "Fort Wayne",
+        "state": "IN",
+        "zip": "46809",
+        "lat": 41.0485,
+        "lng": -85.2167,
+        "tradition": "theravada",
+        "description": (
+            "Insight Meditation Fort Wayne (IMFW) is a lay Theravada / Vipassana sangha "
+            "affiliated with Mid America Dharma, meeting at its Sangha House on Sandpoint "
+            "Road in southwest Fort Wayne. Tuesday Evening Sits (6:00–7:00 PM) combine 30 "
+            "minutes of guided meditation with a dharma talk — hybrid in-person and Zoom. "
+            "Sunday Morning Sits (10:00 AM) are 40 minutes of silent sitting with optional "
+            "walking meditation, in-person only. Second Tuesday of each month includes a "
+            "Refuge Ceremony. Free and open to all; no experience required. "
+            "InsightMeditationFW@gmail.com. imfw.org."
+        ),
+    },
+    "indiana_buddhist_vihara": {
+        "id": "indiana_buddhist_vihara",
+        "name": "Indiana Buddhist Temple",
+        "url": "https://www.indianabuddhistvihara.org",
+        "address": "7528 Thompson Road",
+        "city": "Hoagland",
+        "state": "IN",
+        "zip": "46745",
+        "lat": 40.9892,
+        "lng": -84.9969,
+        "tradition": "theravada",
+        "description": (
+            "Indiana Buddhist Temple (Indiana Buddhist Vihara) is a Sri Lankan Theravada "
+            "community in Hoagland, about 15 miles southeast of downtown Fort Wayne. Founded "
+            "in June 2003, led by Abbot Venerable Thalangama Devananda (Bhante Devananda). "
+            "Three weekly English-language programs open to all: Monday Loving-Kindness "
+            "Meditation (Metta Bhavana, 6:30 PM), Thursday Mindfulness of Breathing "
+            "(Anapanasati Bhavana, 6:30 PM), and Saturday Sutta Discussion & Meditation "
+            "(2:00 PM, Majjhima Nikaya study). Monthly retreats. Services livestreamed on "
+            "Facebook and YouTube. Free. Phone: 260-447-5269. indianabuddhistvihara.org."
+        ),
+    },
 }
