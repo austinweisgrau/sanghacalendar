@@ -6216,6 +6216,38 @@ const SITS = [
     notes: "Saturday Sutta Discussion & Meditation (2:00–3:30pm ET) at Indiana Buddhist Temple (Indiana Buddhist Vihara), 7528 Thompson Rd, Hoagland IN 46745 (~15 miles SE of Fort Wayne). Sri Lankan Theravada, Abbot Bhante Devananda. Book study (Middle-length Discourses / Majjhima Nikaya) + silent sitting meditation. English-language, open to all backgrounds. Free. 260-447-5269. indianabuddhistvihara.org.",
     source_url: "https://www.indianabuddhistvihara.org", event_url: "https://www.indianabuddhistvihara.org/events.html",
   },
+
+  // ── Lansing MI Phase 3 ────────────────────────────────────────────────────
+  // lamc.info · Plum Village / TNH lineage · hybrid in-person + Zoom
+  {
+    org_id: "lamc", org_name: "Lansing Area Mindfulness Community",
+    title: "Wednesday Evening Meditation & Dharma Discussion",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "3015 S. Martin Luther King Jr. Blvd", city: "Lansing", state: "MI",
+    lat: 42.7025, lng: -84.5486, tradition: "zen", location_type: "hybrid",
+    notes: "Wednesday Evening Practice (7:00–9:00pm ET) at Van Hanh Temple (Chua Van Hanh), 3015 S. Martin Luther King Jr. Blvd, Lansing MI 48910. Lansing Area Mindfulness Community — Plum Village / Thich Nhat Hanh lineage. 15 minutes walking meditation, 30 minutes sitting, followed by dharma discussion. Hybrid in-person and Zoom. Beginner-friendly, drop-in welcome, no experience needed. Free. info@lamc.info. lamc.info.",
+    source_url: "https://lamc.info/weeklypractice/", event_url: "https://lamc.info/weeklypractice/",
+  },
+  // michiganzencenter.com · Japanese Zen · Okemos (East Lansing metro)
+  {
+    org_id: "michigan_zen_center", org_name: "Michigan Zen Center",
+    title: "Sunday Morning Zen Service",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 90,
+    address: "2254 Hamilton Road", city: "Okemos", state: "MI", neighborhood: "Okemos (East Lansing metro)",
+    lat: 42.7083, lng: -84.4044, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Service (9:00 AM) at Michigan Zen Center, 2254 Hamilton Road, Okemos MI 48864. Japanese-lineage Zen community led by ordained Zen priest Ryunen Don Davis (since 2002). Zazen, liturgy, dharma talk. Drop-in welcome. contact@michiganzencenter.com. michiganzencenter.com.",
+    source_url: "https://michiganzencenter.com", event_url: "https://michiganzencenter.com",
+  },
+  // dhammasala.org · Thai Forest Theravada (Dhammayut) · Perry MI ~20 mi NE of Lansing
+  {
+    org_id: "dhammasala_forest_monastery", org_name: "Dhammasala Forest Monastery",
+    title: "Saturday Dhamma Class",
+    days: ["Saturday"], time: { h: 17, m: 30 }, duration_min: 60,
+    address: "14780 Beardslee Road", city: "Perry", state: "MI", neighborhood: "Perry (Lansing metro, ~20 mi NE)",
+    lat: 42.8190, lng: -84.3530, tradition: "theravada", location_type: "in-person",
+    notes: "Saturday Dhamma Class (5:30–6:30pm ET) at Dhammasala Forest Monastery (Wat Dhammasala), 14780 Beardslee Rd, Perry MI 48872. Thai Forest Theravada / Dhammayut order on 28 acres of forest, ~20 miles northeast of Lansing. Guided meditation, Dhamma teaching, informal discussion. Open to all; drop-in welcome; free. Phone: (517) 675-1010. dhammasala.org.",
+    source_url: "https://dhammasala.org/visiting/", event_url: "https://dhammasala.org/visiting/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

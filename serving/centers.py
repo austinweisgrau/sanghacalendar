@@ -7684,4 +7684,64 @@ CENTERS = {
             "Facebook and YouTube. Free. Phone: 260-447-5269. indianabuddhistvihara.org."
         ),
     },
+    # ── Lansing / East Lansing / Okemos / Perry, MI ─────────────────────────
+    "lamc": {
+        "id": "lamc",
+        "name": "Lansing Area Mindfulness Community",
+        "url": "https://lamc.info",
+        "address": "3015 S. Martin Luther King Jr. Blvd",
+        "city": "Lansing",
+        "state": "MI",
+        "zip": "48910",
+        "lat": 42.7025,
+        "lng": -84.5486,
+        "tradition": "zen",
+        "description": (
+            "Lansing Area Mindfulness Community (LAMC) is a Plum Village / Thich Nhat Hanh "
+            "lineage sangha meeting at Van Hanh Temple (Chua Van Hanh) in Lansing. Wednesday "
+            "evenings 7:00–9:00 PM: walking meditation (15 min), sitting (30 min), and "
+            "dharma discussion. Hybrid in-person and Zoom. Beginner-friendly, drop-in "
+            "welcome, no experience needed. Free. info@lamc.info. lamc.info."
+        ),
+    },
+    "michigan_zen_center": {
+        "id": "michigan_zen_center",
+        "name": "Michigan Zen Center",
+        "url": "https://michiganzencenter.com",
+        "address": "2254 Hamilton Road",
+        "city": "Okemos",
+        "state": "MI",
+        "zip": "48864",
+        "lat": 42.7083,
+        "lng": -84.4044,
+        "tradition": "zen",
+        "description": (
+            "Michigan Zen Center is a Japanese-lineage Zen community in Okemos, immediately "
+            "adjacent to East Lansing (~5 miles from Michigan State University). Led by "
+            "ordained Zen priest Ryunen Don Davis since 2002. Sunday morning service at "
+            "9:00 AM: zazen, liturgy, dharma talk. Drop-in welcome. "
+            "contact@michiganzencenter.com. michiganzencenter.com."
+        ),
+    },
+    "dhammasala_forest_monastery": {
+        "id": "dhammasala_forest_monastery",
+        "name": "Dhammasala Forest Monastery",
+        "url": "https://dhammasala.org",
+        "address": "14780 Beardslee Road",
+        "city": "Perry",
+        "state": "MI",
+        "zip": "48872",
+        "lat": 42.8190,
+        "lng": -84.3530,
+        "tradition": "theravada",
+        "description": (
+            "Dhammasala Forest Monastery (Wat Dhammasala) is a Thai Forest Theravada "
+            "monastery in the Dhammayut order, on 28 acres of forest in Perry MI — about "
+            "20 miles northeast of Lansing. Saturday Dhamma Class (5:30–6:30 PM) is open to "
+            "all: guided meditation, Dhamma teaching, informal discussion. Also open for "
+            "individual and group retreats May–September. The only traditional Theravada "
+            "forest monastery in the greater Lansing region. Phone: (517) 675-1010. "
+            "dhammasala.org."
+        ),
+    },
 }
