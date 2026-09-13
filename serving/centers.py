@@ -7744,4 +7744,27 @@ CENTERS = {
             "dhammasala.org."
         ),
     },
+    "open_land_sangha": {
+        "id": "open_land_sangha",
+        "name": "Open Land Sangha",
+        "url": "https://www.openlandsangha.org",
+        "address": "Downtown Moorhead",
+        "city": "Moorhead",
+        "state": "MN",
+        "zip": "56560",
+        "lat": 46.8738,
+        "lng": -96.7678,
+        "tradition": "zen",
+        "description": (
+            "Open Land Sangha is a lay Soto Zen community in Downtown Moorhead, MN, serving "
+            "the Fargo-Moorhead metro (ND/MN border). Founded in February 2018 by lay teacher "
+            "Nancy Nanshin White, authorized in the lineage of Rev. Patricia Dai-En Bennage "
+            "Roshi (Mt. Equity Zendo). Practice is shikantaza — just sitting. "
+            "Wednesdays 7:00–8:30 PM CT: zazen and dharma reading/discussion, hybrid "
+            "in-person Downtown Moorhead and Zoom. Mondays 7:00–8:30 PM CT: zazen + "
+            "reading, Zoom only. 2nd and 4th Fridays 7:00–8:00 AM CT: zazen via Zoom. "
+            "Contact them to schedule a brief introductory session before your first sit. "
+            "Free, open to all. openlandsangha.org."
+        ),
+    },
 }

@@ -6248,6 +6248,27 @@ const SITS = [
     notes: "Saturday Dhamma Class (5:30–6:30pm ET) at Dhammasala Forest Monastery (Wat Dhammasala), 14780 Beardslee Rd, Perry MI 48872. Thai Forest Theravada / Dhammayut order on 28 acres of forest, ~20 miles northeast of Lansing. Guided meditation, Dhamma teaching, informal discussion. Open to all; drop-in welcome; free. Phone: (517) 675-1010. dhammasala.org.",
     source_url: "https://dhammasala.org/visiting/", event_url: "https://dhammasala.org/visiting/",
   },
+
+  // ── Fargo-Moorhead Phase 3 ────────────────────────────────────────────────
+  // openlandsangha.org · Soto Zen (lay) · Downtown Moorhead MN / Fargo metro
+  {
+    org_id: "open_land_sangha", org_name: "Open Land Sangha",
+    title: "Monday Evening Zazen",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "Downtown Moorhead", city: "Moorhead", state: "MN", neighborhood: "Downtown Moorhead (Fargo-Moorhead metro)",
+    lat: 46.8738, lng: -96.7678, tradition: "zen", location_type: "online",
+    notes: "Monday Evening Zazen (7:00–8:30pm CT) via Zoom. Open Land Sangha — lay Soto Zen in the Fargo-Moorhead metro, founded 2018 by Nancy Nanshin White (Mt. Equity Sangha / Dai-En Bennage Roshi lineage). One 30-minute period of shikantaza followed by shared reading and discussion. Contact via openlandsangha.org to schedule a brief intro session before your first sit. Free. openlandsangha.org.",
+    source_url: "https://www.openlandsangha.org", event_url: "https://www.openlandsangha.org/upcoming-events",
+  },
+  {
+    org_id: "open_land_sangha", org_name: "Open Land Sangha",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "Downtown Moorhead", city: "Moorhead", state: "MN", neighborhood: "Downtown Moorhead (Fargo-Moorhead metro)",
+    lat: 46.8738, lng: -96.7678, tradition: "zen", location_type: "hybrid",
+    notes: "Wednesday Evening Zazen (7:00–8:30pm CT) — hybrid in-person Downtown Moorhead and Zoom. Open Land Sangha, lay Soto Zen, shikantaza. Formats vary by week: 1st Wed one 30-min zazen + reading/discussion; 2nd Wed two 20-min periods + kinhin + service; 3rd Wed one 30-min zazen + dharma talk; 4th Wed two 30-min periods + kinhin + precepts recitation. Contact via website to schedule a short intro session before joining. Free. openlandsangha.org.",
+    source_url: "https://www.openlandsangha.org", event_url: "https://www.openlandsangha.org/upcoming-events",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
