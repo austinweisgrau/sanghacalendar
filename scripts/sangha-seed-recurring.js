@@ -6249,6 +6249,54 @@ const SITS = [
     source_url: "https://dhammasala.org/visiting/", event_url: "https://dhammasala.org/visiting/",
   },
 
+  // ── Lubbock Phase 3 ──────────────────────────────────────────────────────
+  // meditationinlubbock.org · NKT Tibetan · SW Lubbock TX
+  {
+    org_id: "bodhichitta_kadampa_lubbock", org_name: "Bodhichitta Kadampa Buddhist Center",
+    title: "Monday Morning Meditation",
+    days: ["Monday"], time: { h: 7, m: 20 }, duration_min: 80,
+    address: "6701 Aberdeen Avenue, Suite 3", city: "Lubbock", state: "TX", neighborhood: "SW Lubbock",
+    lat: 33.5410, lng: -101.9095, tradition: "tibetan", location_type: "in-person",
+    notes: "Monday Morning Meditation with Heart Jewel Prayers (7:20–8:40am CT) at Bodhichitta Kadampa Buddhist Center, 6701 Aberdeen Ave Suite 3, Lubbock TX 79424. New Kadampa Tradition (NKT) Tibetan Buddhist center open to all. Drop-in welcome. Typical class fee ~$15; members free. meditationinlubbock.org.",
+    source_url: "https://meditationinlubbock.org", event_url: "https://meditationinlubbock.org/calendar/",
+  },
+  {
+    org_id: "bodhichitta_kadampa_lubbock", org_name: "Bodhichitta Kadampa Buddhist Center",
+    title: "Monday Evening Meditation",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "6701 Aberdeen Avenue, Suite 3", city: "Lubbock", state: "TX", neighborhood: "SW Lubbock",
+    lat: 33.5410, lng: -101.9095, tradition: "tibetan", location_type: "in-person",
+    notes: "Monday Evening General Program (6:30–7:45pm CT) at Bodhichitta Kadampa Buddhist Center, 6701 Aberdeen Ave Suite 3, Lubbock TX 79424. NKT Tibetan Buddhist center. Weekly drop-in meditation and dharma class open to all — no experience necessary. Typical class fee ~$15; members free. meditationinlubbock.org.",
+    source_url: "https://meditationinlubbock.org", event_url: "https://meditationinlubbock.org/monday-evenings/",
+  },
+  {
+    org_id: "bodhichitta_kadampa_lubbock", org_name: "Bodhichitta Kadampa Buddhist Center",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 30 }, duration_min: 75,
+    address: "6701 Aberdeen Avenue, Suite 3", city: "Lubbock", state: "TX", neighborhood: "SW Lubbock",
+    lat: 33.5410, lng: -101.9095, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Meditation (6:30–7:45pm CT) at Bodhichitta Kadampa Buddhist Center, 6701 Aberdeen Ave Suite 3, Lubbock TX 79424. NKT Tibetan Buddhist center. Drop-in meditation class open to all backgrounds. Typical class fee ~$15; members free. meditationinlubbock.org.",
+    source_url: "https://meditationinlubbock.org", event_url: "https://meditationinlubbock.org/tuesday-evenings/",
+  },
+  {
+    org_id: "bodhichitta_kadampa_lubbock", org_name: "Bodhichitta Kadampa Buddhist Center",
+    title: "Wednesday Morning Meditation",
+    days: ["Wednesday"], time: { h: 7, m: 20 }, duration_min: 80,
+    address: "6701 Aberdeen Avenue, Suite 3", city: "Lubbock", state: "TX", neighborhood: "SW Lubbock",
+    lat: 33.5410, lng: -101.9095, tradition: "tibetan", location_type: "in-person",
+    notes: "Wednesday Morning Meditation with Heart Jewel Prayers (7:20–8:40am CT) at Bodhichitta Kadampa Buddhist Center, 6701 Aberdeen Ave Suite 3, Lubbock TX 79424. NKT Tibetan Buddhist center open to all. Drop-in welcome. Typical class fee ~$15; members free. meditationinlubbock.org.",
+    source_url: "https://meditationinlubbock.org", event_url: "https://meditationinlubbock.org/calendar/",
+  },
+  {
+    org_id: "bodhichitta_kadampa_lubbock", org_name: "Bodhichitta Kadampa Buddhist Center",
+    title: "Friday Morning Meditation",
+    days: ["Friday"], time: { h: 7, m: 20 }, duration_min: 80,
+    address: "6701 Aberdeen Avenue, Suite 3", city: "Lubbock", state: "TX", neighborhood: "SW Lubbock",
+    lat: 33.5410, lng: -101.9095, tradition: "tibetan", location_type: "in-person",
+    notes: "Friday Morning Meditation with Heart Jewel Prayers (7:20–8:40am CT) at Bodhichitta Kadampa Buddhist Center, 6701 Aberdeen Ave Suite 3, Lubbock TX 79424. NKT Tibetan Buddhist center open to all. Drop-in welcome. Typical class fee ~$15; members free. meditationinlubbock.org.",
+    source_url: "https://meditationinlubbock.org", event_url: "https://meditationinlubbock.org/calendar/",
+  },
+
   // ── Fargo-Moorhead Phase 3 ────────────────────────────────────────────────
   // openlandsangha.org · Soto Zen (lay) · Downtown Moorhead MN / Fargo metro
   {

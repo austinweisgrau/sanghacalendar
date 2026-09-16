@@ -7454,6 +7454,32 @@ CENTERS = {
             "Free. Phone: (361) 851-2680."
         ),
     },
+    # ── Lubbock, Texas — Phase 3 (heartbeat 104) ─────────────────────────────
+    "bodhichitta_kadampa_lubbock": {
+        "id": "bodhichitta_kadampa_lubbock",
+        "name": "Bodhichitta Kadampa Buddhist Center",
+        "url": "https://meditationinlubbock.org",
+        "address": "6701 Aberdeen Avenue, Suite 3",
+        "city": "Lubbock",
+        "state": "TX",
+        "zip": "79424",
+        "lat": 33.5410,
+        "lng": -101.9095,
+        "tradition": "tibetan",
+        "description": (
+            "Bodhichitta Kadampa Buddhist Center (BKBC) is a New Kadampa Tradition "
+            "(NKT) Tibetan Buddhist center at 6701 Aberdeen Avenue Suite 3, Lubbock TX 79424. "
+            "Founded around 2010 as a branch of KMC Texas (Arlington) and now an independent "
+            "center with resident teacher Erica Richardson. Drop-in classes are open to all "
+            "with no prior experience needed. "
+            "Monday evenings 6:30–7:45 PM: General Program (Buddhist meditation and dharma). "
+            "Tuesday evenings 6:30–7:45 PM: Tuesday Evening Meditation. "
+            "Monday, Wednesday, and Friday mornings 7:20–8:40 AM: Morning Meditation "
+            "with Heart Jewel Prayers. "
+            "Thursday evenings 6:30–7:30 PM: Prayers for World Peace. "
+            "Class fees typically ~$15; members attend free. meditationinlubbock.org."
+        ),
+    },
     # ── Jackson, MS — Phase 3 (heartbeat 97) ─────────────────────────────────
     "jackson_zen_group": {
         "id": "jackson_zen_group",

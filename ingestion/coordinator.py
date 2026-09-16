@@ -104,6 +104,7 @@ from ingestion.sources import corpus_christi as corpus_christi_sources  # noqa: 
 from ingestion.sources import kalamazoo as kalamazoo_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import lansing as lansing_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import fargo as fargo_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import lubbock as lubbock_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
