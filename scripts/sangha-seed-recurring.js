@@ -6317,6 +6317,75 @@ const SITS = [
     notes: "Wednesday Evening Zazen (7:00–8:30pm CT) — hybrid in-person Downtown Moorhead and Zoom. Open Land Sangha, lay Soto Zen, shikantaza. Formats vary by week: 1st Wed one 30-min zazen + reading/discussion; 2nd Wed two 20-min periods + kinhin + service; 3rd Wed one 30-min zazen + dharma talk; 4th Wed two 30-min periods + kinhin + precepts recitation. Contact via website to schedule a short intro session before joining. Free. openlandsangha.org.",
     source_url: "https://www.openlandsangha.org", event_url: "https://www.openlandsangha.org/upcoming-events",
   },
+
+  // ── Dayton OH Phase 3 ─────────────────────────────────────────────────────
+  // zenfellowshipdayton.com · Kwan Um Zen · 61-B S Main St, Centerville OH
+  {
+    org_id: "zen_fellowship_dayton", org_name: "Zen Fellowship of Dayton",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "61-B South Main Street", city: "Centerville", state: "OH", neighborhood: "Centerville",
+    lat: 39.6292, lng: -84.1313, tradition: "zen", location_type: "in-person",
+    notes: "Tuesday Evening Zazen (7:00–8:00pm ET) at Zen Fellowship of Dayton, 61-B South Main St, Centerville OH 45458. Korean Zen (Kwan Um School), affiliated with Cincinnati Zen Center and Furnace Mountain. Abbot Hae Cho (Connie Klayko). Drop-in welcome, free. zenfellowshipdayton.com.",
+    source_url: "https://www.zenfellowshipdayton.com", event_url: "https://www.zenfellowshipdayton.com/calendar",
+  },
+  {
+    org_id: "zen_fellowship_dayton", org_name: "Zen Fellowship of Dayton",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 8, m: 0 }, duration_min: 60,
+    address: "61-B South Main Street", city: "Centerville", state: "OH", neighborhood: "Centerville",
+    lat: 39.6292, lng: -84.1313, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Zazen (8:00–9:00am ET) at Zen Fellowship of Dayton, 61-B South Main St, Centerville OH 45458. Korean Zen (Kwan Um School), affiliated with Cincinnati Zen Center and Furnace Mountain. Drop-in welcome, free. zenfellowshipdayton.com.",
+    source_url: "https://www.zenfellowshipdayton.com", event_url: "https://www.zenfellowshipdayton.com/calendar",
+  },
+
+  // ysdharma.org · non-sectarian (Vipassana + Zen + Vajrayana) · Yellow Springs OH
+  {
+    org_id: "yellow_springs_dharma", org_name: "Yellow Springs Dharma Center",
+    title: "Weekday Morning Open Meditation",
+    days: ["Monday","Tuesday","Wednesday","Thursday","Friday"], time: { h: 8, m: 0 }, duration_min: 40,
+    address: "502 Livermore Street", city: "Yellow Springs", state: "OH", neighborhood: "Yellow Springs",
+    lat: 39.8014, lng: -83.8911, tradition: "pluralist", location_type: "in-person",
+    notes: "Weekday Morning Open Meditation (8:00–8:40am ET) Mon–Fri at Yellow Springs Dharma Center, 502 Livermore St, Yellow Springs OH 45387. Non-sectarian; open to all traditions. Drop-in, free. Phone: (937) 767-9919. ysdharma.org.",
+    source_url: "https://www.ysdharma.org", event_url: "https://www.ysdharma.org/calendar-and-events/",
+  },
+  {
+    org_id: "yellow_springs_dharma", org_name: "Yellow Springs Dharma Center",
+    title: "Weekday Evening Open Meditation",
+    days: ["Monday","Tuesday","Wednesday","Thursday"], time: { h: 19, m: 0 }, duration_min: 30,
+    address: "502 Livermore Street", city: "Yellow Springs", state: "OH", neighborhood: "Yellow Springs",
+    lat: 39.8014, lng: -83.8911, tradition: "pluralist", location_type: "in-person",
+    notes: "Weekday Evening Open Meditation (7:00–7:30pm ET) Mon–Thu at Yellow Springs Dharma Center, 502 Livermore St, Yellow Springs OH 45387. Non-sectarian; open to all. Drop-in, free. ysdharma.org.",
+    source_url: "https://www.ysdharma.org", event_url: "https://www.ysdharma.org/calendar-and-events/",
+  },
+  {
+    org_id: "yellow_springs_dharma", org_name: "Yellow Springs Dharma Center",
+    title: "Saturday Zen Practice",
+    days: ["Saturday"], time: { h: 7, m: 30 }, duration_min: 120,
+    address: "502 Livermore Street", city: "Yellow Springs", state: "OH", neighborhood: "Yellow Springs",
+    lat: 39.8014, lng: -83.8911, tradition: "zen", location_type: "hybrid",
+    notes: "Saturday Zen Practice (7:30–9:30am ET) at Yellow Springs Dharma Center, 502 Livermore St, Yellow Springs OH 45387. Hybrid in-person and Zoom. Drop-in, free. ysdharma.org.",
+    source_url: "https://www.ysdharma.org", event_url: "https://www.ysdharma.org/calendar-and-events/",
+  },
+  {
+    org_id: "yellow_springs_dharma", org_name: "Yellow Springs Dharma Center",
+    title: "Sunday Vipassana Practice",
+    days: ["Sunday"], time: { h: 8, m: 0 }, duration_min: 120,
+    address: "502 Livermore Street", city: "Yellow Springs", state: "OH", neighborhood: "Yellow Springs",
+    lat: 39.8014, lng: -83.8911, tradition: "theravada", location_type: "in-person",
+    notes: "Sunday Vipassana Practice (8:00–10:00am ET) at Yellow Springs Dharma Center, 502 Livermore St, Yellow Springs OH 45387. Insight/Theravada tradition. Drop-in, free. ysdharma.org.",
+    source_url: "https://www.ysdharma.org", event_url: "https://www.ysdharma.org/calendar-and-events/",
+  },
+  {
+    org_id: "yellow_springs_dharma", org_name: "Yellow Springs Dharma Center",
+    title: "Sunday Vajrayana Practice",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 60,
+    weeks: [2, 3, 4],
+    address: "502 Livermore Street", city: "Yellow Springs", state: "OH", neighborhood: "Yellow Springs",
+    lat: 39.8014, lng: -83.8911, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Vajrayana Practice (11:00am–noon ET) 2nd, 3rd, and 4th Sundays at Yellow Springs Dharma Center, 502 Livermore St, Yellow Springs OH 45387. Tibetan tradition. Drop-in, free. ysdharma.org.",
+    source_url: "https://www.ysdharma.org", event_url: "https://www.ysdharma.org/calendar-and-events/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

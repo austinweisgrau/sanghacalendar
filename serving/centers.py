@@ -7793,4 +7793,68 @@ CENTERS = {
             "Free, open to all. openlandsangha.org."
         ),
     },
+    "gar_drolma": {
+        "id": "gar_drolma",
+        "name": "Gar Drolma Buddhist Learning and Meditation Center",
+        "url": "https://gardrolma.org",
+        "address": "1329 Creighton Avenue",
+        "city": "Dayton",
+        "state": "OH",
+        "zip": "45420",
+        "lat": 39.7412,
+        "lng": -84.1542,
+        "neighborhood": "Belmont",
+        "tradition": "tibetan",
+        "description": (
+            "Gar Drolma is a Drikung Kagyu Tibetan Buddhist learning and meditation center "
+            "in Dayton's Belmont neighborhood. Founded 2002/incorporated 2003 under the "
+            "guidance of His Eminence Garchen Rinpoche. Spiritual Director: Khenpo Samdup "
+            "Rinpoche. Offers weekly meditation and dharma teachings open to the public, "
+            "Vajrayana practices (Achi, Parnashavari, Chenrezig), and weekend programs "
+            "with Khenpo Samdup both in-person and online. Phone: (937) 252-2220. "
+            "gardrolma.org."
+        ),
+    },
+    "zen_fellowship_dayton": {
+        "id": "zen_fellowship_dayton",
+        "name": "Zen Fellowship of Dayton",
+        "url": "https://www.zenfellowshipdayton.com",
+        "address": "61-B South Main Street",
+        "city": "Centerville",
+        "state": "OH",
+        "zip": "45458",
+        "lat": 39.6292,
+        "lng": -84.1313,
+        "neighborhood": "Centerville",
+        "tradition": "zen",
+        "description": (
+            "Zen Fellowship of Dayton is a Korean Zen (Kwan Um School) sitting group in "
+            "Centerville, a suburb south of Dayton. Affiliated with Cincinnati Zen Center "
+            "and Furnace Mountain Zen Center in the lineage of Zen Master Seung Sahn. "
+            "Abbot: Hae Cho (Connie Klayko). Meets Tuesday evenings 7:00 PM and Sunday "
+            "mornings 8:00 AM. Drop-in welcome, free. zenfellowshipdayton.com."
+        ),
+    },
+    "yellow_springs_dharma": {
+        "id": "yellow_springs_dharma",
+        "name": "Yellow Springs Dharma Center",
+        "url": "https://www.ysdharma.org",
+        "address": "502 Livermore Street",
+        "city": "Yellow Springs",
+        "state": "OH",
+        "zip": "45387",
+        "lat": 39.8014,
+        "lng": -83.8911,
+        "neighborhood": "Yellow Springs",
+        "tradition": "pluralist",
+        "description": (
+            "Yellow Springs Dharma Center (YSDC) is a non-sectarian Buddhist practice center "
+            "in Yellow Springs, OH (~20 miles east of Dayton), home of Antioch College. "
+            "Supports Vipassana, Zen, and Vajrayana traditions under one roof. Robust daily "
+            "schedule: weekday morning open sit Mon–Fri 8:00–8:40 AM; weekday evening open "
+            "sit Mon–Thu 7:00–7:30 PM; Zen practice Saturdays 7:30–9:30 AM (Zoom available); "
+            "Vipassana Sundays 8:00–10:00 AM; Vajrayana 2nd/3rd/4th Sundays 11 AM–noon. "
+            "Orientation 2nd and 4th Mondays 7:30 PM. Phone: (937) 767-9919. ysdharma.org."
+        ),
+    },
 }

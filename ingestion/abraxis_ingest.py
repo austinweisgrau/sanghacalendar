@@ -116,6 +116,7 @@ from ingestion.sources import grand_rapids as grand_rapids_sources  # noqa: F401
 from ingestion.sources import kalamazoo as kalamazoo_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import springfield_mo as springfield_mo_sources
 from ingestion.sources import fort_wayne as fort_wayne_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import dayton as dayton_sources
 
 log = logging.getLogger(__name__)
 
@@ -1338,6 +1339,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Springfield MO iCal {org_id} failed: {e}")
+
+    # Dayton OH Phase 3 — Gar Drolma iCal
+    log.info("--- Dayton OH Phase 3: Gar Drolma iCal ---")
+    for org_id, feed_cfg in dayton_sources.ICAL_FEEDS.items():
+        center = dayton_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Dayton iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} sits found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Dayton iCal {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []
