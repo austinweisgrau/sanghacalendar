@@ -7857,4 +7857,87 @@ CENTERS = {
             "Orientation 2nd and 4th Mondays 7:30 PM. Phone: (937) 767-9919. ysdharma.org."
         ),
     },
+    "cleveland_buddhist_vihara_akron": {
+        "id": "cleveland_buddhist_vihara_akron",
+        "name": "Cleveland Buddhist Vihara and Meditation Center",
+        "url": "https://clevelandbuddhistvihara.org",
+        "address": "1695 Vernon Odom Blvd",
+        "city": "Akron",
+        "state": "OH",
+        "zip": "44320",
+        "lat": 41.0730,
+        "lng": -81.5562,
+        "neighborhood": "West Akron",
+        "tradition": "theravada",
+        "description": (
+            "Cleveland Buddhist Vihara and Meditation Center is a Sri Lankan Theravada "
+            "temple and practice center located in Akron's west side (despite the "
+            "'Cleveland' in its name). Resident ordained monastics guide regular dharma "
+            "programs and a public English-language guided meditation every Sunday "
+            "4:00–5:00 PM. Open to practitioners of all backgrounds; instruction available. "
+            "Free to attend. clevelandbuddhistvihara.org."
+        ),
+    },
+    "akron_canton_shambhala": {
+        "id": "akron_canton_shambhala",
+        "name": "Akron/Canton Shambhala Meditation Center",
+        "url": "https://akron.shambhala.org",
+        "address": "1707 Front Street",
+        "city": "Cuyahoga Falls",
+        "state": "OH",
+        "zip": "44221",
+        "lat": 41.1339,
+        "lng": -81.4826,
+        "neighborhood": "Cuyahoga Falls",
+        "tradition": "tibetan",
+        "description": (
+            "Akron/Canton Shambhala Meditation Center is a Shambhala International center "
+            "in Cuyahoga Falls, immediately north of Akron. Rooted in the Tibetan "
+            "Kagyu/Nyingma lineage of Chögyam Trungpa Rinpoche. Offers open meditation "
+            "Tuesday and Wednesday evenings at 6:45 PM with a meditation instructor "
+            "available for newcomers. All are welcome; no experience necessary. "
+            "Phone: (330) 983-9019. akron.shambhala.org."
+        ),
+    },
+    "kent_zendo": {
+        "id": "kent_zendo",
+        "name": "Kent Zendo",
+        "url": "http://kentzendo.org",
+        "address": "555 Franklin Avenue",
+        "city": "Kent",
+        "state": "OH",
+        "zip": "44240",
+        "lat": 41.1531,
+        "lng": -81.3576,
+        "neighborhood": "Kent",
+        "tradition": "zen",
+        "description": (
+            "Kent Zendo is a Soto Zen sitting group in Kent, Ohio (~12 miles southeast "
+            "of Akron, near Kent State University). A member of the Soto Zen Buddhist "
+            "Association (SZBA). Offers daily zazen Monday–Saturday evenings at 6 PM "
+            "and Sunday mornings at 11 AM with sitting instruction. The last Sunday of "
+            "each month is a half-day zazenkai (9 AM–3 PM). Drop-in welcome, free. "
+            "kentzendo.org."
+        ),
+    },
+    "uu_akron_zen": {
+        "id": "uu_akron_zen",
+        "name": "Zen Meditation Group at UU Akron",
+        "url": "https://uuakron.org/connection/zen-meditation/",
+        "address": "3300 Morewood Road",
+        "city": "Fairlawn",
+        "state": "OH",
+        "zip": "44333",
+        "lat": 41.1126,
+        "lng": -81.6352,
+        "neighborhood": "Fairlawn",
+        "tradition": "zen",
+        "description": (
+            "The Zen Meditation Group meets weekly at the Unitarian Universalist Church "
+            "of Akron in Fairlawn (western Akron suburb). Led by Steve Berg, a Zen "
+            "teacher with 15+ years of experience guiding weekly sits. Tuesdays "
+            "7:00–8:30 PM in the McKeeman room. No experience necessary — anyone is "
+            "welcome. Free. uuakron.org."
+        ),
+    },
 }

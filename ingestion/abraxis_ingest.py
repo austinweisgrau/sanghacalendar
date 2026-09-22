@@ -117,6 +117,7 @@ from ingestion.sources import kalamazoo as kalamazoo_sources  # noqa: F401 (no l
 from ingestion.sources import springfield_mo as springfield_mo_sources
 from ingestion.sources import fort_wayne as fort_wayne_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import dayton as dayton_sources
+from ingestion.sources import akron as akron_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

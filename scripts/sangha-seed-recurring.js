@@ -6386,6 +6386,81 @@ const SITS = [
     notes: "Sunday Vajrayana Practice (11:00am–noon ET) 2nd, 3rd, and 4th Sundays at Yellow Springs Dharma Center, 502 Livermore St, Yellow Springs OH 45387. Tibetan tradition. Drop-in, free. ysdharma.org.",
     source_url: "https://www.ysdharma.org", event_url: "https://www.ysdharma.org/calendar-and-events/",
   },
+
+  // ---------------------------------------------------------------------------
+  // Akron / NE Ohio
+  // clevelandbuddhistvihara.org · Theravada · 1695 Vernon Odom Blvd, Akron OH
+  // ---------------------------------------------------------------------------
+  {
+    org_id: "cleveland_buddhist_vihara_akron", org_name: "Cleveland Buddhist Vihara and Meditation Center",
+    title: "Sunday English Guided Meditation",
+    days: ["Sunday"], time: { h: 16, m: 0 }, duration_min: 60,
+    address: "1695 Vernon Odom Blvd", city: "Akron", state: "OH", neighborhood: "West Akron",
+    lat: 41.0730, lng: -81.5562, tradition: "theravada", location_type: "in-person",
+    notes: "Sunday English Guided Meditation (4:00–5:00pm ET) at Cleveland Buddhist Vihara and Meditation Center, 1695 Vernon Odom Blvd, Akron OH 44320. Sri Lankan Theravada. Resident monastics, open to all backgrounds. Free. clevelandbuddhistvihara.org.",
+    source_url: "https://clevelandbuddhistvihara.org", event_url: "https://clevelandbuddhistvihara.org/events/",
+  },
+
+  // akron.shambhala.org · Shambhala/Vajrayana · 1707 Front St, Cuyahoga Falls OH
+  {
+    org_id: "akron_canton_shambhala", org_name: "Akron/Canton Shambhala Meditation Center",
+    title: "Tuesday Evening Open Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 45 }, duration_min: 60,
+    address: "1707 Front Street", city: "Cuyahoga Falls", state: "OH", neighborhood: "Cuyahoga Falls",
+    lat: 41.1339, lng: -81.4826, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Open Meditation (6:45pm ET) at Akron/Canton Shambhala Meditation Center, 1707 Front St, Cuyahoga Falls OH 44221. Shambhala International (Tibetan Kagyu/Nyingma). Meditation instructor available for beginners. All welcome; no experience necessary. akron.shambhala.org.",
+    source_url: "https://akron.shambhala.org", event_url: "https://akron.shambhala.org/programs/",
+  },
+  {
+    org_id: "akron_canton_shambhala", org_name: "Akron/Canton Shambhala Meditation Center",
+    title: "Wednesday Evening Open Meditation",
+    days: ["Wednesday"], time: { h: 18, m: 45 }, duration_min: 60,
+    address: "1707 Front Street", city: "Cuyahoga Falls", state: "OH", neighborhood: "Cuyahoga Falls",
+    lat: 41.1339, lng: -81.4826, tradition: "tibetan", location_type: "in-person",
+    notes: "Wednesday Evening Open Meditation (6:45pm ET) at Akron/Canton Shambhala Meditation Center, 1707 Front St, Cuyahoga Falls OH 44221. Shambhala International (Tibetan Kagyu/Nyingma). Meditation instructor available for beginners. All welcome. akron.shambhala.org.",
+    source_url: "https://akron.shambhala.org", event_url: "https://akron.shambhala.org/programs/",
+  },
+
+  // kentzendo.org · Soto Zen (SZBA) · 555 Franklin Ave, Kent OH
+  {
+    org_id: "kent_zendo", org_name: "Kent Zendo",
+    title: "Evening Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], time: { h: 18, m: 0 }, duration_min: 45,
+    address: "555 Franklin Avenue", city: "Kent", state: "OH", neighborhood: "Kent",
+    lat: 41.1531, lng: -81.3576, tradition: "zen", location_type: "in-person",
+    notes: "Evening Zazen (6:00pm ET) Monday–Saturday at Kent Zendo, 555 Franklin Ave, Kent OH 44240. Soto Zen, SZBA member. Drop-in welcome, free. kentzendo.org.",
+    source_url: "http://kentzendo.org", event_url: "http://kentzendo.org/schedule",
+  },
+  {
+    org_id: "kent_zendo", org_name: "Kent Zendo",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 11, m: 0 }, duration_min: 60,
+    address: "555 Franklin Avenue", city: "Kent", state: "OH", neighborhood: "Kent",
+    lat: 41.1531, lng: -81.3576, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Zazen with instruction (11:00am ET) at Kent Zendo, 555 Franklin Ave, Kent OH 44240. Soto Zen, SZBA member. Sitting instruction available for newcomers. Drop-in, free. kentzendo.org.",
+    source_url: "http://kentzendo.org", event_url: "http://kentzendo.org/schedule",
+  },
+  {
+    org_id: "kent_zendo", org_name: "Kent Zendo",
+    title: "Zazenkai (Half-Day Retreat)",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 360,
+    weeks: [5],
+    address: "555 Franklin Avenue", city: "Kent", state: "OH", neighborhood: "Kent",
+    lat: 41.1531, lng: -81.3576, tradition: "zen", location_type: "in-person",
+    notes: "Zazenkai half-day retreat (9:00am–3:00pm ET) on the last Sunday of the month at Kent Zendo, 555 Franklin Ave, Kent OH 44240. Soto Zen, SZBA member. kentzendo.org.",
+    source_url: "http://kentzendo.org", event_url: "http://kentzendo.org/schedule",
+  },
+
+  // uuakron.org · Lay Zen (Steve Berg) · 3300 Morewood Rd, Fairlawn OH
+  {
+    org_id: "uu_akron_zen", org_name: "Zen Meditation Group at UU Akron",
+    title: "Tuesday Zen Meditation",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "3300 Morewood Road", city: "Fairlawn", state: "OH", neighborhood: "Fairlawn",
+    lat: 41.1126, lng: -81.6352, tradition: "zen", location_type: "in-person",
+    notes: "Tuesday Zen Meditation (7:00–8:30pm ET) at UU Church of Akron, McKeeman Room, 3300 Morewood Rd, Fairlawn OH 44333. Led by Steve Berg, a Zen teacher with 15+ years of experience. No experience necessary, drop-in, free. uuakron.org.",
+    source_url: "https://uuakron.org/connection/zen-meditation/", event_url: "https://uuakron.org/events/zen-meditation-group-9/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
