@@ -6461,6 +6461,50 @@ const SITS = [
     notes: "Tuesday Zen Meditation (7:00–8:30pm ET) at UU Church of Akron, McKeeman Room, 3300 Morewood Rd, Fairlawn OH 44333. Led by Steve Berg, a Zen teacher with 15+ years of experience. No experience necessary, drop-in, free. uuakron.org.",
     source_url: "https://uuakron.org/connection/zen-meditation/", event_url: "https://uuakron.org/events/zen-meditation-group-9/",
   },
+
+  // -----------------------------------------------------------------------
+  // Worcester MA Phase 3
+  // -----------------------------------------------------------------------
+
+  // boundlessway.org · Soto/Rinzai Zen · 1030 Pleasant St, Worcester MA
+  {
+    org_id: "boundless_way_worcester", org_name: "Boundless Way Zen Temple",
+    title: "Monday Evening Practice",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1030 Pleasant Street", city: "Worcester", state: "MA", neighborhood: "South Worcester",
+    lat: 42.2568, lng: -71.8012, tradition: "zen", location_type: "hybrid",
+    notes: "Monday Evening Practice (7:00–8:30pm ET) at Boundless Way Zen Temple (Mugendo-ji), 1030 Pleasant St, Worcester MA 01602. Soto/Rinzai Zen fusion — Guiding Teachers Melissa Myozen Blacker Roshi and David Dae An Rynick Roshi. Zazen, kinhin, dharma talk. Hybrid in-person + Zoom. SZBA/AZTA member. All welcome, no experience required. boundlessway.org.",
+    source_url: "https://boundlessway.org", event_url: "https://boundlessway.org/calendar/",
+  },
+  {
+    org_id: "boundless_way_worcester", org_name: "Boundless Way Zen Temple",
+    title: "Wednesday Evening Practice",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1030 Pleasant Street", city: "Worcester", state: "MA", neighborhood: "South Worcester",
+    lat: 42.2568, lng: -71.8012, tradition: "zen", location_type: "hybrid",
+    notes: "Wednesday Evening Practice (7:00–8:00pm ET) at Boundless Way Zen Temple (Mugendo-ji), 1030 Pleasant St, Worcester MA 01602. Zazen, kinhin, dharma talk or dokusan (individual teacher meetings). Hybrid in-person + Zoom. All welcome. boundlessway.org.",
+    source_url: "https://boundlessway.org", event_url: "https://boundlessway.org/calendar/",
+  },
+  {
+    org_id: "boundless_way_worcester", org_name: "Boundless Way Zen Temple",
+    title: "Sunday Evening Practice",
+    days: ["Sunday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "1030 Pleasant Street", city: "Worcester", state: "MA", neighborhood: "South Worcester",
+    lat: 42.2568, lng: -71.8012, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Evening Practice (7:00–8:30pm ET) at Boundless Way Zen Temple (Mugendo-ji), 1030 Pleasant St, Worcester MA 01602. Zazen, kinhin, dharma talk. Hybrid in-person + Zoom. All welcome, drop-in, free. boundlessway.org.",
+    source_url: "https://boundlessway.org", event_url: "https://boundlessway.org/calendar/",
+  },
+
+  // nebvmc.org · Sri Lankan Theravada · 162 Old Upton Rd, Grafton MA
+  {
+    org_id: "new_england_buddhist_vihara", org_name: "New England Buddhist Vihara",
+    title: "Wednesday Evening Meditation & Dharma Talk",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "162 Old Upton Road", city: "Grafton", state: "MA", neighborhood: "Grafton (Worcester metro)",
+    lat: 42.1993, lng: -71.6748, tradition: "theravada", location_type: "in-person",
+    notes: "Wednesday Evening Guided Meditation and Dharma Talk (7:00–8:30pm ET) at New England Buddhist Vihara and Meditation Center (Boston Buddhist Vihara), 162 Old Upton Rd, Grafton MA 01519. Sri Lankan Theravada, led by Ven. Aluthgama Dhammajothi Thero. English-language. Open to all, free. (508) 839-5038. nebvmc.org.",
+    source_url: "https://www.nebvmc.org", event_url: "https://www.nebvmc.org/calendar/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

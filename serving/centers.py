@@ -7940,4 +7940,48 @@ CENTERS = {
             "welcome. Free. uuakron.org."
         ),
     },
+    # --- Worcester MA Phase 3 ---
+    "boundless_way_worcester": {
+        "id": "boundless_way_worcester",
+        "name": "Boundless Way Zen Temple",
+        "url": "https://boundlessway.org",
+        "address": "1030 Pleasant Street",
+        "city": "Worcester",
+        "state": "MA",
+        "zip": "01602",
+        "lat": 42.2568,
+        "lng": -71.8012,
+        "neighborhood": "South Worcester",
+        "tradition": "zen",
+        "description": (
+            "Boundless Way Zen Temple (Mugendo-ji) is one of New England's most active "
+            "Zen practice centers, in Worcester, MA. Guiding Teachers Melissa Myozen "
+            "Blacker Roshi and David Dae An Rynick Roshi blend Soto and Rinzai Zen "
+            "lineages. Hybrid in-person + Zoom evening sittings: Monday 7:00–8:30 PM, "
+            "Wednesday 7:00–8:00 PM, and Sunday 7:00–8:30 PM. Dharma talks and dokusan "
+            "(individual teacher meetings) available regularly. 12–14 sesshins per year. "
+            "Member of SZBA and AZTA. All welcome; no experience required. boundlessway.org."
+        ),
+    },
+    "new_england_buddhist_vihara": {
+        "id": "new_england_buddhist_vihara",
+        "name": "New England Buddhist Vihara",
+        "url": "https://www.nebvmc.org",
+        "address": "162 Old Upton Road",
+        "city": "Grafton",
+        "state": "MA",
+        "zip": "01519",
+        "lat": 42.1993,
+        "lng": -71.6748,
+        "neighborhood": "Grafton (Worcester metro)",
+        "tradition": "theravada",
+        "description": (
+            "New England Buddhist Vihara and Meditation Center (also known as Boston "
+            "Buddhist Vihara) is a Sri Lankan Theravada temple in Grafton, ~10 miles "
+            "south of Worcester. Founded 2004 by Ven. Aluthgama Dhammajothi Thero. "
+            "Serves 100+ families across New England. Weekly English-language Guided "
+            "Meditation and Dharma Talk every Wednesday 7:00–8:30 PM, open to all. "
+            "Full moon poya day celebrations monthly. Free. (508) 839-5038. nebvmc.org."
+        ),
+    },
 }
