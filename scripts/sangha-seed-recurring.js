@@ -6505,6 +6505,46 @@ const SITS = [
     notes: "Wednesday Evening Guided Meditation and Dharma Talk (7:00–8:30pm ET) at New England Buddhist Vihara and Meditation Center (Boston Buddhist Vihara), 162 Old Upton Rd, Grafton MA 01519. Sri Lankan Theravada, led by Ven. Aluthgama Dhammajothi Thero. English-language. Open to all, free. (508) 839-5038. nebvmc.org.",
     source_url: "https://www.nebvmc.org", event_url: "https://www.nebvmc.org/calendar/",
   },
+
+  // elpasozen.org · Soto Zen · 2718 N Campbell St, El Paso TX — cross-border sangha, El Paso + Juarez
+  {
+    org_id: "el_paso_zen_center", org_name: "El Paso Zen Center",
+    title: "Sunday Morning Zazen & Dharma Talk",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "2718 N Campbell St", city: "El Paso", state: "TX", neighborhood: "Central El Paso",
+    lat: 31.7797, lng: -106.4777, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Morning Service (10:00–11:30am MT) at El Paso Zen Center (Both Sides / No Sides Sangha), 2718 N Campbell St, El Paso TX 79902. Soto Zen, Order of Clear Mind Zen lineage. Hybrid in-person + Zoom. Includes liturgy, two 25-minute zazen periods, kinhin (walking meditation), and dharma talk with tea. Doors open 9:30am. Free, all welcome. elpasozen.org.",
+    source_url: "https://www.elpasozen.org", event_url: "https://www.elpasozen.org",
+  },
+  {
+    org_id: "el_paso_zen_center", org_name: "El Paso Zen Center",
+    title: "Wednesday Evening Just Sitting Zazen",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "2718 N Campbell St", city: "El Paso", state: "TX", neighborhood: "Central El Paso",
+    lat: 31.7797, lng: -106.4777, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday Evening Just Sitting (6:00–7:00pm MT) at El Paso Zen Center, 2718 N Campbell St, El Paso TX 79902. Silent shikantaza zazen. In-person. Free, all welcome. elpasozen.org.",
+    source_url: "https://www.elpasozen.org", event_url: "https://www.elpasozen.org",
+  },
+
+  // ctbcc.org · Tibetan/Gelug · 2117 E Yandell Dr, El Paso TX — founded 1989, Dalai Lama tradition
+  {
+    org_id: "ctbcc_el_paso", org_name: "Chenrezig Tibetan Buddhist Cultural Center",
+    title: "Saturday Morning Sangha",
+    days: ["Saturday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "2117 E Yandell Dr", city: "El Paso", state: "TX", neighborhood: "Central El Paso",
+    lat: 31.7609, lng: -106.4687, tradition: "tibetan", location_type: "in-person",
+    notes: "Saturday Morning Sangha (10:00–11:30am MT) at Chenrezig Tibetan Buddhist Cultural Center (CTBCC), 2117 E Yandell Dr, El Paso TX 79903. Rotating facilitators, non-sectarian. In-person. Free, donations welcome. (915) 209-2228. ctbcc.org.",
+    source_url: "https://ctbcc.org", event_url: "https://ctbcc.org/weekly-schedule",
+  },
+  {
+    org_id: "ctbcc_el_paso", org_name: "Chenrezig Tibetan Buddhist Cultural Center",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 45,
+    address: "2117 E Yandell Dr", city: "El Paso", state: "TX", neighborhood: "Central El Paso",
+    lat: 31.7609, lng: -106.4687, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Morning Meditation (10:00–10:45am MT) at Chenrezig Tibetan Buddhist Cultural Center (CTBCC), 2117 E Yandell Dr, El Paso TX 79903. Facilitated by Molly Butler. In-person. Free, donations welcome. ctbcc.org.",
+    source_url: "https://ctbcc.org", event_url: "https://ctbcc.org/weekly-schedule",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

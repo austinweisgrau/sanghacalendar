@@ -7984,4 +7984,52 @@ CENTERS = {
             "Full moon poya day celebrations monthly. Free. (508) 839-5038. nebvmc.org."
         ),
     },
+    # --- El Paso TX Phase 3 ---
+    "el_paso_zen_center": {
+        "id": "el_paso_zen_center",
+        "name": "El Paso Zen Center",
+        "url": "https://www.elpasozen.org",
+        "address": "2718 N Campbell St",
+        "city": "El Paso",
+        "state": "TX",
+        "zip": "79902",
+        "lat": 31.7797,
+        "lng": -106.4777,
+        "neighborhood": "Central El Paso",
+        "tradition": "zen",
+        "description": (
+            "El Paso Zen Center (Both Sides / No Sides Sangha) is a Soto Zen community "
+            "in central El Paso, rooted in the Order of Clear Mind Zen lineage of "
+            "Harvey Daiho Hilbert Roshi. Teachers Bobby Kankin Byrd Roshi, Paul Maitra "
+            "Shurro Schroder, and Polly Shikan Perez guide a cross-border sangha "
+            "serving El Paso and Ciudad Juarez. Sunday service 10:00 AM: hybrid "
+            "in-person + Zoom, includes liturgy, two 25-minute zazen periods, kinhin, "
+            "and dharma talk with tea (doors open 9:30 AM). Wednesday 6:00-7:00 PM: "
+            "silent Just Sitting zazen. Zendo capacity ~12. Free and open to all. "
+            "elpasozen.org."
+        ),
+    },
+    "ctbcc_el_paso": {
+        "id": "ctbcc_el_paso",
+        "name": "Chenrezig Tibetan Buddhist Cultural Center",
+        "url": "https://ctbcc.org",
+        "address": "2117 E Yandell Dr",
+        "city": "El Paso",
+        "state": "TX",
+        "zip": "79903",
+        "lat": 31.7609,
+        "lng": -106.4687,
+        "neighborhood": "Central El Paso",
+        "tradition": "tibetan",
+        "description": (
+            "Chenrezig Tibetan Buddhist Cultural Center (CTBCC) is a Gelug Tibetan "
+            "Buddhist center in El Paso, founded 1989 in the Dalai Lama's tradition. "
+            "Non-sectarian and open to practitioners of all backgrounds. Offers multiple "
+            "weekly programs: Tuesday 7:00-7:45 AM 'Coming Home' group meditation (Zoom); "
+            "Friday 6:30-8:15 PM Dharma en Espanol (in-person); Saturday 10:00-11:30 AM "
+            "Sangha Saturdays (in-person, rotating facilitators); Sunday 10:00-10:45 AM "
+            "meditation (in-person). Monthly White Tara practice and special teachings. "
+            "All classes free; donations welcome. (915) 209-2228. ctbcc.org."
+        ),
+    },
 }
