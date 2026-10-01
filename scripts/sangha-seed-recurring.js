@@ -6545,6 +6545,66 @@ const SITS = [
     notes: "Sunday Morning Meditation (10:00–10:45am MT) at Chenrezig Tibetan Buddhist Cultural Center (CTBCC), 2117 E Yandell Dr, El Paso TX 79903. Facilitated by Molly Butler. In-person. Free, donations welcome. ctbcc.org.",
     source_url: "https://ctbcc.org", event_url: "https://ctbcc.org/weekly-schedule",
   },
+
+  // tulsazencenter.com · Soto/Rinzai Zen · 5001 S Fulton Ave, Tulsa OK (All Souls UU Church)
+  {
+    org_id: "tulsa_zen_center", org_name: "Tulsa Zen Center",
+    title: "Sunday Morning Sit",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 90,
+    address: "5001 S Fulton Ave", city: "Tulsa", state: "OK", neighborhood: "South Tulsa (All Souls Unitarian Church)",
+    lat: 36.0900, lng: -95.9350, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Sit (8:30–10:00am CT) at Tulsa Zen Center, 5001 S Fulton Ave, Tulsa OK 74135 (All Souls Unitarian Church). Soto/Rinzai Zen, lay-led by Patti Mitchell and Michael Mason. Includes sitting meditation, kinhin, and dharma discussion. Newcomers arrive 8:15am for orientation. Free; donations welcome. tulsazencenter.com.",
+    source_url: "https://tulsazencenter.com", event_url: "https://tulsazencenter.com",
+  },
+
+  // tulsa.shambhala.org · Shambhala/Tibetan · 5001 S Fulton Ave, Tulsa OK (All Souls UU Church)
+  {
+    org_id: "tulsa_shambhala", org_name: "Tulsa Shambhala Meditation Group",
+    title: "Tuesday Open Meditation",
+    days: ["Tuesday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "5001 S Fulton Ave", city: "Tulsa", state: "OK", neighborhood: "South Tulsa (All Souls Unitarian Church)",
+    lat: 36.0900, lng: -95.9350, tradition: "tibetan", location_type: "hybrid",
+    notes: "Tuesday Open Meditation (6:30–7:30pm CT) at Tulsa Shambhala Meditation Group, 5001 S Fulton Ave, Tulsa OK 74135. In-person; Zoom also available with 1-hour advance request. Shambhala International lineage (Chogyam Trungpa Rinpoche). All backgrounds welcome. (918) 694-9233. tulsa.shambhala.org.",
+    source_url: "https://tulsa.shambhala.org", event_url: "https://tulsa.shambhala.org/monthly-calendar/",
+  },
+  {
+    org_id: "tulsa_shambhala", org_name: "Tulsa Shambhala Meditation Group",
+    title: "Open House — Meditation & Community",
+    days: ["Sunday"], week_of_month: 1, time: { h: 10, m: 0 }, duration_min: 120,
+    address: "5001 S Fulton Ave", city: "Tulsa", state: "OK", neighborhood: "South Tulsa (All Souls Unitarian Church)",
+    lat: 36.0900, lng: -95.9350, tradition: "tibetan", location_type: "in-person",
+    notes: "1st Sunday monthly Open House (10:00am–noon CT) at Tulsa Shambhala Meditation Group, 5001 S Fulton Ave, Tulsa OK 74135. Includes sitting meditation, meditation instruction, and community tea. Free; all welcome. tulsa.shambhala.org.",
+    source_url: "https://tulsa.shambhala.org", event_url: "https://tulsa.shambhala.org/monthly-calendar/",
+  },
+  {
+    org_id: "tulsa_shambhala", org_name: "Tulsa Shambhala Meditation Group",
+    title: "Nyinthun — Half-Day Group Practice",
+    days: ["Saturday"], week_of_month: 2, time: { h: 9, m: 0 }, duration_min: 240,
+    address: "5001 S Fulton Ave", city: "Tulsa", state: "OK", neighborhood: "South Tulsa (All Souls Unitarian Church)",
+    lat: 36.0900, lng: -95.9350, tradition: "tibetan", location_type: "in-person",
+    notes: "2nd Saturday monthly Nyinthun half-day group practice (9:00am–1:00pm CT) at Tulsa Shambhala Meditation Group, 5001 S Fulton Ave, Tulsa OK 74135. Extended group sitting meditation. Shambhala International lineage. All welcome. tulsa.shambhala.org.",
+    source_url: "https://tulsa.shambhala.org", event_url: "https://tulsa.shambhala.org/monthly-calendar/",
+  },
+
+  // tulsazensangha.wordpress.com · Rinzai/Soto Zen · Osage Forest of Peace, Sand Springs OK
+  {
+    org_id: "tulsa_zen_sangha", org_name: "Tulsa Zen Sangha",
+    title: "Monthly Zazenkai — All-Day Retreat",
+    days: ["Saturday"], week_of_month: 3, time: { h: 6, m: 30 }, duration_min: 540,
+    address: "18275 W Hwy 51", city: "Sand Springs", state: "OK", neighborhood: "Osage Forest of Peace, Sand Springs (west of Tulsa)",
+    lat: 36.1396, lng: -96.1096, tradition: "zen", location_type: "in-person",
+    notes: "3rd Saturday monthly all-day Zazenkai (6:30am–3:30pm CT) with Tulsa Zen Sangha at Osage Forest of Peace, Sand Springs OK (about 10 miles west of downtown Tulsa). Rinzai/Soto Zen; guiding teacher Helen Cortes (Maria Kannon Zen Center lineage). Registration $30. tulsazensangha.wordpress.com.",
+    source_url: "https://tulsazensangha.wordpress.com", event_url: "https://tulsazensangha.wordpress.com/meetings/",
+  },
+  {
+    org_id: "tulsa_zen_sangha", org_name: "Tulsa Zen Sangha",
+    title: "Afternoon Forest Sit",
+    days: ["Sunday"], week_of_month: 2, time: { h: 14, m: 30 }, duration_min: 90,
+    address: "18275 W Hwy 51", city: "Sand Springs", state: "OK", neighborhood: "Osage Forest of Peace, Sand Springs (west of Tulsa)",
+    lat: 36.1396, lng: -96.1096, tradition: "zen", location_type: "in-person",
+    notes: "2nd Sunday monthly Afternoon Forest Sit (2:30–4:00pm CT) with Tulsa Zen Sangha at Osage Forest of Peace, Sand Springs OK. Rinzai/Soto Zen; beginner instruction available. Free. tulsazensangha.wordpress.com.",
+    source_url: "https://tulsazensangha.wordpress.com", event_url: "https://tulsazensangha.wordpress.com/meetings/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

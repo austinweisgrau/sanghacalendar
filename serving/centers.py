@@ -8032,4 +8032,69 @@ CENTERS = {
             "All classes free; donations welcome. (915) 209-2228. ctbcc.org."
         ),
     },
+    "tulsa_zen_center": {
+        "id": "tulsa_zen_center",
+        "name": "Tulsa Zen Center",
+        "url": "https://tulsazencenter.com",
+        "address": "5001 S Fulton Ave",
+        "city": "Tulsa",
+        "state": "OK",
+        "zip": "74135",
+        "lat": 36.0900,
+        "lng": -95.9350,
+        "neighborhood": "South Tulsa (All Souls Unitarian Church)",
+        "tradition": "zen",
+        "description": (
+            "Tulsa Zen Center is a lay-led Zen community drawing from both Soto "
+            "(Shunryu Suzuki lineage, Patti Mitchell) and Rinzai/Harada-Yasutani "
+            "(Michael Mason) traditions. Weekly Sunday morning sit 8:30–10:00 AM at "
+            "All Souls Unitarian Church (5001 S Fulton Ave). Newcomers welcome — arrive "
+            "8:15 AM for orientation. Includes sitting meditation, walking meditation, "
+            "and dharma discussion. Free; donations appreciated. tulsazencenter.com."
+        ),
+    },
+    "tulsa_shambhala": {
+        "id": "tulsa_shambhala",
+        "name": "Tulsa Shambhala Meditation Group",
+        "url": "https://tulsa.shambhala.org",
+        "address": "5001 S Fulton Ave",
+        "city": "Tulsa",
+        "state": "OK",
+        "zip": "74135",
+        "lat": 36.0900,
+        "lng": -95.9350,
+        "neighborhood": "South Tulsa (All Souls Unitarian Church)",
+        "tradition": "tibetan",
+        "description": (
+            "Tulsa Shambhala Meditation Group is an affiliate of Shambhala International "
+            "(Chogyam Trungpa Rinpoche lineage) offering secular mindfulness and "
+            "Tibetan-inspired meditation in Tulsa. Weekly Tuesday Open Meditation "
+            "6:30–7:30 PM in-person (Zoom available on 1-hour notice). Monthly events: "
+            "1st Sunday Open House 10 AM–noon (meditation instruction + community tea); "
+            "2nd Saturday half-day Nyinthun practice 9 AM–1 PM. All welcome. "
+            "shambhalatulsa@gmail.com. (918) 694-9233. tulsa.shambhala.org."
+        ),
+    },
+    "tulsa_zen_sangha": {
+        "id": "tulsa_zen_sangha",
+        "name": "Tulsa Zen Sangha",
+        "url": "https://tulsazensangha.wordpress.com",
+        "address": "18275 W Hwy 51",
+        "city": "Sand Springs",
+        "state": "OK",
+        "zip": "74063",
+        "lat": 36.1396,
+        "lng": -96.1096,
+        "neighborhood": "Osage Forest of Peace, Sand Springs (west of Tulsa)",
+        "tradition": "zen",
+        "description": (
+            "Tulsa Zen Sangha is a Rinzai/Soto Zen group guided by Helen Cortes, a "
+            "teacher in the Maria Kannon Zen Center lineage (Dallas). The sangha meets "
+            "monthly at the Osage Forest of Peace retreat center in Sand Springs, about "
+            "10 miles west of downtown Tulsa. Third Saturday monthly all-day Zazenkai "
+            "6:30 AM–3:30 PM (registration $30). Second Sunday monthly afternoon Forest "
+            "Sit 2:30–4:00 PM (free; beginner instruction available). "
+            "tulsazensangha.wordpress.com."
+        ),
+    },
 }
