@@ -6605,6 +6605,52 @@ const SITS = [
     notes: "2nd Sunday monthly Afternoon Forest Sit (2:30–4:00pm CT) with Tulsa Zen Sangha at Osage Forest of Peace, Sand Springs OK. Rinzai/Soto Zen; beginner instruction available. Free. tulsazensangha.wordpress.com.",
     source_url: "https://tulsazensangha.wordpress.com", event_url: "https://tulsazensangha.wordpress.com/meetings/",
   },
+
+  // -------------------------------------------------------------------------
+  // Syracuse NY Phase 3 (heartbeat 110)
+  // -------------------------------------------------------------------------
+
+  // zencenterofsyracuse.org · Rinzai Zen · 266 W Seneca Turnpike, Syracuse NY
+  // Shinge Roko Sherry Chayat Roshi — one of oldest Rinzai centers in the US
+  {
+    org_id: "zen_center_syracuse", org_name: "Zen Center of Syracuse",
+    title: "Just Sitting — Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "266 W Seneca Turnpike", city: "Syracuse", state: "NY", neighborhood: "South Valley, Syracuse",
+    lat: 43.0182, lng: -76.1502, tradition: "zen", location_type: "hybrid",
+    notes: "Tuesday evening 'Just Sitting' (6:00–7:00pm ET) at Zen Center of Syracuse (Hoen-ji), 266 W Seneca Turnpike, Syracuse NY 13207. Two periods of zazen plus kinhin (walking meditation). Rinzai Zen; Shinge Roko Sherry Chayat Roshi. Newcomers welcome. Also available via Zoom. Free. zencenterofsyracuse.org. (315) 492-9773.",
+    source_url: "https://www.zencenterofsyracuse.org", event_url: "https://www.zencenterofsyracuse.org/zen-meditation-schedule/",
+  },
+  {
+    org_id: "zen_center_syracuse", org_name: "Zen Center of Syracuse",
+    title: "Thursday Evening Zazen & Instruction",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 120,
+    address: "266 W Seneca Turnpike", city: "Syracuse", state: "NY", neighborhood: "South Valley, Syracuse",
+    lat: 43.0182, lng: -76.1502, tradition: "zen", location_type: "hybrid",
+    notes: "Thursday evening zazen and meditation instruction (6:00–8:00pm ET) at Zen Center of Syracuse (Hoen-ji), 266 W Seneca Turnpike, Syracuse NY 13207. Includes sitting meditation and instruction in Zen techniques and zendo etiquette. Third Thursdays include dokusan (one-on-one interview) with Shinge Roshi. Newcomers especially welcome — no experience required. Also via Zoom. Free. zencenterofsyracuse.org.",
+    source_url: "https://www.zencenterofsyracuse.org", event_url: "https://www.zencenterofsyracuse.org/zen-meditation-schedule/",
+  },
+  {
+    org_id: "zen_center_syracuse", org_name: "Zen Center of Syracuse",
+    title: "Sunday Morning Program",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 180,
+    address: "266 W Seneca Turnpike", city: "Syracuse", state: "NY", neighborhood: "South Valley, Syracuse",
+    lat: 43.0182, lng: -76.1502, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Morning Program (9:00am–noon ET) at Zen Center of Syracuse (Hoen-ji), 266 W Seneca Turnpike, Syracuse NY 13207. Full program includes chanting (Choka), kinhin, two periods of zazen. First Sunday includes Teisho/Dharma talk (10:45–11:30am); second Sunday includes dokusan for students and Dharma interviews for newcomers. All welcome. Also via Zoom. Free. zencenterofsyracuse.org.",
+    source_url: "https://www.zencenterofsyracuse.org", event_url: "https://www.zencenterofsyracuse.org/zen-meditation-schedule/",
+  },
+
+  // thekchencholing.us · Vajrayana Tibetan · 109 East Ave, Minoa NY (east Syracuse metro)
+  // Singha Namdrol Rinpoche; Tuesday beginner meditation + special events
+  {
+    org_id: "thekchen_choling_syracuse", org_name: "Thekchen Choling USA — Syracuse Temple",
+    title: "Meditation for Beginners",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "109 East Avenue", city: "Minoa", state: "NY", neighborhood: "Village of Minoa (east of Syracuse)",
+    lat: 43.0748, lng: -76.0066, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Meditation for Beginners (7:00–8:00pm ET) at Thekchen Choling USA Syracuse Temple, 109 East Avenue, Minoa NY 13116. Vajrayana Tibetan Buddhist; guided meditation suitable for all levels. Spiritual director: Singha Namdrol Rinpoche. All welcome. Free. thekchencholing.us. tccl.syracuse@gmail.com.",
+    source_url: "https://thekchencholing.us", event_url: "https://thekchencholing.us/syr/program.html",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

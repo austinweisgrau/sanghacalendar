@@ -120,6 +120,7 @@ from ingestion.sources import dayton as dayton_sources
 from ingestion.sources import akron as akron_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import worcester as worcester_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import tulsa as tulsa_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import syracuse as syracuse_sources
 
 log = logging.getLogger(__name__)
 
@@ -1342,6 +1343,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Springfield MO iCal {org_id} failed: {e}")
+
+    # Syracuse NY Phase 3 — Thekchen Choling Eventbrite
+    log.info("--- Syracuse NY Phase 3: Thekchen Choling Eventbrite ---")
+    for org_id, feed_cfg in syracuse_sources.EVENTBRITE_FEEDS.items():
+        center = syracuse_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Syracuse Eventbrite)...")
+        try:
+            events = fetch_eventbrite_organizer(
+                organizer_id=feed_cfg["organizer_id"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events found")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Syracuse Eventbrite {org_id} failed: {e}")
 
     # Dayton OH Phase 3 — Gar Drolma iCal
     log.info("--- Dayton OH Phase 3: Gar Drolma iCal ---")

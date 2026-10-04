@@ -8097,4 +8097,56 @@ CENTERS = {
             "tulsazensangha.wordpress.com."
         ),
     },
+    # ---------------------------------------------------------------------------
+    # Syracuse NY Phase 3 (heartbeat 110)
+    # ---------------------------------------------------------------------------
+    "zen_center_syracuse": {
+        "id": "zen_center_syracuse",
+        "name": "Zen Center of Syracuse",
+        "url": "https://www.zencenterofsyracuse.org",
+        "address": "266 W Seneca Turnpike",
+        "city": "Syracuse",
+        "state": "NY",
+        "zip": "13207",
+        "lat": 43.0182,
+        "lng": -76.1502,
+        "neighborhood": "South Valley, Syracuse",
+        "tradition": "zen",
+        "description": (
+            "Zen Center of Syracuse (Hoen-ji) is one of the oldest and most historically "
+            "significant Rinzai Zen centers in the United States, founded in 1972 and "
+            "affiliated with the Zen Studies Society (Dai Bosatsu Zendo / New York Zendo "
+            "Shobo-Ji). Guiding teacher Shinge Roko Sherry Chayat Roshi was the first "
+            "American woman to receive Dharma transmission in the Japanese Rinzai school. "
+            "Daily zazen Monday–Saturday at 6am. Public evening sits: Tuesdays 6–7pm "
+            "'Just Sitting' (two periods of zazen + kinhin), Thursdays 6–8pm (instruction "
+            "+ zazen, newcomers especially welcome). Sunday program 9am–noon (chanting, "
+            "kinhin, two periods of zazen; dharma talks first Sunday). Sesshins four times "
+            "yearly. All sessions also available via Zoom. zencenterofsyracuse.org. "
+            "(315) 492-9773."
+        ),
+    },
+    "thekchen_choling_syracuse": {
+        "id": "thekchen_choling_syracuse",
+        "name": "Thekchen Choling USA — Syracuse Temple",
+        "url": "https://thekchencholing.us",
+        "address": "109 East Avenue",
+        "city": "Minoa",
+        "state": "NY",
+        "zip": "13116",
+        "lat": 43.0748,
+        "lng": -76.0066,
+        "neighborhood": "Village of Minoa (east of Syracuse)",
+        "tradition": "tibetan",
+        "description": (
+            "Thekchen Choling USA Syracuse Temple is the North American seat of Singha "
+            "Namdrol Rinpoche, a Vajrayana Tibetan Buddhist lama. Part of the Thekchen "
+            "Choling organization headquartered in Singapore. Located in the Village of "
+            "Minoa in the eastern Syracuse metro. Offers weekly Meditation for Beginners "
+            "(Tuesdays 7pm), Shantideva discussion groups, Medicine Buddha pujas, and "
+            "special retreats and teachings with visiting teachers. All are welcome "
+            "regardless of background. thekchencholing.us. tccl.syracuse@gmail.com. "
+            "(315) 480-1088."
+        ),
+    },
 }
