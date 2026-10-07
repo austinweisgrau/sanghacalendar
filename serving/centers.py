@@ -8149,4 +8149,82 @@ CENTERS = {
             "(315) 480-1088."
         ),
     },
+    # ---------------------------------------------------------------------------
+    # Jacksonville FL Phase 3 (heartbeat 111)
+    # ---------------------------------------------------------------------------
+    "maitreya_kadampa_jax": {
+        "id": "maitreya_kadampa_jax",
+        "name": "Maitreya Kadampa Buddhist Center",
+        "url": "https://meditationinjacksonville.org",
+        "address": "8400 Baymeadows Way Suite 7",
+        "city": "Jacksonville",
+        "state": "FL",
+        "zip": "32256",
+        "lat": 30.2089,
+        "lng": -81.5839,
+        "neighborhood": "Baymeadows",
+        "tradition": "tibetan",
+        "description": (
+            "Maitreya Kadampa Buddhist Center is a New Kadampa Tradition (NKT-IKBU) "
+            "Tibetan Buddhist center in the Baymeadows neighborhood of Jacksonville, "
+            "led by resident teacher Kadam Carol Lutker. Drop-in classes include Sunday "
+            "Meditations for World Peace (10:00–11:15am, in-person), Wednesday General "
+            "Program at San Marco Library (5:00–5:40pm), and Thursday General Program "
+            "(6:00–7:15pm, in-person with teacher John Jones). All sessions include "
+            "guided meditation and Buddhist teachings in the Modern Buddhism tradition. "
+            "No experience needed; donations welcome. Special events, retreats, and "
+            "empowerments throughout the year. meditationinjacksonville.org. "
+            "(904) 648-9994."
+        ),
+    },
+    "great_cloud_sangha_jax": {
+        "id": "great_cloud_sangha_jax",
+        "name": "Jacksonville Great Cloud Sangha",
+        "url": "https://storder.org/portfolio/jacksonsville-soto-zen-group/",
+        "address": "7405 Arlington Expressway",
+        "city": "Jacksonville",
+        "state": "FL",
+        "zip": "32211",
+        "lat": 30.3292,
+        "lng": -81.6076,
+        "neighborhood": "Arlington",
+        "tradition": "zen",
+        "description": (
+            "Jacksonville Great Cloud Sangha is a Soto Zen sitting group in the Silent "
+            "Thunder Order (Matsuoka Roshi lineage), led by Sensei Ungan Bill Mayhew. "
+            "Meets in the Susan B. Anthony Room at the Unitarian Universalist Church "
+            "of Jacksonville (7405 Arlington Expressway). Monday Evening Zazen "
+            "(7:00–8:30pm): two 25-minute periods of zazen, kinhin, Heart Sutra, and "
+            "dharma discussion; newcomers arrive by 6pm for orientation. Saturday Open "
+            "Sitting (1:30–3:00pm): open zazen and kinhin; newcomers arrive by 12:30pm. "
+            "Both sessions available via Zoom. Drop-in welcome; all levels. Free. "
+            "(904) 725-8133. storder.org."
+        ),
+    },
+    "ktc_jacksonville": {
+        "id": "ktc_jacksonville",
+        "name": "Karma Thegsum Choling Jacksonville",
+        "url": "https://ktcjax.org",
+        "address": "4168 Herschel St",
+        "city": "Jacksonville",
+        "state": "FL",
+        "zip": "32210",
+        "lat": 30.3098,
+        "lng": -81.6853,
+        "neighborhood": "Murray Hill / Avondale",
+        "tradition": "tibetan",
+        "description": (
+            "Karma Thegsum Choling (KTC) Jacksonville is a Tibetan Buddhist center "
+            "in the Karma Kagyu lineage, affiliated with Karma Triyana Dharmachakra "
+            "(KTD) — the North American seat of His Holiness Gyalwang Karmapa. "
+            "One of the oldest KTC centers in Florida, est. ~1987. Located in the "
+            "Murray Hill / Avondale neighborhood at 4168 Herschel St. Saturday "
+            "Program: Silent Sitting Meditation (9–10am), Book Study (10–10:30am), "
+            "and Chenrezig & Amitabha Sadhana (10:30am–noon; 1st Saturday: Green Tara "
+            "Sadhana) — in-person and Zoom. Tuesday Evening: Medicine Buddha Practice "
+            "(6–7pm, hybrid) and Buddhism Basics Study Group (7–8pm; 2nd Tuesday: "
+            "teachings with Lama Losang via Zoom). Open to all; drop-in welcome. "
+            "ktcjax.org."
+        ),
+    },
 }

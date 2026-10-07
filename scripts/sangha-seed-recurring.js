@@ -6651,6 +6651,82 @@ const SITS = [
     notes: "Tuesday Meditation for Beginners (7:00–8:00pm ET) at Thekchen Choling USA Syracuse Temple, 109 East Avenue, Minoa NY 13116. Vajrayana Tibetan Buddhist; guided meditation suitable for all levels. Spiritual director: Singha Namdrol Rinpoche. All welcome. Free. thekchencholing.us. tccl.syracuse@gmail.com.",
     source_url: "https://thekchencholing.us", event_url: "https://thekchencholing.us/syr/program.html",
   },
+
+  // -------------------------------------------------------------------------
+  // Jacksonville FL Phase 3 (heartbeat 111)
+  // -------------------------------------------------------------------------
+
+  // meditationinjacksonville.org · NKT Kadampa · 8400 Baymeadows Way Suite 7, Jacksonville FL
+  // Kadam Carol Lutker; drop-in classes Sun + Wed (library) + Thu
+  {
+    org_id: "maitreya_kadampa_jax", org_name: "Maitreya Kadampa Buddhist Center",
+    title: "Meditations for World Peace",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 75,
+    address: "8400 Baymeadows Way Suite 7", city: "Jacksonville", state: "FL", neighborhood: "Baymeadows",
+    lat: 30.2089, lng: -81.5839, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Meditations for World Peace (10:00–11:15am ET) at Maitreya Kadampa Buddhist Center, 8400 Baymeadows Way Suite 7, Jacksonville FL 32256. Guided meditation and Buddhist teachings with Kadam Carol Lutker. NKT/Modern Buddhism tradition. No experience needed; all welcome. Donations welcome. meditationinjacksonville.org. (904) 648-9994.",
+    source_url: "https://meditationinjacksonville.org", event_url: "https://meditationinjacksonville.org/classes/",
+  },
+  {
+    org_id: "maitreya_kadampa_jax", org_name: "Maitreya Kadampa Buddhist Center",
+    title: "General Program — Guided Meditation & Teachings",
+    days: ["Wednesday"], time: { h: 17, m: 0 }, duration_min: 40,
+    address: "San Marco Library, 1513 LaSalle St", city: "Jacksonville", state: "FL", neighborhood: "San Marco",
+    lat: 30.2933, lng: -81.6556, tradition: "tibetan", location_type: "in-person",
+    notes: "Wednesday General Program (5:00–5:40pm ET) at San Marco Branch Library, 1513 LaSalle St, Jacksonville FL 32207. Guided meditation and Buddhist teachings led by Misa Simmons. Maitreya Kadampa Buddhist Center / NKT tradition. Drop-in; free. meditationinjacksonville.org.",
+    source_url: "https://meditationinjacksonville.org", event_url: "https://meditationinjacksonville.org/classes/",
+  },
+  {
+    org_id: "maitreya_kadampa_jax", org_name: "Maitreya Kadampa Buddhist Center",
+    title: "General Program — Guided Meditation & Teachings",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 75,
+    address: "8400 Baymeadows Way Suite 7", city: "Jacksonville", state: "FL", neighborhood: "Baymeadows",
+    lat: 30.2089, lng: -81.5839, tradition: "tibetan", location_type: "in-person",
+    notes: "Thursday General Program (6:00–7:15pm ET) at Maitreya Kadampa Buddhist Center, 8400 Baymeadows Way Suite 7, Jacksonville FL 32256. Guided meditation and Buddhist teachings with teacher John Jones. NKT/Modern Buddhism tradition. Drop-in; all welcome. Donations welcome. meditationinjacksonville.org.",
+    source_url: "https://meditationinjacksonville.org", event_url: "https://meditationinjacksonville.org/classes/",
+  },
+
+  // storder.org · Soto Zen / Silent Thunder Order · UU Church, 7405 Arlington Expressway, Jacksonville FL
+  // Sensei Ungan Bill Mayhew; Mon evening + Sat open sitting, hybrid
+  {
+    org_id: "great_cloud_sangha_jax", org_name: "Jacksonville Great Cloud Sangha",
+    title: "Monday Evening Zazen",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "7405 Arlington Expressway", city: "Jacksonville", state: "FL", neighborhood: "Arlington (UU Church)",
+    lat: 30.3292, lng: -81.6076, tradition: "zen", location_type: "hybrid",
+    notes: "Monday Evening Zazen (7:00–8:30pm ET) at Jacksonville Great Cloud Sangha, Unitarian Universalist Church of Jacksonville, 7405 Arlington Expressway, Jacksonville FL 32211. Two 25-minute zazen periods, kinhin, Heart Sutra, and dharma discussion. Soto Zen / Silent Thunder Order; Sensei Ungan Bill Mayhew. Newcomers: arrive by 6pm for orientation. Also on Zoom. Free. (904) 725-8133. storder.org.",
+    source_url: "https://storder.org/portfolio/jacksonsville-soto-zen-group/", event_url: "https://storder.org/events/jacksonville-great-cloud-sangha/",
+  },
+  {
+    org_id: "great_cloud_sangha_jax", org_name: "Jacksonville Great Cloud Sangha",
+    title: "Saturday Open Sitting",
+    days: ["Saturday"], time: { h: 13, m: 30 }, duration_min: 90,
+    address: "7405 Arlington Expressway", city: "Jacksonville", state: "FL", neighborhood: "Arlington (UU Church)",
+    lat: 30.3292, lng: -81.6076, tradition: "zen", location_type: "hybrid",
+    notes: "Saturday Open Sitting (1:30–3:00pm ET) at Jacksonville Great Cloud Sangha, Unitarian Universalist Church of Jacksonville, 7405 Arlington Expressway, Jacksonville FL 32211. Open zazen and kinhin. Soto Zen / Silent Thunder Order; Sensei Ungan Bill Mayhew. Newcomers: arrive by 12:30pm for orientation. Also on Zoom. Free. (904) 725-8133. storder.org.",
+    source_url: "https://storder.org/portfolio/jacksonsville-soto-zen-group/", event_url: "https://storder.org/events/jacksonville-great-cloud-sangha/",
+  },
+
+  // ktcjax.org · Karma Kagyu Tibetan · 4168 Herschel St, Jacksonville FL
+  // KTD affiliate; Sat 9am silent meditation + Tue 6pm Medicine Buddha
+  {
+    org_id: "ktc_jacksonville", org_name: "Karma Thegsum Choling Jacksonville",
+    title: "Silent Sitting Meditation",
+    days: ["Saturday"], time: { h: 9, m: 0 }, duration_min: 60,
+    address: "4168 Herschel St", city: "Jacksonville", state: "FL", neighborhood: "Murray Hill / Avondale",
+    lat: 30.3098, lng: -81.6853, tradition: "tibetan", location_type: "hybrid",
+    notes: "Saturday Silent Sitting Meditation (9:00–10:00am ET) at Karma Thegsum Choling Jacksonville, 4168 Herschel St, Jacksonville FL 32210. Tibetan Buddhism / Karma Kagyu lineage (KTD affiliate). Intro for newcomers available. In-person and Zoom. Followed by Book Study (10–10:30am) and Chenrezig sadhana (10:30am). All welcome; drop-in. ktcjax.org.",
+    source_url: "https://ktcjax.org", event_url: "https://ktcjax.org/new-weekly-schedule-starting-april-2nd",
+  },
+  {
+    org_id: "ktc_jacksonville", org_name: "Karma Thegsum Choling Jacksonville",
+    title: "Medicine Buddha Practice",
+    days: ["Tuesday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "4168 Herschel St", city: "Jacksonville", state: "FL", neighborhood: "Murray Hill / Avondale",
+    lat: 30.3098, lng: -81.6853, tradition: "tibetan", location_type: "hybrid",
+    notes: "Tuesday Medicine Buddha Practice (6:00–7:00pm ET) at Karma Thegsum Choling Jacksonville, 4168 Herschel St, Jacksonville FL 32210. Tibetan Buddhist / Karma Kagyu lineage. In-person and Zoom. Followed by Buddhism Basics Study Group (7–8pm; 2nd Tuesday: teachings with Lama Losang via Zoom). All welcome. ktcjax.org.",
+    source_url: "https://ktcjax.org", event_url: "https://ktcjax.org/new-weekly-schedule-starting-april-2nd",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
