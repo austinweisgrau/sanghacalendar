@@ -8227,4 +8227,56 @@ CENTERS = {
             "ktcjax.org."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Jersey City, NJ (heartbeat 112)
+    # -----------------------------------------------------------------------
+    "kadampa_jersey_city": {
+        "id": "kadampa_jersey_city",
+        "name": "Kadampa Meditation Center NYC — Jersey City",
+        "url": "https://meditationinnewyork.org/jersey-city-meditation-and-buddhism/",
+        "address": "83 Wayne St",
+        "city": "Jersey City",
+        "state": "NJ",
+        "zip": "07302",
+        "lat": 40.7183,
+        "lng": -74.0450,
+        "neighborhood": "Van Vorst Park / Downtown Jersey City (Barrow Mansion)",
+        "tradition": "tibetan",
+        "description": (
+            "Kadampa Meditation Center NYC — Jersey City is a long-running satellite "
+            "class of KMC New York City, offering weekly Buddhist meditation and "
+            "teachings in the New Kadampa Tradition (NKT). Held at the historic "
+            "Barrow Mansion (83 Wayne St), steps from Grove St PATH station in "
+            "downtown Jersey City. Teacher: Jessica Rispoli and rotating NKT "
+            "teachers. Sunday General Program: Sundays 11:30am–1:00pm (guided "
+            "meditation + Buddhist teachings; topic rotates with seasonal series). "
+            "$10/class; free for NKT supporting members. "
+            "meditationinnewyork.org/jersey-city-meditation-and-buddhism/."
+        ),
+    },
+    "sun_of_awareness_jc": {
+        "id": "sun_of_awareness_jc",
+        "name": "Sun of Awareness Sangha",
+        "url": "https://sunofawareness.wordpress.com/",
+        "address": "275 Grove St, 3rd Floor",
+        "city": "Jersey City",
+        "state": "NJ",
+        "zip": "07302",
+        "lat": 40.7185,
+        "lng": -74.0462,
+        "neighborhood": "Downtown Jersey City (Yoga Shunya)",
+        "tradition": "zen",
+        "description": (
+            "Sun of Awareness Sangha is a Plum Village / Thich Nhat Hanh lay sangha "
+            "in downtown Jersey City, founded 2009 by Robb Kushner. Affiliated with "
+            "the Community of Mindfulness New York Metro network and Blue Cliff "
+            "Monastery (Pine Bush, NY). Meets Sundays 9:00–10:30am at Yoga Shunya "
+            "(275 Grove St, 3rd floor — enter double doors left of Bar Majestic, "
+            "then upstairs). Format: silent or guided sitting meditation, walking "
+            "meditation, dharma reading and sharing, closing sit. All welcome; "
+            "beginners-friendly. Free ($5–10 donation to Yoga Shunya welcome). "
+            "Contact: Robb Kushner, 201-349-4481, robbkushner@gmail.com. "
+            "sunofawareness.wordpress.com."
+        ),
+    },
 }

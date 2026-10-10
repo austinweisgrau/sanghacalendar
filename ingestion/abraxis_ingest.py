@@ -121,6 +121,7 @@ from ingestion.sources import akron as akron_sources  # noqa: F401 (no live feed
 from ingestion.sources import worcester as worcester_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import tulsa as tulsa_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import syracuse as syracuse_sources
+from ingestion.sources import jersey_city as jersey_city_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 

@@ -6727,6 +6727,30 @@ const SITS = [
     notes: "Tuesday Medicine Buddha Practice (6:00–7:00pm ET) at Karma Thegsum Choling Jacksonville, 4168 Herschel St, Jacksonville FL 32210. Tibetan Buddhist / Karma Kagyu lineage. In-person and Zoom. Followed by Buddhism Basics Study Group (7–8pm; 2nd Tuesday: teachings with Lama Losang via Zoom). All welcome. ktcjax.org.",
     source_url: "https://ktcjax.org", event_url: "https://ktcjax.org/new-weekly-schedule-starting-april-2nd",
   },
+
+  // Jersey City, NJ Phase 3 (heartbeat 112)
+
+  // meditationinnewyork.org · NKT Tibetan · Barrow Mansion, 83 Wayne St, Jersey City NJ
+  {
+    org_id: "kadampa_jersey_city", org_name: "Kadampa Meditation Center NYC — Jersey City",
+    title: "Sunday General Program",
+    days: ["Sunday"], time: { h: 11, m: 30 }, duration_min: 90,
+    address: "83 Wayne St", city: "Jersey City", state: "NJ", neighborhood: "Van Vorst Park / Downtown Jersey City (Barrow Mansion)",
+    lat: 40.7183, lng: -74.0450, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday General Program (11:30am–1:00pm ET) at Kadampa Meditation Center NYC — Jersey City, Barrow Mansion, 83 Wayne St, Jersey City NJ 07302. Guided meditation and Buddhist teachings in the New Kadampa Tradition (NKT). Teacher: Jessica Rispoli and rotating NKT teachers; topic follows seasonal series. Drop-in; all welcome. $10/class; free for NKT supporting members. Steps from Grove St PATH station. meditationinnewyork.org/jersey-city-meditation-and-buddhism/.",
+    source_url: "https://meditationinnewyork.org/jersey-city-meditation-and-buddhism/", event_url: "https://meditationinnewyork.org/jersey-city-meditation-and-buddhism/",
+  },
+
+  // sunofawareness.wordpress.com · Plum Village · 275 Grove St, Jersey City NJ
+  {
+    org_id: "sun_of_awareness_jc", org_name: "Sun of Awareness Sangha",
+    title: "Sunday Sitting",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 90,
+    address: "275 Grove St, 3rd Floor", city: "Jersey City", state: "NJ", neighborhood: "Downtown Jersey City (Yoga Shunya)",
+    lat: 40.7185, lng: -74.0462, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Sitting (9:00–10:30am ET) at Sun of Awareness Sangha, Yoga Shunya, 275 Grove St 3rd floor, Jersey City NJ 07302 (enter double doors left of Bar Majestic, then upstairs). Plum Village / Thich Nhat Hanh tradition. Includes silent or guided sitting meditation, walking meditation, dharma reading, and sharing. Founded 2009; affiliated with Community of Mindfulness NY Metro and Blue Cliff Monastery. All welcome; beginners-friendly. Free ($5–10 donation to Yoga Shunya welcome). Contact: Robb Kushner, 201-349-4481, robbkushner@gmail.com. sunofawareness.wordpress.com.",
+    source_url: "https://sunofawareness.wordpress.com/", event_url: "https://sunofawareness.wordpress.com/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
