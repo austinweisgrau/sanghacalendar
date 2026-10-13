@@ -1,5 +1,5 @@
 """
-Lehigh Valley, PA — Phase 3 expansion (heartbeat 65).
+Lehigh Valley, PA — Phase 3 expansion (heartbeat 65; expanded heartbeat 113).
 
 The Lehigh Valley (Allentown / Bethlehem / Emmaus, PA; ~830k metro) is home
 to a modest but real Buddhist community. Centers are small and mostly lack
@@ -18,7 +18,15 @@ Centers included:
     Unity of Lehigh Valley, 26 N 3rd St, Emmaus PA 18049
     lvbuddhistgroup.org · Monthly Sunday 4pm dharma + meditation gathering
 
-Research notes (2026-05-25):
+  - Christmas City Sangha (christmas_city_sangha) — Plum Village / TNH Zen
+    Cathedral Church of the Nativity, 321 Wyandotte St, Bethlehem PA 18015
+    pa-community-of-mindful-living.org · Weekly Wednesday 7pm sit (in-person)
+
+  - Mountain Lotus Sangha (mountain_lotus_sangha) — Plum Village / TNH Zen
+    Jim Thorpe Yoga, 434 Center St, Jim Thorpe PA 18229
+    mountainlotussangha.weebly.com · Weekly Sunday 10am sit (in-person)
+
+Research notes (2026-05-25 / updated 2026-10-13):
   - Dharma Moon Sangha: active since 2009. Meets at Living Room Yoga, Emmaus.
     Weekly Tuesday 7pm (in-person + Zoom). 20-min zazen, kinhin, more zazen,
     dharma sharing. Free, drop-in welcome. emmaussangha@gmail.com.
@@ -32,6 +40,15 @@ Research notes (2026-05-25):
     lineages. Monthly Sunday 4–5:30pm at Unity of Lehigh Valley church (Emmaus).
     2026 confirmed dates: Jun 21, Jul 12 (plus likely Aug–Oct). All welcome.
     No iCal; individual event ICS downloads only.
+  - Christmas City Sangha: Plum Village / TNH, affiliated with PA Community of
+    Mindful Living. Meets at Cathedral Church of the Nativity (historic Episcopal
+    church), 321 Wyandotte St, Bethlehem. Wed 7–8:30pm (doors 6:30pm): 20-min
+    guided meditation, walking meditation, silent sitting. Contact Kevin Siddons,
+    kevinsiddons@yahoo.com. No iCal. Free.
+  - Mountain Lotus Sangha: Plum Village / TNH, affiliated with PA Community of
+    Mindful Living. Meets at Jim Thorpe Yoga, 434 Center St, Jim Thorpe PA
+    (~35 mi NW of Allentown). Weekly Sunday 10am–noon. No iCal.
+    mountainlotussangha.weebly.com (may be outdated).
   - Saccananda Dhamma Center (5058 PA-378, Bethlehem): Burmese Theravada;
     primarily serves ethnic community, schedule unconfirmed — deferred.
   - New Leaf Meditation (131 S Main St, Nazareth): secular mindfulness, not
@@ -107,6 +124,47 @@ CENTERS = {
             "Monthly Sunday 4:00–5:30pm: guest teachers from Theravada, Tibetan, "
             "and Zen traditions lead meditation, dharma talks, and Q&A. Open to "
             "Buddhist and non-Buddhist alike. Free. Info@lvbuddhistgroup.org."
+        ),
+    ),
+    "christmas_city_sangha": Center(
+        id="christmas_city_sangha",
+        name="Christmas City Sangha",
+        url="https://www.pa-community-of-mindful-living.org/christmas-city-sangha.html",
+        address="321 Wyandotte St",
+        city="Bethlehem",
+        state="PA",
+        zip_code="18015",
+        lat=40.6192,
+        lng=-75.3736,
+        neighborhood="Bethlehem",
+        tradition=Tradition.ZEN,
+        notes=(
+            "Christmas City Sangha is a Plum Village / Thich Nhat Hanh community "
+            "affiliated with the PA Community of Mindful Living. They meet every "
+            "Wednesday 7:00–8:30pm (doors open 6:30pm) at the Cathedral Church of "
+            "the Nativity, 321 Wyandotte St, Bethlehem. Practice includes 20 minutes "
+            "of guided meditation, walking meditation, and silent sitting. Free, all "
+            "welcome. Contact Kevin Siddons at kevinsiddons@yahoo.com."
+        ),
+    ),
+    "mountain_lotus_sangha": Center(
+        id="mountain_lotus_sangha",
+        name="Mountain Lotus Sangha",
+        url="http://mountainlotussangha.weebly.com",
+        address="434 Center St",
+        city="Jim Thorpe",
+        state="PA",
+        zip_code="18229",
+        lat=40.8768,
+        lng=-75.7355,
+        neighborhood="Jim Thorpe",
+        tradition=Tradition.ZEN,
+        notes=(
+            "Mountain Lotus Sangha is a Plum Village / Thich Nhat Hanh community "
+            "affiliated with the PA Community of Mindful Living. They meet every "
+            "Sunday 10:00am–noon at Jim Thorpe Yoga (434 Center St, Jim Thorpe PA), "
+            "approximately 35 miles northwest of Allentown in the Pocono foothills. "
+            "Free, all welcome."
         ),
     ),
 }

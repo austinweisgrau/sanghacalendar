@@ -4352,6 +4352,36 @@ const SITS = [
   },
 
   // -------------------------------------------------------------------------
+  // Lehigh Valley additions — heartbeat 113
+  // -------------------------------------------------------------------------
+
+  // Christmas City Sangha — Plum Village / TNH Zen. kevinsiddons@yahoo.com
+  // Cathedral Church of the Nativity, 321 Wyandotte St, Bethlehem PA 18015.
+  // Weekly Wednesday 7–8:30pm. PA Community of Mindful Living affiliate.
+  {
+    org_id: "christmas_city_sangha", org_name: "Christmas City Sangha",
+    title: "Wednesday Evening Sit",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "321 Wyandotte St", city: "Bethlehem", state: "PA", neighborhood: "Bethlehem",
+    lat: 40.6192, lng: -75.3736, tradition: "zen", location_type: "in-person",
+    notes: "Christmas City Sangha Wednesday evening sit (7:00–8:30pm, doors 6:30pm) at Cathedral Church of the Nativity, 321 Wyandotte St, Bethlehem PA. Plum Village / Thich Nhat Hanh tradition, affiliated with PA Community of Mindful Living. Practice: 20-min guided meditation, walking meditation, silent sitting. Free, all welcome. Contact Kevin Siddons, kevinsiddons@yahoo.com.",
+    source_url: "https://www.pa-community-of-mindful-living.org/christmas-city-sangha.html", event_url: "https://www.pa-community-of-mindful-living.org/christmas-city-sangha.html",
+  },
+
+  // Mountain Lotus Sangha — Plum Village / TNH Zen. mountainlotussangha.weebly.com
+  // Jim Thorpe Yoga, 434 Center St, Jim Thorpe PA 18229. (~35 mi NW of Allentown)
+  // Weekly Sunday 10am–noon. PA Community of Mindful Living affiliate.
+  {
+    org_id: "mountain_lotus_sangha", org_name: "Mountain Lotus Sangha",
+    title: "Sunday Morning Sit",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "434 Center St", city: "Jim Thorpe", state: "PA", neighborhood: "Jim Thorpe",
+    lat: 40.8768, lng: -75.7355, tradition: "zen", location_type: "in-person",
+    notes: "Mountain Lotus Sangha Sunday morning sit (10:00am–noon) at Jim Thorpe Yoga, 434 Center St, Jim Thorpe PA. Plum Village / Thich Nhat Hanh tradition, affiliated with PA Community of Mindful Living. Jim Thorpe is a scenic Pocono foothills town ~35 miles northwest of Allentown. Free, all welcome.",
+    source_url: "http://mountainlotussangha.weebly.com", event_url: "http://mountainlotussangha.weebly.com",
+  },
+
+  // -------------------------------------------------------------------------
   // Chattanooga, TN — Phase 3 (heartbeat 67)
   // -------------------------------------------------------------------------
 

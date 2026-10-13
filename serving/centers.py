@@ -5451,6 +5451,49 @@ CENTERS = {
             "non-Buddhist alike. Free. Info@lvbuddhistgroup.org."
         ),
     },
+    # Lehigh Valley additions — heartbeat 113
+    "christmas_city_sangha": {
+        "id": "christmas_city_sangha",
+        "name": "Christmas City Sangha",
+        "tradition": "zen",
+        "url": "https://www.pa-community-of-mindful-living.org/christmas-city-sangha.html",
+        "address": "321 Wyandotte St",
+        "city": "Bethlehem",
+        "state": "PA",
+        "zip": "18015",
+        "lat": 40.6192,
+        "lng": -75.3736,
+        "neighborhood": "Bethlehem",
+        "bio": (
+            "Christmas City Sangha is a Plum Village / Thich Nhat Hanh community "
+            "affiliated with the PA Community of Mindful Living. They meet every "
+            "Wednesday 7:00–8:30pm (doors open 6:30pm) at the Cathedral Church of "
+            "the Nativity, a historic Episcopal church at 321 Wyandotte St in "
+            "Bethlehem, PA. Practice includes 20 minutes of guided meditation, "
+            "walking meditation, and silent sitting. Free, all welcome. "
+            "Contact Kevin Siddons at kevinsiddons@yahoo.com."
+        ),
+    },
+    "mountain_lotus_sangha": {
+        "id": "mountain_lotus_sangha",
+        "name": "Mountain Lotus Sangha",
+        "tradition": "zen",
+        "url": "http://mountainlotussangha.weebly.com",
+        "address": "434 Center St",
+        "city": "Jim Thorpe",
+        "state": "PA",
+        "zip": "18229",
+        "lat": 40.8768,
+        "lng": -75.7355,
+        "neighborhood": "Jim Thorpe",
+        "bio": (
+            "Mountain Lotus Sangha is a Plum Village / Thich Nhat Hanh community "
+            "affiliated with the PA Community of Mindful Living. They meet every "
+            "Sunday 10:00am–noon at Jim Thorpe Yoga, 434 Center St, Jim Thorpe PA — "
+            "a scenic former coal-mining town in the Pocono foothills, approximately "
+            "35 miles northwest of Allentown. Free, all welcome."
+        ),
+    },
     # -------------------------------------------------------------------------
     # Chattanooga, TN — Phase 3 (heartbeat 67)
     # -------------------------------------------------------------------------
