@@ -6781,6 +6781,61 @@ const SITS = [
     notes: "Sunday Sitting (9:00–10:30am ET) at Sun of Awareness Sangha, Yoga Shunya, 275 Grove St 3rd floor, Jersey City NJ 07302 (enter double doors left of Bar Majestic, then upstairs). Plum Village / Thich Nhat Hanh tradition. Includes silent or guided sitting meditation, walking meditation, dharma reading, and sharing. Founded 2009; affiliated with Community of Mindfulness NY Metro and Blue Cliff Monastery. All welcome; beginners-friendly. Free ($5–10 donation to Yoga Shunya welcome). Contact: Robb Kushner, 201-349-4481, robbkushner@gmail.com. sunofawareness.wordpress.com.",
     source_url: "https://sunofawareness.wordpress.com/", event_url: "https://sunofawareness.wordpress.com/",
   },
+
+  // -----------------------------------------------------------------------
+  // Western Massachusetts / Pioneer Valley Phase 3 (heartbeat 114)
+  // -----------------------------------------------------------------------
+
+  // pioneervalley.shambhala.org · Shambhala/Tibetan · 191 Main St 3rd Floor, Northampton MA
+  {
+    org_id: "pioneer_valley_shambhala", org_name: "Pioneer Valley Shambhala Meditation Center",
+    title: "Monday Evening Open Sitting",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "191 Main Street, 3rd Floor", city: "Northampton", state: "MA", neighborhood: "Downtown Northampton",
+    lat: 42.3229, lng: -72.6414, tradition: "tibetan", location_type: "in-person",
+    notes: "Monday Evening Open Sitting (6:30–8:00pm ET) at Pioneer Valley Shambhala Meditation Center, 191 Main Street 3rd Floor, Northampton MA 01060 (elevator available). Drop-in sitting meditation; instruction available. Shambhala International / Chogyam Trungpa Rinpoche lineage. All welcome. (413) 585-9848. pioneervalley.shambhala.org.",
+    source_url: "https://pioneervalley.shambhala.org", event_url: "https://pioneervalley.shambhala.org/programs/",
+  },
+  {
+    org_id: "pioneer_valley_shambhala", org_name: "Pioneer Valley Shambhala Meditation Center",
+    title: "Thursday Evening Open Sitting",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "191 Main Street, 3rd Floor", city: "Northampton", state: "MA", neighborhood: "Downtown Northampton",
+    lat: 42.3229, lng: -72.6414, tradition: "tibetan", location_type: "in-person",
+    notes: "Thursday Evening Open Sitting (7:00–8:30pm ET) at Pioneer Valley Shambhala Meditation Center, 191 Main Street 3rd Floor, Northampton MA 01060 (elevator available). Drop-in sitting meditation; instruction available. Shambhala International / Chogyam Trungpa Rinpoche lineage. All welcome. (413) 585-9848. pioneervalley.shambhala.org.",
+    source_url: "https://pioneervalley.shambhala.org", event_url: "https://pioneervalley.shambhala.org/programs/",
+  },
+
+  // oxbowzen.org · Village Zendo Zen · First Churches, 129 Main St (Center St entrance), Northampton MA
+  {
+    org_id: "oxbow_zen", org_name: "Oxbow Zen",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 8, m: 0 }, duration_min: 90,
+    address: "129 Main Street (enter from Center Street)", city: "Northampton", state: "MA", neighborhood: "Downtown Northampton (First Churches)",
+    lat: 42.3257, lng: -72.6397, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Zazen (8:00–9:30am ET) at Oxbow Zen, upstairs at First Churches of Northampton — enter from Center Street behind the garden; be seated by 7:55am. Two 30-minute rounds of zazen, kinhin (walking meditation), and chanting service. 3rd Sunday includes dharma study group. Village Zendo lineage (Roshi Enkyo O'Hara). All levels welcome; online option available. Zazenkai (all-day sits) offered seasonally. oxbowzen.org.",
+    source_url: "https://oxbowzen.org", event_url: "https://oxbowzen.org/category/events/weekly-sit/",
+  },
+  {
+    org_id: "oxbow_zen", org_name: "Oxbow Zen",
+    title: "Thursday Evening Zazen",
+    days: ["Thursday"], time: { h: 17, m: 30 }, duration_min: 70,
+    address: "129 Main Street (enter from Center Street)", city: "Northampton", state: "MA", neighborhood: "Downtown Northampton (First Churches)",
+    lat: 42.3257, lng: -72.6397, tradition: "zen", location_type: "in-person",
+    notes: "Thursday Evening Zazen (5:30–6:40pm ET) at Oxbow Zen, upstairs at First Churches of Northampton — enter from Center Street; be seated by 5:25pm. Two rounds of zazen and kinhin. Village Zendo lineage (Roshi Enkyo O'Hara). All levels welcome; online option available. oxbowzen.org.",
+    source_url: "https://oxbowzen.org", event_url: "https://oxbowzen.org/category/events/weekly-sit/",
+  },
+
+  // boundlessway.org · Boundless Way Zen · 220 Main St, Northampton MA (Unitarian Society)
+  {
+    org_id: "boundless_way_northampton", org_name: "Boundless Way Zen — Northampton",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 30 }, duration_min: 60,
+    address: "220 Main Street", city: "Northampton", state: "MA", neighborhood: "Downtown Northampton (Unitarian Society)",
+    lat: 42.3234, lng: -72.6362, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday Evening Zazen (7:30–8:30pm ET) at Boundless Way Zen — Northampton, in the Parlor of the Unitarian Society of Northampton & Florence, 220 Main Street (enter via the side door near the back, up a half-flight of stairs). Brief chanting, two 25-minute zazen periods, and walking meditation. 1st and 3rd Wednesdays include a dharma talk. James Ishmael Ford Roshi lineage (Soto/Rinzai blend). No experience required. Free. northamptonzen.org / boundlessway.org.",
+    source_url: "https://boundlessway.org", event_url: "https://boundlessway.org/timetable/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

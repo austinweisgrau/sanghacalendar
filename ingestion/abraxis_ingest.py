@@ -122,6 +122,7 @@ from ingestion.sources import worcester as worcester_sources  # noqa: F401 (no l
 from ingestion.sources import tulsa as tulsa_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import syracuse as syracuse_sources
 from ingestion.sources import jersey_city as jersey_city_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import western_mass as western_mass_sources
 
 log = logging.getLogger(__name__)
 
@@ -1392,6 +1393,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ Dayton iCal {org_id} failed: {e}")
+
+    # Western MA Phase 3 — Insight Meditation Western MA iCal
+    log.info("--- Western MA Phase 3: Insight Meditation Western MA iCal ---")
+    for org_id, feed_cfg in western_mass_sources.ICAL_FEEDS.items():
+        center = western_mass_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Western MA iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Western MA iCal feed {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

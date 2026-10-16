@@ -8322,4 +8322,100 @@ CENTERS = {
             "sunofawareness.wordpress.com."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Western Massachusetts / Pioneer Valley (heartbeat 114)
+    # -----------------------------------------------------------------------
+    "insight_wma": {
+        "id": "insight_wma",
+        "name": "Insight Meditation Western MA",
+        "url": "https://insightwma.org",
+        "address": "116 Pleasant Street, Suite 242",
+        "city": "Easthampton",
+        "state": "MA",
+        "zip": "01027",
+        "lat": 42.2669,
+        "lng": -72.6697,
+        "neighborhood": "Eastworks Mill Building, Easthampton",
+        "tradition": "theravada",
+        "description": (
+            "Insight Meditation Western MA (IWM) is a non-residential urban dharma "
+            "center in the Theravada / Insight Meditation tradition, located in the "
+            "Eastworks mill building in Easthampton, MA. Guiding Teacher Emerita: "
+            "Rebecca Bradshaw; active teaching team includes Jaya Karlson and others. "
+            "Weekly programs include Saturday Sangha (8:45–10am in-person, newcomer-"
+            "friendly), Tuesday Sangha (5:30–7pm in-person, sitting + dharma talk), "
+            "and affinity groups (BIPOC, Queer & Trans, Elders). Classes, half-day "
+            "and one-day retreats year-round. (413) 527-0388. insightwma.org."
+        ),
+    },
+    "pioneer_valley_shambhala": {
+        "id": "pioneer_valley_shambhala",
+        "name": "Pioneer Valley Shambhala Meditation Center",
+        "url": "https://pioneervalley.shambhala.org",
+        "address": "191 Main Street, 3rd Floor",
+        "city": "Northampton",
+        "state": "MA",
+        "zip": "01060",
+        "lat": 42.3229,
+        "lng": -72.6414,
+        "neighborhood": "Downtown Northampton",
+        "tradition": "tibetan",
+        "description": (
+            "Pioneer Valley Shambhala Meditation Center is one of western New England's "
+            "most established Tibetan Buddhist centers, on the 3rd floor of 191 Main "
+            "Street in downtown Northampton (elevator available). Shambhala "
+            "International / Chogyam Trungpa Rinpoche lineage. Two weekly open drop-in "
+            "sittings: Monday 6:30–8pm and Thursday 7–8:30pm — sitting meditation, "
+            "optional instruction, and community. Shambhala Training weekends, "
+            "meditation courses, Heart of Recovery, and programs for younger adults "
+            "throughout the year. (413) 585-9848. pioneervalley.shambhala.org."
+        ),
+    },
+    "oxbow_zen": {
+        "id": "oxbow_zen",
+        "name": "Oxbow Zen",
+        "url": "https://oxbowzen.org",
+        "address": "129 Main Street (enter from Center Street)",
+        "city": "Northampton",
+        "state": "MA",
+        "zip": "01060",
+        "lat": 42.3257,
+        "lng": -72.6397,
+        "neighborhood": "Downtown Northampton (First Churches)",
+        "tradition": "zen",
+        "description": (
+            "Oxbow Zen is a Northampton sitting community in the Village Zendo lineage "
+            "(Roshi Enkyo O'Hara, New York). Meets upstairs in the First Churches of "
+            "Northampton building — enter from Center Street behind the garden (be "
+            "seated by 7:55am for Sunday, by 5:25pm for Thursday). Sunday Morning "
+            "Zazen (8–9:30am): two 30-min sits, kinhin, chanting service; 3rd Sunday "
+            "adds a dharma study group. Thursday Evening Zazen (5:30–6:40pm): two "
+            "rounds of zazen and kinhin. All experience levels welcome. Online option "
+            "available. Zazenkai (all-day sits) offered seasonally. oxbowzen.org."
+        ),
+    },
+    "boundless_way_northampton": {
+        "id": "boundless_way_northampton",
+        "name": "Boundless Way Zen — Northampton",
+        "url": "https://boundlessway.org",
+        "address": "220 Main Street",
+        "city": "Northampton",
+        "state": "MA",
+        "zip": "01060",
+        "lat": 42.3234,
+        "lng": -72.6362,
+        "neighborhood": "Downtown Northampton (Unitarian Society)",
+        "tradition": "zen",
+        "description": (
+            "Boundless Way Zen — Northampton is a free, drop-in Zen sitting group "
+            "affiliated with Boundless Way Zen Temple (Worcester, MA). Meets in the "
+            "Parlor of the Unitarian Society of Northampton & Florence, 220 Main "
+            "Street (enter via the side door near the back, up a half-flight of "
+            "stairs). Wednesday evenings 7:30–8:30pm: brief chanting, two 25-minute "
+            "zazen periods, walking meditation; 1st and 3rd Wednesdays include a "
+            "dharma talk. Boundless Way blends Soto and Rinzai Zen (James Ishmael "
+            "Ford Roshi lineage). No experience required; all welcome. Free. "
+            "northamptonzen.org / boundlessway.org."
+        ),
+    },
 }
