@@ -8418,4 +8418,50 @@ CENTERS = {
             "northamptonzen.org / boundlessway.org."
         ),
     },
+    "winding_path_temple": {
+        "name": "Winding Path Temple",
+        "url": "https://windingpathtemple.org",
+        "address": "36 Marengo Park",
+        "city": "Springfield",
+        "state": "MA",
+        "zip": "01108",
+        "lat": 42.094,
+        "lng": -72.550,
+        "neighborhood": "East Forest Park, Springfield",
+        "tradition": "other",
+        "description": (
+            "Winding Path Temple (formerly Nagado Buddhist Sangha, founded 2011) is the "
+            "only Buddhist center offering regular public hybrid sits directly in "
+            "Springfield, MA. Tendai Buddhism — Japanese Mahayana — affiliated with the "
+            "Tendai Buddhist Institute in East Chatham, NY. Monday evenings 6:00–7:45pm: "
+            "hybrid in-person at 36 Marengo Park (off Belmont Ave, East Forest Park) + "
+            "Zoom. Format: 30-min dharma talk or group discussion followed by the Tendai "
+            "Daily Service and two periods of sitting meditation. Topics rotate weekly: "
+            "Lotus Sutra Study, Buddhism in Daily Life, Sangha Community Night, and "
+            "History & Philosophy of Buddhism. 1st and 3rd Mondays include a newcomer "
+            "orientation 6:00–6:30pm. Occasional Day of Practice retreats and ceremonies. "
+            "All backgrounds welcome. windingpathtemple.org."
+        ),
+    },
+    "hopping_tree_sangha": {
+        "name": "Hopping Tree Sangha",
+        "url": "https://hoppingtreesangha.com",
+        "address": "Kellogg Avenue (Yoga Center above Rao's Cafe)",
+        "city": "Amherst",
+        "state": "MA",
+        "zip": "01002",
+        "lat": 42.374,
+        "lng": -72.520,
+        "neighborhood": "Downtown Amherst",
+        "tradition": "other",
+        "description": (
+            "Hopping Tree Sangha is a Plum Village / Thich Nhat Hanh sitting community "
+            "meeting in Amherst, MA — the closest Plum Village group to the Springfield "
+            "metro. Wednesday mornings 7:00–8:00am in-person at the Yoga Center above "
+            "Rao's Cafe, Kellogg Avenue, Amherst. Practice includes sitting meditation "
+            "and walking meditation in the TNH tradition. The 1st Wednesday of each month "
+            "includes recitation of the 5 Mindfulness Trainings. Drop-in welcome; "
+            "suggested donation $5/week. (413) 256-4516. hoppingtreesangha.com."
+        ),
+    },
 }

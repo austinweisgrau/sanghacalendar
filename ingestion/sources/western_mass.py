@@ -46,6 +46,22 @@ Research notes (2026-10-16):
   - Living Dharma Center (Northampton, Tue 7pm): website active but schedule info
     sparse; deferred pending schedule verification.
   - Dhamma Dhara (Shelburne): Goenka 10-day courses only — not a drop-in sit.
+
+Research notes (2026-10-19) — Springfield/Amherst expansion:
+  - Winding Path Temple (Springfield): Tendai Buddhist (Japanese Mahayana), affiliated
+    with Tendai Buddhist Institute (East Chatham NY). Only confirmed public in-person
+    Buddhist center in Springfield proper. Monday evenings 6–7:45pm hybrid in-person
+    + Zoom at 36 Marengo Park, East Forest Park. Tockify calendar exists but contains
+    only rare special events (not weekly sits); recurring Monday sit seeded.
+    windingpathtemple.org.
+  - Hopping Tree Sangha (Amherst): Plum Village / Thich Nhat Hanh lineage, lay-led.
+    Meets Wednesday 7:00am in-person at Yoga Center above Rao's Cafe, Kellogg Ave,
+    Amherst. 1st Wednesday adds 5 Mindfulness Trainings recitation. Closest Plum
+    Village group to the Springfield metro. hoppingtreesangha.com.
+  - Vietnamese temples in Springfield (Huong Son, Huyen Quang Pagoda): active nonprofits
+    but no public English-language schedule found — deferred pending phone verification.
+  - Shelburne Falls Shambhala Center (71B Ashfield St, Shelburne Falls): active Sunday
+    sits but ~40 min north in Franklin County; not Springfield metro. Deferred.
 """
 
 from data.schemas.event import Center, Tradition
@@ -146,6 +162,54 @@ CENTERS = {
             "dharma talk. Boundless Way blends Soto and Rinzai Zen (James Ishmael "
             "Ford Roshi lineage). No experience required; all welcome. Free. "
             "northamptonzen.org / boundlessway.org."
+        ),
+    ),
+    "winding_path_temple": Center(
+        id="winding_path_temple",
+        name="Winding Path Temple",
+        url="https://windingpathtemple.org",
+        address="36 Marengo Park",
+        city="Springfield",
+        state="MA",
+        zip_code="01108",
+        lat=42.094,
+        lng=-72.550,
+        neighborhood="East Forest Park, Springfield",
+        tradition=Tradition.OTHER,
+        notes=(
+            "Winding Path Temple (formerly Nagado Buddhist Sangha, founded 2011) is the "
+            "only Buddhist center offering regular public hybrid sits directly in "
+            "Springfield, MA. Tendai Buddhism — Japanese Mahayana — affiliated with the "
+            "Tendai Buddhist Institute in East Chatham, NY. Monday evenings 6:00–7:45pm: "
+            "hybrid in-person at 36 Marengo Park (off Belmont Ave, East Forest Park) + "
+            "Zoom. Format: 30-min dharma talk or group discussion followed by the Tendai "
+            "Daily Service and two periods of sitting meditation. Topics rotate weekly: "
+            "Lotus Sutra Study, Buddhism in Daily Life, Sangha Community Night, and "
+            "History & Philosophy of Buddhism. 1st and 3rd Mondays include a newcomer "
+            "orientation 6:00–6:30pm. Occasional Day of Practice retreats and ceremonies. "
+            "All backgrounds welcome. windingpathtemple.org."
+        ),
+    ),
+    "hopping_tree_sangha": Center(
+        id="hopping_tree_sangha",
+        name="Hopping Tree Sangha",
+        url="https://hoppingtreesangha.com",
+        address="Kellogg Avenue (Yoga Center above Rao's Cafe)",
+        city="Amherst",
+        state="MA",
+        zip_code="01002",
+        lat=42.374,
+        lng=-72.520,
+        neighborhood="Downtown Amherst",
+        tradition=Tradition.OTHER,
+        notes=(
+            "Hopping Tree Sangha is a Plum Village / Thich Nhat Hanh sitting community "
+            "meeting in Amherst, MA — the closest Plum Village group to the Springfield "
+            "metro. Wednesday mornings 7:00–8:00am in-person at the Yoga Center above "
+            "Rao's Cafe, Kellogg Avenue, Amherst. Practice includes sitting meditation "
+            "and walking meditation in the TNH tradition. The 1st Wednesday of each month "
+            "includes recitation of the 5 Mindfulness Trainings. Drop-in welcome; "
+            "suggested donation $5/week. (413) 256-4516. hoppingtreesangha.com."
         ),
     ),
 }

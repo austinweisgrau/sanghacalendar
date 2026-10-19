@@ -6836,6 +6836,28 @@ const SITS = [
     notes: "Wednesday Evening Zazen (7:30–8:30pm ET) at Boundless Way Zen — Northampton, in the Parlor of the Unitarian Society of Northampton & Florence, 220 Main Street (enter via the side door near the back, up a half-flight of stairs). Brief chanting, two 25-minute zazen periods, and walking meditation. 1st and 3rd Wednesdays include a dharma talk. James Ishmael Ford Roshi lineage (Soto/Rinzai blend). No experience required. Free. northamptonzen.org / boundlessway.org.",
     source_url: "https://boundlessway.org", event_url: "https://boundlessway.org/timetable/",
   },
+
+  // windingpathtemple.org · Tendai Buddhist · 36 Marengo Park, Springfield MA
+  {
+    org_id: "winding_path_temple", org_name: "Winding Path Temple",
+    title: "Monday Evening Meditation",
+    days: ["Monday"], time: { h: 18, m: 0 }, duration_min: 105,
+    address: "36 Marengo Park", city: "Springfield", state: "MA", neighborhood: "East Forest Park, Springfield",
+    lat: 42.094, lng: -72.550, tradition: "other", location_type: "hybrid",
+    notes: "Monday Evening Meditation (6:00–7:45pm ET) at Winding Path Temple, 36 Marengo Park, Springfield MA 01108 (off Belmont Ave, East Forest Park). Hybrid in-person + Zoom. Format: 30-min dharma talk or discussion + Tendai Daily Service + two periods of sitting meditation. Topics rotate weekly (Lotus Sutra Study / Buddhism in Daily Life / Sangha Community Night / History of Buddhism). 1st and 3rd Mondays: newcomer orientation 6:00–6:30pm. Tendai Buddhism (Japanese Mahayana), affiliated with Tendai Buddhist Institute, East Chatham NY. All welcome. windingpathtemple.org.",
+    source_url: "https://windingpathtemple.org", event_url: "https://windingpathtemple.org/schedule/",
+  },
+
+  // hoppingtreesangha.com · Plum Village / Thich Nhat Hanh · Yoga Center above Rao's Cafe, Kellogg Ave, Amherst MA
+  {
+    org_id: "hopping_tree_sangha", org_name: "Hopping Tree Sangha",
+    title: "Wednesday Morning Sit",
+    days: ["Wednesday"], time: { h: 7, m: 0 }, duration_min: 60,
+    address: "Kellogg Avenue (Yoga Center above Rao's Cafe)", city: "Amherst", state: "MA", neighborhood: "Downtown Amherst",
+    lat: 42.374, lng: -72.520, tradition: "plum_village", location_type: "in-person",
+    notes: "Wednesday Morning Sit (7:00–8:00am ET) at Hopping Tree Sangha, Yoga Center above Rao's Cafe, Kellogg Avenue, Amherst MA 01002. In-person sitting + walking meditation in the Plum Village / Thich Nhat Hanh tradition. 1st Wednesday includes the 5 Mindfulness Trainings recitation. Drop-in welcome. Suggested donation $5/week. Contact: (413) 256-4516. hoppingtreesangha.com.",
+    source_url: "https://hoppingtreesangha.com", event_url: "https://hoppingtreesangha.com/schedule/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
