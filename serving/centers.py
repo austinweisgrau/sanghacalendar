@@ -8464,4 +8464,135 @@ CENTERS = {
             "suggested donation $5/week. (413) 256-4516. hoppingtreesangha.com."
         ),
     },
+    "green_river_zen": {
+        "name": "Green River Zen Center",
+        "url": "https://www.greenriverzen.org",
+        "address": "595B River Road (Windhorse Hill Retreat Center)",
+        "city": "South Deerfield",
+        "state": "MA",
+        "zip": "01373",
+        "lat": 42.4774,
+        "lng": -72.5996,
+        "neighborhood": "Windhorse Hill, South Deerfield",
+        "tradition": "zen",
+        "description": (
+            "Green River Zen Center is a Soto Zen community in the Pioneer Valley / "
+            "Franklin County area of western Massachusetts, meeting at Windhorse Hill "
+            "Retreat Center (595B River Road, South Deerfield). Founded by Roshi Eve "
+            "Myonen Marko; current teachers include Senseis Tom Daijo Redden, Suzanne "
+            "Shunryo Webber, Sally Sonen Kealy, John Kealy, and John Genyo Sprague. "
+            "Saturday Morning Zazen (8:30–10am): hybrid in-person + Zoom — sitting "
+            "meditation and service. Also offers weekday morning Zoom sits (Mon–Fri "
+            "6–7am) and Tuesday evening Zoom (6–7:30pm: sitting + dharma reflection). "
+            "Sesshins and one-day retreats throughout the year. Free and open to the "
+            "public. greenriverzen.org."
+        ),
+    },
+    "portland_shambhala_me": {
+        "name": "Portland Shambhala Meditation Center",
+        "url": "https://portland.shambhala.org",
+        "address": "81 Oak Street",
+        "city": "Portland",
+        "state": "ME",
+        "zip": "04101",
+        "lat": 43.6570,
+        "lng": -70.2578,
+        "neighborhood": "West End, Portland",
+        "tradition": "tibetan",
+        "description": (
+            "Portland Shambhala Meditation Center is Maine's Shambhala community, "
+            "practicing in the Chögyam Trungpa Rinpoche lineage. Located at 81 Oak "
+            "Street in Portland's West End. Weekly programs include Tuesday Evening "
+            "Meditation (7–8:30pm), Sunday Community Meditation (9–10am), and 3rd "
+            "Saturday Open Community Meditation (9–11:30am). Shambhala Training, "
+            "Poetry Pocket evenings, and dharma talks offered throughout the year. "
+            "portland.shambhala.org."
+        ),
+    },
+    "nagaloka_portland": {
+        "name": "Nagaloka Buddhist Center",
+        "url": "https://www.nagalokabuddhistcenter.org",
+        "address": "1 Forest Avenue, 2nd Floor",
+        "city": "Portland",
+        "state": "ME",
+        "zip": "04101",
+        "lat": 43.6573,
+        "lng": -70.2603,
+        "neighborhood": "Downtown Portland",
+        "tradition": "other",
+        "description": (
+            "Nagaloka Buddhist Center is part of the Triratna Buddhist Community — "
+            "a worldwide movement (formerly Friends of the Western Buddhist Order) "
+            "founded by Sangharakshita, emphasizing lay practice and accessible "
+            "dharma. Located on the 2nd floor of 1 Forest Avenue in downtown Portland. "
+            "Founded in 2002. Sunday Morning Meditation (8:30–10am in-person) and "
+            "Monday Night Meditation (6:30–8pm in-person). Wednesday Sangha Nights "
+            "on Zoom (6:30–8pm). All backgrounds welcome; no experience needed. "
+            "(207) 774-1545. nagalokabuddhistcenter.org."
+        ),
+    },
+    "open_door_portland": {
+        "name": "Open Door Meditation Community",
+        "url": "https://www.opendoorportland.org",
+        "address": "160 Presumpscot Street, Unit 2D",
+        "city": "Portland",
+        "state": "ME",
+        "zip": "04103",
+        "lat": 43.6770,
+        "lng": -70.2495,
+        "neighborhood": "East Deering, Portland",
+        "tradition": "theravada",
+        "description": (
+            "Open Door Meditation Community is southern Maine's Insight Meditation "
+            "sangha — a welcoming, inclusive community in the Theravada/Vipassana "
+            "tradition. In-person: Sunday Community Sit (9–10am) and Wednesday "
+            "Evening Meditation (5:30–6:45pm) at 160 Presumpscot Street, Unit 2D. "
+            "Also Zoom: Tuesday evening (6:30–8pm) and daily early morning (6–6:45am). "
+            "Daylong retreats, BIPOC Circle, Sutta Study, and Yoga programming "
+            "offered. Dharma teachers: Amy Bird, Susa Talan, Lynn Teo, Adam Pepi. "
+            "Sliding-scale dana. opendoorportland.org."
+        ),
+    },
+    "vajra_vidya_portland": {
+        "name": "Vajra Vidya Portland",
+        "url": "https://portlandmainebuddhism.org",
+        "address": "159 State Street",
+        "city": "Portland",
+        "state": "ME",
+        "zip": "04101",
+        "lat": 43.6631,
+        "lng": -70.2640,
+        "neighborhood": "West End, Portland",
+        "tradition": "tibetan",
+        "description": (
+            "Vajra Vidya Portland is a Tibetan Buddhist center in the Karma Kagyu "
+            "lineage, founded by Khenchen Thrangu Rinpoche, at 159 State Street in "
+            "Portland's West End. The Sunday Morning Open Meditation (9–10am) is "
+            "open to everyone — includes sitting meditation, prayers in English, and "
+            "tea. Advanced study groups meet Monday evenings (6:30–8pm) and Wednesday "
+            "evenings (6:30–8:15pm, for those who have taken refuge). Medicine Buddha "
+            "practice 1st Tuesday 9am and 3rd Sunday 10am. "
+            "portlandmainebuddhism.org."
+        ),
+    },
+    "peaceful_harbor_sangha_me": {
+        "name": "Peaceful Harbor Sangha",
+        "url": "https://www.peacefulharborsangha.org",
+        "address": "160 Presumpscot Street",
+        "city": "Portland",
+        "state": "ME",
+        "zip": "04103",
+        "lat": 43.6770,
+        "lng": -70.2495,
+        "neighborhood": "East Deering, Portland",
+        "tradition": "other",
+        "description": (
+            "Peaceful Harbor Sangha is a Plum Village / Thich Nhat Hanh lay community "
+            "in Portland, Maine, meeting Sunday evenings 6:30–8pm at 160 Presumpscot "
+            "Street. Practice includes sitting and walking meditation in the TNH "
+            "tradition, emphasizing understanding and loving-kindness. All backgrounds "
+            "welcome. Contact: Peter Eglinton, peglinton@protonmail.com. "
+            "peacefulharborsangha.org."
+        ),
+    },
 }

@@ -6858,6 +6858,109 @@ const SITS = [
     notes: "Wednesday Morning Sit (7:00–8:00am ET) at Hopping Tree Sangha, Yoga Center above Rao's Cafe, Kellogg Avenue, Amherst MA 01002. In-person sitting + walking meditation in the Plum Village / Thich Nhat Hanh tradition. 1st Wednesday includes the 5 Mindfulness Trainings recitation. Drop-in welcome. Suggested donation $5/week. Contact: (413) 256-4516. hoppingtreesangha.com.",
     source_url: "https://hoppingtreesangha.com", event_url: "https://hoppingtreesangha.com/schedule/",
   },
+
+  // greenriverzen.org · Soto Zen · Windhorse Hill Retreat Center, 595B River Rd, South Deerfield MA
+  {
+    org_id: "green_river_zen", org_name: "Green River Zen Center",
+    title: "Saturday Morning Zazen",
+    days: ["Saturday"], time: { h: 8, m: 30 }, duration_min: 90,
+    address: "595B River Road (Windhorse Hill Retreat Center)", city: "South Deerfield", state: "MA", neighborhood: "Windhorse Hill, South Deerfield",
+    lat: 42.4774, lng: -72.5996, tradition: "zen", location_type: "hybrid",
+    notes: "Saturday Morning Zazen (8:30–10:00am ET) at Green River Zen Center, Windhorse Hill Retreat Center, 595B River Road, South Deerfield MA 01373. Hybrid in-person + Zoom. Format: sitting meditation at 8:30am, service (chanting) at 9:40am. Special programs (council, precepts reflection) on designated Saturdays. Masks optional for in-person. Teachers: Roshi Eve Myonen Marko (founding), Sensei Tom Daijo Redden, Sensei Suzanne Shunryo Webber, and others. Free and open to the public. greenriverzen.org.",
+    source_url: "https://www.greenriverzen.org", event_url: "http://www.greenriverzen.org/regular-schedule.html",
+  },
+
+  // portland.shambhala.org · Shambhala/Tibetan · 81 Oak St, Portland ME
+  {
+    org_id: "portland_shambhala_me", org_name: "Portland Shambhala Meditation Center",
+    title: "Tuesday Evening Meditation",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "81 Oak Street", city: "Portland", state: "ME", neighborhood: "West End, Portland",
+    lat: 43.6570, lng: -70.2578, tradition: "tibetan", location_type: "in-person",
+    notes: "Tuesday Evening Meditation (7:00–8:30pm ET) at Portland Shambhala Meditation Center, 81 Oak Street, Portland ME 04101. Weekly open sitting with instructor — Shambhala International (Chögyam Trungpa Rinpoche lineage). All levels welcome; no experience required. portland.shambhala.org.",
+    source_url: "https://portland.shambhala.org", event_url: "https://portland.shambhala.org/events/",
+  },
+  {
+    org_id: "portland_shambhala_me", org_name: "Portland Shambhala Meditation Center",
+    title: "Sunday Community Meditation",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 60,
+    address: "81 Oak Street", city: "Portland", state: "ME", neighborhood: "West End, Portland",
+    lat: 43.6570, lng: -70.2578, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Community Meditation (9:00–10:00am ET) at Portland Shambhala Meditation Center, 81 Oak Street, Portland ME 04101. Weekly morning open sitting — Shambhala (Trungpa lineage). Drop-in, all levels welcome. portland.shambhala.org.",
+    source_url: "https://portland.shambhala.org", event_url: "https://portland.shambhala.org/events/",
+  },
+  {
+    org_id: "portland_shambhala_me", org_name: "Portland Shambhala Meditation Center",
+    title: "Open Community Meditation",
+    days: ["Saturday"], time: { h: 9, m: 0 }, duration_min: 150,
+    address: "81 Oak Street", city: "Portland", state: "ME", neighborhood: "West End, Portland",
+    lat: 43.6570, lng: -70.2578, tradition: "tibetan", location_type: "in-person",
+    week_of_month: [3],
+    notes: "Open Community Meditation — 3rd Saturday of the month (9:00–11:30am ET) at Portland Shambhala Meditation Center, 81 Oak Street, Portland ME 04101. Extended monthly sitting with community programming — Shambhala (Trungpa lineage). Drop-in, all levels welcome. portland.shambhala.org.",
+    source_url: "https://portland.shambhala.org", event_url: "https://portland.shambhala.org/events/",
+  },
+
+  // nagalokabuddhistcenter.org · Triratna Buddhist Community · 1 Forest Ave 2F, Portland ME
+  {
+    org_id: "nagaloka_portland", org_name: "Nagaloka Buddhist Center",
+    title: "Sunday Morning Meditation",
+    days: ["Sunday"], time: { h: 8, m: 30 }, duration_min: 90,
+    address: "1 Forest Avenue, 2nd Floor", city: "Portland", state: "ME", neighborhood: "Downtown Portland",
+    lat: 43.6573, lng: -70.2603, tradition: "other", location_type: "in-person",
+    notes: "Sunday Morning Meditation (8:30–10:00am ET) at Nagaloka Buddhist Center, 1 Forest Avenue (2nd floor), Portland ME 04101. In-person guided meditation, dharma talk, and community tea. Triratna Buddhist Community (formerly Friends of the Western Buddhist Order), founded 2002. All backgrounds welcome, no experience needed. (207) 774-1545. nagalokabuddhistcenter.org.",
+    source_url: "https://www.nagalokabuddhistcenter.org", event_url: "https://www.nagalokabuddhistcenter.org/events",
+  },
+  {
+    org_id: "nagaloka_portland", org_name: "Nagaloka Buddhist Center",
+    title: "Monday Night Meditation",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "1 Forest Avenue, 2nd Floor", city: "Portland", state: "ME", neighborhood: "Downtown Portland",
+    lat: 43.6573, lng: -70.2603, tradition: "other", location_type: "in-person",
+    notes: "Monday Night Meditation (6:30–8:00pm ET) at Nagaloka Buddhist Center, 1 Forest Avenue (2nd floor), Portland ME 04101. In-person sitting meditation, study, and discussion. Triratna Buddhist Community. All welcome. (207) 774-1545. nagalokabuddhistcenter.org.",
+    source_url: "https://www.nagalokabuddhistcenter.org", event_url: "https://www.nagalokabuddhistcenter.org/events",
+  },
+
+  // opendoorportland.org · Insight Meditation · 160 Presumpscot St Unit 2D, Portland ME
+  {
+    org_id: "open_door_portland", org_name: "Open Door Meditation Community",
+    title: "Sunday Community Sit",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 60,
+    address: "160 Presumpscot Street, Unit 2D", city: "Portland", state: "ME", neighborhood: "East Deering, Portland",
+    lat: 43.6770, lng: -70.2495, tradition: "theravada", location_type: "in-person",
+    notes: "Sunday Community Sit (9:00–10:00am ET) at Open Door Meditation Community, 160 Presumpscot Street Unit 2D, Portland ME 04103. In-person Insight / Vipassana sitting. Southern Maine's welcoming Theravada community — all experience levels welcome, sliding-scale dana. Dharma teachers include Amy Bird, Susa Talan, Lynn Teo, Adam Pepi. Also Tue 6:30pm Zoom + daily 6am Zoom. opendoorportland.org.",
+    source_url: "https://www.opendoorportland.org", event_url: "https://www.opendoorportland.org/weekly-meetings",
+  },
+  {
+    org_id: "open_door_portland", org_name: "Open Door Meditation Community",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 17, m: 30 }, duration_min: 75,
+    address: "160 Presumpscot Street, Unit 2D", city: "Portland", state: "ME", neighborhood: "East Deering, Portland",
+    lat: 43.6770, lng: -70.2495, tradition: "theravada", location_type: "in-person",
+    notes: "Wednesday Evening Meditation (5:30–6:45pm ET) at Open Door Meditation Community, 160 Presumpscot Street Unit 2D, Portland ME 04103. In-person Insight / Vipassana sitting. Southern Maine's welcoming Theravada community — all experience levels welcome, sliding-scale dana. opendoorportland.org.",
+    source_url: "https://www.opendoorportland.org", event_url: "https://www.opendoorportland.org/weekly-meetings",
+  },
+
+  // portlandmainebuddhism.org · Tibetan Karma Kagyu · 159 State St, Portland ME
+  {
+    org_id: "vajra_vidya_portland", org_name: "Vajra Vidya Portland",
+    title: "Sunday Open Meditation",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 60,
+    address: "159 State Street", city: "Portland", state: "ME", neighborhood: "West End, Portland",
+    lat: 43.6631, lng: -70.2640, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Open Meditation (9:00–10:00am ET) at Vajra Vidya Portland, 159 State Street, Portland ME 04101. Open to everyone — the best introduction to the community. Sitting meditation with a stretch break, prayers in English, and tea afterward. Karma Kagyu lineage (Khenchen Thrangu Rinpoche). portlandmainebuddhism.org.",
+    source_url: "https://portlandmainebuddhism.org", event_url: "https://portlandmainebuddhism.org/practice-and-study/",
+  },
+
+  // peacefulharborsangha.org · Plum Village / Thich Nhat Hanh · 160 Presumpscot St, Portland ME
+  {
+    org_id: "peaceful_harbor_sangha_me", org_name: "Peaceful Harbor Sangha",
+    title: "Sunday Evening Sit",
+    days: ["Sunday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "160 Presumpscot Street", city: "Portland", state: "ME", neighborhood: "East Deering, Portland",
+    lat: 43.6770, lng: -70.2495, tradition: "plum_village", location_type: "in-person",
+    notes: "Sunday Evening Sit (6:30–8:00pm ET) at Peaceful Harbor Sangha, 160 Presumpscot Street, Portland ME 04103. In-person sitting and walking meditation in the Plum Village / Thich Nhat Hanh tradition. Lay-led community emphasizing understanding and loving-kindness. All backgrounds welcome. Contact: Peter Eglinton, peglinton@protonmail.com. peacefulharborsangha.org.",
+    source_url: "https://www.peacefulharborsangha.org", event_url: "https://www.peacefulharborsangha.org/schedule",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

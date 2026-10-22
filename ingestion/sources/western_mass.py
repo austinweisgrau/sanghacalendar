@@ -7,6 +7,12 @@ institutions span Theravada, Zen, and Tibetan traditions, and the region's
 progressive college-town culture keeps attendance strong.
 
 Centers included:
+  - Green River Zen Center (green_river_zen) — Zen (Soto)
+    Windhorse Hill Retreat Center, 595B River Road, South Deerfield MA 01373.
+    greenriverzen.org
+    Sat 8:30–10am hybrid in-person + Zoom. Roshi Eve Myonen Marko (founding teacher).
+    No iCal (Weebly site); seeded.
+
   - Insight Meditation Western MA (insight_wma) — Theravada (Vipassana)
     Eastworks, 116 Pleasant Street Suite 242, Easthampton MA 01027. insightwma.org
     Live iCal feed (WordPress Events Calendar plugin, insightwma.org/events/?ical=1).
@@ -41,8 +47,8 @@ Research notes (2026-10-16):
   - Boundless Way Northampton: No persistent iCal on boundlessway.org for this group.
     Wednesday evening drop-in seeded. Affiliated with Boundless Way Worcester temple.
   - Green River Zen (Deerfield/Montague): Saturday 8:30am in-person at Windhorse Hill
-    Retreat Center (595B River Rd, Deerfield). Verified active via greenriverzen.org.
-    Not wired this round — remote rural location; may add in future heartbeat.
+    Retreat Center (595B River Rd, South Deerfield). Added heartbeat 116.
+    Soto Zen, Roshi Eve Myonen Marko (founding teacher). No iCal (Weebly site). Seeded.
   - Living Dharma Center (Northampton, Tue 7pm): website active but schedule info
     sparse; deferred pending schedule verification.
   - Dhamma Dhara (Shelburne): Goenka 10-day courses only — not a drop-in sit.
@@ -71,6 +77,33 @@ from data.schemas.event import Center, Tradition
 # ---------------------------------------------------------------------------
 
 CENTERS = {
+    "green_river_zen": Center(
+        id="green_river_zen",
+        name="Green River Zen Center",
+        url="https://www.greenriverzen.org",
+        address="595B River Road (Windhorse Hill Retreat Center)",
+        city="South Deerfield",
+        state="MA",
+        zip_code="01373",
+        lat=42.4774,
+        lng=-72.5996,
+        neighborhood="Windhorse Hill, South Deerfield",
+        tradition=Tradition.ZEN,
+        notes=(
+            "Green River Zen Center is a Soto Zen community meeting in the "
+            "Pioneer Valley / Franklin County area of western Massachusetts, "
+            "at Windhorse Hill Retreat Center (595B River Road, South Deerfield). "
+            "Founded by Roshi Eve Myonen Marko; current teachers include Senseis "
+            "Tom Daijo Redden, Suzanne Shunryo Webber, Sally Sonen Kealy, John "
+            "Kealy, and John Genyo Sprague. Saturday Morning Zazen (8:30–10am): "
+            "hybrid in-person at Windhorse Hill + Zoom — sitting meditation, "
+            "service, and study. Also offers weekday morning Zoom sits (Mon–Fri "
+            "6–7am) and Tuesday evening Zoom (6–7:30pm: 30-min sit + dharma "
+            "reflection). Sesshins, one-day retreats, and special programs "
+            "throughout the year. Free and open to the public (retreats by "
+            "registration). greenriverzen.org."
+        ),
+    ),
     "insight_wma": Center(
         id="insight_wma",
         name="Insight Meditation Western MA",
