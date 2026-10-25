@@ -6961,6 +6961,55 @@ const SITS = [
     notes: "Sunday Evening Sit (6:30–8:00pm ET) at Peaceful Harbor Sangha, 160 Presumpscot Street, Portland ME 04103. In-person sitting and walking meditation in the Plum Village / Thich Nhat Hanh tradition. Lay-led community emphasizing understanding and loving-kindness. All backgrounds welcome. Contact: Peter Eglinton, peglinton@protonmail.com. peacefulharborsangha.org.",
     source_url: "https://www.peacefulharborsangha.org", event_url: "https://www.peacefulharborsangha.org/schedule",
   },
+
+  // ── Iowa City, IA — Phase 3 (heartbeat 117) ──────────────────────────────
+  // Iowa City Zen Center — Soto Zen · Rev. Daiken Nelson Roshi · 1025 E Fairchild St
+  // Hybrid in-person + Zoom · iowacityzencenter.org
+  {
+    org_id: "iowa_city_zen", org_name: "Iowa City Zen Center",
+    title: "Morning Zazen",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    time: { h: 7, m: 0 }, duration_min: 60,
+    address: "1025 E Fairchild St", city: "Iowa City", state: "IA", neighborhood: "Near East Side",
+    lat: 41.6674, lng: -91.5240, tradition: "zen", location_type: "hybrid",
+    notes: "Weekday Morning Zazen (7:00–8:00am CT) at Iowa City Zen Center, 1025 E Fairchild St, Iowa City IA 52245. In-person + Zoom hybrid. Soto Zen; teacher Rev. Daiken Nelson Roshi. Open to all; drop-in welcome. iowacityzencenter.org.",
+    source_url: "https://www.iowacityzencenter.org", event_url: "https://iowacityzencenter.org/schedule/",
+  },
+
+  // Iowa City Zen Center — Tuesday evening zazen. 7pm hybrid.
+  {
+    org_id: "iowa_city_zen", org_name: "Iowa City Zen Center",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "1025 E Fairchild St", city: "Iowa City", state: "IA", neighborhood: "Near East Side",
+    lat: 41.6674, lng: -91.5240, tradition: "zen", location_type: "hybrid",
+    notes: "Tuesday Evening Zazen (7:00–8:00pm CT) at Iowa City Zen Center, 1025 E Fairchild St, Iowa City IA 52245. Beginning meditation instruction offered at 6:30pm. In-person + Zoom hybrid. Soto Zen. Open to all; drop-in welcome. iowacityzencenter.org.",
+    source_url: "https://www.iowacityzencenter.org", event_url: "https://iowacityzencenter.org/schedule/",
+  },
+
+  // Iowa City Zen Center — Sunday morning zazen. 9am hybrid.
+  {
+    org_id: "iowa_city_zen", org_name: "Iowa City Zen Center",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 60,
+    address: "1025 E Fairchild St", city: "Iowa City", state: "IA", neighborhood: "Near East Side",
+    lat: 41.6674, lng: -91.5240, tradition: "zen", location_type: "hybrid",
+    notes: "Sunday Morning Zazen (9:00–10:00am CT) at Iowa City Zen Center, 1025 E Fairchild St, Iowa City IA 52245. Beginning instruction at 8:30am. Dharma talk at 10am on 2nd and 4th Sundays. In-person + Zoom hybrid. Soto Zen; teacher Rev. Daiken Nelson Roshi. Open to all; drop-in welcome. iowacityzencenter.org.",
+    source_url: "https://www.iowacityzencenter.org", event_url: "https://iowacityzencenter.org/schedule/",
+  },
+
+  // Garchen Mila Buddhist Center — Drikung Kagyu / Garchen Rinpoche lineage
+  // 209 E Washington St Suite 200 (The Paul Helen Building), Iowa City IA 52240
+  // Sun 10–11:15am in-person · milarepaiowa.org
+  {
+    org_id: "garchen_mila_iowa_city", org_name: "Garchen Mila Buddhist Center",
+    title: "Sunday Dharma Practice",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 75,
+    address: "209 E Washington St Suite 200", city: "Iowa City", state: "IA", neighborhood: "Downtown Iowa City",
+    lat: 41.6601, lng: -91.5351, tradition: "tibetan", location_type: "in-person",
+    notes: "Sunday Dharma Practice (10:00–11:15am CT) at Garchen Mila Buddhist Center, The Paul Helen Building, 209 E Washington St Suite 200, Iowa City IA 52240. Tibetan Vajrayana in the Drikung Kagyu lineage of Garchen Rinpoche. Practice includes dharma reading (rotating: Shantideva's Way of the Bodhisattva, 37 Practices of a Bodhisattva, Kuntuzangpo prayer), silent contemplation, and guided compassion meditation with 'Om Ah Hung' mantra. Drop-in; freely offered. sangha@milarepaiowa.org. milarepaiowa.org.",
+    source_url: "https://milarepaiowa.org", event_url: "https://milarepaiowa.org/events2/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

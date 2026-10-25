@@ -6212,6 +6212,50 @@ CENTERS = {
             "(515) 331-4144 · purelandofiowa.org."
         ),
     },
+    # ── Iowa City, IA — Phase 3 (heartbeat 117) ───────────────────────────────
+    "iowa_city_zen": {
+        "id": "iowa_city_zen",
+        "name": "Iowa City Zen Center",
+        "tradition": "zen",
+        "url": "https://www.iowacityzencenter.org",
+        "address": "1025 E Fairchild St",
+        "city": "Iowa City",
+        "state": "IA",
+        "zip": "52245",
+        "neighborhood": "Near East Side",
+        "lat": 41.6674,
+        "lng": -91.5240,
+        "description": (
+            "Iowa City Zen Center is a Soto Zen practice community at 1025 E "
+            "Fairchild St, Iowa City IA, led by resident teacher Rev. Daiken Nelson "
+            "Roshi. One of Iowa's oldest Zen sanghas, serving the University of Iowa "
+            "community and greater Iowa City area. Weekly schedule: Mon–Fri 7–8am "
+            "zazen (in-person + Zoom); Tuesday 7–8pm zazen with instruction at 6:30pm; "
+            "Sunday 9am zazen with instruction at 8:30am, dharma talk at 10am on 2nd "
+            "and 4th Sundays. Open to all; drop-in welcome. iowacityzencenter.org."
+        ),
+    },
+    "garchen_mila_iowa_city": {
+        "id": "garchen_mila_iowa_city",
+        "name": "Garchen Mila Buddhist Center",
+        "tradition": "tibetan",
+        "url": "https://milarepaiowa.org",
+        "address": "209 E Washington St Suite 200",
+        "city": "Iowa City",
+        "state": "IA",
+        "zip": "52240",
+        "neighborhood": "Downtown Iowa City",
+        "lat": 41.6601,
+        "lng": -91.5351,
+        "description": (
+            "Garchen Mila Buddhist Center is a Tibetan Vajrayana community in the "
+            "Drikung Kagyu lineage of Garchen Rinpoche, located in downtown Iowa City "
+            "at The Paul Helen Building. Sunday morning practice (10–11:15am) includes "
+            "dharma reading, silent contemplation, and guided compassion meditation. "
+            "Affiliated with Garchen Buddhist Institute (Chino Valley, AZ). Drop-in "
+            "welcome; freely offered. milarepaiowa.org."
+        ),
+    },
     # ── Lexington, KY — Phase 3 (heartbeat 78) ────────────────────────────────
     "shambhala_lexington": {
         "id": "shambhala_lexington",
