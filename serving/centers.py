@@ -8639,4 +8639,63 @@ CENTERS = {
             "peacefulharborsangha.org."
         ),
     },
+    # ── Sioux Falls, SD — Phase 3 (heartbeat 118) ─────────────────────────────
+    "chua_ky_vien": {
+        "name": "Chua Ky Vien",
+        "url": "https://chuakyvien.wordpress.com",
+        "address": "2601 S Marion Rd",
+        "city": "Sioux Falls",
+        "state": "SD",
+        "zip": "57106",
+        "lat": 43.5003,
+        "lng": -96.7654,
+        "neighborhood": "South Sioux Falls",
+        "tradition": "other",
+        "description": (
+            "Chua Ky Vien (Wonderful Garden Buddhist Meditation Center) is a "
+            "Vietnamese Mahayana Buddhist temple at 2601 S Marion Rd in Sioux Falls, "
+            "SD. Founded in December 2013, the center holds Sunday services from "
+            "10:00am to 1:00pm, including chanting, prayers, seated and walking "
+            "meditation, and dharma talks in English. Abbot: Venerable Thich Minh "
+            "Tong. All backgrounds welcome; dana-based. Daily hours 9am–9pm. "
+            "thichminhdieu@gmail.com."
+        ),
+    },
+    # ── Rapid City, SD — Phase 3 (heartbeat 118) ──────────────────────────────
+    "laughing_teabowl_zendo": {
+        "name": "Laughing Teabowl Zendo",
+        "url": None,
+        "address": "3326 Harmony Lane",
+        "city": "Rapid City",
+        "state": "SD",
+        "zip": "57702",
+        "lat": 44.0720,
+        "lng": -103.2590,
+        "neighborhood": "Rapid City",
+        "tradition": "zen",
+        "description": (
+            "Laughing Teabowl Zendo is a Soto Zen practice community at 3326 Harmony "
+            "Lane, Rapid City SD. Regular sitting schedule: Tuesday evenings 7:00–9:00pm "
+            "(zazen + dharma discussion) and Sunday mornings 9:00–10:30am (zazen + "
+            "dokusan). Lay-led sangha in the Black Hills region. Open to all; drop-in "
+            "welcome. Contact: (605) 341-6378."
+        ),
+    },
+    "mother_of_wisdom_rapid_city": {
+        "name": "Mother of Wisdom Sangha",
+        "url": None,
+        "address": "907 Columbus Street",
+        "city": "Rapid City",
+        "state": "SD",
+        "zip": "57701",
+        "lat": 44.0810,
+        "lng": -103.2270,
+        "neighborhood": "Rapid City",
+        "tradition": "tibetan",
+        "description": (
+            "Mother of Wisdom Sangha is a Tibetan Vajrayana Buddhist community at "
+            "907 Columbus Street in Rapid City, SD, near the Black Hills. "
+            "Contact: (605) 341-2404 for current schedule and practice information."
+        ),
+    },
 }

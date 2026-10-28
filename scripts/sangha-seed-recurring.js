@@ -7010,6 +7010,41 @@ const SITS = [
     notes: "Sunday Dharma Practice (10:00–11:15am CT) at Garchen Mila Buddhist Center, The Paul Helen Building, 209 E Washington St Suite 200, Iowa City IA 52240. Tibetan Vajrayana in the Drikung Kagyu lineage of Garchen Rinpoche. Practice includes dharma reading (rotating: Shantideva's Way of the Bodhisattva, 37 Practices of a Bodhisattva, Kuntuzangpo prayer), silent contemplation, and guided compassion meditation with 'Om Ah Hung' mantra. Drop-in; freely offered. sangha@milarepaiowa.org. milarepaiowa.org.",
     source_url: "https://milarepaiowa.org", event_url: "https://milarepaiowa.org/events2/",
   },
+
+  // ── Sioux Falls, SD — Phase 3 (heartbeat 118) ─────────────────────────────
+  // Chua Ky Vien — Vietnamese Mahayana · 2601 S Marion Rd, Sioux Falls SD 57106
+  // Sunday 10:00am–1:00pm service (meditation, chanting, dharma talk)
+  {
+    org_id: "chua_ky_vien", org_name: "Chua Ky Vien",
+    title: "Sunday Service",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 90,
+    address: "2601 S Marion Rd", city: "Sioux Falls", state: "SD", neighborhood: "South Sioux Falls",
+    lat: 43.5003, lng: -96.7654, tradition: "other", location_type: "in-person",
+    notes: "Sunday Service (10:00am–1:00pm CT) at Chua Ky Vien (Wonderful Garden Buddhist Meditation Center), 2601 S Marion Rd, Sioux Falls SD 57106. Vietnamese Mahayana / Pure Land tradition. Includes chanting, prayers, seated and walking meditation, and dharma talks in English. Abbot: Venerable Thich Minh Tong. Open to all; dana-based. thichminhdieu@gmail.com.",
+    source_url: "https://chuakyvien.wordpress.com", event_url: "https://chuakyvien.wordpress.com/53-2/",
+  },
+
+  // ── Rapid City, SD — Phase 3 (heartbeat 118) ──────────────────────────────
+  // Laughing Teabowl Zendo — Soto Zen · 3326 Harmony Lane, Rapid City SD 57702
+  // Tue 7–9pm + Sun 9–10:30am · contact (605) 341-6378
+  {
+    org_id: "laughing_teabowl_zendo", org_name: "Laughing Teabowl Zendo",
+    title: "Tuesday Evening Zazen",
+    days: ["Tuesday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "3326 Harmony Lane", city: "Rapid City", state: "SD", neighborhood: "Rapid City",
+    lat: 44.0720, lng: -103.2590, tradition: "zen", location_type: "in-person",
+    notes: "Tuesday Evening Zazen (7:00–9:00pm MT) at Laughing Teabowl Zendo, 3326 Harmony Lane, Rapid City SD 57702. Soto Zen; includes zazen and dharma discussion. Lay-led community in the Black Hills region. Open to all; drop-in welcome. (605) 341-6378.",
+    source_url: null, event_url: null,
+  },
+  {
+    org_id: "laughing_teabowl_zendo", org_name: "Laughing Teabowl Zendo",
+    title: "Sunday Morning Zazen",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 90,
+    address: "3326 Harmony Lane", city: "Rapid City", state: "SD", neighborhood: "Rapid City",
+    lat: 44.0720, lng: -103.2590, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Zazen (9:00–10:30am MT) at Laughing Teabowl Zendo, 3326 Harmony Lane, Rapid City SD 57702. Soto Zen; includes zazen and dokusan. Lay-led community in the Black Hills region. Open to all; drop-in welcome. (605) 341-6378.",
+    source_url: null, event_url: null,
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
