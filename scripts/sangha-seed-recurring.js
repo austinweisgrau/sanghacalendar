@@ -7045,6 +7045,103 @@ const SITS = [
     notes: "Sunday Morning Zazen (9:00–10:30am MT) at Laughing Teabowl Zendo, 3326 Harmony Lane, Rapid City SD 57702. Soto Zen; includes zazen and dokusan. Lay-led community in the Black Hills region. Open to all; drop-in welcome. (605) 341-6378.",
     source_url: null, event_url: null,
   },
+
+  // ── New Hampshire — Phase 3 (heartbeat 119) ────────────────────────────────
+  // Aryaloka Buddhist Center — Triratna · 14 Heartwood Circle, Newmarket NH 03857
+  // Tue 6:45–8:45pm weekly Friends' Evening · aryaloka.org
+  {
+    org_id: "aryaloka", org_name: "Aryaloka Buddhist Center",
+    title: "Tuesday Friends' Evening",
+    days: ["Tuesday"], time: { h: 18, m: 45 }, duration_min: 120,
+    address: "14 Heartwood Circle", city: "Newmarket", state: "NH", neighborhood: "Newmarket, NH Seacoast",
+    lat: 43.0794, lng: -70.9431, tradition: "other", location_type: "in-person",
+    notes: "Tuesday Friends' Evening (6:45–8:45pm ET) at Aryaloka Buddhist Center, 14 Heartwood Circle, Newmarket NH 03857. Triratna Buddhist Community (formerly Friends of the Western Buddhist Order). Doors open 6:45pm; sit begins 7:00pm. Includes guided meditation, dharma discussion, and community tea. Open to all; no experience needed. Flagship Triratna center for New England. (603) 659-5456. aryaloka.org.",
+    source_url: "https://www.aryaloka.org", event_url: "https://aryaloka.org/ongoing-events",
+  },
+
+  // Portsmouth Buddhist Center — Triratna · 875 Islington St, Portsmouth NH 03801
+  // Sun 10:00–11:45am Sunday Gathering · portsmouthbuddhistcenter.com
+  {
+    org_id: "portsmouth_buddhist_center", org_name: "Portsmouth Buddhist Center",
+    title: "Sunday Gathering",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 105,
+    address: "875 Islington Street", city: "Portsmouth", state: "NH", neighborhood: "Portsmouth Seacoast",
+    lat: 43.0717, lng: -70.7861, tradition: "other", location_type: "hybrid",
+    notes: "Sunday Gathering (10:00–11:45am ET) at Portsmouth Buddhist Center, 875 Islington Street (Gateway Taiji Studio), Portsmouth NH 03801. Triratna Buddhist Community. Guided meditation, dharma talk or reading, open discussion. Hybrid: in-person + Zoom option. All backgrounds welcome; drop-in. Sister center to Aryaloka Buddhist Center (Newmarket). (603) 617-2285. portsmouthbuddhistcenter.com.",
+    source_url: "https://www.portsmouthbuddhistcenter.com", event_url: "https://www.portsmouthbuddhistcenter.com",
+  },
+
+  // Monadnock Mindfulness Practice Center — Keene NH 03431
+  // Mon 6:30pm + Wed 6pm + Thu 8am + Fri 5:30pm · mindfulnesskeene.org
+  {
+    org_id: "monadnock_mindfulness", org_name: "Monadnock Mindfulness Practice Center",
+    title: "Monday Evening Sit",
+    days: ["Monday"], time: { h: 18, m: 30 }, duration_min: 60,
+    address: "103 Roxbury Street, Suite 301", city: "Keene", state: "NH", neighborhood: "Downtown Keene",
+    lat: 42.9367, lng: -72.2787, tradition: "other", location_type: "hybrid",
+    notes: "Monday Evening Sit (6:30–7:30pm ET) at Monadnock Mindfulness Practice Center, 103 Roxbury Street Suite 301, Keene NH 03431. Guided meditation and discussion; hybrid in-person + Zoom. Founded 2002; by donation. (603) 876-9318. mindfulnesskeene.org.",
+    source_url: "https://mindfulnesskeene.org", event_url: "https://mindfulnesskeene.org",
+  },
+  {
+    org_id: "monadnock_mindfulness", org_name: "Monadnock Mindfulness Practice Center",
+    title: "Wednesday Evening Sit",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "103 Roxbury Street, Suite 301", city: "Keene", state: "NH", neighborhood: "Downtown Keene",
+    lat: 42.9367, lng: -72.2787, tradition: "other", location_type: "in-person",
+    notes: "Wednesday Evening Sit (6:00–7:30pm ET) at Monadnock Mindfulness Practice Center, 103 Roxbury Street Suite 301, Keene NH 03431. Plum Village / Thich Nhat Hanh tradition: walking meditation, sitting, dharma sharing. In-person. Founded 2002; by donation. (603) 876-9318. mindfulnesskeene.org.",
+    source_url: "https://mindfulnesskeene.org", event_url: "https://mindfulnesskeene.org",
+  },
+  {
+    org_id: "monadnock_mindfulness", org_name: "Monadnock Mindfulness Practice Center",
+    title: "Thursday Morning Sit",
+    days: ["Thursday"], time: { h: 8, m: 0 }, duration_min: 60,
+    address: "103 Roxbury Street, Suite 301", city: "Keene", state: "NH", neighborhood: "Downtown Keene",
+    lat: 42.9367, lng: -72.2787, tradition: "other", location_type: "in-person",
+    notes: "Thursday Morning Sit (8:00–9:00am ET) at Monadnock Mindfulness Practice Center, 103 Roxbury Street Suite 301, Keene NH 03431. Silent and guided sitting meditation. In-person. Founded 2002; by donation. (603) 876-9318. mindfulnesskeene.org.",
+    source_url: "https://mindfulnesskeene.org", event_url: "https://mindfulnesskeene.org",
+  },
+  {
+    org_id: "monadnock_mindfulness", org_name: "Monadnock Mindfulness Practice Center",
+    title: "Friday Evening Meditation & Movement",
+    days: ["Friday"], time: { h: 17, m: 30 }, duration_min: 60,
+    address: "103 Roxbury Street, Suite 301", city: "Keene", state: "NH", neighborhood: "Downtown Keene",
+    lat: 42.9367, lng: -72.2787, tradition: "other", location_type: "hybrid",
+    notes: "Friday Evening Meditation & Movement (5:30–6:30pm ET) at Monadnock Mindfulness Practice Center, 103 Roxbury Street Suite 301, Keene NH 03431. Gentle movement and sitting practice. Hybrid in-person + Zoom. Founded 2002; by donation. (603) 876-9318. mindfulnesskeene.org.",
+    source_url: "https://mindfulnesskeene.org", event_url: "https://mindfulnesskeene.org",
+  },
+
+  // Valley Insight Meditation Society — Theravada · 14 Green St, Lebanon NH 03766
+  // Thu 11:00am–12:30pm in-person · valleyinsight.org
+  {
+    org_id: "valley_insight_nh", org_name: "Valley Insight Meditation Society",
+    title: "Thursday Insight Sit",
+    days: ["Thursday"], time: { h: 11, m: 0 }, duration_min: 90,
+    address: "14 Green Street", city: "Lebanon", state: "NH", neighborhood: "Lebanon, Upper Valley NH",
+    lat: 43.6424, lng: -72.2524, tradition: "theravada", location_type: "hybrid",
+    notes: "Thursday Insight Sit (11:00am–12:30pm ET) at Valley Insight Meditation Society, 14 Green Street, Lebanon NH 03766. Theravada / Vipassana tradition; teacher-led. Guided meditation, dharma talk, small-group discussion. Hybrid: in-person at Lebanon NH + Zoom. Aligned with IMS and Spirit Rock. Open to all experience levels; dana-based. (802) 649-7085. greetingsfromvalleyinsight@gmail.com. valleyinsight.org.",
+    source_url: "https://valleyinsight.org", event_url: "https://valleyinsight.org",
+  },
+
+  // Oxbow Zen Sangha — Vermont Zen Center affiliate · 11 Oxbow Pond Rd, Canterbury NH 03224
+  // Sun 8:00–9:30am + Thu 5:30–6:40pm · oxbowzen.org
+  {
+    org_id: "oxbow_zen_nh", org_name: "Oxbow Zen Sangha",
+    title: "Sunday Morning Practice",
+    days: ["Sunday"], time: { h: 8, m: 0 }, duration_min: 90,
+    address: "11 Oxbow Pond Road", city: "Canterbury", state: "NH", neighborhood: "Canterbury, NH (north of Concord)",
+    lat: 43.3647, lng: -71.5656, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Morning Practice (8:00–9:30am ET) at Oxbow Zen Sangha, 11 Oxbow Pond Road, Canterbury NH 03224. Vermont Zen Center affiliate (Kapleau / Kjolhede lineage). Zazen, kinhin, liturgy, and dharma discussion. All levels welcome; drop-in. oxbowzensangha@gmail.com. oxbowzen.org.",
+    source_url: "https://oxbowzen.org", event_url: "https://oxbowzen.org/schedule/",
+  },
+  {
+    org_id: "oxbow_zen_nh", org_name: "Oxbow Zen Sangha",
+    title: "Thursday Evening Zazen",
+    days: ["Thursday"], time: { h: 17, m: 30 }, duration_min: 70,
+    address: "11 Oxbow Pond Road", city: "Canterbury", state: "NH", neighborhood: "Canterbury, NH (north of Concord)",
+    lat: 43.3647, lng: -71.5656, tradition: "zen", location_type: "in-person",
+    notes: "Thursday Evening Zazen (5:30–6:40pm ET) at Oxbow Zen Sangha, 11 Oxbow Pond Road, Canterbury NH 03224. Vermont Zen Center affiliate. Zazen and kinhin. Drop-in welcome. oxbowzensangha@gmail.com. oxbowzen.org.",
+    source_url: "https://oxbowzen.org", event_url: "https://oxbowzen.org/schedule/",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

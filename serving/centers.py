@@ -8698,4 +8698,108 @@ CENTERS = {
             "Contact: (605) 341-2404 for current schedule and practice information."
         ),
     },
+    # ── New Hampshire — Phase 3 (heartbeat 119) ────────────────────────────────
+    "aryaloka": {
+        "name": "Aryaloka Buddhist Center",
+        "url": "https://www.aryaloka.org",
+        "address": "14 Heartwood Circle",
+        "city": "Newmarket",
+        "state": "NH",
+        "zip": "03857",
+        "lat": 43.0794,
+        "lng": -70.9431,
+        "neighborhood": "Newmarket, NH Seacoast",
+        "tradition": "other",
+        "description": (
+            "Aryaloka Buddhist Center is the flagship Triratna Buddhist Community "
+            "center for New England, at 14 Heartwood Circle, Newmarket NH. Triratna "
+            "(formerly Friends of the Western Buddhist Order) was founded by "
+            "Sangharakshita and emphasizes lay practice across all major Buddhist "
+            "traditions. Tuesday Friends' Evenings (6:45–8:45pm): weekly public sit "
+            "with guided meditation, dharma discussion, and community tea. Also hosts "
+            "retreats, meditation courses, and full-moon pujas. Residential retreat "
+            "center on-site. (603) 659-5456. aryaloka.org."
+        ),
+    },
+    "portsmouth_buddhist_center": {
+        "name": "Portsmouth Buddhist Center",
+        "url": "https://www.portsmouthbuddhistcenter.com",
+        "address": "875 Islington Street",
+        "city": "Portsmouth",
+        "state": "NH",
+        "zip": "03801",
+        "lat": 43.0717,
+        "lng": -70.7861,
+        "neighborhood": "Portsmouth Seacoast",
+        "tradition": "other",
+        "description": (
+            "Portsmouth Buddhist Center is a Triratna Buddhist Community presence on "
+            "the NH seacoast, sister center to Aryaloka (Newmarket). Located at "
+            "875 Islington Street (Gateway Taiji Studio), Portsmouth NH. Sunday "
+            "Gathering (10:00–11:45am): guided meditation, dharma talk, and open "
+            "discussion — hybrid in-person + Zoom. All backgrounds welcome; drop-in. "
+            "Founded ~2015. (603) 617-2285. portsmouthbuddhistcenter.com."
+        ),
+    },
+    "monadnock_mindfulness": {
+        "name": "Monadnock Mindfulness Practice Center",
+        "url": "https://mindfulnesskeene.org",
+        "address": "103 Roxbury Street, Suite 301",
+        "city": "Keene",
+        "state": "NH",
+        "zip": "03431",
+        "lat": 42.9367,
+        "lng": -72.2787,
+        "neighborhood": "Downtown Keene",
+        "tradition": "other",
+        "description": (
+            "Monadnock Mindfulness Practice Center is NH's most active meditation "
+            "center at 103 Roxbury Street Suite 301, Keene NH. Founded 2002; "
+            "~1,200 participants annually. Four weekly sits: Monday Evening "
+            "(6:30–7:30pm, hybrid), Wednesday Evening (6:00–7:30pm, Plum Village "
+            "tradition, in-person), Thursday Morning (8:00–9:00am, in-person), "
+            "Friday Meditation & Movement (5:30–6:30pm, hybrid). All by donation. "
+            "(603) 876-9318. mindfulnesskeene.org."
+        ),
+    },
+    "valley_insight_nh": {
+        "name": "Valley Insight Meditation Society",
+        "url": "https://valleyinsight.org",
+        "address": "14 Green Street",
+        "city": "Lebanon",
+        "state": "NH",
+        "zip": "03766",
+        "lat": 43.6424,
+        "lng": -72.2524,
+        "neighborhood": "Lebanon, Upper Valley NH",
+        "tradition": "theravada",
+        "description": (
+            "Valley Insight Meditation Society serves the Upper Valley (Hanover NH / "
+            "Lebanon NH / Norwich VT) with Theravada / Vipassana practice aligned with "
+            "IMS and Spirit Rock. Thursday Sit (11:00am–12:30pm) at 14 Green Street, "
+            "Lebanon NH — teacher-led, hybrid in-person + Zoom. Monday and Tuesday "
+            "sits (5:30pm) are mainly Zoom with monthly in-person. Open to all; "
+            "dana-based. (802) 649-7085. valleyinsight.org."
+        ),
+    },
+    "oxbow_zen_nh": {
+        "name": "Oxbow Zen Sangha",
+        "url": "https://oxbowzen.org",
+        "address": "11 Oxbow Pond Road",
+        "city": "Canterbury",
+        "state": "NH",
+        "zip": "03224",
+        "lat": 43.3647,
+        "lng": -71.5656,
+        "neighborhood": "Canterbury, NH (north of Concord)",
+        "tradition": "zen",
+        "description": (
+            "Oxbow Zen Sangha is a Mahayana Zen community affiliated with Vermont "
+            "Zen Center (Kapleau / Kjolhede lineage) in rural Canterbury, NH, ~15 min "
+            "north of Concord. Sunday Morning Practice (8:00–9:30am): zazen, kinhin, "
+            "liturgy, and dharma discussion. Thursday Evening Zazen (5:30–6:40pm). "
+            "Both in-person; all levels welcome; drop-in. "
+            "oxbowzensangha@gmail.com. oxbowzen.org."
+        ),
+    },
 }

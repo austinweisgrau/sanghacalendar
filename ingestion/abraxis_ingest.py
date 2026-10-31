@@ -126,6 +126,7 @@ from ingestion.sources import western_mass as western_mass_sources
 from ingestion.sources import iowa_city as iowa_city_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import sioux_falls as sioux_falls_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import rapid_city as rapid_city_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import new_hampshire as new_hampshire_sources  # noqa: F401 (no live feeds)
 
 log = logging.getLogger(__name__)
 
