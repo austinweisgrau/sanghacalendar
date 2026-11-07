@@ -7142,6 +7142,46 @@ const SITS = [
     notes: "Thursday Evening Zazen (5:30–6:40pm ET) at Oxbow Zen Sangha, 11 Oxbow Pond Road, Canterbury NH 03224. Vermont Zen Center affiliate. Zazen and kinhin. Drop-in welcome. oxbowzensangha@gmail.com. oxbowzen.org.",
     source_url: "https://oxbowzen.org", event_url: "https://oxbowzen.org/schedule/",
   },
+  // Wed 7–8pm weekly · Nashua Buddhist Meditation Group (Shambhala) · UU Church Nashua
+  {
+    org_id: "nashua_buddhist_meditation", org_name: "Nashua Buddhist Meditation Group",
+    title: "Wednesday Evening Meditation",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "58 Lowell Street", city: "Nashua", state: "NH", neighborhood: "Downtown Nashua",
+    lat: 42.7609, lng: -71.4673, tradition: "tibetan", location_type: "in-person",
+    notes: "Wednesday Evening Meditation (7:00–8:00pm ET) at the UU Church of Nashua, 58 Lowell Street, Nashua NH 03061. Nashua Buddhist Meditation Group — Shambhala lineage, shamatha practice. Alternates weekly between a full hour of silent sitting and a session with talk + meditation. All silent meditation traditions welcome; free instruction available. meditatenashua@gmail.com. nashuameditator.org.",
+    source_url: "https://nashuameditator.org", event_url: "https://nashuameditator.org",
+  },
+  // Wed 6–7:30pm in-person · Wonderwell Mountain Refuge (Kagyu/NDF)
+  {
+    org_id: "wonderwell_mountain_refuge", org_name: "Wonderwell Mountain Refuge",
+    title: "Wednesdays @ Wonderwell",
+    days: ["Wednesday"], time: { h: 18, m: 0 }, duration_min: 90,
+    address: "253 Philbrick Hill Road", city: "Springfield", state: "NH", neighborhood: "Springfield, NH (Lake Sunapee region)",
+    lat: 43.4747, lng: -72.0043, tradition: "tibetan", location_type: "in-person",
+    notes: "Wednesdays @ Wonderwell (6:00–7:30pm ET) at Wonderwell Mountain Refuge, 253 Philbrick Hill Road, Springfield NH 03284. Natural Dharma Fellowship — Kagyu Tibetan Buddhist lineage (Lama Willa Blythe Baker). Weekly in-person guided meditation and teachings, alternating between NDF teachers and peer-led sessions. All levels welcome. (603) 763-0204. naturaldharma.org.",
+    source_url: "https://naturaldharma.org", event_url: "https://naturaldharma.org/weekly-practice/",
+  },
+  // Sun 10am–noon hybrid · Wonderwell Mountain Refuge Dharma Sundays
+  {
+    org_id: "wonderwell_mountain_refuge", org_name: "Wonderwell Mountain Refuge",
+    title: "Dharma Sundays",
+    days: ["Sunday"], time: { h: 10, m: 0 }, duration_min: 120,
+    address: "253 Philbrick Hill Road", city: "Springfield", state: "NH", neighborhood: "Springfield, NH (Lake Sunapee region)",
+    lat: 43.4747, lng: -72.0043, tradition: "tibetan", location_type: "hybrid",
+    notes: "Dharma Sundays (10:00am–noon ET) at Wonderwell Mountain Refuge, 253 Philbrick Hill Road, Springfield NH 03284. Natural Dharma Fellowship — Kagyu Tibetan Buddhist lineage. Hybrid in-person + online. Guided meditation, dharma teaching, and practice. All levels welcome. (603) 763-0204. naturaldharma.org.",
+    source_url: "https://naturaldharma.org", event_url: "https://naturaldharma.org/weekly-practice/",
+  },
+  // Sun 9–10am Zoom · Granite State Sangha (Nyingma/Kagyu, Concord area)
+  {
+    org_id: "granite_state_sangha", org_name: "Granite State Sangha",
+    title: "Sunday Morning Practice",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 60,
+    address: "Concord, NH", city: "Concord", state: "NH", neighborhood: "Concord, NH",
+    lat: 43.2081, lng: -71.5376, tradition: "tibetan", location_type: "online",
+    notes: "Sunday Morning Practice (9:00–10:00am ET) via Zoom with Granite State Sangha, Concord NH. Tibetan Buddhist practice group in the Nyingma and Kagyu traditions. Lama Rod Owens joins monthly to lead meditation and teachings. Open to all levels. facebook.com/GraniteStateSangha.",
+    source_url: "https://www.granitestatesangha.com", event_url: "https://www.facebook.com/GraniteStateSangha",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

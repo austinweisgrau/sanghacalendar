@@ -55,11 +55,22 @@ Research notes (2026-10-31):
   - Oxbow Zen Sangha: oxbowzen.org. Vermont Zen Center affiliate (Roshi Philip Kapleau /
     Bodhin Kjolhede lineage); sits in Canterbury ~15 min north of Concord. Sun 8–9:30am
     + Thu 5:30–6:40pm. All levels welcome. oxbowzensangha@gmail.com.
+  - Nashua Buddhist Meditation Group (nashua_buddhist_meditation) — Tibetan (Shambhala)
+    58 Lowell Street, Nashua NH 03061 (UU Church of Nashua). nashuameditator.org
+    Wed 7:00–8:00pm weekly in-person. Shambhala lineage, shamatha practice.
+    Added heartbeat 120.
+
+  - Wonderwell Mountain Refuge (wonderwell_mountain_refuge) — Tibetan (Kagyu/Nyingma)
+    253 Philbrick Hill Road, Springfield NH 03284. naturaldharma.org
+    Wed 6:00–7:30pm in-person + Sun 10:00am–noon hybrid. Lama Willa Baker lineage.
+    iCal blocked (Cloudflare 403); seeded. Added heartbeat 120.
+
+  - Granite State Sangha (granite_state_sangha) — Tibetan (Nyingma/Kagyu)
+    Concord NH area (Zoom-based, no fixed venue). granitestatesangha.com (down).
+    Sun 9:00–10:00am Zoom weekly. Lama Rod Owens monthly teacher. Added heartbeat 120.
+
   - Not seeded: Portsmouth Zendo (South Berwick ME, ~15 min from Portsmouth, Monday 7pm;
-    technically Maine), Wonderwell Mountain Refuge (Springfield NH, Wednesday 6pm;
-    retreat center), Nashua Buddhist Meditation Group (Wednesday 7pm Shambhala at UU),
-    Granite State Sangha (website down), Bear Tree Zen (no website, unconfirmed).
-    These can be added in a follow-up heartbeat.
+    technically Maine), Bear Tree Zen (no website, unconfirmed).
 """
 
 from data.schemas.event import Center, Tradition
@@ -191,6 +202,75 @@ CENTERS = {
             "kinhin — drop-in welcome. Both sits in-person at the Canterbury "
             "location. Retreats and special programs announced on website. "
             "oxbowzensangha@gmail.com. oxbowzen.org."
+        ),
+    ),
+    "nashua_buddhist_meditation": Center(
+        id="nashua_buddhist_meditation",
+        name="Nashua Buddhist Meditation Group",
+        url="https://nashuameditator.org",
+        address="58 Lowell Street",
+        city="Nashua",
+        state="NH",
+        zip_code="03061",
+        lat=42.7609,
+        lng=-71.4673,
+        neighborhood="Downtown Nashua",
+        tradition=Tradition.TIBETAN,
+        notes=(
+            "Nashua Buddhist Meditation Group is a Shambhala-lineage meditation "
+            "group meeting at the Unitarian Universalist Church of Nashua, 58 Lowell "
+            "Street (enter on the left side of the building). Wednesday Evening Sit "
+            "(7:00–8:00pm): alternates weekly between a full-hour silent sit and a "
+            "session combining a talk with meditation. Primary method is shamatha "
+            "('peaceful abiding'), an open-eyed sitting practice; all silent "
+            "meditation styles welcome. Meditation instruction offered free of charge. "
+            "Contact: Martha Roberts, meditatenashua@gmail.com. nashuameditator.org."
+        ),
+    ),
+    "wonderwell_mountain_refuge": Center(
+        id="wonderwell_mountain_refuge",
+        name="Wonderwell Mountain Refuge",
+        url="https://naturaldharma.org/wonderwell-mountain-refuge/",
+        address="253 Philbrick Hill Road",
+        city="Springfield",
+        state="NH",
+        zip_code="03284",
+        lat=43.4747,
+        lng=-72.0043,
+        neighborhood="Springfield, NH (Lake Sunapee region)",
+        tradition=Tradition.TIBETAN,
+        notes=(
+            "Wonderwell Mountain Refuge is a residential retreat and practice center "
+            "in Springfield, NH, home to Natural Dharma Fellowship (NDF), founded by "
+            "Lama Willa Blythe Baker. Lama Willa is an authorized dharma teacher in the "
+            "Kagyu tradition (Kalu Rinpoche + Lama Norlha Rinpoche lineage); Lama "
+            "Elizabeth Monson PhD is spiritual co-director. Wednesdays @ Wonderwell "
+            "(6:00–7:30pm ET): weekly in-person guided meditation and teachings at the "
+            "refuge, alternating between NDF teachers and peer-led sessions. Dharma "
+            "Sundays (10:00am–noon ET): hybrid in-person + online. Periodic Open "
+            "Meditation Days and multi-day residential retreats throughout the year. "
+            "(603) 763-0204. communications@naturaldharma.org. naturaldharma.org."
+        ),
+    ),
+    "granite_state_sangha": Center(
+        id="granite_state_sangha",
+        name="Granite State Sangha",
+        url="https://www.granitestatesangha.com",
+        address="Concord, NH",
+        city="Concord",
+        state="NH",
+        zip_code="03301",
+        lat=43.2081,
+        lng=-71.5376,
+        neighborhood="Concord, NH",
+        tradition=Tradition.TIBETAN,
+        notes=(
+            "Granite State Sangha is a Concord-based Tibetan Buddhist practice group "
+            "in the Nyingma and Kagyu traditions. Sunday Morning Practice (9:00–10:00am "
+            "ET via Zoom): weekly guided meditation open to all. Lama Rod Owens joins "
+            "monthly to lead meditation and teachings. Monthly in-person sessions also "
+            "offered. Website (granitestatesangha.com) periodically down; group active "
+            "as of 2026. Contact via Facebook: facebook.com/GraniteStateSangha."
         ),
     ),
 }
