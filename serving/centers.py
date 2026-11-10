@@ -8862,4 +8862,80 @@ CENTERS = {
             "facebook.com/GraniteStateSangha."
         ),
     },
+    # Wyoming
+    "teton_sangha": {
+        "name": "Teton Sangha",
+        "url": "https://www.tetonsangha.org",
+        "address": "150 E Hansen Ave",
+        "city": "Jackson",
+        "state": "WY",
+        "zip": "83001",
+        "lat": 43.4799,
+        "lng": -110.7626,
+        "neighborhood": "Jackson (Jackson Hole)",
+        "tradition": "theravada",
+        "description": (
+            "Teton Sangha is a Vipassana / Theravada practice community in Jackson, WY, "
+            "in the Spirit Rock / IMS lineage. Weekly sit at HOME YOGA (150 E Hansen Ave): "
+            "Monday evenings 7:00–8:00pm. 1st and 3rd Mondays include a dharma talk and "
+            "discussion; other Mondays are 30 minutes of silent sitting. Annual fall "
+            "multi-day retreat. Free / dana. Drop-in welcome. tetonsangha.org."
+        ),
+    },
+    "snowflake_sangha_jackson": {
+        "name": "Snowflake Sangha",
+        "url": "https://www.snowflakesangha.org",
+        "address": "170 N Glenwood St",
+        "city": "Jackson",
+        "state": "WY",
+        "zip": "83001",
+        "lat": 43.4789,
+        "lng": -110.7638,
+        "neighborhood": "Jackson (Jackson Hole)",
+        "tradition": "zen",
+        "description": (
+            "Snowflake Sangha is a Plum Village / Thich Nhat Hanh lineage community "
+            "in Jackson, WY. Weekly sit at Hansen Hall, St. John's Episcopal Church "
+            "(170 N Glenwood St): Thursday evenings 6:00–7:00pm. Practice includes "
+            "sitting and walking meditation plus reading and discussion. Free, open to "
+            "all. snowflakesangha.org."
+        ),
+    },
+    "heruka_kadampa_laramie": {
+        "name": "Heruka Kadampa Meditation Center — Laramie",
+        "url": "https://www.meditateinfortcollins.org/laramie/",
+        "address": "310 S 8th St",
+        "city": "Laramie",
+        "state": "WY",
+        "zip": "82070",
+        "lat": 41.3081,
+        "lng": -105.5917,
+        "neighborhood": "Downtown Laramie",
+        "tradition": "tibetan",
+        "description": (
+            "Heruka Kadampa Meditation Center (NKT) — Laramie satellite. Free meditations "
+            "at the Albany County Public Library (310 S 8th St, Large Meeting Room): "
+            "Tuesday afternoons 3:00–4:00pm. Instructor Kerrin Perniciaro from the main "
+            "Fort Collins center. No experience required; beginners welcome. Free. "
+            "(970) 798-0090. meditateinfortcollins.org/laramie/."
+        ),
+    },
+    "uu_casper_meditation": {
+        "name": "UU Casper Buddhist Meditation",
+        "url": "https://uucasper.org",
+        "address": "1040 W 15th St",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82604",
+        "lat": 42.8609,
+        "lng": -106.3421,
+        "neighborhood": "Casper",
+        "tradition": "theravada",
+        "description": (
+            "Buddhist-led meditation at the Unitarian Universalist Community of Casper "
+            "Sanctuary (1040 W 15th St). Friday evenings 6:00–7:00pm: one hour of sitting "
+            "and walking meditation, led by Stuart Mackenzie (Buddhist). Beginners welcome; "
+            "free and open to all. uucasper.org."
+        ),
+    },
 }

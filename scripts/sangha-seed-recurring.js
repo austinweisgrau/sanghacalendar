@@ -7182,6 +7182,25 @@ const SITS = [
     notes: "Sunday Morning Practice (9:00–10:00am ET) via Zoom with Granite State Sangha, Concord NH. Tibetan Buddhist practice group in the Nyingma and Kagyu traditions. Lama Rod Owens joins monthly to lead meditation and teachings. Open to all levels. facebook.com/GraniteStateSangha.",
     source_url: "https://www.granitestatesangha.com", event_url: "https://www.facebook.com/GraniteStateSangha",
   },
+  // Wyoming Phase 3 — Teton Sangha (Jackson) + Snowflake Sangha (Jackson)
+  {
+    org_id: "teton_sangha", org_name: "Teton Sangha",
+    title: "Monday Evening Sit",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "150 E Hansen Ave", city: "Jackson", state: "WY", neighborhood: "Jackson (Jackson Hole)",
+    lat: 43.4799, lng: -110.7626, tradition: "theravada", location_type: "in-person",
+    notes: "Monday Evening Sit (7:00–8:00pm MT) at HOME YOGA (150 E Hansen Ave), Jackson WY. Vipassana / Spirit Rock lineage. 1st and 3rd Mondays: 30-min sit followed by dharma talk and discussion. Other Mondays: 30-min silent sitting. Free / dana. Drop-in welcome. tetonsangha.org.",
+    source_url: "https://www.tetonsangha.org", event_url: "https://www.tetonsangha.org/calendar/",
+  },
+  {
+    org_id: "snowflake_sangha_jackson", org_name: "Snowflake Sangha",
+    title: "Thursday Evening Sit",
+    days: ["Thursday"], time: { h: 18, m: 0 }, duration_min: 60,
+    address: "170 N Glenwood St", city: "Jackson", state: "WY", neighborhood: "Jackson (Jackson Hole)",
+    lat: 43.4789, lng: -110.7638, tradition: "zen", location_type: "in-person",
+    notes: "Thursday Evening Sit (6:00–7:00pm MT) at Hansen Hall, St. John's Episcopal Church (170 N Glenwood St), Jackson WY. Plum Village / Thich Nhat Hanh lineage. Sitting and walking meditation plus reading and discussion. Free, open to all. snowflakesangha.org.",
+    source_url: "https://www.snowflakesangha.org", event_url: "https://www.snowflakesangha.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
