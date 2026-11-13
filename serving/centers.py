@@ -8938,4 +8938,67 @@ CENTERS = {
             "free and open to all. uucasper.org."
         ),
     },
+    # ---- West Virginia ----
+    "bhavana_society": {
+        "name": "Bhāvanā Society",
+        "url": "https://bhavanasociety.org",
+        "address": "97 Meditation Trail",
+        "city": "High View",
+        "state": "WV",
+        "zip": "26808",
+        "lat": 39.1740,
+        "lng": -78.5780,
+        "neighborhood": "Hardy County (Appalachian Mountains)",
+        "tradition": "theravada",
+        "description": (
+            "Bhāvanā Society is a Theravāda Buddhist forest monastery in the Appalachian "
+            "Mountains of West Virginia, founded in 1985 by Bhante Henepola Gunaratana "
+            "(author of 'Mindfulness in Plain English'). One of the most significant "
+            "Theravada retreat centers in North America. Located at 97 Meditation Trail, "
+            "High View WV 26808 (Hardy County, ~2.5 hours from Washington DC). Offers "
+            "year-round residential retreats (free / dana-based), day-long sittings, "
+            "Vesak celebrations, and other community events. No regular drop-in weekly "
+            "sits; advance registration required for retreats. bhavanasociety.org."
+        ),
+    },
+    "morgantown_buddhist_meditation": {
+        "name": "Morgantown Buddhist Meditation Group",
+        "url": "https://morgantownbuddhism.wixsite.com/morgantownmeditation",
+        "address": "429 Warrick St",
+        "city": "Morgantown",
+        "state": "WV",
+        "zip": "26505",
+        "lat": 39.6355,
+        "lng": -79.9557,
+        "neighborhood": "WVU Area",
+        "tradition": "zen",
+        "description": (
+            "Morgantown Buddhist Meditation Group serves the Morgantown WV / WVU community "
+            "with two lineages: Korean Zen under Pahok Jon Reed (Kwan Um lineage) and "
+            "Kagyu/Nyingma Tibetan Buddhism under Bhaddaka Rodger Dotson (Traleg Rinpoche "
+            "lineage). Wednesday Evening Practice (5:45–6:45pm) and 3rd Saturday Half-Day "
+            "Retreats (9:00am–noon) at Unitarian Universalist Fellowship (429 Warrick St). "
+            "Thursday Study Group (7:00–8:30pm) at Friends Meeting House, 648 E. Brockway. "
+            "Drop-in welcome; free. morgantownbuddhism.wixsite.com."
+        ),
+    },
+    "mindfulness_tree_charleston": {
+        "name": "The Mindfulness Tree",
+        "url": "https://themindfulnesstree.life",
+        "address": "1600 Kanawha Blvd E",
+        "city": "Charleston",
+        "state": "WV",
+        "zip": "25311",
+        "lat": 38.3493,
+        "lng": -81.6224,
+        "neighborhood": "Kanawha City",
+        "tradition": "zen",
+        "description": (
+            "The Mindfulness Tree is a Plum Village / Thich Nhat Hanh tradition community "
+            "in Charleston, WV (Kanawha City). Weekly sit at Trinity Evangelical Lutheran "
+            "Church (1600 Kanawha Blvd E): Tuesdays 10:00–11:00am, in-person and online "
+            "via Zoom. Format includes seated meditation, walking meditation, dharma talk, "
+            "and dharma sharing. Free and open to all. themindfulnesstree.life."
+        ),
+    },
 }

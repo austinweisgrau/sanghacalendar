@@ -7201,6 +7201,43 @@ const SITS = [
     notes: "Thursday Evening Sit (6:00–7:00pm MT) at Hansen Hall, St. John's Episcopal Church (170 N Glenwood St), Jackson WY. Plum Village / Thich Nhat Hanh lineage. Sitting and walking meditation plus reading and discussion. Free, open to all. snowflakesangha.org.",
     source_url: "https://www.snowflakesangha.org", event_url: "https://www.snowflakesangha.org",
   },
+  // West Virginia Phase 3 — Morgantown Buddhist Meditation Group (3 sits) + The Mindfulness Tree Charleston (1 sit)
+  {
+    org_id: "morgantown_buddhist_meditation", org_name: "Morgantown Buddhist Meditation Group",
+    title: "Wednesday Evening Practice",
+    days: ["Wednesday"], time: { h: 17, m: 45 }, duration_min: 60,
+    address: "429 Warrick St", city: "Morgantown", state: "WV", neighborhood: "WVU Area",
+    lat: 39.6355, lng: -79.9557, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday Evening Practice (5:45–6:45pm ET) at UU Fellowship, 429 Warrick St, Morgantown WV. Korean Zen + Kagyu/Nyingma Tibetan. Teachers: Pahok Jon Reed (Korean Zen, Kwan Um lineage) + Bhaddaka Rodger Dotson (Tibetan, Traleg Rinpoche lineage). Drop-in welcome; free. morgantownbuddhism.wixsite.com/morgantownmeditation.",
+    source_url: "https://morgantownbuddhism.wixsite.com/morgantownmeditation", event_url: "https://morgantownbuddhism.wixsite.com/morgantownmeditation",
+  },
+  {
+    org_id: "morgantown_buddhist_meditation", org_name: "Morgantown Buddhist Meditation Group",
+    title: "Thursday Study Group",
+    days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "648 E Brockway Ave", city: "Morgantown", state: "WV", neighborhood: "WVU Area",
+    lat: 39.6355, lng: -79.9557, tradition: "zen", location_type: "in-person",
+    notes: "Thursday Study Group (7:00–8:30pm ET) at Friends Meeting House, 648 E. Brockway Ave, Morgantown WV. Korean Zen + Kagyu/Nyingma Tibetan. Dharma study and sitting meditation. Drop-in welcome; free. morgantownbuddhism.wixsite.com/morgantownmeditation.",
+    source_url: "https://morgantownbuddhism.wixsite.com/morgantownmeditation", event_url: "https://morgantownbuddhism.wixsite.com/morgantownmeditation",
+  },
+  {
+    org_id: "morgantown_buddhist_meditation", org_name: "Morgantown Buddhist Meditation Group",
+    title: "3rd Saturday Half-Day Retreat",
+    week_of_month: 3, days: ["Saturday"], time: { h: 9, m: 0 }, duration_min: 180,
+    address: "429 Warrick St", city: "Morgantown", state: "WV", neighborhood: "WVU Area",
+    lat: 39.6355, lng: -79.9557, tradition: "zen", location_type: "in-person",
+    notes: "3rd Saturday Half-Day Retreat (9:00am–noon ET) at UU Fellowship, 429 Warrick St, Morgantown WV. Korean Zen + Kagyu/Nyingma Tibetan. Alternates sitting practice, outdoor walking practice, and tea breaks. Drop-in welcome; free. morgantownbuddhism.wixsite.com/morgantownmeditation.",
+    source_url: "https://morgantownbuddhism.wixsite.com/morgantownmeditation", event_url: "https://morgantownbuddhism.wixsite.com/morgantownmeditation",
+  },
+  {
+    org_id: "mindfulness_tree_charleston", org_name: "The Mindfulness Tree",
+    title: "Tuesday Morning Sit",
+    days: ["Tuesday"], time: { h: 10, m: 0 }, duration_min: 60,
+    address: "1600 Kanawha Blvd E", city: "Charleston", state: "WV", neighborhood: "Kanawha City",
+    lat: 38.3493, lng: -81.6224, tradition: "zen", location_type: "hybrid",
+    notes: "Tuesday Morning Sit (10:00–11:00am ET) at Trinity Evangelical Lutheran Church, 1600 Kanawha Blvd E, Charleston WV. In-person + Zoom. Plum Village / Thich Nhat Hanh tradition. Format: inviting the bell, seated meditation, walking meditation, dharma talk, dharma sharing. Free, open to all. themindfulnesstree.life.",
+    source_url: "https://themindfulnesstree.life", event_url: "https://themindfulnesstree.life",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
