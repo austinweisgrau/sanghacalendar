@@ -8938,6 +8938,65 @@ CENTERS = {
             "free and open to all. uucasper.org."
         ),
     },
+    # ---- Delaware ----
+    "dvzc": {
+        "name": "Delaware Valley Zen Center",
+        "url": "https://dvzc.com",
+        "address": "300 E Main St",
+        "city": "Newark",
+        "state": "DE",
+        "zip": "19711",
+        "lat": 39.6837,
+        "lng": -75.7497,
+        "neighborhood": "Downtown Newark",
+        "tradition": "zen",
+        "description": (
+            "Delaware Valley Zen Center (DVZC) is a Kwan Um School of Zen center in Newark, DE, "
+            "founded in 1999. Guiding teacher: Zen Master Tang Gong (José Ramírez). Weekly Wednesday "
+            "sit at New Ark United Church of Christ (300 E Main St): 6:30–8:00pm, with chanting, "
+            "two 25-minute sitting periods, and walking meditation. 3rd Wednesday includes kong-an "
+            "interviews; 4th Wednesday offers newcomer instruction at 5:30pm. Quarterly retreats. "
+            "Free, drop-in welcome. DVZCinfo@gmail.com | (302) 533-8819. dvzc.com."
+        ),
+    },
+    "imc_lewes": {
+        "name": "Insight Meditation Community of Lewes",
+        "url": "https://imc-lewes.org",
+        "address": "211 Mulberry St",
+        "city": "Lewes",
+        "state": "DE",
+        "zip": "19958",
+        "lat": 38.7748,
+        "lng": -75.1397,
+        "neighborhood": "Lewes (Sussex County)",
+        "tradition": "theravada",
+        "description": (
+            "Insight Meditation Community of Lewes (IMC-Lewes) is a Vipassana / Insight Meditation "
+            "community on Delaware's coast, in the Theravada tradition. Weekly Monday practice at "
+            "St. Peter's Community Hall (211 Mulberry St): 2nd and 4th Mondays 4:00–5:30pm hybrid "
+            "in-person + Zoom; 1st and 3rd Mondays 5pm Dharma Study Group. Periodic daylong retreats "
+            "and dharma talks. Free, open to all. info@imc-lewes.org. imc-lewes.org."
+        ),
+    },
+    "open_heart_zen_wilmington": {
+        "name": "Open Heart Zen Sangha",
+        "url": "https://www.openheartzen.org",
+        "address": "730 Halstead Rd",
+        "city": "Wilmington",
+        "state": "DE",
+        "zip": "19803",
+        "lat": 39.7447,
+        "lng": -75.5597,
+        "neighborhood": "Sharpley / North Wilmington",
+        "tradition": "zen",
+        "description": (
+            "Open Heart Zen Sangha is an independent lay Zen community in the Wilmington, DE area, "
+            "founded in 2010 at First Unitarian Church (730 Halstead Rd, Sharpley). Currently "
+            "practicing online via Zoom. Wednesday evenings 7:00–8:30pm: zazen + dharma talk + "
+            "discussion. Monthly open discussion on the last Wednesday. Contact "
+            "openheartzen@gmail.com for the Zoom link. openheartzen.org."
+        ),
+    },
     # ---- West Virginia ----
     "bhavana_society": {
         "name": "Bhāvanā Society",

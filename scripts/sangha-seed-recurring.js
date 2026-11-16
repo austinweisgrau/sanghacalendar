@@ -7238,6 +7238,43 @@ const SITS = [
     notes: "Tuesday Morning Sit (10:00–11:00am ET) at Trinity Evangelical Lutheran Church, 1600 Kanawha Blvd E, Charleston WV. In-person + Zoom. Plum Village / Thich Nhat Hanh tradition. Format: inviting the bell, seated meditation, walking meditation, dharma talk, dharma sharing. Free, open to all. themindfulnesstree.life.",
     source_url: "https://themindfulnesstree.life", event_url: "https://themindfulnesstree.life",
   },
+  // ---- Delaware (Phase 3, heartbeat 123) ----
+  {
+    org_id: "dvzc", org_name: "Delaware Valley Zen Center",
+    title: "Wednesday Evening Sit",
+    days: ["Wednesday"], time: { h: 18, m: 30 }, duration_min: 90,
+    address: "300 E Main St", city: "Newark", state: "DE", neighborhood: "Downtown Newark",
+    lat: 39.6837, lng: -75.7497, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday Evening Sit (6:30–8:00pm ET) at New Ark United Church of Christ, 300 E Main St, Newark DE. Kwan Um School of Zen. Format: chanting, two 25-min sitting periods, 10-min walking meditation. 3rd Wednesday includes kong-an interviews via Zoom; 4th Wednesday offers newcomer instruction at 5:30pm. Free, drop-in welcome. dvzc.com.",
+    source_url: "https://dvzc.com", event_url: "https://dvzc.com",
+  },
+  {
+    org_id: "imc_lewes", org_name: "Insight Meditation Community of Lewes",
+    title: "Monday Meditation Sit",
+    week_of_month: [2, 4], days: ["Monday"], time: { h: 16, m: 0 }, duration_min: 90,
+    address: "211 Mulberry St", city: "Lewes", state: "DE", neighborhood: "Lewes (Sussex County)",
+    lat: 38.7748, lng: -75.1397, tradition: "theravada", location_type: "hybrid",
+    notes: "Monday Meditation Sit (4:00–5:30pm ET) at St. Peter's Community Hall, 211 Mulberry St, Lewes DE. 2nd and 4th Mondays. In-person + Zoom. Insight Meditation / Vipassana tradition. Silent sitting + guided meditation + discussion. Free, open to all levels. info@imc-lewes.org. imc-lewes.org.",
+    source_url: "https://imc-lewes.org", event_url: "https://imc-lewes.org",
+  },
+  {
+    org_id: "imc_lewes", org_name: "Insight Meditation Community of Lewes",
+    title: "Dharma Study Group",
+    week_of_month: [1, 3], days: ["Monday"], time: { h: 17, m: 0 }, duration_min: 60,
+    address: "211 Mulberry St", city: "Lewes", state: "DE", neighborhood: "Lewes (Sussex County)",
+    lat: 38.7748, lng: -75.1397, tradition: "theravada", location_type: "hybrid",
+    notes: "Dharma Study Group (5:00–6:00pm ET) at St. Peter's Community Hall, 211 Mulberry St, Lewes DE. 1st and 3rd Mondays. In-person + Zoom. Insight Meditation tradition. Reading and discussion of dharma texts. Free, open to all. info@imc-lewes.org. imc-lewes.org.",
+    source_url: "https://imc-lewes.org", event_url: "https://imc-lewes.org",
+  },
+  {
+    org_id: "open_heart_zen_wilmington", org_name: "Open Heart Zen Sangha",
+    title: "Wednesday Evening Zazen",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "730 Halstead Rd", city: "Wilmington", state: "DE", neighborhood: "Sharpley / North Wilmington",
+    lat: 39.7447, lng: -75.5597, tradition: "zen", location_type: "online",
+    notes: "Wednesday Evening Zazen (7:00–8:30pm ET) via Zoom. Open Heart Zen Sangha, Wilmington DE area. Format: zazen (sitting) + dharma talk + discussion. Last Wednesday is an open discussion. Contact openheartzen@gmail.com for Zoom link. Free, open to all. openheartzen.org.",
+    source_url: "https://www.openheartzen.org", event_url: "https://www.openheartzen.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
