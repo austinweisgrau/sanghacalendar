@@ -7275,6 +7275,34 @@ const SITS = [
     notes: "Wednesday Evening Zazen (7:00–8:30pm ET) via Zoom. Open Heart Zen Sangha, Wilmington DE area. Format: zazen (sitting) + dharma talk + discussion. Last Wednesday is an open discussion. Contact openheartzen@gmail.com for Zoom link. Free, open to all. openheartzen.org.",
     source_url: "https://www.openheartzen.org", event_url: "https://www.openheartzen.org",
   },
+  // ---- Connecticut expansion (Phase 3, heartbeat 124) ----
+  {
+    org_id: "white_lotus_haven_zen", org_name: "White Lotus Haven Zen",
+    title: "Sunday Zen Practice Service",
+    days: ["Sunday"], time: { h: 9, m: 0 }, duration_min: 120,
+    address: "50 Depot Street", city: "Collinsville", state: "CT", neighborhood: "Collinsville (Canton, Hartford County)",
+    lat: 41.8138, lng: -72.9208, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Zen Practice Service (9:00–11:00am ET) at White Lotus Haven Zen, Historic Axe Factory, 50 Depot St, Collinsville CT. Korean Seon Buddhism, Abbot Venerable Shim Bo. Forms include chanting, bowing, sitting, and walking meditation. Newcomers arrive 8:30am for introduction. Donation basis; open to all. wlhz.org.",
+    source_url: "https://wlhz.org", event_url: "https://wlhz.org",
+  },
+  {
+    org_id: "diamond_way_naugatuck", org_name: "Diamond Way Buddhist Center Connecticut",
+    title: "Saturday Evening Meditation",
+    days: ["Saturday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "69 Village Circle", city: "Naugatuck", state: "CT", neighborhood: "Naugatuck (New Haven County)",
+    lat: 41.4895, lng: -73.0529, tradition: "tibetan", location_type: "in-person",
+    notes: "Saturday Evening Meditation, Dharma Study & Discussion at Diamond Way Buddhist Center CT, 69 Village Circle, Naugatuck CT. Karma Kagyu lineage, Lama Ole Nydahl. Open to beginners and experienced practitioners. Contact (203) 729-5779 for current start time. diamondway.org/connecticut/.",
+    source_url: "https://www.diamondway.org/connecticut/", event_url: "https://www.diamondway.org/connecticut/",
+  },
+  {
+    org_id: "harmony_sangha_easton", org_name: "Harmony Sangha",
+    title: "Third Thursday In-Person Sit",
+    week_of_month: [3], days: ["Thursday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "59 Church Road", city: "Easton", state: "CT", neighborhood: "Easton (Fairfield County)",
+    lat: 41.2545, lng: -73.3022, tradition: "zen", location_type: "in-person",
+    notes: "Third Thursday In-Person Sit (7:00–8:30pm ET) at Christ Church (Episcopal), 59 Church Rd, Easton CT. Harmony Sangha, Connecticut Community of Mindful Living in the Plum Village / Thich Nhat Hanh tradition. Free, open to all. Bruce Nichols (203) 242-6713. harmonysangha.org.",
+    source_url: "https://harmonysangha.org", event_url: "https://harmonysangha.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

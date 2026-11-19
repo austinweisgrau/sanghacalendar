@@ -1,15 +1,15 @@
 """
-Connecticut — Phase 3 expansion (Hartford / New Haven area).
+Connecticut — Phase 3 expansion (Hartford / New Haven area + Collinsville / Naugatuck / Easton).
 
-Connecticut has a dispersed Buddhist community across the Hartford and New Haven
-metro areas, with centers spanning Kwan Um Zen, Shambhala, Kadampa (NKT),
-Karma Kagyu (Nalandabodhi), and the Tibetan Karma Kagyu (KTC) lineages.
-No live iCal feeds are accessible: Shambhala New Haven is Cloudflare-blocked,
-KMC Connecticut uses a JS-rendered calendar, and the other centers have no
-machine-readable feeds. All sits are seeded as recurring instances via
-sangha-seed-recurring.js.
+Connecticut has a dispersed Buddhist community across Hartford, New Haven, and
+Fairfield/Litchfield/Tolland County areas, spanning Kwan Um Zen, Korean Seon,
+Shambhala, Kadampa (NKT), Karma Kagyu (Nalandabodhi), Karma Kagyu (Diamond Way),
+Tibetan Karma Kagyu (KTC), and Plum Village lineages.
+No live iCal feeds are accessible for any Connecticut centers (Cloudflare blocks,
+JS-rendered calendars, or no machine-readable feeds). All sits are seeded as
+recurring instances via sangha-seed-recurring.js.
 
-Centers included:
+Centers included (Phase 3 original — Hartford / New Haven):
   - New Haven Zen Center (new_haven_zen) — Kwan Um School of Zen
     193 Mansfield St, New Haven CT 06511. newhavenzen.org
     Wed 7:30pm, Sun 9am. No iCal; recurring seeded.
@@ -29,6 +29,37 @@ Centers included:
   - Hartford Karma Thegsum Choling (hartford_ktc) — Tibetan Karma Kagyu
     157 Elizabeth Street, Hartford CT 06105. ktchartford.org
     Tue 7pm practice and study. JS-heavy site; recurring seeded.
+
+Centers added (Phase 3 expansion — heartbeat 124):
+  - White Lotus Haven Zen (white_lotus_haven_zen) — Korean Seon Zen
+    50 Depot St (Historic Axe Factory), Collinsville CT 06022. wlhz.org
+    Sun 9am. Donation basis; no iCal; recurring seeded.
+
+  - Diamond Way Buddhist Center CT (diamond_way_naugatuck) — Tibetan Karma Kagyu
+    69 Village Circle, Naugatuck CT 06770. diamondway.org/connecticut/
+    Sat evening. No iCal; recurring seeded.
+
+  - Harmony Sangha (harmony_sangha_easton) — Plum Village / Thich Nhat Hanh
+    59 Church Rd (Christ Church), Easton CT 06612. harmonysangha.org
+    3rd Thursday monthly 7pm in-person. Zoom other weeks; in-person sit seeded.
+
+Research notes (2026-11-19):
+  - White Lotus Haven Zen: Located in the Historic Axe Factory complex in
+    Collinsville (Canton, Hartford County). Korean Seon Buddhism, Abbot Venerable
+    Shim Bo. Weekly Sunday 9:00–11:00am (arrive 8:30 for newcomer introduction to
+    forms: chanting, bowing, sitting, and walking meditation). Also Wed morning
+    meditation 10:30–11:30am (fall/winter seasonal). Donation basis. wlhz.org.
+  - Diamond Way Naugatuck: Connecticut center in the international Diamond Way
+    network (~300 centers globally), Karma Kagyu lineage with Lama Ole Nydahl.
+    69 Village Circle, Naugatuck CT 06770. Saturday evening group meditation,
+    Dharma study, and discussions. Phone: (203) 729-5779.
+    diamondway.org/connecticut/
+  - Harmony Sangha: Connecticut Community of Mindful Living in the Plum Village /
+    Thich Nhat Hanh tradition. Founded by Bruce Nichols, (203) 242-6713.
+    Primarily online (Zoom Tue + Thu 7pm, weekday mornings 7am); in-person 3rd
+    Thursday monthly at Christ Church (Episcopal), 59 Church Rd, Easton CT 06612
+    (Fairfield County). harmonysangha.org (cert expired). Previously met at
+    Westport locations; now based in Easton."""
 
 Research notes (2026-05-21):
   - New Haven Zen Center: Kwan Um School of Zen (Korean Zen). 193 Mansfield St,
@@ -182,6 +213,73 @@ CENTERS = {
             "West End neighborhood, the center offers a Tuesday Evening practice "
             "and study group (7 PM). Open to all; no experience required; "
             "contact (860) 232-8366 for current schedule and programs."
+        ),
+    ),
+    "white_lotus_haven_zen": Center(
+        id="white_lotus_haven_zen",
+        name="White Lotus Haven Zen",
+        url="https://wlhz.org",
+        address="50 Depot Street",
+        city="Collinsville",
+        state="CT",
+        zip_code="06022",
+        lat=41.8138,
+        lng=-72.9208,
+        neighborhood="Collinsville (Canton, Hartford County)",
+        tradition=Tradition.ZEN,
+        notes=(
+            "White Lotus Haven Zen is a Korean Seon (Zen) Buddhist center located "
+            "in the Historic Axe Factory building in Collinsville (Canton, CT). "
+            "Abbot and Spiritual Director: Venerable Shim Bo. Weekly Sunday "
+            "Zen Practice Service (9:00–11:00am); newcomers invited to arrive at "
+            "8:30am for an introduction to the forms, which include chanting, "
+            "bowing, sitting, and walking meditation. Also seasonal Wednesday "
+            "Morning Meditation (10:30–11:30am, fall/winter). Donation basis; "
+            "open to all. wlhz.org."
+        ),
+    ),
+    "diamond_way_naugatuck": Center(
+        id="diamond_way_naugatuck",
+        name="Diamond Way Buddhist Center Connecticut",
+        url="https://www.diamondway.org/connecticut/",
+        address="69 Village Circle",
+        city="Naugatuck",
+        state="CT",
+        zip_code="06770",
+        lat=41.4895,
+        lng=-73.0529,
+        neighborhood="Naugatuck (New Haven County)",
+        tradition=Tradition.TIBETAN,
+        notes=(
+            "Diamond Way Buddhist Center Connecticut is part of the international "
+            "Diamond Way Buddhist network (~300 centers globally) in the Karma Kagyu "
+            "lineage of Tibetan Buddhism, under the spiritual guidance of Lama Ole "
+            "Nydahl. Located at 69 Village Circle, Naugatuck CT. Weekly Saturday "
+            "Evening program: group meditation, Dharma study, and open discussions. "
+            "Open to all; no experience required. Phone: (203) 729-5779. "
+            "diamondway.org/connecticut/."
+        ),
+    ),
+    "harmony_sangha_easton": Center(
+        id="harmony_sangha_easton",
+        name="Harmony Sangha",
+        url="https://harmonysangha.org",
+        address="59 Church Road",
+        city="Easton",
+        state="CT",
+        zip_code="06612",
+        lat=41.2545,
+        lng=-73.3022,
+        neighborhood="Easton (Fairfield County)",
+        tradition=Tradition.ZEN,
+        notes=(
+            "Harmony Sangha is a Connecticut Community of Mindful Living practicing "
+            "in the Plum Village tradition of Thich Nhat Hanh. Founded by Bruce "
+            "Nichols, (203) 242-6713. The sangha meets in-person on the Third "
+            "Thursday of each month at 7:00pm at Christ Church (Episcopal), "
+            "59 Church Rd, Easton CT 06612 (Fairfield County). Other weekly "
+            "gatherings are via Zoom (Tuesday and Thursday evenings at 7pm, "
+            "weekday mornings at 7am). harmonysangha.org."
         ),
     ),
 }
