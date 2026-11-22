@@ -43,6 +43,30 @@ Centers added (Phase 3 expansion — heartbeat 124):
     59 Church Rd (Christ Church), Easton CT 06612. harmonysangha.org
     3rd Thursday monthly 7pm in-person. Zoom other weeks; in-person sit seeded.
 
+Centers added (Phase 3 expansion — heartbeat 125):
+  - Woodbury Sangha (woodbury_sangha) — Plum Village / Thich Nhat Hanh
+    122 South Pomperaug Avenue (MUUS), Woodbury CT 06798. woodburysangha.org
+    Wed 7pm in-person. No iCal; recurring seeded.
+
+  - Dharma Flower Sangha (dharma_flower_ct) — Plum Village / Vietnamese
+    85 Prospect Street (Phap Hoa Temple), Vernon CT 06066. dharmaflowerct.com
+    Thu 7:30pm in-person. No iCal; recurring seeded.
+
+Research notes (2026-11-22):
+  - Woodbury Sangha: Order of Interbeing / Plum Village / Thich Nhat Hanh tradition.
+    Meets weekly on Wednesdays at 7pm at MUUS (Mattatuck Unitarian Universalist Society),
+    122 South Pomperaug Avenue, Woodbury CT 06798 (Litchfield County). Format: 30 min
+    sitting meditation, sutra reading, 15 min recorded dharma talk, 15–30 min dharma
+    discussion. First Wednesday: recitation of the Five Mindfulness Trainings. Contact:
+    Charles Batchelder, (203) 405-2576, CharlieCT2002@yahoo.com. woodburysangha.org
+    (may be down — connection refused). Drop-in; free.
+  - Dharma Flower Sangha: Contemporary Buddhist practice drawing on Plum Village /
+    Thich Nhat Hanh and other teachers. Meets weekly at Phap Hoa Buddhist Temple
+    (a Vietnamese Mahayana temple), 85 Prospect Street, Vernon CT 06066 (Tolland County).
+    Every Thursday 7:30–9:00pm: sitting + walking meditation. Drop-in, free; donations
+    welcome. Cushions and chairs provided. Sessions may be cancelled for weather —
+    check website or Instagram @dharmaflowerct. dharmaflowerct.com.
+
 Research notes (2026-11-19):
   - White Lotus Haven Zen: Located in the Historic Axe Factory complex in
     Collinsville (Canton, Hartford County). Korean Seon Buddhism, Abbot Venerable
@@ -280,6 +304,53 @@ CENTERS = {
             "59 Church Rd, Easton CT 06612 (Fairfield County). Other weekly "
             "gatherings are via Zoom (Tuesday and Thursday evenings at 7pm, "
             "weekday mornings at 7am). harmonysangha.org."
+        ),
+    ),
+    "woodbury_sangha": Center(
+        id="woodbury_sangha",
+        name="Woodbury Sangha",
+        url="https://www.woodburysangha.org",
+        address="122 South Pomperaug Avenue",
+        city="Woodbury",
+        state="CT",
+        zip_code="06798",
+        lat=41.5490,
+        lng=-73.2096,
+        neighborhood="Woodbury (Litchfield County)",
+        tradition=Tradition.ZEN,
+        notes=(
+            "Woodbury Sangha is a Plum Village community practicing in the tradition "
+            "of Thich Nhat Hanh, affiliated with the Order of Interbeing. The sangha "
+            "meets weekly on Wednesdays at 7:00pm at MUUS (Mattatuck Unitarian "
+            "Universalist Society), 122 South Pomperaug Avenue, Woodbury CT "
+            "(Litchfield County). Format: 30 minutes of sitting meditation, sutra "
+            "reading, a 15-minute recorded dharma talk, and 15–30 minutes of dharma "
+            "discussion. On the first Wednesday of each month, the Five Mindfulness "
+            "Trainings are recited. Drop-in welcome; no experience required; free "
+            "(donations appreciated). Contact: Charles Batchelder, (203) 405-2576."
+        ),
+    ),
+    "dharma_flower_ct": Center(
+        id="dharma_flower_ct",
+        name="Dharma Flower Sangha",
+        url="https://dharmaflowerct.com",
+        address="85 Prospect Street",
+        city="Vernon",
+        state="CT",
+        zip_code="06066",
+        lat=41.8291,
+        lng=-72.4647,
+        neighborhood="Vernon-Rockville (Tolland County)",
+        tradition=Tradition.ZEN,
+        notes=(
+            "Dharma Flower Sangha is a contemporary Buddhist practice community "
+            "drawing on the teachings of Thich Nhat Hanh / Plum Village and other "
+            "Buddhist teachers, meeting at Phap Hoa Buddhist Temple (a Vietnamese "
+            "Mahayana temple) at 85 Prospect Street, Vernon CT 06066 (Tolland County). "
+            "Weekly Thursday Evening Meditation (7:30–9:00pm): sitting meditation and "
+            "walking meditation. Open to all levels; drop-in welcome; free (donations "
+            "appreciated). Cushions and chairs provided; no experience required. "
+            "Instagram: @dharmaflowerct. dharmaflowerct.com."
         ),
     ),
 }

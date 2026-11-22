@@ -7303,6 +7303,25 @@ const SITS = [
     notes: "Third Thursday In-Person Sit (7:00–8:30pm ET) at Christ Church (Episcopal), 59 Church Rd, Easton CT. Harmony Sangha, Connecticut Community of Mindful Living in the Plum Village / Thich Nhat Hanh tradition. Free, open to all. Bruce Nichols (203) 242-6713. harmonysangha.org.",
     source_url: "https://harmonysangha.org", event_url: "https://harmonysangha.org",
   },
+  // ---- Connecticut expansion (Phase 3, heartbeat 125) ----
+  {
+    org_id: "woodbury_sangha", org_name: "Woodbury Sangha",
+    title: "Wednesday Evening Sit",
+    days: ["Wednesday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "122 South Pomperaug Avenue", city: "Woodbury", state: "CT", neighborhood: "Woodbury (Litchfield County)",
+    lat: 41.5490, lng: -73.2096, tradition: "zen", location_type: "in-person",
+    notes: "Wednesday Evening Sit (7:00–8:30pm ET) at MUUS (Mattatuck Unitarian Universalist Society), 122 South Pomperaug Avenue, Woodbury CT. Woodbury Sangha, Order of Interbeing / Plum Village / Thich Nhat Hanh tradition. Format: 30 min sitting, sutra reading, recorded dharma talk, dharma discussion. First Wednesday includes Five Mindfulness Trainings recitation. Drop-in welcome; free. Contact: Charles Batchelder (203) 405-2576. woodburysangha.org.",
+    source_url: "https://www.woodburysangha.org", event_url: "https://www.woodburysangha.org",
+  },
+  {
+    org_id: "dharma_flower_ct", org_name: "Dharma Flower Sangha",
+    title: "Thursday Evening Meditation",
+    days: ["Thursday"], time: { h: 19, m: 30 }, duration_min: 90,
+    address: "85 Prospect Street", city: "Vernon", state: "CT", neighborhood: "Vernon-Rockville (Tolland County)",
+    lat: 41.8291, lng: -72.4647, tradition: "zen", location_type: "in-person",
+    notes: "Thursday Evening Meditation (7:30–9:00pm ET) at Phap Hoa Buddhist Temple, 85 Prospect Street, Vernon CT. Dharma Flower Sangha: sitting and walking meditation in the Plum Village / Thich Nhat Hanh tradition. Drop-in welcome; no experience required; free (donations appreciated). Cushions and chairs provided. @dharmaflowerct on Instagram. dharmaflowerct.com.",
+    source_url: "https://dharmaflowerct.com", event_url: "https://dharmaflowerct.com",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };
