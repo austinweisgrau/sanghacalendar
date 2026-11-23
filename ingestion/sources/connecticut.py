@@ -85,7 +85,7 @@ Research notes (2026-11-19):
     (Fairfield County). harmonysangha.org (cert expired). Previously met at
     Westport locations; now based in Easton."""
 
-Research notes (2026-05-21):
+"""Research notes (2026-05-21):
   - New Haven Zen Center: Kwan Um School of Zen (Korean Zen). 193 Mansfield St,
     New Haven (East Rock neighborhood). Wed evening: 7pm chanting + 7:30pm zazen
     (seed 7:30pm sit start). Sun morning: 9am sitting through ~10:50am. Drop-in
