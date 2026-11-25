@@ -9125,6 +9125,28 @@ CENTERS = {
             "harmonysangha.org."
         ),
     },
+    # Connecticut expansion — Phase 3 (heartbeat 126)
+    # -----------------------------------------------------------------------
+    "moon_on_water": {
+        "name": "Moon On Water Meditation Group",
+        "url": "http://www.moononwater.org",
+        "address": "14 Bostwick Street",
+        "city": "Lakeville",
+        "state": "CT",
+        "zip": "06039",
+        "lat": 41.9507,
+        "lng": -73.4303,
+        "neighborhood": "Lakeville (Litchfield County)",
+        "tradition": "tibetan",
+        "description": (
+            "Moon On Water Meditation Group is a Tibetan Dzogchen practice community "
+            "in Lakeville, Connecticut, affiliated with Rangrig Yeshe under the "
+            "spiritual direction of Shyalpa Rinpoche. The group meets Monday evenings "
+            "at 14 Bostwick Street in Lakeville (Litchfield County). RSVP is required "
+            "before your first visit — contact (860) 307-3666 or "
+            "dancingmoon1@gmail.com. No fee; donations welcomed. moononwater.org."
+        ),
+    },
     # Connecticut expansion — Phase 3 (heartbeat 125)
     # -----------------------------------------------------------------------
     "woodbury_sangha": {

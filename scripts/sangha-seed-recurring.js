@@ -7303,6 +7303,16 @@ const SITS = [
     notes: "Third Thursday In-Person Sit (7:00–8:30pm ET) at Christ Church (Episcopal), 59 Church Rd, Easton CT. Harmony Sangha, Connecticut Community of Mindful Living in the Plum Village / Thich Nhat Hanh tradition. Free, open to all. Bruce Nichols (203) 242-6713. harmonysangha.org.",
     source_url: "https://harmonysangha.org", event_url: "https://harmonysangha.org",
   },
+  // ---- Connecticut expansion (Phase 3, heartbeat 126) ----
+  {
+    org_id: "moon_on_water", org_name: "Moon On Water Meditation Group",
+    title: "Monday Evening Meditation",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 60,
+    address: "14 Bostwick Street", city: "Lakeville", state: "CT", neighborhood: "Lakeville (Litchfield County)",
+    lat: 41.9507, lng: -73.4303, tradition: "tibetan", location_type: "in-person",
+    notes: "Monday Evening Meditation at 14 Bostwick Street, Lakeville CT. Moon On Water Meditation Group: Tibetan Dzogchen practice, affiliated with Rangrig Yeshe, Shyalpa Rinpoche. RSVP required before first visit: (860) 307-3666 or dancingmoon1@gmail.com. No fee; donations welcome. moononwater.org.",
+    source_url: "http://www.moononwater.org", event_url: "http://www.moononwater.org",
+  },
   // ---- Connecticut expansion (Phase 3, heartbeat 125) ----
   {
     org_id: "woodbury_sangha", org_name: "Woodbury Sangha",

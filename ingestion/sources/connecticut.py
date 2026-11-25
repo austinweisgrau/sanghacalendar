@@ -52,6 +52,19 @@ Centers added (Phase 3 expansion — heartbeat 125):
     85 Prospect Street (Phap Hoa Temple), Vernon CT 06066. dharmaflowerct.com
     Thu 7:30pm in-person. No iCal; recurring seeded.
 
+Centers added (Phase 3 expansion — heartbeat 126):
+  - Moon On Water Meditation Group (moon_on_water) — Tibetan Dzogchen
+    14 Bostwick Street, Lakeville CT 06039. moononwater.org
+    Mon 7pm. RSVP required; no iCal; recurring seeded.
+
+Research notes (2026-11-25):
+  - Moon On Water Meditation Group: Tibetan Dzogchen practice group, affiliated with
+    Rangrig Yeshe; Spiritual Director: Shyalpa Rinpoche. Located at 14 Bostwick Street,
+    Lakeville CT 06039 (Litchfield County, northwest CT near NY border). Group sessions
+    meet Monday evenings; RSVP required before first visit (call 860-307-3666 or
+    dancingmoon1@gmail.com). No fee; donations welcomed. Website: moononwater.org
+    (HTTP only, SSL cert expired). GoSit listing confirmed this is an active group.
+
 Research notes (2026-11-22):
   - Woodbury Sangha: Order of Interbeing / Plum Village / Thich Nhat Hanh tradition.
     Meets weekly on Wednesdays at 7pm at MUUS (Mattatuck Unitarian Universalist Society),
@@ -328,6 +341,28 @@ CENTERS = {
             "discussion. On the first Wednesday of each month, the Five Mindfulness "
             "Trainings are recited. Drop-in welcome; no experience required; free "
             "(donations appreciated). Contact: Charles Batchelder, (203) 405-2576."
+        ),
+    ),
+    "moon_on_water": Center(
+        id="moon_on_water",
+        name="Moon On Water Meditation Group",
+        url="http://www.moononwater.org",
+        address="14 Bostwick Street",
+        city="Lakeville",
+        state="CT",
+        zip_code="06039",
+        lat=41.9507,
+        lng=-73.4303,
+        neighborhood="Lakeville (Litchfield County)",
+        tradition=Tradition.TIBETAN,
+        notes=(
+            "Moon On Water Meditation Group is a Tibetan Dzogchen practice community "
+            "in Lakeville, Connecticut (Litchfield County), affiliated with Rangrig "
+            "Yeshe under the spiritual direction of Shyalpa Rinpoche. The group meets "
+            "Monday evenings at 14 Bostwick Street, Lakeville CT 06039. RSVP is "
+            "required before your first visit — contact Craig Shinshu Davis or Sandy "
+            "Dennis at (860) 307-3666 or dancingmoon1@gmail.com. No fee; donations "
+            "welcomed. moononwater.org."
         ),
     ),
     "dharma_flower_ct": Center(
