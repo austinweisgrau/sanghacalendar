@@ -122,6 +122,7 @@ from ingestion.sources import worcester as worcester_sources  # noqa: F401 (no l
 from ingestion.sources import tulsa as tulsa_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import syracuse as syracuse_sources
 from ingestion.sources import jersey_city as jersey_city_sources  # noqa: F401 (no live feeds)
+from ingestion.sources import princeton as princeton_sources
 from ingestion.sources import western_mass as western_mass_sources
 from ingestion.sources import iowa_city as iowa_city_sources  # noqa: F401 (no live feeds)
 from ingestion.sources import sioux_falls as sioux_falls_sources  # noqa: F401 (no live feeds)
@@ -1471,6 +1472,30 @@ def main():
             all_events.extend(events)
         except Exception as e:
             log.error(f"  ✗ WV iCal feed {org_id} failed: {e}")
+
+    # Princeton / Central NJ Phase 3 — PBMG Google Calendar iCal feed
+    log.info("--- Princeton / Central NJ Phase 3: PBMG Google Calendar iCal feed ---")
+    for org_id, feed_cfg in princeton_sources.ICAL_FEEDS.items():
+        center = princeton_sources.CENTERS[org_id]
+        log.info(f"Fetching {center.name} (Princeton iCal)...")
+        try:
+            events = fetch_feed(
+                url=feed_cfg["url"],
+                org_id=org_id,
+                org_name=center.name,
+                tradition=center.tradition,
+                filter_to_sits=feed_cfg.get("filter_to_sits", True),
+                address=center.address,
+                city=center.city,
+                state=center.state,
+                neighborhood=center.neighborhood,
+                lat=center.lat,
+                lng=center.lng,
+            )
+            log.info(f"  → {len(events)} events")
+            all_events.extend(events)
+        except Exception as e:
+            log.error(f"  ✗ Princeton iCal feed {org_id} failed: {e}")
 
     # Convert dataclasses to dicts
     dicts = []

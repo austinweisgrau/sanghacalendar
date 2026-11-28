@@ -7332,6 +7332,43 @@ const SITS = [
     notes: "Thursday Evening Meditation (7:30–9:00pm ET) at Phap Hoa Buddhist Temple, 85 Prospect Street, Vernon CT. Dharma Flower Sangha: sitting and walking meditation in the Plum Village / Thich Nhat Hanh tradition. Drop-in welcome; no experience required; free (donations appreciated). Cushions and chairs provided. @dharmaflowerct on Instagram. dharmaflowerct.com.",
     source_url: "https://dharmaflowerct.com", event_url: "https://dharmaflowerct.com",
   },
+  // ---- Princeton / Central NJ expansion (Phase 3, heartbeat 127) ----
+  {
+    org_id: "princeton_insight_meditation", org_name: "Princeton Insight Meditation",
+    title: "Monday Sitting Group",
+    days: ["Monday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "291 Witherspoon Street", city: "Princeton", state: "NJ", neighborhood: "Princeton (Fellowship in Prayer)",
+    lat: 40.3604, lng: -74.6560, tradition: "vipassana", location_type: "hybrid",
+    notes: "Monday Sitting Group (7:00–9:00pm ET) at Fellowship in Prayer, 291 Witherspoon St, Princeton NJ. Princeton Insight Meditation: 30-min guided meditation, 30-min sit, dharma discussion. Drop-ins welcome; no registration required. Vipassana / Insight Meditation lineage. Free (dana). princetoninsightmeditation.org.",
+    source_url: "https://princetoninsightmeditation.org", event_url: "https://princetoninsightmeditation.org",
+  },
+  {
+    org_id: "princeton_insight_meditation", org_name: "Princeton Insight Meditation",
+    title: "Sunday Dharma Study Group",
+    days: ["Sunday"], time: { h: 15, m: 0 }, duration_min: 120,
+    address: "291 Witherspoon Street", city: "Princeton", state: "NJ", neighborhood: "Princeton (Fellowship in Prayer)",
+    lat: 40.3604, lng: -74.6560, tradition: "vipassana", location_type: "hybrid",
+    notes: "Sunday Dharma Study Group (3:00–5:00pm ET) at Fellowship in Prayer, 291 Witherspoon St, Princeton NJ. Princeton Insight Meditation: sitting meditation + dharma readings and discussion. Hybrid in-person + Zoom. All levels welcome; drop-in. Free (dana). princetoninsightmeditation.org.",
+    source_url: "https://princetoninsightmeditation.org", event_url: "https://princetoninsightmeditation.org",
+  },
+  {
+    org_id: "princeton_zen_group", org_name: "Princeton Area Zen Group",
+    title: "Sunday Evening Zazen",
+    days: ["Sunday"], time: { h: 19, m: 0 }, duration_min: 120,
+    address: "291 Witherspoon Street", city: "Princeton", state: "NJ", neighborhood: "Princeton (Fellowship in Prayer)",
+    lat: 40.3604, lng: -74.6560, tradition: "zen", location_type: "in-person",
+    notes: "Sunday Evening Zazen (7:00–9:00pm ET) at Fellowship in Prayer, 291 Witherspoon St, Princeton NJ. Princeton Area Zen Group: Grassroots Zen, unaffiliated, founded 1991 by Manfred Steger and Perle Besserman. Newcomers arrive 6:30pm for introduction to forms (chanting, sitting, walking). Open to all; free. princetonzengroup.org.",
+    source_url: "http://www.princetonzengroup.org", event_url: "http://www.princetonzengroup.org",
+  },
+  {
+    org_id: "cold_mountain_zen", org_name: "Cold Mountain Zen",
+    title: "Friday Evening Sit",
+    days: ["Friday"], time: { h: 19, m: 0 }, duration_min: 90,
+    address: "510 George Street, Murray Hall Rm 302", city: "New Brunswick", state: "NJ", neighborhood: "Rutgers University campus",
+    lat: 40.4998, lng: -74.4463, tradition: "zen", location_type: "hybrid",
+    notes: "Friday Evening Sit (7:00–8:30pm ET) in Murray Hall Room 302, 510 George St, New Brunswick NJ (Rutgers campus). Cold Mountain Zen: Rinzai Zen, directed by Kankan Roshi Kurt Spellmeyer. In-person + Zoom; tea and conversation afterward. All levels welcome; beginners welcome. Free. coldmountainzen.org.",
+    source_url: "https://www.coldmountainzen.org", event_url: "https://www.coldmountainzen.org",
+  },
 ];
 
 const DAY_MAP = { Sunday:0, Monday:1, Tuesday:2, Wednesday:3, Thursday:4, Friday:5, Saturday:6 };

@@ -9194,4 +9194,100 @@ CENTERS = {
             "Instagram: @dharmaflowerct. dharmaflowerct.com."
         ),
     },
+    # -----------------------------------------------------------------------
+    # Princeton / Central NJ (heartbeat 127)
+    # -----------------------------------------------------------------------
+    "princeton_insight_meditation": {
+        "id": "princeton_insight_meditation",
+        "name": "Princeton Insight Meditation",
+        "url": "https://princetoninsightmeditation.org",
+        "address": "291 Witherspoon Street",
+        "city": "Princeton",
+        "state": "NJ",
+        "zip": "08540",
+        "lat": 40.3604,
+        "lng": -74.6560,
+        "neighborhood": "Princeton (Fellowship in Prayer)",
+        "tradition": "vipassana",
+        "description": (
+            "Princeton Insight Meditation (PIM) is a Vipassana / Insight Meditation "
+            "community in Princeton, NJ, meeting at Fellowship in Prayer (291 "
+            "Witherspoon St). The Monday Sitting Group meets every Monday 7:00–9:00pm "
+            "(in-person + Zoom): 30-min guided meditation, 30-min sit, dharma "
+            "discussion; drop-ins welcome, no registration required. The Sunday "
+            "Dharma Study Group meets Sundays 3:00–5:00pm (in-person + Zoom): "
+            "dharma readings and discussion. Affiliated with the Spirit Rock / "
+            "IMS Vipassana lineage. All levels welcome; free (dana). "
+            "princetoninsightmeditation.org."
+        ),
+    },
+    "princeton_buddhist_mg": {
+        "id": "princeton_buddhist_mg",
+        "name": "Princeton Buddhist Meditation Group",
+        "url": "https://www.princetonbuddhist.org",
+        "address": "291 Witherspoon Street",
+        "city": "Princeton",
+        "state": "NJ",
+        "zip": "08540",
+        "lat": 40.3604,
+        "lng": -74.6560,
+        "neighborhood": "Princeton (Fellowship in Prayer)",
+        "tradition": "tibetan",
+        "description": (
+            "Princeton Buddhist Meditation Group (PBMG) is an eclectic, unaffiliated "
+            "Buddhist community in Princeton, NJ, drawing on Tibetan, Zen, and "
+            "Theravada influences. Meets at Fellowship in Prayer (291 Witherspoon St). "
+            "Sunday Group: Sundays 12:30–2:00pm (in-person + Zoom), meditation and "
+            "contemplation. Thursday Group: Thursdays 7:00–8:30pm (in-person + Zoom), "
+            "meditation + study and discussion. Second Sunday: introductory "
+            "shamatha/vipashyana, 11:15am–noon. Open to all; beginners welcome. "
+            "Contact: infoplease@princetonbuddhist.org. princetonbuddhist.org."
+        ),
+    },
+    "princeton_zen_group": {
+        "id": "princeton_zen_group",
+        "name": "Princeton Area Zen Group",
+        "url": "http://www.princetonzengroup.org",
+        "address": "291 Witherspoon Street",
+        "city": "Princeton",
+        "state": "NJ",
+        "zip": "08540",
+        "lat": 40.3604,
+        "lng": -74.6560,
+        "neighborhood": "Princeton (Fellowship in Prayer)",
+        "tradition": "zen",
+        "description": (
+            "Princeton Area Zen Group (PAZG) is an independent Zen community in "
+            "Princeton, NJ, founded in 1991 by Manfred Steger and Perle Besserman. "
+            "The group practices 'Grassroots Zen' — lay Zen without formal Roshi "
+            "affiliation — meeting at Fellowship in Prayer (291 Witherspoon St). "
+            "Sunday evening zazen: Sundays 7:00–9:00pm (in-person); newcomers arrive "
+            "6:30pm for an introduction to forms (chanting, sitting, walking). Open "
+            "to all; free. princetonzengroup.org."
+        ),
+    },
+    "cold_mountain_zen": {
+        "id": "cold_mountain_zen",
+        "name": "Cold Mountain Zen",
+        "url": "https://www.coldmountainzen.org",
+        "address": "510 George Street, Murray Hall Rm 302",
+        "city": "New Brunswick",
+        "state": "NJ",
+        "zip": "08901",
+        "lat": 40.4998,
+        "lng": -74.4463,
+        "neighborhood": "Rutgers University campus",
+        "tradition": "zen",
+        "description": (
+            "Cold Mountain Zen is a Rinzai Zen community at Rutgers University in "
+            "New Brunswick, NJ, directed by Kankan Roshi Kurt Spellmeyer, a "
+            "professor at Rutgers and author of 'The Zen of You and Me.' Traces its "
+            "lineage to 9th-century Chinese Chan through the Rinzai tradition. "
+            "Friday Evening Sit: Fridays 7:00–8:30pm in Murray Hall Room 302, 510 "
+            "George St (in-person + Zoom; tea and conversation afterward). Monday "
+            "7:00–8:30pm sit is Zoom-only. Every-other-Saturday 7:00am–noon intensive "
+            "sessions held periodically. Open to all levels; beginners welcome. Free. "
+            "coldmountainzen.org."
+        ),
+    },
 }
